@@ -1,0 +1,149 @@
+{
+ "cavp_id": "36786",
+ "cavp_cert": "A4176",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36786",
+ "implementation": "Oracle Linux 9 Unbreakable Enterprise Kernel (UEK7) Cryptographic Module (ARM64_CE)",
+ "product_id": "16713",
+ "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: Assembler chaining using ARM Cryptographic Extension implementation.",
+ "version": "5.15.0-303.171.5.2.2.el9uek",
+ "type": "SOFTWARE",
+ "first_validated": "7/11/2023",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 9 on KVM on Oracle Linux 8 on Ampere Ampere(R) Altra(R) Ampere(R) Altra(R) Q80-30",
+   "details": [
+    "processor: Ampere(R) Altra(R) Q80-30",
+    "  Processor Ampere(R) Altra(R) Q80-30 (processor family ARM64) from Ampere",
+    "  family: ARM64",
+    "  manufacturer: Ampere",
+    "  series: Ampere(R) Altra(R)",
+    "software: KVM on Oracle Linux 8",
+    "  Kernel-based Virtual Machine running on Oracle Linux 8 is a free and open-source virtualization module in the Linux kernel that allows the kernel to function as a hypervisor.",
+    "software: Oracle Linux 9",
+    "  Linux distribution developed by Oracle"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC-CS3",
+   "oe": 0,
+   "capabilities": [
+    "Direction: decrypt, encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Hex",
+    "Data Unit Length Matches Payload Length"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

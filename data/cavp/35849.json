@@ -1,0 +1,70 @@
+{
+ "cavp_id": "35849",
+ "cavp_cert": "A3239",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35849",
+ "implementation": "Qualcomm Beryllium AES-256 engine – Config E",
+ "product_id": "15730",
+ "description": "Beryllium-based family of Qualcomm 802.11be Wi-Fi 7 chipsets, including (but not limited to) FastConnect 7xxx, Immersive Home and Networking Pro platforms.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "1/17/2023",
+ "vendor": "Qualcomm Technologies Inc",
+ "vendor_website": "http://www.qualcomm.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS simulator, version: vcs-mx_vP-2019.06-SP2-2",
+   "details": [
+    "processor: Synopsys VCS simulator, version: vcs-mx_vP-2019.06-SP2-2"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 128",
+    "IV Length: 104",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-524280 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 0-65536 Increment 8",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

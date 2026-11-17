@@ -1,0 +1,54 @@
+{
+ "cavp_id": "38938",
+ "cavp_cert": "A6328",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38938",
+ "implementation": "Rocky Linux 9 OpenSSL FIPS Provider (EDDSA)",
+ "product_id": "19033",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The following cipher implementation is covered: Generic EdDSA implementation.",
+ "version": "Rocky9.20250210",
+ "type": "SOFTWARE",
+ "first_validated": "12/4/2024",
+ "vendor": "Ctrl IQ, Inc.",
+ "vendor_website": "",
+ "oes": [
+  {
+   "name": "Rocky Linux 9 on Intel Kaby Lake Xeon E3-1270 v6",
+   "details": [
+    "software: Rocky Linux 9",
+    "  Rocky Linux is an open enterprise Operating System designed to be 100% bug-for-bug compatible with Enterprise Linux.",
+    "processor: Xeon E3-1270 v6",
+    "  Processor Xeon E3-1270 v6 (processor family x86) from Intel",
+    "  family: x86",
+    "  manufacturer: Intel",
+    "  series: Kaby Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "EDDSA KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519, ED-448"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519, ED-448",
+    "Context Length: 0",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519, ED-448",
+    "Pure"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

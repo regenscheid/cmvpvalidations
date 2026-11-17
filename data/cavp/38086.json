@@ -1,0 +1,158 @@
+{
+ "cavp_id": "38086",
+ "cavp_cert": "A5476",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38086",
+ "implementation": "Kanguru Defender Series Cryptographic Algorithm Library",
+ "product_id": "18149",
+ "description": "Kanguru Defender Series Cryptographic Algorithm Library",
+ "version": "2.0",
+ "type": "FIRMWARE",
+ "first_validated": "7/30/2024",
+ "vendor": "Kanguru Solutions",
+ "vendor_website": "http://www.kanguru.com",
+ "oes": [
+  {
+   "name": "Kanguru Defender3000 Crypto Processor",
+   "details": [
+    "Processor: KN3000",
+    "  Kanguru USB AES Micro-Controller"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096",
+    "Tweak Mode: Number",
+    "Data Unit Length Matches Payload Length"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: extra bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 1024",
+    "    Nonce: 512",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 8-2040 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: responder"
+   ]
+  },
+  {
+   "algorithm": "KDA TwoStep SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "    Fixed Info Encoding: concatenation",
+    "    KDF Mode: counter",
+    "    MAC Modes: HMAC-SHA2-256",
+    "    Fixed Data Order: before fixed data",
+    "    Counter Lengths: 32",
+    "    Supported Lengths: 256",
+    "Derived Key Length: 256",
+    "Shared Secret Length: 256"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1024",
+    "    HMAC Algorithm: SHA2-256",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 256",
+    "    Key Data Length: 256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

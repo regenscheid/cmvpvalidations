@@ -1,0 +1,49 @@
+{
+ "cavp_id": "30727",
+ "cavp_cert": "C331",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30727",
+ "implementation": "Apple Secure Enclave Processor Hardware DRBG (S4)",
+ "product_id": "10691",
+ "description": "Apple Secure Enclave Processor Hardware DRBG is a sub-chip cryptographic hardware implementation embedded in the Apple S4 SoC, offering various cryptographic mechanisms to Apple Secure Key Store's DRBG.",
+ "version": "2.0",
+ "type": "HARDWARE",
+ "first_validated": "2/19/2019",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "Apple Secure Enclave Processor Hardware DRBG (S4)",
+   "details": [
+    "device: Apple Secure Enclave Processor Hardware DRBG (S4)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 128",
+    "C331 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

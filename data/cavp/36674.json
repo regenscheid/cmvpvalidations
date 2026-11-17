@@ -1,0 +1,46 @@
+{
+ "cavp_id": "36674",
+ "cavp_cert": "A4064",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36674",
+ "implementation": "OpenSSL FIPS Provider for AlmaLinux 9 (SSH_AVX2)",
+ "product_id": "16611",
+ "description": "AlmaLinux 9.2 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: SSH KDF using AVX2 SHA implementation.",
+ "version": "3.0.7-1d2bd88ee26b3c90",
+ "type": "SOFTWARE",
+ "first_validated": "6/23/2023",
+ "vendor": "Cloudlinux Inc., TuxCare division",
+ "vendor_website": "http://www.tuxcare.com",
+ "oes": [
+  {
+   "name": "AlmaLinux 9.2 on Intel Cascade Lake Xeon Platinum 8259CL",
+   "details": [
+    "software: AlmaLinux 9.2",
+    "  Linux distribution developed by Cloudlinux Inc., TuxCare division and targeted toward the commercial market.",
+    "processor: Xeon Platinum 8259CL",
+    "  Processor Xeon Platinum 8259CL (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

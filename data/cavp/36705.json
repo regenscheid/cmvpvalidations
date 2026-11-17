@@ -1,0 +1,46 @@
+{
+ "cavp_id": "36705",
+ "cavp_cert": "A4095",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36705",
+ "implementation": "Rajant RISM FPGA",
+ "product_id": "16651",
+ "description": "Rajant RISM FPGA supports AES-ECB and AES-GCM algorithms.",
+ "version": "0x49",
+ "type": "HARDWARE",
+ "first_validated": "6/30/2023",
+ "vendor": "Rajant Corporation",
+ "vendor_website": "http://www.rajant.com",
+ "oes": [
+  {
+   "name": "ModelSim ALTERA STARTER EDITION 10.5b Simulator 2016.10 with Verilog 2001",
+   "details": [
+    "firmware: ModelSim ALTERA STARTER EDITION 10.5b Simulator 2016.10 with Verilog 2001",
+    "  Simulator"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-65536 Increment 8",
+    "AAD Length: 8-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,60 @@
+{
+ "cavp_id": "38029",
+ "cavp_cert": "A5419",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38029",
+ "implementation": "Titan Cryptographic Library",
+ "product_id": "18078",
+ "description": "Firmware implementation of standard algorithms written in C and assembly.",
+ "version": "1.1",
+ "type": "FIRMWARE",
+ "first_validated": "6/26/2024",
+ "vendor": "Google, LLC",
+ "vendor_website": "https://www.google.com/",
+ "oes": [
+  {
+   "name": "Titan Chip H1B3P",
+   "details": [
+    "Processor: ARM SC300 processor, with Dcrypto Coprocessor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

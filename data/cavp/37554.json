@@ -1,0 +1,128 @@
+{
+ "cavp_id": "37554",
+ "cavp_cert": "A4944",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37554",
+ "implementation": "Cradlepoint Kernel Cryptographic Module",
+ "product_id": "17544",
+ "description": "The Cradlepoint Kernel Cryptographic Module offers symmetric encryption/decryption, key transport, hashing, and message authentication functions.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/21/2023",
+ "vendor": "Cradlepoint, Inc.",
+ "vendor_website": "https://www.cradlepoint.com",
+ "oes": [
+  {
+   "name": "NetCloud OS 7 running on Cradlepoint E3000 on ARM® Cortex®-A (ARMv8-A)",
+   "details": [
+    "processor: ARM® Cortex®-A (ARMv8-A)",
+    "  manufacturer: ARM®",
+    "hardware: Cradlepoint E3000",
+    "software: NetCloud OS 7"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128",
+    "Supports Counter larger than maximum value",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 136, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 80-160 Increment 8",
+    "Key Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128-256 Increment 8",
+    "Key Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192-384 Increment 8",
+    "Key Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

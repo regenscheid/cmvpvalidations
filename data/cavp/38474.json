@@ -1,0 +1,46 @@
+{
+ "cavp_id": "38474",
+ "cavp_cert": "A5864",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38474",
+ "implementation": "SUSE Linux Enterprise - OpenSSL FIPS Provider (NEON)",
+ "product_id": "18568",
+ "description": "SUSE Linux Enterprise Server 15 SP6 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: ARMv7 NEON SHA implementation.",
+ "version": "1.1",
+ "type": "SOFTWARE",
+ "first_validated": "10/1/2024",
+ "vendor": "SUSE LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP6 on Ampere(R) Altra(R) Q80-30",
+   "details": [
+    "processor: Q80-30",
+    "  Processor Q80-30 (processor family ARM64) from Ampere(R)",
+    "  family: ARM64",
+    "  manufacturer: Ampere(R)",
+    "  series: Altra(R)",
+    "software: SUSE Linux Enterprise Server 15 SP6",
+    "  SUSE Linux Enterprise distribution"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

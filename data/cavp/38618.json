@@ -1,0 +1,50 @@
+{
+ "cavp_id": "38618",
+ "cavp_cert": "A6008",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38618",
+ "implementation": "Aegis KAS Engine",
+ "product_id": "18706",
+ "description": "Aegis Key Agreement Scheme",
+ "version": "1.0",
+ "type": "HARDWARE",
+ "first_validated": "10/23/2024",
+ "vendor": "Apricorn",
+ "vendor_website": "http://www.Apricorn.com",
+ "oes": [
+  {
+   "name": "AFSC-Q01",
+   "details": [
+    "processor: AFSC-Q01",
+    "  Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: testing candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: responder"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,84 @@
+{
+ "cavp_id": "39420",
+ "cavp_cert": "A6810",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39420",
+ "implementation": "IBM COS Linux Kernel Cryptographic API Cryptographic Module (RFC4106IIV_AESNI_ASM)",
+ "product_id": "19546",
+ "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: RFC4106 GCM with internal IV generation assembler block mode using Intel AES-NI AES implementation.",
+ "version": "3",
+ "type": "SOFTWARE",
+ "first_validated": "4/17/2025",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "ClevOS 3.19 on Intel Sapphire Rapids Xeon 8474C",
+   "details": [
+    "software: ClevOS 3.19",
+    "  Linux distribution developed by IBM Corporation",
+    "processor: Xeon 8474C",
+    "  Processor Xeon 8474C (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Sapphire Rapids"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

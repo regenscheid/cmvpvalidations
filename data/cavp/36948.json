@@ -1,0 +1,128 @@
+{
+ "cavp_id": "36948",
+ "cavp_cert": "A4338",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36948",
+ "implementation": "OpenSSL 3 (64 bit) (BAES_CTASM_AVX)",
+ "product_id": "16883",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Constant-time bit sliced AES using GCM with AVX GHASH implementation.",
+ "version": "3.0.7-b27cdeb3ba51be46",
+ "type": "SOFTWARE",
+ "first_validated": "8/23/2023",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 9 on KVM on Oracle Linux 8 on AMD AMD EPYC(TM) 7001 Series AMD EPYC 7J13",
+   "details": [
+    "processor: AMD EPYC 7J13",
+    "  Processor AMD EPYC 7J13 (processor family X86) from AMD",
+    "  family: X86",
+    "  manufacturer: AMD",
+    "  series: AMD EPYC(TM) 7001 Series",
+    "software: KVM on Oracle Linux 8",
+    "  Kernel-based Virtual Machine running on Oracle Linux 8 is a free and open-source virtualization module in the Linux kernel that allows the kernel to function as a hypervisor.",
+    "software: Oracle Linux 9",
+    "  Linux distribution developed by Oracle"
+   ]
+  },
+  {
+   "name": "Oracle Linux 9 on KVM on Oracle Linux 8 on Intel Ice Lake Intel(R) Xeon(R) Platinum 8358",
+   "details": [
+    "processor: Intel(R) Xeon(R) Platinum 8358",
+    "  Processor Intel(R) Xeon(R) Platinum 8358 (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Ice Lake",
+    "software: KVM on Oracle Linux 8",
+    "  Kernel-based Virtual Machine running on Oracle Linux 8 is a free and open-source virtualization module in the Linux kernel that allows the kernel to function as a hypervisor.",
+    "software: Oracle Linux 9",
+    "  Linux distribution developed by Oracle"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

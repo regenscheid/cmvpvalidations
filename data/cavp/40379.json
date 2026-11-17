@@ -1,0 +1,76 @@
+{
+ "cavp_id": "40379",
+ "cavp_cert": "A7769",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40379",
+ "implementation": "Microsoft HSM Cryptographic Module (HSM_UPKA_5)",
+ "product_id": "20559",
+ "description": "The Microsoft HSM Cryptographic Module provides cryptographic services. The following cipher implementation is covered: HSM UPKA implementation #5, which supports various asymmetric cryptographic algorithms.",
+ "version": "M1244265-004 B0",
+ "type": "HARDWARE",
+ "first_validated": "12/12/2025",
+ "vendor": "Microsoft Corporation",
+ "vendor_website": "http://www.microsoft.com",
+ "oes": [
+  {
+   "name": "Microsoft Corporation M1244265-004 B0",
+   "details": [
+    "processor: M1244265-004 B0",
+    "  Processor M1244265-004 B0 (processor family Microsoft) from Microsoft Corporation",
+    "  family: Microsoft",
+    "  manufacturer: Microsoft Corporation",
+    "  series: N/A"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521",
+    "Secret Generation Mode: testing candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "Component"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "Component"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "Component"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384, P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

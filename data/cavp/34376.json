@@ -1,0 +1,44 @@
+{
+ "cavp_id": "34376",
+ "cavp_cert": "A1767",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34376",
+ "implementation": "RGX AES Core",
+ "product_id": "14264",
+ "description": "PM1653 Series is high-performance Self-Encrypting SSD supporting SAS 12G Interface that provides on-the-fly encryption/decryption of user data without performance loss. It implements AES256-XTS for user data encryption, RSA PSS-3072 for FW authentication, and CTR_DRBG for key generation.",
+ "version": "sf_crypt_aes_x8_v2.10e",
+ "type": "FIRMWARE",
+ "first_validated": "7/28/2021",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Cadence XCELIUM 20.09-s012",
+   "details": [
+    "cpu: Cadence XCELIUM 20.09-s012",
+    "  Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Hex"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

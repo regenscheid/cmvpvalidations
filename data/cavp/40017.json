@@ -1,0 +1,122 @@
+{
+ "cavp_id": "40017",
+ "cavp_cert": "A7407",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40017",
+ "implementation": "Rocky Linux 9 - Kernel Cryptographic API (AESNI_ASM)",
+ "product_id": "20189",
+ "description": "The Rocky Linux 9 - Kernel Cryptographic API provides a C language API for use by other (kernel space and user space) processes that require cryptographic functionality. The following cipher implementation is covered: Assembler block mode using Intel AES-NI AES implementation.",
+ "version": "rocky9.20250725",
+ "type": "SOFTWARE",
+ "first_validated": "9/18/2025",
+ "vendor": "Ctrl IQ, Inc.",
+ "vendor_website": "",
+ "oes": [
+  {
+   "name": "Rocky Linux 9 on Intel Kaby Lake Xeon E3-1270 v6",
+   "details": [
+    "software: Rocky Linux 9",
+    "  Rocky Linux is an open enterprise Operating System designed to be 100% bug-for-bug compatible with Enterprise Linux.",
+    "processor: Xeon E3-1270 v6",
+    "  Processor Xeon E3-1270 v6 (processor family x86) from Intel",
+    "  family: x86",
+    "  manufacturer: Intel",
+    "  series: Kaby Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC-CS3",
+   "oe": 0,
+   "capabilities": [
+    "Direction: decrypt, encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length Matches Payload Length"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

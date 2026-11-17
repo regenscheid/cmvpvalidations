@@ -1,0 +1,74 @@
+{
+ "cavp_id": "37193",
+ "cavp_cert": "A4583",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37193",
+ "implementation": "Amazon Linux 2023 NSS Cryptographic Module (CE)",
+ "product_id": "17127",
+ "description": "Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications. Applications built with NSS can support SSL v2 and v3, TLS, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards. The following cipher implementation is covered: ARM Cryptographic Extension AES implementation.",
+ "version": "3.90.0-3e9a8358c972db98",
+ "type": "SOFTWARE",
+ "first_validated": "10/24/2023",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "http://www.amazon.com",
+ "oes": [
+  {
+   "name": "Amazon Linux 2023 on EC2 bare metal on Amazon Graviton3 AWS Graviton",
+   "details": [
+    "software: Amazon Linux 2023 on EC2 bare metal",
+    "  EC2 bare metal running Amazon Linux 2023.",
+    "processor: AWS Graviton3",
+    "  Processor AWS Graviton3 (processor family ARM64) from Amazon",
+    "  family: ARM64",
+    "  manufacturer: Amazon",
+    "  series: Neoverse V1"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

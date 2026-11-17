@@ -1,0 +1,46 @@
+{
+ "cavp_id": "38362",
+ "cavp_cert": "A5752",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38362",
+ "implementation": "Ubuntu 24.04 OpenSSL Cryptographic Module (SSH_AVX2)",
+ "product_id": "18431",
+ "description": "Ubuntu 24.04 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: SSH KDF using AVX2 SHA implementation.",
+ "version": "3.0.13-0ubuntu3+Fips1",
+ "type": "SOFTWARE",
+ "first_validated": "9/11/2024",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 24.04 on Supermicro SYS-1019P-WTR on Intel Cascade Lake Xeon Gold 6226",
+   "details": [
+    "software: Ubuntu 24.04 on Supermicro SYS-1019P-WTR",
+    "  Supermicro SYS-1019P-WTR running Ubuntu 24.04",
+    "processor: Xeon Gold 6226",
+    "  Processor Xeon Gold 6226 (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

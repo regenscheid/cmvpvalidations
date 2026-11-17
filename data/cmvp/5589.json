@@ -1,0 +1,103 @@
+{
+ "cert": 5589,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5589",
+ "module": "Geotab Cryptographic Module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "11/15/2031",
+ "level": "1",
+ "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+ "level_exceptions": [
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Firmware",
+ "embodiment": "SingleChip",
+ "description": "The Geotab Cryptographic module is classified as Level 1 Firmware Module as per FIPS-140-3 guidelines executing within a non-modifiable operational environment. The module operates within a single-chip standalone module embodiment. The physical cryptographic boundary is a single-chip microcontroller which runs a modifiable operating environment such as a real-time operating system. The module is bundled with the firmware image used by the physical microcontrollers. The module performs no communication other than with the calling application via well-defined APIs that invoke the module.",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4203",
+   "cavp_id": "36813"
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "cavp_cert": "A4203",
+   "cavp_id": "36813"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4203",
+   "cavp_id": "36813"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "cavp_cert": "A4203",
+   "cavp_id": "36813"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4203",
+   "cavp_id": "36813"
+  }
+ ],
+ "vendor": "Geotab Inc.",
+ "vendor_info": {
+  "name": "Geotab Inc.",
+  "website": "http://www.geotab.com",
+  "address": [
+   "2440 Winston Park Drive",
+   "Oakville, Ontario L6H 7V2",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Matthew Roffel"
+   },
+   {
+    "name": "Tanvi"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5589.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/16/2026",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "11/16/2026",
+ "last_updated": "11/16/2026",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5589.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 5589,
+  "vendor": "Geotab Inc.",
+  "module": "Geotab Cryptographic Module",
+  "type": "Firmware",
+  "validation_dates": [
+   "11/16/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

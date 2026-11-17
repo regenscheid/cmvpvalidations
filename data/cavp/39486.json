@@ -1,0 +1,50 @@
+{
+ "cavp_id": "39486",
+ "cavp_cert": "A6876",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39486",
+ "implementation": "LS2-FW-Crypto",
+ "product_id": "19611",
+ "description": "LS2-FW-Crypto provider, support operations like key generation, encrypt/decrypt, wrap/unwrap and key derivation in the firmware by offloading to HW(CPT).",
+ "version": "2.0",
+ "type": "FIRMWARE",
+ "first_validated": "5/1/2025",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON-TX2",
+   "details": [
+    "processor: OCTEON-TX2"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: testing candidates"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: partialVal",
+    "Modulo: 2048, 3072, 4096",
+    "Key Generation Methods: rsakpg2-crt",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator, responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: l||uPartyInfo||vPartyInfo",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 320"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,66 @@
+{
+ "cavp_id": "33999",
+ "cavp_cert": "A1390",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33999",
+ "implementation": "HL Crypto Security Library",
+ "product_id": "13843",
+ "description": "The HL Crypto Security Library defines the DRBG, PBKDF2, and RSA cryptographic algorithm implementations for Western Digital’s Self-Encrypting Hard Disk Drives.",
+ "version": "Version 2",
+ "type": "FIRMWARE",
+ "first_validated": "5/7/2021",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.WDC.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-M3",
+   "details": [
+    "cpu: ARM Cortex-M3"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 2-1024 Increment 1",
+    "    HMAC Algorithm: SHA2-256",
+    "    Password Length: 32",
+    "    Salt Length: 128-512 Increment 8",
+    "    Key Data Length: 256-4096 Increment 256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

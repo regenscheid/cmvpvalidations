@@ -1,0 +1,40 @@
+{
+ "cavp_id": "33704",
+ "cavp_cert": "A1095",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33704",
+ "implementation": "ARMv7 AES in Firmware",
+ "product_id": "13568",
+ "description": "FW implementation of AES encryption and decryption in Seagate's self-encryption disk drives (SEDs).",
+ "version": "3.0",
+ "type": "FIRMWARE",
+ "first_validated": "3/4/2021",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com/",
+ "oes": [
+  {
+   "name": "ARM Cortex-M0 (ARMv6-M)",
+   "details": [
+    "processor: ARM Cortex-M Family"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

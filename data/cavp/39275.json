@@ -1,0 +1,83 @@
+{
+ "cavp_id": "39275",
+ "cavp_cert": "A6665",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39275",
+ "implementation": "Chainguard FIPS Provider for OpenSSL (AES_C_GCM)",
+ "product_id": "19395",
+ "description": "Chainguard FIPS Provider for OpenSSL provides cryptographic services to Linux user space software components. The following cipher implementation is covered: Assembler AES GCM implementation.",
+ "version": "3.4.0-r4",
+ "type": "SOFTWARE",
+ "first_validated": "3/10/2025",
+ "vendor": "Chainguard, Inc.",
+ "vendor_website": "https://www.chainguard.dev",
+ "oes": [
+  {
+   "name": "Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7g.metal on Amazon Graviton3 AWS Graviton3",
+   "details": [
+    "processor: AWS Graviton3",
+    "  Processor AWS Graviton3 (processor family ARM64) from Amazon",
+    "  family: ARM64",
+    "  manufacturer: Amazon",
+    "  series: Neoverse V1",
+    "software: Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7g.metal",
+    "  EC2 m7g.metal running Chainguard Image 20230214 on Amazon Linux 2023."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128-65536 Increment 128",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128-65536 Increment 128",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128-65536 Increment 128",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,55 @@
+{
+ "cavp_id": "35817",
+ "cavp_cert": "A3207",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35817",
+ "implementation": "OpenSSL (32 bit) (FFC_DH)",
+ "product_id": "15680",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 32 bit word size. The following cipher implementation is covered: Generic C non-optimized DH implementation.",
+ "version": "4.4",
+ "type": "SOFTWARE",
+ "first_validated": "12/16/2022",
+ "vendor": "SUSE LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on Intel Cascade Lake Intel(R) Xeon(R) Silver 4215R",
+   "details": [
+    "processor: Intel(R) Xeon(R) Silver 4215R",
+    "  Processor Intel(R) Xeon(R) Silver 4215R (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake",
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

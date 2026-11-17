@@ -1,0 +1,49 @@
+{
+ "cavp_id": "35555",
+ "cavp_cert": "A2945",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35555",
+ "implementation": "Qualcomm(R) Pseudo Random Number Generator (DRBG)",
+ "product_id": "15445",
+ "description": "Qualcomm Pseudo Random Number Generator is a hardware random number generator that provides cryptographic functions through on-chip entropy sources and hash based DRBG.",
+ "version": "3.1.0",
+ "type": "HARDWARE",
+ "first_validated": "10/27/2022",
+ "vendor": "Qualcomm Technologies, Inc.",
+ "vendor_website": "http://www.qualcomm.com",
+ "oes": [
+  {
+   "name": "Qualcomm Technologies, Inc. N/A Snapdragon(R) 8 Gen 2 Mobile Platform",
+   "details": [
+    "processor: Snapdragon(R) 8 Gen 2 Mobile Platform",
+    "  Processor Snapdragon(R) 8 Gen 2 Mobile Platform (processor family Snapdragon) from Qualcomm Technologies, Inc.",
+    "  family: Snapdragon",
+    "  manufacturer: Qualcomm Technologies, Inc.",
+    "  series: N/A"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0, 32",
+    "    Additional Input: 0, 0",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

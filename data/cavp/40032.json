@@ -1,0 +1,78 @@
+{
+ "cavp_id": "40032",
+ "cavp_cert": "A7422",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40032",
+ "implementation": "L3 Harris AES Load Module (HALM)",
+ "product_id": "20199",
+ "description": "The HALM provides Harris terminals with AES encryption of digital voice and data.",
+ "version": "R07A01",
+ "type": "FIRMWARE",
+ "first_validated": "9/23/2025",
+ "vendor": "L3Harris Technologies, Inc.",
+ "vendor_website": "http://www.l3harris.com",
+ "oes": [
+  {
+   "name": "ADI Blackfin BF707 DSP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 8-128 Increment 8",
+    "    Message Length: 0-98296 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 16-128 Increment 16",
+    "    Message Length: 0-98296 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

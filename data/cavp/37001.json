@@ -1,0 +1,75 @@
+{
+ "cavp_id": "37001",
+ "cavp_cert": "A4391",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37001",
+ "implementation": "Intel® Multi-Buffer Crypto for IPsecMB Library for Software Acceleration",
+ "product_id": "16933",
+ "description": "Cryptographic library for AES GCM and SHA2 which supports software acceleration.",
+ "version": "1.3",
+ "type": "SOFTWARE",
+ "first_validated": "9/5/2023",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 9.0 on Intel Eagle Stream with Intel® Xeon® Platinum 8488C with PAA",
+   "details": [
+    "Platform: Intel Eagle Stream",
+    "Processor: Intel® Xeon® Platinum 8488C",
+    "OS: Red Hat Enterprise Linux 9.0"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 0-65536 Increment 8",
+    "AAD Length: 0-1920 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

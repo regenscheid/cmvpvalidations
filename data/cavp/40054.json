@@ -1,0 +1,46 @@
+{
+ "cavp_id": "40054",
+ "cavp_cert": "A7444",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40054",
+ "implementation": "Amazon Linux 2023 OpenSSL FIPS Provider (NEON)",
+ "product_id": "20232",
+ "description": "Amazon Linux 2023 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The following cipher implementation is covered: ARMv7 NEON SHA implementation.",
+ "version": "3.2.2-799901ad7ab41d45",
+ "type": "SOFTWARE",
+ "first_validated": "9/26/2025",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "http://www.amazon.com",
+ "oes": [
+  {
+   "name": "Amazon Linux 2023 on EC2 c7g.metal bare metal on Amazon Graviton3 AWS Graviton3",
+   "details": [
+    "software: Amazon Linux 2023 on EC2 c7g.metal bare metal",
+    "  EC2 c7g.metal bare metal running Amazon Linux 2023.",
+    "processor: AWS Graviton3",
+    "  Processor AWS Graviton3 (processor family ARM64) from Amazon",
+    "  family: ARM64",
+    "  manufacturer: Amazon",
+    "  series: Neoverse V1"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,83 @@
+{
+ "cavp_id": "38373",
+ "cavp_cert": "A5763",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38373",
+ "implementation": "Ubuntu 24.04 OpenSSL Cryptographic Module (BAES_CTASM_CLMULNI)",
+ "product_id": "18423",
+ "description": "Ubuntu 24.04 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Constant-time bit sliced AES using GCM with CLMUL GHASH implementation.",
+ "version": "3.0.13-0ubuntu3+Fips1",
+ "type": "SOFTWARE",
+ "first_validated": "9/11/2024",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 24.04 on Supermicro SYS-1019P-WTR on Intel Cascade Lake Xeon Gold 6226",
+   "details": [
+    "software: Ubuntu 24.04 on Supermicro SYS-1019P-WTR",
+    "  Supermicro SYS-1019P-WTR running Ubuntu 24.04",
+    "processor: Xeon Gold 6226",
+    "  Processor Xeon Gold 6226 (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128-65536 Increment 128",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128-65536 Increment 128",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128-65536 Increment 128",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

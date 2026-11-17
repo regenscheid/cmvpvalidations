@@ -1,0 +1,54 @@
+{
+ "cavp_id": "39176",
+ "cavp_cert": "A6566",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39176",
+ "implementation": "Microsoft HSM Cryptographic Module (DRBG)",
+ "product_id": "19281",
+ "description": "The Microsoft HSM Cryptographic Module implements FIPS 140-3 approved cryptographic algorithms. The tested implementation is the HW DRBG and its underlying HW HMAC and HW SHA implementations.",
+ "version": "M1244265-004 B0",
+ "type": "FIRMWARE",
+ "first_validated": "2/5/2025",
+ "vendor": "Microsoft Corporation",
+ "vendor_website": "http://www.microsoft.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS 2022.06-SP2-6",
+   "details": [
+    "firmware: Synopsys VCS 2022.06-SP2-6"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 1024",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

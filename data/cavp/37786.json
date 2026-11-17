@@ -1,0 +1,102 @@
+{
+ "cavp_id": "37786",
+ "cavp_cert": "A5176",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37786",
+ "implementation": "DataLocker cryptolib",
+ "product_id": "17792",
+ "description": "Datalocker cryptographic algorithm library supporting the DL4FE and K350 line of products.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "3/14/2024",
+ "vendor": "DataLocker Inc.",
+ "vendor_website": "http://www.datalocker.com",
+ "oes": [
+  {
+   "name": "STMicroelectronics STM32L452ve",
+   "details": [
+    "Processor: STMicroelectronics STM32L452ve",
+    "  The STM32L452ve device is an ultra-low-power microcontroller based on the high-performance Arm® Cortex®-M4 32-bit RISC core."
+   ]
+  },
+  {
+   "name": "P6022y VB (NXP P60-2)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: testing candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-5)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 440-1024 Increment 8",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: responder"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 256-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000 Increment 1",
+    "    HMAC Algorithm: SHA2-256",
+    "    Password Length: 8-64 Increment 1",
+    "    Salt Length: 256",
+    "    Key Data Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

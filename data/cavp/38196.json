@@ -1,0 +1,49 @@
+{
+ "cavp_id": "38196",
+ "cavp_cert": "A5586",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38196",
+ "implementation": "OpenSSL 3 (64 bit) (SSH_CPACF)",
+ "product_id": "18239",
+ "description": "Red Hat Enterprise Linux 9 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The following cipher implementation is covered: SSH KDF using CPACF SHA implementation.",
+ "version": "3.0.7-cda111b5812c30d4",
+ "type": "SOFTWARE",
+ "first_validated": "8/13/2024",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 9 on PR/SM Driver Level 51 with Bundle Level H36 on IBM Z System Telum™",
+   "details": [
+    "software: PR/SM Driver Level 51",
+    "  IBM z16 Hypervisor",
+    "software: Red Hat Enterprise Linux 9",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "  swid: com.redhat.RHEL-9-s390x",
+    "processor: Telum™",
+    "  Processor Telum™ (processor family S390) from IBM",
+    "  family: S390",
+    "  manufacturer: IBM",
+    "  series: Z System"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

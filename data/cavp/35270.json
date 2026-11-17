@@ -1,0 +1,49 @@
+{
+ "cavp_id": "35270",
+ "cavp_cert": "A2659",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35270",
+ "implementation": "mToken CryptoID Core KAS Component",
+ "product_id": "15110",
+ "description": "The mToken CryptoID Core KAS components are based on the design of cryptography. Through the use of various algorithms approved by CMVP to achieve encryption and decryption, message authentication, key agreement and other functions to achieve the role of safe storage and protection of keys.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "6/22/2022",
+ "vendor": "Century Longmai Technology Co. Ltd",
+ "vendor_website": "http://www.longmai.net",
+ "oes": [
+  {
+   "name": "ARM Cortex M0",
+   "details": [
+    "processor: ARM Cortex M0"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-521",
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "            MAC Salting Methods: default",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "            MAC Salting Methods: default",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-512",
+    "            MAC Salting Methods: default",
+    "        Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

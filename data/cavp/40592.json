@@ -1,0 +1,67 @@
+{
+ "cavp_id": "40592",
+ "cavp_cert": "A7982",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40592",
+ "implementation": "Microsoft HSM Cryptographic Module (HSP_RTFW_HW_HKDF)",
+ "product_id": "20766",
+ "description": "The Microsoft HSM Cryptographic Module provides cryptographic services. The following cipher implementation is covered: HSP implementation of HKDF.",
+ "version": "HW: M1244265-004 B0; FW: 3.3.6.4-60108004fips",
+ "type": "FW Hybrid",
+ "first_validated": "1/28/2026",
+ "vendor": "Microsoft Corporation",
+ "vendor_website": "http://www.microsoft.com",
+ "oes": [
+  {
+   "name": "HSP Runtime FW image version 3.3.6.4-60108004fips on SiFive, Inc. E Series E21 on Microsoft Corporation M1244265-004 B0",
+   "details": [
+    "processor: E21",
+    "  Processor E21 (processor family RISC-V) from SiFive, Inc.",
+    "  family: RISC-V",
+    "  manufacturer: SiFive, Inc.",
+    "  series: E Series",
+    "firmware: HSP Runtime FW image version 3.3.6.4-60108004fips",
+    "processor: M1244265-004 B0",
+    "  Processor M1244265-004 B0 (processor family Microsoft) from Microsoft Corporation",
+    "  family: Microsoft",
+    "  manufacturer: Microsoft Corporation",
+    "  series: N/A"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8",
+    "HMAC Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8",
+    "HMAC Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8",
+    "HMAC Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

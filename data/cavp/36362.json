@@ -1,0 +1,49 @@
+{
+ "cavp_id": "36362",
+ "cavp_cert": "A3752",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36362",
+ "implementation": "SMAU Generic Crypto/Hash",
+ "product_id": "16259",
+ "description": "Generates HMAC SHA256 hash when a cryptographic key is passed into the function. HMAC-SHA256 is the algorithm used in SP 800-108 KDF KDA is the one-step key derivation function, using SHA256 , specified in SP 800-56Cr1",
+ "version": "BCM58202B0",
+ "type": "HARDWARE",
+ "first_validated": "6/1/2023",
+ "vendor": "Broadcom Corp.",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "BCM58202B0",
+   "details": [
+    "cpu: BCM58202B0"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA OneStepNoCounterKdf SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "    Key Length: 128",
+    "Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 256-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

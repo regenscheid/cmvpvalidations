@@ -1,0 +1,46 @@
+{
+ "cavp_id": "36633",
+ "cavp_cert": "A4023",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36633",
+ "implementation": "OpenSSL 3 (64 bit) (SSH_CPACF)",
+ "product_id": "16551",
+ "description": "RHEL 9 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The following cipher implementation is covered: SSH KDF using CPACF SHA implementation.",
+ "version": "3.0.1-3f45e68ee408cd9c",
+ "type": "SOFTWARE",
+ "first_validated": "6/21/2023",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "RHEL 9 on IBM Z System z16(TM)",
+   "details": [
+    "software: Red Hat Enterprise Linux 9",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "processor: Telum™",
+    "  Processor Telum™ (processor family S390) from IBM",
+    "  family: S390",
+    "  manufacturer: IBM",
+    "  series: Z System"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

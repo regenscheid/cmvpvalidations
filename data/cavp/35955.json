@@ -1,0 +1,75 @@
+{
+ "cavp_id": "35955",
+ "cavp_cert": "A3345",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35955",
+ "implementation": "JUNOS 22.3R1 MX-MACsec",
+ "product_id": "15839",
+ "description": "Juniper Networks MX Series is a robust portfolio of SDN enabled routing and switching platforms that provide industry leading system capacity, density, security and performance.",
+ "version": "Junos OS 22.3R1",
+ "type": "FIRMWARE",
+ "first_validated": "2/23/2023",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Intel Xeon E5-2608L",
+   "details": [
+    "processor: Intel Xeon E5-2608L",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 8, 64, 120",
+    "    Message Length: 0, 32768, 524288"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES256",
+    "    Supported Lengths: 128, 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

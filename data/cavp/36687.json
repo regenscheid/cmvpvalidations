@@ -1,0 +1,71 @@
+{
+ "cavp_id": "36687",
+ "cavp_cert": "A4077",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36687",
+ "implementation": "OpenSSL FIPS Provider for AlmaLinux 9 (AESASM_CLMULNI)",
+ "product_id": "16608",
+ "description": "AlmaLinux 9.2 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Assembler AES using GCM with CLMUL GHASH implementation.",
+ "version": "3.0.7-1d2bd88ee26b3c90",
+ "type": "SOFTWARE",
+ "first_validated": "6/26/2023",
+ "vendor": "Cloudlinux Inc., TuxCare division",
+ "vendor_website": "http://www.tuxcare.com",
+ "oes": [
+  {
+   "name": "AlmaLinux 9.2 on Intel Cascade Lake Xeon Platinum 8259CL",
+   "details": [
+    "software: AlmaLinux 9.2",
+    "  Linux distribution developed by Cloudlinux Inc., TuxCare division and targeted toward the commercial market.",
+    "processor: Xeon Platinum 8259CL",
+    "  Processor Xeon Platinum 8259CL (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

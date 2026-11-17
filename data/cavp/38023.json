@@ -1,0 +1,73 @@
+{
+ "cavp_id": "38023",
+ "cavp_cert": "A5413",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38023",
+ "implementation": "Apple corecrypto Module [Apple silicon, Kernel, Software, SL1] (asm_arm)",
+ "product_id": "18067",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks in the XNU kernel. The following cipher implementation is covered: Assembler block mode with ARM PAA AES implementation.",
+ "version": "14.1",
+ "type": "SOFTWARE",
+ "first_validated": "6/21/2024",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "visionOS 1 on Apple M Series (ARMv8.6-A) M2",
+   "details": [
+    "processor: M2",
+    "  Processor M2 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)",
+    "software: visionOS 1",
+    "  cpe: cpe:2.3:o:apple:visionOS:1:*:*:*:*:*:Apple_M_Series:*"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 65536",
+    "Tweak Mode: Hex",
+    "Data Unit Length Matches Payload Length"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

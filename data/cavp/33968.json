@@ -1,0 +1,59 @@
+{
+ "cavp_id": "33968",
+ "cavp_cert": "A1359",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33968",
+ "implementation": "EIP-366h crypto core",
+ "product_id": "13841",
+ "description": "This crypto core is used in Credo’s CMS42550, CMS50216 and CAC05502 devices which are wire-speed high performance PHY devices integrating IEEE 802.1AE, 802.1AEbn and 802.1AEbw MACsec with GCM–AES–128, GCM-AES-256, GCM–AES–XPN-128, GCM-AES-XPN-256 encryption/decryption functions for 400GbE, 200GbE, 100GbE, 50GbE, 40GbE, 25GbE, and 10GbE Ethernet applications.",
+ "version": "HW1.1.1",
+ "type": "HARDWARE",
+ "first_validated": "5/4/2021",
+ "vendor": "Credo Semiconductor, Inc.",
+ "vendor_website": "http://www.credosemi.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS version Q-2020.03-SP2-2_Full64",
+   "details": [
+    "Firmware: Synopsys VCS version Q-2020.03-SP2-2_Full64",
+    "  Simulator for chip design"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length:",
+    "AAD Length:"
+   ]
+  },
+  {
+   "algorithm": "AES-XPN",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length:",
+    "AAD Length:",
+    "Tag Length: 128",
+    "IV Generation: External",
+    "Salt Generation: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

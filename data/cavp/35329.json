@@ -1,0 +1,61 @@
+{
+ "cavp_id": "35329",
+ "cavp_cert": "A2718",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35329",
+ "implementation": "8887 AES Module",
+ "product_id": "15180",
+ "description": "The module is a firmware hybrid module that implements AES-CCM cryptography for a WLAN radio.",
+ "version": "2.1",
+ "type": "FIRMWARE",
+ "first_validated": "7/18/2022",
+ "vendor": "Zebra Technologies Corporation",
+ "vendor_website": "http://www.zebra.com",
+ "oes": [
+  {
+   "name": "QNX 7.0.4 on NPX i.MX6ULL",
+   "details": [
+    "processor: NXP i.MX 6ULL ARM Cortex-A7",
+    "  The i.MX 6ULL is a power efficient and cost-optimized applications processor family featuring an advanced implementation of a single Arm Cortex-A7 core.",
+    "software: QNX 7.0.4",
+    "  A real-time operating system and development tools for critical embedded systems."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8, 8, 256",
+    "AAD Length: 120-240 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 112-512 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

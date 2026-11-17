@@ -1,0 +1,142 @@
+{
+ "cavp_id": "36503",
+ "cavp_cert": "A3893",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36503",
+ "implementation": "Oracle Linux 8 Unbreakable Enterprise Kernel (UEK7) Cryptographic Module (RFC4106EIV_ARM64_CE_C)",
+ "product_id": "16424",
+ "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: RFC4106 GCM with external IV generation generic C non-optimized block mode using ARM Cryptographic Extension implementation.",
+ "version": "5.15.0-303.171.5.2.2.el8uek",
+ "type": "SOFTWARE",
+ "first_validated": "6/6/2023",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 8 on KVM on Oracle Linux 8 on Ampere Ampere(R) Altra(R) Ampere(R) Altra(R) Q80-30",
+   "details": [
+    "processor: Ampere(R) Altra(R) Q80-30",
+    "  Processor Ampere(R) Altra(R) Q80-30 (processor family ARM64) from Ampere",
+    "  family: ARM64",
+    "  manufacturer: Ampere",
+    "  series: Ampere(R) Altra(R)",
+    "software: KVM on Oracle Linux 8",
+    "  Kernel-based Virtual Machine running on Oracle Linux 8 is a free and open-source virtualization module in the Linux kernel that allows the kernel to function as a hypervisor.",
+    "software: Oracle Linux 8",
+    "  Linux distribution developed by Oracle"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 4096"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 160",
+    "    Nonce: 160",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0, 160",
+    "    Returned Bits: 320",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 160",
+    "    Nonce: 160",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0, 160",
+    "    Returned Bits: 320",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

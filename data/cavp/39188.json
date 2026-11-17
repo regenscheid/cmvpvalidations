@@ -1,0 +1,58 @@
+{
+ "cavp_id": "39188",
+ "cavp_cert": "A6578",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39188",
+ "implementation": "Cavium Octeon II (CN6880)",
+ "product_id": "19295",
+ "description": "Cavium Octeon II is a crypto processor in the Oracle Session Border Controller, that provides FIPS cryptographic algorithms for the services and protocols.",
+ "version": "CN6880",
+ "type": "HARDWARE",
+ "first_validated": "2/7/2025",
+ "vendor": "Oracle Communications",
+ "vendor_website": "https://www.oracle.com",
+ "oes": [
+  {
+   "name": "CN6880",
+   "details": [
+    "hardware: CN6880"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 80-160 Increment 8",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF SRTP",
+   "oe": 0,
+   "capabilities": [
+    "AES Key Length: 128",
+    "KDR Exponents: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

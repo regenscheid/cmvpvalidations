@@ -1,0 +1,60 @@
+{
+ "cavp_id": "39131",
+ "cavp_cert": "A6521",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39131",
+ "implementation": "TA101 ACE AES128/256-ECB/GCM/GMAC",
+ "product_id": "19237",
+ "description": "The TA101 device is a member of the Microchip CryptoAutomotive family. It is a cryptographic Co-processor with secure hardware-based key storage used for secure authentication, product validation and other root-of-trust based operations. It is typically a companion device to an MCU/MPU on the same board.",
+ "version": "1.0.0",
+ "type": "HARDWARE",
+ "first_validated": "1/21/2025",
+ "vendor": "Microchip Technology Inc",
+ "vendor_website": "http://www.microchip.com",
+ "oes": [
+  {
+   "name": "TA101 B9",
+   "details": [
+    "hardware: TA101 B9",
+    "  Hardware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-3984 Increment 8",
+    "AAD Length: 0-3984 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 8-7968 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

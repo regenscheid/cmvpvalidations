@@ -1,0 +1,126 @@
+{
+ "cavp_id": "38471",
+ "cavp_cert": "A5861",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38471",
+ "implementation": "Ethernet Firmware",
+ "product_id": "18471",
+ "description": "Firmware implementation of Approved security functions used in SBB Hybrid Cryptographic Module.",
+ "version": "1.00.01",
+ "type": "FIRMWARE",
+ "first_validated": "10/1/2024",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Intel® Ethernet Controller E610 with Xtensa Processor",
+   "details": [
+    "Processor: Intel® Ethernet Controller E610 with Xtensa Processor"
+   ]
+  },
+  {
+   "name": "Intel® Ethernet Controller E830 with Xtensa Processor",
+   "details": [
+    "Processor: Intel® Ethernet Controller E830 with Xtensa Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-384",
+    "Secret Generation Mode: extra bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-384",
+    "Secret Generation Mode: extra bits"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-384",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 1,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-384",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: responder"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-1024 Increment 8",
+    "HMAC Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-1024 Increment 8",
+    "HMAC Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 1,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-1024 Increment 8",
+    "HMAC Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 1,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-1024 Increment 8",
+    "HMAC Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

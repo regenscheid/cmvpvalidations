@@ -1,0 +1,634 @@
+{
+ "cert": 5588,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5588",
+ "module": "LS2 HSM Family module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "11/15/2031",
+ "level": "3",
+ "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "MultiChipEmbed",
+ "description": "The LS2 HSM Family module by Marvell is a high-performance purpose-built security solution for key management and crypto acceleration. The module provides a FIPS 140-3 overall Level 3 security solution. The module is deployed in a PCIe slot to provide crypto and protocol acceleration in a secure manner to the system host. It is typically deployed in a server or an appliance to provide crypto offload for the keys stored on the HSM. The module's functions are accessed over the PCIe interface via opcode defined by the module.",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "cSHAKE-128",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "cSHAKE-256",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "cavp_cert": "A6876",
+   "cavp_id": "39486"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-5)",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-5)",
+   "cavp_cert": "A6878",
+   "cavp_id": "39488"
+  },
+  {
+   "algorithm": "EDDSA KeyGen",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "EDDSA KeyVer",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "EDDSA KeyVer",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "EDDSA SigGen",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "EDDSA SigGen",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "EDDSA SigVer",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "EDDSA SigVer",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "KAS-IFC-SSC",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KDA HKDF Sp800-56Cr1",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KDA TwoStep Sp800-56Cr1",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KDF KMAC Sp800-108r1",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "KMAC-128",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "KMAC-256",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A6876",
+   "cavp_id": "39486"
+  },
+  {
+   "algorithm": "ML-DSA KeyGen",
+   "cavp_cert": "A6877",
+   "cavp_id": "39487"
+  },
+  {
+   "algorithm": "ML-DSA SigGen",
+   "cavp_cert": "A6877",
+   "cavp_id": "39487"
+  },
+  {
+   "algorithm": "ML-DSA SigVer",
+   "cavp_cert": "A6877",
+   "cavp_id": "39487"
+  },
+  {
+   "algorithm": "ML-KEM EncapDecap",
+   "cavp_cert": "A6877",
+   "cavp_id": "39487"
+  },
+  {
+   "algorithm": "ML-KEM KeyGen",
+   "cavp_cert": "A6877",
+   "cavp_id": "39487"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "RSA Decryption Primitive Sp800-56Br2",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-5)",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-5)",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "cavp_cert": "A6878",
+   "cavp_id": "39488"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A6878",
+   "cavp_id": "39488"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A6878",
+   "cavp_id": "39488"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHA3-384",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA3-384",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "cavp_cert": "A6877",
+   "cavp_id": "39487"
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "cavp_cert": "A6877",
+   "cavp_id": "39487"
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  },
+  {
+   "algorithm": "TDES-KW",
+   "cavp_cert": "A1948",
+   "cavp_id": "34557"
+  },
+  {
+   "algorithm": "TLS v1.2 KDF RFC7627",
+   "cavp_cert": "A6875",
+   "cavp_id": "39485"
+  }
+ ],
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_info": {
+  "name": "Marvell Semiconductor, Inc.",
+  "website": "http://www.marvell.com",
+  "address": [
+   "5488 Marvell Lane",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dhanalakshmi Saravanan"
+   },
+   {
+    "name": "Rajendar Kalwa"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5588.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/16/2026",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "11/16/2026",
+ "last_updated": "11/16/2026",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5588.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 5588,
+  "vendor": "Marvell Semiconductor, Inc.",
+  "module": "LS2 HSM Family module",
+  "type": "Hardware",
+  "validation_dates": [
+   "11/16/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

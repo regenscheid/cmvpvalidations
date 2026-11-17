@@ -1,0 +1,502 @@
+{
+ "cert": 5219,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5219",
+ "module": "NITROXIII CNN35XX-NFBE HSM Family",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "5/29/2029",
+ "level": "3",
+ "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. The module generates SSPs whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "MultiChipEmbed",
+ "description": "The NITROXIII CNN35XX-NFBE HSM Family module is a high-performance purpose-built security solution for crypto acceleration. The module provides a FIPS 140-3 overall Level 3 security solution. The module is deployed inside CryptoBind HSM and CryptoBind DSS to provide crypto and TLS 1.0/1.1/1.2 acceleration in a secure manner to the system host. It is typically deployed in a CryptoBind HSM & CryptoBind DSS network appliance to provide cryptographic operations. The module’s functions are accessed over the PCIe interface via an API defined by the module inside CryptoBind HSM and CryptoBind DSS.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "AES (Cert. #C819, key unwrapping provides 128, 192 or 256 bits of encryption strength. Per IG D.G.; Key unwrap only N3FIPS-OpenSSL-1.1.1-AES ECB mode: Decrypt; 128, 192 and 256 bits CBC mode: Decrypt: 128, 192 and 256 bits *Legacy use only);EC Diffie-Hellman with non-NIST recommended curves (Cert. #C829, provides 112, 128, 160, 192 or 256 bits of encryption strength. Per IG C.A. ; EC-DH Secp224k1(112 bits), Secp256K1 (128 bits) • Prime order curve, generated as per FIPS 186-4 Section 6.1.1 brainpoolP224r1(112 bits), brainpoolP256r1(128 bits), brainpoolP320r1(160 bits), brainpoolP384r1(192 bits), brainpoolP512r1(256 bits) FRP256v1 (128 bits) • Prime order curve, generated as per FIPS 186-4 Section 6.1.1 (SHA-1*, SHA2-224, SHA2-256, SHA2-384, SHA2-512));ECDSA with non-NIST recommended curves (Cert. #C825, provides 112, 128, 160, 192 or 256 bits of encryption strength. Per IG C.A. ; EC Key generation, sign, verify Secp224k1(112 bits), Secp256K1 (128 bits) • Prime order curve, generated as per FIPS 186-4 Section 6.1.1 brainpoolP224r1(112 bits), brainpoolP256r1(128 bits), brainpoolP320r1(160 bits), brainpoolP384r1(192 bits), brainpoolP512r1(256 bits) FRP256v1 (128 bits) • Prime order curve, generated as per FIPS 186-4 Section 6.1.1 (SHA-1*, SHA2-224, SHA2-256, SHA2-384, SHA2-512))",
+ "entropy": "ENT (P)",
+ "hardware_versions": "HW-1.0 (CNL3510-NFBE-G; CNL3510P-NFBE-G; CNL3530-NFBE-G; CNL3560-NFBE-G; CNL3560P-NFBE-G; CNN3510-NFBE-G; CNN3530-NFBE-G; CNN3560-NFBE-G; CNN3560P-NFBE-G); HW-2.0 (CNL3510-NFBE-2.0-G; CNL3510B-NFBE-2.0-G; CNL3510P-NFBE-2.0-G; CNL3510PB-NFBE-2.0-G; CNL3530-NFBE-2.0-G; CNL3530B-NFBE-2.0-G; CNL3560-NFBE-2.0-G; CNL3560B-NFBE-2.0-G; CNL3560P-NFBE-2.0-G; CNL3560PB-NFBE-2.0-G; CNN3505LP-NFBE-2.0-G; CNN3510-NFBE-2.0-G; CNN3510LP-NFBE-2.0-G; CNN3510LPB-NFBE-2.0-G; CNN3530-NFBE-2.0-G; CNN3560-NFBE-2.0-G; CNN3560P-NFBE-2.0-G); HW-3.0 (CNL3510-NFBE-3.0-G; CNL3510A-NFBE-3.0-G; CNL3510C-NFBE-3.0-G; CNL3510D-NFBE-3.0-G; CNL3510E-NFBE-3.0-G; CNL3510F-NFBE-3.0-G; CNL3510I-NFBE-3.0-G; CNL3510P-NFBE-3.0-G; CNL3530-NFBE-3.0-G; CNL3530A-NFBE-3.0-G; CNL3530B-NFBE-3.0-G; CNL3530C-NFBE-3.0-G; CNL3530D-NFBE-3.0-G; CNL3530E-NFBE-3.0-G; CNL3530F-NFBE-3.0-G; CNL3560-NFBE-3.0-G; CNL3560A-NFBE-3.0-G; CNL3560B-NFBE-3.0-G; CNL3560B-NFBE-3.0-G-FB; CNL3560C-NFBE-3.0-G; CNL3560D-NFBE-3.0-G; CNL3560E-NFBE-3.0-G; CNL3560F-NFBE-3.0-G; CNL3560P-NFBE-3.0-G; CNN3505LP-NFBE-3.0-G; CNN3505LPA-NFBE-3.0-G; CNN3505LPC-NFBE-3.0-G; CNN3505LPD-NFBE-3.0-G; CNN3505LPE-NFBE-3.0-G; CNN3505LPF-NFBE-3.0-G; CNN3510-NFBE-3.0-G; CNN3510A-NFBE-3.0-G; CNN3510C-NFBE-3.0-G; CNN3510D-NFBE-3.0-G; CNN3510E-NFBE-3.0-G; CNN3510F-NFBE-3.0-G; CNN3510LP-NFBE-3.0-G; CNN3510LPA-NFBE-3.0-G; CNN3510LPB-NFBE-3.0-G; CNN3510LPC-NFBE-3.0-G; CNN3510LPD-NFBE-3.0-G; CNN3510LPE-NFBE-3.0-G; CNN3510LPF-NFBE-3.0-G; CNN3530-NFBE-3.0-G; CNN3530A-NFBE-3.0-G; CNN3530C-NFBE-3.0-G; CNN3530D-NFBE-3.0-G; CNN3530E-NFBE-3.0-G; CNN3530F-NFBE-3.0-G; CNN3560-NFBE-3.0-G; CNN3560A-NFBE-3.0-G; CNN3560C-NFBE-3.0-G; CNN3560D-NFBE-3.0-G; CNN3560E-NFBE-3.0-G; CNN3560F-NFBE-3.0-G; CNN3560P-NFBE-3.0-G)",
+ "firmware_versions": "CNN35XX-NFBE-FW-2.09-0702, CNN35XX-NFBE-SMW-2.09-0702, CNN35XX-UBOOT-4.03-03",
+ "product_url": "http://www.jisasoftech.com/liquidsecurity-hsm-adapter/",
+ "non_approved_algorithms": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "C819",
+   "cavp_id": "31215"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A1190",
+   "cavp_id": "33799"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A1195",
+   "cavp_id": "33804"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "C819",
+   "cavp_id": "31215"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A1203",
+   "cavp_id": "33812"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "C1263",
+   "cavp_id": "31669"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "C1263",
+   "cavp_id": "31669"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "C821",
+   "cavp_id": "31217"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C823",
+   "cavp_id": "31219"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "C823",
+   "cavp_id": "31219"
+  },
+  {
+   "algorithm": "DSA PQGVer (FIPS186-4)",
+   "cavp_cert": "C823",
+   "cavp_id": "31219"
+  },
+  {
+   "algorithm": "DSA SigGen (FIPS186-4)",
+   "cavp_cert": "C823",
+   "cavp_id": "31219"
+  },
+  {
+   "algorithm": "DSA SigVer (FIPS186-4)",
+   "cavp_cert": "C823",
+   "cavp_id": "31219"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C825",
+   "cavp_id": "31221"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "C825",
+   "cavp_id": "31221"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "C825",
+   "cavp_id": "31221"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "C825",
+   "cavp_id": "31221"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "C829",
+   "cavp_id": "31225"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "C825",
+   "cavp_id": "31221"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "C829",
+   "cavp_id": "31225"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "C830",
+   "cavp_id": "31226"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "C822",
+   "cavp_id": "31218"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "C822",
+   "cavp_id": "31218"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "C822",
+   "cavp_id": "31218"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "C822",
+   "cavp_id": "31218"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "C822",
+   "cavp_id": "31218"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "cavp_cert": "C829",
+   "cavp_id": "31225"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A1219",
+   "cavp_id": "33828"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A1220",
+   "cavp_id": "33829"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A2161",
+   "cavp_id": "34770"
+  },
+  {
+   "algorithm": "KAS-IFC-SSC",
+   "cavp_cert": "A1193",
+   "cavp_id": "33802"
+  },
+  {
+   "algorithm": "KDA HKDF Sp800-56Cr1",
+   "cavp_cert": "A1192",
+   "cavp_id": "33801"
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "cavp_cert": "A1192",
+   "cavp_id": "33801"
+  },
+  {
+   "algorithm": "KDA TwoStep Sp800-56Cr1",
+   "cavp_cert": "A1192",
+   "cavp_id": "33801"
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "cavp_cert": "C825",
+   "cavp_id": "31221"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A1191",
+   "cavp_id": "33800"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "C826",
+   "cavp_id": "31222"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "KDF TLS",
+   "cavp_cert": "C840",
+   "cavp_id": "31236"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A1194",
+   "cavp_id": "33803"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1196",
+   "cavp_id": "33805"
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "cavp_cert": "A1200",
+   "cavp_id": "33809"
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A1199",
+   "cavp_id": "33808"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C824",
+   "cavp_id": "31220"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "cavp_cert": "C824",
+   "cavp_id": "31220"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A1199",
+   "cavp_id": "33808"
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "cavp_cert": "C839",
+   "cavp_id": "31235"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A1199",
+   "cavp_id": "33808"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A1201",
+   "cavp_id": "33810"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "C824",
+   "cavp_id": "31220"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "C820",
+   "cavp_id": "31216"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "SHS 1780",
+   "cavp_id": "10956"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "C820",
+   "cavp_id": "31216"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "SHS 1780",
+   "cavp_id": "10956"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A1202",
+   "cavp_id": "33811"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "C820",
+   "cavp_id": "31216"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "SHS 1780",
+   "cavp_id": "10956"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "C820",
+   "cavp_id": "31216"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "SHS 1780",
+   "cavp_id": "10956"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "C820",
+   "cavp_id": "31216"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "SHS 1780",
+   "cavp_id": "10956"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "A1197",
+   "cavp_id": "33806"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "A1197",
+   "cavp_id": "33806"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "A1197",
+   "cavp_id": "33806"
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "cavp_cert": "A1197",
+   "cavp_id": "33806"
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "cavp_cert": "A1197",
+   "cavp_id": "33806"
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "cavp_cert": "TDES 1311",
+   "cavp_id": "29862"
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "cavp_cert": "C1169",
+   "cavp_id": "31568"
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "cavp_cert": "TDES 1311",
+   "cavp_id": "29862"
+  },
+  {
+   "algorithm": "TDES-KW",
+   "cavp_cert": "C1263",
+   "cavp_id": "31669"
+  }
+ ],
+ "vendor": "JISA Softech Private Limited",
+ "vendor_info": {
+  "name": "JISA Softech Private Limited",
+  "website": "http://www.jisasoftech.com ",
+  "address": [
+   "Amar Business Zone",
+   "A604, Swati Park",
+   "Veerbhadranagar Baner",
+   "Pune, Maharashtra 411045",
+   "India"
+  ],
+  "contacts": [
+   {
+    "name": "Rumit Shah"
+   },
+   {
+    "name": "Tanmay Khare"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5219.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202026_020426_1121-signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/31/2026",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "3/31/2026",
+ "last_updated": "3/31/2026",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5219.pdf",
+ "other_fields": {},
+ "other_text": "AES (Cert. #C819, key unwrapping provides 128, 192 or 256 bits of encryption strength. Per IG D.G.; Key unwrap only N3FIPS-OpenSSL-1.1.1-AES ECB mode: Decrypt; 128, 192 and 256 bits CBC mode: Decrypt: 128, 192 and 256 bits *Legacy use only);EC Diffie-Hellman with non-NIST recommended curves (Cert. #C829, provides 112, 128, 160, 192 or 256 bits of encryption strength. Per IG C.A. ; EC-DH Secp224k1(112 bits), Secp256K1 (128 bits) • Prime order curve, generated as per FIPS 186-4 Section 6.1.1 brainpoolP224r1(112 bits), brainpoolP256r1(128 bits), brainpoolP320r1(160 bits), brainpoolP384r1(192 bits), brainpoolP512r1(256 bits) FRP256v1 (128 bits) • Prime order curve, generated as per FIPS 186-4 Section 6.1.1 (SHA-1*, SHA2-224, SHA2-256, SHA2-384, SHA2-512));ECDSA with non-NIST recommended curves (Cert. #C825, provides 112, 128, 160, 192 or 256 bits of encryption strength. Per IG C.A. ; EC Key generation, sign, verify Secp224k1(112 bits), Secp256K1 (128 bits) • Prime order curve, generated as per FIPS 186-4 Section 6.1.1 brainpoolP224r1(112 bits), brainpoolP256r1(128 bits), brainpoolP320r1(160 bits), brainpoolP384r1(192 bits), brainpoolP512r1(256 bits) FRP256v1 (128 bits) • Prime order curve, generated as per FIPS 186-4 Section 6.1.1 (SHA-1*, SHA2-224, SHA2-256, SHA2-384, SHA2-512))",
+ "sparse": false,
+ "list": {
+  "cert": 5219,
+  "vendor": "JISA Softech Private Limited",
+  "module": "NITROXIII CNN35XX-NFBE HSM Family",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/31/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

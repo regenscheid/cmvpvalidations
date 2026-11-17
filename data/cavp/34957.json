@@ -1,0 +1,48 @@
+{
+ "cavp_id": "34957",
+ "cavp_cert": "A2348",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34957",
+ "implementation": "Microsoft Pluton Security Processor ROM",
+ "product_id": "14848",
+ "description": "This Microsoft Pluton Security Processor ROM module is a sub-chip cryptographic subsystem in the AMD Ryzen 6000 Series System on a Chip (SOC) which implements FIPS 140-3 Approved cryptographic algorithms.",
+ "version": "Ryzen 6000 series",
+ "type": "FIRMWARE",
+ "first_validated": "2/17/2022",
+ "vendor": "Microsoft Corporation",
+ "vendor_website": "http://www.microsoft.com",
+ "oes": [
+  {
+   "name": "Siemens Questa Advanced Simulator",
+   "details": [
+    "firmware: Siemens Questa Advanced Simulator"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

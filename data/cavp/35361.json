@@ -1,0 +1,180 @@
+{
+ "cavp_id": "35361",
+ "cavp_cert": "A2750",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35361",
+ "implementation": "RigSec HSM AS578 Cryptographic Library",
+ "product_id": "20636",
+ "description": "The RigSec HSM AS578 Cryptographic Library serves as the algorithm library for the AS578 security chip in RigSec's HSMs. It includes FIPS-approved functions for key generation, symmetric encryption/decryption, hashing, HMAC, digital signatures, and key derivation.",
+ "version": "1.4.0",
+ "type": "FIRMWARE",
+ "first_validated": "8/8/2022",
+ "vendor": "RigSec Technology Limited",
+ "vendor_website": "https://rigsec.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-M",
+   "details": [
+    "cpu: ARM Cortex-M"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256-512 Increment 8",
+    "    Nonce: 128-256 Increment 8",
+    "    Personalization String Length: 0-256 Increment 8",
+    "    Additional Input: 0-256 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 128-512 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 128-512 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen",
+    "Modulo: 2048",
+    "Key Generation Methods: rsakpg1-crt",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-256",
+    "      Associated Data Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 512",
+    "  KTS-OAEP-Party_V-confirmation:",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-256",
+    "      Associated Data Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "      Associated Data Encoding: concatenation",
+    "    KAS Role: responder",
+    "    Key Length: 512",
+    "    Key Confirmation MAC Methods:",
+    "      HMAC-SHA2-256:",
+    "        Key Length: 256",
+    "        MAC Length: 256"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: Chinese Remainder Theorem"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 128-1024 Increment 8, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

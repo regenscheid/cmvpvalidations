@@ -1,0 +1,57 @@
+{
+ "cavp_id": "37855",
+ "cavp_cert": "A5245",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37855",
+ "implementation": "Intel DRNG (DRNG)",
+ "product_id": "17883",
+ "description": "SPR-IP-DRNG3.0_PIC9 Configuration for Sapphire Rapids procSeries",
+ "version": "SPR-IP-DRNG3.0_PIC9",
+ "type": "HARDWARE",
+ "first_validated": "4/10/2024",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Intel Corporation Intel(R) Xeon(R) SAPPHIRE RAPIDS-MCC FCLGA4677 Intel(R) Xeon(R) Silver 4410Y Processor",
+   "details": [
+    "hardware: Intel(R) Xeon(R) Silver 4410Y Processor",
+    "  Hardware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0, 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0, 0",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

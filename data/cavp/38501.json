@@ -1,0 +1,392 @@
+{
+ "cavp_id": "38501",
+ "cavp_cert": "A5891",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38501",
+ "implementation": "Yubico Common Cryptographic Library",
+ "product_id": "18578",
+ "description": "Common FIPS algorithm library for Yubico SLE78-based products",
+ "version": "2.1",
+ "type": "FIRMWARE",
+ "first_validated": "10/3/2024",
+ "vendor": "Yubico, Inc.",
+ "vendor_website": "http://www.yubico.com",
+ "oes": [
+  {
+   "name": "SLE78",
+   "details": [
+    "processor: SLE78"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-8192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128",
+    "    MAC Length: 8-128 Increment 8",
+    "    Message Length: 0-24000 Increment 8",
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 192",
+    "    MAC Length: 8-128 Increment 8",
+    "    Message Length: 0-24000 Increment 8",
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 256",
+    "    MAC Length: 8-128 Increment 8",
+    "    Message Length: 0-24000 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 816",
+    "    Nonce: 400",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: testing candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "Component"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "EDDSA KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 112-512 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 112-512 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 112-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 112-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC CDH-Component SP800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation, Key Pair Generation, Partial Public Key Validation",
+    "Curve: P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-224, P-256, P-384, P-521",
+    "Scheme:",
+    "  fullUnified:",
+    "    KAS Role: initiator, responder",
+    "  onePassDh:",
+    "    KAS Role: initiator, responder",
+    "  onePassUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 256",
+    "Shared Secret Length: 256",
+    "HMAC Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "oe": 0,
+   "capabilities": [
+    "Hash Algorithm: SHA2-256",
+    "Field Size: 256",
+    "Shared Info Length: 24, 24",
+    "Key Data Length: 512, 640"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256",
+    "    Supported Lengths: 8-2040 Increment 8",
+    "    Fixed Data Order: In the Middle of Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen, partialVal",
+    "Modulo: 2048, 3072, 4096",
+    "Key Generation Methods: rsakpg1-crt",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator, responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: uPartyInfo||vPartyInfo",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 1024"
+   ]
+  },
+  {
+   "algorithm": "RSA Decryption Primitive Sp800-56Br2",
+   "oe": 0,
+   "capabilities": [
+    "Modulo: 2048, 3072, 4096",
+    "Key Format: Chinese Remainder Theorem (CRT)",
+    "Public Exponent Mode: fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: probable",
+    "      Properties:",
+    "        Modulo: 4096",
+    "        p mod 8: 0",
+    "        Primality Tests: 2powSecStr",
+    "        q mod 8: 0",
+    "  Capabilities:",
+    "    Key Generation Mode: probable",
+    "      Properties:",
+    "        Modulo: 3072",
+    "        p mod 8: 0",
+    "        Primality Tests: 2powSecStr",
+    "        q mod 8: 0",
+    "  Capabilities:",
+    "    Key Generation Mode: probable",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        p mod 8: 0",
+    "        Primality Tests: 2powSecStr",
+    "        q mod 8: 0",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: crt",
+    "Public Exponent Mode: fixed"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "        Modulo: 3072",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "        Modulo: 2048",
+    "    Signature Type: pkcs1v1.5"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Modulo: 2048, 3072, 4096",
+    "Private Key Format: crt",
+    "Public Exponent Mode: fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "Fixed Public Exponent: 010001",
+    "Public Exponent Mode: fixed"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

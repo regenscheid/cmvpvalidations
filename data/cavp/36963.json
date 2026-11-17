@@ -1,0 +1,47 @@
+{
+ "cavp_id": "36963",
+ "cavp_cert": "A4353",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36963",
+ "implementation": "Deneb AES-GCM",
+ "product_id": "16900",
+ "description": "The cryptographic algorithm is implemented for Samsung Deneb project.",
+ "version": "SS0200",
+ "type": "FIRMWARE",
+ "first_validated": "8/24/2023",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "ARM Core M35P",
+   "details": [
+    "processor: ARM Core M35P",
+    "  Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128-65536 Increment 128",
+    "AAD Length: 0-128 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

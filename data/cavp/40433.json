@@ -1,0 +1,52 @@
+{
+ "cavp_id": "40433",
+ "cavp_cert": "A7823",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40433",
+ "implementation": "HiCOS PKI Applet V4 on IDEMIA ID-One Cosmo X",
+ "product_id": "20611",
+ "description": "HiCOS PKI Applet KAS-ECC Implementation includes key agreement scheme with ECDH + SP 800 56C KDF with Ephemeral Unified Model.",
+ "version": "04 00 02 0E",
+ "type": "HARDWARE",
+ "first_validated": "12/19/2025",
+ "vendor": "Chunghwa Telecom Co., Ltd. Telecommunication Laboratories",
+ "vendor_website": "http://www.chttl.com.tw",
+ "oes": [
+  {
+   "name": "Idemia Cosmo X FIPS",
+   "details": [
+    "processor: Cosmo X FIPS",
+    "  Processor Cosmo X FIPS (processor family ID-One Cosmo) from Idemia",
+    "  family: ID-One Cosmo",
+    "  manufacturer: Idemia"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-384",
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Responder",
+    "    KDF Methods:",
+    "      twoStepKdf:",
+    "          Capabilities:",
+    "            MAC Salting Methods: default",
+    "            Supported Lengths: 256",
+    "            Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "            Fixed Info Encoding: Concatenation",
+    "            KDF Mode: Feedback",
+    "            MAC Modes: HMAC-SHA2-256",
+    "            Fixed Data Order: After Fixed Data",
+    "            Counter Lengths: 8",
+    "            The KDF supports an empty IV",
+    "            The KDF requires an empty IV",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

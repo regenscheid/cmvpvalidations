@@ -1,0 +1,182 @@
+{
+ "cert": 4930,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4930",
+ "module": "Seagate Secure® Self-Encrypting Drive",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "12/19/2029",
+ "level": "2",
+ "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The Seagate Secure® Self-Encrypting Drive is embodied in Seagate Enterprise Exos™ Enterprise SED model devices. These products meet the performance requirements of the most demanding Enterprise applications. The Cryptographic Module (CM) provides a wide range of cryptographic services including: • HW based data encryption (AES-XTS) • Instantaneous user data disposal with cryptographic erase • Independently controlled and protected user data LBA bands • Authenticated FW download. The services are provided through industry-standard TCG Enterprise SSC SATA and SCSI protocols.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "entropy": "ENT (P)",
+ "hardware_versions": "ST18000NM007J[1][6], ST16000NM007J[1][6][11][15][22][24], ST14000NM007J[1][6], ST12000NM007J[1][6][11][22][23], ST10000NM016G[1][6], ST10000NM022B[2][5][29][30], ST10000NM011B[2][18], ST8000NM022B[2][4][5][7][8][13][14][15][20][31][32], ST8000NM011B[2][18][19], ST6000NM024B[2][5][7][8][31][32], ST6000NM013B[2][18], ST4000NM013B[2][9][10][12][16][21][33][34], ST4000NM029B[2][4][5], ST4000NM017B[2][18][19], ST10000NM021B[3][25], ST8000NM021B[3][17][25], ST6000NM023B[3][25], ST4000NM012B[3][17][26], ST4000NM028B[3][25], ST18000NM002D[27][35], ST20000NM005D[27][28][35][36]",
+ "firmware_versions": "EP7U[1], EF34[2], SZFP[3], 3P01[4], EF04[5], EF07[6], FCE7[7], FCL7[8], FKE8[9], FKL8[10], FQD4[11], FRB5[12], FRD6[13], GCN6[14], HPD5[15], HPD6[16], HPG4[17], KF04[18], L708[19], LT0E[20], NF04[21], P705[22], PJ07[23], PSFG[24], SF04[25], TF04[26], FSE1[27], FSK1[28], NA03[29], NE05[30], FCE8[31], FCL8[32], FKE9[33], FKL9[34], EF06[35], G706[36]",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A1095",
+   "cavp_id": "33704"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A1081",
+   "cavp_id": "33690"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A3515",
+   "cavp_id": "36125"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A1080",
+   "cavp_id": "33689"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A1094",
+   "cavp_id": "33703"
+  },
+  {
+   "algorithm": "AES-XTS",
+   "cavp_cert": "A1090",
+   "cavp_id": "33699"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A1082",
+   "cavp_id": "33691"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A1083",
+   "cavp_id": "33692"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A1091",
+   "cavp_id": "33700"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A1084",
+   "cavp_id": "33693"
+  },
+  {
+   "algorithm": "KDF TLS",
+   "cavp_cert": "A1089",
+   "cavp_id": "33698"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1085",
+   "cavp_id": "33694"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A1093",
+   "cavp_id": "33702"
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "cavp_cert": "A1087",
+   "cavp_id": "33696"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A1088",
+   "cavp_id": "33697"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A1092",
+   "cavp_id": "33701"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A1088",
+   "cavp_id": "33697"
+  }
+ ],
+ "vendor": "Seagate Technology, LLC",
+ "vendor_info": {
+  "name": "Seagate Technology, LLC",
+  "website": "http://www.seagate.com",
+  "address": [
+   "389 Disc Drive",
+   "Longmont, CO 80503",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Seagate Secure FIPS Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4930.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202024_060125_0402.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/20/2024",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "10/21/2025",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/24/2026",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "9/18/2026",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "12/20/2024",
+ "last_updated": "9/18/2026",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4930.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4930,
+  "vendor": "Seagate Technology, LLC",
+  "module": "Seagate Secure® Self-Encrypting Drive",
+  "type": "Hardware",
+  "validation_dates": [
+   "12/20/2024"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

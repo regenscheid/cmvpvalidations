@@ -1,0 +1,53 @@
+{
+ "cavp_id": "38088",
+ "cavp_cert": "A5478",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38088",
+ "implementation": "Infinidat Cryptographic Module (libssl)",
+ "product_id": "18140",
+ "description": "The Infinidat Cryptographic Module offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data. This library provides the KDF for TLSv1.3.",
+ "version": "1.1.1",
+ "type": "SOFTWARE",
+ "first_validated": "7/31/2024",
+ "vendor": "Infinidat, Ltd.",
+ "vendor_website": "http://www.infinidat.com",
+ "oes": [
+  {
+   "name": "InfuzeOS 8 on AMD EPYC (Zen 4) with PAA",
+   "details": [
+    "processor: AMD EPYC (Zen 4)",
+    "  family: EPYC",
+    "  series: Zen 4",
+    "os: InfuzeOS 8"
+   ]
+  },
+  {
+   "name": "InfuzeOS 8 on AMD EPYC (Zen 4) without PAA",
+   "details": [
+    "processor: AMD EPYC (Zen 4)",
+    "  family: EPYC",
+    "  manufacturer: AMD",
+    "  series: Zen 4",
+    "os: InfuzeOS 8"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 0,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 1,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,64 @@
+{
+ "cavp_id": "40315",
+ "cavp_cert": "A7705",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40315",
+ "implementation": "HW-SECA",
+ "product_id": "20485",
+ "description": "Hardware implementation of cryptographic algorithms in Seagate's Self-Encrypting Drives (SEDs).",
+ "version": "1.0",
+ "type": "HARDWARE",
+ "first_validated": "11/21/2025",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com/",
+ "oes": [
+  {
+   "name": "Mynaplus ASIC",
+   "details": [
+    "Hardware: Mynaplus ASIC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 128, 256, 520"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "        Modulo: 2048",
+    "    Signature Type: pkcs1v1.5"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "        Modulo: 2048",
+    "    Signature Type: pkcs1v1.5",
+    "Public Exponent Mode: random"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

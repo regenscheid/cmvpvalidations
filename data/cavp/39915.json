@@ -1,0 +1,76 @@
+{
+ "cavp_id": "39915",
+ "cavp_cert": "A7305",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39915",
+ "implementation": "Junos OS 23.4R2 - MACsec",
+ "product_id": "20077",
+ "description": "The Junos 23.4R2 - MACsec is a firmware library that provides cryptographic capabilities to Junos® OS 23.4R2.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "8/7/2025",
+ "vendor": "HPE Juniper Networking",
+ "vendor_website": "https://www.juniper.net",
+ "oes": [
+  {
+   "name": "Intel(R) Xeon E5-2618L",
+   "details": [
+    "processor: Intel(R) Xeon E5-2618L",
+    "  family: x86_64",
+    "  series: Haswell"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 64, 72, 80, 88, 96, 104, 112, 120, 128",
+    "    Message Length: 0, 32768, 32776, 524280, 524288"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES256",
+    "    Supported Lengths: 128, 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

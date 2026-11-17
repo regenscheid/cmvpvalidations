@@ -1,0 +1,54 @@
+{
+ "cavp_id": "36861",
+ "cavp_cert": "A4251",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36861",
+ "implementation": "Junos OS Evolved OpenSSL Cryptographic Module (FFC_DH)",
+ "product_id": "16775",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Generic C non-optimized DH implementation.",
+ "version": "3.0.8",
+ "type": "SOFTWARE",
+ "first_validated": "7/24/2023",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Junos OS Evolved version 22.4 on Intel Xeon D-2163IT",
+   "details": [
+    "processor: D-2163IT",
+    "  Processor D-2163IT (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Xeon",
+    "software: Junos OS Evolved version 22.4",
+    "  Junos OS Evolved version 22.4, a Linux distribution developed by Juniper Networks"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

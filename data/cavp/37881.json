@@ -1,0 +1,83 @@
+{
+ "cavp_id": "37881",
+ "cavp_cert": "A5271",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37881",
+ "implementation": "Quadient PSD RSA Implementation",
+ "product_id": "17922",
+ "description": "Quadient Postal Security Device (PSD) RSA Implementation",
+ "version": "A0165112A",
+ "type": "FIRMWARE",
+ "first_validated": "4/24/2024",
+ "vendor": "Quadient Technologies France",
+ "vendor_website": "http://www.quadient.com",
+ "oes": [
+  {
+   "name": "Quadient Postal Security Device (PSD) - Alcor",
+   "details": [
+    "Processor: NXP i.MX RT1050 Crossover MCU",
+    "  Quadient Postal Security Device (PSD) CPU"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: probable",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        p mod 8: 0",
+    "        Primality Tests: 2pow100",
+    "        q mod 8: 0",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: standard",
+    "Public Exponent Mode: fixed"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "        Modulo: 2048",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "        Mask Function: MGF1",
+    "        Modulo: 2048",
+    "    Signature Type: pss"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "        Modulo: 2048",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "        Mask Function: MGF1",
+    "        Modulo: 2048",
+    "    Signature Type: pss",
+    "Fixed Public Exponent: 010001",
+    "Public Exponent Mode: fixed"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

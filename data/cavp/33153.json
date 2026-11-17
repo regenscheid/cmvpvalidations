@@ -1,0 +1,40 @@
+{
+ "cavp_id": "33153",
+ "cavp_cert": "A670",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33153",
+ "implementation": "SoC8 Cryptographic Algorithm Library",
+ "product_id": "13053",
+ "description": "The SoC8 ASIC supports AES 256 encryption and decryption in ECB and XTS mode on Western Digital’s Self-Encrypting Drives (SEDs).",
+ "version": "Version SVN: 89478",
+ "type": "FIRMWARE",
+ "first_validated": "9/4/2020",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.WDC.com",
+ "oes": [
+  {
+   "name": "Simulator: Mentor Graphics Questasim 10.1d",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 4096-32768 Increment 128",
+    "Tweak Mode: Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,47 @@
+{
+ "cavp_id": "35759",
+ "cavp_cert": "A3149",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35759",
+ "implementation": "OpenSSL (64 bit) (SSH_CPACF)",
+ "product_id": "15637",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: SSH KDF using CPACF SHA implementation.",
+ "version": "4.4",
+ "type": "SOFTWARE",
+ "first_validated": "12/13/2022",
+ "vendor": "SUSE LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on IBM Z System z15(TM)",
+   "details": [
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15",
+    "processor: z15(TM)",
+    "  Processor z15(TM) (processor family S390) from IBM",
+    "  family: S390",
+    "  manufacturer: IBM",
+    "  series: Z System"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

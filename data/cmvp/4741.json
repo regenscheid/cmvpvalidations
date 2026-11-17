@@ -1,0 +1,491 @@
+{
+ "cert": 4741,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4741",
+ "module": "Palo Alto Networks Core Crypto Module",
+ "standard": "140-3",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "Interim validation. When installed, initialized and configured as specified in Section 11 of the Security Policy. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical security: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Palo Alto Networks Core Crypto Module is a software cryptographic module that can run on various environments.",
+ "tested_configurations": [
+  "Panorama 10.2 running on a M-200 with an Intel Xeon E5-2620 V4 [1]",
+  "Panorama 10.2 running on a M-300 with an Intel Xeon 4310 [1]",
+  "Panorama 10.2 running on a M-600 with an Intel Xeon E5-2680 V4 [1]",
+  "Panorama 10.2 running on a M-700 with an Intel Xeon 4316 [1]",
+  "Panorama 10.2 with KVM on Ubuntu 20.04 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 10.2 with Microsoft Hyper-V Server 2019 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 10.2 with VMware ESXi v7.0 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.0 running on a M-200 with an Intel Xeon E5-2620 V4 [1]",
+  "Panorama 11.0 running on a M-300 with an Intel Xeon 4310 [1]",
+  "Panorama 11.0 running on a M-600 with an Intel Xeon E5-2680 V4 [1]",
+  "Panorama 11.0 running on a M-700 with an Intel Xeon 4316 [1]",
+  "Panorama 11.0 with KVM on Ubuntu 20.04 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.0 with Microsoft Hyper-V Server 2019 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.0 with VMware ESXi v7.0 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.1 running on a M-200 with an Intel Xeon E5-2620 V4 [1]",
+  "Panorama 11.1 running on a M-300 with an Intel Xeon 4310 [1]",
+  "Panorama 11.1 running on a M-600 with an Intel Xeon E5-2680 V4 [1]",
+  "Panorama 11.1 running on a M-700 with an Intel Xeon 4316 [1]",
+  "Panorama 11.1 with KVM on Ubuntu 20.04 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.1 with Microsoft Hyper-V Server 2019 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.1 with VMware ESXi v7.0 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.2 running on a M-200 with an Intel Xeon E5-2620 V4 [1]",
+  "Panorama 11.2 running on a M-300 with an Intel Xeon 4310 [1]",
+  "Panorama 11.2 running on a M-600 with an Intel Xeon E5-2680 V4 [1]",
+  "Panorama 11.2 running on a M-700 with an Intel Xeon 4316 [1]",
+  "Panorama 11.2 with KVM on Ubuntu 20.04 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.2 with Microsoft Hyper-V Server 2019 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "Panorama 11.2 with VMware ESXi v7.0 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 10.2 running on a PA-220 with an Marvell CN7130 [1]",
+  "PAN-OS 10.2 running on a PA-220R with an Marvell CN7130 [1]",
+  "PAN-OS 10.2 running on a PA-3220 with an Intel Pentium D1517 / CN7350 [1]",
+  "PAN-OS 10.2 running on a PA-3250 with an Intel Pentium D1517 / CN7350 [1]",
+  "PAN-OS 10.2 running on a PA-3260 with an Intel Pentium D1517 / CN7360 [1]",
+  "PAN-OS 10.2 running on a PA-3410 with an Intel Atom P5332 [1]",
+  "PAN-OS 10.2 running on a PA-3420 with an Intel Atom P5342 [1]",
+  "PAN-OS 10.2 running on a PA-3430 with an Intel Atom P5352 [1]",
+  "PAN-OS 10.2 running on a PA-3440 with an Intel Atom P5362 [1]",
+  "PAN-OS 10.2 running on a PA-410 with an Intel Denverton C3436L [1]",
+  "PAN-OS 10.2 running on a PA-440 with an Intel Denverton C3558R [1]",
+  "PAN-OS 10.2 running on a PA-450 with an Intel Denverton C3758R [1]",
+  "PAN-OS 10.2 running on a PA-460 with an Intel Denverton C3758R [1]",
+  "PAN-OS 10.2 running on a PA-5220 with an Intel Xeon D-1548 / CN7885 [1]",
+  "PAN-OS 10.2 running on a PA-5250 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 10.2 running on a PA-5260 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 10.2 running on a PA-5280 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 10.2 running on a PA-5410 with an AMD EPYC 7352 [2]",
+  "PAN-OS 10.2 running on a PA-5420 with an AMD EPYC 7452 [2]",
+  "PAN-OS 10.2 running on a PA-5430 with an AMD EPYC 7642 [2]",
+  "PAN-OS 10.2 running on a PA-5450 with an Intel Xeon D-2187NT [1]",
+  "PAN-OS 10.2 running on a PA-7050 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 10.2 running on a PA-7080 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 10.2 running on a PA-820 with an Marvell CN7240 [1]",
+  "PAN-OS 10.2 running on a PA-850 with an Marvell CN7240 [1]",
+  "PAN-OS 10.2 with KVM on Ubuntu 20.04 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 10.2 with Microsoft Hyper-V Server 2019 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 10.2 with VMware ESXi v7.0 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.0 running on a PA-1410 with an Intel Atom C5325 [1]",
+  "PAN-OS 11.0 running on a PA-1420 with an Intel Atom C5325C1 [1]",
+  "PAN-OS 11.0 running on a PA-3220 with an Intel Pentium D1517 / CN7350 [1]",
+  "PAN-OS 11.0 running on a PA-3250 with an Intel Pentium D1517 / CN7350 [1]",
+  "PAN-OS 11.0 running on a PA-3260 with an Intel Pentium D1517 / CN7360 [1]",
+  "PAN-OS 11.0 running on a PA-3410 with an Intel Atom P5332 [1]",
+  "PAN-OS 11.0 running on a PA-3420 with an Intel Atom P5342 [1]",
+  "PAN-OS 11.0 running on a PA-3430 with an Intel Atom P5352 [1]",
+  "PAN-OS 11.0 running on a PA-3440 with an Intel Atom P5362 [1]",
+  "PAN-OS 11.0 running on a PA-410 with an Intel Denverton C3436L [1]",
+  "PAN-OS 11.0 running on a PA-415 with an Intel Denverton C3436L [1]",
+  "PAN-OS 11.0 running on a PA-440 with an Intel Denverton C3558R [1]",
+  "PAN-OS 11.0 running on a PA-445 with an Intel Denverton C3558R [1]",
+  "PAN-OS 11.0 running on a PA-450 with an Intel Denverton C3758R [1]",
+  "PAN-OS 11.0 running on a PA-460 with an Intel Denverton C3758R [1]",
+  "PAN-OS 11.0 running on a PA-5220 with an Intel Xeon D-1548 / CN7885 [1]",
+  "PAN-OS 11.0 running on a PA-5250 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.0 running on a PA-5260 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.0 running on a PA-5280 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.0 running on a PA-5410 with an AMD EPYC 7352 [2]",
+  "PAN-OS 11.0 running on a PA-5420 with an AMD EPYC 7452 [2]",
+  "PAN-OS 11.0 running on a PA-5430 with an AMD EPYC 7642 [2]",
+  "PAN-OS 11.0 running on a PA-5440 with an AMD EPYC 7742 [2]",
+  "PAN-OS 11.0 running on a PA-5450 with an Intel Xeon D-2187NT [1]",
+  "PAN-OS 11.0 running on a PA-7050 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.0 running on a PA-7080 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.0 running on a PA-820 with an Marvell CN7240 [1]",
+  "PAN-OS 11.0 running on a PA-850 with an Marvell CN7240 [1]",
+  "PAN-OS 11.0 with KVM on Ubuntu 20.04 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.0 with Microsoft Hyper-V Server 2019 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.0 with VMware ESXi v7.0 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.1 running on a PA-1410 with an Intel Atom C5325 [1]",
+  "PAN-OS 11.1 running on a PA-3250 with an Intel Pentium D1517 / CN7350 [1]",
+  "PAN-OS 11.1 running on a PA-3410 with an Intel Atom P5332 [1]",
+  "PAN-OS 11.1 running on a PA-460 with an Intel Denverton C3758R [1]",
+  "PAN-OS 11.1 running on a PA-5250 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.1 running on a PA-5410 with an AMD EPYC 7352 [2]",
+  "PAN-OS 11.1 running on a PA-5440 with an AMD EPYC 7742 [2]",
+  "PAN-OS 11.1 running on a PA-5450 with an Intel Xeon D-2187NT [1]",
+  "PAN-OS 11.1 running on a PA-7080 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.1 running on a PA-7500 with an Intel Atom P5752 / Intel Xeon D-2798NX / Intel Denverton C3758R [1]",
+  "PAN-OS 11.1 running on a PA-850 with a Marvell CN7240 [1]",
+  "PAN-OS 11.1 with KVM on Ubuntu 20.04 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.1 with Microsoft Hyper-V Server 2019 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.1 with VMware ESXi v7.0 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.2 running on a PA-1410 with an Intel Atom C5325 [1]",
+  "PAN-OS 11.2 running on a PA-3410 with an Intel Atom P5332 [1]",
+  "PAN-OS 11.2 running on a PA-460 with an Intel Denverton C3758R [1]",
+  "PAN-OS 11.2 running on a PA-5250 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.2 running on a PA-5410 with an AMD EPYC 7352 [2]",
+  "PAN-OS 11.2 running on a PA-5440 with an AMD EPYC 7742 [2]",
+  "PAN-OS 11.2 running on a PA-5450 with an Intel Xeon D-2187NT [1]",
+  "PAN-OS 11.2 running on a PA-7080 with an Intel Xeon D-1567 / CN7890 [1]",
+  "PAN-OS 11.2 with KVM on Ubuntu 20.04 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.2 with Microsoft Hyper-V Server 2019 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "PAN-OS 11.2 with VMware ESXi v7.0 running on a Dell PowerEdge R740 with an Intel Gold 6248 [1]",
+  "WildFire 10.2 running on a WF-500 with an Intel Xeon E5-2620 [1]",
+  "WildFire 10.2 running on a WF-500-B with an Intel Xeon 4316 [1]",
+  "WildFire 11.0 running on a WF-500 with an Intel Xeon E5-2620 [1]",
+  "WildFire 11.0 running on a WF-500-B with an Intel Xeon 4316 [1]",
+  "WildFire 11.1 running on a WF-500 with an Intel Xeon E5-2620 [1]",
+  "WildFire 11.1 running on a WF-500-B with an Intel Xeon 4316 [1]",
+  "WildFire 11.2 running on a WF-500 with an Intel Xeon E5-2620 [1]",
+  "WildFire 11.2 running on a WF-500-B with an Intel Xeon 4316 [1]"
+ ],
+ "software_versions": "1.0 [1] and 1.1 [2]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "cavp_cert": "A1791",
+   "cavp_id": "34400"
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "cavp_cert": "A2138",
+   "cavp_id": "34747"
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "cavp_cert": "A2153",
+   "cavp_id": "34762"
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "cavp_cert": "A2165",
+   "cavp_id": "34774"
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "cavp_cert": "A2518",
+   "cavp_id": "35129"
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "cavp_cert": "A2541",
+   "cavp_id": "35152"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  },
+  {
+   "algorithm": "TLS v1.2 KDF RFC7627",
+   "cavp_cert": "A4206",
+   "cavp_id": "36816"
+  },
+  {
+   "algorithm": "TLS v1.2 KDF RFC7627",
+   "cavp_cert": "A4207",
+   "cavp_id": "36817"
+  }
+ ],
+ "vendor": "Palo Alto Networks, Inc.",
+ "vendor_info": {
+  "name": "Palo Alto Networks, Inc.",
+  "website": "http://www.paloaltonetworks.com",
+  "address": [
+   "3000 Tannery Way",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jake Bajic"
+   },
+   {
+    "name": "Amir Shahhosseini"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4741.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202024_010824_1146.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/26/2024",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "9/15/2025",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/7/2026",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "7/26/2024",
+ "last_updated": "1/7/2026",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4741.pdf",
+ "other_fields": {
+  "Historical Reason": "Replaced by certificate #5401"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4741,
+  "vendor": "Palo Alto Networks, Inc.",
+  "module": "Palo Alto Networks Core Crypto Module",
+  "type": "Software",
+  "validation_dates": [
+   "07/26/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

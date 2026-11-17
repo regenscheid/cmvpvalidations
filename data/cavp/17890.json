@@ -1,0 +1,49 @@
+{
+ "cavp_id": "17890",
+ "cavp_cert": "AES 3844",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17890",
+ "implementation": "CRYPOTN Hardware Encryption Engine",
+ "product_id": "1571",
+ "description": "CRYPOTN Hardware Encryption Engine enables layer-1 OTN Payload encryption for PMC's OTN product family.",
+ "version": "PM55_60_88 Revision A",
+ "type": "HARDWARE",
+ "first_validated": "1/22/2016",
+ "vendor": "Microsemi Corporation",
+ "vendor_website": "http://www.pmcs.com",
+ "oes": [
+  {
+   "name": "CRYPOTN Hardware Encryption Engine",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

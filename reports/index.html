@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>FIPS 140-3 ML-DSA and ML-KEM modules</title><meta name="description" content="FIPS 140-3 modules validated with ML-DSA or ML-KEM">
+<style>
+:root{--bg:#fafaf8;--surface:#fff;--ink:#1d2328;--muted:#5d6872;--line:#dfe3e6;--accent:#1d5fa8;--accent-soft:#e6eff9;
+--ok:#1f7a4d;--ok-soft:#e3f3ea;--kem:#7a3d91;--kem-soft:#f1e8f6;--warn:#8a5a00;--warn-soft:#fbf0d9;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181c;--surface:#1c2227;--ink:#e6eaed;--muted:#9aa5ad;
+--line:#2d363d;--accent:#7db3ee;--accent-soft:#1f3347;--ok:#6fd0a0;--ok-soft:#1b3328;--kem:#d6a4ea;--kem-soft:#34243d;--warn:#e6b862;--warn-soft:#3a2f17}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:1.7rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.2rem;margin:2em 0 .6em}
+h3{font-size:1.02rem;margin:1.4em 0 .5em}
+p{margin:.5em 0}
+a{color:var(--accent)}
+.sub{color:var(--muted);margin:0 0 1.2em}
+nav.crumbs{font-size:.9rem;color:var(--muted)}
+nav.crumbs a{color:var(--muted)}
+nav.top{display:flex;gap:16px;flex-wrap:wrap;font-size:.92rem;margin:0 0 6px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:1.2em 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat b{display:block;font-size:1.9rem;line-height:1.1}
+.stat span{color:var(--muted);font-size:.9rem}
+.wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-weight:600;color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
+th[data-sort]{cursor:pointer}
+th[data-sort]:hover{color:var(--ink)}
+th[aria-sort="ascending"]::after{content:" \25B2";font-size:.7em}
+th[aria-sort="descending"]::after{content:" \25BC";font-size:.7em}
+.mono,.num{font-family:var(--mono);font-size:.88em}
+.tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.78rem;background:var(--accent-soft);color:var(--accent);margin:1px 3px 1px 0;white-space:nowrap}
+.tag.ok{background:var(--ok-soft);color:var(--ok)}
+.tag.dsa{background:var(--accent-soft);color:var(--accent)}
+.tag.kem{background:var(--kem-soft);color:var(--kem)}
+.note{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn);padding:10px 14px;border-radius:6px;margin:1em 0;font-size:.95rem}
+dl.kv{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0}
+dl.kv dt{color:var(--muted)}
+dl.kv dd{margin:0}
+.tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 10px}
+input[type=search]{padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;min-width:260px;max-width:100%}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 11px;font:inherit;font-size:.85rem;cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.chip.active{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+details{margin:2px 0}
+summary{cursor:pointer;color:var(--accent)}
+.muted{color:var(--muted)}
+footer{margin-top:3em;color:var(--muted);font-size:.85rem}
+@media (max-width:600px){dl.kv{grid-template-columns:1fr}dl.kv dt{margin-top:6px}}
+</style></head>
+<body><main>
+
+<nav class="top"><b>Validated modules</b> &middot; <a href="in-process.html">In process</a> &middot; <a href="cavp-gap.html">Algorithm tests without a module</a></nav>
+<h1>FIPS 140-3 modules validated with ML-DSA or ML-KEM</h1>
+<p class="sub">Active CMVP certificates whose Approved Algorithms list includes ML-DSA (FIPS 204) or ML-KEM (FIPS 203). Snapshot of 2026-10-29.</p>
+<div class="stats"><div class="stat"><b>6</b><span>active FIPS 140-3 modules with ML-DSA approved</span></div><div class="stat"><b>14</b><span>active FIPS 140-3 modules with ML-KEM approved</span></div><div class="stat"><b>5</b><span>modules with both</span></div><div class="stat"><b>740</b><span>active modules scanned</span></div><div class="stat"><b>22</b><span>modules in process that match algorithm tests</span></div></div>
+<h2>Validated modules</h2>
+<div class="tools"><div class="chips"><button class="chip active" type="button" data-fam-chip="all">All</button><button class="chip" type="button" data-fam-chip="ML-DSA">ML-DSA</button><button class="chip" type="button" data-fam-chip="ML-KEM">ML-KEM</button><button class="chip" type="button" data-fam-chip="both">Both</button></div><input type="search" id="q" placeholder="Filter by vendor or module" aria-label="Filter"><span class="muted" id="count"></span></div>
+<div class="wrap"><table id="t">
+<thead><tr><th data-sort aria-sort="descending">CMVP cert</th><th data-sort>Vendor</th><th data-sort>Module</th><th>Type</th>
+<th data-sort>ML-DSA params</th><th data-sort>ML-KEM params</th><th data-sort>Validated</th></tr></thead>
+<tbody><tr data-fam="ML-KEM">
+<td class="num" data-sort="5525"><a href="module-5525.html">5525</a></td>
+<td>SafeLogic, Inc.</td>
+<td><a href="module-5525.html">CryptoComply Module based on AWS-LC FIPS</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">512</span><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6176; A6177; A6178; A6179; A6180; A6184; A6278; A6279</span></td>
+<td class="num" data-sort="2026-09-16">9/16/2026</td></tr><tr data-fam="ML-DSA ML-KEM both">
+<td class="num" data-sort="5523"><a href="module-5523.html">5523</a></td>
+<td>Chainguard, Inc.</td>
+<td><a href="module-5523.html">Chainguard FIPS Provider for OpenSSL</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="1"><span class="tag dsa">44</span><span class="tag dsa">65</span><span class="tag dsa">87</span><br><span class="muted num">A7584; A7585; A7593; A7610; A7611; A7612</span></td><td data-sort="1"><span class="tag kem">512</span><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A7584; A7585; A7593; A7610; A7611; A7612</span></td>
+<td class="num" data-sort="2026-09-15">9/15/2026</td></tr><tr data-fam="ML-DSA ML-KEM both">
+<td class="num" data-sort="5503"><a href="module-5503.html">5503</a></td>
+<td>Sansec Technology Co., Ltd.</td>
+<td><a href="module-5503.html">Sansec HSM Cryptographic Module</a></td>
+<td>Hardware<br><span class="muted">Level 3</span></td>
+<td data-sort="1"><span class="tag dsa">44</span><span class="tag dsa">65</span><span class="tag dsa">87</span><br><span class="muted num">A6703</span></td><td data-sort="1"><span class="tag kem">512</span><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6703</span></td>
+<td class="num" data-sort="2026-08-25">8/25/2026</td></tr><tr data-fam="ML-DSA ML-KEM both">
+<td class="num" data-sort="5497"><a href="module-5497.html">5497</a></td>
+<td>Crypto4A Technologies Inc.</td>
+<td><a href="module-5497.html">QASM Cryptographic Module</a></td>
+<td>Hardware<br><span class="muted">Level 3</span></td>
+<td data-sort="1"><span class="tag dsa">44</span><span class="tag dsa">65</span><span class="tag dsa">87</span><br><span class="muted num">A5631</span></td><td data-sort="1"><span class="tag kem">512</span><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A5631</span></td>
+<td class="num" data-sort="2026-08-19">8/19/2026</td></tr><tr data-fam="ML-KEM">
+<td class="num" data-sort="5460"><a href="module-5460.html">5460</a></td>
+<td>Virtru Corporation</td>
+<td><a href="module-5460.html">Virtru Go Cryptographic Module</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6650; A8668</span></td>
+<td class="num" data-sort="2026-08-05">8/5/2026</td></tr><tr data-fam="ML-DSA ML-KEM both">
+<td class="num" data-sort="5450"><a href="module-5450.html">5450</a></td>
+<td>Thales Trusted Cyber Technologies</td>
+<td><a href="module-5450.html">Luna T7</a></td>
+<td>Hardware<br><span class="muted">Level 3</span></td>
+<td data-sort="1"><span class="tag dsa">44</span><span class="tag dsa">65</span><span class="tag dsa">87</span><br><span class="muted num">A7879; A7880</span></td><td data-sort="1"><span class="tag kem">512</span><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A7879; A7880</span></td>
+<td class="num" data-sort="2026-07-29">7/29/2026</td></tr><tr data-fam="ML-DSA">
+<td class="num" data-sort="5361"><a href="module-5361.html">5361</a></td>
+<td>Dell Australia Pty Limited, BSAFE Product Team</td>
+<td><a href="module-5361.html">Dell BSAFE Crypto Module for Java</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="1"><span class="tag dsa">44</span><span class="tag dsa">65</span><span class="tag dsa">87</span><br><span class="muted num">A6943</span></td><td data-sort="0"><span class="muted">&mdash;</span></td>
+<td class="num" data-sort="2026-06-30">6/30/2026</td></tr><tr data-fam="ML-KEM">
+<td class="num" data-sort="5349"><a href="module-5349.html">5349</a></td>
+<td>SafeLogic, Inc.</td>
+<td><a href="module-5349.html">CryptoComply Native Go Module</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6650</span></td>
+<td class="num" data-sort="2026-06-23">6/23/2026</td></tr><tr data-fam="ML-KEM">
+<td class="num" data-sort="5325"><a href="module-5325.html">5325</a></td>
+<td>SUSE LLC</td>
+<td><a href="module-5325.html">SUSE Rancher Kubernetes Cryptographic Library</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6650</span></td>
+<td class="num" data-sort="2026-06-10">6/10/2026</td></tr><tr data-fam="ML-KEM">
+<td class="num" data-sort="5324"><a href="module-5324.html">5324</a></td>
+<td>Cisco Systems, Inc.</td>
+<td><a href="module-5324.html">Cisco Go Cryptographic Module based on the Geomys Go Cryptographic Module</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6650</span></td>
+<td class="num" data-sort="2026-06-10">6/10/2026</td></tr><tr data-fam="ML-KEM">
+<td class="num" data-sort="5323"><a href="module-5323.html">5323</a></td>
+<td>Hewlett Packard Enterprise</td>
+<td><a href="module-5323.html">HPE Go Cryptographic Module</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6650</span></td>
+<td class="num" data-sort="2026-06-10">6/10/2026</td></tr><tr data-fam="ML-KEM">
+<td class="num" data-sort="5314"><a href="module-5314.html">5314</a></td>
+<td>Amazon Web Services, Inc</td>
+<td><a href="module-5314.html">AWS-LC 3 Cryptographic Module (static)</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">512</span><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6288; A6289; A6291; A6295; A6312; A6313; A6314; A6315</span></td>
+<td class="num" data-sort="2026-06-05">6/5/2026</td></tr><tr data-fam="ML-KEM">
+<td class="num" data-sort="5298"><a href="module-5298.html">5298</a></td>
+<td>Amazon Web Services, Inc</td>
+<td><a href="module-5298.html">AWS-LC 3 Cryptographic Module (dynamic)</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">512</span><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6176; A6177; A6178; A6179; A6180; A6184; A6278; A6279</span></td>
+<td class="num" data-sort="2026-06-03">6/3/2026</td></tr><tr data-fam="ML-DSA ML-KEM both">
+<td class="num" data-sort="5282"><a href="module-5282.html">5282</a></td>
+<td>Kryptus</td>
+<td><a href="module-5282.html">ASI-HSM AHX5 kNET Cryptographic Module</a></td>
+<td>Hardware<br><span class="muted">Level 3</span></td>
+<td data-sort="1"><span class="tag dsa">44</span><span class="tag dsa">65</span><span class="tag dsa">87</span><br><span class="muted num">A6066</span></td><td data-sort="1"><span class="tag kem">512</span><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6066</span></td>
+<td class="num" data-sort="2026-05-20">5/20/2026</td></tr><tr data-fam="ML-KEM">
+<td class="num" data-sort="5247"><a href="module-5247.html">5247</a></td>
+<td>Geomys LLC</td>
+<td><a href="module-5247.html">Go Cryptographic Module</a></td>
+<td>Software<br><span class="muted">Level 1</span></td>
+<td data-sort="0"><span class="muted">&mdash;</span></td><td data-sort="1"><span class="tag kem">768</span><span class="tag kem">1024</span><br><span class="muted num">A6650; A8668</span></td>
+<td class="num" data-sort="2026-04-27">4/27/2026</td></tr></tbody></table></div>
+<p class="muted">Tags show tested parameter sets (ML-DSA-44/65/87 as 44, 65, 87; ML-KEM-512/768/1024 as 512, 768, 1024), with the CAVP certificates beneath.</p>
+<h2>Where the rest are</h2>
+<p><a href="in-process.html">Modules in process</a>: vendors with ML-DSA or ML-KEM algorithm tests and a module under CMVP review.<br>
+<a href="cavp-gap.html">Algorithm tests without a validated module</a>: 462 CAVP validations across both algorithms (247 ML-DSA, 256 ML-KEM in total).</p>
+<h2>Method</h2>
+<ol>
+<li>List every Active FIPS 140-3 certificate from the <a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules/search" target="_blank" rel="noopener noreferrer">CMVP validated modules search</a>.</li>
+<li>Fetch each certificate page and read the <em>Approved Algorithms</em> section. A module counts when an entry starts with &ldquo;ML-DSA&rdquo; or &ldquo;ML-KEM&rdquo;.</li>
+<li>Pull the validations from the <a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/validation-search" target="_blank" rel="noopener noreferrer">CAVP validation search</a> (each operation queried separately, all result pages) and cross-check the module entries against them.</li>
+<li>Fetch each referenced CAVP validation for parameter sets, signature interfaces or KEM functions, and operational environments.</li>
+<li>Match unattached CAVP validations to the <a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/modules-in-process/modules-in-process-list" target="_blank" rel="noopener noreferrer">CMVP Modules In Process list</a> by vendor and module name.</li>
+</ol>
+<div class="note"><b>Caveats.</b> Modules in process are not validated, and historical or revoked certificates are excluded.
+Check the Security Policy for the exact services and operational environments covered.
+Modules mentioning these algorithms only in allowed or non-approved text: 0.</div>
+<footer>Generated 2026-10-29 from NIST CSRC CMVP and CAVP public pages. Verify any entry against the NIST certificate before relying on it.</footer>
+</main><script>
+(function(){
+ var t=document.getElementById('t'),tb=t.tBodies[0],q=document.getElementById('q'),c=document.getElementById('count'),fam='all';
+ function cell(r,i){var td=r.cells[i];return (td.getAttribute('data-sort')||td.textContent).trim().toLowerCase();}
+ function filter(){var s=q.value.trim().toLowerCase(),n=0;
+  [].forEach.call(tb.rows,function(r){var m=(fam==='all'||r.getAttribute('data-fam').split(' ').indexOf(fam)>-1)&&(!s||r.textContent.toLowerCase().indexOf(s)>-1);r.hidden=!m;if(m)n++;});
+  c.textContent=n+' of '+tb.rows.length+' shown';}
+ q.addEventListener('input',filter);
+ [].forEach.call(document.querySelectorAll('[data-fam-chip]'),function(b){b.addEventListener('click',function(){
+  fam=b.getAttribute('data-fam-chip');
+  [].forEach.call(document.querySelectorAll('[data-fam-chip]'),function(o){o.classList.toggle('active',o===b);});filter();});});
+ [].forEach.call(document.querySelectorAll('[data-v]'),function(b){b.addEventListener('click',function(){q.value=b.getAttribute('data-v');filter();});});
+ [].forEach.call(t.tHead.rows[0].cells,function(th,i){
+  if(!th.hasAttribute('data-sort'))return;
+  th.addEventListener('click',function(){
+   var asc=th.getAttribute('aria-sort')!=='ascending';
+   [].forEach.call(t.tHead.rows[0].cells,function(o){o.removeAttribute('aria-sort');});
+   th.setAttribute('aria-sort',asc?'ascending':'descending');
+   var rows=[].slice.call(tb.rows).sort(function(a,b){var x=cell(a,i),y=cell(b,i);return (x<y?-1:x>y?1:0)*(asc?1:-1);});
+   rows.forEach(function(r){tb.appendChild(r);});
+  });
+ });
+ filter();
+})();
+</script></body></html>

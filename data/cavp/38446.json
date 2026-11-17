@@ -1,0 +1,50 @@
+{
+ "cavp_id": "38446",
+ "cavp_cert": "A5836",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38446",
+ "implementation": "Riverbed Cryptographic Module (libssl)",
+ "product_id": "18574",
+ "description": "The Riverbed Cryptographic Module offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data. This library provides the KDF for TLSv1.3.",
+ "version": "2.0.1",
+ "type": "SOFTWARE",
+ "first_validated": "9/30/2024",
+ "vendor": "Riverbed Technology",
+ "vendor_website": "https://www.riverbed.com",
+ "oes": [
+  {
+   "name": "AlmaLinux 8 running on Intel® Xeon® Silver 4110 with PAA",
+   "details": [
+    "software: AlmaLinux 8",
+    "processor: Intel® Xeon® Silver 4110 with PAA",
+    "  manufacturer: Intel®"
+   ]
+  },
+  {
+   "name": "AlmaLinux 8 running on Intel® Xeon® Silver 4110 without PAA",
+   "details": [
+    "software: AlmaLinux 8",
+    "processor: Intel® Xeon® Silver 4110 without PAA",
+    "  manufacturer: Intel®"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 0,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 1,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

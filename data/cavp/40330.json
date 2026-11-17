@@ -1,0 +1,74 @@
+{
+ "cavp_id": "40330",
+ "cavp_cert": "A7720",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40330",
+ "implementation": "CRYP CARD FPGA (ch1)",
+ "product_id": "20505",
+ "description": "The CRYP CARD FPGA (ch1) provides symmetric-key-based cryptographic functionality such as AES-256-GCM, AES-256-CTR, AES-256-CMAC, AES-256-ECB, and SHA2-256.",
+ "version": "1.0",
+ "type": "HARDWARE",
+ "first_validated": "12/1/2025",
+ "vendor": "Mitsubishi Electric Corporation Kamakura Works",
+ "vendor_website": "https://www.mitsubishielectric.com/en/index.html",
+ "oes": [
+  {
+   "name": "CRYP CARD FPGA",
+   "details": [
+    "hardware: CRYP CARD FPGA"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 0-8192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 32, 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 8-8192 Increment 8",
+    "AAD Length: 0, 128"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-8192 Increment 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

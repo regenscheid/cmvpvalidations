@@ -1,0 +1,50 @@
+{
+ "cavp_id": "35874",
+ "cavp_cert": "A3264",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35874",
+ "implementation": "xNPSD KDF",
+ "product_id": "15750",
+ "description": "xRevenector KDF Cryptographic Library (including KBKDF and KAS-KDA)",
+ "version": "2.001",
+ "type": "FIRMWARE",
+ "first_validated": "1/30/2023",
+ "vendor": "FP InovoLabs GmbH",
+ "vendor_website": "http://www.inovolabs.com",
+ "oes": [
+  {
+   "name": "Maxim Integrated MAX32590 DeepCover Secure Microcontroller",
+   "details": [
+    "Processor: Maxim Integrated MAX32590 DeepCover Secure Microcontroller with ARM926EJ-S Processor Core",
+    "  A 32-bit RISC CPU with instruction and data caches and memory management unit (MMU)."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 2048"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 128-4096 Increment 8",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data",
+    "    Counter Length: 16, 32",
+    "    Custom Key In Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

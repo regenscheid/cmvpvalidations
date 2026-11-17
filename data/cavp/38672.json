@@ -1,0 +1,40 @@
+{
+ "cavp_id": "38672",
+ "cavp_cert": "A6062",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38672",
+ "implementation": "Private Machines ENFORCER DRBG Library",
+ "product_id": "18773",
+ "description": "The Private Machines ENFORCER is a general-purpose, tamper-proof cryptographic module. In addition to FIPS level 4 physical tamper protection, the ENFORCER module also provides a secure computing environment, built-in HSM, and firmware-based cryptographic services via FIPS 140-3 approved algorithms.",
+ "version": "2.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/4/2024",
+ "vendor": "Private Machines, Inc",
+ "vendor_website": "http://privatemachines.com",
+ "oes": [
+  {
+   "name": "MAX32550 Cortex M3",
+   "details": [
+    "Processor: MAX32550 Cortex M3",
+    "  The MAX32550 is a secure micro-controller based on a Cortex M3 processor."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 512",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0",
+    "    Returned Bits: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

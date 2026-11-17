@@ -1,0 +1,54 @@
+{
+ "cavp_id": "39529",
+ "cavp_cert": "A6919",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39529",
+ "implementation": "OpenSSL 3 (64 bit) (FFC_DH)",
+ "product_id": "19661",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Generic C non-optimized DH implementation.",
+ "version": "3.3.2-a8fdaac",
+ "type": "SOFTWARE",
+ "first_validated": "5/8/2025",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "ClevOS 3.19 on Intel Sapphire Rapids Xeon 8474C",
+   "details": [
+    "software: ClevOS 3.19",
+    "  Linux distribution developed by IBM Corporation",
+    "processor: Xeon 8474C",
+    "  Processor Xeon 8474C (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Sapphire Rapids"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

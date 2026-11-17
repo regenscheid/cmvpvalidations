@@ -1,0 +1,811 @@
+{
+ "cavp_id": "39158",
+ "cavp_cert": "A6548",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39158",
+ "implementation": "Apple corecrypto Module [Apple silicon, Secure Key Store, Hardware, SL2] (trng)",
+ "product_id": "19188",
+ "description": "Hardware implementation of cryptographic ciphers offering various cryptographic mechanisms to Apple Secure Key Store in the Secure Enclave Processor environment.",
+ "version": "2.0",
+ "type": "HARDWARE",
+ "first_validated": "1/28/2025",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "Apple A Series (ARMv8.6-A) A17 Pro",
+   "details": [
+    "processor: A17 Pro",
+    "  Processor A17 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series (ARMv9.2-A) A18",
+   "details": [
+    "processor: A18",
+    "  Processor A18 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series (ARMv9.2-A) A18 Pro",
+   "details": [
+    "processor: A18 Pro",
+    "  Processor A18 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M2 Ultra",
+   "details": [
+    "processor: M2 Ultra",
+    "  Processor M2 Ultra (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M3",
+   "details": [
+    "processor: M3",
+    "  Processor M3 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M3 Max",
+   "details": [
+    "processor: M3 Max",
+    "  Processor M3 Max (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M3 Pro",
+   "details": [
+    "processor: M3 Pro",
+    "  Processor M3 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M3 Ultra",
+   "details": [
+    "processor: M3 Ultra",
+    "  Processor M3 Ultra (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.2-A) M4",
+   "details": [
+    "processor: M4",
+    "  Processor M4 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.2-A) M4 Max",
+   "details": [
+    "processor: M4 Max",
+    "  Processor M4 Max (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.2-A) M4 Pro",
+   "details": [
+    "processor: M4 Pro",
+    "  Processor M4 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple S Series (ARMv8.6-A) S10",
+   "details": [
+    "processor: S10",
+    "  Processor S10 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: S Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple S Series (ARMv8.6-A) S9",
+   "details": [
+    "processor: S9",
+    "  Processor S9 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: S Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series (ARMv8.6-A) A16 Bionic",
+   "details": [
+    "processor: A16 Bionic",
+    "  Processor A16 Bionic (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series A14 Bionic",
+   "details": [
+    "processor: A14 Bionic",
+    "  Processor A14 Bionic (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series"
+   ]
+  },
+  {
+   "name": "Apple A Series A15 Bionic",
+   "details": [
+    "processor: A15 Bionic",
+    "  Processor A15 Bionic (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.5-A) M1 Max",
+   "details": [
+    "processor: M1 Max",
+    "  Processor M1 Max (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.5-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.5-A) M1 Pro",
+   "details": [
+    "processor: M1 Pro",
+    "  Processor M1 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.5-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.5-A) M1 Ultra",
+   "details": [
+    "processor: M1 Ultra",
+    "  Processor M1 Ultra (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.5-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M2",
+   "details": [
+    "processor: M2",
+    "  Processor M2 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M2 Max",
+   "details": [
+    "processor: M2 Max",
+    "  Processor M2 Max (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M2 Pro",
+   "details": [
+    "processor: M2 Pro",
+    "  Processor M2 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series M1",
+   "details": [
+    "processor: M1",
+    "  Processor M1 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 13,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 2,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 14,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 15,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 16,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 17,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 18,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 19,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 20,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 21,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 3,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 4,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 5,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 6,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 7,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 8,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 9,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 10,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 22,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 11,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 12,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 768-16128 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 768-16128 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 768-16128 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 768-1792 Increment 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

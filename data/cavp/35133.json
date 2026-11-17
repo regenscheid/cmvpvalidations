@@ -1,0 +1,51 @@
+{
+ "cavp_id": "35133",
+ "cavp_cert": "A2522",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35133",
+ "implementation": "Micron 7400 Controller Sub Chip Security Subsystem (SCSS) ASIC Cryptographic Function",
+ "product_id": "14840",
+ "description": "Sub Chip Security Subsystem (SCSS) ASIC cryptographic function provides cryptographic algorithm support to the security subsystem module",
+ "version": "v0.0.0",
+ "type": "HARDWARE",
+ "first_validated": "4/13/2022",
+ "vendor": "Micron Technology, Inc.",
+ "vendor_website": "http://www.Micron.com",
+ "oes": [
+  {
+   "name": "Micron 7400 Controller",
+   "details": [
+    "cpu: Micron 7400 Controller"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096-32896 Increment 128",
+    "Tweak Mode: Number",
+    "Data Unit Length Matches Payload Length"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8, 256",
+    "Large Message Sizes: 1gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

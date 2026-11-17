@@ -1,0 +1,79 @@
+{
+ "cavp_id": "37307",
+ "cavp_cert": "A4697",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37307",
+ "implementation": "AWS-LC Cryptographic Module (AESASM_AVX)",
+ "product_id": "17284",
+ "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. The following cipher implementation is covered: Assembler AES using GCM with AVX GHASH implementation.",
+ "version": "AWS-LC 1.0.2",
+ "type": "SOFTWARE",
+ "first_validated": "11/14/2023",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "http://www.amazon.com",
+ "oes": [
+  {
+   "name": "Windows 10 on Dell Latitude 5430 on Intel U-series Intel Core i7 1255U",
+   "details": [
+    "processor: Intel Core i7 1255U",
+    "  Processor Intel Core i7 1255U (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: U-series",
+    "software: Windows 10 on Dell Latitude 5430",
+    "  Dell Latitude 5430 running Windows 10."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 8-256 Increment 8",
+    "AAD Length: 0-320 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 8-256 Increment 8",
+    "AAD Length: 0-320 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0-320 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

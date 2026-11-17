@@ -1,0 +1,1058 @@
+{
+ "cert": 4808,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4808",
+ "module": "Amazon Linux 2023 Kernel Cryptographic API",
+ "standard": "140-3",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy.",
+ "level_exceptions": [
+  "Physical security: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Amazon Linux 2023 Kernel Cryptographic API provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface.",
+ "tested_configurations": [
+  "Amazon Linux 2023 on EC2 c6i.metal running on Intel Xeon Platinum 8375C with PAA",
+  "Amazon Linux 2023 on EC2 c6i.metal running on Intel Xeon Platinum 8375C without PAA",
+  "Amazon Linux 2023 on EC2 c7g.metal running on AWS Graviton3 with PAA",
+  "Amazon Linux 2023 on EC2 c7g.metal running on AWS Graviton3 without PAA",
+  "SnowOS 1.0 on AWS Snowball running on AMD EPYC 7702 with PAA",
+  "SnowOS 1.0 on AWS Snowball running on AMD EPYC 7702 without PAA",
+  "SnowOS 1.0 on AWS Snowblade running on Intel Xeon Gold 6314U with PAA",
+  "SnowOS 1.0 on AWS Snowblade running on Intel Xeon Gold 6314U without PAA",
+  "SnowOS 1.0 on AWS Snowcone running on Intel Atom C3558 with PAA",
+  "SnowOS 1.0 on AWS Snowcone running on Intel Atom C3558 without PAA"
+ ],
+ "software_versions": "kernel 6.1.41-64.118.amzn2023, 6.1.41-64.118.fips.amzn2023; libkcapi 1.4.0-105.amzn2023",
+ "product_url": "http://www.aws.amazon.com/linux/amazon-linux-2023/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4561",
+   "cavp_id": "37171"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4563",
+   "cavp_id": "37173"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-CBC-CS3",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-CBC-CS3",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-CBC-CS3",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "AES-CBC-CS3",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-CBC-CS3",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4561",
+   "cavp_id": "37171"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4563",
+   "cavp_id": "37173"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4552",
+   "cavp_id": "37162"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4553",
+   "cavp_id": "37163"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4555",
+   "cavp_id": "37165"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4556",
+   "cavp_id": "37166"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4559",
+   "cavp_id": "37169"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4560",
+   "cavp_id": "37170"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4561",
+   "cavp_id": "37171"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4563",
+   "cavp_id": "37173"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4564",
+   "cavp_id": "37174"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4565",
+   "cavp_id": "37175"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4567",
+   "cavp_id": "37177"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4568",
+   "cavp_id": "37178"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4552",
+   "cavp_id": "37162"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4553",
+   "cavp_id": "37163"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4555",
+   "cavp_id": "37165"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4556",
+   "cavp_id": "37166"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4559",
+   "cavp_id": "37169"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4560",
+   "cavp_id": "37170"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4563",
+   "cavp_id": "37173"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4564",
+   "cavp_id": "37174"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4565",
+   "cavp_id": "37175"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4567",
+   "cavp_id": "37177"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4568",
+   "cavp_id": "37178"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4561",
+   "cavp_id": "37171"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4563",
+   "cavp_id": "37173"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4552",
+   "cavp_id": "37162"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4553",
+   "cavp_id": "37163"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4554",
+   "cavp_id": "37164"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4555",
+   "cavp_id": "37165"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4556",
+   "cavp_id": "37166"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4558",
+   "cavp_id": "37168"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4559",
+   "cavp_id": "37169"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4560",
+   "cavp_id": "37170"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4563",
+   "cavp_id": "37173"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4564",
+   "cavp_id": "37174"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4565",
+   "cavp_id": "37175"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4566",
+   "cavp_id": "37176"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4567",
+   "cavp_id": "37177"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4568",
+   "cavp_id": "37178"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4561",
+   "cavp_id": "37171"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4562",
+   "cavp_id": "37172"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4561",
+   "cavp_id": "37171"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4562",
+   "cavp_id": "37172"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4562",
+   "cavp_id": "37172"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4562",
+   "cavp_id": "37172"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4561",
+   "cavp_id": "37171"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4562",
+   "cavp_id": "37172"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4561",
+   "cavp_id": "37171"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4562",
+   "cavp_id": "37172"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4562",
+   "cavp_id": "37172"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4562",
+   "cavp_id": "37172"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4569",
+   "cavp_id": "37179"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4570",
+   "cavp_id": "37180"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4571",
+   "cavp_id": "37181"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "SHA3-384",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA3-384",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "A4551",
+   "cavp_id": "37161"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "A4557",
+   "cavp_id": "37167"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "http://www.amazon.com",
+  "address": [
+   "1918 8th Ave",
+   "Seattle, WA 98101",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Amazon Linux Security"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4808.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202024_011024_0217.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/23/2024",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "9/23/2024",
+ "last_updated": "9/23/2024",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4808.pdf",
+ "other_fields": {
+  "Historical Reason": "Replaced by certificate #5369"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4808,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "Amazon Linux 2023 Kernel Cryptographic API",
+  "type": "Software",
+  "validation_dates": [
+   "09/23/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,38 @@
+{
+ "cavp_id": "33689",
+ "cavp_cert": "A1080",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33689",
+ "implementation": "ARMv6 GCM in Firmware",
+ "product_id": "13569",
+ "description": "FW implementation of GCM in Seagate's self-encryption disk drives (SEDs).",
+ "version": "2.0",
+ "type": "FIRMWARE",
+ "first_validated": "3/4/2021",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com/",
+ "oes": [
+  {
+   "name": "ARM Cortex-M0 (ARMv6-M)",
+   "details": [
+    "processor: ARM Cortex-M Family"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 8, 96, 1024",
+    "Payload Length: 128, 256",
+    "AAD Length: 0, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

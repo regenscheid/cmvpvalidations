@@ -1,0 +1,44 @@
+{
+ "cavp_id": "30400",
+ "cavp_cert": "C5",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30400",
+ "implementation": "Aviat Networks Payload Encryption RAC70/7X",
+ "product_id": "10367",
+ "description": "This cryptographic module performs encryption of data carried over a microwave radio link.",
+ "version": "2.18.9",
+ "type": "FIRMWARE",
+ "first_validated": "12/17/2018",
+ "vendor": "Aviat Networks",
+ "vendor_website": "http://www.aviatnetworks.com",
+ "oes": [
+  {
+   "name": "Lattice Semiconductors ECP3",
+   "details": [
+    "processor: Lattice Semiconductors ECP3"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 64",
+    "C5 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

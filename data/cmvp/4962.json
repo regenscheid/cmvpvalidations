@@ -1,0 +1,413 @@
+{
+ "cert": 4962,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4962",
+ "module": "Thales Luna G7 Cryptographic Module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "2/6/2027",
+ "level": "3",
+ "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11.2 of the Security Policy",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Thales Luna G7 Cryptographic Module is a standalone hardware security module in the form of a USB device. The cryptographic module is contained in its own secure enclosure, which provides physical resistance.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "KAS-ECC-SSC Cert #A2125 (ephemeralUnified, fullUnified, onePassDH When using Non-NIST curves and allowances from FIPS 140-3 IG C.A, Use of Non-approved elliptic curves.; Derive key from existing partition secret or private key object);KTS (AES Cert. #C2020) (Key unwrapping: key establishment methodology provides between 128 and 256 bits of encryption strength. Uses allowances in FIPS 140-3 IG D.G, Key transport methods, for key unwrapping using un-authenticated modes of encryption listed on Cert #C2020 without use of an additional approved hash function.; Clone SMK between partitions, Import secret or private key using key wrapping. Legacy Unwrapping);KTS (Triple-DES Cert #C2020) (Key unwrapping: key establishment methodology provides 112 bits of encryption strength. Uses allowances in FIPS 140-3 IG D.G, Key transport methods, for key unwrapping using un-authenticated modes of encryption listed on Cert #C2020 without use of an additional approved hash function.; Import secret or private key using key wrapping. Legacy Unwrapping)",
+ "entropy": "ENT (P)",
+ "hardware_versions": "808-000080-001, 808-000080-002, 808-000064-005, 808-000064-006",
+ "firmware_versions": "7.7.3 with bootloader versions 1.3.0, 1.5.0 and 1.6.0",
+ "non_approved_algorithms": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "DSA SigGen (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "DSA SigVer (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "KAS-IFC",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "KDF ANS 9.42",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A2125",
+   "cavp_id": "34734"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A674",
+   "cavp_id": "33162"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A674",
+   "cavp_id": "33162"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A674",
+   "cavp_id": "33162"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "cavp_cert": "A6549",
+   "cavp_id": "39159"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "C2022",
+   "cavp_id": "33062"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHA3-384",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "TDES-CFB64",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "TDES-CFB8",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "TDES-CMAC",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "TDES-CTR",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  },
+  {
+   "algorithm": "TDES-OFB",
+   "cavp_cert": "C2020",
+   "cavp_id": "33060"
+  }
+ ],
+ "vendor": "Thales",
+ "vendor_info": {
+  "name": "Thales",
+  "website": "http://cpl.thalesgroup.com",
+  "address": [
+   "20 Colonnade Road",
+   "Suite 200",
+   "Ottawa, Ontario K2E 7M6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security and Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4962.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202025_030325_1258.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/7/2025",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "2/7/2025",
+ "last_updated": "2/7/2025",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4962.pdf",
+ "other_fields": {},
+ "other_text": "KAS-ECC-SSC Cert #A2125 (ephemeralUnified, fullUnified, onePassDH When using Non-NIST curves and allowances from FIPS 140-3 IG C.A, Use of Non-approved elliptic curves.; Derive key from existing partition secret or private key object);KTS (AES Cert. #C2020) (Key unwrapping: key establishment methodology provides between 128 and 256 bits of encryption strength. Uses allowances in FIPS 140-3 IG D.G, Key transport methods, for key unwrapping using un-authenticated modes of encryption listed on Cert #C2020 without use of an additional approved hash function.; Clone SMK between partitions, Import secret or private key using key wrapping. Legacy Unwrapping);KTS (Triple-DES Cert #C2020) (Key unwrapping: key establishment methodology provides 112 bits of encryption strength. Uses allowances in FIPS 140-3 IG D.G, Key transport methods, for key unwrapping using un-authenticated modes of encryption listed on Cert #C2020 without use of an additional approved hash function.; Import secret or private key using key wrapping. Legacy Unwrapping)",
+ "sparse": false,
+ "list": {
+  "cert": 4962,
+  "vendor": "Thales",
+  "module": "Thales Luna G7 Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/07/2025"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

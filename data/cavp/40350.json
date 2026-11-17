@@ -1,0 +1,85 @@
+{
+ "cavp_id": "40350",
+ "cavp_cert": "A7740",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40350",
+ "implementation": "Stinger Encryption Module",
+ "product_id": "20541",
+ "description": "Satellite & Troposcatter Communications Encryption.",
+ "version": "Rev C",
+ "type": "HARDWARE",
+ "first_validated": "12/5/2025",
+ "vendor": "Datum Systems, Inc.",
+ "vendor_website": "http://DatumSystems.com",
+ "oes": [
+  {
+   "name": "Xilinx Artix7",
+   "details": [
+    "FPGA: Artix7",
+    "  manufacturer: Xilinx"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC-CS3",
+   "oe": 0,
+   "capabilities": [
+    "Direction: decrypt, encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 512-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF KMAC Sp800-108r1",
+   "oe": 0,
+   "capabilities": [
+    "Key Derivation Key Length: 128",
+    "Context Length: 16",
+    "Label Length: 40",
+    "Derived Key Length: 128",
+    "MAC Modes: KMAC-256"
+   ]
+  },
+  {
+   "algorithm": "KDF KMAC Sp800-108r1",
+   "oe": 0,
+   "capabilities": [
+    "Key Derivation Key Length: 192",
+    "Context Length: 16",
+    "Label Length: 40",
+    "Derived Key Length: 192",
+    "MAC Modes: KMAC-256"
+   ]
+  },
+  {
+   "algorithm": "KDF KMAC Sp800-108r1",
+   "oe": 0,
+   "capabilities": [
+    "Key Derivation Key Length: 256",
+    "Context Length: 16",
+    "Label Length: 40",
+    "Derived Key Length: 256",
+    "MAC Modes: KMAC-256"
+   ]
+  },
+  {
+   "algorithm": "KMAC-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 16",
+    "MAC Length: 128, 192, 256",
+    "Key Data Length: 128, 192, 256",
+    "Hex Customization",
+    "Supports eXtendable-Output Functions: No"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 128-256 Increment 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

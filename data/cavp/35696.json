@@ -1,0 +1,49 @@
+{
+ "cavp_id": "35696",
+ "cavp_cert": "A3086",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35696",
+ "implementation": "Linux Kernel crypto API (POWER_ASM)",
+ "product_id": "15560",
+ "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: POWER assembler SHA implementation.",
+ "version": "3.3",
+ "type": "SOFTWARE",
+ "first_validated": "12/9/2022",
+ "vendor": "SUSE LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on PowerVM (VIOS 3.1.4.00) on IBM POWER Series POWER10",
+   "details": [
+    "processor: POWER10",
+    "  Processor POWER10 (processor family POWER) from IBM",
+    "  family: POWER",
+    "  manufacturer: IBM",
+    "  series: POWER Series",
+    "software: PowerVM (VIOS 3.1.4.00)",
+    "  PowerVM provides a secure and scalable server virtualization environment for AIX(R), IBM i and Linux applications built upon the advanced RAS features and leading performance of the Power Systems(TM) platform.",
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

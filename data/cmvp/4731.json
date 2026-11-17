@@ -1,0 +1,183 @@
+{
+ "cert": 4731,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4731",
+ "module": "NetApp CryptoMod",
+ "standard": "140-3",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "Interim validation. When installed, initialized and configured as specified in section 11 of the Security Policy",
+ "level_exceptions": [
+  "Physical security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "NetApp CryptoMod is a software cryptographic module whose purpose is to provide encryption/decryption services for NetApp’s ONTAP Operating System (OS) kernel. The CryptoMod module makes use of the AES-NI instruction set in Intel processors. Since CryptoMod can support non-PAA implementations as well as PAA implementations of the pertinent cryptographic algorithms, CryptoMod is designated as a software-only cryptographic module.",
+ "tested_configurations": [
+  "ONTAP 9.11.1 running on AFF A250 system with an Intel Xeon D-2164IT with PAA",
+  "ONTAP 9.11.1 running on AFF A250 system with an Intel Xeon D-2164IT without PAA",
+  "ONTAP 9.11.1 running on AFF A400 system with an Intel Xeon Silver 4210 with PAA",
+  "ONTAP 9.11.1 running on AFF A400 system with an Intel Xeon Silver 4210 without PAA",
+  "ONTAP 9.11.1 running on AFF A900 system with an Intel Xeon Platinum 8352Y with PAA",
+  "ONTAP 9.11.1 running on AFF A900 system with an Intel Xeon Platinum 8352Y without PAA"
+ ],
+ "software_versions": "3.0",
+ "product_url": "http://www.netapp.com/data-management/oncommand-system-documentation/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "A2640",
+   "cavp_id": "35251"
+  }
+ ],
+ "vendor": "NetApp, Inc.",
+ "vendor_info": {
+  "name": "NetApp, Inc.",
+  "website": "http://www.netapp.com",
+  "address": [
+   "3060 Olsen Drive",
+   "San Jose, CA 95128",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "NetApp Security Assurance Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4731.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202024_010824_1146.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/19/2024",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "3/6/2026",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "7/19/2024",
+ "last_updated": "3/6/2026",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4731.pdf",
+ "other_fields": {
+  "Historical Reason": "Replaced by certificate #5271"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4731,
+  "vendor": "NetApp, Inc.",
+  "module": "NetApp CryptoMod",
+  "type": "Software",
+  "validation_dates": [
+   "07/19/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,49 @@
+{
+ "cavp_id": "35306",
+ "cavp_cert": "A2695",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35306",
+ "implementation": "Helion AES GCM Core 128 bit Streaming Interface with Overlapped I/O",
+ "product_id": "15101",
+ "description": "The Helion AES-GCM Core with overlapped data I/O interfaces, use the mature Helion Pipelined AES and GHASH Core technologies to implement the block cipher confidentiality and authentication mode. The cores support one the AES key sizes 128 and 256 bits, a fixed nonce/IV size of 96 bits, and a fixed 128-bit tag (aka MIC or MAC). The AES-GCM Core integrates together all of the AES and GHASH functions including the round-key expansion together with the counter mode logic, hash length counters, final block padding, and tag appending and checking features. The only external logic required is to form the Nonce/IV block from various application specific packet header fields and other information. Support is provided for both optional AAD and GMAC operation (all AAD, null payload), which are required by some protocols.",
+ "version": "20200528",
+ "type": "HARDWARE",
+ "first_validated": "6/30/2022",
+ "vendor": "Broadcom Inc.",
+ "vendor_website": "https://www.broadcom.com",
+ "oes": [
+  {
+   "name": "ARM Cortex R4",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 32-65536 Increment 32",
+    "AAD Length: 0-32768 Increment 32"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 32-65536 Increment 32"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

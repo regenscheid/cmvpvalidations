@@ -1,0 +1,46 @@
+{
+ "cavp_id": "40215",
+ "cavp_cert": "A7605",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40215",
+ "implementation": "Chainguard FIPS Provider for OpenSSL (SSH_AVX2)",
+ "product_id": "20405",
+ "description": "Chainguard FIPS Provider for OpenSSL provides cryptographic services to Linux user space software components. The following cipher implementation is covered: SSH KDF using AVX2 SHA implementation.",
+ "version": "3.6.0-r2",
+ "type": "SOFTWARE",
+ "first_validated": "10/27/2025",
+ "vendor": "Chainguard, Inc.",
+ "vendor_website": "https://www.chainguard.dev",
+ "oes": [
+  {
+   "name": "Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7i.metal-24xl on Intel Sapphire Rapids Xeon Platinum 8488C (without PAA)",
+   "details": [
+    "software: Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7i.metal-24xl",
+    "  EC2 m7i.metal-24xl running Chainguard Image 20230214 on Amazon Linux 2023.",
+    "processor: Xeon Platinum 8488C (without PAA)",
+    "  Processor Xeon Platinum 8488C (without PAA) (processor family x86) from Intel",
+    "  family: x86",
+    "  manufacturer: Intel",
+    "  series: Sapphire Rapids"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: TDES",
+    "Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

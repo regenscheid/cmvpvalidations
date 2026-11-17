@@ -1,0 +1,68 @@
+{
+ "cavp_id": "35207",
+ "cavp_cert": "A2596",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35207",
+ "implementation": "Atomos ACNS070 Cryptographic Module",
+ "product_id": "15021",
+ "description": "All of these crypto algorithms are implemented in hardware of SK hynix Atomos controller to achieve high performance",
+ "version": "ACNS070 A1",
+ "type": "HARDWARE",
+ "first_validated": "5/25/2022",
+ "vendor": "SK hynix",
+ "vendor_website": "http://www.skhynix.com",
+ "oes": [
+  {
+   "name": "Atomos ACNS070",
+   "details": [
+    "cpu: Atomos ACNS070"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256-512 Increment 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 3968",
+    "Tweak Mode: Hex, Number",
+    "Data Unit Length: 3968"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

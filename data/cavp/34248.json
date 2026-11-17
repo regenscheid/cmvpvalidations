@@ -1,0 +1,78 @@
+{
+ "cavp_id": "34248",
+ "cavp_cert": "A1639",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34248",
+ "implementation": "Zebra DCS Cryptographic Module on Cradle",
+ "product_id": "14145",
+ "description": "The Zebra DCS Cryptographic Library provides FIPS 140-3 Level 1 certified encryption and security practices to protect data sensitive transmission between the embedded devices which include cordless scanners, cradles and terminals",
+ "version": "DAACUS00-002-R00",
+ "type": "FIRMWARE",
+ "first_validated": "6/30/2021",
+ "vendor": "Zebra Technologies Corporation",
+ "vendor_website": "http://www.zebra.com",
+ "oes": [
+  {
+   "name": "Micrium uC/OS-II v2.85 on STM32f427iih6tr processor",
+   "details": [
+    "software: Micrium uC/OS-II v2.85 Real Time Kernel",
+    "  uC/OS-II v2.85 Real Time Kernel",
+    "processor: STM32f427iih6tr",
+    "  ARM Cortex Processor M4 32-bit"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128-4096 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

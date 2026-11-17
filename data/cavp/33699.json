@@ -1,0 +1,50 @@
+{
+ "cavp_id": "33699",
+ "cavp_cert": "A1090",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33699",
+ "implementation": "Janus AES in Hardware",
+ "product_id": "13570",
+ "description": "AES encryption and decryption core of the controller ASIC 'Janus' in Seagate's Self- Encrypting Drives (SEDs).",
+ "version": "Janus",
+ "type": "HARDWARE",
+ "first_validated": "3/4/2021",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com/",
+ "oes": [
+  {
+   "name": "Janus AES in Hardware",
+   "details": [
+    "processor: Janus AES in Hardware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096, 4160, 4192, 4224, 33792",
+    "Tweak Mode: Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

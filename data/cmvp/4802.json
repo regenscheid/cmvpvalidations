@@ -1,0 +1,183 @@
+{
+ "cert": 4802,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4802",
+ "module": "Ultrastar DC HC560 TCG Enterprise HDD SED, Ultrastar DC HC570 TCG Enterprise HDD SED",
+ "standard": "140-3",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "Interim validation. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. No operator authentication is enforced for executing security services that were unlocked by an authenticated service",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The Western Digital Ultrastar DC HC560 TCG Enterprise HDD, hereafter referred to as Ultrastar DC HC560, Cryptographic Module, cryptographic module, or CM, and the Western Digital Ultrastar DC HC570 TCG Enterprise HDD, hereafter referred to as Ultrastar DC HC570, Cryptographic Module, cryptographic module, or CM are self-encryption drives (SED) that comply in general with the specifications listed in 13.2 Trusted Computing Group Specifications and specifically with the TCG Storage Architecture Core Specification [TCG Core] with the Trusted Computing Group (TCG) Security Subsystem Class (SSC): Enterprise Specification [TCG Enterprise]. The TCG SSC Enterprise Specification defines a management interface for host application software to activate, provision, and manage encryption of user data. The specification includes data structures and their required content, and mechanisms for managing and configuring Authentication Credentials and access controls. The security architecture provides a locking mechanism by which an Authentication Credential (i.e., a password) can be set by an operator to enable control of access to user data. After an operator authenticates to the appropriate role and locks access to user data access user data is inaccessible. This implementation complies with the lock-based authentication model specified in IG 4.1.A.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "WUH722020BL4205 [1, 2, 3, 4], WUH722020BL5205 [1, 2, 3, 4], WUH722222BL4205 [3, 5] , WUH722222BL5205 [3, 5]",
+ "firmware_versions": "RY07 [1], R5G4 [2], RG01 [3], VM18 [4], R7J4 [5]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2099",
+   "cavp_id": "34708"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "AES 3580",
+   "cavp_id": "4014"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2101",
+   "cavp_id": "34710"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "AES 3580",
+   "cavp_id": "4014"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "A2098",
+   "cavp_id": "34707"
+  },
+  {
+   "algorithm": "AES-XTS",
+   "cavp_cert": "A2101",
+   "cavp_id": "34710"
+  },
+  {
+   "algorithm": "AES-XTS",
+   "cavp_cert": "AES 3580",
+   "cavp_id": "4014"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A2098",
+   "cavp_id": "34707"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "HMAC 2280",
+   "cavp_id": "23036"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "HMAC 2280",
+   "cavp_id": "23036"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "HMAC 2280",
+   "cavp_id": "23036"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A2100",
+   "cavp_id": "34709"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2098",
+   "cavp_id": "34707"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2099",
+   "cavp_id": "34708"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "SHS 2942",
+   "cavp_id": "7145"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "SHS 2942",
+   "cavp_id": "7145"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2099",
+   "cavp_id": "34708"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "SHS 2942",
+   "cavp_id": "7145"
+  }
+ ],
+ "vendor": "Western Digital Technologies, Inc.",
+ "vendor_info": {
+  "name": "Western Digital Technologies, Inc.",
+  "website": "http://www.westerndigital.com",
+  "address": [
+   "5601 Great Oaks Parkway",
+   "San Jose, CA 95119",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Michael Williamson"
+   },
+   {
+    "name": "Nicholas Eu"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4802.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202024_011024_0217.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/16/2024",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/30/2025",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "9/16/2024",
+ "last_updated": "1/30/2025",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4802.pdf",
+ "other_fields": {
+  "Historical Reason": "Replaced by certificate #5483"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4802,
+  "vendor": "Western Digital Technologies, Inc.",
+  "module": "Ultrastar DC HC560 TCG Enterprise HDD SED, Ultrastar DC HC570 TCG Enterprise HDD SED",
+  "type": "Hardware",
+  "validation_dates": [
+   "09/16/2024",
+   "01/30/2025"
+  ],
+  "status": "Historical",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

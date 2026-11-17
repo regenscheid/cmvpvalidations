@@ -1,0 +1,40 @@
+{
+ "cavp_id": "31215",
+ "cavp_cert": "C819",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31215",
+ "implementation": "N3FIPS-OpenSSL-1.1.1-AES",
+ "product_id": "11173",
+ "description": "This implementation uses OpenSSL-1.1.1 to support AES ECB and CBC modes for all key sizes.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "6/20/2019",
+ "vendor": "Marvell",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

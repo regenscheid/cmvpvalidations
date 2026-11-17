@@ -1,0 +1,518 @@
+{
+ "cert": 5410,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5410",
+ "module": "Cryptographic Primitives Library",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "8/30/2031",
+ "level": "1",
+ "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11.1 of the Security Policy. When operated in approved mode with module Kernel Mode Cryptographic Primitives Library validated to FIPS 140-3 under Cert. #5408 operating in approved mode and Code Integrity validated to FIPS 140-3 under Cert. #5406 operating in approved mode or Secure Kernel Code Integrity validated to FIPS 140-3 under Cert. #5407 operating in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs. No assurance of FIPS 140-3 requirements met for the components of the RBG construct that are external to the module boundary (e.g., DRBG, ESV) except for SP 800-90C compliance and security strength of the provided random bits",
+ "level_exceptions": [
+  "Non-invasive security: N/A"
+ ],
+ "type": "Software-hybrid",
+ "embodiment": "MultiChipStand",
+ "description": "The Cryptographic Primitives Library is a cryptographic module that provides cryptographic services to user-mode applications running on Windows through the set of exported functions described in section 3 Cryptographic Module Interfaces. The module includes a set of algorithm providers for the Cryptography Next Generation (CNG) framework in Windows. Each provider represents a single cryptographic algorithm or a set of closely related cryptographic algorithms.",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A3763",
+   "cavp_id": "36373"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A3764",
+   "cavp_id": "36374"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "DSA PQGVer (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "DSA PQGVer (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "KAS-FFC Sp800-56Ar3",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "KAS-FFC Sp800-56Ar3",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A3763",
+   "cavp_id": "36373"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A3764",
+   "cavp_id": "36374"
+  },
+  {
+   "algorithm": "KDF TLS",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "KDF TLS",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "TLS v1.2 KDF RFC7627",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "TLS v1.2 KDF RFC7627",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5410.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202026_020926_0917.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/31/2026",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "8/31/2026",
+ "last_updated": "8/31/2026",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5410.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 5410,
+  "vendor": "Microsoft Corporation",
+  "module": "Cryptographic Primitives Library",
+  "type": "Software-hybrid",
+  "validation_dates": [
+   "08/31/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

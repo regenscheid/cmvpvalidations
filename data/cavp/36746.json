@@ -1,0 +1,47 @@
+{
+ "cavp_id": "36746",
+ "cavp_cert": "A4136",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36746",
+ "implementation": "AES Hardware Encryption Engine",
+ "product_id": "16657",
+ "description": "The hardware portion of the products provides the necessary framer, DSP, optical module interface, CPU cluster and various components covering the functionality of the products. The hardware cryptographic portion is done by Microsemi DIGI-G5 PM6010 High-Capacity 400G Multi-Service OTN Processor.",
+ "version": "PM6010B1-FEI",
+ "type": "HARDWARE",
+ "first_validated": "7/5/2023",
+ "vendor": "PacketLight Networks Ltd.",
+ "vendor_website": "http://www.packetlight.com",
+ "oes": [
+  {
+   "name": "AES Hardware Encryption Engine",
+   "details": [
+    "hardware: AES Hardware Encryption Engine"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128",
+    "Supports Counter larger than maximum value"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

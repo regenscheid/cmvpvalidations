@@ -1,0 +1,80 @@
+{
+ "cavp_id": "39283",
+ "cavp_cert": "A6673",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39283",
+ "implementation": "Chainguard FIPS Provider for OpenSSL (TLS v1.3)",
+ "product_id": "19421",
+ "description": "Chainguard FIPS Provider for OpenSSL provides cryptographic services to Linux user space software components. The following cipher implementation is covered: TLS v1.3 implementation.",
+ "version": "3.4.0-r4",
+ "type": "SOFTWARE",
+ "first_validated": "3/10/2025",
+ "vendor": "Chainguard, Inc.",
+ "vendor_website": "https://www.chainguard.dev",
+ "oes": [
+  {
+   "name": "Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7g.metal on Amazon Graviton3 AWS Graviton3",
+   "details": [
+    "processor: AWS Graviton3",
+    "  Processor AWS Graviton3 (processor family ARM64) from Amazon",
+    "  family: ARM64",
+    "  manufacturer: Amazon",
+    "  series: Neoverse V1",
+    "software: Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7g.metal",
+    "  EC2 m7g.metal running Chainguard Image 20230214 on Amazon Linux 2023."
+   ]
+  },
+  {
+   "name": "Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7i.metal-24xl on Intel Sapphire Rapids Xeon Platinum 8488C",
+   "details": [
+    "software: Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7i.metal-24xl",
+    "  EC2 m7i.metal-24xl running Chainguard Image 20230214 on Amazon Linux 2023.",
+    "processor: Xeon Platinum 8488C (Sapphire Rapids)",
+    "  Processor Xeon Platinum 8488C (Sapphire Rapids) (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Golden Cove"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8",
+    "HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 1,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8",
+    "HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 0,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 1,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

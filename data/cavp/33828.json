@@ -1,0 +1,42 @@
+{
+ "cavp_id": "33828",
+ "cavp_cert": "A1219",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33828",
+ "implementation": "LiquidSecurity-KAS-ECC",
+ "product_id": "13663",
+ "description": "This implements Ephemeral unified full key agreement scheme with KDF based on SP800-56A.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "4/6/2021",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-521",
+    "Function: Key Pair Generation, Partial Validation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-512",
+    "        Fixed Info Pattern: l||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,42 @@
+{
+ "cavp_id": "34710",
+ "cavp_cert": "A2101",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34710",
+ "implementation": "SoC9 Cryptographic Algorithm Library",
+ "product_id": "14565",
+ "description": "The SoC9 ASIC supports AES 256 encryption and decryption in ECB and XTS mode on Western Digital’s Self-Encrypting Drives (SEDs).",
+ "version": "SVN: 31599",
+ "type": "FIRMWARE",
+ "first_validated": "11/12/2021",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.WDC.com",
+ "oes": [
+  {
+   "name": "Simulator: Mentor Graphics Questasim 10.5c_4",
+   "details": [
+    "cpu: Simulator: Mentor Graphics Questasim 10.5c_4"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 4096-32768 Increment 128",
+    "Tweak Mode: Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

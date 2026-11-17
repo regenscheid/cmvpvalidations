@@ -1,0 +1,766 @@
+{
+ "cavp_id": "39157",
+ "cavp_cert": "A6547",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39157",
+ "implementation": "Apple corecrypto Module [Apple silicon, Secure Key Store, Hardware, SL2] (skg)",
+ "product_id": "19187",
+ "description": "Hardware implementation of cryptographic ciphers offering various cryptographic mechanisms to Apple Secure Key Store in the Secure Enclave Processor environment.",
+ "version": "2.0",
+ "type": "HARDWARE",
+ "first_validated": "1/28/2025",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "Apple A Series (ARMv8.6-A) A17 Pro",
+   "details": [
+    "processor: A17 Pro",
+    "  Processor A17 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series (ARMv9.2-A) A18",
+   "details": [
+    "processor: A18",
+    "  Processor A18 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series (ARMv9.2-A) A18 Pro",
+   "details": [
+    "processor: A18 Pro",
+    "  Processor A18 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series (ARMv9.3-A) A19",
+   "details": [
+    "processor: A19",
+    "  Processor A19 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv9.3-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series (ARMv9.3-A) A19 Pro",
+   "details": [
+    "processor: A19 Pro",
+    "  Processor A19 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv9.3-A)"
+   ]
+  },
+  {
+   "name": "Apple A Series (ARMv9.4-A) A20 Pro",
+   "details": [
+    "processor: A20 Pro",
+    "  Processor A20 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series (ARMv9.4-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M2 Ultra",
+   "details": [
+    "processor: M2 Ultra",
+    "  Processor M2 Ultra (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M3",
+   "details": [
+    "processor: M3",
+    "  Processor M3 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M3 Max",
+   "details": [
+    "processor: M3 Max",
+    "  Processor M3 Max (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M3 Pro",
+   "details": [
+    "processor: M3 Pro",
+    "  Processor M3 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv8.6-A) M3 Ultra",
+   "details": [
+    "processor: M3 Ultra",
+    "  Processor M3 Ultra (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.2-A) M4",
+   "details": [
+    "processor: M4",
+    "  Processor M4 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.2-A) M4 Max",
+   "details": [
+    "processor: M4 Max",
+    "  Processor M4 Max (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.2-A) M4 Pro",
+   "details": [
+    "processor: M4 Pro",
+    "  Processor M4 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.2-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.3-A) M5",
+   "details": [
+    "processor: M5",
+    "  Processor M5 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.3-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.3-A) M5 Max",
+   "details": [
+    "processor: M5 Max",
+    "  Processor M5 Max (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.3-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.3-A) M5 Pro",
+   "details": [
+    "processor: M5 Pro",
+    "  Processor M5 Pro (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.3-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.3-A) M5 Ultra",
+   "details": [
+    "processor: M5 Ultra",
+    "  Processor M5 Ultra (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.3-A)"
+   ]
+  },
+  {
+   "name": "Apple M Series (ARMv9.4-A) M6",
+   "details": [
+    "processor: M6",
+    "  Processor M6 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: M Series (ARMv9.4-A)"
+   ]
+  },
+  {
+   "name": "Apple S Series (ARMv8.6-A) S10",
+   "details": [
+    "processor: S10",
+    "  Processor S10 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: S Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple S Series (ARMv8.6-A) S9",
+   "details": [
+    "processor: S9",
+    "  Processor S9 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: S Series (ARMv8.6-A)"
+   ]
+  },
+  {
+   "name": "Apple S Series (ARMv9.4-A) S11",
+   "details": [
+    "processor: S11",
+    "  Processor S11 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: S Series (ARMv9.4-A)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 18,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 18,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 19,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 19,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 20,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 20,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 21,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 21,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 18,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 19,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 20,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 21,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

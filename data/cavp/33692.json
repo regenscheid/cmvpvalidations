@@ -1,0 +1,40 @@
+{
+ "cavp_id": "33692",
+ "cavp_cert": "A1083",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33692",
+ "implementation": "ARMv6 HMAC in Firmware",
+ "product_id": "13582",
+ "description": "FW implementation of Secure Hash MAC Algorithm in Seagate's self-encryption disk drives (SEDs).",
+ "version": "6.0",
+ "type": "FIRMWARE",
+ "first_validated": "3/4/2021",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com/",
+ "oes": [
+  {
+   "name": "ARM Cortex-M0 (ARMv6-M)",
+   "details": [
+    "processor: ARM Cortex-M Family"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 16-72 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 8-512 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

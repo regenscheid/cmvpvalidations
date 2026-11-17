@@ -1,0 +1,43 @@
+{
+ "cavp_id": "31755",
+ "cavp_cert": "C1327",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31755",
+ "implementation": "AES-CMAC for TRNG",
+ "product_id": "11712",
+ "description": "This is an AES-CMAC used exclusively for a conditionning component (vetted) in the TRNG HW peripheral.",
+ "version": "1",
+ "type": "FIRMWARE",
+ "first_validated": "11/6/2019",
+ "vendor": "STMicroelectronics",
+ "vendor_website": "http://www.st.com",
+ "oes": [
+  {
+   "name": "Verilog Simulator",
+   "details": [
+    "software: Verilog Simulator"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

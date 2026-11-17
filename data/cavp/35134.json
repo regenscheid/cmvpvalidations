@@ -1,0 +1,43 @@
+{
+ "cavp_id": "35134",
+ "cavp_cert": "A2523",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35134",
+ "implementation": "Micron 7400 Controller Sub Chip Security Subsystem (SCSS) Data Path Encryption Engine",
+ "product_id": "14839",
+ "description": "Micron 7400 Controller Sub Chip Security Subsystem (SCSS) Data Path Encryption Engine provides AES-XTS functionality",
+ "version": "v0",
+ "type": "HARDWARE",
+ "first_validated": "4/13/2022",
+ "vendor": "Micron Technology, Inc.",
+ "vendor_website": "http://www.Micron.com",
+ "oes": [
+  {
+   "name": "Micron 7400 Controller",
+   "details": [
+    "cpu: Micron 7400 Controller"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096-32896 Increment 128",
+    "Tweak Mode: Number",
+    "Data Unit Length Matches Payload Length"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

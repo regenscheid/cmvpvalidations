@@ -1,0 +1,58 @@
+{
+ "cavp_id": "32781",
+ "cavp_cert": "C1877",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32781",
+ "implementation": "AES ECB 128bit & 256bit Encryption/Decryption Engine",
+ "product_id": "12684",
+ "description": "The Broadcom BCM81343, BCM81394, BCM81398 are low-power, high-density PHY integrating IEEE 802.1AE MACsec with GCM-AES-256b/128b encryption functions supporting 400-Gigabit Ethernet (GbE), 200GbE, 100GbE, 40GbE, and 10GbE applications.",
+ "version": "BCM81343, BCM81394, BCM81398",
+ "type": "HARDWARE",
+ "first_validated": "6/22/2020",
+ "vendor": "Broadcom Corporation",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "AES ECB 128bit & 256bit Encryption/Decryption Engine",
+   "details": [
+    "device: AES ECB 128bit & 256bit Encryption/Decryption Engine"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 104, 128, 256, 408",
+    "AAD Length: 8, 160, 256, 384"
+   ]
+  },
+  {
+   "algorithm": "AES-XPN",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 104, 128, 256, 408",
+    "AAD Length: 8, 160, 256, 384",
+    "Tag Length: 128",
+    "IV Generation: External",
+    "Salt Generation: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,117 @@
+{
+ "cavp_id": "39342",
+ "cavp_cert": "A6732",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39342",
+ "implementation": "PS5018-E18",
+ "product_id": "19464",
+ "description": "Phison PS5018-E18 based TCG Opal SSC SSD solutions are high-performance Self-Encrypting SSDs supporting NVMe PCIe Interface. Cryptographic algorithm includes AES256-XTS on-the-fly user data encryption/decryption, RSA-4096 for firmware verification, HMAC_DRBG for key generation as well as AES Keywrap for key protection.",
+ "version": "PS5018-E18 Module V1.00",
+ "type": "HARDWARE",
+ "first_validated": "3/26/2025",
+ "vendor": "Phison Electronics Corporation",
+ "vendor_website": "https://www.phison.com/en/",
+ "oes": [
+  {
+   "name": "PS5018-E18 with ARM Cortex-R5",
+   "details": [
+    "Processor: PS5018-E18 with ARM Cortex-R5"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 256-4096 Increment 256",
+    "Tweak Mode: Number",
+    "Data Unit Length Matches Payload Length"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 256",
+    "    Additional Input: 256",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 64-256 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1-1000 Increment 1",
+    "    HMAC Algorithm: SHA2-256",
+    "    Password Length: 8-32 Increment 1",
+    "    Salt Length: 128-256 Increment 8",
+    "    Key Data Length: 128-256 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

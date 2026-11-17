@@ -1,0 +1,307 @@
+{
+ "cert": 4988,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4988",
+ "module": "Dynatrace Cryptographic Module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "3/16/2030",
+ "level": "1",
+ "caveat": "When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys)",
+ "level_exceptions": [
+  "Physical security: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Dynatrace Cryptographic Module is a cryptographic library embedded in the Dynatrace OneAgent application software. The Dynatrace Cryptographic Module supplies the cryptographic functionality for encryption and decryption, digital signature functions, hashing, message authentication, key establishment, and random number generation in support of general data protection functionality and secure communications protocols, including TLS 1.2/1.3.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 8.2 running on a Dell PowerEdge R440 with an Intel(R) Xeon(R) Silver 4214R with PAA",
+  "Red Hat Enterprise Linux 8.2 running on a Dell PowerEdge R440 with an Intel(R) Xeon(R) Silver 4214R without PAA"
+ ],
+ "allowed_algorithms": "AES (Cert. #A3358, Key Unwrapping (allowed per FIPS 140-3 IG D.G); Symmetric key unwrapping (using any Approved unauthenticated mode) For legacy use only.)",
+ "software_versions": "1.1",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-CFB1",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "DSA PQGVer (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "DSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "DSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "KDF TLS",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A3358",
+   "cavp_id": "35968"
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "cavp_cert": "A3359",
+   "cavp_id": "35969"
+  }
+ ],
+ "vendor": "Dynatrace LLC",
+ "vendor_info": {
+  "name": "Dynatrace LLC",
+  "website": "http://www.dynatrace.com",
+  "address": [
+   "1601 Trapelo Road",
+   "Suite 116",
+   "Waltham, MA 02451",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Willie Hicks"
+   },
+   {
+    "name": "Rush Modi"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4988.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202025_010425_0326.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/17/2025",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "3/17/2025",
+ "last_updated": "3/17/2025",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4988.pdf",
+ "other_fields": {},
+ "other_text": "AES (Cert. #A3358, Key Unwrapping (allowed per FIPS 140-3 IG D.G); Symmetric key unwrapping (using any Approved unauthenticated mode) For legacy use only.)",
+ "sparse": false,
+ "list": {
+  "cert": 4988,
+  "vendor": "Dynatrace LLC",
+  "module": "Dynatrace Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/17/2025"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

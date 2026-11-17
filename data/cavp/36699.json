@@ -1,0 +1,55 @@
+{
+ "cavp_id": "36699",
+ "cavp_cert": "A4089",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36699",
+ "implementation": "Juniper Express 4 (Express4)",
+ "product_id": "16624",
+ "description": "Juniper Express 4 is an Application-Specific Integrated Circuit (ASIC) specialized in network package transport with MACsec protocol support. The following cipher implementation is covered: Implementation of AES-GCM and AES-XPN on Juniper Express 4 ASIC.",
+ "version": "JTAG ID 20611361",
+ "type": "HARDWARE",
+ "first_validated": "6/27/2023",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Juniper Networks, Inc. Juniper Express 4",
+   "details": [
+    "processor: Juniper Express 4",
+    "  Processor Juniper Express 4 (processor family 4th Generation) from Juniper Networks, Inc.",
+    "  family: 4th Generation",
+    "  manufacturer: Juniper Networks, Inc."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XPN",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256",
+    "Tag Length: 128",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Salt Generation: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

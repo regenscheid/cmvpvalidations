@@ -1,0 +1,53 @@
+{
+ "cavp_id": "37988",
+ "cavp_cert": "A5378",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37988",
+ "implementation": "G+D KAS ST31N600 Version 1.0",
+ "product_id": "17828",
+ "description": "NIST SP 800-56Arev3 Key Agreement Scheme, section 5.7.1.2 ECC CDH Primitive only (as used by the PIV specification). Function: Key Pair Generation Curve: P-256, P-384 One pass DH, Role: Responder KDF SHA size: SHA-2(256, 384) Key Confirmation Method: CMAC (key length: 128,192, 256), (MAC length: 128)",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "6/11/2024",
+ "vendor": "Giesecke+Devrient ePayments GmbH",
+ "vendor_website": "http://gi-de.com",
+ "oes": [
+  {
+   "name": "STMicroelectronics ST31 platform: ST31N600",
+   "details": [
+    "cpu: STMicroelectronics ST31 platform: ST31N600"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384",
+    "Function: Full Validation",
+    "Scheme:",
+    "  onePassDh:",
+    "    KAS Role: Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "            MAC Salting Methods: default",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "            MAC Salting Methods: default",
+    "        Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Confirmation Methods:",
+    "      Key Confirmation Directions:",
+    "      Key Confirmation Roles:",
+    "      Key Confirmation MAC Methods:",
+    "        CMAC:",
+    "          Key Length: 128",
+    "          MAC Length: 128",
+    "    Key Length: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

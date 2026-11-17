@@ -1,0 +1,208 @@
+{
+ "cert": 4837,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4837",
+ "module": "i.MX8 DXL SECO HSM",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "10/14/2029",
+ "level": "3",
+ "caveat": "When utilizing a Trusted Channel as specified in the Security Policy.",
+ "level_exceptions": [
+  "Operational environment: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "The i.MX8 DXL SECO HSM hardware is a sub-chip subsystem of a single-chip embodiment that provides cryptographic engine and secure storage functions, intended for use in automotive or IoT applications.",
+ "tested_configurations": [
+  "[SOC_iMX8DualXL_28FDSOI_1.75 (P/Ns MIMX8SL3AVNFZAB, PIMX8SL3AVNFZAB, MIMX8DL3AVNFZAB, PIMX8DL3AVNFZAB)]"
+ ],
+ "allowed_algorithms": "ECDSA with non-NIST recommended curves (Provides 128 or 192 bits of encryption strength); Per IG C.A; Use of Brainpool curves, allowed for use per [FIPS 140-3 IG] C.A: - BrainpoolP256R1 (128-bit security strength) - BrainpoolP384R1 (192-bit security strength));EC Diffie-Hellman with non-NIST recommended curves (Provides 128 or 192 bits of encryption strength); Per IGs D.F and C.A; Use of Brainpool curves in KAS, allowed for use per [FIPS 140-3 IG] C.A and [FIPS 140-3 IG] D.F Scenario 3: - BrainpoolP256R1 (available for both KEK and TLS use cases; 128-bit security strength) - BrainpoolP384R1 (available only for TLS use case; 192-bit security strength))",
+ "entropy": "ENT (P)",
+ "hardware_versions": "P/N: version tag DA_SSL_iMX8DXL_SCU_SUBSYS_LN28FDSOI_1.56",
+ "firmware_versions": "SECO ROM mem_I.MX8_s28roml_w24576x032m32B2_1Tlms_m0_1.7; SECO FW 5.9.0",
+ "non_approved_algorithms": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2953",
+   "cavp_id": "35563"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A2962",
+   "cavp_id": "35572"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A2954",
+   "cavp_id": "35564"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2953",
+   "cavp_id": "35563"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A2964",
+   "cavp_id": "35574"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A2964",
+   "cavp_id": "35574"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A2963",
+   "cavp_id": "35573"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A2963",
+   "cavp_id": "35573"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2963",
+   "cavp_id": "35573"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A2955",
+   "cavp_id": "35565"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A2961",
+   "cavp_id": "35571"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A2961",
+   "cavp_id": "35571"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A2961",
+   "cavp_id": "35571"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A2961",
+   "cavp_id": "35571"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A2972",
+   "cavp_id": "35582"
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "cavp_cert": "A2965",
+   "cavp_id": "35575"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A2966",
+   "cavp_id": "35576"
+  },
+  {
+   "algorithm": "KDF TLS",
+   "cavp_cert": "A2973",
+   "cavp_id": "35583"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2967",
+   "cavp_id": "35577"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A2956",
+   "cavp_id": "35566"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2955",
+   "cavp_id": "35565"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2956",
+   "cavp_id": "35566"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A2956",
+   "cavp_id": "35566"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A2956",
+   "cavp_id": "35566"
+  },
+  {
+   "algorithm": "TLS v1.2 KDF RFC7627",
+   "cavp_cert": "A2973",
+   "cavp_id": "35583"
+  }
+ ],
+ "vendor": "NXP Semiconductors, Inc.",
+ "vendor_info": {
+  "name": "NXP Semiconductors, Inc.",
+  "website": "http://www.nxp.com",
+  "address": [
+   "Troplowitzstrasse 20",
+   "Hamburg D-22529",
+   "Germany"
+  ],
+  "contacts": [
+   {
+    "name": "Tim 't Hart"
+   },
+   {
+    "name": "David Herrgesell"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4837.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202024_041124_0733%20%281%29.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/15/2024",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "10/15/2024",
+ "last_updated": "10/15/2024",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4837.pdf",
+ "other_fields": {},
+ "other_text": "ECDSA with non-NIST recommended curves (Provides 128 or 192 bits of encryption strength); Per IG C.A; Use of Brainpool curves, allowed for use per [FIPS 140-3 IG] C.A: - BrainpoolP256R1 (128-bit security strength) - BrainpoolP384R1 (192-bit security strength));EC Diffie-Hellman with non-NIST recommended curves (Provides 128 or 192 bits of encryption strength); Per IGs D.F and C.A; Use of Brainpool curves in KAS, allowed for use per [FIPS 140-3 IG] C.A and [FIPS 140-3 IG] D.F Scenario 3: - BrainpoolP256R1 (available for both KEK and TLS use cases; 128-bit security strength) - BrainpoolP384R1 (available only for TLS use case; 192-bit security strength))",
+ "sparse": false,
+ "list": {
+  "cert": 4837,
+  "vendor": "NXP Semiconductors, Inc.",
+  "module": "i.MX8 DXL SECO HSM",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/15/2024"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

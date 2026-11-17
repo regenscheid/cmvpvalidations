@@ -1,0 +1,48 @@
+{
+ "cavp_id": "37348",
+ "cavp_cert": "A4738",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37348",
+ "implementation": "AN/KRC-6 - Freescale QorIQ P2020",
+ "product_id": "17300",
+ "description": "The Freescale QorIQ P2020 hardware accelerator provides encryption and authentication services for data traffic within the AN/KRC-6 Base Band Unit",
+ "version": "3.3",
+ "type": "HARDWARE",
+ "first_validated": "11/17/2023",
+ "vendor": "Ultra Intelligence & Communications",
+ "vendor_website": "https://www.ultra.group/ultra-tcs/",
+ "oes": [
+  {
+   "name": "Freescale QorIQ P2020-Power PC",
+   "details": [
+    "processor: Freescale QorIQ P2020-Power PC",
+    "  manufacturer: NXP"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 160"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 128-2048 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

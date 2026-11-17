@@ -1,0 +1,88 @@
+{
+ "cavp_id": "35328",
+ "cavp_cert": "A2717",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35328",
+ "implementation": "Kenwood Cryptographic Module (KCM)",
+ "product_id": "15179",
+ "description": "The KCM is a hardware cryptographic module meeting the FIPS 140-3, Level 3 requirement. It provides access to basic cryptographic algorithms with long-term key storage within the module itself.",
+ "version": "1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "7/15/2022",
+ "vendor": "EF Johnson Technologies",
+ "vendor_website": "https://www.efjohnson.com/",
+ "oes": [
+  {
+   "name": "STM32H7B3QYI",
+   "details": [
+    "Processor: STM32H7B3QYI"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-256 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8",
+    "Function: SHA2"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

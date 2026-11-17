@@ -1,0 +1,43 @@
+{
+ "cavp_id": "33803",
+ "cavp_cert": "A1194",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33803",
+ "implementation": "LiquidSecurity-KTS-RSA",
+ "product_id": "13667",
+ "description": "This implements OAEP based key transport schemes based on SP800-56B.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "4/2/2021",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX with Nitrox III (CN35XX)",
+   "details": [
+    "processor: Nitrox III (CN35XX)",
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: partialVal",
+    "Modulo: 2048, 3072, 4096",
+    "Key Generation Methods: rsakpg2-crt",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator, responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: l||uPartyInfo||vPartyInfo",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

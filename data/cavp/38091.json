@@ -1,0 +1,75 @@
+{
+ "cavp_id": "38091",
+ "cavp_cert": "A5481",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38091",
+ "implementation": "Junos 23.4R1 MX-MACsec",
+ "product_id": "18160",
+ "description": "Junos® OS automates network operations with streamlined precision, furthers operational efficiency, and frees up valuable time and resources for top-line growth opportunities. Built for reliability, security, and flexibility, Junos OS runs many of the world’s most sophisticated network deployments, giving operators an advantage over those who run competing network operating systems.",
+ "version": "Junos 23.4R1",
+ "type": "FIRMWARE",
+ "first_validated": "7/31/2024",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Intel(R) Xeon(R) CPU E5-2608L",
+   "details": [
+    "processor: Intel Xeon(R) CPU E5-2608L",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 8, 64, 120",
+    "    Message Length: 0, 32768, 524288"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES256",
+    "    Supported Lengths: 128, 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

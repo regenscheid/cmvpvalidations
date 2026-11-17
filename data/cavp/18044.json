@@ -1,0 +1,42 @@
+{
+ "cavp_id": "18044",
+ "cavp_cert": "AES 5074",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18044",
+ "implementation": "FastIron Service Module FPGA",
+ "product_id": "8919",
+ "description": "AES Component implements AES key sizes 128/256 bits.",
+ "version": "2.09 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "1/5/2018",
+ "vendor": "Ruckus Wireless, Inc.",
+ "vendor_website": "http://www.ruckuswireless.com",
+ "oes": [
+  {
+   "name": "Mentor Graphic Questa Advanced Simulator",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

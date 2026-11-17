@@ -1,0 +1,78 @@
+{
+ "cavp_id": "39187",
+ "cavp_cert": "A6577",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39187",
+ "implementation": "Cavium Nitrox PX (CN1620)",
+ "product_id": "19294",
+ "description": "Cavium Nitrox is a crypto processor in the Oracle Session Border Controller, that provides FIPS cryptographic algorithms for the services and protocols.",
+ "version": "CN1620",
+ "type": "HARDWARE",
+ "first_validated": "2/7/2025",
+ "vendor": "Oracle Communications",
+ "vendor_website": "https://www.oracle.com",
+ "oes": [
+  {
+   "name": "CN1620",
+   "details": [
+    "hardware: CN1620"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "        Modulo: 2048",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "        Modulo: 2048",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "Fixed Public Exponent: 010001",
+    "Public Exponent Mode: fixed"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

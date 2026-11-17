@@ -1,0 +1,158 @@
+{
+ "cavp_id": "37006",
+ "cavp_cert": "A4396",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37006",
+ "implementation": "Purity Encryption Module",
+ "product_id": "16952",
+ "description": "Purity Encryption Module is a standalone cryptographic module for the Purity Operating Environment for FlashArray (Purity//FA). Purity//FA powers Pure Storage's FlashArray family of products which provide economical all-flash storage. Purity Encryption Module enables FlashArray to support always-on, inline encryption of data with an internal key management scheme that requires no user intervention.",
+ "version": "FA-1.5",
+ "type": "SOFTWARE",
+ "first_validated": "9/7/2023",
+ "vendor": "Pure Storage, Inc.",
+ "vendor_website": "https://www.purestorage.com/",
+ "oes": [
+  {
+   "name": "Purity OS 6.4 on Intel Xeon Silver 4210R without AES-NI",
+   "details": [
+    "Processor: Intel Xeon Silver 4210R without AES-NI",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake",
+    "OS: Purity OS 6.4"
+   ]
+  },
+  {
+   "name": "Purity//FA v6.4 on Intel Xeon Silver 4210R with AES-NI",
+   "details": [
+    "Processor: Intel Xeon Silver 4210R with AES-NI",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake",
+    "OS: Purity//FA v6.4"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher, Inverse",
+    "Key Length: 128, 256",
+    "Payload Length: 128-4096 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher, Inverse",
+    "Key Length: 128, 256",
+    "Payload Length: 128-4096 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 512-2048 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 512-2048 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

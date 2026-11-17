@@ -1,0 +1,55 @@
+{
+ "cavp_id": "35302",
+ "cavp_cert": "A2691",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35302",
+ "implementation": "Helion Modular Exponentiation IP Core",
+ "product_id": "15097",
+ "description": "The Helion Modular Exponentiation core performs the Z = Y^e mod M computation which is at the heart of many commonly used Public-Key encryption schemes such as RSA, Diffie-Hellman, ElGamal, and the Digital Signature Algorithm (DSA) described in FIPS 186-2. These algorithms provide the strong encryption to facilitate key exchange and certificate-based authentication for communication protocols such as TLS/SSL and IPsec which are widely used for securing transactions over open networks such as the Internet.",
+ "version": "20161104",
+ "type": "HARDWARE",
+ "first_validated": "6/30/2022",
+ "vendor": "Broadcom Inc.",
+ "vendor_website": "https://www.broadcom.com",
+ "oes": [
+  {
+   "name": "ARM Cortex R4",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "oe": 0,
+   "capabilities": [
+    "Private Key Format: standard",
+    "Public Exponent Mode: random"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Random"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

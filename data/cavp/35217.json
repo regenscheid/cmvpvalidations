@@ -1,0 +1,89 @@
+{
+ "cavp_id": "35217",
+ "cavp_cert": "A2606",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35217",
+ "implementation": "Atalla Cryptographic Subsystem",
+ "product_id": "15078",
+ "description": "The Atalla Cryptographic Subsytem (ACS) is a multi-chip embedded cryptographic module that provides secure cryptographic processing, key management, and storage capabilities.",
+ "version": "1.24",
+ "type": "FIRMWARE",
+ "first_validated": "6/1/2022",
+ "vendor": "Utimaco Inc.",
+ "vendor_website": "https://hsm.utimaco.com/",
+ "oes": [
+  {
+   "name": "Marvell OCTEON CN73XX (MIPS64)",
+   "details": [
+    "processor: OCTEON CN73XX (MIPS64)",
+    "  manufacturer: Marvell"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 72-256 Increment 8",
+    "AAD Length: 0-256 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component Block Cipher Derivation Function SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Payload Length: 8-1792 Increment 8",
+    "Output Length: 128-512 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Random"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

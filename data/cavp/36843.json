@@ -1,0 +1,46 @@
+{
+ "cavp_id": "36843",
+ "cavp_cert": "A4233",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36843",
+ "implementation": "Junos OS Evolved OpenSSL Cryptographic Module (SSH_AVX)",
+ "product_id": "16791",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: SSH KDF using AVX SHA implementation.",
+ "version": "3.0.8",
+ "type": "SOFTWARE",
+ "first_validated": "7/24/2023",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Junos OS Evolved version 22.4 on Intel Xeon D-2163IT",
+   "details": [
+    "processor: D-2163IT",
+    "  Processor D-2163IT (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Xeon",
+    "software: Junos OS Evolved version 22.4",
+    "  Junos OS Evolved version 22.4, a Linux distribution developed by Juniper Networks"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

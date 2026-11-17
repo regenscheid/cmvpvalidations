@@ -1,0 +1,73 @@
+{
+ "cavp_id": "39739",
+ "cavp_cert": "A7129",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39739",
+ "implementation": "TuxCare GnuTLS Cryptographic Module (AESNI)",
+ "product_id": "19892",
+ "description": "GnuTLS is a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them. It provides a simple C language application programming interface (API) to access the secure communications protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and other required structures. The following cipher implementation is covered: Intel AES-NI AES implementation.",
+ "version": "3.8.3-ee94f5887c35ac8f",
+ "type": "SOFTWARE",
+ "first_validated": "7/10/2025",
+ "vendor": "Cloud Linux Software, Inc. d/b/a TuxCare",
+ "vendor_website": "http://www.tuxcare.com",
+ "oes": [
+  {
+   "name": "AlmaLinux OS 9.6 on Intel® Emerald Rapids-SP Xeon® Gold 5512U",
+   "details": [
+    "software: AlmaLinux OS 9.6",
+    "  Linux distribution with Enterprise Support by Cloud Linux Software, Inc. d/b/a TuxCare and targeted towards the commercial market.",
+    "processor: Xeon® Gold 5512U",
+    "  Processor Xeon® Gold 5512U (processor family X86) from Intel®",
+    "  family: X86",
+    "  manufacturer: Intel®",
+    "  series: Emerald Rapids-SP"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

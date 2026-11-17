@@ -1,0 +1,97 @@
+{
+ "cavp_id": "39516",
+ "cavp_cert": "A6906",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39516",
+ "implementation": "OpenSSL 3 (64 bit) (KBKDF_3_1)",
+ "product_id": "19648",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Generic C non-optimized KBKDF implementation.",
+ "version": "3.3.2-a8fdaac",
+ "type": "SOFTWARE",
+ "first_validated": "5/8/2025",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "ClevOS 3.19 on Intel Sapphire Rapids Xeon 8474C",
+   "details": [
+    "software: ClevOS 3.19",
+    "  Linux distribution developed by IBM Corporation",
+    "processor: Xeon 8474C",
+    "  Processor Xeon 8474C (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Sapphire Rapids"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF KMAC Sp800-108r1",
+   "oe": 0,
+   "capabilities": [
+    "Key Derivation Key Length: 128",
+    "Context Length: 128",
+    "Label Length: 128",
+    "Derived Key Length: 256",
+    "MAC Modes: KMAC-128, KMAC-256"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA2-512/224, HMAC-SHA2-512/256, HMAC-SHA3-224, HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512",
+    "    Supported Lengths: 112-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA2-512/224, HMAC-SHA2-512/256, HMAC-SHA3-224, HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512",
+    "    Supported Lengths: 112-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256",
+    "    Supported Lengths: 112-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256",
+    "    Supported Lengths: 112-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

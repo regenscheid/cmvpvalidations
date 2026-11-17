@@ -1,0 +1,64 @@
+{
+ "cavp_id": "35548",
+ "cavp_cert": "A2938",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35548",
+ "implementation": "Tensor G2 UFS Inline Storage Encryption Driver",
+ "product_id": "15396",
+ "description": "Inline storage encryption engine driver for UFS as part of the Tensor G2 mobile SoC to protect user data at rest.",
+ "version": "1.2.0",
+ "type": "SOFTWARE",
+ "first_validated": "10/24/2022",
+ "vendor": "Google LLC",
+ "vendor_website": "http://www.google.com",
+ "oes": [
+  {
+   "name": "Linux 5.10 on Google Tensor G2 Processor",
+   "details": [
+    "processor: Google Tensor G2",
+    "  manufacturer: Google",
+    "software: Linux 5.10"
+   ]
+  },
+  {
+   "name": "Linux kernel 6.1 on Google Tensor G2 Processor",
+   "details": [
+    "processor: Google Tensor G2",
+    "  manufacturer: Google",
+    "Operating System: Linux 6.1"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

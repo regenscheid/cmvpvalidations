@@ -1,0 +1,52 @@
+{
+ "cavp_id": "38397",
+ "cavp_cert": "A5787",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38397",
+ "implementation": "Samsung TCG Opal SSC and SPDM Cryptographic Sub-Chip (Eldora PRNG)",
+ "product_id": "18464",
+ "description": "The cryptographic algorithm IPs are embedded in Samsung Security Subsystem",
+ "version": "S03",
+ "type": "HARDWARE",
+ "first_validated": "9/16/2024",
+ "vendor": "Samsung Electronics Co.,Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Samsung Eldora S4LY024A01",
+   "details": [
+    "processor: S4LY024A01",
+    "  Processor S4LY024A01 (processor family ARM Cortex-M35P) from Samsung",
+    "  family: ARM Cortex-M35P",
+    "  manufacturer: Samsung",
+    "  series: Eldora"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 512",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

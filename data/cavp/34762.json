@@ -1,0 +1,60 @@
+{
+ "cavp_id": "34762",
+ "cavp_cert": "A2153",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34762",
+ "implementation": "Intel DRNG (DRNG)",
+ "product_id": "14660",
+ "description": "DRNG RTL1.0 Server Coop Configuration for Denverton",
+ "version": "DNV-COOP-RTL1.0",
+ "type": "HARDWARE",
+ "first_validated": "12/14/2021",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Intel Corporation Intel(R) Atom(R) Denverton-16 FCBGA1310 Intel(R) Atom(R) C3958 Processor",
+   "details": [
+    "processor: Intel(R) Atom(R) C3958 Processor",
+    "  Processor Intel(R) Atom(R) C3958 Processor (processor family Intel) from Intel Corporation",
+    "  family: Intel",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel(R) Atom(R) Denverton-16 FCBGA1310"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

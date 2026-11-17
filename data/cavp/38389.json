@@ -1,0 +1,46 @@
+{
+ "cavp_id": "38389",
+ "cavp_cert": "A5779",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38389",
+ "implementation": "Ubuntu 24.04 OpenSSL Cryptographic Module (NEON)",
+ "product_id": "18453",
+ "description": "Ubuntu 24.04 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: ARMv7 NEON SHA implementation.",
+ "version": "3.0.13-0ubuntu3+Fips1",
+ "type": "SOFTWARE",
+ "first_validated": "9/12/2024",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 24.04 on EC2 c7g.metal on Amazon AWS Graviton Graviton3",
+   "details": [
+    "processor: Graviton3",
+    "  Processor Graviton3 (processor family ARM64) from Amazon",
+    "  family: ARM64",
+    "  manufacturer: Amazon",
+    "  series: AWS Graviton",
+    "software: Ubuntu 24.04 on EC2 c7g.metal",
+    "  EC2 c7g.metal running Ubuntu 24.04"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

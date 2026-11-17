@@ -1,0 +1,53 @@
+{
+ "cavp_id": "36993",
+ "cavp_cert": "A4383",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36993",
+ "implementation": "IBM DataPower FIPS Provider (FFC_DH)",
+ "product_id": "16905",
+ "description": "OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The following cipher implementation is covered: Generic C non-optimized DH implementation.",
+ "version": "3.0.9-B3346E1D91BA83B7BAB52F472F3E6A0D",
+ "type": "SOFTWARE",
+ "first_validated": "8/30/2023",
+ "vendor": "IBM Corporation",
+ "vendor_website": "https://www.ibm.com",
+ "oes": [
+  {
+   "name": "CentOS Stream 8 on Intel Ice Lake Xeon Gold 6326",
+   "details": [
+    "os: CentOS Stream 8",
+    "processor: Xeon Gold 6326",
+    "  Processor Xeon Gold 6326 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Ice Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

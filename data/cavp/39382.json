@@ -1,0 +1,77 @@
+{
+ "cavp_id": "39382",
+ "cavp_cert": "A6772",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39382",
+ "implementation": "Zebra DCS Cryptographic Module on Scanner",
+ "product_id": "19495",
+ "description": "The Zebra DCS Cryptographic Library provides FIPS 140-3 Level 1 certified encryption and security practices to protect data sensitive transmission between the embedded devices which include cordless scanners, cradles and terminals",
+ "version": "DAACHIS00-001-R00",
+ "type": "FIRMWARE",
+ "first_validated": "4/2/2025",
+ "vendor": "Zebra Technologies Corporation",
+ "vendor_website": "http://www.zebra.com",
+ "oes": [
+  {
+   "name": "ThreadX V5.6 on Faraday CortexA9 ICON-XL",
+   "details": [
+    "processor: Faraday CortexA9 ICON-XL",
+    "  ARM CortexA9 Processor",
+    "software: ThreadX V5.6"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128-4096 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 72-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

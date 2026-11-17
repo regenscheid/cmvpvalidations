@@ -1,0 +1,115 @@
+{
+ "cavp_id": "40234",
+ "cavp_cert": "A7624",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40234",
+ "implementation": "Ad Noctem Connect Kernel 2.3",
+ "product_id": "20433",
+ "description": "Cryptographic implementations in the Ad Noctem Connect kernel used by the Ad Noctem Connect.",
+ "version": "2.3",
+ "type": "SOFTWARE",
+ "first_validated": "10/30/2025",
+ "vendor": "Northrop Grumman Corporation",
+ "vendor_website": "https://www.northropgrumman.com/",
+ "oes": [
+  {
+   "name": "Ad Noctem Connect OS 2.3 on ARM Cortex-A53",
+   "details": [
+    "OS: Ad Noctem Connect OS 2.3",
+    "  The Ad Noctem Connect OS 2.3 is the operating system that runs on the Ad Noctem GB100 platform.",
+    "  manufacturer: Northrop Grumman Corporation",
+    "CPU: ARM Cortex-A53 ARMv8 aarch64",
+    "  family: ARMv8",
+    "  manufacturer: ARM",
+    "  series: aarch64"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 64, 96, 104",
+    "Payload Length: 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 160-65536 Increment 8",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256-512 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256-384 Increment 8",
+    "Key Length: 256-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256-512 Increment 8",
+    "Key Length: 256-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

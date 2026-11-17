@@ -1,0 +1,153 @@
+{
+ "cavp_id": "39410",
+ "cavp_cert": "A6800",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39410",
+ "implementation": "Fortinet FortiOS-VM FIPS Cryptographic Library",
+ "product_id": "19533",
+ "description": "Fortinet FortiOS FIPS Cryptographic Library running in a Virtual Machine (VM)",
+ "version": "7.2",
+ "type": "SOFTWARE",
+ "first_validated": "4/17/2025",
+ "vendor": "Fortinet Inc.",
+ "vendor_website": "http://www.fortinet.com",
+ "oes": [
+  {
+   "name": "FortiOS 7.2 on VMware ESXi 6.7 running on PacStar 451 with Intel Xeon D-1559",
+   "details": [
+    "os: FortiOS 7.2",
+    "  manufacturer: Fortinet",
+    "cpu: Intel Xeon D-1559 (Broadwell)",
+    "  Intel Xeon D-1559",
+    "  family: Xeon D",
+    "  manufacturer: Intel",
+    "  series: 1559",
+    "platform: PacStar 451",
+    "  manufacturer: Curtiss-Wright",
+    "hypervisor: VMware ESXi 6.7"
+   ]
+  },
+  {
+   "name": "FortiOS 7.2 on VMware ESXi 6.7 running on PacStar 451 with Intel Xeon E-2276ME",
+   "details": [
+    "os: FortiOS 7.2",
+    "  manufacturer: Fortinet",
+    "cpu: Intel Xeon E-2276ME (Coffee Lake)",
+    "  family: Xeon E",
+    "  manufacturer: Intel",
+    "  series: 2276",
+    "platform: PacStar 451",
+    "  manufacturer: Curtiss-Wright",
+    "hypervisor: VMware ESXi 6.7"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 16, 128, 136, 256, 264",
+    "AAD Length: 0, 128, 136, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 16, 128, 136, 256, 264",
+    "AAD Length: 0, 128, 136, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256 Increment 256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256 Increment 256",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256 Increment 256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256 Increment 256",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

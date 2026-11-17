@@ -1,0 +1,125 @@
+{
+ "cert": 4844,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4844",
+ "module": "Kenwood Cryptographic Module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "10/16/2029",
+ "level": "3",
+ "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The KCM is a multi-chip embedded FIPS 140-3 hardware cryptographic module. It provides access to basic cryptographic algorithms with available long-term key storage within the module itself. This module is intended for use cases where the additional security provided by a level 3 module is needed.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "AES-CBC-MAC (Only allowed for use within OTAR per IG D.C; TIA-102.AACA-B P25 OTAR)",
+ "entropy": "ENT (P)",
+ "hardware_versions": "1",
+ "firmware_versions": "1.0.0",
+ "non_approved_algorithms": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2717",
+   "cavp_id": "35328"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "C1327",
+   "cavp_id": "31755"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2717",
+   "cavp_id": "35328"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A2717",
+   "cavp_id": "35328"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A2717",
+   "cavp_id": "35328"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A2717",
+   "cavp_id": "35328"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A2717",
+   "cavp_id": "35328"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A2717",
+   "cavp_id": "35328"
+  }
+ ],
+ "vendor": "EF Johnson Technologies",
+ "vendor_info": {
+  "name": "EF Johnson Technologies",
+  "website": "http://www.efjohnson.com",
+  "address": [
+   "3900 NW 12th St. #200",
+   "Lincoln, NE 68521",
+   "United States"
+  ],
+  "contacts": [
+   {
+    "name": "John Batenhorst"
+   },
+   {
+    "name": "Brian Niebuhr"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4844.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202024_041124_0733%20%281%29.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/17/2024",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "10/17/2024",
+ "last_updated": "10/17/2024",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4844.pdf",
+ "other_fields": {},
+ "other_text": "AES-CBC-MAC (Only allowed for use within OTAR per IG D.C; TIA-102.AACA-B P25 OTAR)",
+ "sparse": false,
+ "list": {
+  "cert": 4844,
+  "vendor": "EF Johnson Technologies",
+  "module": "Kenwood Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/17/2024"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

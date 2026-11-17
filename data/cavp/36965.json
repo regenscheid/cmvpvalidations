@@ -1,0 +1,48 @@
+{
+ "cavp_id": "36965",
+ "cavp_cert": "A4355",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36965",
+ "implementation": "IBM DataPower FIPS Provider (TLS v1.3)",
+ "product_id": "16904",
+ "description": "OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The following cipher implementation is covered: TLS v1.3 implementation.",
+ "version": "3.0.9-B3346E1D91BA83B7BAB52F472F3E6A0D",
+ "type": "SOFTWARE",
+ "first_validated": "8/29/2023",
+ "vendor": "IBM Corporation",
+ "vendor_website": "https://www.ibm.com",
+ "oes": [
+  {
+   "name": "CentOS Stream 8 on Intel Ice Lake Xeon Gold 6326",
+   "details": [
+    "os: CentOS Stream 8",
+    "processor: Xeon Gold 6326",
+    "  Processor Xeon Gold 6326 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Ice Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA HKDF Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-2048 Increment 8",
+    "HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256, SHA3-224, SHA3-256, SHA3-384"
+   ]
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 0,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

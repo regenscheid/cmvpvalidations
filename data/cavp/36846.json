@@ -1,0 +1,174 @@
+{
+ "cavp_id": "36846",
+ "cavp_cert": "A4236",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36846",
+ "implementation": "Junos OS Evolved OpenSSL Cryptographic Module (SHA3_ASM)",
+ "product_id": "16796",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Assembler SHA-3 implementation.",
+ "version": "3.0.8",
+ "type": "SOFTWARE",
+ "first_validated": "7/24/2023",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Junos OS Evolved version 22.4 on Intel Xeon D-2163IT",
+   "details": [
+    "processor: D-2163IT",
+    "  Processor D-2163IT (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Xeon",
+    "software: Junos OS Evolved version 22.4",
+    "  Junos OS Evolved version 22.4, a Linux distribution developed by Juniper Networks"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.42",
+   "oe": 0,
+   "capabilities": [
+    "KDF Type: DER",
+    "Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "zz Length: 112-4096 Increment 8",
+    "Key Data Length: 112-4096 Increment 8",
+    "Supplemental Information Length: 0-256 Increment 8",
+    "OID: AES-128-KW, AES-192-KW, AES-256-KW"
+   ]
+  },
+  {
+   "algorithm": "KMAC-128",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "MAC Length: 32-65536 Increment 8",
+    "Key Data Length: 128-1024 Increment 8",
+    "Hex Customization",
+    "Supports eXtendable-Output Functions: Yes, No"
+   ]
+  },
+  {
+   "algorithm": "KMAC-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "MAC Length: 32-65536 Increment 8",
+    "Key Data Length: 128-1024 Increment 8",
+    "Hex Customization",
+    "Supports eXtendable-Output Functions: Yes, No"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000 Increment 1",
+    "    HMAC Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

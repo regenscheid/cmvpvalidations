@@ -1,0 +1,85 @@
+{
+ "cert": 5455,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5455",
+ "module": "Non-Volatile Memory express (NVMe) Data Path Security Cluster (DPSC) Module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "7/29/2031",
+ "level": "1",
+ "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+ "level_exceptions": [
+  "Software/Firmware security: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "SingleChip",
+ "description": "The Data Path Security Cluster is a hardware IP providing XTS-AES encryption to NVMe data in transit over the network. The cryptographic module accepts from its outside and stores cryptographic keys for multiple NVMe connections. Depending on the content of received data, the module shall or shall not apply cryptographic processing to the data. The DPSC contains 4 identical XTS-AES-256 decrypt engines, 4 identical XTS-AES-256 encrypt engines, key cache arbiter and key cache SRAM which is zeroized on reset. The data interfaces exposed to the NVMe Protocol Layer (NPL) within the NVMe Protocol Initiator (NPI) are read and write DMA interfaces. XTS keys are written to the module’s SRAM via Control/Status Register (CSR) writes from the Integrated Management Complex (IMC) located outside of the module boundary. On-demand self- tests may be initiated from the NPI using an on-demand self-test trigger over a wire interface.",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A6037",
+   "cavp_id": "38647"
+  }
+ ],
+ "vendor": "Google, LLC",
+ "vendor_info": {
+  "name": "Google, LLC",
+  "website": "http://www.google.com",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Crypto Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5455.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202026_040826_0807.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/30/2026",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "7/30/2026",
+ "last_updated": "7/30/2026",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5455.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 5455,
+  "vendor": "Google, LLC",
+  "module": "Non-Volatile Memory express (NVMe) Data Path Security Cluster (DPSC) Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "07/30/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

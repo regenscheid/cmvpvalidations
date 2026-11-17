@@ -1,0 +1,42 @@
+{
+ "cavp_id": "35778",
+ "cavp_cert": "A3168",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35778",
+ "implementation": "OpenSSL (32 bit) (TLS v1.3)",
+ "product_id": "15672",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 32 bit word size. The following cipher implementation is covered: HKDF implementation for TLSv1.3 KDF.",
+ "version": "4.4",
+ "type": "SOFTWARE",
+ "first_validated": "12/13/2022",
+ "vendor": "SUSE LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on Intel Cascade Lake Intel(R) Xeon(R) Silver 4215R",
+   "details": [
+    "processor: Intel(R) Xeon(R) Silver 4215R",
+    "  Processor Intel(R) Xeon(R) Silver 4215R (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake",
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA HKDF Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-3072 Increment 8",
+    "HMAC Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

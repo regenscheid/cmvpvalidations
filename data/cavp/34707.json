@@ -1,0 +1,65 @@
+{
+ "cavp_id": "34707",
+ "cavp_cert": "A2098",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34707",
+ "implementation": "SoC9 ACM ROM Crypto Security Library",
+ "product_id": "14566",
+ "description": "The SoC9 ACM ROM Crypto Security Library defines the DRBG, RSA, and SP 800-38F Key Wrap cryptographic algorithm implementations for SoC9 based Western Digital’s Hard Disk Self-Encrypting Drives (SED).",
+ "version": "IN.002.00F",
+ "type": "FIRMWARE",
+ "first_validated": "11/12/2021",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.WDC.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-M3",
+   "details": [
+    "cpu: ARM Cortex-M3"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 96-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256-4096 Increment 8",
+    "    Nonce: 128-4096 Increment 8",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 4096"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

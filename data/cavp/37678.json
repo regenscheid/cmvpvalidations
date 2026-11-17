@@ -1,0 +1,72 @@
+{
+ "cavp_id": "37678",
+ "cavp_cert": "A5068",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37678",
+ "implementation": "Ribbon SRTP KDF Library (OCTEON)",
+ "product_id": "17665",
+ "description": "Ribbon Session Border Controller FIPS-validated SRTP implementation.",
+ "version": "10",
+ "type": "FIRMWARE",
+ "first_validated": "2/8/2024",
+ "vendor": "Ribbon Communications, Inc.",
+ "vendor_website": "https://ribboncommunications.com/",
+ "oes": [
+  {
+   "name": "Ribbon ConnexIP OS 10 running on Cavium OCTEON II CN6880 media processor",
+   "details": [
+    "cpu: Cavium OCTEON II CN6880 media processor",
+    "  manufacturer: Cavium",
+    "os: Ribbon ConnexIP OS 10",
+    "  manufacturer: Ribbon Communications, Inc."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 256, 504, 1016",
+    "AAD Length: 128, 256, 504, 1016"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-256 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF SRTP",
+   "oe": 0,
+   "capabilities": [
+    "AES Key Length: 128",
+    "Supports Empty KDR"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

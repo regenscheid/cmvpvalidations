@@ -1,0 +1,581 @@
+{
+ "cert": 4854,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4854",
+ "module": "Apple corecrypto Module v12.0 [Apple silicon, Kernel, Software, SL1]",
+ "standard": "140-3",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "Interim validation. When operated in approved mode",
+ "level_exceptions": [
+  "Physical security: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Apple Cryptographic Module for Apple silicon kernel space environment.",
+ "tested_configurations": [
+  "iOS 15 running on iPhone 11 Pro with an Apple A Series A13 Bionic with PAA",
+  "iOS 15 running on iPhone 11 Pro with an Apple A Series A13 Bionic without PAA",
+  "iOS 15 running on iPhone 12 with an Apple A Series A14 Bionic with PAA",
+  "iOS 15 running on iPhone 12 with an Apple A Series A14 Bionic without PAA",
+  "iOS 15 running on iPhone 13 Pro Max with an Apple A Series A15 Bionic with PAA",
+  "iOS 15 running on iPhone 13 Pro Max with an Apple A Series A15 Bionic without PAA",
+  "iOS 15 running on iPhone 6S with an Apple A Series A9 with PAA",
+  "iOS 15 running on iPhone 6S with an Apple A Series A9 without PAA",
+  "iOS 15 running on iPhone 7 Plus with an Apple A Series A10 Fusion with PAA",
+  "iOS 15 running on iPhone 7 Plus with an Apple A Series A10 Fusion without PAA",
+  "iOS 15 running on iPhone X with an Apple A Series A11 Bionic with PAA",
+  "iOS 15 running on iPhone X with an Apple A Series A11 Bionic without PAA",
+  "iOS 15 running on iPhone XS Max with an Apple A Series A12 Bionic with PAA",
+  "iOS 15 running on iPhone XS Max with an Apple A Series A12 Bionic without PAA",
+  "iPadOS 15 running on iPad (5th generation) with an Apple A Series A9 with PAA",
+  "iPadOS 15 running on iPad (5th generation) with an Apple A Series A9 without PAA",
+  "iPadOS 15 running on iPad (7th generation) with an Apple A Series A10 Fusion with PAA",
+  "iPadOS 15 running on iPad (7th generation) with an Apple A Series A10 Fusion without PAA",
+  "iPadOS 15 running on iPad (9th generation) with an Apple A Series A13 Bionic with PAA",
+  "iPadOS 15 running on iPad (9th generation) with an Apple A Series A13 Bionic without PAA",
+  "iPadOS 15 running on iPad Air (4th generation) with an Apple A Series A14 Bionic with PAA",
+  "iPadOS 15 running on iPad Air (4th generation) with an Apple A Series A14 Bionic without PAA",
+  "iPadOS 15 running on iPad mini (5th generation) with an Apple A Series A12 Bionic with PAA",
+  "iPadOS 15 running on iPad mini (5th generation) with an Apple A Series A12 Bionic without PAA",
+  "iPadOS 15 running on iPad mini (6th generation) with an Apple A Series A15 Bionic with PAA",
+  "iPadOS 15 running on iPad mini (6th generation) with an Apple A Series A15 Bionic without PAA",
+  "iPadOS 15 running on iPad Pro 10.5 inch with an Apple A Series A10X Fusion with PAA",
+  "iPadOS 15 running on iPad Pro 10.5 inch with an Apple A Series A10X Fusion without PAA",
+  "iPadOS 15 running on iPad Pro 11-inch (1st generation) with an Apple A Series A12X Bionic with PAA",
+  "iPadOS 15 running on iPad Pro 11-inch (1st generation) with an Apple A Series A12X Bionic without PAA",
+  "iPadOS 15 running on iPad Pro 11-inch (2nd generation) with an Apple A Series A12Z Bionic with PAA",
+  "iPadOS 15 running on iPad Pro 11-inch (2nd generation) with an Apple A Series A12Z Bionic without PAA",
+  "iPadOS 15 running on iPad Pro 11-inch (3rd generation) with an Apple M Series M1 with PAA",
+  "iPadOS 15 running on iPad Pro 11-inch (3rd generation) with an Apple M Series M1 without PAA",
+  "iPadOS 15 running on iPad Pro 9.7-inch with an Apple A Series A9X with PAA",
+  "iPadOS 15 running on iPad Pro 9.7-inch with an Apple A Series A9X without PAA",
+  "macOS Monterey 12 running on MacBook Pro (13-inch, M1, 2020) with an Apple M Series M1 with PAA",
+  "macOS Monterey 12 running on MacBook Pro (13-inch, M1, 2020) with an Apple M Series M1 without PAA",
+  "macOS Monterey 12 running on MacBook Pro 14-inch with an Apple M Series M1 Pro with PAA",
+  "macOS Monterey 12 running on MacBook Pro 14-inch with an Apple M Series M1 Pro without PAA",
+  "macOS Monterey 12 running on MacBook Pro 16-inch with an Apple M Series M1 Max with PAA",
+  "macOS Monterey 12 running on MacBook Pro 16-inch with an Apple M Series M1 Max without PAA",
+  "T2OS 12 running on Apple Security Chip T2 with an Apple T Series T2 with PAA",
+  "T2OS 12 running on Apple Security Chip T2 with an Apple T Series T2 without PAA",
+  "tvOS 15 running on Apple TV 4K (2nd generation) with an Apple A Series A12 Bionic with PAA",
+  "tvOS 15 running on Apple TV 4K (2nd generation) with an Apple A Series A12 Bionic without PAA",
+  "tvOS 15 running on Apple TV 4K with an Apple A Series A10X Fusion with PAA",
+  "tvOS 15 running on Apple TV 4K with an Apple A Series A10X Fusion without PAA",
+  "watchOS 8 running on Apple Watch Series S3 with an Apple S Series S3 with PAA",
+  "watchOS 8 running on Apple Watch Series S3 with an Apple S Series S3 without PAA",
+  "watchOS 8 running on Apple Watch Series S4 with an Apple S Series S4 with PAA",
+  "watchOS 8 running on Apple Watch Series S4 with an Apple S Series S4 without PAA",
+  "watchOS 8 running on Apple Watch Series S5 with an Apple S Series S5 with PAA",
+  "watchOS 8 running on Apple Watch Series S5 with an Apple S Series S5 without PAA",
+  "watchOS 8 running on Apple Watch Series S6 with an Apple S Series S6 with PAA",
+  "watchOS 8 running on Apple Watch Series S6 with an Apple S Series S6 without PAA. watchOS 8 running on Apple Watch Series S7 with an Apple S Series S7 with PAA",
+  "watchOS 8 running on Apple Watch Series S7 with an Apple S Series S7 without PAA."
+ ],
+ "software_versions": "12.0",
+ "product_url": "http://www.support.apple.com/guide/sccc/welcome/web",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2793",
+   "cavp_id": "35404"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2794",
+   "cavp_id": "35405"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2865",
+   "cavp_id": "35476"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2866",
+   "cavp_id": "35477"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A2796",
+   "cavp_id": "35407"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A2868",
+   "cavp_id": "35479"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A2793",
+   "cavp_id": "35404"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A2794",
+   "cavp_id": "35405"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A2865",
+   "cavp_id": "35476"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A2866",
+   "cavp_id": "35477"
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "cavp_cert": "A2794",
+   "cavp_id": "35405"
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "cavp_cert": "A2866",
+   "cavp_id": "35477"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A2794",
+   "cavp_id": "35405"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A2796",
+   "cavp_id": "35407"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A2866",
+   "cavp_id": "35477"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A2868",
+   "cavp_id": "35479"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2793",
+   "cavp_id": "35404"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2794",
+   "cavp_id": "35405"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2796",
+   "cavp_id": "35407"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2865",
+   "cavp_id": "35476"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2866",
+   "cavp_id": "35477"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2868",
+   "cavp_id": "35479"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A2796",
+   "cavp_id": "35407"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A2868",
+   "cavp_id": "35479"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A2794",
+   "cavp_id": "35405"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A2866",
+   "cavp_id": "35477"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A2793",
+   "cavp_id": "35404"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A2794",
+   "cavp_id": "35405"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A2865",
+   "cavp_id": "35476"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A2866",
+   "cavp_id": "35477"
+  },
+  {
+   "algorithm": "AES-XTS",
+   "cavp_cert": "A2793",
+   "cavp_id": "35404"
+  },
+  {
+   "algorithm": "AES-XTS",
+   "cavp_cert": "A2865",
+   "cavp_id": "35476"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A2794",
+   "cavp_id": "35405"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A2796",
+   "cavp_id": "35407"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A2866",
+   "cavp_id": "35477"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A2868",
+   "cavp_id": "35479"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A2798",
+   "cavp_id": "35409"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A2870",
+   "cavp_id": "35481"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A2795",
+   "cavp_id": "35406"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A2867",
+   "cavp_id": "35478"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A2795",
+   "cavp_id": "35406"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A2867",
+   "cavp_id": "35478"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512/256",
+   "cavp_cert": "A2795",
+   "cavp_id": "35406"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512/256",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512/256",
+   "cavp_cert": "A2867",
+   "cavp_id": "35478"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512/256",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2798",
+   "cavp_id": "35409"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2870",
+   "cavp_id": "35481"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A2795",
+   "cavp_id": "35406"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A2867",
+   "cavp_id": "35478"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A2795",
+   "cavp_id": "35406"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A2867",
+   "cavp_id": "35478"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  },
+  {
+   "algorithm": "SHA2-512/256",
+   "cavp_cert": "A2795",
+   "cavp_id": "35406"
+  },
+  {
+   "algorithm": "SHA2-512/256",
+   "cavp_cert": "A2797",
+   "cavp_id": "35408"
+  },
+  {
+   "algorithm": "SHA2-512/256",
+   "cavp_cert": "A2867",
+   "cavp_id": "35478"
+  },
+  {
+   "algorithm": "SHA2-512/256",
+   "cavp_cert": "A2869",
+   "cavp_id": "35480"
+  }
+ ],
+ "vendor": "Apple Inc.",
+ "vendor_info": {
+  "name": "Apple Inc.",
+  "website": "http://www.apple.com",
+  "address": [
+   "One Apple Park Way",
+   "MS: 927-1CPS",
+   "Cupertino, CA 95014",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Nina Kominiak"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4854.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202024_041124_0733%20%281%29.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/28/2024",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "10/28/2024",
+ "last_updated": "10/28/2024",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4854.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4854,
+  "vendor": "Apple Inc.",
+  "module": "Apple corecrypto Module v12.0 [Apple silicon, Kernel, Software, SL1]",
+  "type": "Software",
+  "validation_dates": [
+   "10/28/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

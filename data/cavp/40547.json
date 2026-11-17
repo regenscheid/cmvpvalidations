@@ -1,0 +1,111 @@
+{
+ "cavp_id": "40547",
+ "cavp_cert": "A7937",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40547",
+ "implementation": "Microsoft HSM Cryptographic Module (HSM_UPKA_8)",
+ "product_id": "20734",
+ "description": "The Microsoft HSM Cryptographic Module provides cryptographic services. The following cipher implementation is covered: HSM UPKA implementation #8, which supports various asymmetric cryptographic algorithms.",
+ "version": "HW: M1244265-004 B0; FW: 3.3.6.4-60108004fips",
+ "type": "FW Hybrid",
+ "first_validated": "1/23/2026",
+ "vendor": "Microsoft Corporation",
+ "vendor_website": "http://www.microsoft.com",
+ "oes": [
+  {
+   "name": "HSM Control Processor FW image version 3.3.6.4-60108004fips on Microsoft Corporation M7 Series ARM Cortex-M7 on Microsoft Corporation M1244265-004 B0",
+   "details": [
+    "processor: ARM Cortex-M7",
+    "  Processor ARM Cortex-M7 (processor family ARM64) from Microsoft Corporation",
+    "  family: ARM64",
+    "  manufacturer: Microsoft Corporation",
+    "  series: M7 Series",
+    "firmware: HSM Control Processor FW image version 3.3.6.4-60108004fips",
+    "processor: M1244265-004 B0",
+    "  Processor M1244265-004 B0 (processor family Microsoft) from Microsoft Corporation",
+    "  family: Microsoft",
+    "  manufacturer: Microsoft Corporation",
+    "  series: N/A"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen",
+    "Modulo: 2048",
+    "Key Generation Methods: rsakpg1-basic, rsakpg1-prime-factor",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: literal[]",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen",
+    "Modulo: 2048",
+    "Key Generation Methods: rsakpg1-basic, rsakpg1-prime-factor",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: literal[]",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 192"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen",
+    "Modulo: 2048",
+    "Key Generation Methods: rsakpg1-basic, rsakpg1-prime-factor",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: literal[]",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "RSA Decryption Primitive Sp800-56Br2",
+   "oe": 0,
+   "capabilities": [
+    "Modulo: 2048, 3072, 4096",
+    "Key Format: Standard",
+    "Public Exponent Mode: fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Modulo: 2048, 3072, 4096",
+    "Private Key Format: standard",
+    "Public Exponent Mode: fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,48 @@
+{
+ "cavp_id": "35863",
+ "cavp_cert": "A3253",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35863",
+ "implementation": "CorSSL (libssl)",
+ "product_id": "15757",
+ "description": "CorSSL offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data. The libssl library provides the KDF for TLSv1.3.",
+ "version": "1.1.1s.005",
+ "type": "SOFTWARE",
+ "first_validated": "1/27/2023",
+ "vendor": "Corsec Security, Inc.",
+ "vendor_website": "http://www.corsec.com",
+ "oes": [
+  {
+   "name": "Debian 9 on Intel(R) Xeon(R) Silver 4214R with AES-NI",
+   "details": [
+    "os: Debian 9",
+    "cpu: Intel(R) Xeon(R) Silver 4214R (Cascade Lake) with AES-NI"
+   ]
+  },
+  {
+   "name": "Debian 9 on Intel(R) Xeon(R) Silver 4214R without AES-NI",
+   "details": [
+    "os: Debian 9",
+    "cpu: Intel(R) Xeon(R) Silver 4214R (Cascade Lake) without AES-NI"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 0,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 1,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

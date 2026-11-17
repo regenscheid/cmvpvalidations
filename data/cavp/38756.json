@@ -1,0 +1,43 @@
+{
+ "cavp_id": "38756",
+ "cavp_cert": "A6146",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38756",
+ "implementation": "Micron® SSD Controller Sub Chip Security Subsystem (SCSS) Data Path Encryption Engine",
+ "product_id": "18736",
+ "description": "The Micron® SSD Controller Sub Chip Security Subsystem (SCSS) DPE Engine is a FIPS approved AES-XTS accelerator",
+ "version": "0x0C87E5",
+ "type": "HARDWARE",
+ "first_validated": "11/15/2024",
+ "vendor": "Micron Technology, Inc.",
+ "vendor_website": "http://www.Micron.com",
+ "oes": [
+  {
+   "name": "Micron® MSA11-P5 ASIC",
+   "details": [
+    "cpu: Micron® MSA11-P5 ASIC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096-32896 Increment 128",
+    "Tweak Mode: Number",
+    "Data Unit Length Matches Payload Length"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

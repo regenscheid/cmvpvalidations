@@ -1,0 +1,563 @@
+{
+ "cert": 4684,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4684",
+ "module": "Thales Luna K7 Cryptographic Module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "4/1/2029",
+ "level": "3",
+ "caveat": "When operated in approved mode",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The Thales Luna K7 Cryptographic Module is a multi-chip embedded hardware cryptographic module in the form of a PCIe card which typically resides within a custom computing or secure communications appliance.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "AES Cert. #C1707 (Key unwrapping; SSP establishment methodology provides between 128 and 256 bits of encryption strength; Clone partition objects between partitions, Clone SMK between partitions, Import secret or private key using key wrapping.);Triple-DES Cert #C1707 (Key unwrapping; SSP establishment methodology provides 112 bits of encryption strength; Import secret or private key using key wrapping.);KAS-ECC-SSC Cert. #A480 (Key establishment methodology provides between 112 and 256-bits of encryption strength.; Derive key from existing partition secret or private key object.);KAS-ECC-SSC Cert. #A478 (Key establishment methodology provides between 112 and 256-bits of encryption strength.; Derive key from existing partition secret or private key object.)",
+ "hardware_versions": "808-000048-002, 808-000048-003, 808-000066-001, 808-000073-001, 808-000073-002",
+ "firmware_versions": "7.8.4 with bootloader version 1.1.1, 1.1.2, 1.1.4 or 1.1.5; 7.8.5 with bootloader version 1.1.1, 1.1.2, 1.1.4 or 1.1.5",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "AES-XTS",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "DSA SigGen (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "DSA SigVer (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A478",
+   "cavp_id": "32617"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A478",
+   "cavp_id": "32617"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KAS-IFC",
+   "cavp_cert": "A478",
+   "cavp_id": "32617"
+  },
+  {
+   "algorithm": "KAS-IFC",
+   "cavp_cert": "A479",
+   "cavp_id": "32618"
+  },
+  {
+   "algorithm": "KAS-IFC",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KAS-IFC",
+   "cavp_cert": "A481",
+   "cavp_id": "32620"
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KDF ANS 9.42",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A478",
+   "cavp_id": "32617"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A479",
+   "cavp_id": "32618"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A481",
+   "cavp_id": "32620"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A478",
+   "cavp_id": "32617"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A479",
+   "cavp_id": "32618"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A481",
+   "cavp_id": "32620"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C1717",
+   "cavp_id": "32517"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "C1719",
+   "cavp_id": "32519"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A481",
+   "cavp_id": "32620"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "C1717",
+   "cavp_id": "32517"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A480",
+   "cavp_id": "32619"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A481",
+   "cavp_id": "32620"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3164",
+   "cavp_id": "35774"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "C1717",
+   "cavp_id": "32517"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "C1701",
+   "cavp_id": "32486"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "C1701",
+   "cavp_id": "32486"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "C1718",
+   "cavp_id": "32518"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHA3-384",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "TDES-CFB64",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "TDES-CFB8",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "TDES-CTR",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  },
+  {
+   "algorithm": "TDES-OFB",
+   "cavp_cert": "C1707",
+   "cavp_id": "32496"
+  }
+ ],
+ "vendor": "Thales",
+ "vendor_info": {
+  "name": "Thales",
+  "website": "http://cpl.thalesgroup.com",
+  "address": [
+   "20 Colonnade Road",
+   "Suite 200",
+   "Ottawa, Ontario K2E 7M6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security and Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4684.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202024_010524_0757.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/2/2024",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/7/2025",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/2/2024",
+ "last_updated": "7/7/2025",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4684.pdf",
+ "other_fields": {},
+ "other_text": "AES Cert. #C1707 (Key unwrapping; SSP establishment methodology provides between 128 and 256 bits of encryption strength; Clone partition objects between partitions, Clone SMK between partitions, Import secret or private key using key wrapping.);Triple-DES Cert #C1707 (Key unwrapping; SSP establishment methodology provides 112 bits of encryption strength; Import secret or private key using key wrapping.);KAS-ECC-SSC Cert. #A480 (Key establishment methodology provides between 112 and 256-bits of encryption strength.; Derive key from existing partition secret or private key object.);KAS-ECC-SSC Cert. #A478 (Key establishment methodology provides between 112 and 256-bits of encryption strength.; Derive key from existing partition secret or private key object.)",
+ "sparse": false,
+ "list": {
+  "cert": 4684,
+  "vendor": "Thales",
+  "module": "Thales Luna K7 Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/02/2024"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,46 @@
+{
+ "cavp_id": "39277",
+ "cavp_cert": "A6667",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39277",
+ "implementation": "Chainguard FIPS Provider for OpenSSL (NEON)",
+ "product_id": "19397",
+ "description": "Chainguard FIPS Provider for OpenSSL provides cryptographic services to Linux user space software components. The following cipher implementation is covered: ARMv7 NEON SHA implementation.",
+ "version": "3.4.0-r4",
+ "type": "SOFTWARE",
+ "first_validated": "3/10/2025",
+ "vendor": "Chainguard, Inc.",
+ "vendor_website": "https://www.chainguard.dev",
+ "oes": [
+  {
+   "name": "Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7g.metal on Amazon Graviton3 AWS Graviton3",
+   "details": [
+    "processor: AWS Graviton3",
+    "  Processor AWS Graviton3 (processor family ARM64) from Amazon",
+    "  family: ARM64",
+    "  manufacturer: Amazon",
+    "  series: Neoverse V1",
+    "software: Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7g.metal",
+    "  EC2 m7g.metal running Chainguard Image 20230214 on Amazon Linux 2023."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

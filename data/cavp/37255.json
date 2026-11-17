@@ -1,0 +1,43 @@
+{
+ "cavp_id": "37255",
+ "cavp_cert": "A4645",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37255",
+ "implementation": "Tensor G3/G4 UFS Inline Storage Encryption",
+ "product_id": "17162",
+ "description": "Inline storage encryption engine for UFS as part of the Tensor G3/G4 mobile SoC to protect user data at rest.",
+ "version": "4.2.1",
+ "type": "HARDWARE",
+ "first_validated": "10/27/2023",
+ "vendor": "Google LLC",
+ "vendor_website": "http://www.google.com",
+ "oes": [
+  {
+   "name": "Google Tensor G3/G4 Processor",
+   "details": [
+    "processor: Google Tensor G3 Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128-32768 Increment 128",
+    "Tweak Mode: Number",
+    "Data Unit Length Matches Payload Length"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

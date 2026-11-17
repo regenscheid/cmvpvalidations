@@ -1,0 +1,59 @@
+{
+ "cavp_id": "35484",
+ "cavp_cert": "A2873",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35484",
+ "implementation": "IP_DRNG3.0_PIC11",
+ "product_id": "15350",
+ "description": "DRNG3.0 PIC11 Configuration for 12th Generation Intel® Core™ Processor (ALDER LAKE)",
+ "version": "DRNG3.0 PIC11",
+ "type": "HARDWARE",
+ "first_validated": "9/15/2022",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Intel Corporation Intel® Core™ ALDER LAKE-CPU-10, ALDER LAKE-CPU-16, ALDER LAKE-CPU-8 Intel® Core™ i5-12500H Processor",
+   "details": [
+    "series: Intel® Core™ ALDER LAKE-CPU-10, ALDER LAKE-CPU-16, ALDER LAKE-CPU-8",
+    "processor: Intel® Core™ i5-12500H Processor",
+    "family: Intel® Core™ Processors",
+    "manufacturer: Intel® Corporation"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 512"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

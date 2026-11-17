@@ -1,0 +1,585 @@
+{
+ "cavp_id": "36189",
+ "cavp_cert": "A3579",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36189",
+ "implementation": "NSS (64 bit) (IKE_KDF)",
+ "product_id": "16094",
+ "description": "User space library providing general cryptographic services used by the NSS cryptographic library. The module was tested with 64 bit word size. The following cipher implementation is covered: IKEv2 KDF implementation.",
+ "version": "3.1",
+ "type": "SOFTWARE",
+ "first_validated": "4/25/2023",
+ "vendor": "SUSE LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on Ampere Ampere(R) Altra(R) Ampere(R) Altra(R) Q80-30",
+   "details": [
+    "processor: Ampere(R) Altra(R) Q80-30",
+    "  Processor Ampere(R) Altra(R) Q80-30 (processor family ARM64) from Ampere",
+    "  family: ARM64",
+    "  manufacturer: Ampere",
+    "  series: Ampere(R) Altra(R)",
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  },
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on AuthenticAMD AMD EPYC(TM) 7001 Series AMD EPYC 7371",
+   "details": [
+    "processor: AMD EPYC 7371",
+    "  Processor AMD EPYC 7371 (processor family X86) from AuthenticAMD",
+    "  family: X86",
+    "  manufacturer: AuthenticAMD",
+    "  series: AMD EPYC(TM) 7001 Series",
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  },
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on IBM Z System z15(TM)",
+   "details": [
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15",
+    "processor: z15(TM)",
+    "  Processor z15(TM) (processor family S390) from IBM",
+    "  family: S390",
+    "  manufacturer: IBM",
+    "  series: Z System"
+   ]
+  },
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on Intel Cascade Lake Intel(R) Xeon(R) Silver 4215R",
+   "details": [
+    "processor: Intel(R) Xeon(R) Silver 4215R",
+    "  Processor Intel(R) Xeon(R) Silver 4215R (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake",
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  },
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on PowerVM (VIOS 3.1.4.00) on IBM POWER Series POWER10",
+   "details": [
+    "processor: POWER10",
+    "  Processor POWER10 (processor family POWER) from IBM",
+    "  family: POWER",
+    "  manufacturer: IBM",
+    "  series: POWER Series",
+    "software: PowerVM (VIOS 3.1.4.00)",
+    "  PowerVM provides a secure and scalable server virtualization environment for AIX(R), IBM i and Linux applications built upon the advanced RAS features and leading performance of the Power Systems(TM) platform.",
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Preshared Key Length: 8, 384, 768, 8192",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128, 256, 512, 2048",
+    "    Responder Nonce Length: 128, 256, 512, 2048",
+    "    Diffie-Hellman Shared Secret Length: 224, 2048, 8192",
+    "    Derived Keying Material Length: 1056, 3072",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

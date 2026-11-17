@@ -1,0 +1,89 @@
+{
+ "cavp_id": "39487",
+ "cavp_cert": "A6877",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39487",
+ "implementation": "LS2-OQS-Crypto",
+ "product_id": "19612",
+ "description": "LS2 Software Crypto provider, supports the PQC for the Key Pair generation, Signature generation and Signature verification",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "5/1/2025",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON-TX2",
+   "details": [
+    "processor: OCTEON-TX2"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ML-DSA KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Parameter Sets: ML-DSA-44, ML-DSA-65, ML-DSA-87"
+   ]
+  },
+  {
+   "algorithm": "ML-DSA SigGen",
+   "oe": 0,
+   "capabilities": [
+    "Signature Interfaces: external, internal",
+    "Pre Hash: pure",
+    "Deterministic: Yes, No",
+    "External Mu: Yes, No",
+    "  Capabilities:",
+    "    Parameter Sets: ML-DSA-44, ML-DSA-65, ML-DSA-87",
+    "    Message Length: 8-65536 Increment 8",
+    "    Context Length: 0-2040 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "ML-DSA SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Signature Interfaces: external, internal",
+    "Pre Hash: pure",
+    "External Mu: Yes, No",
+    "  Capabilities:",
+    "    Parameter Sets: ML-DSA-44, ML-DSA-65, ML-DSA-87",
+    "    Message Length: 8-65536 Increment 8",
+    "    Context Length: 0-2040 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "ML-KEM EncapDecap",
+   "oe": 0,
+   "capabilities": [
+    "Parameter Sets: ML-KEM-1024, ML-KEM-512, ML-KEM-768",
+    "Functions: Decapsulation, Encapsulation"
+   ]
+  },
+  {
+   "algorithm": "ML-KEM KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Parameter Sets: ML-KEM-1024, ML-KEM-512, ML-KEM-768"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,70 @@
+{
+ "cavp_id": "36995",
+ "cavp_cert": "A4385",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36995",
+ "implementation": "VMware’s VPN Crypto Module – librte_crypto_post",
+ "product_id": "16934",
+ "description": "VMware's VPN Crypto Module is a software cryptographic module which provides FIPS 140-3 validated cryptographic functions or services to various VMware applications utilizing VPN capabilities.",
+ "version": "21.11",
+ "type": "FIRMWARE",
+ "first_validated": "8/31/2023",
+ "vendor": "Broadcom Inc.",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "Ubuntu 20.04 running on ESXi 8.0 on Dell PowerEdge R650 running on Intel Xeon Gold 6330 (Ice Lake) with PAA",
+   "details": [
+    "hardware: Dell PowerEdge R650",
+    "  manufacturer: Dell",
+    "software: ESXi 8.0",
+    "processor: Intel Xeon Gold 6330 (Ice Lake) with PAA",
+    "  manufacturer: Intel",
+    "software: Ubuntu 20.04"
+   ]
+  },
+  {
+   "name": "Ubuntu 20.04 running on ESXi 8.0 on Dell PowerEdge R650 running on Intel Xeon Gold 6330 (Ice Lake) without PAA",
+   "details": [
+    "hardware: Dell PowerEdge R650",
+    "  manufacturer: Dell",
+    "software: ESXi 8.0",
+    "processor: Intel Xeon Gold 6330 (Ice Lake) without PAA",
+    "  manufacturer: Intel",
+    "software: Ubuntu 20.04"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

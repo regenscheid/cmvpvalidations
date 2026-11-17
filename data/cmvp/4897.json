@@ -1,0 +1,402 @@
+{
+ "cert": 4897,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4897",
+ "module": "CorSSL",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "11/20/2026",
+ "level": "1",
+ "caveat": "Interim validation. When operated in approved mode. When installed, initialized and configured as specified in Section 11 of the Security Policy. No assurance of the minimum strength of generated SSPs (e.g., keys)",
+ "level_exceptions": [
+  "Physical security: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "CorSSL offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data. The libcrypto library provides the main cryptographic functionality for the module.",
+ "tested_configurations": [
+  "Debian 9 running on a Dell PowerEdge R440 with an Intel(R) Xeon(R) Silver 4214R with PAA",
+  "Debian 9 running on a Dell PowerEdge R440 with an Intel(R) Xeon(R) Silver 4214R without PAA"
+ ],
+ "allowed_algorithms": "AES (Cert. #A3254, Key Unwrapping. Per IG D.G.; Symmetric Key Unwrapping (using any approved mode));Triple-DES (Cert. #A3254, Key Unwrapping. Per IG D.G.; Symmetric Key Unwrapping (using any approved mode with two-key or three-key))",
+ "software_versions": "1.1.1s.005",
+ "product_url": "http://www.corsec.com/corssl",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-CFB1",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-OFB",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "DSA PQGVer (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "DSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "DSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA3-384",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TDES-CFB1",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TDES-CFB64",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TDES-CFB8",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TDES-CMAC",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TDES-OFB",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TLS v1.2 KDF RFC7627",
+   "cavp_cert": "A3254",
+   "cavp_id": "35864"
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "cavp_cert": "A3253",
+   "cavp_id": "35863"
+  }
+ ],
+ "vendor": "Corsec Security, Inc.",
+ "vendor_info": {
+  "name": "Corsec Security, Inc.",
+  "website": "http://www.corsec.com",
+  "address": [
+   "12600 Fair Lakes Circle",
+   "Suite 210",
+   "Fairfax, VA 22033",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jake Nelson"
+   },
+   {
+    "name": "John Morris"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4897.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November%202024_021224_0125.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/21/2024",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "11/21/2024",
+ "last_updated": "11/21/2024",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4897.pdf",
+ "other_fields": {},
+ "other_text": "AES (Cert. #A3254, Key Unwrapping. Per IG D.G.; Symmetric Key Unwrapping (using any approved mode));Triple-DES (Cert. #A3254, Key Unwrapping. Per IG D.G.; Symmetric Key Unwrapping (using any approved mode with two-key or three-key))",
+ "sparse": false,
+ "list": {
+  "cert": 4897,
+  "vendor": "Corsec Security, Inc.",
+  "module": "CorSSL",
+  "type": "Software",
+  "validation_dates": [
+   "11/21/2024"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

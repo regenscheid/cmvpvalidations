@@ -1,0 +1,52 @@
+{
+ "cavp_id": "36745",
+ "cavp_cert": "A4135",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36745",
+ "implementation": "TCG Opal SSC (Elan PRNG Hardware)",
+ "product_id": "16676",
+ "description": "hardware cryptographic algorithm implementation embedded in ELAN SSD controller's Samsung Security Subsystem",
+ "version": "S01",
+ "type": "HARDWARE",
+ "first_validated": "7/5/2023",
+ "vendor": "Samsung Electronics Co.,Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Samsung Electronics Co., Ltd. ARM SC000 S4LV006A01",
+   "details": [
+    "processor: S4LV006A01",
+    "  Processor S4LV006A01 (processor family ELAN) from Samsung Electronics Co., Ltd.",
+    "  family: ELAN",
+    "  manufacturer: Samsung Electronics Co., Ltd.",
+    "  series: ARM SC000"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 512",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,56 @@
+{
+ "cavp_id": "39708",
+ "cavp_cert": "A7098",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39708",
+ "implementation": "TuxCare OpenSSL FIPS Provider (EDDSA_3_2)",
+ "product_id": "19863",
+ "description": "AlmaLinux 9.6 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Generic EdDSA implementation.",
+ "version": "3.2.2-f9f9d133a30b6eb5",
+ "type": "SOFTWARE",
+ "first_validated": "7/7/2025",
+ "vendor": "Cloud Linux Software, Inc. d/b/a TuxCare",
+ "vendor_website": "http://www.tuxcare.com",
+ "oes": [
+  {
+   "name": "AlmaLinux OS 9.6 on Intel® Emerald Rapids-SP Xeon® Gold 5512U",
+   "details": [
+    "software: AlmaLinux OS 9.6",
+    "  Linux distribution with Enterprise Support by Cloud Linux Software, Inc. d/b/a TuxCare and targeted towards the commercial market.",
+    "processor: Xeon® Gold 5512U",
+    "  Processor Xeon® Gold 5512U (processor family X86) from Intel®",
+    "  family: X86",
+    "  manufacturer: Intel®",
+    "  series: Emerald Rapids-SP"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "EDDSA KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519, ED-448"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519, ED-448",
+    "Context Length: 0-255 Increment 1",
+    "PreHash",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519, ED-448",
+    "PreHash",
+    "Pure"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

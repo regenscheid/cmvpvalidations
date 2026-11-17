@@ -1,0 +1,40 @@
+{
+ "cavp_id": "36363",
+ "cavp_cert": "A3753",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36363",
+ "implementation": "TRNG-AB",
+ "product_id": "16260",
+ "description": "AES-256 CTR_DRBG supporting Instantiate, Generate, and Reseed, Uninstantiate functions. Performs power up and continuous health tests. KATs and Health Tests performed before the first random data generation. This DRBG gets its entropy input from the integrated Entropy Source.",
+ "version": "BCM58202B0",
+ "type": "HARDWARE",
+ "first_validated": "6/1/2023",
+ "vendor": "Broadcom Corp.",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "BCM58202B0",
+   "details": [
+    "cpu: BCM58202B0"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-384 Increment 32",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

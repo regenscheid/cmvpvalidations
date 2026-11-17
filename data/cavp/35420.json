@@ -1,0 +1,46 @@
+{
+ "cavp_id": "35420",
+ "cavp_cert": "A2809",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35420",
+ "implementation": "Helion IP core HW AES-GCM",
+ "product_id": "15307",
+ "description": "The Helion IP core HW AES-GCM provides an AES-GCM algorithm implementation in support of Thales Alenia Space FPGA",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "8/25/2022",
+ "vendor": "Thales Alenia Space",
+ "vendor_website": "https://www.thalesgroup.com/es/espana/espacio",
+ "oes": [
+  {
+   "name": "Mentor ModelSim PE 6.5d",
+   "details": [
+    "Software: Microsemi Libero SoC v12.6 VHDL",
+    "  Libraries for the simulator"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 32, 64, 96, 112, 128",
+    "IV Length: 96",
+    "Payload Length: 8-256 Increment 8",
+    "AAD Length: 0-256 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

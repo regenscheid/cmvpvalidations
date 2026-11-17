@@ -1,0 +1,44 @@
+{
+ "cavp_id": "39150",
+ "cavp_cert": "A6540",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39150",
+ "implementation": "9098 AES Module",
+ "product_id": "19261",
+ "description": "The 9098 AES Module implements AES ECB and CCM using 128-bit key sizes to provide cryptographic support for Zebra wireless devices.",
+ "version": "v17.68.01.p199.02",
+ "type": "FIRMWARE",
+ "first_validated": "1/24/2025",
+ "vendor": "Zebra Technologies Corporation",
+ "vendor_website": "http://www.zebra.com",
+ "oes": [
+  {
+   "name": "NXP ARMv5TE CPU driven by NXP i.MX6ULL (ARM Cortex-A7)",
+   "details": [
+    "hardware: ARMv5TE architecture",
+    "processor: NXP i.MX6ULL (ARM Cortex-A7)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256 Increment 8",
+    "AAD Length: 120-240 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,72 @@
+{
+ "cavp_id": "35113",
+ "cavp_cert": "A2502",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35113",
+ "implementation": "NOK-Emanate CFB-128 and AES-256",
+ "product_id": "14988",
+ "description": "SNMP management interface support",
+ "version": "19.1-libengine-264",
+ "type": "SOFTWARE",
+ "first_validated": "3/30/2022",
+ "vendor": "Nokia",
+ "vendor_website": "http://nokia.com",
+ "oes": [
+  {
+   "name": "Linux 5.10 on Marvell Armada XP mv78460",
+   "details": [
+    "software: Linux 5.10",
+    "processor: Marvell Armada XP mv78460",
+    "  Marvell Armada XP mv78460 (for 32EC2, 8EC2, CEC2, XCEC8, MEC2)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 96",
+    "Key Length: 160"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SNMP",
+   "oe": 0,
+   "capabilities": [
+    "Password Length: 96, 256",
+    "Engine ID: 00001d3b000000a1c0c1c2c3"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

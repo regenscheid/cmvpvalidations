@@ -1,0 +1,607 @@
+{
+ "cavp_id": "40220",
+ "cavp_cert": "A7610",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40220",
+ "implementation": "Chainguard FIPS Provider for OpenSSL (SHA3_AVX512VL)",
+ "product_id": "20412",
+ "description": "Chainguard FIPS Provider for OpenSSL provides cryptographic services to Linux user space software components. The following cipher implementation is covered: AVX-512VL SHA-3 implementation.",
+ "version": "3.6.0-r2",
+ "type": "SOFTWARE",
+ "first_validated": "10/27/2025",
+ "vendor": "Chainguard, Inc.",
+ "vendor_website": "https://www.chainguard.dev",
+ "oes": [
+  {
+   "name": "Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7i.metal-24xl on Intel Sapphire Rapids Xeon Platinum 8488C (without PAA)",
+   "details": [
+    "software: Chainguard Image 20230214 on Amazon Linux 2023 on EC2 m7i.metal-24xl",
+    "  EC2 m7i.metal-24xl running Chainguard Image 20230214 on Amazon Linux 2023.",
+    "processor: Xeon Platinum 8488C (without PAA)",
+    "  Processor Xeon Platinum 8488C (without PAA) (processor family x86) from Intel",
+    "  family: x86",
+    "  manufacturer: Intel",
+    "  series: Sapphire Rapids"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Deterministic ECDSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-256, SHA3-384, SHA3-512",
+    "Component"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192",
+    "    Hash Algorithm: SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "EDDSA KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-448"
+   ]
+  },
+  {
+   "algorithm": "EDDSA KeyVer",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-448"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-448",
+    "Context Length: 0-255 Increment 1",
+    "PreHash",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-448",
+    "PreHash",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA3-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 128",
+    "    Additional Input: 0-512 Increment 128",
+    "    Returned Bits: 256",
+    "  Capabilities:",
+    "    Mode: SHA3-384",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 128",
+    "    Additional Input: 0-512 Increment 128",
+    "    Returned Bits: 384",
+    "  Capabilities:",
+    "    Mode: SHA3-512",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 128",
+    "    Additional Input: 0-512 Increment 128",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA3-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 128",
+    "    Additional Input: 0-512 Increment 128",
+    "    Returned Bits: 256",
+    "  Capabilities:",
+    "    Mode: SHA3-384",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 128",
+    "    Additional Input: 0-512 Increment 128",
+    "    Returned Bits: 384",
+    "  Capabilities:",
+    "    Mode: SHA3-512",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 128",
+    "    Additional Input: 0-512 Increment 128",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8",
+    "HMAC Algorithm: SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-256",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-384",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-512",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA3-256",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA3-384",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA3-512",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: KMAC-128",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: KMAC-256",
+    "    MAC Salting Methods: default, random",
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA TwoStep SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "    Fixed Info Encoding: concatenation",
+    "    KDF Mode: feedback",
+    "    MAC Modes: HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512",
+    "    Fixed Data Order: after fixed data",
+    "    Counter Lengths: 8",
+    "    The KDF supports an empty IV",
+    "    The KDF requires an empty IV",
+    "    Supported Lengths: 2048",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.42",
+   "oe": 0,
+   "capabilities": [
+    "KDF Type: DER",
+    "Hash Algorithm: SHA3-256, SHA3-384, SHA3-512",
+    "zz Length: 112-4096 Increment 8",
+    "Key Data Length: 112-4096 Increment 8",
+    "Supplemental Information Length: 0-256 Increment 8",
+    "OID: AES-128-KW, AES-192-KW, AES-256-KW"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "oe": 0,
+   "capabilities": [
+    "Hash Algorithm: SHA3-256, SHA3-384, SHA3-512",
+    "Field Size: 224, 571",
+    "Shared Info Length: 0-1024 Increment 8",
+    "Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF KMAC Sp800-108r1",
+   "oe": 0,
+   "capabilities": [
+    "Key Derivation Key Length: 128",
+    "Context Length: 128",
+    "Label Length: 128",
+    "Derived Key Length: 256",
+    "MAC Modes: KMAC-128, KMAC-256"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512",
+    "    Supported Lengths: 112-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    MAC Mode: HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512",
+    "    Supported Lengths: 112-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KMAC-128",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "MAC Length: 32-65536 Increment 8",
+    "Key Data Length: 128-1024 Increment 8",
+    "Hex Customization",
+    "Supports eXtendable-Output Functions: Yes, No"
+   ]
+  },
+  {
+   "algorithm": "KMAC-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "MAC Length: 32-65536 Increment 8",
+    "Key Data Length: 128-1024 Increment 8",
+    "Hex Customization",
+    "Supports eXtendable-Output Functions: Yes, No"
+   ]
+  },
+  {
+   "algorithm": "ML-DSA KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Parameter Sets: ML-DSA-44, ML-DSA-65, ML-DSA-87"
+   ]
+  },
+  {
+   "algorithm": "ML-DSA SigGen",
+   "oe": 0,
+   "capabilities": [
+    "Signature Interfaces: external, internal",
+    "Pre Hash: pure",
+    "Deterministic: Yes, No",
+    "External Mu: Yes, No",
+    "  Capabilities:",
+    "    Parameter Sets: ML-DSA-44, ML-DSA-65, ML-DSA-87",
+    "    Message Length: 8-65536 Increment 8",
+    "    Context Length: 0-248 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "ML-DSA SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Signature Interfaces: external, internal",
+    "Pre Hash: pure",
+    "External Mu: Yes, No",
+    "  Capabilities:",
+    "    Parameter Sets: ML-DSA-44, ML-DSA-65, ML-DSA-87",
+    "    Message Length: 8-65536 Increment 8",
+    "    Context Length: 0-248 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "ML-KEM EncapDecap",
+   "oe": 0,
+   "capabilities": [
+    "Parameter Sets: ML-KEM-1024, ML-KEM-512, ML-KEM-768",
+    "Functions: Decapsulation, Encapsulation"
+   ]
+  },
+  {
+   "algorithm": "ML-KEM EncapDecap",
+   "oe": 0,
+   "capabilities": [
+    "Parameter Sets: ML-KEM-1024, ML-KEM-512, ML-KEM-768",
+    "Functions: Decapsulation Key Check, Encapsulation Key Check"
+   ]
+  },
+  {
+   "algorithm": "ML-KEM KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Parameter Sets: ML-KEM-1024, ML-KEM-512, ML-KEM-768"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000 Increment 1",
+    "    HMAC Algorithm: SHA3-256, SHA3-384, SHA3-512",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "            Salt Length: 0",
+    "        Mask Function: mgf1",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "            Salt Length: 0",
+    "        Mask Function: mgf1",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "            Salt Length: 0",
+    "        Mask Function: mgf1",
+    "        Modulo: 4096",
+    "    Signature Type: pss"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Mask Function: mgf1",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Mask Function: mgf1",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA3-512",
+    "        Mask Function: mgf1",
+    "        Modulo: 4096",
+    "    Signature Type: pss",
+    "Public Exponent Mode: random"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SLH-DSA KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Parameter Sets: SLH-DSA-SHA2-128f, SLH-DSA-SHA2-128s, SLH-DSA-SHA2-192f, SLH-DSA-SHA2-192s, SLH-DSA-SHA2-256f, SLH-DSA-SHA2-256s, SLH-DSA-SHAKE-128f, SLH-DSA-SHAKE-128s, SLH-DSA-SHAKE-192f, SLH-DSA-SHAKE-192s, SLH-DSA-SHAKE-256f, SLH-DSA-SHAKE-256s"
+   ]
+  },
+  {
+   "algorithm": "SLH-DSA SigGen",
+   "oe": 0,
+   "capabilities": [
+    "Deterministic: Yes, No",
+    "Signature Interfaces: external, internal",
+    "Pre Hash: pure",
+    "  Capabilities:",
+    "    Parameter Sets: SLH-DSA-SHA2-128f, SLH-DSA-SHA2-128s, SLH-DSA-SHA2-192f, SLH-DSA-SHA2-192s, SLH-DSA-SHA2-256f, SLH-DSA-SHA2-256s, SLH-DSA-SHAKE-128f, SLH-DSA-SHAKE-128s, SLH-DSA-SHAKE-192f, SLH-DSA-SHAKE-192s, SLH-DSA-SHAKE-256f, SLH-DSA-SHAKE-256s",
+    "    Message Length: 8-65536 Increment 8",
+    "    Context Length: 0-248 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SLH-DSA SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Signature Interfaces: external, internal",
+    "Pre Hash: pure",
+    "  Capabilities:",
+    "    Parameter Sets: SLH-DSA-SHA2-128f, SLH-DSA-SHA2-128s, SLH-DSA-SHA2-192f, SLH-DSA-SHA2-192s, SLH-DSA-SHA2-256f, SLH-DSA-SHA2-256s, SLH-DSA-SHAKE-128f, SLH-DSA-SHAKE-128s, SLH-DSA-SHAKE-192f, SLH-DSA-SHAKE-192s, SLH-DSA-SHAKE-256f, SLH-DSA-SHAKE-256s",
+    "    Message Length: 8-65536 Increment 8",
+    "    Context Length: 0-248 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

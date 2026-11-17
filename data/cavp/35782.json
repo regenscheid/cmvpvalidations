@@ -1,0 +1,47 @@
+{
+ "cavp_id": "35782",
+ "cavp_cert": "A3172",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35782",
+ "implementation": "OpenSSL (32 bit) (SSH_ASM)",
+ "product_id": "15676",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 32 bit word size. The following cipher implementation is covered: SSH KDF using assembler SHA implementation.",
+ "version": "4.4",
+ "type": "SOFTWARE",
+ "first_validated": "12/13/2022",
+ "vendor": "SUSE LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP4 on Intel Cascade Lake Intel(R) Xeon(R) Silver 4215R",
+   "details": [
+    "processor: Intel(R) Xeon(R) Silver 4215R",
+    "  Processor Intel(R) Xeon(R) Silver 4215R (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake",
+    "software: SUSE Linux Enterprise Server 15 SP4",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

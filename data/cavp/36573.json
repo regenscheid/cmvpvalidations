@@ -1,0 +1,46 @@
+{
+ "cavp_id": "36573",
+ "cavp_cert": "A3963",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36573",
+ "implementation": "Ubuntu 22.04 OpenSSL Cryptographic Module (NEON)",
+ "product_id": "16495",
+ "description": "Ubuntu 22.04 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: ARMv7 NEON SHA implementation.",
+ "version": "3.0.5-0ubuntu0.1+Fips2.1",
+ "type": "SOFTWARE",
+ "first_validated": "6/14/2023",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 22.04 on Amazon AWS Graviton Graviton2",
+   "details": [
+    "processor: Graviton2",
+    "  Processor Graviton2 (processor family ARM64) from Amazon",
+    "  family: ARM64",
+    "  manufacturer: Amazon",
+    "  series: AWS Graviton",
+    "software: Ubuntu 22.04",
+    "  Linux distribution developed by Canonical Ltd. and targeted toward the commercial market."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

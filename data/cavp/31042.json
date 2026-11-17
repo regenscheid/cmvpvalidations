@@ -1,0 +1,51 @@
+{
+ "cavp_id": "31042",
+ "cavp_cert": "C646",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31042",
+ "implementation": "Pico 1200G DSP",
+ "product_id": "11005",
+ "description": "Pico 1200G coherent DSP encrypts ODU4 client payload data",
+ "version": "490-0014-xx",
+ "type": "HARDWARE",
+ "first_validated": "4/18/2019",
+ "vendor": "Acacia Communications Inc.",
+ "vendor_website": "http://www.acacia-inc.com",
+ "oes": [
+  {
+   "name": "Pico 1200G DSP",
+   "details": [
+    "device: Pico 1200G DSP"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 121856",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 121856"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

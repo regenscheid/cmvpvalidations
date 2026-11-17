@@ -1,0 +1,100 @@
+{
+ "cavp_id": "37485",
+ "cavp_cert": "A4875",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37485",
+ "implementation": "Versal ACAP SW",
+ "product_id": "17536",
+ "description": "AES-GCM, SHA3/384, ECDSA using XilSecure library and DRBG standalone driver, both running on Versal ACAP",
+ "version": "5.2",
+ "type": "HARDWARE",
+ "first_validated": "12/21/2023",
+ "vendor": "Advanced Micro Devices (AMD)",
+ "vendor_website": "http://www.amd.com",
+ "oes": [
+  {
+   "name": "Versal ACAP",
+   "details": [
+    "hardware: Part #: Versal PMC, version 0x20",
+    "  Hardware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 32-65536 Increment 32",
+    "AAD Length: 0-65536 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 32-65536 Increment 32",
+    "AAD Length: 0-65536 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0, 0",
+    "    Entropy Input: 512",
+    "    Nonce: 128",
+    "    Personalization String Length: 384, 384",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA3-384",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA3-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA3-384",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA3-384"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-64864 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

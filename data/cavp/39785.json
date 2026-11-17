@@ -1,0 +1,57 @@
+{
+ "cavp_id": "39785",
+ "cavp_cert": "A7175",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39785",
+ "implementation": "ESPRIT / COMHUB",
+ "product_id": "19967",
+ "description": "Cryptographic algorithms implementation integrated in the COMHUB FPGA.",
+ "version": "5.10",
+ "type": "FIRMWARE",
+ "first_validated": "7/16/2025",
+ "vendor": "THALES ALENIA SPACE",
+ "vendor_website": "http://www.thalesaleniaspace.com",
+ "oes": [
+  {
+   "name": "Mentor Graphics Questa Sim 2022.11",
+   "details": [
+    "Firmware: Mentor Graphics Questa Sim 2022.11"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128-16144 Increment 8",
+    "AAD Length: 112"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 16-16256 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

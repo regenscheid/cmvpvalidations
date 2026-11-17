@@ -1,0 +1,384 @@
+{
+ "cert": 4765,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4765",
+ "module": "nShield 5s Hardware Security Module",
+ "standard": "140-3",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "Interim validation. When installed, initialized and configured as specified in Section 11.3 of the Security Policy",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The nShield 5s Hardware Security Module is a multi-chip embedded hardware Cryptographic Module as defined in FIPS 140-3, which comes in a PCI express board form factor protected by a tamper resistant enclosure, and performs encryption, digital signing, and key management on behalf of an extensive range of commercial and custom-built applications including public key infrastructures (PKIs), identity management systems, application-level encryption and tokenization, SSL/TLS, and code signing.",
+ "tested_configurations": [
+  "n/a"
+ ],
+ "allowed_algorithms": "ECDSA (Cert. #A3707) (When used with non-approved Brainpool elliptic curves P224r1/P224t1, P256r1/P256t1, P320r1/P320t1, P384r1/P384t1, and P512r1/P512t1; Key generation Signature generation and verification);KAS-ECC (Cert. #A3707) (When used with non-approved Brainpool elliptic curves P224r1/P224t1, P256r1/P256t1, P320r1/P320t1, P384r1/P384t1, and P512r1/P512t1; Key establishment)",
+ "hardware_versions": "PCA10005-01 revision 03 and 04",
+ "firmware_versions": "primary-version 13.4.5; recovery-version 13.2.4; uboot-version 1.1.0 and uboot-version 1.4.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "DSA PQGGen (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "DSA PQGVer (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "DSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "DSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "KAS-FFC Sp800-56Ar3",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "KDF SSH",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "KMAC-128",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "KMAC-256",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2404",
+   "cavp_id": "35013"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A6385",
+   "cavp_id": "38995"
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2404",
+   "cavp_id": "35013"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A6385",
+   "cavp_id": "38995"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A3706",
+   "cavp_id": "36316"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA3-224",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA3-256",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA3-384",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  },
+  {
+   "algorithm": "SHA3-512",
+   "cavp_cert": "A3707",
+   "cavp_id": "36317"
+  }
+ ],
+ "vendor": "Entrust",
+ "vendor_info": {
+  "name": "Entrust",
+  "website": "http://www.entrust.com",
+  "address": [
+   "One Station Square",
+   "Cambridge, Cambridgeshire CB1 2GA",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "Security Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4765.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202024_010924_0336.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/19/2024",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "4/1/2025",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "8/19/2024",
+ "last_updated": "4/1/2025",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4765.pdf",
+ "other_fields": {
+  "Historical Reason": "Replaced by certificate #5329"
+ },
+ "other_text": "ECDSA (Cert. #A3707) (When used with non-approved Brainpool elliptic curves P224r1/P224t1, P256r1/P256t1, P320r1/P320t1, P384r1/P384t1, and P512r1/P512t1; Key generation Signature generation and verification);KAS-ECC (Cert. #A3707) (When used with non-approved Brainpool elliptic curves P224r1/P224t1, P256r1/P256t1, P320r1/P320t1, P384r1/P384t1, and P512r1/P512t1; Key establishment)",
+ "sparse": false,
+ "list": {
+  "cert": 4765,
+  "vendor": "Entrust",
+  "module": "nShield 5s Hardware Security Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "08/19/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

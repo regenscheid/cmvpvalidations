@@ -1,0 +1,50 @@
+{
+ "cavp_id": "23136",
+ "cavp_cert": "AES 3757",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=23136",
+ "implementation": "ClevX Datalock® AES",
+ "product_id": "1448",
+ "description": "AES Firmware Library Module",
+ "version": "Datalock® Secured Mass Storage Device 1.0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "12/18/2015",
+ "vendor": "ClevX, LLC",
+ "vendor_website": "http://www.clevx.com",
+ "oes": [
+  {
+   "name": "STMicroelectronics STM32",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 8-512",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

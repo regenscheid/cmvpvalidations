@@ -1,0 +1,67 @@
+{
+ "cavp_id": "34247",
+ "cavp_cert": "A1638",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34247",
+ "implementation": "Toshiba MG09 Secure Cryptographic HW",
+ "product_id": "14148",
+ "description": "a library of hardware cipher solutions which are standard encryption algorithm-based to provide Toshiba HDD products and the systems using them a robust and secure data storage environment.",
+ "version": "88i1215-B1",
+ "type": "HARDWARE",
+ "first_validated": "6/30/2021",
+ "vendor": "Toshiba Electronic Devices & Storage Corporation",
+ "vendor_website": "http://toshiba.semicon-storage.com/us/company.html",
+ "oes": [
+  {
+   "name": "Toshiba Cryptographic for HDD",
+   "details": [
+    "Hardware: 88i1215-B1",
+    "  SoC used in HDD"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096, 4160, 4224",
+    "Tweak Mode: Number",
+    "Data Unit Length: 4096, 4160, 4224"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,74 @@
+{
+ "cavp_id": "38503",
+ "cavp_cert": "A5893",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38503",
+ "implementation": "SUSE Linux Enterprise - OpenSSL FIPS Provider (SSH_SHANI)",
+ "product_id": "18551",
+ "description": "SUSE Linux Enterprise Server 15 SP6 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: SSH KDF using Intel SHA-NI implementation.",
+ "version": "1.1",
+ "type": "SOFTWARE",
+ "first_validated": "10/3/2024",
+ "vendor": "SUSE LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP6 on AMD EPYC(TM) 7343",
+   "details": [
+    "processor: 7343",
+    "  Processor 7343 (processor family X86) from AMD",
+    "  family: X86",
+    "  manufacturer: AMD",
+    "  series: EPYC(TM)",
+    "software: SUSE Linux Enterprise Server 15 SP6",
+    "  SUSE Linux Enterprise distribution"
+   ]
+  },
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP6 on Intel(R) Xeon(R) Gold 5416S",
+   "details": [
+    "processor: 5416S",
+    "  Processor 5416S (processor family X86) from Intel(R)",
+    "  family: X86",
+    "  manufacturer: Intel(R)",
+    "  series: Xeon(R) Gold",
+    "software: SUSE Linux Enterprise Server 15 SP6",
+    "  SUSE Linux Enterprise distribution"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 1,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

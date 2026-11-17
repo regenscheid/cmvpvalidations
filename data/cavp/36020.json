@@ -1,0 +1,43 @@
+{
+ "cavp_id": "36020",
+ "cavp_cert": "A3410",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36020",
+ "implementation": "FE2-PG4 Cryptographic Algorithm Library",
+ "product_id": "15870",
+ "description": "The Western Digital FE2-PG4 ASIC supports hardware based 128-bit and 256-bit AES encryption and decryption in ECB and XTS modes on Western Digital’s Self-Encrypting Drives.",
+ "version": "Mercurial Distributed SCM (version 3.3.2)",
+ "type": "FIRMWARE",
+ "first_validated": "3/17/2023",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.WDC.com",
+ "oes": [
+  {
+   "name": "Simulator: Cadence Design Systems, Xcelium-17.10.008",
+   "details": [
+    "cpu: Simulator: Cadence Design Systems, Xcelium-17.10.008"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 4096-32768 Increment 128",
+    "Tweak Mode: Number",
+    "Data Unit Length Matches Payload Length"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

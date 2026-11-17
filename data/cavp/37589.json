@@ -1,0 +1,52 @@
+{
+ "cavp_id": "37589",
+ "cavp_cert": "A4979",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37589",
+ "implementation": "ExtraHop Cryptographic Module (libssl)",
+ "product_id": "17576",
+ "description": "The ExtraHop Cryptographic Module offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data. This library provides the KDF for TLSv1.3.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/18/2024",
+ "vendor": "ExtraHop Networks, Inc.",
+ "vendor_website": "http://www.extrahop.com",
+ "oes": [
+  {
+   "name": "Debian 9 running on Dell PowerEdge R440 on Intel® Xeon® 4214R with PAA",
+   "details": [
+    "software: Debian 9",
+    "hardware: Dell PowerEdge R440",
+    "processor: Intel® Xeon® 4214R with PAA",
+    "  manufacturer: Intel®"
+   ]
+  },
+  {
+   "name": "Debian 9 running on Dell PowerEdge R440 on Intel® Xeon® 4214R without PAA",
+   "details": [
+    "software: Debian 9",
+    "hardware: Dell PowerEdge R440",
+    "processor: Intel® Xeon® 4214R without PAA",
+    "  manufacturer: Intel®"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 0,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 1,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

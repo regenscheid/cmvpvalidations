@@ -1,0 +1,36 @@
+{
+ "cavp_id": "31222",
+ "cavp_cert": "C826",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31222",
+ "implementation": "N3FIPS-OpenSSL-1.1.1-HMAC-KDF",
+ "product_id": "11180",
+ "description": "This implementation uses OpenSSL's HMAC to derive keys in counter mode.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "6/20/2019",
+ "vendor": "Marvell",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 128, 192, 4096",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

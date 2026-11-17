@@ -1,0 +1,46 @@
+{
+ "cavp_id": "35150",
+ "cavp_cert": "A2539",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35150",
+ "implementation": "11QPEN4_GCM",
+ "product_id": "15028",
+ "description": "Transmission encryption AES256-GCM",
+ "version": "GCM Profile 1.1.1",
+ "type": "FIRMWARE",
+ "first_validated": "4/18/2022",
+ "vendor": "Nokia",
+ "vendor_website": "http://nokia.com",
+ "oes": [
+  {
+   "name": "Altera FPGA - Rijndael",
+   "details": [
+    "Processor: Altera FPGA - Rijndael",
+    "  Altera FPGA - Rijndael (based on Helion Technologies AES256 core)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128",
+    "AAD Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

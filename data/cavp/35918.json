@@ -1,0 +1,63 @@
+{
+ "cavp_id": "35918",
+ "cavp_cert": "A3308",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35918",
+ "implementation": "PS5020-E20",
+ "product_id": "15799",
+ "description": "PS5020-E20 hardware used in the Seagate Secure NVMe Self-Encrypting Drive.",
+ "version": "PS5020-E20",
+ "type": "HARDWARE",
+ "first_validated": "2/8/2023",
+ "vendor": "Seagate Technology LLC",
+ "vendor_website": "http://www.seagate.acme",
+ "oes": [
+  {
+   "name": "PS5020-E20",
+   "details": [
+    "hardware: PS5020-E20",
+    "  A Cryptographic module that provides the cryptographic functions which includes: Signature Generation / Verification."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "        Mask Function: mgf1",
+    "        Modulo: 4096",
+    "    Signature Type: pss",
+    "Fixed Public Exponent: 010001",
+    "Public Exponent Mode: fixed"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

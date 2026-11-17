@@ -1,0 +1,214 @@
+{
+ "cert": 4863,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4863",
+ "module": "Cradlepoint Kernel Cryptographic Module",
+ "standard": "140-3",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "Interim validation. When operated in approved mode with module Cradlepoint Cryptographic Module validated to FIPS 140-3 under Cert. #4770 operating in approved mode",
+ "level_exceptions": [
+  "Physical security: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Ericsson Kernel Cryptographic Module is a software module running as part of Ericsson’s NetCloud OS kernel. It provides FIPS-Approved symmetric encryption and decryption, hashing, message authentication, and key establishment services to consuming applications via an Application Programming Interface (API).",
+ "tested_configurations": [
+  "NetCloud OS 7 running on a Cradlepoint E3000 with an ARM Cortex-A (ARMv8-A)"
+ ],
+ "allowed_algorithms": "AES (Cert. A3232), AES (Cert. A4944) (SSP establishment methodology provides between 128 and 256 bits of encryption strength.; Key unwrapping (using any approved mode));Triple-DES (Cert. A3232) (SSP establishment methodology provides 168 bits of encryption strength.; Key unwrapping (using any Approved mode with two-key or three-key))",
+ "software_versions": "1.0 and 2.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4944",
+   "cavp_id": "37554"
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "cavp_cert": "A3232",
+   "cavp_id": "35842"
+  }
+ ],
+ "vendor": "Ericsson Enterprise Wireless Solutions, Inc.",
+ "vendor_info": {
+  "name": "Ericsson Enterprise Wireless Solutions, Inc.",
+  "website": "http://www.cradlepoint.com",
+  "address": [
+   "1100 W. Idaho Street, Suite 800",
+   "Boise, ID 83702",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Federal Sales"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4863.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November%202024_021224_0125.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/4/2024",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "3/2/2026",
+   "type": "Update",
+   "lab": "Teron Labs"
+  },
+  {
+   "date": "3/16/2026",
+   "type": "Update",
+   "lab": "Teron Labs"
+  }
+ ],
+ "first_validated": "11/4/2024",
+ "last_updated": "3/16/2026",
+ "labs": "Lightship Security, Inc.; Teron Labs",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4863.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #4770"
+ },
+ "other_text": "AES (Cert. A3232), AES (Cert. A4944) (SSP establishment methodology provides between 128 and 256 bits of encryption strength.; Key unwrapping (using any approved mode));Triple-DES (Cert. A3232) (SSP establishment methodology provides 168 bits of encryption strength.; Key unwrapping (using any Approved mode with two-key or three-key))",
+ "sparse": false,
+ "list": {
+  "cert": 4863,
+  "vendor": "Ericsson Enterprise Wireless Solutions, Inc.",
+  "module": "Cradlepoint Kernel Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "11/04/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

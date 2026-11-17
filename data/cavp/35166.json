@@ -1,0 +1,152 @@
+{
+ "cavp_id": "35166",
+ "cavp_cert": "A2555",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35166",
+ "implementation": "Trusted Platform Module ST33KTPM2XSPI / ST33KTPM2XI2C",
+ "product_id": "15003",
+ "description": "The ST33KTPM2XSPI and ST33KTPM2XI2C Trusted Platform Module (TPM) are hardware cryptographic modules which implement the TPM2.0 standard as defined by the Trusted Computing Group. TPMs are used primarily for the generation, storage, and management of cryptographic keys, as well was for secure storage of digital certificates.",
+ "version": "ECC 1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "4/25/2022",
+ "vendor": "STMicroelectronics",
+ "vendor_website": "http://www.st.com",
+ "oes": [
+  {
+   "name": "Arm® Cortex®-M35P 32-bit RISC core",
+   "details": [
+    "cpu: Arm® Cortex®-M35P 32-bit RISC core"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA3-256",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA3-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA3-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA3-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA3-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA3-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA3-384",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA3-384"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384",
+    "Function: Full Validation, Key Pair Generation",
+    "Scheme:",
+    "  fullUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA-1",
+    "            MAC Salting Methods: random",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "            MAC Salting Methods: random",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "            MAC Salting Methods: random",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA3-256",
+    "            MAC Salting Methods: random",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA3-384",
+    "            MAC Salting Methods: random",
+    "        Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 128",
+    "  onePassDh:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA-1",
+    "            MAC Salting Methods: random",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "            MAC Salting Methods: random",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "            MAC Salting Methods: random",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA3-256",
+    "            MAC Salting Methods: random",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA3-384",
+    "            MAC Salting Methods: random",
+    "        Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

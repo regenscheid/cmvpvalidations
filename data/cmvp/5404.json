@@ -1,0 +1,188 @@
+{
+ "cert": 5404,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5404",
+ "module": "Boot Manager",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "8/30/2031",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Section 11 of the Security Policy. When operated in approved mode with module Kernel Mode Cryptographic Primitives Library (cng.sys) validated to FIPS 140-3 under Cert. #5408 operating in approved mode. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+ "level_exceptions": [
+  "Non-invasive security: N/A"
+ ],
+ "type": "Software-hybrid",
+ "embodiment": "MultiChipStand",
+ "description": "The Windows Boot Manager module is a multi-chip standalone software-hybrid cryptographic module. Boot Manager is the first Windows OS component to load when the computer powers up. When Secure Boot is enabled, the integrity of Boot Manager is validated before loading by the computer’s UEFI firmware. Along with other startup and initialization tasks, Boot Manager loads and cryptographically validates the integrity of Winload.efi (the Windows OS Loader), the next module in the startup sequence. The Boot Manager, which includes parts of BitLocker disk encryption, collects authorization factors, known as “protectors”, by reading data or interacting with the user. BitLocker uses these protectors to encrypt entire disk volumes.",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A3748",
+   "cavp_id": "36358"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A3749",
+   "cavp_id": "36359"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3767",
+   "cavp_id": "36377"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A3768",
+   "cavp_id": "36378"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4008",
+   "cavp_id": "36618"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A4009",
+   "cavp_id": "36619"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "1 Microsoft Way",
+   "Redmond, WA 98052",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5404.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202026_020926_0917.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/31/2026",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "8/31/2026",
+ "last_updated": "8/31/2026",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5404.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 5404,
+  "vendor": "Microsoft Corporation",
+  "module": "Boot Manager",
+  "type": "Software-hybrid",
+  "validation_dates": [
+   "08/31/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

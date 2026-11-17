@@ -1,0 +1,86 @@
+{
+ "cavp_id": "35475",
+ "cavp_cert": "A2864",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35475",
+ "implementation": "Apple corecrypto Module [Apple ARM, Secure Key Store, Hardware, SL2] (trng)",
+ "product_id": "15339",
+ "description": "Hardware implementation of cryptographic ciphers offering various cryptographic mechanisms to Apple Secure Key Store in the Secure Enclave Processor environment.",
+ "version": "2.0",
+ "type": "HARDWARE",
+ "first_validated": "9/14/2022",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "Apple A Series A15 Bionic",
+   "details": [
+    "processor: A15 Bionic",
+    "  Processor A15 Bionic (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: A Series"
+   ]
+  },
+  {
+   "name": "Apple S Series S7",
+   "details": [
+    "processor: S7",
+    "  Processor S7 (processor family arm64) from Apple",
+    "  family: arm64",
+    "  manufacturer: Apple",
+    "  series: S Series"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,49 @@
+{
+ "cavp_id": "39613",
+ "cavp_cert": "A7003",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39613",
+ "implementation": "AMD ASP Cryptographic CoProcessor (DRBG)",
+ "product_id": "19451",
+ "description": "Currently tested algorithms are included in AMD Ryzen AI PRO 300 Series \"Strix 1\"",
+ "version": "B0-1-3E14",
+ "type": "FIRMWARE",
+ "first_validated": "6/4/2025",
+ "vendor": "Advanced Micro Devices (AMD)",
+ "vendor_website": "http://www.amd.com",
+ "oes": [
+  {
+   "name": "VCS S-2021.09-SP1-1",
+   "details": [
+    "software: VCS S-2021.09-SP1-1",
+    "  Simulator"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

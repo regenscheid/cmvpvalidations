@@ -1,0 +1,236 @@
+{
+ "cert": 4884,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4884",
+ "module": "AWS Key Management Service HSM",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "11/17/2029",
+ "level": "3",
+ "caveat": "Interim validation. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Amazon AWS Key Management Service HSM is a multi-chip standalone hardware cryptographic appliance designed to provide dedicated cryptographic functions to meet the security and scalability requirements of the AWS Key Management Service (KMS). The cryptographic boundary is defined as the secure chassis of the appliance. All key materials are maintained exclusively in volatile memory in the appliance and are erased immediately upon detection of physical tampering.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "ECDSA secp256k1 (key agreement; key establishment methodology provides 128 bits of encryption strength; [IG C.A] Curves: secp256k1 may only be used in block-chain related applications)",
+ "entropy": "ENT (P)",
+ "hardware_versions": "3.0",
+ "firmware_versions": "1.8.104",
+ "non_approved_algorithms": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "AES-CTR",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "AES-KWP",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "cavp_cert": "A1791",
+   "cavp_id": "34400"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A1910",
+   "cavp_id": "34519"
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "SHA-1",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A1908",
+   "cavp_id": "34517"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "https://aws.amazon.com/kms/",
+  "address": [
+   "410 Terry Ave N",
+   "Ste 1200",
+   "Seattle, WA 98109-5210",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jeff Fiedler"
+   },
+   {
+    "name": "Ken Beer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4884.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November%202024_021224_0125.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/18/2024",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "11/18/2024",
+ "last_updated": "11/18/2024",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4884.pdf",
+ "other_fields": {},
+ "other_text": "ECDSA secp256k1 (key agreement; key establishment methodology provides 128 bits of encryption strength; [IG C.A] Curves: secp256k1 may only be used in block-chain related applications)",
+ "sparse": false,
+ "list": {
+  "cert": 4884,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "AWS Key Management Service HSM",
+  "type": "Hardware",
+  "validation_dates": [
+   "11/18/2024"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

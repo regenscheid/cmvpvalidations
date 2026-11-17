@@ -1,0 +1,46 @@
+{
+ "cavp_id": "35344",
+ "cavp_cert": "A2733",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35344",
+ "implementation": "Copy Engine",
+ "product_id": "15219",
+ "description": "Executes copy operations between various memory regions within and outside GPU",
+ "version": "H100",
+ "type": "FIRMWARE",
+ "first_validated": "7/26/2022",
+ "vendor": "Nvidia Corporation",
+ "vendor_website": "http://www.nvidia.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS, Version 2019.06-SP2-10-T",
+   "details": [
+    "Firmware: Synopsys VCS, Version 2019.06-SP2-10-T"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128-65536 Increment 128",
+    "AAD Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

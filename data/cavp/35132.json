@@ -1,0 +1,63 @@
+{
+ "cavp_id": "35132",
+ "cavp_cert": "A2521",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35132",
+ "implementation": "Micron 7400 Controller Sub Chip Security Subsystem (SCSS) ROM Cryptographic Library",
+ "product_id": "14841",
+ "description": "Sub Chip Security Subsystem (SCSS) ROM cryptographic library provides cryptographic algorithm support to the security subsystem module",
+ "version": "1.0",
+ "type": "HARDWARE",
+ "first_validated": "4/13/2022",
+ "vendor": "Micron Technology, Inc.",
+ "vendor_website": "http://www.Micron.com",
+ "oes": [
+  {
+   "name": "Micron 7400 Controller",
+   "details": [
+    "cpu: Micron 7400 Controller"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

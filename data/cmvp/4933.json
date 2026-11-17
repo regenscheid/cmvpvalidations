@@ -1,0 +1,147 @@
+{
+ "cert": 4933,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4933",
+ "module": "X5 Postal Security Device (PSD)",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "12/23/2029",
+ "level": "3",
+ "caveat": "Interim Validation; When operated in approved mode; No assurance of the minimum strength of generated SSPs (e.g., keys).",
+ "piv_cert": "N/A",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "The X5 Postal Security Device (PSD) is a single-chip cryptographic module designed by Pitney Bowes, Inc. (PB) to conform with FIPS 140-3 Security Level 3 requirements. The device includes the Maxim Integrated MAX32590 DeepCover Secure Microcontroller hardware component. The PSD Application and DAL are compiled into a single firmware. The X5 Postal Security Device (PSD) provides cryptographic services to a host device (i.e., Digital Postage Meter), to support postage evidence in the form of an indicium. A PSD provides protection that includes ensuring the secrecy of sensitive security parameters (SSPs) such as cryptographic keys and providing data integrity protection for funds relevant data items (FRDIs) such as accounting data. SSPs and FRDIs reside inside the strong physical protections of the X5 Postal Security Device (PSD).",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "Maxim Integrated MAX32590 DeepCover Secure Microcontroller - Revision B4",
+ "firmware_versions": "PSD Application: 22.01.000D & 22.01.000F Device Abstraction Layer (DAL): 02.01.000F & 02.01.00013",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "A2435",
+   "cavp_id": "35045"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2435",
+   "cavp_id": "35045"
+  },
+  {
+   "algorithm": "AES-KW",
+   "cavp_cert": "A2435",
+   "cavp_id": "35045"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "cavp_cert": "A2437",
+   "cavp_id": "35047"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "cavp_cert": "A2437",
+   "cavp_id": "35047"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2437",
+   "cavp_id": "35047"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A2436",
+   "cavp_id": "35046"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A2438",
+   "cavp_id": "35048"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A2439",
+   "cavp_id": "35049"
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "cavp_cert": "A2439",
+   "cavp_id": "35049"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2440",
+   "cavp_id": "35050"
+  },
+  {
+   "algorithm": "SHA2-224",
+   "cavp_cert": "A2441",
+   "cavp_id": "35051"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2441",
+   "cavp_id": "35051"
+  }
+ ],
+ "vendor": "Pitney Bowes, Inc.",
+ "vendor_info": {
+  "name": "Pitney Bowes, Inc.",
+  "website": "http://www.pitneybowes.com",
+  "address": [
+   "27 Waterview Drive",
+   "Shelton, CT 06484",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Brian Hannigan"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4933.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202024_060125_0402.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/24/2024",
+   "type": "Initial",
+   "lab": "Penumbra Security, Inc."
+  }
+ ],
+ "first_validated": "12/24/2024",
+ "last_updated": "12/24/2024",
+ "labs": "Penumbra Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4933.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4933,
+  "vendor": "Pitney Bowes, Inc.",
+  "module": "X5 Postal Security Device (PSD)",
+  "type": "Hardware",
+  "validation_dates": [
+   "12/24/2024"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

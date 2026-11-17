@@ -1,0 +1,75 @@
+name: Update data
+
+# Incremental crawl of NIST CMVP / CAVP. The CMVP search lists are always refetched; a
+# certificate page is fetched only when it is new or its status / validation dates changed;
+# CAVP validations are fetched when first cited, and the oldest are refreshed a few at a time.
+on:
+  schedule:
+    - cron: "17 9 * * *" # daily, 09:17 UTC
+  workflow_dispatch:
+    inputs:
+      refresh:
+        description: "Refetch every certificate and CAVP page"
+        type: boolean
+        default: false
+
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+      crawl: ${{ steps.crawl.outcome }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Crawl
+        id: crawl
+        continue-on-error: true # commit whatever succeeded; the job is failed at the end
+        run: >
+          python3 -I scripts/cmvp_crawl.py --standard 140-3 --data data --cache "$RUNNER_TEMP/cache"
+          --workers 4 --cavp-max-age 180 --cavp-limit 150
+          ${{ inputs.refresh && '--refresh' || '' }}
+
+      - name: Commit changes
+        id: commit
+        run: |
+          git add data
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          summary=$(git diff --cached --name-status -- data/cmvp | awk '{print $1}' | sort | uniq -c | tr '\n' ' ')
+          git commit -m "data: CMVP/CAVP update $(date -u +%F)" -m "cmvp changes: ${summary:-none}"
+          git push
+          echo "changed=true" >> "$GITHUB_OUTPUT"
+
+  deploy:
+    needs: crawl
+    if: always() && needs.crawl.outputs.changed == 'true'
+    uses: ./.github/workflows/deploy.yml
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+  report:
+    needs: [crawl, deploy]
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fail if the crawl had errors
+        if: needs.crawl.outputs.crawl != 'success'
+        run: |
+          echo "::error::The crawl reported errors; successfully fetched records were still committed."
+          exit 1

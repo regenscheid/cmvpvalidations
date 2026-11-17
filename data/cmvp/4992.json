@@ -1,0 +1,122 @@
+{
+ "cert": 4992,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4992",
+ "module": "Atalla Cryptographic Subsystem (ACS)",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "3/24/2027",
+ "level": "3",
+ "caveat": "Interim validation. When installed, initialized and configured as specified in Section 11 of the Security Policy",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The ACS is a multi-chip embedded cryptographic module. It consists of a secure hardware platform, a firmware secure loader, and three separate microcontrollers, collectively called the Physical Security Monitor Central Unit or PSMCU). The purpose of the cryptographic module is to load Approved (RSA and ECDSA signed) application programs, called \"personalities\", in a secure manner.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "entropy": "ENT (P)",
+ "hardware_versions": "C9B60-2108A[1], C9B60-2108B[2], C9B60-2108C[3], C9B60-2108D[4], and C9B60-2108E[5]",
+ "firmware_versions": "Loader 1.24[1][2][3][4][5], PSMCU 1.0.1[1][2][3] and 1.0.3[3][4][5], CMS-OCT 1.0.0[1][2][3] and 1.0.3[3][4][5], CMS-NTX 1.0.0[1], Loader Stage 1 1.10[1][2][3][4][5], Loader Stage 2 1.20[1][2][3][4][5], Boot 1.23[1][2][3][4][5]",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CBC",
+   "cavp_cert": "AES 4600",
+   "cavp_id": "3392"
+  },
+  {
+   "algorithm": "AES-CCM",
+   "cavp_cert": "A2606",
+   "cavp_id": "35217"
+  },
+  {
+   "algorithm": "Conditioning Component Block Cipher Derivation Function SP800-90B",
+   "cavp_cert": "A2606",
+   "cavp_id": "35217"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A2606",
+   "cavp_id": "35217"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2606",
+   "cavp_id": "35217"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2606",
+   "cavp_id": "35217"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "SHS 3776",
+   "cavp_id": "24452"
+  }
+ ],
+ "vendor": "Utimaco Inc.",
+ "vendor_info": {
+  "name": "Utimaco Inc.",
+  "website": "http://hsm.utimaco.com",
+  "address": [
+   "900 E Hamilton Ave #400",
+   "Campbell, CA 95008",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Manish Upasani"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4992.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202025_010425_0326.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/25/2025",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "9/2/2025",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "3/25/2025",
+ "last_updated": "9/2/2025",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4992.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4992,
+  "vendor": "Utimaco Inc.",
+  "module": "Atalla Cryptographic Subsystem (ACS)",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/25/2025"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

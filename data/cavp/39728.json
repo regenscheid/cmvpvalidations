@@ -1,0 +1,46 @@
+{
+ "cavp_id": "39728",
+ "cavp_cert": "A7118",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39728",
+ "implementation": "TuxCare OpenSSL FIPS Provider (SSH_AVX)",
+ "product_id": "19856",
+ "description": "AlmaLinux 9.6 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: SSH KDF using AVX SHA implementation.",
+ "version": "3.2.2-f9f9d133a30b6eb5",
+ "type": "SOFTWARE",
+ "first_validated": "7/8/2025",
+ "vendor": "Cloud Linux Software, Inc. d/b/a TuxCare",
+ "vendor_website": "http://www.tuxcare.com",
+ "oes": [
+  {
+   "name": "AlmaLinux OS 9.6 on Intel® Emerald Rapids-SP Xeon® Gold 5512U",
+   "details": [
+    "software: AlmaLinux OS 9.6",
+    "  Linux distribution with Enterprise Support by Cloud Linux Software, Inc. d/b/a TuxCare and targeted towards the commercial market.",
+    "processor: Xeon® Gold 5512U",
+    "  Processor Xeon® Gold 5512U (processor family X86) from Intel®",
+    "  family: X86",
+    "  manufacturer: Intel®",
+    "  series: Emerald Rapids-SP"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

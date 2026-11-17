@@ -1,0 +1,36 @@
+{
+ "cavp_id": "37946",
+ "cavp_cert": "A5336",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37946",
+ "implementation": "Firelight MACsec Core",
+ "product_id": "11248",
+ "description": "MACsec core for 802.1ae implements AES-GCM-128/256 on the following parts: BCM56070 BCM56071 BCM56080 BCM56081 BCM56082 BCM56085 BCM56086 BCM56782 BCM56786 BCM56787 BCM56788 BCM8883X BCM88840 BCM88842 BCM88844 BCM88850 BCM88852 BCM88854 BCM88856 BCM88857 where X can be any digit.",
+ "version": "A0",
+ "type": "FIRMWARE",
+ "first_validated": "5/14/2024",
+ "vendor": "Broadcom Inc.",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "VCS Simulator 2017-03.SP1-1",
+   "details": [
+    "processor: VCS Simulator 2017-03.SP1-1"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 192-1024 Increment 16"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

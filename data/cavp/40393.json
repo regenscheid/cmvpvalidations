@@ -1,0 +1,79 @@
+{
+ "cavp_id": "40393",
+ "cavp_cert": "A7783",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40393",
+ "implementation": "MliSecurityService",
+ "product_id": "20503",
+ "description": "MolecuLightDX Point-of-Care Wound Imaging Cryptographic Module",
+ "version": "1.0.854f51",
+ "type": "SOFTWARE",
+ "first_validated": "12/12/2025",
+ "vendor": "MolecuLight Inc.",
+ "vendor_website": "http://moleculight.com",
+ "oes": [
+  {
+   "name": "MolecuLightDX-v11.1.25335",
+   "details": [
+    "Operating System: Android11 AOSP",
+    "  Android 11 Operating System",
+    "Processor: Qualcomm Open-Q™ 626 µSOM",
+    "  Qualcomm Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 256",
+    "    Fixed Data Order: After Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Modulo: 4096",
+    "Key Generation Methods: rsakpg1-crt",
+    "Fixed Public Exponent: 00010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-256",
+    "      Supports Null Associated Data",
+    "    Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

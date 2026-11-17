@@ -1,0 +1,47 @@
+{
+ "cavp_id": "36031",
+ "cavp_cert": "A3421",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36031",
+ "implementation": "Silvus Hardware Crypto Module XC7Z035",
+ "product_id": "15879",
+ "description": "The Silvus Hardware Crypto Library implements the AES GCM 256-bit cryptographic functions for use in Silvus Technologies SC4000 Series mesh radios.",
+ "version": "XC7Z035 & streamscape_HardwareGCM_v1.0",
+ "type": "HARDWARE",
+ "first_validated": "3/24/2023",
+ "vendor": "Silvus Technologies",
+ "vendor_website": "http://www.silvustechnologies.com",
+ "oes": [
+  {
+   "name": "Xilinx Zynq 7000",
+   "details": [
+    "hardware: Xilinx Zynq 7000",
+    "  Hardware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 96",
+    "IV Length: 96",
+    "Payload Length: 512-12288 Increment 512",
+    "AAD Length: 8, 16, 32, 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

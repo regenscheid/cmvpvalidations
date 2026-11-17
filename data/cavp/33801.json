@@ -1,0 +1,100 @@
+{
+ "cavp_id": "33801",
+ "cavp_cert": "A1192",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33801",
+ "implementation": "LiquidSecurity-KAS-KDF",
+ "product_id": "13665",
+ "description": "This implements Key derivation schemes suggested SP800-56C.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "4/2/2021",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA HKDF Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-4096 Increment 8",
+    "HMAC Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-224",
+    "Fixed Info Pattern: label||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "Fixed Info Pattern: label||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-384",
+    "Fixed Info Pattern: label||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512",
+    "Fixed Info Pattern: label||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA TwoStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    MAC Salting Methods: random",
+    "    Supported Lengths: 1-4096",
+    "    Fixed Info Encoding: concatenation",
+    "    Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "    KDF Mode: counter",
+    "    MAC Modes: CMAC-AES128, CMAC-AES192, CMAC-AES256, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Counter Lengths: 8, 16, 24, 32",
+    "    Fixed Data Order: after fixed data, before fixed data",
+    "Derived Key Length: 4096",
+    "Shared Secret Length: 224-1024 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

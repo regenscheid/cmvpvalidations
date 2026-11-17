@@ -1,0 +1,59 @@
+{
+ "cavp_id": "35573",
+ "cavp_cert": "A2963",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35573",
+ "implementation": "CAAM ECDSA",
+ "product_id": "15422",
+ "description": "A dedicated IP which is part of CAAM hardware together with a dedicated firmware provide complete implementation of ECDSA algorithms.",
+ "version": "HW: DA_SSL_iMX8DXL_SCU_SUBSYS_LN28FDSOI_1.56, FW: hal_caam_ecdsa_fw.c: 80649c521023bcb12d49b23931b3f9248badc0ae",
+ "type": "HARDWARE",
+ "first_validated": "11/4/2022",
+ "vendor": "NXP Semiconductors",
+ "vendor_website": "http://www.nxp.com",
+ "oes": [
+  {
+   "name": "ARM Cortex M0+",
+   "details": [
+    "cpu: ARM Cortex M0+"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

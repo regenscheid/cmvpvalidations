@@ -1,0 +1,72 @@
+{
+ "cavp_id": "38191",
+ "cavp_cert": "A5581",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38191",
+ "implementation": "OpenSSL 3 (64 bit) (AES_Altivec_ASM)",
+ "product_id": "18229",
+ "description": "Red Hat Enterprise Linux 9 OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The following cipher implementation is covered: Altivec assembler AES using GCM with 4-bit assembler GHASH implementation.",
+ "version": "3.0.7-cda111b5812c30d4",
+ "type": "SOFTWARE",
+ "first_validated": "8/13/2024",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 9 on PowerVM FW1040.00 with VIOS 3.1.3.00 on IBM POWER Series POWER10",
+   "details": [
+    "processor: POWER10",
+    "  Processor POWER10 (processor family POWER) from IBM",
+    "  family: POWER",
+    "  manufacturer: IBM",
+    "  series: POWER Series",
+    "software: PowerVM FW1040.00 with VIOS 3.1.3.00",
+    "  PowerVM provides a secure and scalable server virtualization environment for AIX, IBM i and Linux applications built upon the advanced RAS features and the Power Systems platform.",
+    "software: Red Hat Enterprise Linux 9",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "  swid: com.redhat.RHEL-9-ppc64le"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

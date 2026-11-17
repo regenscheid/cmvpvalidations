@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CryptoComply Module based on AWS-LC FIPS (cert 5525)</title><meta name="description" content="SafeLogic, Inc. CryptoComply Module based on AWS-LC FIPS, PQC algorithm details">
+<style>
+:root{--bg:#fafaf8;--surface:#fff;--ink:#1d2328;--muted:#5d6872;--line:#dfe3e6;--accent:#1d5fa8;--accent-soft:#e6eff9;
+--ok:#1f7a4d;--ok-soft:#e3f3ea;--kem:#7a3d91;--kem-soft:#f1e8f6;--warn:#8a5a00;--warn-soft:#fbf0d9;--mono:ui-monospace,SFMono-Regular,Menlo,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14181c;--surface:#1c2227;--ink:#e6eaed;--muted:#9aa5ad;
+--line:#2d363d;--accent:#7db3ee;--accent-soft:#1f3347;--ok:#6fd0a0;--ok-soft:#1b3328;--kem:#d6a4ea;--kem-soft:#34243d;--warn:#e6b862;--warn-soft:#3a2f17}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+main{max-width:1100px;margin:0 auto;padding:28px 16px 64px}
+h1{font-size:1.7rem;line-height:1.2;margin:.2em 0 .3em}
+h2{font-size:1.2rem;margin:2em 0 .6em}
+h3{font-size:1.02rem;margin:1.4em 0 .5em}
+p{margin:.5em 0}
+a{color:var(--accent)}
+.sub{color:var(--muted);margin:0 0 1.2em}
+nav.crumbs{font-size:.9rem;color:var(--muted)}
+nav.crumbs a{color:var(--muted)}
+nav.top{display:flex;gap:16px;flex-wrap:wrap;font-size:.92rem;margin:0 0 6px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px;margin:1.2em 0}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px}
+.stat b{display:block;font-size:1.9rem;line-height:1.1}
+.stat span{color:var(--muted);font-size:.9rem}
+.wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.93rem}
+th,td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:0}
+th{font-weight:600;color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.03em;white-space:nowrap}
+th[data-sort]{cursor:pointer}
+th[data-sort]:hover{color:var(--ink)}
+th[aria-sort="ascending"]::after{content:" \25B2";font-size:.7em}
+th[aria-sort="descending"]::after{content:" \25BC";font-size:.7em}
+.mono,.num{font-family:var(--mono);font-size:.88em}
+.tag{display:inline-block;padding:1px 8px;border-radius:999px;font-size:.78rem;background:var(--accent-soft);color:var(--accent);margin:1px 3px 1px 0;white-space:nowrap}
+.tag.ok{background:var(--ok-soft);color:var(--ok)}
+.tag.dsa{background:var(--accent-soft);color:var(--accent)}
+.tag.kem{background:var(--kem-soft);color:var(--kem)}
+.note{background:var(--warn-soft);color:var(--ink);border-left:4px solid var(--warn);padding:10px 14px;border-radius:6px;margin:1em 0;font-size:.95rem}
+dl.kv{display:grid;grid-template-columns:max-content 1fr;gap:6px 18px;background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 18px;margin:0}
+dl.kv dt{color:var(--muted)}
+dl.kv dd{margin:0}
+.tools{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:0 0 10px}
+input[type=search]{padding:8px 12px;border:1px solid var(--line);border-radius:8px;background:var(--surface);color:var(--ink);font:inherit;min-width:260px;max-width:100%}
+.chips{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:999px;padding:3px 11px;font:inherit;font-size:.85rem;cursor:pointer}
+.chip:hover{border-color:var(--accent)}
+.chip.active{background:var(--accent);border-color:var(--accent);color:var(--surface)}
+details{margin:2px 0}
+summary{cursor:pointer;color:var(--accent)}
+.muted{color:var(--muted)}
+footer{margin-top:3em;color:var(--muted);font-size:.85rem}
+@media (max-width:600px){dl.kv{grid-template-columns:1fr}dl.kv dt{margin-top:6px}}
+</style></head>
+<body><main>
+
+<nav class="crumbs"><a href="index.html">All modules</a> &rsaquo; Certificate 5525</nav>
+<h1>CryptoComply Module based on AWS-LC FIPS</h1>
+<p class="sub">SafeLogic, Inc. &middot; CMVP certificate #5525</p>
+<dl class="kv">
+<dt>Status</dt><dd>Active</dd>
+<dt>Standard</dt><dd>FIPS 140-3, overall Level 1</dd>
+<dt>Module type</dt><dd>Software, MultiChipStand</dd>
+<dt>First validated</dt><dd>9/16/2026</dd>
+<dt>Last updated</dt><dd>9/16/2026</dd>
+<dt>Sunset</dt><dd>6/2/2031</dd>
+<dt>Algorithms</dt><dd><span class="tag kem">ML-KEM</span></dd>
+<dt>NIST pages</dt><dd><a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5525" target="_blank" rel="noopener noreferrer">CMVP certificate</a> &middot; <a href="https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5525.pdf" target="_blank" rel="noopener noreferrer">Security Policy (PDF)</a></dd>
+</dl>
+<h2>ML-KEM algorithm validations (CAVP)</h2>
+<div class="wrap"><table>
+<thead><tr><th>CAVP cert</th><th>Operations</th><th>Parameter sets</th><th>Functions</th><th>Operational environments</th></tr></thead>
+<tbody><tr>
+<td class="num"><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38786" target="_blank" rel="noopener noreferrer">A6176</a></td>
+<td><span class="tag kem">EncapDecap</span><span class="tag kem">KeyGen</span></td>
+<td><span class="tag ok">1024</span><span class="tag ok">512</span><span class="tag ok">768</span></td>
+<td>Decapsulation, Encapsulation</td>
+<td>Amazon Linux 2023 on EC2 bare metal on Intel Ice Lake Xeon Platinum 8375C</td></tr><tr>
+<td class="num"><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38787" target="_blank" rel="noopener noreferrer">A6177</a></td>
+<td><span class="tag kem">EncapDecap</span><span class="tag kem">KeyGen</span></td>
+<td><span class="tag ok">1024</span><span class="tag ok">512</span><span class="tag ok">768</span></td>
+<td>Decapsulation, Encapsulation</td>
+<td>Amazon Linux 2023 on EC2 bare metal on Intel Ice Lake Xeon Platinum 8375C</td></tr><tr>
+<td class="num"><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38788" target="_blank" rel="noopener noreferrer">A6178</a></td>
+<td><span class="tag kem">EncapDecap</span><span class="tag kem">KeyGen</span></td>
+<td><span class="tag ok">1024</span><span class="tag ok">512</span><span class="tag ok">768</span></td>
+<td>Decapsulation, Encapsulation</td>
+<td>Amazon Linux 2023 on EC2 bare metal on Intel Ice Lake Xeon Platinum 8375C</td></tr><tr>
+<td class="num"><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38789" target="_blank" rel="noopener noreferrer">A6179</a></td>
+<td><span class="tag kem">EncapDecap</span><span class="tag kem">KeyGen</span></td>
+<td><span class="tag ok">1024</span><span class="tag ok">512</span><span class="tag ok">768</span></td>
+<td>Decapsulation, Encapsulation</td>
+<td>Amazon Linux 2023 on EC2 bare metal on Intel Ice Lake Xeon Platinum 8375C</td></tr><tr>
+<td class="num"><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38790" target="_blank" rel="noopener noreferrer">A6180</a></td>
+<td><span class="tag kem">EncapDecap</span><span class="tag kem">KeyGen</span></td>
+<td><span class="tag ok">1024</span><span class="tag ok">512</span><span class="tag ok">768</span></td>
+<td>Decapsulation, Encapsulation</td>
+<td>Amazon Linux 2023 on EC2 bare metal on Amazon Graviton4 AWS Graviton<br>Amazon Linux 2023 on EC2 bare metal on Intel Ice Lake Xeon Platinum 8375C</td></tr><tr>
+<td class="num"><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38794" target="_blank" rel="noopener noreferrer">A6184</a></td>
+<td><span class="tag kem">EncapDecap</span><span class="tag kem">KeyGen</span></td>
+<td><span class="tag ok">1024</span><span class="tag ok">512</span><span class="tag ok">768</span></td>
+<td>Decapsulation, Encapsulation</td>
+<td>Amazon Linux 2023 on EC2 bare metal on Amazon Graviton4 AWS Graviton<br>Amazon Linux 2023 on EC2 bare metal on Intel Ice Lake Xeon Platinum 8375C</td></tr><tr>
+<td class="num"><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38888" target="_blank" rel="noopener noreferrer">A6278</a></td>
+<td><span class="tag kem">EncapDecap</span><span class="tag kem">KeyGen</span></td>
+<td><span class="tag ok">1024</span><span class="tag ok">512</span><span class="tag ok">768</span></td>
+<td>Decapsulation, Encapsulation</td>
+<td>Amazon Linux 2023 on EC2 bare metal on Amazon Graviton4 AWS Graviton</td></tr><tr>
+<td class="num"><a href="https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38889" target="_blank" rel="noopener noreferrer">A6279</a></td>
+<td><span class="tag kem">EncapDecap</span><span class="tag kem">KeyGen</span></td>
+<td><span class="tag ok">1024</span><span class="tag ok">512</span><span class="tag ok">768</span></td>
+<td>Decapsulation, Encapsulation</td>
+<td>Amazon Linux 2023 on EC2 bare metal on Amazon Graviton4 AWS Graviton</td></tr></tbody></table></div>
+<p class="muted">Parameter sets are shown by number (44, 65, 87 for ML-DSA; 512, 768, 1024 for ML-KEM).</p>
+<footer>Generated 2026-10-29 from NIST CSRC CMVP and CAVP public pages. Verify any entry against the NIST certificate before relying on it.</footer>
+</main></body></html>

@@ -1,0 +1,42 @@
+{
+ "cavp_id": "34717",
+ "cavp_cert": "A2108",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34717",
+ "implementation": "CRYPT_AES_SSD_X2_V1.1",
+ "product_id": "14603",
+ "description": "The cryptographic algorithm is for Samsung Self-Encrypting SSD",
+ "version": "IP-5006564",
+ "type": "FIRMWARE",
+ "first_validated": "11/16/2021",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Cadence XCELIUM 20.09-s012",
+   "details": [
+    "Firmware: Cadence XCELIUM 20.09-s012"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Hex"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

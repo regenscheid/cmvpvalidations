@@ -1,0 +1,115 @@
+{
+ "cert": 5550,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5550",
+ "module": "Integrated Compute Complex (ICC)",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "10/9/2031",
+ "level": "1",
+ "caveat": "When operated in approved mode with module B227 True Random Number Generator (TRNG) Cryptographic Module validated to FIPS 140-3 under Cert. #5539 operating in approved mode. The module generates SSPs (e.g., keys) whose strengths are modified by available entropy. No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+ "level_exceptions": [
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Firmware",
+ "embodiment": "SingleChip",
+ "description": "The Integrated Compute Complex (ICC) provides cryptography to subsystems within the Google IN762 SoC.",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A7461",
+   "cavp_id": "40071"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2932",
+   "cavp_id": "35542"
+  },
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A7461",
+   "cavp_id": "40071"
+  },
+  {
+   "algorithm": "Conditioning Component Block Cipher Derivation Function SP800-90B",
+   "cavp_cert": "A2932",
+   "cavp_id": "35542"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A2721",
+   "cavp_id": "35332"
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "cavp_cert": "A7461",
+   "cavp_id": "40071"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A7461",
+   "cavp_id": "40071"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A7461",
+   "cavp_id": "40071"
+  }
+ ],
+ "vendor": "Google, LLC",
+ "vendor_info": {
+  "name": "Google, LLC",
+  "website": "http://www.google.com",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Crypto Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5550.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/10/2026",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "10/10/2026",
+ "last_updated": "10/10/2026",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5550.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 5550,
+  "vendor": "Google, LLC",
+  "module": "Integrated Compute Complex (ICC)",
+  "type": "Firmware",
+  "validation_dates": [
+   "10/10/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

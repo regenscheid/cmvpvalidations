@@ -1,0 +1,76 @@
+{
+ "cavp_id": "39328",
+ "cavp_cert": "A6718",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39328",
+ "implementation": "OpenFIPS201 v2.0 PIV Applet on NXP P71D600",
+ "product_id": "19440",
+ "description": "The module is composed of the P71D600 Java Card Operating Platform (JCOP) by NXP Semiconductors, running the OpenFIPS201 applet by Makina. OpenFIPS201 is a flexible implementation of the NIST Personal Identity Verification (FIPS 201) card interface and provides authentication, digital signature and encryption capabilities. The approved product is intended to be used in contact and contactless smart cards, as well as for embedding in multi-chip environments as an auxiliary cryptographic element.",
+ "version": "HW Version is N7122 A1 and Applet version is v2.0.0",
+ "type": "HARDWARE",
+ "first_validated": "3/17/2025",
+ "vendor": "Makina",
+ "vendor_website": "https://www.makina.com.au/",
+ "oes": [
+  {
+   "name": "MRK3-SC 16/32-bit RISC",
+   "details": [
+    "Processor: MRK3-SC 16/32-bit RISC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-KC SP800-56",
+   "oe": 0,
+   "capabilities": [
+    "KAS Role: Responder",
+    "Key Confirmation Methods:",
+    "  Key Confirmation Directions: Unilateral",
+    "  Key Confirmation Roles: Provider",
+    "  Key Confirmation MAC Methods:",
+    "    CMAC:",
+    "      Key Length: 128",
+    "      MAC Length: 128"
+   ]
+  },
+  {
+   "algorithm": "KAS-KC SP800-56",
+   "oe": 0,
+   "capabilities": [
+    "KAS Role: Responder",
+    "Key Confirmation Methods:",
+    "  Key Confirmation Directions: Unilateral",
+    "  Key Confirmation Roles: Provider",
+    "  Key Confirmation MAC Methods:",
+    "    CMAC:",
+    "      Key Length: 256",
+    "      MAC Length: 128"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "Fixed Info Pattern: literal[0409090909]||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 512",
+    "Shared Secret Length: 224-256 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-384",
+    "Fixed Info Pattern: literal[040D0D0D0D]||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 1024",
+    "Shared Secret Length: 224-384 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

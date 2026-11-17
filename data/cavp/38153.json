@@ -1,0 +1,43 @@
+{
+ "cavp_id": "38153",
+ "cavp_cert": "A5543",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38153",
+ "implementation": "Micron® MTC22-P4 Controller Sub Chip Security Subsystem (SCSS) - Data Path Encryption Engine",
+ "product_id": "18128",
+ "description": "The Micron® MTC22-P4 Controller Sub Chip Security Subsystem (SCSS) DPE Engine is a FIPS approved AES-XTS accelerator",
+ "version": "0.0",
+ "type": "HARDWARE",
+ "first_validated": "8/9/2024",
+ "vendor": "Micron Technology, Inc.",
+ "vendor_website": "http://www.Micron.com",
+ "oes": [
+  {
+   "name": "Micron® MTC22-P4 ASIC",
+   "details": [
+    "cpu: Micron® MTC22-P4 ASIC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096-32896 Increment 128",
+    "Tweak Mode: Number",
+    "Data Unit Length Matches Payload Length"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

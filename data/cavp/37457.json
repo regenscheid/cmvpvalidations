@@ -1,0 +1,59 @@
+{
+ "cavp_id": "37457",
+ "cavp_cert": "A4847",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37457",
+ "implementation": "Jannu DSP - CIM8 Modules",
+ "product_id": "17429",
+ "description": "Jannu 1200G coherent DSP encrypts client traffic based on ODU4/flex containers.",
+ "version": "AX1200-XXX-YYY, 490-XX25-YY",
+ "type": "HARDWARE",
+ "first_validated": "12/18/2023",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "Jannu DSP - CIM8 Modules",
+   "details": [
+    "hardware: Jannu DSP - CIM8 Modules"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 121856",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 121856"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

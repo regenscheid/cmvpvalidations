@@ -1,0 +1,102 @@
+{
+ "cavp_id": "36019",
+ "cavp_cert": "A3409",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36019",
+ "implementation": "Crypto Engine",
+ "product_id": "15911",
+ "description": "Hardware implementation of AES-ECB 128 used as KDF, Hardware implementation of AES-GCM encrypt, decrypt, tag, validate functions in Ethernet packet processing module",
+ "version": "AES ECB/GCM Module 1.1",
+ "type": "FIRMWARE",
+ "first_validated": "3/15/2023",
+ "vendor": "Google, Inc.",
+ "vendor_website": "http://www.google.com",
+ "oes": [
+  {
+   "name": "Cadence XCELIUM Simulator 21.09.006",
+   "details": [
+    "Firmware: Cadence XCELIUM Simulator 21.09.006"
+   ]
+  },
+  {
+   "name": "Cadence XCELIUM Simulator 21.09.006",
+   "details": [
+    "firmware: Cadence XCELIUM Simulator 21.09.006"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 256-65536 Increment 8",
+    "AAD Length: 32-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 32-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128",
+    "    Supported Lengths: 128",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

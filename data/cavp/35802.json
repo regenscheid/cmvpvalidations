@@ -1,0 +1,104 @@
+{
+ "cavp_id": "35802",
+ "cavp_cert": "A3192",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35802",
+ "implementation": "VA Blue Coat Boot Loader",
+ "product_id": "15655",
+ "description": "The VA Blue Coat Boot Loader library provides the security services necessary to perform integrity testing for the Edge SWG network security appliance.",
+ "version": "5.31",
+ "type": "SOFTWARE",
+ "first_validated": "12/16/2022",
+ "vendor": "Symantec, a Division of Broadcom",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "SGOS v7.4 on CentOS KVM v2.3 on Intel Xeon Silver 4210 Processor (Cascade Lake)",
+   "details": [
+    "Hypervisor: CentOS KVM v2.3",
+    "Processor: Intel Xeon Silver 4210 Processor (Cascade Lake)",
+    "Operating System: SGOS v7.4"
+   ]
+  },
+  {
+   "name": "SGOS v7.4 on VMware ESXi 6.5 on Intel Xeon Silver 4216 Processor (Cascade Lake)",
+   "details": [
+    "Processor: Intel Xeon Silver 4216 Processor (Cascade Lake)",
+    "Operating System: SGOS v7.4",
+    "Hypervisor: VMware ESXi 6.5"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 256-1024 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 256-1024 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

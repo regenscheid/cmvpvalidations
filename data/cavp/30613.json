@@ -1,0 +1,52 @@
+{
+ "cavp_id": "30613",
+ "cavp_cert": "C217",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30613",
+ "implementation": "Canon MFP Security Chip",
+ "product_id": "10578",
+ "description": "Canon MFP Security Chip provides high-performance data encryption and decryption via SATA interface.",
+ "version": "3.0",
+ "type": "HARDWARE",
+ "first_validated": "1/30/2019",
+ "vendor": "Canon Inc.",
+ "vendor_website": "http://www.canon.com",
+ "oes": [
+  {
+   "name": "Canon MFP Security Chip",
+   "details": [
+    "device: Canon MFP Security Chip"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 4096",
+    "Tweak Mode: Hex, Number"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096",
+    "Tweak Mode: Hex, Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

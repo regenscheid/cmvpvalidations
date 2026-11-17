@@ -1,0 +1,94 @@
+{
+ "cavp_id": "35325",
+ "cavp_cert": "A2714",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35325",
+ "implementation": "NXP IoT applet",
+ "product_id": "15184",
+ "description": "The NXP IoT applet supports GMAC/GCM encryption and decryption, AES Key Wrap (KW) cipher function, KAS KDF, PBKDF and TLS 1.2 KDF operations.",
+ "version": "7.2.22",
+ "type": "FIRMWARE",
+ "first_validated": "7/14/2022",
+ "vendor": "NXP Semiconductors",
+ "vendor_website": "",
+ "oes": [
+  {
+   "name": "MRK3-SC 16/32-bit RISC",
+   "details": [
+    "Processor: MRK3-SC 16/32-bit RISC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96-128 Increment 8",
+    "Payload Length: 0-65536 Increment 8",
+    "AAD Length: 8-8192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96-128 Increment 8",
+    "AAD Length: 0-8192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-2048 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "    MAC Salting Methods: default, random",
+    "Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.2",
+    "Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1-32767 Increment 5461",
+    "    HMAC Algorithm: SHA-1",
+    "    Password Length: 14-128 Increment 1",
+    "    Salt Length: 128-512 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

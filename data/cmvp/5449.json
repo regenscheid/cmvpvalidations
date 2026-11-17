@@ -1,0 +1,163 @@
+{
+ "cert": 5449,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5449",
+ "module": "Waveserver Ai Encryption Module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "7/28/2031",
+ "level": "2",
+ "caveat": "No assurance of minimum security of SSPs that are externally loaded, or of SSPs established with externally loaded SSPs",
+ "level_exceptions": [
+  "Operational environment: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "MultiChipEmbed",
+ "description": "The Waveserver Ai Encryption Module provides fully secure cryptographic functionality, including peer authentication, key derivation, datapath encryption, physical security, and identification and authentication of the module’s Crypto Officer (CO). It is the physical security boundary and is composed of FPGA, processor, DDR4 (DRAM), Flash and the PCB-embedded wire connections between them, and all associated physical security mechanisms. All traffic entering and exiting the module is encrypted/decrypted at wire speed (100Gb/s, 200Gb/s, 300Gb/s and 400Gb/s depending on line modulation scheme selected) using AES-256 GCM mode.",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "C120",
+   "cavp_id": "30515"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "C120",
+   "cavp_id": "30515"
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-5)",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-5)",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "KDA TwoStep Sp800-56Cr1",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "SHA2-384",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "SHA2-512",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "cavp_cert": "A5909",
+   "cavp_id": "38519"
+  }
+ ],
+ "vendor": "Ciena Corporation",
+ "vendor_info": {
+  "name": "Ciena Corporation",
+  "website": "http://www.ciena.com",
+  "address": [
+   "7035 Ridge Road",
+   "Hanover, MD 21076",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Patrick Scully"
+   },
+   {
+    "name": "Heng Foo"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202026_040826_0807.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/29/2026",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "7/29/2026",
+ "last_updated": "7/29/2026",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5449.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 5449,
+  "vendor": "Ciena Corporation",
+  "module": "Waveserver Ai Encryption Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "07/29/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,70 @@
+{
+ "cavp_id": "36973",
+ "cavp_cert": "A4363",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=36973",
+ "implementation": "IBM DataPower FIPS Provider (AESASM_AVX)",
+ "product_id": "16920",
+ "description": "OpenSSL FIPS provider implementation providing cryptographic services to Linux user space software components. The following cipher implementation is covered: Assembler AES using GCM with AVX GHASH implementation.",
+ "version": "3.0.9-B3346E1D91BA83B7BAB52F472F3E6A0D",
+ "type": "SOFTWARE",
+ "first_validated": "8/29/2023",
+ "vendor": "IBM Corporation",
+ "vendor_website": "https://www.ibm.com",
+ "oes": [
+  {
+   "name": "CentOS Stream 8 on Intel Ice Lake Xeon Gold 6326",
+   "details": [
+    "os: CentOS Stream 8",
+    "processor: Xeon Gold 6326",
+    "  Processor Xeon Gold 6326 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Ice Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

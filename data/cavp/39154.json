@@ -1,0 +1,79 @@
+{
+ "cavp_id": "39154",
+ "cavp_cert": "A6544",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39154",
+ "implementation": "Google Knuckle ASIC RTL",
+ "product_id": "19266",
+ "description": "Google Knuckle ASIC firmware RunTime Library (RTL) cryptographic implementation used by all of the system firmware",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "1/27/2025",
+ "vendor": "Google, Inc.",
+ "vendor_website": "http://www.google.com",
+ "oes": [
+  {
+   "name": "Google Knuckle ASIC RTL",
+   "details": [
+    "Processor: ARM Cortex-M3 CPUs with Trustzone",
+    "  ARM Cortex-M3 CPUs with Trustzone to protect sensitive data and code"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128-1024 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-384 Increment 128",
+    "    Entropy Input: 2048-3840 Increment 256",
+    "    Nonce: 128-192 Increment 64",
+    "    Personalization String Length: 0-384 Increment 128",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 128-16384 Increment 128",
+    "    HMAC Algorithm: SHA2-384",
+    "    Password Length: 8-32 Increment 8",
+    "    Salt Length: 256",
+    "    Key Data Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

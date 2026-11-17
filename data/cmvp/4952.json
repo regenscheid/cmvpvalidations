@@ -1,0 +1,104 @@
+{
+ "cert": 4952,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4952",
+ "module": "PrismPlus Cryptographic Module",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "1/26/2030",
+ "level": "1",
+ "caveat": "None",
+ "level_exceptions": [
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The PrismPlus Cryptographic Module is a hardware Module intended for use by US Federal agencies or other markets that require a FIPS 140-3 validated network encryption device. The Module implemented on a PCIe Adapter is intended to be used in Fibre Channel based Storage Area Networks. The Module allows a Connection to be established between one of the multiple Host Initiator Entities (eg 256 Virtual Machine Drivers running on multiple CPU cores) on a Storage Server Appliance and one of the multiple Remote Host Target Entities (eg 1000s of Storage LUNs) on multiple Storage Device Appliances via one of the multiple Physical Ports (eg 4x 64GFC ports). The Connection facilitates transfer of data between a Host Initiator Entity on a Storage Server Appliance and Host Target Entity on a Storage Server Appliance using the FC (Fibre Channel) Protocol. The Module allows multiple (1000s) of connections between Host Initiator Entities on a Storage Server Appliance and Host Target Entities on Storage Device Appliances. The module can be used to support Data-in-Flight Encryption/Decryption between Storage Appliances in a FC-SAN environment. Encryption decisions are made on a connection basis, whereby only a subset of the connections could be enabled for Encryption. If a connection is enabled for Encryption, only a subset of the Frame Types (eg Data Frames only, not Command/Status/Control/etc. Frames) could be enabled for Encryption.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "entropy": "ENT (P)",
+ "hardware_versions": "G99-00139-01",
+ "firmware_versions": "14.2.338.0",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-ECB",
+   "cavp_cert": "A2693",
+   "cavp_id": "35304"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A2695",
+   "cavp_id": "35306"
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "cavp_cert": "A2691",
+   "cavp_id": "35302"
+  },
+  {
+   "algorithm": "SHA2-256",
+   "cavp_cert": "A2694",
+   "cavp_id": "35305"
+  }
+ ],
+ "vendor": "Broadcom, Inc.",
+ "vendor_info": {
+  "name": "Broadcom, Inc.",
+  "website": "http://www.broadcom.com/",
+  "address": [
+   "270 Innovation Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ravi Shenoy"
+   },
+   {
+    "name": "Mark Karnowski"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4952.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January%202025-signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/27/2025",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "1/27/2025",
+ "last_updated": "1/27/2025",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4952.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4952,
+  "vendor": "Broadcom, Inc.",
+  "module": "PrismPlus Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "01/27/2025"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-17"
+}

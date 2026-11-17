@@ -1,0 +1,52 @@
+{
+ "cavp_id": "31845",
+ "cavp_cert": "C1410",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31845",
+ "implementation": "CRYPOTN Hardware Encryption Engine",
+ "product_id": "11802",
+ "description": "CRYPOTN Hardware Encryption Engine enables layer-1 OTN Payload encryption for Microchip's OTN product family.",
+ "version": "PM55_60_157 Revision A",
+ "type": "HARDWARE",
+ "first_validated": "12/3/2019",
+ "vendor": "Microchip",
+ "vendor_website": "http://www.microchip.com",
+ "oes": [
+  {
+   "name": "CRYPOTN Hardware Encryption Engine",
+   "details": [
+    "device: CRYPOTN Hardware Encryption Engine"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,61 @@
+{
+ "cavp_id": "38443",
+ "cavp_cert": "A5833",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38443",
+ "implementation": "Hitachi Embedded Storage Manager Kernel Crypto API Cryptographic Module using AES with NEON instructions and block modes with assembler",
+ "product_id": "18483",
+ "description": "Hitachi Embedded Storage Manager Kernel Crypto API Cryptographic Module provides cryptographic services for Hitachi Virtual Storage Platform (VSP). It supports cipher algorithms implemented with PAA (Processor Algorithm Acceleration).",
+ "version": "1.1",
+ "type": "SOFTWARE",
+ "first_validated": "9/27/2024",
+ "vendor": "Hitachi Vantara, Ltd.",
+ "vendor_website": "",
+ "oes": [
+  {
+   "name": "EMLinux 2.9 on Layerscape® 1046A",
+   "details": [
+    "Operating System: EMLinux 2.9",
+    "Processor: Layerscape® 1046A",
+    "  This processor integrates quad 64-bit Arm® Cortex®-A72 cores."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC-CS3",
+   "oe": 0,
+   "capabilities": [
+    "Direction: decrypt, encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

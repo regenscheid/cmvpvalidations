@@ -1,0 +1,48 @@
+{
+ "cavp_id": "35969",
+ "cavp_cert": "A3359",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35969",
+ "implementation": "Dynatrace Cryptographic Module (libssl)",
+ "product_id": "15855",
+ "description": "The Dynatrace Cryptographic Module offers symmetric encryption/decryption, digital signature generation/verification, hashing, cryptographic key generation, random number generation, message authentication, and key establishment functions to secure data. The libssl library provides the KDF for TLSv1.3.",
+ "version": "1.1",
+ "type": "SOFTWARE",
+ "first_validated": "2/24/2023",
+ "vendor": "Dynatrace LLC",
+ "vendor_website": "http://www.dynatrace.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 8.2 on Intel(R) Xeon(R) Silver 4214R with AES-NI",
+   "details": [
+    "cpu: Intel(R) Xeon(R) Silver 4214R (Cascade Lake) with AES-NI",
+    "os: Red Hat Enterprise Linux 8.2"
+   ]
+  },
+  {
+   "name": "Red Hat Enterprise Linux 8.2 on Intel(R) Xeon(R) Silver 4214R without AES-NI",
+   "details": [
+    "cpu: Intel(R) Xeon(R) Silver 4214R (Cascade Lake) without AES-NI",
+    "os: Red Hat Enterprise Linux 8.2"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 0,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  },
+  {
+   "algorithm": "TLS v1.3 KDF",
+   "oe": 1,
+   "capabilities": [
+    "HMAC Algorithm: SHA2-256, SHA2-384",
+    "KDF Running Modes: DHE, PSK, PSK-DHE"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

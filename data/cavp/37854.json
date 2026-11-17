@@ -1,0 +1,57 @@
+{
+ "cavp_id": "37854",
+ "cavp_cert": "A5244",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37854",
+ "implementation": "Intel DRNG (DRNG)",
+ "product_id": "17882",
+ "description": "DRNG RTL1.0 Server Coop Configuration for Coffee Lake Server",
+ "version": "CFL-COOP-RTL1.0",
+ "type": "HARDWARE",
+ "first_validated": "4/10/2024",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Intel Corporation Intel(R) Pentium(R), Intel(R) Core(R), Intel(R) Xeon(R) Coffee Lake Cpu-6 FCLGA1151 Intel(R) Xeon(R) E-2136 Processor",
+   "details": [
+    "hardware: Intel(R) Xeon(R) E-2136 Processor",
+    "  Hardware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0, 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0, 0",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

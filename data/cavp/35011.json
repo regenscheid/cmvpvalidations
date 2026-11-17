@@ -1,0 +1,85 @@
+{
+ "cavp_id": "35011",
+ "cavp_cert": "A2402",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35011",
+ "implementation": "TC58NC1030GTB HW Algorithms",
+ "product_id": "14883",
+ "description": "A library of unique hardware cipher solutions which are standard encryption algorithm-based to provide KIOXIA Corporation SSD products and the systems using them a robust and secure data storage environment.",
+ "version": "TC58NC1030GTB",
+ "type": "HARDWARE",
+ "first_validated": "3/4/2022",
+ "vendor": "KIOXIA Corporation",
+ "vendor_website": "https://business.kioxia.com/en-jp/top.html",
+ "oes": [
+  {
+   "name": "TC58NC1030GTB",
+   "details": [
+    "hardware: TC58NC1030GTB",
+    "  SoC used in SSD"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4112, 4176, 4240",
+    "Tweak Mode: Number",
+    "Data Unit Length: 4112, 4176, 4240"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}
