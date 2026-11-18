@@ -46,7 +46,7 @@ function About() {
             <li>This is a convenience index, not an official NIST product. The NIST certificate and Security Policy are authoritative.</li>
             <li>A CAVP validation can cover more algorithms and environments than the module claims; certificate pages show only the module's claimed entries.</li>
             <li>A few CSRC certificate pages render only part of their details; those records are marked and fall back to the search list for vendor and module.</li>
-            <li>Vendor contact email addresses are obfuscated on CSRC and are deliberately not reproduced here.</li>
+            <li>Vendor contacts are listed by name only. Phone and fax numbers are left out, and email addresses (obfuscated on CSRC) are not reproduced.</li>
           </ul>
         </Card>
       </Section>

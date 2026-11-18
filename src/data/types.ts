@@ -80,7 +80,8 @@ export type CertRecord = {
     name: string;
     website: string;
     address: string[];
-    contacts: Array<{ name: string; phone: string; fax: string }>;
+    /** Names only: phone and fax numbers are not kept, and emails are not decoded. */
+    contacts: Array<{ name: string }>;
   };
   files: Array<{ label: string; url: string }>;
   history: Array<{ date: string; type: string; lab: string }>;

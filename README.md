@@ -100,7 +100,8 @@ The site's base path is `/<repo name>/`. Set `BASE_PATH=/` for a custom domain.
 ## Notes
 
 - Not an official NIST product; the certificate and Security Policy are authoritative.
-- Vendor contact emails are Cloudflare-obfuscated on CSRC and are deliberately not decoded.
+- Vendor contacts are kept by name only: phone and fax numbers are dropped, and emails (Cloudflare-obfuscated
+  on CSRC) are deliberately not decoded.
 - A few CSRC certificate pages render only part of their details (`"sparse": true`); vendor and
   module then come from the search list.
 - csrc.nist.gov resets connections from Python's urllib (TLS fingerprint), so fetching uses curl.

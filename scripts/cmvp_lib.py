@@ -214,6 +214,9 @@ def _approved_table(fragment):
     return out
 
 
+_PHONE_LIKE = re.compile(r"(\d[\s.()+-]*){7,}")
+
+
 def _vendor(page):
     body = _panel(page, "Vendor")
     name = re.search(r"<a [^>]*href=\"([^\"]*)\"[^>]*>(.*?)</a>", body, re.S)
@@ -221,19 +224,11 @@ def _vendor(page):
     address = [text(a) for a in re.findall(r'<span class="indent">(.*?)</span>', head, re.S)]
     contacts = []
     for block in re.findall(r"<span>\s*(.*?)</span>\s*(?=<span>|</div>)", contacts_html, re.S):
-        parts = re.split(r"<br\s*/?>", block)
-        # Emails are Cloudflare-obfuscated on CSRC; they are deliberately not decoded into a public dataset.
-        c = {"name": text(parts[0]), "phone": "", "fax": ""}
-        for p in parts[1:]:
-            t = text(p)
-            if "data-cfemail" in p:
-                continue
-            if t.lower().startswith("phone"):
-                c["phone"] = t.split(":", 1)[-1].strip()
-            elif t.lower().startswith("fax"):
-                c["fax"] = t.split(":", 1)[-1].strip()
-        if any(c.values()):
-            contacts.append(c)
+        # Only the contact's name. Phone and fax numbers are left out of the public dataset, and emails
+        # (Cloudflare-obfuscated on CSRC) are not decoded into it.
+        who = text(re.split(r"<br\s*/?>", block)[0])
+        if who and not _PHONE_LIKE.search(who):  # a few pages list a bare number as a contact (#376)
+            contacts.append({"name": who})
     return {"name": text(name.group(2)) if name else text(head.split("<br")[0]),
             "website": name.group(1) if name else "", "address": address, "contacts": contacts}
 

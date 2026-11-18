@@ -123,7 +123,6 @@ function CertView({ r }: { r: CertRecord }) {
               {r.vendor_info.contacts.map((c, i) => (
                 <div key={i} className="text-ink-2">
                   {c.name}
-                  {c.phone && <span className="text-ink-3"> · {c.phone}</span>}
                 </div>
               ))}
             </Card>
