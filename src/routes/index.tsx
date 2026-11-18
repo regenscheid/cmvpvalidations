@@ -4,10 +4,20 @@ import { Bars } from "../components/Bars";
 import { Card, Eyebrow, Gate, H1, Section, StatusTag } from "../components/ui";
 import { PQC_FAMILIES } from "../lib/pqc";
 import { useModules } from "../data/load";
+import type { ModulesSearch } from "../data/filters";
 import type { ModuleRow } from "../data/types";
 import { iso } from "../lib/dates";
 
-export const Route = createFileRoute("/")({ component: SummaryRoute });
+type SummarySearch = { standard?: string };
+
+/** FIPS 140-3 is the current standard, so the summary opens on it; "all" combines every standard. */
+const DEFAULT_STANDARD = "140-3";
+
+export const Route = createFileRoute("/")({
+  validateSearch: (raw: Record<string, unknown>): SummarySearch =>
+    typeof raw.standard === "string" && raw.standard ? { standard: raw.standard } : {},
+  component: SummaryRoute,
+});
 
 function SummaryRoute() {
   const state = useModules();
@@ -20,40 +30,78 @@ function count<T extends string>(xs: T[]): Array<[T, number]> {
   return [...m.entries()].sort((a, b) => b[1] - a[1]);
 }
 
-function Summary({ rows }: { rows: ModuleRow[] }) {
+function StandardSwitch({ standards, value }: { standards: string[]; value: string }) {
+  const opts: Array<[string, string]> = [...standards.map((s): [string, string] => [s, `FIPS ${s}`]), ["all", "All"]];
+  return (
+    <div role="radiogroup" aria-label="Standard" className="inline-flex rounded-md border border-line bg-surface p-0.5 text-[13px]">
+      {opts.map(([v, label]) => (
+        <Link
+          key={v}
+          to="/"
+          search={v === DEFAULT_STANDARD ? {} : { standard: v }}
+          role="radio"
+          aria-checked={value === v}
+          className={`rounded px-3 py-1 hover:no-underline ${value === v ? "bg-accent-bg font-medium text-accent" : "text-ink-2 hover:bg-surface-2 hover:text-ink"}`}
+        >
+          {label}
+        </Link>
+      ))}
+    </div>
+  );
+}
+
+function Summary({ rows: allRows }: { rows: ModuleRow[] }) {
+  const search = Route.useSearch();
+  const standards = useMemo(() => [...new Set(allRows.map((r) => r.standard))].sort().reverse(), [allRows]);
+  const wanted = search.standard ?? DEFAULT_STANDARD;
+  const standard = wanted === "all" || standards.includes(wanted) ? wanted : (standards[0] ?? "all");
+  const rows = useMemo(() => (standard === "all" ? allRows : allRows.filter((r) => r.standard === standard)), [allRows, standard]);
   const active = useMemo(() => rows.filter((r) => r.status === "Active"), [rows]);
+  // FIPS 140-1 and 140-2 have no active certificates left: describe all of theirs instead.
+  const scoped = active.length ? active : rows;
+  const scope = active.length ? "active" : "all";
+
+  /** Every link carries the chosen standard (and the active scope where the chart uses it). */
+  const to = (extra: ModulesSearch, useScope = true): ModulesSearch => ({
+    ...(standard === "all" ? {} : { standard }),
+    ...(useScope && active.length ? { status: "Active" } : {}),
+    ...extra,
+  });
+
   const s = useMemo(() => {
     const byStatus = count(rows.map((r) => r.status));
-    const levels = count(active.map((r) => r.level)).sort((a, b) => a[0].localeCompare(b[0]));
-    const types = count(active.map((r) => r.type));
-    const labs = count(active.flatMap((r) => r.labs)).slice(0, 12);
-    const fams = count(active.flatMap((r) => r.families));
+    const levels = count(scoped.map((r) => r.level)).sort((a, b) => a[0].localeCompare(b[0]));
+    const types = count(scoped.map((r) => r.type));
+    const labs = count(scoped.flatMap((r) => r.labs)).slice(0, 12);
+    const fams = count(scoped.flatMap((r) => r.families));
     const pqc = fams.filter(([f]) => PQC_FAMILIES.has(f));
     const years = count(rows.map((r) => iso(r.first).slice(0, 4)).filter(Boolean)).sort((a, b) => a[0].localeCompare(b[0]));
     const recent = [...rows].sort((a, b) => iso(b.last).localeCompare(iso(a.last))).slice(0, 10);
     const anyPqc = active.filter((r) => r.pqc.length).length;
     return { byStatus, levels, types, labs, fams, pqc, years, recent, anyPqc };
-  }, [rows, active]);
+  }, [rows, active, scoped]);
 
-  const A = { status: "Active" };
   return (
     <div className="space-y-8">
-      <header className="space-y-1">
-        <Eyebrow>Summary · FIPS {[...new Set(rows.map((r) => r.standard))].join(", ")}</Eyebrow>
-        <H1>CMVP validated modules</H1>
-        <p className="max-w-prose text-[13px] text-ink-2">
-          Every certificate's approved algorithms are linked to the CAVP validations they cite, down to tested capabilities and operating environments.
-        </p>
+      <header className="flex flex-wrap items-end justify-between gap-4">
+        <div className="space-y-1">
+          <Eyebrow>Summary · {standard === "all" ? `FIPS ${standards.join(", ")}` : `FIPS ${standard}`}</Eyebrow>
+          <H1>CMVP validated modules</H1>
+          <p className="max-w-prose text-[13px] text-ink-2">
+            Every certificate's approved algorithms are linked to the CAVP validations they cite, down to tested capabilities and operating environments.
+          </p>
+        </div>
+        {standards.length > 1 && <StandardSwitch standards={standards} value={standard} />}
       </header>
 
       <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
         {[
-          ["Certificates", rows.length, {}],
-          ["Active", active.length, A],
-          ["Active with PQC", s.anyPqc, { status: "Active", pqc: true }],
-          ["Historical / revoked", rows.length - active.length, { status: "Historical|Revoked" }],
+          ["Certificates", rows.length, to({}, false)],
+          ["Active", active.length, to({ status: "Active" }, false)],
+          ["Active with PQC", s.anyPqc, to({ status: "Active", pqc: true }, false)],
+          ["Historical / revoked", rows.length - active.length, to({ status: "Historical|Revoked" }, false)],
         ].map(([label, n, search]) => (
-          <Link key={label as string} to="/modules" search={search as object} className="hover:no-underline">
+          <Link key={label as string} to="/modules" search={search as ModulesSearch} className="hover:no-underline">
             <Card className="p-4 hover:border-accent">
               <div className="text-[28px] font-semibold leading-none text-ink">{(n as number).toLocaleString()}</div>
               <div className="mt-1 text-[12px] text-ink-3">{label as string}</div>
@@ -63,47 +111,47 @@ function Summary({ rows }: { rows: ModuleRow[] }) {
       </div>
 
       <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
-        <Section title="Post-quantum algorithms · active certificates">
+        <Section title={`Post-quantum algorithms · ${scope} certificates`}>
           <Card className="p-4">
             {s.pqc.length ? (
-              <Bars tone="pqc" items={s.pqc.map(([f, n]) => ({ label: f, count: n, search: { status: "Active", family: f } }))} />
+              <Bars tone="pqc" items={s.pqc.map(([f, n]) => ({ label: f, count: n, search: to({ family: f }) }))} />
             ) : (
-              <p className="text-ink-3">None yet.</p>
+              <p className="text-ink-3">None.</p>
             )}
           </Card>
         </Section>
         <Section title="Certificate status">
           <Card className="p-4">
-            <Bars items={s.byStatus.map(([k, n]) => ({ label: k, count: n, search: { status: k } }))} />
+            <Bars items={s.byStatus.map(([k, n]) => ({ label: k, count: n, search: to({ status: k }, false) }))} />
           </Card>
         </Section>
-        <Section title="Algorithm families · active certificates">
+        <Section title={`Algorithm families · ${scope} certificates`}>
           <Card className="p-4">
             <Bars
-              items={s.fams.map(([f, n]) => ({ label: f, count: n, search: { status: "Active", family: f }, tone: PQC_FAMILIES.has(f) ? "pqc" : "accent" }))}
+              items={s.fams.map(([f, n]) => ({ label: f, count: n, search: to({ family: f }), tone: PQC_FAMILIES.has(f) ? "pqc" : "accent" }))}
             />
           </Card>
         </Section>
         <div className="space-y-6">
-          <Section title="Overall level · active">
+          <Section title={`Overall level · ${scope}`}>
             <Card className="p-4">
-              <Bars items={s.levels.map(([k, n]) => ({ label: `Level ${k}`, count: n, search: { status: "Active", level: k } }))} />
+              <Bars items={s.levels.map(([k, n]) => ({ label: `Level ${k}`, count: n, search: to({ level: k }) }))} />
             </Card>
           </Section>
-          <Section title="Module type · active">
+          <Section title={`Module type · ${scope}`}>
             <Card className="p-4">
-              <Bars items={s.types.map(([k, n]) => ({ label: k, count: n, search: { status: "Active", type: k } }))} />
+              <Bars items={s.types.map(([k, n]) => ({ label: k, count: n, search: to({ type: k }) }))} />
             </Card>
           </Section>
           <Section title="First validated, by year · all">
             <Card className="p-4">
-              <Bars items={s.years.map(([k, n]) => ({ label: k, count: n, search: {} }))} />
+              <Bars items={s.years.map(([k, n]) => ({ label: k, count: n, search: to({ year: k }, false) }))} />
             </Card>
           </Section>
         </div>
-        <Section title="Testing labs · active">
+        <Section title={`Testing labs · ${scope}`}>
           <Card className="p-4">
-            <Bars items={s.labs.map(([k, n]) => ({ label: k, count: n, search: { status: "Active", lab: k } }))} />
+            <Bars items={s.labs.map(([k, n]) => ({ label: k, count: n, search: to({ lab: k }) }))} />
           </Card>
         </Section>
         <Section title="Recently updated">

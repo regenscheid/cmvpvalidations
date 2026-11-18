@@ -33,7 +33,21 @@ export type Meta = {
 export type AlgorithmRow = { name: string; family: string; modules: number; active: number };
 
 /** FIPS 140-2 entries also carry `cavp_ref` ("AES:4030", the CAVP source and number they link to). */
-export type ApprovedEntry = { algorithm: string; cavp_cert: string; cavp_id: string; cavp_ref?: string; note?: string };
+/**
+ * One (algorithm, CAVP certificate) pair. FIPS 140-2 rows without a CAVP link keep their text in `note`;
+ * certificates that text names ("AES Cert. #5907 and HMAC Cert. #3889; ...") become entries with `from_note`.
+ */
+export type ApprovedEntry = {
+  algorithm: string;
+  cavp_cert: string;
+  cavp_id: string;
+  cavp_ref?: string;
+  note?: string;
+  from_note?: boolean;
+  /** Set when the cited reference did not resolve and this validation was inferred; why, and as what it was cited. */
+  inferred?: string;
+  cited_as?: string;
+};
 
 /** public/data/cmvp/<cert>.json — written by scripts/cmvp_crawl.py. */
 export type CertRecord = {

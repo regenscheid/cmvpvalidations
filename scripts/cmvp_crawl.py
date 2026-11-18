@@ -15,7 +15,7 @@ first referenced (and again after --cavp-max-age days). Pass --refresh to refetc
 Usage:  python3 -I scripts/cmvp_crawl.py [--standard 140-3] [--data data] [--cache cache]
 Only the standard library and curl are needed.
 """
-import argparse, csv, datetime, json, sys, time, urllib.parse
+import argparse, csv, datetime, json, re, sys, time, urllib.parse
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
@@ -80,7 +80,7 @@ def crawl_certs(a, data, cache):
     todo = []
     for n in nums:
         old = load(data / "cmvp" / f"{n}.json")
-        if a.refresh or not old or old.get("list") != rows[n]:
+        if a.refresh or a.reparse or not old or old.get("list") != rows[n]:
             todo.append(n)
     print(f"CMVP: {len(nums)} certificates listed, {len(todo)} new or changed")
 
@@ -133,14 +133,23 @@ def fetch_cavp(a, cache, key, expanded_url, collapsed_url, refetch):
         return L.parse_cavp_collapsed(L.cavp_id_of(page) or key, page, caps)
 
 
+def vendor_key(v):
+    """A vendor name reduced for comparison: "Red Hat®, Inc." and "Red Hat, LLC" both give "redhat"."""
+    name = (v.get("name", "") if isinstance(v, dict) else v or "").lower()
+    name = re.sub(r"\b(inc|llc|ltd|limited|corp|corporation|co|company|ag|gmbh|plc|sa|bv|oy|ab)\b\.?", "", name)
+    return re.sub(r"[^a-z0-9]", "", name)
+
+
 def crawl_cavp(a, data, cache):
     """Fetch the CAVP validations cited by certificates of the standards being crawled."""
     standards = set(standards_of(a))
     certs = [r for r in (load(p) for p in (data / "cmvp").glob("*.json")) if r and r.get("standard") in standards]
     refs = load_refs(data)
-    ids, unresolved = set(), set()
+    ids, unresolved, vendors = set(), set(), {}
     for r in certs:
         for e in r.get("approved", []):
+            if e.get("cavp_ref"):
+                vendors.setdefault(e["cavp_ref"], set()).add(vendor_key(r.get("vendor")))
             if e["cavp_id"]:
                 ids.add(e["cavp_id"])
             elif e.get("cavp_ref"):
@@ -167,7 +176,34 @@ def crawl_cavp(a, data, cache):
         rec["fetched"] = TODAY
         done += save(data / "cavp" / f"{rec['cavp_id']}.json", rec)
 
+    def fetch_ref(src, num):
+        q = urllib.parse.quote
+        key = f"{src}_{num}".replace("/", "_")
+        rec = fetch_cavp(a, cache / "by_ref", key, L.CAVP_BY_REF.format(q(src), q(num)),
+                         L.CAVP_DETAIL.split("?")[0] + f"?source={q(src)}&number={q(num)}", a.refresh)
+        if not rec["cavp_id"].isdigit():
+            raise RuntimeError(f"no validation id on the CAVP page for {src}:{num}")
+        return rec
+
     # 1. FIPS 140-2 references by source and number: one expanded-view request gives the id and the record.
+    # Hand-checked aliases (data/cavp_ref_aliases.json) stand in for references that do not resolve.
+    aliases = load(data / "cavp_ref_aliases.json") or {}
+    for ref in sorted(unresolved & aliases.keys()):
+        target = aliases[ref]["ref"]
+        if target not in refs:
+            try:
+                rec = fetch_ref(*target.split(":", 1))
+            except RuntimeError as e:
+                errors.append(f"alias {ref} -> {target}: {e}")
+                continue
+            refs[target] = rec["cavp_id"]
+            store(rec)
+        refs[ref] = refs[target]
+        ids.add(refs[ref])
+        unresolved.discard(ref)
+        print(f"  cavp {ref}: using alias {target} (validation {refs[ref]})", file=sys.stderr)
+    if aliases:
+        save(data / "cavp_refs.json", dict(sorted(refs.items())))
     todo_refs = sorted(unresolved)
     if a.cavp_limit:
         todo_refs = todo_refs[:a.cavp_limit]
@@ -176,13 +212,24 @@ def crawl_cavp(a, data, cache):
 
     def by_ref(ref):
         src, num = ref.split(":", 1)
-        q = urllib.parse.quote
-        key = f"{src}_{num}".replace("/", "_")
-        rec = fetch_cavp(a, cache / "by_ref", key, L.CAVP_BY_REF.format(q(src), q(num)),
-                         L.CAVP_DETAIL.split("?")[0] + f"?source={q(src)}&number={q(num)}", a.refresh)
-        if not rec["cavp_id"].isdigit():
-            raise RuntimeError(f"no validation id on the CAVP page for {ref}")
-        return ref, rec
+        try:
+            return ref, fetch_ref(src, num)
+        except RuntimeError:
+            if src in ("A", "C"):
+                raise
+        # Some 140-2 certificates link an ACVP certificate under a legacy source ("ECDSA 8130" for A8130),
+        # and that link fails. Take the same number under A or C, but only from the certificate's vendor.
+        # "foo" is a placeholder source on a few KTS rows; those numbers are usually AES certificates.
+        alts = (("AES", "HMAC", "RSA", "TDES") if src == "foo" else ()) + ("A", "C")
+        for alt in alts:
+            try:
+                rec = fetch_ref(alt, num)
+            except RuntimeError:
+                continue
+            if vendor_key(rec.get("vendor")) in vendors.get(ref, ()):
+                print(f"  cavp {ref}: link fails; using {rec['cavp_cert']} (validation {rec['cavp_id']}, same vendor)", file=sys.stderr)
+                return ref, rec
+        raise RuntimeError(f"failed to fetch CAVP {ref}, and no {num} under {', '.join(alts)} from the same vendor")
 
     def got_ref(ref, rec):
         refs[ref] = rec["cavp_id"]
@@ -214,10 +261,28 @@ def crawl_cavp(a, data, cache):
     run(todo, "cavp", by_id, store)
 
     # 3. Write the resolved validation ids into the certificate records.
+    # A reference resolved to a validation under another name ("foo 5033" as AES 5033, or an alias) takes
+    # the validation's own name; the certificate's label is kept in "cited_as", the reason in "inferred".
+    labels = {}
+
+    def label_of(i):
+        if i not in labels:
+            labels[i] = (load(data / "cavp" / f"{i}.json") or {}).get("cavp_cert", "")
+        return labels[i]
+
     linked = 0
     for r in certs:
-        if any(e.get("cavp_ref") and not e["cavp_id"] and e["cavp_ref"] in refs for e in r["approved"]):
-            linked += save(data / "cmvp" / f"{r['cert']}.json", apply_refs(r, refs))
+        apply_refs(r, refs)
+        for e in r["approved"]:
+            if e.get("cavp_ref") and e["cavp_id"]:
+                name = label_of(e["cavp_id"])
+                src, num = e["cavp_ref"].split(":", 1)
+                cited = f"{src}{num}" if src in ("A", "C") else f"{src} {num}"
+                if name and name != cited:
+                    e["cavp_cert"], e["cited_as"] = name, cited
+                    e["inferred"] = aliases[e["cavp_ref"]]["why"] if e["cavp_ref"] in aliases else (
+                        f"{cited} does not resolve on CAVP; {name} has the same number and the certificate's vendor")
+        linked += save(data / "cmvp" / f"{r['cert']}.json", r)
     if linked:
         print(f"CMVP: linked CAVP validation ids into {linked} certificate files")
     print(f"CAVP: {done} validation files written, {len(errors)} errors")
@@ -236,10 +301,10 @@ def write_csvs(data):
         for r in certs:
             w.writerow([len(r["approved"]) if c == "approved_count" else r.get(c, "") for c in cols])
     with open(data / "cmvp_algorithms.csv", "w", newline="") as f:
-        w = csv.writer(f); w.writerow(["cert", "status", "vendor", "module", "algorithm", "cavp_cert", "cavp_id"])
+        w = csv.writer(f); w.writerow(["cert", "status", "vendor", "module", "algorithm", "cavp_cert", "cavp_id", "note"])
         for r in certs:
             for e in r["approved"]:
-                w.writerow([r["cert"], r["status"], r["vendor"], r["module"], e["algorithm"], e["cavp_cert"], e["cavp_id"]])
+                w.writerow([r["cert"], r["status"], r["vendor"], r["module"], e["algorithm"], e["cavp_cert"], e["cavp_id"], e.get("note", "")])
     print(f"wrote {data / 'cmvp_certs.csv'} and {data / 'cmvp_algorithms.csv'} ({len(certs)} certificates)")
 
 
@@ -251,6 +316,7 @@ def main():
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--delay", type=float, default=0.2, help="seconds each worker waits per request")
     ap.add_argument("--refresh", action="store_true", help="refetch every page")
+    ap.add_argument("--reparse", action="store_true", help="re-parse every certificate from the cache (after a parser change)")
     ap.add_argument("--no-cavp", action="store_true")
     ap.add_argument("--cavp-max-age", type=int, default=0, help="refetch CAVP records older than N days (0: never)")
     ap.add_argument("--cavp-limit", type=int, default=0, help="fetch at most N CAVP validations this run")

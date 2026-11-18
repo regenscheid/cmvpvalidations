@@ -16,7 +16,7 @@ function RootLayout() {
   return (
     <div className="min-h-screen bg-bg text-ink">
       <header className="sticky top-0 z-30 border-b border-line bg-bg/85 backdrop-blur">
-        <div className="mx-auto flex max-w-screen-2xl flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3">
+        <div className="mx-auto flex max-w-[120rem] flex-wrap items-center gap-x-6 gap-y-2 px-4 py-3">
           <Link to="/" className="flex items-baseline gap-2 text-ink hover:no-underline">
             <span className="text-[17px] font-semibold tracking-[-0.01em]">CMVP</span>
             <span className="font-mono text-[12px] uppercase tracking-[0.08em] text-ink-3">/ Certificates</span>
@@ -48,10 +48,10 @@ function RootLayout() {
           </dl>
         </div>
       </header>
-      <main className="mx-auto w-full max-w-screen-2xl px-4 py-6">
+      <main className="mx-auto w-full max-w-[120rem] px-4 py-6">
         <Outlet />
       </main>
-      <footer className="mx-auto max-w-screen-2xl px-4 pb-10 text-[12px] text-ink-3">
+      <footer className="mx-auto max-w-[120rem] px-4 pb-10 text-[12px] text-ink-3">
         Compiled from public NIST CSRC CMVP and CAVP pages. Not an official NIST product; verify against the{" "}
         <a href="https://csrc.nist.gov/projects/cryptographic-module-validation-program/validated-modules" target="_blank" rel="noopener noreferrer">
           NIST certificate

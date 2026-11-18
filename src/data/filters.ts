@@ -1,3 +1,4 @@
+import { iso } from "../lib/dates";
 import type { ModuleRow } from "./types";
 
 export type Filters = {
@@ -11,12 +12,14 @@ export type Filters = {
   /** Exact algorithm names; a module must list every one (AND). */
   alg: string[];
   lab: string;
+  /** Year of first validation (YYYY); any of them. */
+  year: string[];
   /** Lists at least one post-quantum algorithm (ML-DSA, ML-KEM, SLH-DSA, LMS, XMSS). */
   pqc: boolean;
 };
 
 export const EMPTY_FILTERS: Filters = {
-  q: "", status: [], type: [], level: [], embodiment: [], standard: [], family: [], alg: [], lab: "", pqc: false,
+  q: "", status: [], type: [], level: [], embodiment: [], standard: [], family: [], alg: [], lab: "", year: [], pqc: false,
 };
 
 export type FacetKey = "status" | "type" | "level" | "embodiment" | "standard" | "family";
@@ -57,6 +60,7 @@ export function matchesFilters(row: ModuleRow, f: Filters, ignore?: FacetKey): b
   }
   if (f.alg.length && !f.alg.every((a) => row.algorithms.includes(a))) return false;
   if (f.pqc && row.pqc.length === 0) return false;
+  if (f.year.length && !f.year.includes(iso(row.first).slice(0, 4))) return false;
   if (f.lab && !row.labs.some((l) => l.toLowerCase().includes(f.lab.toLowerCase()))) return false;
   return true;
 }
@@ -98,7 +102,7 @@ export function searchToFilters(s: ModulesSearch): Filters {
   return {
     q: s.q ?? "", lab: s.lab ?? "", pqc: !!s.pqc,
     status: arr(s.status), type: arr(s.type), level: arr(s.level), embodiment: arr(s.embodiment),
-    standard: arr(s.standard), family: arr(s.family), alg: arr(s.alg),
+    standard: arr(s.standard), family: arr(s.family), alg: arr(s.alg), year: arr(s.year),
   };
 }
 
@@ -107,7 +111,7 @@ export function filtersToSearch(f: Filters): ModulesSearch {
   if (f.q) out.q = f.q;
   if (f.lab) out.lab = f.lab;
   if (f.pqc) out.pqc = true;
-  for (const k of ["status", "type", "level", "embodiment", "standard", "family", "alg"] as const) {
+  for (const k of ["status", "type", "level", "embodiment", "standard", "family", "alg", "year"] as const) {
     if (f[k].length) out[k] = f[k].join("|");
   }
   return out;

@@ -154,6 +154,35 @@ def _approved(fragment):
     return out
 
 
+# Algorithm words that precede "Cert. #N" in 140-2 note text, mapped to the CAVP source of legacy numbers.
+NOTE_SOURCES = [
+    (r"Triple[-\s]*DES|TDES|TDEA|3DES", "TDES"), (r"ECDSA", "ECDSA"), (r"DSA(?:/SHA-1)?", "DSA"),
+    (r"AES", "AES"), (r"HMAC", "HMAC"), (r"SHA-3", "SHA-3"), (r"SHS|SHA-1|SHA-2", "SHS"), (r"RSA", "RSA"),
+    (r"DRBG", "DRBG"), (r"RNG", "RNG"), (r"CVL", "Component"), (r"KAS(?:-SSC)?", "KAS"), (r"KDF", "KDF"),
+]
+_NOTE_REF = re.compile(r"(?:\b(" + "|".join(p for p, _ in NOTE_SOURCES) + r")\s+)?Certs?\.?\s*"
+                       r"((?:#\s*[AC]?\d+\b(?:\s*(?:,|&|\band\b)\s*)*)+)", re.I)
+
+
+def note_refs(note):
+    """CAVP certificates named in note text, as (label, "SOURCE:NUMBER") pairs. ACVP numbers carry their
+    source ("C755"); legacy numbers count only after an algorithm word ("AES Cert. #5907"), since a bare
+    "Certs. #31 and #51" does not say which list they belong to."""
+    out = []
+    for m in _NOTE_REF.finditer(note):
+        word = m.group(1)
+        src = next((s for p, s in NOTE_SOURCES if word and re.fullmatch(p, word, re.I)), None)
+        for pre, num in re.findall(r"#\s*([AC]?)(\d+)", m.group(2)):
+            ref = (f"{pre.upper()}{num}", f"{pre.upper()}:{num}") if pre else (f"{src} {num}", f"{src}:{num}") if src else None
+            if ref and ref not in out:
+                out.append(ref)
+    for pre, num in re.findall(r"#\s*([AC])(\d+)\b", note, re.I):  # "#C222" on its own is unambiguous
+        ref = (f"{pre.upper()}{num}", f"{pre.upper()}:{num}")
+        if ref not in out:
+            out.append(ref)
+    return out
+
+
 def _approved_table(fragment):
     out = []
     for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", fragment, re.S):
@@ -162,8 +191,16 @@ def _approved_table(fragment):
             continue
         alg = text(tds[0])
         links = re.findall(r'<a href="[^"]*details\?source=([^&"]+)&(?:amp;)?number=([^"&]+)"[^>]*>([^<]*)</a>', tds[1])
-        if not links:  # "vendor affirmed", "Cert. #84, vendor affirmed", ...
-            out.append({"algorithm": alg, "cavp_cert": text(tds[1]), "cavp_id": ""})
+        if not links:  # "vendor affirmed", "AES Cert. #5907 and HMAC Cert. #3889; key establishment ...", ...
+            note = text(tds[1])
+            cited = note_refs(note)
+            if cited:  # the row rests on other validations named only in its text
+                out += [{"algorithm": alg, "cavp_cert": c, "cavp_id": "", "cavp_ref": r, "note": note, "from_note": True}
+                        for c, r in cited]
+            elif not note or note.lower() == "vendor affirmed":
+                out.append({"algorithm": alg, "cavp_cert": note, "cavp_id": ""})
+            else:
+                out.append({"algorithm": alg, "cavp_cert": "", "cavp_id": "", "note": note})
             continue
         for src, num, label in links:
             src, num, label = html.unescape(src), html.unescape(num), label.strip()

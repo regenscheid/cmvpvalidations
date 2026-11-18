@@ -8,7 +8,7 @@ import { buildFacets, filtersToSearch, matchesFilters, searchToFilters, type Fil
 import { useModules } from "../data/load";
 import type { ModuleRow } from "../data/types";
 
-const KEYS = ["q", "lab", "status", "type", "level", "embodiment", "standard", "family", "alg"] as const;
+const KEYS = ["q", "lab", "status", "type", "level", "embodiment", "standard", "family", "alg", "year"] as const;
 
 export const Route = createFileRoute("/modules/")({
   validateSearch: (raw: Record<string, unknown>): ModulesSearch => {
@@ -72,7 +72,7 @@ function ModulesView({ rows }: { rows: ModuleRow[] }) {
     });
 
   return (
-    <section className="grid grid-cols-1 gap-6 lg:grid-cols-[16rem_1fr]">
+    <section className="grid grid-cols-1 gap-6 lg:grid-cols-[15rem_minmax(0,1fr)]">
       <FiltersPanel filters={filters} onChange={setFilters} facets={facets} algorithmNames={algorithmNames} labs={labs} matched={matched.length} total={rows.length} />
       <div className="min-w-0 space-y-3">
         <header className="space-y-1">

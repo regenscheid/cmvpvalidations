@@ -4,9 +4,9 @@ A searchable index of NIST CMVP certificates, with each certificate's approved a
 to the CAVP validations it cites, down to tested capabilities and operating environments.
 Published at https://regenscheid.github.io/cmvpvalidations/ and kept current by a scheduled GitHub Action.
 
-Scope today: every FIPS 140-3 and FIPS 140-2 certificate (Active, Historical, Revoked). The daily
-Action crawls FIPS 140-3 only; FIPS 140-2 has no active certificates left and was captured locally with
-`--standard 140-2`. The crawler also takes `140-1` or `all`.
+Scope today: every FIPS 140-3, FIPS 140-2 and FIPS 140-1 certificate (Active, Historical, Revoked). The
+daily Action crawls FIPS 140-3 only; FIPS 140-2 and 140-1 have no active certificates left and were captured
+locally with `--standard 140-2` and `--standard 140-1`. The crawler also takes `all`.
 
 ## Layout
 
@@ -17,7 +17,8 @@ Action crawls FIPS 140-3 only; FIPS 140-2 has no active certificates left and wa
 | `scripts/build_site_data.py` | `data/` → `public/data/` (what the web app loads) |
 | `data/cmvp/<cert>.json` | One file per certificate: every field on the page plus its search-list row |
 | `data/cavp/<id>.json` | One file per cited CAVP validation: implementation, OEs, per-algorithm capabilities |
-| `data/cavp_refs.json` | FIPS 140-2 citations by CAVP source and number (`AES:4030`, `A:884`) → validation id |
+| `data/cavp_refs.json` | FIPS 140-2 and 140-1 citations by CAVP source and number (`AES:4030`, `A:884`) → validation id |
+| `data/cavp_ref_aliases.json` | Hand-checked stand-ins for citations that do not resolve, with the reason |
 | `data/cmvp_certs.csv`, `data/cmvp_algorithms.csv` | Flat exports (cert rows; cert × algorithm × CAVP) |
 | `src/` | Vite + React + TanStack Router/Table/Virtual + Tailwind app (same stack as kemist-dashboard) |
 | `scripts/cmvp_pqc.py`, `scripts/make_reports.py`, `out/`, `reports/` | The original ML-DSA / ML-KEM survey (Oct 29 2026), kept as is |
@@ -43,11 +44,24 @@ it is new or its status or validation dates changed on the list; a CAVP validati
 first time a certificate cites it. Records are rewritten only when their content changes. CAVP work is
 limited to certificates of the standards named by `--standard`.
 
-FIPS 140-2 pages cite CAVP certificates by source and number (`details?source=AES&number=4030`) rather
+FIPS 140-2 and 140-1 pages cite CAVP certificates by source and number (`details?source=AES&number=4030`) rather
 than by validation id, often several per algorithm, and include pre-ACVP certificates numbered per
 algorithm. The crawler fetches each reference once in the expanded view, records its validation id in
 `data/cavp_refs.json`, and writes the id back into the certificate records. They also name algorithms
 broadly ("AES", "SHS", "CVL"); the site shows every CAVP algorithm of that family on the cited validation.
+
+Some 140-2 rows have no CAVP link, only text such as "AES Cert. #5907 and HMAC Cert. #3889; key
+establishment methodology ...". The text is kept as the entry's `note` (and in the `note` column of
+`cmvp_algorithms.csv`), and the certificates it names become entries with `from_note: true`. Legacy numbers
+count only after an algorithm word; ACVP numbers (`#C755`) stand on their own. A few certificates link an
+ACVP certificate under a legacy source (`ECDSA 8130` for `A8130`), and that link fails; the crawler then
+tries the same number under `A` and `C` (and, for the placeholder source `foo`, under AES, HMAC, RSA and
+TDES) and accepts it only if the validation's vendor matches the certificate's. References checked by hand
+(a transposed number, a sibling validation from the same submission) are listed with their reasons in
+`data/cavp_ref_aliases.json`. Either way the entry takes the validation's own name, keeps the certificate's
+in `cited_as`, and says why in `inferred`; the site marks these links as inferred.
+
+Re-parse stored certificates from the cache after a parser change with `--reparse`.
 
 ## Site
 

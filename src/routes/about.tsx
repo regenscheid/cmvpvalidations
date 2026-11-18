@@ -21,7 +21,7 @@ function About() {
             for tested capabilities and operating environments.
           </p>
           <p>
-            Coverage: FIPS 140-3 and FIPS 140-2. FIPS 140-2 certificates name algorithms broadly (&ldquo;AES&rdquo;, &ldquo;SHS&rdquo;, &ldquo;CVL&rdquo;) and often cite
+            Coverage: FIPS 140-3, FIPS 140-2 and FIPS 140-1. FIPS 140-2 and 140-1 certificates name algorithms broadly (&ldquo;AES&rdquo;, &ldquo;SHS&rdquo;, &ldquo;CVL&rdquo;) and often cite
             several CAVP certificates per algorithm, including pre-ACVP ones numbered per algorithm (&ldquo;AES 4030&rdquo;). Their capabilities show every CAVP algorithm of that
             family on the cited validation.
           </p>
@@ -31,7 +31,7 @@ function About() {
         <Card className="space-y-2 p-4">
           <p>
             A scheduled GitHub Action refetches the CMVP search lists, re-crawls only certificates that are new or whose status or validation dates changed, and fetches CAVP
-            validations the first time a certificate cites them. FIPS 140-2 has no active certificates left, so it was captured once and is not part of the daily run. Each record is a JSON file in the repository's <code>data/</code> folder, so the git history doubles as a change log.
+            validations the first time a certificate cites them. FIPS 140-2 and 140-1 have no active certificates left, so they were captured once and are not part of the daily run. Each record is a JSON file in the repository's <code>data/</code> folder, so the git history doubles as a change log.
           </p>
         </Card>
       </Section>

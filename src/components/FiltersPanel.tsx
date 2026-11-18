@@ -5,6 +5,8 @@ import { PQC_FAMILIES } from "../lib/pqc";
 const inputCls =
   "mt-1 w-full rounded-md border border-line bg-surface px-2 py-1 text-sm text-ink focus:border-accent focus:outline-none";
 const legendCls = "font-mono text-[11px] font-semibold uppercase tracking-[0.05em] text-ink-3";
+/** Short facets stay open; long ones (embodiment, algorithm family, ...) open on demand or when in use. */
+const OPEN_BY_DEFAULT = new Set<FacetKey>(["status", "standard"]);
 
 export function FiltersPanel({
   filters,
@@ -32,7 +34,10 @@ export function FiltersPanel({
   };
 
   return (
-    <aside className="space-y-5 rounded-md border border-line bg-surface p-4" aria-label="Filters">
+    <aside
+      className="space-y-4 rounded-md border border-line bg-surface p-4 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:overscroll-contain"
+      aria-label="Filters"
+    >
       <div className="flex items-baseline justify-between">
         <h2 className={legendCls}>Filters</h2>
         {isFilterActive(filters) && (
@@ -44,6 +49,22 @@ export function FiltersPanel({
       <p className="text-xs text-ink-2">
         {matched.toLocaleString()} of {total.toLocaleString()} certificates
       </p>
+      {filters.year.length > 0 && (
+        <ul className="flex flex-wrap gap-1">
+          {filters.year.map((y) => (
+            <li key={y}>
+              <button
+                type="button"
+                onClick={() => onChange({ ...filters, year: filters.year.filter((x) => x !== y) })}
+                className="rounded-full border border-line bg-surface-2 px-2 py-[1px] text-[11px] hover:border-accent"
+                aria-label={`Remove first validated ${y}`}
+              >
+                First validated {y} ×
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
 
       <label className="block">
         <span className={legendCls}>Search</span>
@@ -114,12 +135,16 @@ export function FiltersPanel({
         if (!opts || opts.length < 2) return null;
         const shown = key === "family" ? [...opts].sort((a, b) => Number(PQC_FAMILIES.has(b.option)) - Number(PQC_FAMILIES.has(a.option))) : opts;
         return (
-          <fieldset key={key} className="space-y-1">
-            <legend className={legendCls}>
+          <details key={key} open={OPEN_BY_DEFAULT.has(key) || filters[key].length > 0} className="group">
+            <summary className={`${legendCls} flex cursor-pointer list-none items-center gap-1 select-none`}>
+              <span className="inline-block transition-transform group-open:rotate-90" aria-hidden>
+                ▸
+              </span>
               {title}
               {key === "family" && <span className="ml-1 normal-case tracking-normal text-ink-3">(all of)</span>}
-            </legend>
-            <div className="flex flex-col gap-0.5">
+              {filters[key].length > 0 && <span className="ml-auto normal-case tracking-normal text-accent">{filters[key].length} selected</span>}
+            </summary>
+            <div className="mt-1 flex flex-col gap-0.5">
               {shown.map((o) => (
                 <label key={o.option} className={`flex items-center justify-between gap-2 text-sm ${o.count === 0 && !filters[key].includes(o.option) ? "text-ink-3" : ""}`}>
                   <span className="flex min-w-0 items-center gap-2">
@@ -130,7 +155,7 @@ export function FiltersPanel({
                 </label>
               ))}
             </div>
-          </fieldset>
+          </details>
         );
       })}
     </aside>

@@ -2,7 +2,7 @@
  * Virtualized, sortable table of certificates (TanStack Table + Virtual), following the
  * kemist-dashboard DomainsTable layout: fixed row height, fixed table layout, percent widths.
  */
-import { useMemo, useRef } from "react";
+import { useLayoutEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate } from "@tanstack/react-router";
 import {
   createColumnHelper,
@@ -15,7 +15,6 @@ import {
 import { useVirtualizer } from "@tanstack/react-virtual";
 import type { ModuleRow } from "../data/types";
 import { iso } from "../lib/dates";
-import { isAtLeast, useBreakpoint, type Breakpoint } from "../lib/useBreakpoint";
 import { FamilyTag, StatusTag } from "./ui";
 import { PQC_FAMILIES } from "../lib/pqc";
 
@@ -25,7 +24,12 @@ const col = createColumnHelper<ModuleRow>();
 declare module "@tanstack/react-table" {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   interface ColumnMeta<TData, TValue> {
-    hideBelow?: Breakpoint;
+    /** Narrowest width (px) at which the content fits without being cut off. */
+    min: number;
+    /** Lower shows first: columns join in this order while their minimum widths fit. */
+    priority: number;
+    /** Share of the leftover width (only the long text columns grow). */
+    grow?: number;
   }
 }
 
@@ -38,54 +42,54 @@ const ellipsis = (s: string) => (
 const COLUMNS = [
   col.accessor("cert", {
     header: "Cert",
-    size: 70,
+    meta: { min: 76, priority: 0 },
     cell: (c) => (
       <Link to="/modules/$cert" params={{ cert: String(c.getValue()) }} className="mono" onClick={(e) => e.stopPropagation()}>
         {c.getValue()}
       </Link>
     ),
   }),
-  col.accessor("standard", { header: "FIPS", size: 55, meta: { hideBelow: "lg" } }),
-  col.accessor("status", { header: "Status", size: 90, cell: (c) => <StatusTag status={c.getValue()} /> }),
-  col.accessor("vendor", { header: "Vendor", size: 200, cell: (c) => ellipsis(c.getValue()) }),
-  col.accessor("module", { header: "Module", size: 300, cell: (c) => ellipsis(c.getValue()) }),
-  col.accessor("type", { header: "Type", size: 110, meta: { hideBelow: "md" }, cell: (c) => ellipsis(c.getValue()) }),
-  col.accessor("level", { header: "Lvl", size: 45, meta: { hideBelow: "md" } }),
-  col.accessor("embodiment", { header: "Embodiment", size: 160, meta: { hideBelow: "2xl" }, cell: (c) => ellipsis(c.getValue()) }),
+  col.accessor("standard", { header: "FIPS", meta: { min: 70, priority: 6 } }),
+  col.accessor("status", { header: "Status", meta: { min: 108, priority: 1 }, cell: (c) => <StatusTag status={c.getValue()} /> }),
+  col.accessor("vendor", { header: "Vendor", meta: { min: 170, priority: 3, grow: 2 }, cell: (c) => ellipsis(c.getValue()) }),
+  col.accessor("module", { header: "Module", meta: { min: 230, priority: 2, grow: 3 }, cell: (c) => ellipsis(c.getValue()) }),
+  col.accessor("type", { header: "Type", meta: { min: 142, priority: 7 }, cell: (c) => ellipsis(c.getValue()) }),
+  col.accessor("level", { header: "Lvl", meta: { min: 54, priority: 8 } }),
+  col.accessor("embodiment", { header: "Embodiment", meta: { min: 196, priority: 11 }, cell: (c) => ellipsis(c.getValue()) }),
   col.accessor((r) => iso(r.first), {
     id: "first",
     header: "Validated",
-    size: 95,
-    meta: { hideBelow: "lg" },
+    meta: { min: 114, priority: 5 },
     cell: (c) => <span className="mono whitespace-nowrap text-ink-2">{c.getValue() || "—"}</span>,
   }),
   col.accessor((r) => iso(r.sunset), {
     id: "sunset",
     header: "Sunset",
-    size: 95,
-    meta: { hideBelow: "xl" },
+    meta: { min: 114, priority: 10 },
     cell: (c) => <span className="mono whitespace-nowrap text-ink-2">{c.getValue() || "—"}</span>,
   }),
   col.accessor((r) => r.algorithms.length, {
     id: "algs",
     header: "Algs",
-    size: 55,
-    meta: { hideBelow: "lg" },
+    meta: { min: 62, priority: 9 },
     cell: (c) => <span className="mono text-ink-2">{c.getValue()}</span>,
   }),
   col.accessor((r) => r.pqc.join(" "), {
     id: "pqc",
     header: "PQC",
-    size: 150,
-    meta: { hideBelow: "sm" },
+    meta: { min: 214, priority: 4 },
     sortDescFirst: true,
-    cell: (c) => (
-      <span className="flex gap-1 overflow-hidden">
-        {c.row.original.families.filter((f) => PQC_FAMILIES.has(f)).map((f) => (
-          <FamilyTag key={f} family={f} />
-        ))}
-      </span>
-    ),
+    cell: (c) => {
+      const fams = c.row.original.families.filter((f) => PQC_FAMILIES.has(f));
+      return (
+        <span className="flex items-center gap-1 whitespace-nowrap" title={fams.join(", ")}>
+          {fams.slice(0, 2).map((f) => (
+            <FamilyTag key={f} family={f} />
+          ))}
+          {fams.length > 2 && <span className="text-[11px] text-ink-3">+{fams.length - 2}</span>}
+        </span>
+      );
+    },
   }),
 ];
 
@@ -98,9 +102,32 @@ export function ModulesTable({
   sorting: SortingState;
   onSortingChange: (s: SortingState) => void;
 }) {
-  const bp = useBreakpoint();
   const navigate = useNavigate();
-  const columns = useMemo(() => COLUMNS.filter((c) => !c.meta?.hideBelow || isAtLeast(bp, c.meta.hideBelow)), [bp]);
+  const parentRef = useRef<HTMLDivElement>(null);
+  const [width, setWidth] = useState(() => (typeof window === "undefined" ? 1000 : Math.max(320, window.innerWidth - 340)));
+  useLayoutEffect(() => {
+    const el = parentRef.current;
+    if (!el) return;
+    const ro = new ResizeObserver(() => setWidth(el.clientWidth));
+    ro.observe(el);
+    setWidth(el.clientWidth);
+    return () => ro.disconnect();
+  }, []);
+  // Show the columns whose content fits, most important first, so nothing is cut off; then share out the rest.
+  const { columns, widths } = useMemo(() => {
+    const keep = new Set<(typeof COLUMNS)[number]>();
+    let used = 0;
+    for (const c of [...COLUMNS].sort((a, b) => a.meta!.priority - b.meta!.priority)) {
+      if (keep.size < 3 || used + c.meta!.min <= width) {
+        keep.add(c);
+        used += c.meta!.min;
+      }
+    }
+    const cols = COLUMNS.filter((c) => keep.has(c));
+    const grow = cols.reduce((a, c) => a + (c.meta!.grow ?? 0), 0);
+    const extra = Math.max(0, width - used);
+    return { columns: cols, widths: cols.map((c) => Math.floor(c.meta!.min + (grow ? (extra * (c.meta!.grow ?? 0)) / grow : 0))) };
+  }, [width]);
   // TanStack Table returns non-memoizable functions; the React Compiler lint rule flags that.
   // eslint-disable-next-line react-hooks/incompatible-library
   const table = useReactTable({
@@ -111,7 +138,6 @@ export function ModulesTable({
     getCoreRowModel: getCoreRowModel(),
     getSortedRowModel: getSortedRowModel(),
   });
-  const parentRef = useRef<HTMLDivElement>(null);
   const tableRows = table.getRowModel().rows;
   const virtualizer = useVirtualizer({
     count: tableRows.length,
@@ -119,16 +145,14 @@ export function ModulesTable({
     estimateSize: () => ROW_HEIGHT,
     overscan: 12,
   });
-  const widths = columns.map((c) => c.size ?? 120);
   const total = widths.reduce((a, b) => a + b, 0);
-  const pct = widths.map((w) => (w / total) * 100);
 
   return (
     <div ref={parentRef} className="relative h-[72vh] overflow-auto rounded-md border border-line bg-surface">
-      <table className="w-full border-separate border-spacing-0 text-[13px]" style={{ tableLayout: "fixed", minWidth: `${Math.min(total, 760)}px` }}>
+      <table className="border-separate border-spacing-0 text-[13px]" style={{ tableLayout: "fixed", width: `${total}px` }}>
         <colgroup>
-          {pct.map((p, i) => (
-            <col key={i} style={{ width: `${p}%` }} />
+          {widths.map((w, i) => (
+            <col key={i} style={{ width: `${w}px` }} />
           ))}
         </colgroup>
         <thead className="sticky top-0 z-10 bg-surface-2">
@@ -165,7 +189,7 @@ export function ModulesTable({
                 style={{ transform: `translateY(${vr.start}px)`, height: `${ROW_HEIGHT}px`, width: "100%", display: "table", tableLayout: "fixed" }}
               >
                 {row.getVisibleCells().map((cell, i) => (
-                  <td key={cell.id} className="overflow-hidden border-b border-line-2 px-3 py-1 align-middle" style={{ width: `${pct[i]}%` }}>
+                  <td key={cell.id} className="overflow-hidden border-b border-line-2 px-3 py-1 align-middle" style={{ width: `${widths[i]}px` }}>
                     {flexRender(cell.column.columnDef.cell, cell.getContext())}
                   </td>
                 ))}
