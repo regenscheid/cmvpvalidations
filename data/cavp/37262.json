@@ -1,0 +1,69 @@
+{
+ "cavp_id": "37262",
+ "cavp_cert": "A4652",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37262",
+ "implementation": "qStream 100",
+ "product_id": "17229",
+ "description": "The qStream 100 is a PCIe random number generator module that generates full entropy random numbers sourced from an integrated quantum noise source. The qStream 100 delivers random numbers for the generation of cryptographic keys and other security parameters, deterministic RNG seeding, initialization vectors, nonces, random challenges, authentication and DSA signing. Other applications include Entropy as a Service (EaaS), simulations, modelling and computer gaming.",
+ "version": "3.1",
+ "type": "HARDWARE",
+ "first_validated": "11/1/2023",
+ "vendor": "QuintessenceLabs",
+ "vendor_website": "https://www.quintessencelabs.com/",
+ "oes": [
+  {
+   "name": "QRNG version 3.1",
+   "details": [
+    "FPGA: Xilinx Artix-7 (xc7a200t)",
+    "  family: Artix-7",
+    "  manufacturer: Xilinx"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 640"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 256",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 256",
+    "    Returned Bits: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

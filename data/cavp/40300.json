@@ -1,0 +1,41 @@
+{
+ "cavp_id": "40300",
+ "cavp_cert": "A7690",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40300",
+ "implementation": "NVIDIA Random Number Generator Engine (Conditioning Component)",
+ "product_id": "20472",
+ "description": "NVIDIA Random Number Generator: The conditioning component is a cryptographic function that post-processes raw data from an entropy source.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/18/2025",
+ "vendor": "Nvidia Corporation",
+ "vendor_website": "http://www.nvidia.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS V-2023.12-SP2-T-20241211_Full64",
+   "details": [
+    "Simulator: Synopsys VCS V-2023.12-SP2-T-20241211_Full64",
+    "  Verilog language simulation program for chip design"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 128-65536 Increment 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

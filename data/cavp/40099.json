@@ -1,0 +1,5282 @@
+{
+ "cavp_id": "40099",
+ "cavp_cert": "A7489",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40099",
+ "implementation": "NetApp CryptoMod",
+ "product_id": "20279",
+ "description": "CryptoMod is a software cryptographic module whose purpose is to provide encryption/decryption for NetApp’s ONTAP Operating System (OS) kernel. The CryptoMod module makes use of the AES-NI instruction set in Intel processors. Since CryptoMod can support non-PAA implementations as well as PAA implementations of the pertinent cryptographic algorithms, CryptoMod is designated as a software only cryptographic module.",
+ "version": "3.1",
+ "type": "SOFTWARE",
+ "first_validated": "10/9/2025",
+ "vendor": "NetApp, Inc.",
+ "vendor_website": "http://www.netapp.com",
+ "oes": [
+  {
+   "name": "ONTAP 9.17.1 running on AFF-A1K with Intel® Xeon® Platinum 8470N (Sapphire Rapids) with PAA",
+   "details": [
+    "hardware: AFF-A1K",
+    "cpu: Intel® Xeon® Platinum 8470N (Sapphire Rapids) with PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on AFF-A1K with Intel® Xeon® Platinum 8470N (Sapphire Rapids) without PAA",
+   "details": [
+    "hardware: AFF-A1K",
+    "cpu: Intel® Xeon® Platinum 8470N (Sapphire Rapids) without PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on AFF-A250 with Intel® Xeon® D-2164IT (Skylake) with PAA",
+   "details": [
+    "hardware: AFF-A250",
+    "cpu: Intel® Xeon® D-2164IT (Skylake) with PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on AFF-A250 with Intel® Xeon® D-2164IT (Skylake) without PAA",
+   "details": [
+    "hardware: AFF-A250",
+    "cpu: Intel® Xeon® D-2164IT (Skylake) without PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on AFF-A320 with Intel® Xeon® Silver 4114 (Skylake) with PAA",
+   "details": [
+    "hardware: AFF-A320",
+    "cpu: Intel® Xeon® Silver 4114 (Skylake) with PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on AFF-A320 with Intel® Xeon® Silver 4114 (Skylake) without PAA",
+   "details": [
+    "hardware: AFF-A320",
+    "cpu: Intel® Xeon® Silver 4114 (Skylake) without PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on AFF-A900 with Intel® Xeon® Platinum 8352Y (Ice Lake) with PAA",
+   "details": [
+    "hardware: AFF-A900",
+    "cpu: Intel® Xeon® Platinum 8352Y (Ice Lake) with PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on AFF-A900 with Intel® Xeon® Platinum 8352Y (Ice Lake) without PAA",
+   "details": [
+    "hardware: AFF-A900",
+    "cpu: Intel® Xeon® Platinum 8352Y (Ice Lake) without PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on ASA-A20 with Intel® Xeon® Bronze 3508U (Sapphire Rapids) with PAA",
+   "details": [
+    "hardware: ASA-A20",
+    "cpu: Intel® Xeon® Bronze 3508U (Sapphire Rapids) with PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on ASA-A20 with Intel® Xeon® Bronze 3508U (Sapphire Rapids) without PAA",
+   "details": [
+    "hardware: ASA-A20",
+    "cpu: Intel® Xeon® Bronze 3508U (Sapphire Rapids) without PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on FAS2750 with Intel® Xeon® D-1557 (Broadwell) with PAA",
+   "details": [
+    "hardware: FAS2750",
+    "cpu: Intel® Xeon® D-1557 (Broadwell) with PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on FAS2750 with Intel® Xeon® D-1557 (Broadwell) without PAA",
+   "details": [
+    "hardware: FAS2750",
+    "cpu: Intel® Xeon® D-1557 (Broadwell) without PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on FAS2820 with Intel® Xeon® D-1735TR (Ice Lake) with PAA",
+   "details": [
+    "hardware: FAS2820",
+    "  FAS2800",
+    "cpu: Intel® Xeon® D-1735TR (Ice Lake) with PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on FAS2820 with Intel® Xeon® D-1735TR (Ice Lake) without PAA",
+   "details": [
+    "hardware: FAS2820",
+    "  FAS2800",
+    "cpu: Intel® Xeon® D-1735TR (Ice Lake) without PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on FAS8700 with Intel® Xeon® Gold 5218 (Cascade Lake) with PAA",
+   "details": [
+    "hardware: FAS8700",
+    "cpu: Intel® Xeon® Gold 5218 (Cascade Lake) with PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.17.1 running on FAS8700 with Intel® Xeon® Gold 5218 (Cascade Lake) without PAA",
+   "details": [
+    "hardware: FAS8700",
+    "cpu: Intel® Xeon® Gold 5218 (Cascade Lake) without PAA",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.17.1"
+   ]
+  },
+  {
+   "name": "ONTAP 9.18.1 running on AFF A90 with Intel® Xeon® Gold 6538N (Emerald Rapids) with PAA",
+   "details": [
+    "platform: AFF A90",
+    "  manufacturer: NetApp",
+    "processor: Intel® Xeon® Gold 6538N",
+    "  family: Emerald Rapids",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.18.1",
+    "  manufacturer: NetApp"
+   ]
+  },
+  {
+   "name": "ONTAP 9.18.1 running on AFF A90 with Intel® Xeon® Gold 6538N (Emerald Rapids) without PAA",
+   "details": [
+    "platform: AFF A90",
+    "  manufacturer: NetApp",
+    "processor: Intel® Xeon® Gold 6538N",
+    "  family: Emerald Rapids",
+    "  manufacturer: Intel®",
+    "os: ONTAP 9.18.1",
+    "  manufacturer: NetApp"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 2,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 3,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 4,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 5,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 6,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 7,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 8,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 9,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 10,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 11,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 12,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 13,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 14,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 15,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 16,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 17,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 5,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 6,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 7,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 8,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 9,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 10,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 11,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 12,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 13,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 14,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 15,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 16,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 17,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 4,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 5,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 6,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 7,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 8,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 9,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 10,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 11,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 12,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 13,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 14,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 15,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 16,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 17,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 8",
+    "Tweak Mode: Hex",
+    "Data Unit Length: 128-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 2,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 3,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 4,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 5,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 6,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 7,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 8,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 9,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 10,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 11,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 12,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 13,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 14,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 15,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 16,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 17,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-512 Increment 8",
+    "    Entropy Input: 256-1024 Increment 8",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-512 Increment 8",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 4,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 5,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 6,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 7,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 8,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 9,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 10,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 11,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 12,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 13,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 14,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 15,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 16,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 17,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 4,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 5,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 6,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 7,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 8,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 9,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 10,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 11,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 12,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 13,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 14,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 15,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 16,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 17,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 4,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 5,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 6,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 7,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 8,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 9,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 10,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 11,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 12,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 13,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 14,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 15,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 16,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 17,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 4,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 5,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 6,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 7,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 8,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 9,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 10,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 11,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 12,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 13,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 14,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 15,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 16,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 17,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 4,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 5,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 6,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 7,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 8,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 9,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 10,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 11,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 12,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 13,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 14,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 15,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 16,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 17,
+   "capabilities": [
+    "MAC: 32-224 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 4,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 5,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 6,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 7,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 8,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 9,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 10,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 11,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 12,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 13,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 14,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 15,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 16,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 17,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 4,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 5,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 6,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 7,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 8,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 9,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 10,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 11,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 12,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 13,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 14,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 15,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 16,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 17,
+   "capabilities": [
+    "MAC: 32-384 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 4,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 5,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 6,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 7,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 8,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 9,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 10,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 11,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 12,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 13,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 14,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 15,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 16,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 17,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 5,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 6,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 7,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 8,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 9,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 10,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 11,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 12,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 13,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 14,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 15,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 16,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 17,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 1,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 2,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 3,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 4,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 5,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 6,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 7,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 8,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 9,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 10,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 11,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 12,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 13,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 14,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 15,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 16,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "LMS SigVer",
+   "oe": 17,
+   "capabilities": [
+    "Capabilities:",
+    "  LMS Modes: LMS_SHA256_M24_H10, LMS_SHA256_M24_H15, LMS_SHA256_M24_H20, LMS_SHA256_M24_H25, LMS_SHA256_M24_H5, LMS_SHA256_M32_H10, LMS_SHA256_M32_H15, LMS_SHA256_M32_H20, LMS_SHA256_M32_H25, LMS_SHA256_M32_H5",
+    "  LMOTS Modes: LMOTS_SHA256_N24_W1, LMOTS_SHA256_N24_W2, LMOTS_SHA256_N24_W4, LMOTS_SHA256_N24_W8, LMOTS_SHA256_N32_W1, LMOTS_SHA256_N32_W2, LMOTS_SHA256_N32_W4, LMOTS_SHA256_N32_W8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 5,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 6,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 7,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 8,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 9,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 10,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 11,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 12,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 13,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 14,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 15,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 16,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 17,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 1,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 2,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 3,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 4,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 5,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 6,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 7,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 8,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 9,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 10,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 11,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 12,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 13,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 14,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 15,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 16,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 17,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 1,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 2,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 3,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 4,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 5,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 6,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 7,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 8,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 9,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 10,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 11,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 12,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 13,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 14,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 15,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 16,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 17,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

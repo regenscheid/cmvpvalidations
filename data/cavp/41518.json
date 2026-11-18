@@ -1,0 +1,69 @@
+{
+ "cavp_id": "41518",
+ "cavp_cert": "A8908",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=41518",
+ "implementation": "IBM HMC Kernel",
+ "product_id": "21771",
+ "description": "Provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: Generic C non-optimized implementation.",
+ "version": "1121",
+ "type": "SOFTWARE",
+ "first_validated": "8/31/2026",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "HMC 1121 on IBM POWER Series POWER9",
+   "details": [
+    "software: HMC 1121",
+    "  Hardware Management Console operating system developed by IBM",
+    "processor: POWER9",
+    "  Processor POWER9 (processor family POWER) from IBM",
+    "  family: POWER",
+    "  manufacturer: IBM",
+    "  series: POWER Series"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC DRBG (SP800-90Ar1)",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Additional Input: 0, 256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8",
+    "Message Length: 128"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

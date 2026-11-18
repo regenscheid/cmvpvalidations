@@ -1,0 +1,94 @@
+{
+ "esv": 201,
+ "cert": "E201",
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/entropy-validations/certificate/201",
+ "implementation": "Nvidia Random Number Generator (NVRNG)",
+ "standard": "SP 800-90B",
+ "description": "Nvidia Random Number Generator (NVRNG)",
+ "version": "1.0",
+ "noise_source": "Physical",
+ "reuse": "Reuse restricted to vendor",
+ "entries": [
+  {
+   "bits_per_output": "Full entropy.",
+   "output_bits": "128",
+   "oes": [
+    "H100(FSP)"
+   ],
+   "conditioning": [
+    {
+     "cavp_cert": "A4439",
+     "cavp_id": "37049",
+     "algorithm": "AES-CBC-MAC"
+    }
+   ]
+  },
+  {
+   "bits_per_output": "Full entropy.",
+   "output_bits": "128",
+   "oes": [
+    "H100(SECHUB)"
+   ],
+   "conditioning": [
+    {
+     "cavp_cert": "A4423",
+     "cavp_id": "37033",
+     "algorithm": "AES-CBC-MAC"
+    }
+   ]
+  },
+  {
+   "bits_per_output": "Full entropy.",
+   "output_bits": "128",
+   "oes": [
+    "Nvidia Network Adaptor Security (PSC-SE)"
+   ],
+   "conditioning": [
+    {
+     "cavp_cert": "A7690",
+     "cavp_id": "40300",
+     "algorithm": "AES-CBC-MAC"
+    }
+   ]
+  }
+ ],
+ "vendor": "Nvidia Corporation",
+ "vendor_info": {
+  "name": "Nvidia Corporation",
+  "website": "http://www.nvidia.com",
+  "address": [
+   "2788 San Tomas Expressway",
+   "Santa Clara, CA 95051",
+   "USA"
+  ],
+  "contacts": []
+ },
+ "files": [
+  {
+   "label": "Public Use Document",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/entropy/E201_PublicUse.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/16/2024",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "4/27/2026",
+   "lab": "Teron Labs"
+  }
+ ],
+ "first": "10/16/2024",
+ "last": "4/27/2026",
+ "labs": [
+  "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+  "Teron Labs"
+ ],
+ "list": {
+  "esv": 201,
+  "vendor": "Nvidia Corporation",
+  "implementation": "Nvidia Random Number Generator (NVRNG)",
+  "date": "10/16/2024"
+ }
+}

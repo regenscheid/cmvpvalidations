@@ -1,0 +1,57 @@
+{
+ "cavp_id": "38110",
+ "cavp_cert": "A5500",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38110",
+ "implementation": "iStorage diskAshur3 RNG library",
+ "product_id": "18177",
+ "description": "The iStorage diskAshur3 RNG library is a firmware library that provides cryptographic functions for the iStorage diskAshur3, diskAshur PRO3, diskAshur DT3 ranges of PIN authenticated, hardware encrypted portable data storage devices. The cryptographic functions include AES-ECB, ConditioningComponent, and ctrDRBG.",
+ "version": "03.08.24.01",
+ "type": "FIRMWARE",
+ "first_validated": "8/8/2024",
+ "vendor": "iStorage Limited",
+ "vendor_website": "http://www.istorage-uk.com",
+ "oes": [
+  {
+   "name": "IS24781",
+   "details": [
+    "Processor: IS24781",
+    "  iStorage IS24781 Microprocessor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component Block Cipher Derivation Function SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Payload Length: 12288",
+    "Output Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0, 64",
+    "    Entropy Input: 384",
+    "    Nonce: 128",
+    "    Personalization String Length: 64",
+    "    Returned Bits: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

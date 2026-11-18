@@ -1,0 +1,60 @@
+{
+ "cavp_id": "34815",
+ "cavp_cert": "A2206",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34815",
+ "implementation": "Intel DRNG (DRNG)",
+ "product_id": "14715",
+ "description": "DRNG RTL1.0 Server Coop Configuration for Kaby Lake",
+ "version": "KBL-COOP-RTL1.0",
+ "type": "HARDWARE",
+ "first_validated": "12/23/2021",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Intel Corporation Intel(R) Celeron(R), Intel(R) Core(R), Intel(R) Pentium(R), Intel(R) Xeon(R) Kaby Lake Cpu-4 FCLGA1151 Intel(R) Xeon(R) E3-1275 V6 Processor",
+   "details": [
+    "processor: Intel(R) Xeon(R) E3-1275 V6 Processor",
+    "  Processor Intel(R) Xeon(R) E3-1275 V6 Processor (processor family Intel) from Intel Corporation",
+    "  family: Intel",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel(R) Celeron(R), Intel(R) Core(R), Intel(R) Pentium(R), Intel(R) Xeon(R) Kaby Lake Cpu-4 FCLGA1151"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

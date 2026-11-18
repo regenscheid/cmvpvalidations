@@ -1,0 +1,57 @@
+{
+ "cavp_id": "39993",
+ "cavp_cert": "A7383",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39993",
+ "implementation": "Intel CO-OP DRNG",
+ "product_id": "20145",
+ "description": "The Intel DRNG (Digital Random Number Generator)",
+ "version": "Intel CO-OP DRNG",
+ "type": "FIRMWARE",
+ "first_validated": "9/12/2025",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS® (Verilog Compiler Simulator)",
+   "details": [
+    "Simulator: Synopsys VCS® (Verilog Compiler Simulator)",
+    "  Verilog language simulation program for chip design"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 512"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

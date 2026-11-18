@@ -1,0 +1,842 @@
+{
+ "cavp_id": "39022",
+ "cavp_cert": "A6412",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39022",
+ "implementation": "CryptoComply Entropy Provider, Conditioning Component",
+ "product_id": "19064",
+ "description": "CryptoComply Entropy Provider provides FIPS 140 compliant entropy",
+ "version": "3.6.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/18/2024",
+ "vendor": "SafeLogic, Inc.",
+ "vendor_website": "https://www.safelogic.com/",
+ "oes": [
+  {
+   "name": "AlmaLinux 9 running on Intel Xeon E5-4667v4",
+   "details": [
+    "os: AlmaLinux 9",
+    "cpu: Intel Xeon E5-4667v4"
+   ]
+  },
+  {
+   "name": "Android 13 running on Google Tensor G2",
+   "details": [
+    "os: Android 13",
+    "cpu: Google Tensor G2"
+   ]
+  },
+  {
+   "name": "BroLin v29 running on AMD EPYC™ 9254",
+   "details": [
+    "processor: AMD EPYC™ 9254 (Zen 4)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series Processors",
+    "os: BroLin v29"
+   ]
+  },
+  {
+   "name": "BroLin v29 running on AMD EPYC™ 9354",
+   "details": [
+    "processor: AMD EPYC™ 9354 (Zen 4)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series processors",
+    "os: BroLin v29"
+   ]
+  },
+  {
+   "name": "BroLin v29 running on AMD EPYC™ 9754",
+   "details": [
+    "processor: AMD EPYC™ 9754 (Zen 4c)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series processors",
+    "os: BroLin v29"
+   ]
+  },
+  {
+   "name": "BroLin v29 running on Intel® Xeon® 6505P",
+   "details": [
+    "os: BroLin v29",
+    "processor: Intel® Xeon® 6505P (Granite Rapids)",
+    "  family: Xeon®",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® 6 processors"
+   ]
+  },
+  {
+   "name": "BroLin v29 running on Intel® Xeon® E-2468",
+   "details": [
+    "os: BroLin v29",
+    "processor: Intel® Xeon® E-2468 (Raptor Lake)",
+    "  family: Xeon® E",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® E Processor"
+   ]
+  },
+  {
+   "name": "BroLin v29 running on Intel® Xeon® Silver 4110",
+   "details": [
+    "os: BroLin v29",
+    "processor: Intel® Xeon® Silver 4110 (Skylake-SP)",
+    "  family: Xeon® Silver",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® Scalable Processors"
+   ]
+  },
+  {
+   "name": "Debian 11 running on Intel Xeon E5-4667v4",
+   "details": [
+    "os: Debian 11",
+    "cpu: Intel Xeon E5-4667v4"
+   ]
+  },
+  {
+   "name": "FreeBSD 13 running on Intel Xeon E5-4667v4",
+   "details": [
+    "os: FreeBSD 13",
+    "cpu: Intel Xeon E5-4667v4"
+   ]
+  },
+  {
+   "name": "iOS 16 running on Apple A15 Bionic",
+   "details": [
+    "cpu: Apple A15 Bionic",
+    "os: iOS 16"
+   ]
+  },
+  {
+   "name": "iPadOS 17 running on Apple M1",
+   "details": [
+    "cpu: Apple M1",
+    "os: iPadOS 17"
+   ]
+  },
+  {
+   "name": "macOS 13 (Ventura) running on Apple M2",
+   "details": [
+    "cpu: Apple M2",
+    "os: macOS 13 (Ventura)"
+   ]
+  },
+  {
+   "name": "Oracle Solaris 11.4 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: Oracle Solaris 11.4"
+   ]
+  },
+  {
+   "name": "RapidFort with Ubuntu 22.04 LTS running on AMD EPYC™ 9254",
+   "details": [
+    "processor: AMD EPYC™ 9254 (Zen 4)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series Processors",
+    "os: RapidFort with Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "RapidFort with Ubuntu 22.04 LTS running on AMD EPYC™ 9354",
+   "details": [
+    "processor: AMD EPYC™ 9354 (Zen 4)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series processors",
+    "os: RapidFort with Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "RapidFort with Ubuntu 22.04 LTS running on AMD EPYC™ 9754",
+   "details": [
+    "processor: AMD EPYC™ 9754 (Zen 4c)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series processors",
+    "os: RapidFort with Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "RapidFort with Ubuntu 22.04 LTS running on Intel® Xeon® 6505P",
+   "details": [
+    "processor: Intel® Xeon® 6505P (Granite Rapids)",
+    "  family: Xeon®",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® 6 processors",
+    "os: RapidFort with Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "RapidFort with Ubuntu 22.04 LTS running on Intel® Xeon® E-2468",
+   "details": [
+    "processor: Intel® Xeon® E-2468 (Raptor Lake)",
+    "  family: Xeon® E",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® E Processor",
+    "os: RapidFort with Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "RapidFort with Ubuntu 22.04 LTS running on Intel® Xeon® Silver 4110",
+   "details": [
+    "processor: Intel® Xeon® Silver 4110 (Skylake-SP)",
+    "  family: Xeon® Silver",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® Scalable Processors",
+    "os: RapidFort with Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "Red Hat Enterprise Linux 9 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: Red Hat Enterprise Linux 9"
+   ]
+  },
+  {
+   "name": "Rocky Linux 8.10 running on Intel® Atom® C2538",
+   "details": [
+    "processor: Intel® Atom® C2538 (Rangeley)",
+    "  family: Intel® Atom® Processor C Series",
+    "  manufacturer: Intel Corporation",
+    "  series: C2000",
+    "os: Rocky Linux 8.10"
+   ]
+  },
+  {
+   "name": "Rocky Linux 8.10 running on Intel® Atom® C2758",
+   "details": [
+    "processor: Intel® Atom® C2758 (Rangeley)",
+    "  family: Intel® Atom® Processor C Series",
+    "  manufacturer: Intel Corporation",
+    "  series: C2000",
+    "os: Rocky Linux 8.10"
+   ]
+  },
+  {
+   "name": "Rocky Linux 8.10 running on Intel® Atom® C3338",
+   "details": [
+    "processor: Intel® Atom® C3338 (Denverton)",
+    "  family: Intel® Atom® Processor C Series",
+    "  manufacturer: Intel Corporation",
+    "  series: C3000",
+    "os: Rocky Linux 8.10"
+   ]
+  },
+  {
+   "name": "Rocky Linux 8.10 running on Intel® Atom® C3538",
+   "details": [
+    "processor: Intel® Atom® C3538 (Denverton)",
+    "  family: Intel® Atom® Processor C Series",
+    "  manufacturer: Intel Corporation",
+    "  series: C3000",
+    "os: Rocky Linux 8.10"
+   ]
+  },
+  {
+   "name": "Rocky Linux 8.10 running on Intel® Pentium® D1519",
+   "details": [
+    "processor: Intel® Pentium® D1519 (Broadwell)",
+    "  family: Intel® Pentium® Processor D Series",
+    "  manufacturer: Intel Corporation",
+    "  series: Broadwell-DE",
+    "os: Rocky Linux 8.10"
+   ]
+  },
+  {
+   "name": "Rocky Linux 8.10 running on Intel® Xeon® D-1518",
+   "details": [
+    "processor: Intel® Xeon® D-1518 (Broadwell)",
+    "  family: Intel® Xeon® Processor D Series",
+    "  manufacturer: Intel Corporation",
+    "  series: D-1500",
+    "os: Rocky Linux 8.10"
+   ]
+  },
+  {
+   "name": "Rocky Linux 8.10 running on Intel® Xeon® D-1527",
+   "details": [
+    "processor: Intel® Xeon® D-1527 (Broadwell)",
+    "  family: Intel® Xeon® Processor D Series",
+    "  manufacturer: Intel Corporation",
+    "  series: D-1500",
+    "os: Rocky Linux 8.10"
+   ]
+  },
+  {
+   "name": "Rocky Linux 9 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: Rocky Linux 9"
+   ]
+  },
+  {
+   "name": "Rocky Linux 9.8 running on Intel Xeon Silver 4416+",
+   "details": [
+    "cpu: Intel Xeon Silver 4416+ (Sapphire Rapids)",
+    "  family: Intel Xeon Scalable",
+    "  manufacturer: Intel Corporation",
+    "  series: Xeon Silver",
+    "os: Rocky Linux 9.8",
+    "  family: Rocky Linux 9",
+    "  manufacturer: Rocky Enterprise Software Foundation",
+    "  series: Blue Onyx"
+   ]
+  },
+  {
+   "name": "SUSE Linux Enterprise Server 15 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: SUSE Linux Enterprise Server 15"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 LTS running on AMD EPYC™ 9254",
+   "details": [
+    "processor: AMD EPYC™ 9254 (Zen 4)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series Processors",
+    "os: Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 LTS running on AMD EPYC™ 9354",
+   "details": [
+    "processor: AMD EPYC™ 9354 (Zen 4)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series processors",
+    "os: Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 LTS running on AMD EPYC™ 9754",
+   "details": [
+    "processor: AMD EPYC™ 9754 (Zen 4c)",
+    "  family: EPYC™",
+    "  manufacturer: AMD",
+    "  series: EPYC™ 9004 Series processors",
+    "os: Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 LTS running on Intel® Xeon® 6505P",
+   "details": [
+    "processor: Intel® Xeon® 6505P (Granite Rapids)",
+    "  family: Xeon®",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® 6 processors",
+    "os: Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 LTS running on Intel® Xeon® E-2468",
+   "details": [
+    "processor: Intel® Xeon® E-2468 (Raptor Lake)",
+    "  family: Xeon® E",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® E Processor",
+    "os: Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 LTS running on Intel® Xeon® Silver 4110",
+   "details": [
+    "processor: Intel® Xeon® Silver 4110 (Skylake-SP)",
+    "  family: Xeon® Silver",
+    "  manufacturer: Intel Corporation",
+    "  series: Intel® Xeon® Scalable Processors",
+    "os: Ubuntu 22.04 LTS"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: Ubuntu 22.04"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 running on Intel® Xeon® D-1527",
+   "details": [
+    "processor: Intel® Xeon® D-1527 (Broadwell)",
+    "  family: Xeon® D",
+    "  manufacturer: Intel Corporation",
+    "  series: D-1500 Series",
+    "os: Ubuntu 22.04"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 running on Intel® Xeon® D-1541",
+   "details": [
+    "processor: Intel® Xeon® D-1541 (Broadwell)",
+    "  family: Xeon® D",
+    "  manufacturer: Intel Corporation",
+    "  series: D-1500 Series",
+    "os: Ubuntu 22.04"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 running on Intel® Xeon® D-1736NT",
+   "details": [
+    "processor: Intel® Xeon® D-1736NT (Ice Lake)",
+    "  family: Xeon® D",
+    "  manufacturer: Intel Corporation",
+    "  series: D-1700 Series",
+    "os: Ubuntu 22.04"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 running on Intel® Xeon® Gold 5218",
+   "details": [
+    "processor: Intel® Xeon® Gold 5218 (Cascade Lake)",
+    "  family: Xeon® Gold",
+    "  manufacturer: Intel Corporation",
+    "  series: 5200 Series",
+    "os: Ubuntu 22.04"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 running on Intel® Xeon® Gold 6230",
+   "details": [
+    "processor: Intel® Xeon® Gold 6230 (Cascade Lake)",
+    "  family: Xeon® Gold",
+    "  manufacturer: Intel Corporation",
+    "  series: 6200 Series",
+    "os: Ubuntu 22.04"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 running on Intel® Xeon® Platinum 8461V",
+   "details": [
+    "processor: Intel® Xeon® Platinum 8461V (Sapphire Rapids)",
+    "  family: Xeon® Platinum",
+    "  manufacturer: Intel Corporation",
+    "  series: 8400 Series",
+    "os: Ubuntu 22.04"
+   ]
+  },
+  {
+   "name": "Ubuntu 22.04 running on Intel® Xeon® Silver 4214",
+   "details": [
+    "processor: Intel® Xeon® Silver 4214 (Cascade Lake)",
+    "  family: Xeon® Silver",
+    "  manufacturer: Intel Corporation",
+    "  series: 4200 Series",
+    "os: Ubuntu 22.04"
+   ]
+  },
+  {
+   "name": "Windows 10 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: Windows 10"
+   ]
+  },
+  {
+   "name": "Windows 11 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: Windows 11"
+   ]
+  },
+  {
+   "name": "Windows Server 2019 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: Windows Server 2019"
+   ]
+  },
+  {
+   "name": "Windows Server 2022 running on Intel Xeon E5-4667v4",
+   "details": [
+    "cpu: Intel Xeon E5-4667v4",
+    "os: Windows Server 2022"
+   ]
+  },
+  {
+   "name": "Yocto Linux 4.19 running on Arm Cortex A9",
+   "details": [
+    "cpu: ARM Cortex A9 (32-bit ARMv7)",
+    "  ARM Cortex A9",
+    "  family: ARM Cortex",
+    "  manufacturer: Arm",
+    "  series: Cortex-A",
+    "os: Yocto Linux 4.19"
+   ]
+  },
+  {
+   "name": "Yocto Linux 5.15 running on Arm Cortex A53",
+   "details": [
+    "cpu: ARM Cortex A53 (64-bit ARMv8)",
+    "  ARM Cortex A53",
+    "  family: Cortex-A",
+    "  manufacturer: Arm",
+    "  series: Cortex-A53",
+    "os: Yocto Linux 5.15"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 4,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 5,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 6,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 7,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 8,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 9,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 10,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 11,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 12,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 13,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 14,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 15,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 16,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 17,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 18,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 19,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 20,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 21,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 22,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 23,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 24,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 25,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 26,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 27,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 28,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 29,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 30,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 31,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 32,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 33,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 34,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 35,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 36,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 37,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 38,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 39,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 40,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 41,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 42,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 43,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 44,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 45,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 46,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 47,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 48,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 49,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 50,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

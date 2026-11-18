@@ -1,0 +1,43 @@
+{
+ "cavp_id": "34338",
+ "cavp_cert": "A1729",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34338",
+ "implementation": "AES-CMAC HW",
+ "product_id": "14230",
+ "description": "This is an AES-CMAC used exclusively as conditioning component (vetted) inside an STM32 TRNG HW peripheral. Version number is the concatenation of AES-ECB core and AES-CMAC chaining mode.",
+ "version": "184_98",
+ "type": "FIRMWARE",
+ "first_validated": "7/22/2021",
+ "vendor": "STMicroelectronics",
+ "vendor_website": "http://www.st.com",
+ "oes": [
+  {
+   "name": "Verilog Simulator",
+   "details": [
+    "firmware: Cadence xcelium 19.03.010"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,88 @@
+{
+ "esv": 1,
+ "cert": "E1",
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/entropy-validations/certificate/1",
+ "implementation": "NetApp CryptoMod",
+ "standard": "SP 800-90B",
+ "description": "CPU Jitter RNG v3.4.0",
+ "version": "3.0",
+ "noise_source": "Non-Physical",
+ "reuse": "Reuse restricted to vendor",
+ "entries": [
+  {
+   "bits_per_output": "Full entropy.",
+   "output_bits": "256",
+   "oes": [
+    "ONTAP 9.11.1 running on an AFF A250 running on Intel® Xeon® D-2164IT (Skylake) without PAA",
+    "ONTAP 9.11.1 running on an AFF A400 running on Intel® Xeon® Silver 4210 (Cascade Lake) with PAA",
+    "ONTAP 9.11.1 running on an AFF A900 running on Intel® Xeon® Platinum 8352Y (Ice Lake) with PAA"
+   ],
+   "conditioning": [
+    {
+     "cavp_cert": "A2640",
+     "cavp_id": "35251",
+     "algorithm": "SHA3-256"
+    }
+   ]
+  },
+  {
+   "bits_per_output": "Full entropy.",
+   "output_bits": "256",
+   "oes": [
+    "ONTAP 9.16.1 on Intel® Xeon® Bronze 3508U (Sapphire Rapids) without PAA",
+    "ONTAP 9.16.1 on Intel® Xeon® D-1557 (Broadwell) without PAA",
+    "ONTAP 9.16.1 on Intel® Xeon® D-1735TR (Ice Lake) without PAA",
+    "ONTAP 9.16.1 on Intel® Xeon® D-2164IT (Skylake) without PAA",
+    "ONTAP 9.16.1 on Intel® Xeon® Gold 6438N (Sapphire Rapids) without PAA",
+    "ONTAP 9.16.1 on Intel® Xeon® Platinum 8352Y (Ice Lake) without PAA",
+    "ONTAP 9.16.1 on Intel® Xeon® Silver 4114 (Skylake) without PAA",
+    "ONTAP 9.16.1 on Intel® Xeon® Silver 4210 (Cascade Lake) without PAA"
+   ],
+   "conditioning": [
+    {
+     "cavp_cert": "A6624",
+     "cavp_id": "39234",
+     "algorithm": "SHA3-256"
+    }
+   ]
+  }
+ ],
+ "vendor": "NetApp, Inc.",
+ "vendor_info": {
+  "name": "NetApp, Inc.",
+  "website": "http://www.netapp.com",
+  "address": [
+   "3060 Olsen Drive",
+   "San Jose, California 95128",
+   "USA"
+  ],
+  "contacts": []
+ },
+ "files": [
+  {
+   "label": "Public Use Document",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/entropy/E1_PublicUse.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/29/2022",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "10/8/2025",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first": "8/29/2022",
+ "last": "10/8/2025",
+ "labs": [
+  "Lightship Security, Inc."
+ ],
+ "list": {
+  "esv": 1,
+  "vendor": "NetApp, Inc.",
+  "implementation": "NetApp CryptoMod",
+  "date": "8/29/2022"
+ }
+}

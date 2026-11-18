@@ -1,0 +1,40 @@
+{
+ "cavp_id": "39941",
+ "cavp_cert": "A7331",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=39941",
+ "implementation": "SIXG301M114LIHB0",
+ "product_id": "20102",
+ "description": "The SixG301x family includes AES-CBC-MAC vetted conditioning to smooth raw noise output from the SixG301x TRNG.",
+ "version": "B",
+ "type": "HARDWARE",
+ "first_validated": "8/14/2025",
+ "vendor": "Silicon Laboratories",
+ "vendor_website": "http://www.silabs.com",
+ "oes": [
+  {
+   "name": "SixG301x",
+   "details": [
+    "Hardware: SixG301x"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 128-896 Increment 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

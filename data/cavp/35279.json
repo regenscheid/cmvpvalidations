@@ -1,0 +1,59 @@
+{
+ "cavp_id": "35279",
+ "cavp_cert": "A2668",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35279",
+ "implementation": "IP_DRNG2.0_PIC12",
+ "product_id": "15140",
+ "description": "DRNG2.0 PIC12 Configuration for 11th Generation Intel® Core™ Processor (TIGER LAKE)",
+ "version": "DRNG2.0 PIC12",
+ "type": "HARDWARE",
+ "first_validated": "6/24/2022",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Intel Corporation Intel® Core™ TIGER LAKE CPU-4-96 FCBGA1449 Intel® Core™ i7-1165G7 Processor",
+   "details": [
+    "processor: Intel® Core™ i7-1165G7 Processor",
+    "family: Intel® Core™ Processors",
+    "series: Intel® Core™ TIGER LAKE CPU-4-96 FCBGA1449",
+    "manufacturer: Intel® Corporation"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 512"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

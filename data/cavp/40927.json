@@ -1,0 +1,102 @@
+{
+ "cavp_id": "40927",
+ "cavp_cert": "A8317",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40927",
+ "implementation": "SAP SE Userspace CPU Time Jitter RNG Entropy Source (HMAC DRBG Conditioning Component)",
+ "product_id": "21138",
+ "description": "HMAC DRBG Conditioning Component for the SAP SE Userspace CPU Time Jitter RNG Entropy Source The following cipher implementation is covered: Generic C non-optimized HMAC DRBG Conditioning Component implementation.",
+ "version": "3.4.0",
+ "type": "SOFTWARE",
+ "first_validated": "4/29/2026",
+ "vendor": "SAP SE",
+ "vendor_website": "https://www.sap.com",
+ "oes": [
+  {
+   "name": "Garden Linux 1877 on EC2 c8g.metal-24xl on Amazon Web Services (AWS) Graviton4 AWS Graviton4",
+   "details": [
+    "processor: AWS Graviton4",
+    "  Processor AWS Graviton4 (processor family ARM64) from Amazon Web Services (AWS)",
+    "  family: ARM64",
+    "  manufacturer: Amazon Web Services (AWS)",
+    "  series: Graviton4",
+    "software: Garden Linux 1877 on EC2 c8g.metal-24xl",
+    "  Linux distribution developed by SAP SE."
+   ]
+  },
+  {
+   "name": "Garden Linux 1877 on EC2 c8i.metal-48xl on Intel® Granite Rapids Xeon® 6975P-C",
+   "details": [
+    "software: Garden Linux 1877 on EC2 c8i.metal-48xl",
+    "  Linux distribution developed by SAP SE.",
+    "processor: Xeon® 6975P-C",
+    "  Processor Xeon® 6975P-C (processor family x86_64) from Intel®",
+    "  family: x86_64",
+    "  manufacturer: Intel®",
+    "  series: Granite Rapids"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,41 @@
+{
+ "cavp_id": "40865",
+ "cavp_cert": "A8255",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40865",
+ "implementation": "Microsoft DPU-SBP-F2 rev A0",
+ "product_id": "21075",
+ "description": "Hardware engine implementing the AES-CBC-MAC Conditioner.",
+ "version": "rev A0",
+ "type": "HARDWARE",
+ "first_validated": "4/8/2026",
+ "vendor": "Microsoft Corporation",
+ "vendor_website": "http://www.microsoft.com",
+ "oes": [
+  {
+   "name": "Microsoft DPU-SBP-F2 rev A0",
+   "details": [
+    "puf_rom: 24797-f2-fips",
+    "firmware: 25130-f2-fips"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 128-1920 Increment 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}
