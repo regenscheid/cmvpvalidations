@@ -2,7 +2,7 @@
 
 A searchable index of NIST CMVP certificates, with each certificate's approved algorithms linked
 to the CAVP validations it cites, down to tested capabilities and operating environments.
-Published at https://regenscheid.github.io/cmvpvalidations/ and kept current by a scheduled GitHub Action.
+Published at https://cmvpcerts.net/ and kept current by a scheduled GitHub Action.
 
 Scope today: every FIPS 140-3, FIPS 140-2 and FIPS 140-1 certificate (Active, Historical, Revoked). The
 daily Action crawls FIPS 140-3 only; FIPS 140-2 and 140-1 have no active certificates left and were captured

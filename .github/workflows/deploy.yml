@@ -47,9 +47,10 @@ jobs:
         run: python3 -I scripts/build_site_data.py
 
       - name: Build site
-        # BASE_PATH must match the Pages URL: /<repo>/ for a project site, / for a custom domain.
+        # BASE_PATH must match the Pages URL: / for the custom domain (cmvpcerts.net; the github.io
+        # address redirects there), /<repo>/ for a plain project site.
         env:
-          BASE_PATH: /${{ github.event.repository.name }}/
+          BASE_PATH: /
         run: pnpm build
 
       - uses: actions/upload-pages-artifact@v3

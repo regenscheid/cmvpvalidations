@@ -3,9 +3,9 @@ import react from "@vitejs/plugin-react";
 import tailwind from "@tailwindcss/vite";
 import { tanstackRouter } from "@tanstack/router-plugin/vite";
 
-// Published as a GitHub Pages project site at https://regenscheid.github.io/cmvpvalidations/, so the
-// production base is the repo subpath. Set BASE_PATH=/ for a custom domain. Dev/tests use "/".
-const buildBase = process.env["BASE_PATH"] ?? "/cmvpvalidations/";
+// Published on GitHub Pages at the custom domain https://cmvpcerts.net/, so the production base is "/".
+// Set BASE_PATH=/<repo>/ to publish as a plain project site instead. Dev/tests use "/".
+const buildBase = process.env["BASE_PATH"] ?? "/";
 
 export default defineConfig(({ command }) => ({
   base: command === "build" ? buildBase : "/",
