@@ -1,0 +1,101 @@
+{
+ "cavp_id": "34087",
+ "cavp_cert": "A1478",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34087",
+ "implementation": "HSSD Enterprise SSD",
+ "product_id": "13945",
+ "description": "Huawei's SSD product with FIPS approved encryption function and provides users with secure encrypted data storage service and authority management service.",
+ "version": "110",
+ "type": "HARDWARE",
+ "first_validated": "6/2/2021",
+ "vendor": "HUAWEI TECHNOLOGIES Co. Ltd.",
+ "vendor_website": "https://www.huawei.com/",
+ "oes": [
+  {
+   "name": "Hi1812e V110",
+   "details": [
+    "Processor: TRNG-IP-76",
+    "  Hardware module implemented in the Hi1812e V110 ASIC"
+   ]
+  },
+  {
+   "name": "Hi1812e V110",
+   "details": [
+    "Hardware: Hi1812e V110",
+    "  ASIC of the HSSD V6 family"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Payload Length: 128-65408 Increment 128",
+    "Tweak Mode: Hex"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 384",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 768-16128 Increment 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

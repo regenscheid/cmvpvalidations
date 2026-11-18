@@ -1,0 +1,108 @@
+{
+ "cavp_id": "21806",
+ "cavp_cert": "RSA 644",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21806",
+ "implementation": "IBM z/OS® Cryptographic Services ICSF PKCS #11",
+ "product_id": "7565",
+ "description": "ICSF is a software element of z/OS that works with hardware cryptographic features and the Security Server (RACF) to provide secure, high-speed cryptographic services in the z/OS environment. ICSF, which runs as a started task, provides the application programming interfaces by which applications request the cryptographic services.",
+ "version": "5694-A01 OA32012",
+ "type": "FIRMWARE",
+ "first_validated": "4/21/2010",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "IBM z/OS V1.11 on IBM System z10 Enterprise Class (z10 EC)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 1536, 2048, 3072, 4096",
+    "Public Key Value: 3, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048, 3072, 4096",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,34 @@
+{
+ "cavp_id": "11350",
+ "cavp_cert": "AES 2035",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11350",
+ "implementation": "Nitrox III AES-GCM",
+ "product_id": "215",
+ "description": "NITROX III chips implement SHA1/SHA2, 3DES/AES256 CBC, ModMul/ModEx/RSA, GCM and CTR modes, and SP800-90A DRBG. Perf: 5 to 30 Gbps encrypt/hash; 35K to 200K RSA 1024b ops/sec; 6K to 35K RSA 2048b ops/sec. NITROX III microcode also implements protocol-specific acceleration for IPSec and SSL.",
+ "version": "Nitrox III series die, v1.1 Nitrox III GCM, r72406 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "5/25/2012",
+ "vendor": "Cavium, Inc.",
+ "vendor_website": "http://www.cavium.com",
+ "oes": [
+  {
+   "name": "Cavium Nitrox III",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 1024",
+    "AAD Length: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

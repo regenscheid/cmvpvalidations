@@ -1,0 +1,75 @@
+{
+ "cavp_id": "27712",
+ "cavp_cert": "AES 2078",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27712",
+ "implementation": "3eTI MPC8378E Cryptographic Core",
+ "product_id": "282",
+ "description": "Crypto Algorithms running on MPC8378E hardware for accelerated performance.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/25/2012",
+ "vendor": "Ultra Electronics 3eTI",
+ "vendor_website": "http://www.ultra-3eti.com",
+ "oes": [
+  {
+   "name": "Freescale MPC8378E",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 176-240"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 64-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 1024",
+    "AAD Length: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,67 @@
+{
+ "cavp_id": "27108",
+ "cavp_cert": "ECDSA 837",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27108",
+ "implementation": "P384 Firmware",
+ "product_id": "1622",
+ "description": "AES Library implements all keys sizes in the firmware and supports ECB, CBC and XTS. SHA2 Library implements SHA224, 256, 384 and 512 in the firmware. ECCLib implements ECDSA and ECDH for P256, P384 and P521. HRNG implements the hash DRBG using SHA512.",
+ "version": "03.00.0D (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/19/2016",
+ "vendor": "SPYRUS Inc.",
+ "vendor_website": "http://www.spyrus.com",
+ "oes": [
+  {
+   "name": "ARM9 Vendor NXP Part No. LPC3131",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

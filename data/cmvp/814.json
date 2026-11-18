@@ -1,0 +1,133 @@
+{
+ "cert": 814,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/814",
+ "module": "Network Security Services (NSS) Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Network Security Services (NSS) is a set of open source C libraries designed to support cross-platform development of security-enabled applications. NSS implements major crypto algorithms and Internet security standards, and supports smartcards and hardware crypto devices. NSS is available free of charge under the Mozilla Public License, the GNU General Public License, and the GNU Lesser General Public License. For more information, see http://www.mozilla.org/projects/security/pki/nss/",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux Version 4 Update 1 AS on IBM xSeries 336 with Intel Xeon CPU",
+  "Trusted Solaris 8 4/01 on Sun Blade 2500 Workstation with UltraSPARC IIIi CPU"
+ ],
+ "software_versions": "3.11.4",
+ "product_url": "http://wiki.mozilla.org/NSS",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 352",
+   "cavp_id": "18399",
+   "cavp_ref": "AES:352"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 172",
+   "cavp_id": "12300",
+   "cavp_ref": "DSA:172"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 30",
+   "cavp_id": "17387",
+   "cavp_ref": "ECDSA:30"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 152",
+   "cavp_id": "14321",
+   "cavp_ref": "HMAC:152"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 208",
+   "cavp_id": "6652",
+   "cavp_ref": "RNG:208"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 152",
+   "cavp_id": "21191",
+   "cavp_ref": "RSA:152"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 426",
+   "cavp_id": "6028",
+   "cavp_ref": "SHS:426"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 469",
+   "cavp_id": "29317",
+   "cavp_ref": "TDES:469"
+  }
+ ],
+ "vendor": "Red Hat®, Inc. and Sun Microsystems, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc. and Sun Microsystems, Inc.",
+  "website": "http://www.mozilla.org/projects/security/pki/nss/f",
+  "address": [
+   "4150 Network Circle",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Glen Beasley"
+   },
+   {
+    "name": "Wan-Teh Chang"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp814.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt814.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/27/2007",
+   "type": "Initial",
+   "lab": "Aspect"
+  }
+ ],
+ "first_validated": "8/27/2007",
+ "last_updated": "8/27/2007",
+ "labs": "Aspect",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp814.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RC2; RC4; MD2; DES; MD5; RSA (key wrapping; key establishment methodology provides between 112 and 201 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength))"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 814,
+  "vendor": "Red Hat®, Inc. and Sun Microsystems, Inc.",
+  "module": "Network Security Services (NSS) Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/27/2007"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,184 @@
+{
+ "cavp_id": "31350",
+ "cavp_cert": "C953",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31350",
+ "implementation": "TSIP",
+ "product_id": "11307",
+ "description": "RX65N and RX651 are general purpose MCU which equipped TSIP. The TSIP is hardware which consists of cryptographic accelerator, random number generator and access management circuit along with chip-unique-ID. RX65N and RX651 can provide secure cryptographic functions including strong key management by using TSIP.",
+ "version": "RX Family RX65N 2.00-pre",
+ "type": "HARDWARE",
+ "first_validated": "7/25/2019",
+ "vendor": "Renesas Electronics Corporation",
+ "vendor_website": "https://www.renesas.com/",
+ "oes": [
+  {
+   "name": "TSIP",
+   "details": [
+    "device: TSIP"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-256",
+    "C953 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 16, 24, 128",
+    "    Message Length: 128, 256, 264, 296, 524288",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 16, 24, 128",
+    "    Message Length: 80, 120, 128, 384, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 16, 24, 128",
+    "    Message Length: 0, 256, 264, 296, 512, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 16, 24, 128",
+    "    Message Length: 0, 80, 120, 128, 384, 524288"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 8, 96, 1024",
+    "Payload Length: 256, 408",
+    "AAD Length: 0, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 8, 96, 1024",
+    "AAD Length: 0, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 128",
+    "C953 (AES)"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128",
+    "    Supported Lengths: 128",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "C953 (AES)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "C953 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "C953 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

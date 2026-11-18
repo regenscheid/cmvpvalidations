@@ -1,0 +1,59 @@
+{
+ "cavp_id": "22579",
+ "cavp_cert": "Component 1553",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22579",
+ "implementation": "SUSE NSS on x86 without AES-NI",
+ "product_id": "8821",
+ "description": "SUSE Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "11/30/2017",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 SP2 on Intel Xeon E5 family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,151 @@
+{
+ "cert": 3638,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3638",
+ "module": "Supermicro FIPS Object Module for OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #3503.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Supermicro FIPS Object Module for OpenSSL is a general-purpose cryptographic module integrated in Supermicro products to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+ "tested_configurations": [
+  "Linux 3.18 running on Supermicro FatTwin SYS-F619P2-FT+ with AST2500 (ARM11) (single user mode)",
+  "Linux 3.18 running on Supermicro Ultra SYS-1029U-TN12R+ with AST2500 (ARM11)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1708, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1708",
+   "cavp_id": "32497",
+   "cavp_ref": "C:1708"
+  }
+ ],
+ "vendor": "Super Micro Computer, Inc.",
+ "vendor_info": {
+  "name": "Super Micro Computer, Inc.",
+  "website": "http://www.supermicro.com",
+  "address": [
+   "980 Rock Avenue",
+   "San Jose, CA 95131",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ken Lui"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3638.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202020_160420.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/31/2020",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/10/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "3/31/2020",
+ "last_updated": "7/10/2020",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3638.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1708, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3638,
+  "vendor": "Super Micro Computer, Inc.",
+  "module": "Supermicro FIPS Object Module for OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "03/31/2020",
+   "07/10/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

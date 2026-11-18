@@ -1,0 +1,38 @@
+{
+ "cavp_id": "18271",
+ "cavp_cert": "AES 169",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18271",
+ "implementation": "AES Algorithm",
+ "product_id": "4237",
+ "description": "The AES Algorithm operates in an FPGA in the Counter Mode. The counter input is based on an incrementing counter. The algorithms are stored in memory operating in a FIPS-approved mode. One of the four algorithms is selected for use and loaded. The module accepts up to eight keys which are externally generated and loaded.",
+ "version": "091-3192-001 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/7/2004",
+ "vendor": "Rockwell Collins, Inc.",
+ "vendor_website": "http://www.rockwellcollins.com",
+ "oes": [
+  {
+   "name": "Windows XP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

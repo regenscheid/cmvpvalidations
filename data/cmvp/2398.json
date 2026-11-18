@@ -1,0 +1,642 @@
+{
+ "cert": 2398,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2398",
+ "module": "OpenSSL FIPS Object Module SE",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The OpenSSL FIPS Object Module SE is a general purpose cryptographic module delivered as open source code. It is designed for ease of use with the popular OpenSSL cryptographic library and toolkit and is available for use without charge for a wide variety of platforms. The basic validation can also be extended quickly and affordably to accommodate new platforms and many types of modifications.",
+ "tested_configurations": [
+  "AIX 6.1 32-bit running on IBM POWER 7 (PPC) (IBM XL C/C++ for AIX Compiler Version V13.1)",
+  "AIX 6.1 32-bit running on IBM POWER 7 (PPC) with optimizations (IBM XL C/C++ for AIX Compiler Version V10.1)",
+  "AIX 6.1 64-bit running on IBM POWER 7 (PPC) (IBM XL C/C++ for AIX Compiler Version V13.1)",
+  "AIX 6.1 64-bit running on IBM POWER 7 (PPC) with optimizations (IBM XL C/C++ for AIX Compiler Version V10.1)",
+  "AIX 7.1 32-bit running on IBM POWER 7 (PPC) (IBM XL C/C++ for AIX Compiler Version V13.1)",
+  "AIX 7.1 32-bit running on IBM Power8 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.1 32-bit running on IBM Power8 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.1 64-bit running on IBM POWER 7 (PPC) (IBM XL C/C++ for AIX Compiler Version V13.1)",
+  "AIX 7.1 64-bit running on IBM Power8 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.1 64-bit running on IBM Power8 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 32-bit running on IBM Power7 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 32-bit running on IBM Power8 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 32-bit running on IBM Power8 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 64-bit running on IBM Power7 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 64-bit running on IBM Power8 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 64-bit running on IBM Power8 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "Android 5.0 32-bit running on Qualcomm APQ8084 (ARMv7) with NEON (gcc Compiler Version 4.9)",
+  "Android 5.0 32-bit running on Qualcomm APQ8084 (ARMv7) without NEON (gcc Compiler Version 4.9)",
+  "Android 5.0 64-bit running on SAMSUNG Exynos7420 (ARMv8) with NEON and Crypto Extensions (gcc Compiler Version 4.9)",
+  "Android 5.0 64-bit running on SAMSUNG Exynos7420 (ARMv8) without NEON and Crypto Extensions (gcc Compiler Version 4.9)",
+  "DataGravity Discovery Series OS V2.0 running on Intel Xeon E5-2420 (x86) with PAA (gcc Compiler Version 4.7.2)",
+  "DataGravity Discovery Series OS V2.0 running on Intel Xeon E5-2420 (x86) without PAA (gcc Compiler Version 4.7.2)",
+  "Debian 9 running on Intel Atom E3845 (x86) with PAA (gcc Compiler Version 6.3.0)",
+  "Debian 9 running on Intel Atom E3845 (x86) without PAA (gcc Compiler Version 6.3.0)",
+  "ExtremeXOS-Linux 3.1 running on Cavium Octeon II (MIPS) (gcc Compiler Version 4.9.2)",
+  "ExtremeXOS-Linux 3.18 32-bit running on Intel Atom C2558 (x86) with PAA (gcc Compiler Version 4.9.2)",
+  "ExtremeXOS-Linux 3.18 32-bit running on Intel Atom C2558 (x86) without PAA (gcc Compiler Version 4.9.2)",
+  "ExtremeXOS-Linux 3.18 running on Cavium Octeon II (MIPS) (gcc Compiler Version 4.9.2)",
+  "iOS 8.1 32-bit running on Apple A7 (ARMv8) with NEON (clang Compiler Version 600.0.56)",
+  "iOS 8.1 32-bit running on Apple A7 (ARMv8) without NEON (clang Compiler Version 600.0.56)",
+  "iOS 8.1 64-bit running on Apple A7 (ARMv8) with NEON and Crypto Extensions (clang Compiler Version 600.0.56)",
+  "iOS 8.1 64-bit running on Apple A7 (ARMv8) without NEON and Crypto Extensions (clang Compiler Version 600.0.56)",
+  "Linux 3.10 32-bit running on Intel Atom E3845 (x86) with PAA (gcc Compiler Version 4.8.1)",
+  "Linux 3.10 32-bit running on Intel Atom E3845 (x86) without PAA (gcc Compiler Version 4.8.1)",
+  "Linux 3.12 running on NXP T2080 (PPC) (gcc Compiler Version 4.9.2)",
+  "SurfWare 7.2 running on TI c64 DSP (TMS320C6x Compiler Version 6.0.19)",
+  "TS-Linux 2.4 running on Arm920Tid (ARMv4) (gcc Compiler Version 4.3.2)",
+  "Ubuntu 12.04 running on Intel Xeon E5-2430L (x86) with PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 12.04 running on Intel Xeon E5-2430L (x86) without PAA (gcc Compiler Version 4.6.3)",
+  "VxWorks 6.7 running on Intel Core 2 Duo (x86) (gcc Compiler Version 4.1.2)",
+  "VxWorks 6.9 running on Freescale P2020 (PPC) (gcc Compiler Version 4.3.3) (single-user mode)"
+ ],
+ "software_versions": "2.0.9, 2.0.10, 2.0.11, 2.0.12, 2.0.13, 2.0.14, 2.0.15 or 2.0.16",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3090",
+   "cavp_id": "5307",
+   "cavp_ref": "AES:3090"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3264",
+   "cavp_id": "22452",
+   "cavp_ref": "AES:3264"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3451",
+   "cavp_id": "15424",
+   "cavp_ref": "AES:3451"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3751",
+   "cavp_id": "16709",
+   "cavp_ref": "AES:3751"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3990",
+   "cavp_id": "20692",
+   "cavp_ref": "AES:3990"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4141",
+   "cavp_id": "21402",
+   "cavp_ref": "AES:4141"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4391",
+   "cavp_id": "18352",
+   "cavp_ref": "AES:4391"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4469",
+   "cavp_id": "23293",
+   "cavp_ref": "AES:4469"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 372",
+   "cavp_id": "12331",
+   "cavp_ref": "Component:372"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 472",
+   "cavp_id": "1617",
+   "cavp_ref": "Component:472"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 534",
+   "cavp_id": "19744",
+   "cavp_ref": "Component:534"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 699",
+   "cavp_id": "16479",
+   "cavp_ref": "Component:699"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 814",
+   "cavp_id": "13625",
+   "cavp_ref": "Component:814"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 947",
+   "cavp_id": "1096",
+   "cavp_ref": "Component:947"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1094",
+   "cavp_id": "13395",
+   "cavp_ref": "Component:1094"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1181",
+   "cavp_id": "21885",
+   "cavp_ref": "Component:1181"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1027",
+   "cavp_id": "28158",
+   "cavp_ref": "DRBG:1027"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 607",
+   "cavp_id": "2298",
+   "cavp_ref": "DRBG:607"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 723",
+   "cavp_id": "20042",
+   "cavp_ref": "DRBG:723"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 845",
+   "cavp_id": "1896",
+   "cavp_ref": "DRBG:845"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1182",
+   "cavp_id": "10121",
+   "cavp_ref": "DRBG:1182"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1256",
+   "cavp_id": "8838",
+   "cavp_ref": "DRBG:1256"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1414",
+   "cavp_id": "23261",
+   "cavp_ref": "DRBG:1414"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1451",
+   "cavp_id": "1775",
+   "cavp_ref": "DRBG:1451"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1040",
+   "cavp_id": "26696",
+   "cavp_ref": "DSA:1040"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 896",
+   "cavp_id": "30021",
+   "cavp_ref": "DSA:896"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 933",
+   "cavp_id": "7706",
+   "cavp_ref": "DSA:933"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 970",
+   "cavp_id": "17340",
+   "cavp_ref": "DSA:970"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1085",
+   "cavp_id": "9071",
+   "cavp_ref": "DSA:1085"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1124",
+   "cavp_id": "6571",
+   "cavp_ref": "DSA:1124"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1170",
+   "cavp_id": "27516",
+   "cavp_ref": "DSA:1170"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1195",
+   "cavp_id": "8630",
+   "cavp_ref": "DSA:1195"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 558",
+   "cavp_id": "7815",
+   "cavp_ref": "ECDSA:558"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 620",
+   "cavp_id": "5662",
+   "cavp_ref": "ECDSA:620"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 698",
+   "cavp_id": "20099",
+   "cavp_ref": "ECDSA:698"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 801",
+   "cavp_id": "14743",
+   "cavp_ref": "ECDSA:801"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 886",
+   "cavp_id": "20059",
+   "cavp_ref": "ECDSA:886"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 952",
+   "cavp_id": "26187",
+   "cavp_ref": "ECDSA:952"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1050",
+   "cavp_id": "7804",
+   "cavp_ref": "ECDSA:1050"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1091",
+   "cavp_id": "177",
+   "cavp_ref": "ECDSA:1091"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1937",
+   "cavp_id": "2834",
+   "cavp_ref": "HMAC:1937"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2063",
+   "cavp_id": "28962",
+   "cavp_ref": "HMAC:2063"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2197",
+   "cavp_id": "27677",
+   "cavp_ref": "HMAC:2197"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2452",
+   "cavp_id": "192",
+   "cavp_ref": "HMAC:2452"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2605",
+   "cavp_id": "17538",
+   "cavp_ref": "HMAC:2605"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2714",
+   "cavp_id": "4055",
+   "cavp_ref": "HMAC:2714"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2918",
+   "cavp_id": "30213",
+   "cavp_ref": "HMAC:2918"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2966",
+   "cavp_id": "1209",
+   "cavp_ref": "HMAC:2966"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1581",
+   "cavp_id": "28387",
+   "cavp_ref": "RSA:1581"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1664",
+   "cavp_id": "21593",
+   "cavp_ref": "RSA:1664"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1766",
+   "cavp_id": "29622",
+   "cavp_ref": "RSA:1766"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1928",
+   "cavp_id": "2305",
+   "cavp_ref": "RSA:1928"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2048",
+   "cavp_id": "7981",
+   "cavp_ref": "RSA:2048"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2258",
+   "cavp_id": "4415",
+   "cavp_ref": "RSA:2258"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2374",
+   "cavp_id": "12741",
+   "cavp_ref": "RSA:2374"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2444",
+   "cavp_id": "11515",
+   "cavp_ref": "RSA:2444"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2553",
+   "cavp_id": "15886",
+   "cavp_ref": "SHS:2553"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2702",
+   "cavp_id": "8189",
+   "cavp_ref": "SHS:2702"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2847",
+   "cavp_id": "16489",
+   "cavp_ref": "SHS:2847"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3121",
+   "cavp_id": "1464",
+   "cavp_ref": "SHS:3121"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3294",
+   "cavp_id": "5295",
+   "cavp_ref": "SHS:3294"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3411",
+   "cavp_id": "10621",
+   "cavp_ref": "SHS:3411"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3620",
+   "cavp_id": "1803",
+   "cavp_ref": "SHS:3620"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3681",
+   "cavp_id": "26790",
+   "cavp_ref": "SHS:3681"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1780",
+   "cavp_id": "26110",
+   "cavp_ref": "TDES:1780"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1853",
+   "cavp_id": "419",
+   "cavp_ref": "TDES:1853"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1942",
+   "cavp_id": "12626",
+   "cavp_ref": "TDES:1942"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2086",
+   "cavp_id": "2050",
+   "cavp_ref": "TDES:2086"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2190",
+   "cavp_id": "28306",
+   "cavp_ref": "TDES:2190"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2263",
+   "cavp_id": "4353",
+   "cavp_ref": "TDES:2263"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2366",
+   "cavp_id": "18109",
+   "cavp_ref": "TDES:2366"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2399",
+   "cavp_id": "17329",
+   "cavp_ref": "TDES:2399"
+  }
+ ],
+ "vendor": "OpenSSL Software Services Inc.",
+ "vendor_info": {
+  "name": "OpenSSL Software Services Inc.",
+  "website": "http://openssl.com",
+  "address": [
+   "40 E Main St., Suite 744",
+   "Newark, DE 19711",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "OpenSSL Contact"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2398.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0054.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/24/2015",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "12/17/2015",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/8/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "8/15/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "12/30/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/10/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/30/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "3/13/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "5/23/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "6/1/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "8/22/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "11/20/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/30/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/21/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "6/28/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "6/24/2015",
+ "last_updated": "6/28/2018",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2398.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "EC Diffie-Hellman; RSA (encrypt/decrypt); RNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2398,
+  "vendor": "OpenSSL Software Services Inc.",
+  "module": "OpenSSL FIPS Object Module SE",
+  "type": "Software",
+  "validation_dates": [
+   "06/24/2015",
+   "12/17/2015",
+   "02/08/2016",
+   "08/15/2016",
+   "12/30/2016",
+   "01/10/2017",
+   "01/30/2017",
+   "03/13/2017",
+   "05/23/2017",
+   "06/01/2017",
+   "08/22/2017",
+   "11/20/2017",
+   "01/30/2018",
+   "02/21/2018",
+   "06/28/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

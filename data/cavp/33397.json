@@ -1,0 +1,377 @@
+{
+ "cavp_id": "33397",
+ "cavp_cert": "A802",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33397",
+ "implementation": "CliniComp Data Acquisition OpenSSL (32 bit) (AES_C)",
+ "product_id": "13294",
+ "description": "Medical device integration and data acquisition for all categories of devices including waveforms. The following cipher implementation is covered: Generic C AES implementation.",
+ "version": "cci-das-fips-crypto-1.0",
+ "type": "SOFTWARE",
+ "first_validated": "10/14/2020",
+ "vendor": "CliniComp, Intl.",
+ "vendor_website": "http://www.clinicomp.com",
+ "oes": [
+  {
+   "name": "nDAS on Broadcom arm1176jzf-s BCM2835",
+   "details": [
+    "processor: BCM2835",
+    "  Processor BCM2835 (processor family arm11) from Broadcom",
+    "  family: arm11",
+    "  manufacturer: Broadcom",
+    "  series: arm1176jzf-s",
+    "software: nDAS",
+    "  Raspberry Pi Zero W Rev 1.1, BCM2835 SOC",
+    "  swid: none"
+   ]
+  },
+  {
+   "name": "nDAS on NXP cortexa7t2hf i.MX6UL",
+   "details": [
+    "processor: i.MX6UL",
+    "  Processor i.MX6UL (processor family armv7l) from NXP",
+    "  family: armv7l",
+    "  manufacturer: NXP",
+    "  series: cortexa7t2hf",
+    "software: nDAS",
+    "  Digi International ConnectCore 6UL SBC",
+    "  swid: none"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 256",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 256",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB1",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB1",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-4096 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-4096 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Hex"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Hex",
+    "Data Unit Length Matches Payload Length"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 320",
+    "    Nonce: 96",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 320",
+    "    Nonce: 96",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

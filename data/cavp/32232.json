@@ -1,0 +1,93 @@
+{
+ "cavp_id": "32232",
+ "cavp_cert": "A217",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32232",
+ "implementation": "OpenSSL (64 bit) (DRBG_10X_AESASM)",
+ "product_id": "12194",
+ "description": "The OpenSSL toolkit provides support for secure communications between machines. OpenSSL includes a certificate management tool and shared libraries which provide various cryptographic algorithms and protocols.",
+ "version": "8.20200305",
+ "type": "SOFTWARE",
+ "first_validated": "3/6/2020",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "RHEL 8 on Intel Sandy Bridge Xeon E5",
+   "details": [
+    "software: RHEL 8",
+    "  Linux distribution developed by Red Hat, Inc. and targeted toward the commercial market.",
+    "processor: Xeon E5",
+    "  Processor Xeon E5 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Sandy Bridge"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 320",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,177 @@
+{
+ "cavp_id": "31609",
+ "cavp_cert": "C1203",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31609",
+ "implementation": "JUNOS 19.1R2 MX-XLP",
+ "product_id": "11565",
+ "description": "MX104 3D Universal Edge router is a modular, highly redundant, mobile back haul optimized full featured MX series platform built for space and power constrained service provider and enterprise facilities.",
+ "version": "Junos OS 19.1R2",
+ "type": "FIRMWARE",
+ "first_validated": "10/7/2019",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Broadcom XLP432",
+   "details": [
+    "processor: Broadcom XLP432"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128",
+    "AAD Length: 128"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128",
+    "Key sizes < block size",
+    "C1203 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "C1203 (ECDSA)",
+    "C1203 (SHS)",
+    "C1203 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256",
+    "C1203 (SHS)",
+    "C1203 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256",
+    "C1203 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "C1203 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "C1203 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

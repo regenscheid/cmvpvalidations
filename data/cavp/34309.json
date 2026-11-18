@@ -1,0 +1,44 @@
+{
+ "cavp_id": "34309",
+ "cavp_cert": "A1700",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34309",
+ "implementation": "CS67PLUS",
+ "product_id": "14206",
+ "description": "The CS67PLUS Cryptographic Module is a sub-chip cryptographic subsystem which provides real time AES data encryption and decryption. It typically resides within the FPGA of the CS67PLUS software-defined adaptive troposcatter radio assembly.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "7/9/2021",
+ "vendor": "Comtech Systems, Inc.",
+ "vendor_website": "http://comtechsystems.com",
+ "oes": [
+  {
+   "name": "GHDL 1.0.0",
+   "details": [
+    "Firmware: GHDL 1.0.04",
+    "  Simulator for HDL"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128",
+    "Supports Counter larger than maximum value",
+    "Incremental Counter"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

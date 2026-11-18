@@ -1,0 +1,176 @@
+{
+ "cert": 2641,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2641",
+ "module": "nShield F2 6000e, nShield F2 1500e, nShield F2 500e and nShield F2 10e",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and initialized to Overall Level 2 per Security Policy. The protocol TLS shall not be used when operated in FIPS mode",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: Level 3",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The nShield modules: nShield F2 10e, nShield F2 500e, nShield F2 1500e, nShield F2 6000e are tamper evident and tamper responsive Hardware Security Modules which provide support for the widest range of cryptographic algorithms, application programming interfaces (APIs) and host operating systems, enabling the devices to be used with virtually any business application. The units are identical in operation and only vary in the processing speed.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "nC3023E-6K0, nC3023E-1K5, nC3023E-500 and nC3023E-010, Build Standard N",
+ "firmware_versions": "2.61.2-2",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3420",
+   "cavp_id": "5758",
+   "cavp_ref": "AES:3420"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3446",
+   "cavp_id": "2603",
+   "cavp_ref": "AES:3446"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 516",
+   "cavp_id": "7280",
+   "cavp_ref": "Component:516"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 532",
+   "cavp_id": "7745",
+   "cavp_ref": "Component:532"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 825",
+   "cavp_id": "13925",
+   "cavp_ref": "DRBG:825"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 964",
+   "cavp_id": "20825",
+   "cavp_ref": "DSA:964"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 695",
+   "cavp_id": "8581",
+   "cavp_ref": "ECDSA:695"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2178",
+   "cavp_id": "28377",
+   "cavp_ref": "HMAC:2178"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 56",
+   "cavp_id": "20164",
+   "cavp_ref": "KDF:56"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3446; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1752",
+   "cavp_id": "15381",
+   "cavp_ref": "RSA:1752"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2826",
+   "cavp_id": "25895",
+   "cavp_ref": "SHS:2826"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1931",
+   "cavp_id": "17977",
+   "cavp_ref": "TDES:1931"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1931, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "nCipher Security Limited",
+ "vendor_info": {
+  "name": "nCipher Security Limited",
+  "website": "http://www.ncipher.com",
+  "address": [
+   "One Station Square",
+   "Suite 710",
+   "Cambridge, FL CB1 2GA",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "[email protected]"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2641.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMay2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/13/2016",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "1/29/2020",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "5/13/2016",
+ "last_updated": "1/29/2020",
+ "labs": "DXC Technology; Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2641.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-131A transition which disallows key wrapping not compliant to SP 800-38F.",
+  "Other Algorithms": "ARC4; Aria; Camellia; CAST-256; DES; Diffie-Hellman (CVL Cert. #516, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #532, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); ECMQV (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); El-Gamal; HAS-160; HMAC-MD5; HMAC-RIPEMD160; HMAC-Tiger; KCDSA; MD5; NDRNG; RIPEMD-160; RSA (encrypt/decrypt); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); SEED; Tiger; TLS KDF (non-compliant); Triple-DES (Cert. #1931, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2641,
+  "vendor": "nCipher Security Limited",
+  "module": "nShield F2 6000e, nShield F2 1500e, nShield F2 500e and nShield F2 10e",
+  "type": "Hardware",
+  "validation_dates": [
+   "05/13/2016",
+   "01/29/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

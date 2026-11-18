@@ -1,0 +1,78 @@
+{
+ "cavp_id": "31722",
+ "cavp_cert": "C1316",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31722",
+ "implementation": "Linux kernel crypto",
+ "product_id": "11678",
+ "description": "Linux kernel based crypto algorithms for Cambium PTP 820 platforms",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "10/29/2019",
+ "vendor": "Cambium Networks",
+ "vendor_website": "http://www.cambiumnetworks.com",
+ "oes": [
+  {
+   "name": "Freescale P1012",
+   "details": [
+    "processor: Freescale P1012"
+   ]
+  },
+  {
+   "name": "MIPS34Kc",
+   "details": [
+    "processor: MIPS34Kc"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128",
+    "Key sizes < block size",
+    "C1316 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 128",
+    "Key sizes < block size",
+    "C1316 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

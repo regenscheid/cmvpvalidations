@@ -1,0 +1,68 @@
+{
+ "cavp_id": "11822",
+ "cavp_cert": "RSA 108",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11822",
+ "implementation": "S/MIME Gateway Cryptographic Module",
+ "product_id": "4591",
+ "description": "The S/MIME Gateway Cryptographic Module is a software library that contains FIPS-approved cryptographic algorithms. The module can provide a variety of cryptographic services for selected ZixCorp products such as symmetric and asymmetric encryption, hash, digital signing and verification, and decryption.",
+ "version": "1.02",
+ "type": "SOFTWARE",
+ "first_validated": "11/4/2005",
+ "vendor": "Zix Corporation",
+ "vendor_website": "http://www.zixcorp.com",
+ "oes": [
+  {
+   "name": "2x Intel Pentium 4 XEON 2.0Ghz Processors (x86) with Linux RedHat Enterprise 3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 1536, 2048, 3072, 4096",
+    "Public Key Value: 3, 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048, 3072, 4096",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

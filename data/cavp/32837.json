@@ -1,0 +1,54 @@
+{
+ "cavp_id": "32837",
+ "cavp_cert": "C1933",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32837",
+ "implementation": "MFP Cryptographic Module(A) - FDE",
+ "product_id": "12741",
+ "description": "MFP Cryptographic Module(A) is a cryptographic security chip for encrypting data written to a storage device and other security function of Kyocera multifunction printer. Secure key generation and fast AES encryption/decryption through SATA interface. SecureBoot verifies the integrity of the firmware when the product starts up.",
+ "version": "2.3",
+ "type": "HARDWARE",
+ "first_validated": "6/30/2020",
+ "vendor": "Kyocera Document Solutions Inc.",
+ "vendor_website": "https://www.kyoceradocumentsolutions.com/",
+ "oes": [
+  {
+   "name": "MFP Cryptographic Module(A) - FDE",
+   "details": [
+    "device: MFP Cryptographic Module(A) - FDE"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 256, 65536",
+    "Tweak Mode: Number",
+    "C1933 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 256, 65536",
+    "Tweak Mode: Number",
+    "C1933 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,72 @@
+{
+ "cavp_id": "20657",
+ "cavp_cert": "AES 2438",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20657",
+ "implementation": "ICC Algorithmic Core on Windows 64-bit x86-64 for 32 bits",
+ "product_id": "3024",
+ "description": "ICC is a C language implementation of cryptographic functions based on the cryptographic library provided by the OpenSSL project. This enables IBM products to use an open source solution for cryptography and a FIPS 140-2 certified cryptographic provider.",
+ "version": "8.2.2.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/24/2013",
+ "vendor": "IBM® Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "Microsoft Windows Server 2008 64-bit on Intel Core i7-2600 with AES-NI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0",
+    "AAD Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 64-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 128, 248, 256",
+    "AAD Length: 0, 128, 248, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 248, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

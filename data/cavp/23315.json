@@ -1,0 +1,38 @@
+{
+ "cavp_id": "23315",
+ "cavp_cert": "AES 4012",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=23315",
+ "implementation": "wolfCrypt",
+ "product_id": "5518",
+ "description": "wolfCrypt module is a comprehensive suite of FIPS Approved algorithms. Only AES-256, HMAC-SHA256, and SHA256 have been tested for this project.",
+ "version": "3.9.2",
+ "type": "SOFTWARE",
+ "first_validated": "7/7/2016",
+ "vendor": "wolfSSL Inc.",
+ "vendor_website": "http://www.wolfssl.com",
+ "oes": [
+  {
+   "name": "OpenRTOS v9.0.0 on ATMEL ATSAM4L",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

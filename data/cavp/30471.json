@@ -1,0 +1,157 @@
+{
+ "cavp_id": "30471",
+ "cavp_cert": "C76",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30471",
+ "implementation": "HP NSVLE C API Library",
+ "product_id": "10437",
+ "description": "Hewlett Packard's NonStop platform is used in complex computing environments, where business-critical applications need 24 x 7 availability, extreme scalability, and fault-tolerance. NonStop plays an important role in major industries and markets, including finance, healthcare, telecommunications, manufacturing, retail, and government.",
+ "version": "0.4",
+ "type": "SOFTWARE",
+ "first_validated": "12/17/2018",
+ "vendor": "Hewlett Packard Enterprise",
+ "vendor_website": "http://www.hpe.com",
+ "oes": [
+  {
+   "name": "Debian Linux HPTE Version 8.10 on Intel(R) Xeon(R) Skylake S-4116",
+   "details": [
+    "software: Debian Linux HPTE Version 8.10",
+    "processor: Xeon(R) Skylake S-4116",
+    "  Intel Xeon(R) Skylake S-4116",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 128",
+    "C76 (AES)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key sizes < block size",
+    "C76 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1",
+    "C76 (SHS)",
+    "C76 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048, 3072, 4096",
+    "Public Key Value: 3, 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "C76 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

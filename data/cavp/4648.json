@@ -1,0 +1,70 @@
+{
+ "cavp_id": "4648",
+ "cavp_cert": "AES 4777",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4648",
+ "implementation": "HPE BladeSystem c-Class Virtual Connect Firmware OpenSSL libcrypto Library",
+ "product_id": "8426",
+ "description": "This is a standalone general-purpose cryptography library providing all necessary crypto functionality.",
+ "version": "1.0.2j",
+ "type": "SOFTWARE",
+ "first_validated": "9/26/2017",
+ "vendor": "Hewlett-Packard Development Company, L.P.",
+ "vendor_website": "http://www.hpe.com",
+ "oes": [
+  {
+   "name": "FreeScale MPC8535",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 512, 576, 576"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

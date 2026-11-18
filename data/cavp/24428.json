@@ -1,0 +1,89 @@
+{
+ "cavp_id": "24428",
+ "cavp_cert": "AES 3910",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24428",
+ "implementation": "IBM JCE FIPS Module on Linux on z Systems with CPACF",
+ "product_id": "1661",
+ "description": "The IBM Java JCE (Java Cryptographic Extension) FIPS provider (IBMJCEFIPS) for multi-platforms is a scalable, multipurpose cryptographic module that supports many FIPS approved cryptographic operations. This gives Java applications access to the FIPS algorithms via the standard JCE framework.",
+ "version": "1.8",
+ "type": "SOFTWARE",
+ "first_validated": "3/18/2016",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "RHEL Server release 7.2 for IBM z Systems on z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

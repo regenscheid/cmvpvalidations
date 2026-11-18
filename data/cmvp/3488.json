@@ -1,0 +1,144 @@
+{
+ "cert": 3488,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3488",
+ "module": "ColorTokens OpenSSL FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy and operated in FIPS mode. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2398",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Module is a software cryptographic module that is built from the OpenSSL. The module is a software library that provides C-language application program interface (API) for use by other processes that require cryptographic functionality to various modules of the ColorTokens application.",
+ "tested_configurations": [
+  "Ubuntu 12.04 running on Intel Xeon E5-2430L(x86) with PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 12.04 running on Intel Xeon E5-2430L(x86) without PAA (gcc Compiler Version 4.6.3) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.11",
+ "product_url": "https://colortokens.com/try-spectrum/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3451",
+   "cavp_id": "15424",
+   "cavp_ref": "AES:3451"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 534",
+   "cavp_id": "19744",
+   "cavp_ref": "Component:534"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 845",
+   "cavp_id": "1896",
+   "cavp_ref": "DRBG:845"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 970",
+   "cavp_id": "17340",
+   "cavp_ref": "DSA:970"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 698",
+   "cavp_id": "20099",
+   "cavp_ref": "ECDSA:698"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2197",
+   "cavp_id": "27677",
+   "cavp_ref": "HMAC:2197"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1766",
+   "cavp_id": "29622",
+   "cavp_ref": "RSA:1766"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2847",
+   "cavp_id": "16489",
+   "cavp_ref": "SHS:2847"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1942",
+   "cavp_id": "12626",
+   "cavp_ref": "TDES:1942"
+  }
+ ],
+ "vendor": "ColorTokens",
+ "vendor_info": {
+  "name": "ColorTokens",
+  "website": "https://www.colortokens.com",
+  "address": [
+   "2101 Tasman Dr",
+   "Suite 201",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Hiten Patel"
+   },
+   {
+    "name": "Puneet Tutliani"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3488.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JulyConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/15/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "7/15/2019",
+ "last_updated": "7/15/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3488.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition"
+ },
+ "other_text": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3488,
+  "vendor": "ColorTokens",
+  "module": "ColorTokens OpenSSL FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "07/15/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

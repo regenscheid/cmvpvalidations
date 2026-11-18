@@ -1,0 +1,48 @@
+{
+ "cavp_id": "3983",
+ "cavp_cert": "ECDSA 812",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3983",
+ "implementation": "INTEGRITY Security Services High Assurance Embedded Cryptographic Toolkit - ECDSA",
+ "product_id": "1492",
+ "description": "ISS ECT is a standards-based cryptographic toolkit providing a flexible framework to integrate encryption, digital signatures and other security mechanisms into a wide range of applications. It is designed to support multiple cryptographic providers with a single common API, easily targeted to a variety of Operating Systems.",
+ "version": "3.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/15/2016",
+ "vendor": "INTEGRITY Security Services",
+ "vendor_website": "http://www.ghs.com",
+ "oes": [
+  {
+   "name": "FreeRTOS 7.6 running on Cubic PU-4 (ST-Micro STM32F4xxx/ARM Cortex-M4)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

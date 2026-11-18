@@ -1,0 +1,426 @@
+{
+ "cert": 3891,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3891",
+ "module": "Red Hat Enterprise Linux 7 OpenSSH Server Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Red Hat Enterprise Linux 7 OpenSSL Module validated to FIPS 140-2 under Cert. #3867 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The OpenSSH Server cryptographic module provides the server-side component for an SSH protocol version 2 protected communication channel. OpenSSH is the standard SSH implementation and shipped with RHEL 7. Its cryptographic mechanisms use the OpenSSL library in FIPS 140-2 mode.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 7 running on Dell PowerEdge R630 with an Intel(R) Xeon(R) E5 with PAA",
+  "Red Hat Enterprise Linux 7 running on Dell PowerEdge R630 with an Intel(R) Xeon(R) E5 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #C1378, #C1379, #C1385 and #C1386 with CVL Cert. #C1423, key agreement; key establishment methodology provides between 112 and 202 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #C1378, #C1379, #C1385 and #C1386 with CVL Cert. #C1423, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "software_versions": "rhel7.20190626",
+ "product_url": "http://redhat.com/en/technologies/linux-platforms/enterprise-linux",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1380",
+   "cavp_id": "31811",
+   "cavp_ref": "C:1380"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1381",
+   "cavp_id": "31812",
+   "cavp_ref": "C:1381"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1382",
+   "cavp_id": "31813",
+   "cavp_ref": "C:1382"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1383",
+   "cavp_id": "31814",
+   "cavp_ref": "C:1383"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1384",
+   "cavp_id": "31815",
+   "cavp_ref": "C:1384"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1419",
+   "cavp_id": "31860",
+   "cavp_ref": "C:1419"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1423",
+   "cavp_id": "31864",
+   "cavp_ref": "C:1423"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1380",
+   "cavp_id": "31811",
+   "cavp_ref": "C:1380"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1381",
+   "cavp_id": "31812",
+   "cavp_ref": "C:1381"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1382",
+   "cavp_id": "31813",
+   "cavp_ref": "C:1382"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1383",
+   "cavp_id": "31814",
+   "cavp_ref": "C:1383"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1384",
+   "cavp_id": "31815",
+   "cavp_ref": "C:1384"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1419",
+   "cavp_id": "31860",
+   "cavp_ref": "C:1419"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1380",
+   "cavp_id": "31811",
+   "cavp_ref": "C:1380"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1381",
+   "cavp_id": "31812",
+   "cavp_ref": "C:1381"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1382",
+   "cavp_id": "31813",
+   "cavp_ref": "C:1382"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1383",
+   "cavp_id": "31814",
+   "cavp_ref": "C:1383"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1384",
+   "cavp_id": "31815",
+   "cavp_ref": "C:1384"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1419",
+   "cavp_id": "31860",
+   "cavp_ref": "C:1419"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1380",
+   "cavp_id": "31811",
+   "cavp_ref": "C:1380"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1381",
+   "cavp_id": "31812",
+   "cavp_ref": "C:1381"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1382",
+   "cavp_id": "31813",
+   "cavp_ref": "C:1382"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1383",
+   "cavp_id": "31814",
+   "cavp_ref": "C:1383"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1384",
+   "cavp_id": "31815",
+   "cavp_ref": "C:1384"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1419",
+   "cavp_id": "31860",
+   "cavp_ref": "C:1419"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "100 East Davie Street",
+   "Raleigh, NC 27601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jaroslav Reznik"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3891.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202021_030521_0757_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/12/2021",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "4/12/2021",
+ "last_updated": "4/12/2021",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3891.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #C1378, #C1379, #C1385 and #C1386 with CVL Cert. #C1423, key agreement; key establishment methodology provides between 112 and 202 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #C1378, #C1379, #C1385 and #C1386 with CVL Cert. #C1423, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3891,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 7 OpenSSH Server Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/12/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

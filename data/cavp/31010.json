@@ -1,0 +1,117 @@
+{
+ "cavp_id": "31010",
+ "cavp_cert": "C614",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31010",
+ "implementation": "Entrust Authority™ Security Kernel AES",
+ "product_id": "10973",
+ "description": "The Security Kernel is a C++ implementation of cryptographic functions accessible by an object-oriented API. Depending on configuration, the algorithms may be implemented in software, hardware, or both. The PKCS #11, is used as the interface to hardware-based cryptographic modules.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "4/11/2019",
+ "vendor": "Entrust Datacard Corporation",
+ "vendor_website": "http://www.entrustdatacard.com",
+ "oes": [
+  {
+   "name": "Microsoft Windows Server 2016 Standard Edition on AMD Athlon A4",
+   "details": [
+    "processor: AMD Athlon A4",
+    "  manufacturer: AMD",
+    "software: Microsoft Windows Server 2016 Standard Edition"
+   ]
+  },
+  {
+   "name": "Microsoft Windows Server 2016 Standard Edition on Intel Core i7-7700 (3.60GHz, 8 MB), 64-bit",
+   "details": [
+    "processor: Intel Core i7-7700 (3.60GHz, 8 MB), 64-bit",
+    "  manufacturer: Intel",
+    "software: Microsoft Windows Server 2016 Standard Edition"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 96, 104, 112, 120, 128",
+    "IV Length: 96, 128, 1024",
+    "Payload Length: 8, 16, 128, 1024",
+    "AAD Length: 8, 16, 128, 1024",
+    "C614 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 96, 104, 112, 120, 128",
+    "IV Length: 96, 128, 1024",
+    "Payload Length: 8, 16, 128, 1024",
+    "AAD Length: 8, 16, 128, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 248, 4096",
+    "C614 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 248, 4096",
+    "C614 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

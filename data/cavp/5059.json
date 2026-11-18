@@ -1,0 +1,83 @@
+{
+ "cavp_id": "5059",
+ "cavp_cert": "RSA 2483",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5059",
+ "implementation": "CN9000 Series Common Crypto Library",
+ "product_id": "1727",
+ "description": "The CN9000 Series Common Crypto Library Module provides FIPS 140-2 approved cryptographic algorithms for CN9000 Series Encryptors. Based upon OpenSSL the Common Crypto Library provides an Application Programming Interface (API) to support security relevant services.",
+ "version": "3.0.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/21/2017",
+ "vendor": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet)",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "ARM Cortex A9",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

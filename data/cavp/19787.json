@@ -1,0 +1,38 @@
+{
+ "cavp_id": "19787",
+ "cavp_cert": "AES 1457",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19787",
+ "implementation": "Reader Data Encryption",
+ "product_id": "7756",
+ "description": "FIPS approved AES-256 using ECB and CTR modes for encoding encrypted data to send to a CodeXML FIPS Bluetooth Modem module.",
+ "version": "7541 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/30/2010",
+ "vendor": "Code Corporation",
+ "vendor_website": "http://www.codecorp.com",
+ "oes": [
+  {
+   "name": "AMD Alchemy Au1100-400MBD",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,124 @@
+{
+ "cert": 908,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/908",
+ "module": "GlobalSCAPE® Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The GlobalSCAPE® Cryptographic Module (GSCM) provides cryptographic services for the GlobalSCAPE family of software products such as Secure FTP Server and EFT Server. The services include symmetric/asymmetric encryption/decryption, digital signatures, message digest, message authentication, random number generation, and SSL/TLS support. The GSCM is intended for use by applications through the moduleÆs Application Programming Interface (API), which is based on the OpenSSL API defined by the OpenSSL Project.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2003 (single-user mode)"
+ ],
+ "software_versions": "1.0.2",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 618",
+   "cavp_id": "13181",
+   "cavp_ref": "AES:618"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 240",
+   "cavp_id": "13717",
+   "cavp_ref": "DSA:240"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 320",
+   "cavp_id": "6161",
+   "cavp_ref": "HMAC:320"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 388",
+   "cavp_id": "",
+   "cavp_ref": "RNG:388"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 287",
+   "cavp_id": "16440",
+   "cavp_ref": "RSA:287"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 666",
+   "cavp_id": "14012",
+   "cavp_ref": "SHS:666"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 586",
+   "cavp_id": "5349",
+   "cavp_ref": "TDES:586"
+  }
+ ],
+ "vendor": "GlobalSCAPE, Inc.",
+ "vendor_info": {
+  "name": "GlobalSCAPE, Inc.",
+  "website": "http://www.globalscape.com",
+  "address": [
+   "6000 Northwest Parkway",
+   "Suite 100",
+   "San Antonio, TX 78249",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Hambidge"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp908.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt908.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/7/2008",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "2/7/2008",
+ "last_updated": "2/7/2008",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp908.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; MD2; MD4; MD5; MDC2; RIPEMD160; Blowfish; CAST5; RC2; RC4; RC5; IDEA"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 908,
+  "vendor": "GlobalSCAPE, Inc.",
+  "module": "GlobalSCAPE® Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "02/07/2008"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

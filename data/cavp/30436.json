@@ -1,0 +1,304 @@
+{
+ "cavp_id": "30436",
+ "cavp_cert": "C41",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30436",
+ "implementation": "BIG-IP i7000-series OpenSSL Implementation",
+ "product_id": "10402",
+ "description": "F5? BIG-IP? Application Delivery Controller and Firewall firmware running on F5 BIG-IP.",
+ "version": "13.1.1 EHF",
+ "type": "FIRMWARE",
+ "first_validated": "12/17/2018",
+ "vendor": "F5 Networks",
+ "vendor_website": "https://f5.com",
+ "oes": [
+  {
+   "name": "Intel(R) Xeon(R) CPU E5-1650",
+   "details": [
+    "software: N/A",
+    "processor: Xeon(R) CPU E5-1650",
+    "  Intel Xeon(R) CPU E5-1650",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 104, 128, 256, 408",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C41 (AES)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Testing Candidates",
+    "C41 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "C41 (DRBG)",
+    "C41 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "C41 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 96, 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C41 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C41 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size",
+    "C41 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "C41 (ECDSA)",
+    "C41 (SHS)",
+    "C41 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-256",
+    "Hash Algorithm: SHA2-256, SHA2-384",
+    "C41 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1, v1.2",
+    "Hash Algorithm: SHA2-256, SHA2-384",
+    "C41 (SHS)",
+    "C41 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "      Properties:",
+    "        Modulo: 3072",
+    "        Primality Tests: Table C.2, Table C.3",
+    "Info Generated By Server",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "Private Key Format: Standard",
+    "C41 (SHS)",
+    "C41 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "C41 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "C41 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

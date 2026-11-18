@@ -1,0 +1,278 @@
+{
+ "cert": 3541,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3541",
+ "module": "Nutanix Cryptographic Module for BoringSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Nutanix Cryptographic Module for BoringSSL is a suite of FIPS Approved algorithms used for TLS and other cryptographic functions.",
+ "tested_configurations": [
+  "CentOS 7.5 running on Nutanix NX-3360-G6 with an Intel Xeon 4116 with PAA (clang Compiler Version 6.0.1)",
+  "CentOS 7.5 running on Nutanix NX-3360-G6 with an Intel Xeon 4116 without PAA (clang Compiler Version 6.0.1)",
+  "CentOS 7.9 on Nutanix AHV Hypervisor v7.0 running on Nutanix NX-3060-G7 Appliance with an Intel® Xeon® Gold 6234 with PAA (clang Compiler Version 6.0.1)",
+  "CentOS 7.9 on Nutanix AHV Hypervisor v7.0 running on Nutanix NX-3060-G7 Appliance with an Intel® Xeon® Gold 6234 without PAA (clang Compiler Version 6.0.1)",
+  "Debian Linux 4.9.0 running on Intel Xeon E5-2680 with PAA (clang Compiler Version 6.0.1)",
+  "Debian Linux 4.9.0 running on Intel Xeon E5-2680 without PAA (clang Compiler Version 6.0.1)",
+  "Ubuntu Linux 18.04 running on POWER9 with PAA (clang Compiler Version 6.0.1)",
+  "Ubuntu Linux 18.04 running on POWER9 without PAA (clang Compiler Version 6.0.1) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Certs. #2033, #2035, #C1256 and #A1229; key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "66005f41fbc3529ffe8d007708756720529da20d",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5612",
+   "cavp_id": "12633",
+   "cavp_ref": "AES:5612"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1256",
+   "cavp_id": "31662",
+   "cavp_ref": "C:1256"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1229",
+   "cavp_id": "33838",
+   "cavp_ref": "A:1229"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2033",
+   "cavp_id": "5824",
+   "cavp_ref": "Component:2033"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2034",
+   "cavp_id": "22042",
+   "cavp_ref": "Component:2034"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2035",
+   "cavp_id": "12809",
+   "cavp_ref": "Component:2035"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1256",
+   "cavp_id": "31662",
+   "cavp_ref": "C:1256"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1229",
+   "cavp_id": "33838",
+   "cavp_ref": "A:1229"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2253",
+   "cavp_id": "3239",
+   "cavp_ref": "DRBG:2253"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1256",
+   "cavp_id": "31662",
+   "cavp_ref": "C:1256"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1229",
+   "cavp_id": "33838",
+   "cavp_ref": "A:1229"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1520",
+   "cavp_id": "17912",
+   "cavp_ref": "ECDSA:1520"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1256",
+   "cavp_id": "31662",
+   "cavp_ref": "C:1256"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1229",
+   "cavp_id": "33838",
+   "cavp_ref": "A:1229"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3743",
+   "cavp_id": "1349",
+   "cavp_ref": "HMAC:3743"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1256",
+   "cavp_id": "31662",
+   "cavp_ref": "C:1256"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1229",
+   "cavp_id": "33838",
+   "cavp_ref": "A:1229"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #5612, #C1256 and #A1129; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3020",
+   "cavp_id": "20860",
+   "cavp_ref": "RSA:3020"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1256",
+   "cavp_id": "31662",
+   "cavp_ref": "C:1256"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1229",
+   "cavp_id": "33838",
+   "cavp_ref": "A:1229"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4509",
+   "cavp_id": "8661",
+   "cavp_ref": "SHS:4509"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1256",
+   "cavp_id": "31662",
+   "cavp_ref": "C:1256"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1229",
+   "cavp_id": "33838",
+   "cavp_ref": "A:1229"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2825",
+   "cavp_id": "27628",
+   "cavp_ref": "TDES:2825"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1256",
+   "cavp_id": "31662",
+   "cavp_ref": "C:1256"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1229",
+   "cavp_id": "33838",
+   "cavp_ref": "A:1229"
+  }
+ ],
+ "vendor": "Nutanix, Inc.",
+ "vendor_info": {
+  "name": "Nutanix, Inc.",
+  "website": "http://Nutanix.com",
+  "address": [
+   "1740 Technology Drive",
+   "Suite 150",
+   "San Jose, CA 95110",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Matt Keller"
+   },
+   {
+    "name": "Ashutosh Pangasa"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3541.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedOct2019%20.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/1/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "11/14/2019",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "5/26/2020",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "6/2/2021",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "10/1/2019",
+ "last_updated": "6/2/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3541.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Certs. #2033, #2035, #C1256 and #A1229; key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3541,
+  "vendor": "Nutanix, Inc.",
+  "module": "Nutanix Cryptographic Module for BoringSSL",
+  "type": "Software",
+  "validation_dates": [
+   "10/01/2019",
+   "11/14/2019",
+   "05/26/2020",
+   "06/02/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

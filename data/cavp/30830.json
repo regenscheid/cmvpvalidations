@@ -1,0 +1,110 @@
+{
+ "cavp_id": "30830",
+ "cavp_cert": "C434",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30830",
+ "implementation": "Apple CoreCrypto Kernel Module v9.0 for ARM (T2, Assembler)",
+ "product_id": "10793",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to kernel space assembler optimized AES.",
+ "version": "9.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/21/2019",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "TxFW 16P374 / TxFW 16P4501 on Apple T2",
+   "details": [
+    "processor: Apple T2",
+    "  manufacturer: Apple",
+    "software: TxFW 16P374 / TxFW 16P4501"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 4096",
+    "C434 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-128",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0-128",
+    "    Returned Bits: 128",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 128",
+    "C434 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

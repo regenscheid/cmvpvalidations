@@ -1,0 +1,128 @@
+{
+ "cert": 3910,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3910",
+ "module": "FSM-2 Flash Storage Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. When installed with the tamper evident seals, initialized and configured as specified in Section 3 of the Security Policy.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The Flash Storage Module (FSM) AES cryptographic engine uses 256-bit encryption keys and performs real-time encryption of all data written to or read from solid state drives. The FSM cryptographic engines provides maximum data-at-rest security in commercial and military applications.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "hardware_versions": "A8",
+ "firmware_versions": "4.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 250",
+   "cavp_id": "16498",
+   "cavp_ref": "AES:250"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5767",
+   "cavp_id": "12408",
+   "cavp_ref": "AES:5767"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2362",
+   "cavp_id": "21274",
+   "cavp_ref": "DRBG:2362"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3815",
+   "cavp_id": "17716",
+   "cavp_ref": "HMAC:3815"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5767",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4590",
+   "cavp_id": "22248",
+   "cavp_ref": "SHS:4590"
+  }
+ ],
+ "vendor": "Curtiss-Wright Defense Solutions",
+ "vendor_info": {
+  "name": "Curtiss-Wright Defense Solutions",
+  "website": "http://www.curtisswright.com",
+  "address": [
+   "2600 Paramount Place, Suite 200",
+   "Fairborn, OH 45324",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Steve Petric"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3910.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202021_030521_0757_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/27/2021",
+   "type": "Initial",
+   "lab": "Gossamer Security Solutions"
+  }
+ ],
+ "first_validated": "4/27/2021",
+ "last_updated": "4/27/2021",
+ "labs": "Gossamer Security Solutions",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3910.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3910,
+  "vendor": "Curtiss-Wright Defense Solutions",
+  "module": "FSM-2 Flash Storage Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/27/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

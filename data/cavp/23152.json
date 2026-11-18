@@ -1,0 +1,87 @@
+{
+ "cavp_id": "23152",
+ "cavp_cert": "AES 2847",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=23152",
+ "implementation": "VaultIP",
+ "product_id": "3634",
+ "description": "VaultIP is a Silicon IP Security Module which includes a complete set of high- and low-level cryptographic functions. It offers key management and crypto functions needed for platform and application security such as Content Protection and Mobile Payment, and can be used stand-alone or as a 'Root of Trust' to support a TEE-based platform.",
+ "version": "1.1",
+ "type": "HARDWARE",
+ "first_validated": "5/23/2014",
+ "vendor": "Rambus Inc.",
+ "vendor_website": "https://www.rambus.com",
+ "oes": [
+  {
+   "name": "VaultIP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 8-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 64-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External, Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Block Size: Full"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

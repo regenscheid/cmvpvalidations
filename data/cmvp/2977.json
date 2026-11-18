@@ -1,0 +1,157 @@
+{
+ "cert": 2977,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2977",
+ "module": "Huawei S7700 Series Switches",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy. The protocol SNMP shall not be used when operated in FIPS mode.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The S7700 Smart Routing Switch (S7700 for short) is a high-end smart routing switch designed for next-generation enterprise networks. The S7700 design is based on Huawei's intelligent multi-layer switching technology to provide intelligent service optimization methods, such as MPLS VPN, traffic analysis, comprehensive QoS policies, controllable multicast, load balancing, and security, in addition to high-performance Layer 2 to Layer 3 switching services.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "S7703 P/N 02113959 Version P.3 with [1, 2 and 7], S7706 P/N 02113960 Version N.2 with [1, 3, 5 and 7] and S7712 P/N 02113961 Version P.2 with [1, 4, 6 and 7]; LPU P/N 03030MQP [1], MPU P/N 03030MPV [2], MPU P/N 03030MQS [3], MPU P/N 03031FSL [4], CSS P/N 03030QHL [5], CSS P/N 03030XYD [6] and Tamper Seals P/N 4057-113016 [7]",
+ "firmware_versions": "V200R010C00SPC900B900",
+ "product_url": "http://support.huawei.com/enterprise/en/newindex.html",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4400",
+   "cavp_id": "6797",
+   "cavp_ref": "AES:4400"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1107",
+   "cavp_id": "24275",
+   "cavp_ref": "Component:1107"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1418",
+   "cavp_id": "8868",
+   "cavp_ref": "DRBG:1418"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1175",
+   "cavp_id": "14965",
+   "cavp_ref": "DSA:1175"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1057",
+   "cavp_id": "18486",
+   "cavp_ref": "ECDSA:1057"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2924",
+   "cavp_id": "3168",
+   "cavp_ref": "HMAC:2924"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4400 and HMAC Cert. #2924; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #2372 and HMAC Cert. #2924; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2380",
+   "cavp_id": "10949",
+   "cavp_ref": "RSA:2380"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3627",
+   "cavp_id": "6809",
+   "cavp_ref": "SHS:3627"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2372",
+   "cavp_id": "2559",
+   "cavp_ref": "TDES:2372"
+  }
+ ],
+ "vendor": "Huawei Technologies Co., Ltd.",
+ "vendor_info": {
+  "name": "Huawei Technologies Co., Ltd.",
+  "website": "http://www.huawei.com",
+  "address": [
+   "101 Software Avenue",
+   "Yuhuatai District",
+   "NANJING, JIANGSU 210000",
+   "CHINA"
+  ],
+  "contacts": [
+   {
+    "name": "Yang Ze (Allen)"
+   },
+   {
+    "name": "Liu Pinping"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2977.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/31/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "7/31/2017",
+ "last_updated": "7/31/2017",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2977.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 2977,
+  "vendor": "Huawei Technologies Co., Ltd.",
+  "module": "Huawei S7700 Series Switches",
+  "type": "Hardware",
+  "validation_dates": [
+   "07/31/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,85 @@
+{
+ "cavp_id": "17208",
+ "cavp_cert": "RSA 1787",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17208",
+ "implementation": "Sonus Cryptographic Library",
+ "product_id": "965",
+ "description": "Sonus Session Border Controller FIPS-validated cryptographic software module",
+ "version": "2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/31/2015",
+ "vendor": "Sonus Networks, Inc.",
+ "vendor_website": "http://www.sonusnetworks.com",
+ "oes": [
+  {
+   "name": "Intel Nehalem",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 100001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

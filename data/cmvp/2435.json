@@ -1,0 +1,195 @@
+{
+ "cert": 2435,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2435",
+ "module": "SUSE Linux Enterprise Server 12 - OpenSSL Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C.",
+ "tested_configurations": [
+  "SUSE Linux Enterprise Server 12 running on HP ProLiant DL320e Gen8 with PAA",
+  "SUSE Linux Enterprise Server 12 running on HP ProLiant DL320e Gen8 without PAA (single-user mode)"
+ ],
+ "software_versions": "2.0",
+ "product_url": "http://www.suse.com/products/server/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3197",
+   "cavp_id": "26220",
+   "cavp_ref": "AES:3197"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3198",
+   "cavp_id": "22911",
+   "cavp_ref": "AES:3198"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3199",
+   "cavp_id": "6018",
+   "cavp_ref": "AES:3199"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 430",
+   "cavp_id": "10399",
+   "cavp_ref": "Component:430"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 431",
+   "cavp_id": "23238",
+   "cavp_ref": "Component:431"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 674",
+   "cavp_id": "8509",
+   "cavp_ref": "DRBG:674"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 675",
+   "cavp_id": "22382",
+   "cavp_ref": "DRBG:675"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 676",
+   "cavp_id": "4612",
+   "cavp_ref": "DRBG:676"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 915",
+   "cavp_id": "27654",
+   "cavp_ref": "DSA:915"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 586",
+   "cavp_id": "16374",
+   "cavp_ref": "ECDSA:586"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2014",
+   "cavp_id": "18173",
+   "cavp_ref": "HMAC:2014"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2015",
+   "cavp_id": "14686",
+   "cavp_ref": "HMAC:2015"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2016",
+   "cavp_id": "5483",
+   "cavp_ref": "HMAC:2016"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1628",
+   "cavp_id": "13750",
+   "cavp_ref": "RSA:1628"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2645",
+   "cavp_id": "10635",
+   "cavp_ref": "SHS:2645"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2646",
+   "cavp_id": "356",
+   "cavp_ref": "SHS:2646"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2648",
+   "cavp_id": "26829",
+   "cavp_ref": "SHS:2648"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1823",
+   "cavp_id": "20871",
+   "cavp_ref": "TDES:1823"
+  }
+ ],
+ "vendor": "SUSE, LLC",
+ "vendor_info": {
+  "name": "SUSE, LLC",
+  "website": "http://www.suse.com",
+  "address": [
+   "10 Canal Park, Suite 200",
+   "Cambridge, Massachusetts 02141",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Thomas Biege"
+   },
+   {
+    "name": "Michael Hager"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2435.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0056.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/20/2015",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "8/20/2015",
+ "last_updated": "8/20/2015",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2435.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (CVL Cert. #431, key agreement; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #431, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); ANSI X9.31 RNG (non-compliant); MD2; MD4; MD5; MDC-2; HMAC-MD5; Blowfish; Camellia; CAST; DES; IDEA; JPAKE; RC2; RC4; RC5; RIPEMD160; SEED; TLS-SRP; Whirlpool"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2435,
+  "vendor": "SUSE, LLC",
+  "module": "SUSE Linux Enterprise Server 12 - OpenSSL Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/20/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

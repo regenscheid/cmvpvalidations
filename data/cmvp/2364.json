@@ -1,0 +1,130 @@
+{
+ "cert": 2364,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2364",
+ "module": "Dell OpenSSL Cryptographic Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Dell OpenSSL Cryptographic Library v2.1 is used within various Dell Networking products, including the S and Z-Series. Dell Networking S and Z-Series are high performance 10/40GbE ToR and Core Fabric switching products designed for highly virtualized Data Centers. These switches are built on top of Dell’s Data Center hardened OS, Dell Networking OS.",
+ "tested_configurations": [
+  "Dell Networking OS 9.6(0.0) running on a Dell Networking S4810, Dell Networking S4820T, Dell Networking S5000, Dell Networking S6000, Dell Networking Z9500, Dell Networking Z9000 , Dell Networking MXL, Dell PowerEdge M I/O Aggregator, and Dell PowerEdge FN I/O Aggregator (single-user mode)"
+ ],
+ "software_versions": "2.1",
+ "product_url": "http://www.dell.com/us/business/p/networking-products",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2971",
+   "cavp_id": "10872",
+   "cavp_ref": "AES:2971"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 565",
+   "cavp_id": "17077",
+   "cavp_ref": "DRBG:565"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 884",
+   "cavp_id": "26211",
+   "cavp_ref": "DSA:884"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1883",
+   "cavp_id": "11703",
+   "cavp_ref": "HMAC:1883"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1560",
+   "cavp_id": "25275",
+   "cavp_ref": "RSA:1560"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2497",
+   "cavp_id": "21352",
+   "cavp_ref": "SHS:2497"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1760",
+   "cavp_id": "24512",
+   "cavp_ref": "TDES:1760"
+  }
+ ],
+ "vendor": "Dell, Inc.",
+ "vendor_info": {
+  "name": "Dell, Inc.",
+  "website": "http://www.dell.com",
+  "address": [
+   "5450 Great America Parkway",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Srihari Mandava"
+   },
+   {
+    "name": "Jeff Yin"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2364.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0052.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/28/2015",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "4/28/2015",
+ "last_updated": "4/28/2015",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2364.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); ECDSA (non-compliant); Hash_DRBG (non-compliant); HMAC_DRBG (non-compliant); ANSI X9.31 RNG (non-compliant); Triple-DES CMAC (non-compliant); AES CMAC (non-compliant); AES GCM (non-compliant); AES XTS (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2364,
+  "vendor": "Dell, Inc.",
+  "module": "Dell OpenSSL Cryptographic Library",
+  "type": "Software",
+  "validation_dates": [
+   "04/28/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

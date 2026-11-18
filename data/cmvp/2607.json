@@ -1,0 +1,145 @@
+{
+ "cert": 2607,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2607",
+ "module": "Secure Kernel Code Integrity (skci.dll) in Microsoft Windows 10 Enterprise, Windows 10 Enterprise LTSB",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with the module Code Integrity (ci.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows 10 for Surface Hub under Cert. #2604 operating in FIPS mode or Code Integrity (ci.dll) in Microsoft Windows Enterprise LTSB under Cert. #3437 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Secure Kernel Code Integrity (SKCI) running in the Virtual Secure Mode (VSM) of the Hyper-V hypervisor will only grant execute access to physical pages in the kernel that have been successfully verified. Executable pages will not have write permission outside of Hyper-V. Therefore, only verified code can be executed.",
+ "tested_configurations": [
+  "Windows 10 Enterprise (x64) running on a HP Compaq Pro 6305 with PAA [1][3]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface 3 with PAA [1][3]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Book with PAA [3]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro 2 with PAA [1][3]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro 3 with PAA [1][3]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro 4 with PAA [3]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro with PAA [1][3]",
+  "Windows 10 Enterprise (x86) running on a Dell Inspiron 660s without PAA [1][3]",
+  "Windows 10 Enterprise LTSB (x64) running on a Dell XPS 8700 with PAA [1][2]",
+  "Windows 10 Enterprise LTSB (x64) running on a HP Compaq Pro 6305 with PAA [1][2]",
+  "Windows 10 Enterprise LTSB (x64) running on a Microsoft Surface 3 with PAA [2]",
+  "Windows 10 Enterprise LTSB (x64) running on a Microsoft Surface Pro 2 with PAA [2]",
+  "Windows 10 Enterprise LTSB (x64) running on a Microsoft Surface Pro 3 with PAA [2]",
+  "Windows 10 Enterprise LTSB (x64) running on a Microsoft Surface Pro with PAA [2] (single-user mode)",
+  "Windows 10 Enterprise LTSB (x86) running on a Dell Inspiron 660s without PAA [1][2]"
+ ],
+ "software_versions": "10.0.10240 [1], 10.0.10240.17643 [2], 10.0.10586 [3]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1784",
+   "cavp_id": "8528",
+   "cavp_ref": "RSA:1784"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1871",
+   "cavp_id": "12006",
+   "cavp_ref": "RSA:1871"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2829",
+   "cavp_id": "10268",
+   "cavp_ref": "RSA:2829"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2871",
+   "cavp_id": "20881",
+   "cavp_ref": "SHS:2871"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3048",
+   "cavp_id": "11730",
+   "cavp_ref": "SHS:3048"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4249",
+   "cavp_id": "2056",
+   "cavp_ref": "SHS:4249"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2607.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/2/2016",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "8/26/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "4/30/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "6/2/2016",
+ "last_updated": "4/30/2019",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2607.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #2604"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2607,
+  "vendor": "Microsoft Corporation",
+  "module": "Secure Kernel Code Integrity (skci.dll) in Microsoft Windows 10 Enterprise, Windows 10 Enterprise LTSB",
+  "type": "Software",
+  "validation_dates": [
+   "06/02/2016",
+   "08/26/2016",
+   "04/30/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

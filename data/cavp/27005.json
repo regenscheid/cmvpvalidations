@@ -1,0 +1,58 @@
+{
+ "cavp_id": "27005",
+ "cavp_cert": "TDES 1056",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27005",
+ "implementation": "FIPS for Brocade IP Products",
+ "product_id": "7992",
+ "description": "Our Goal is to receive FIPS 140-2 SL2 certification (hardware category- tamper detection tape) on the above platforms. For this, we have identified the cryptographic boundary to be the management module (with access to E2PROM on backplane). The software is to be updated to use NSS/NSPR as the cryptographic engine.",
+ "version": "NetIron 5.1.1a (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "4/20/2011",
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_website": "http://www.brocade.com",
+ "oes": [
+  {
+   "name": "Freescale MPC7447A",
+   "details": []
+  },
+  {
+   "name": "Freescale MPC8544E",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

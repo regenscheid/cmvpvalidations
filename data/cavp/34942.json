@@ -1,0 +1,92 @@
+{
+ "cavp_id": "34942",
+ "cavp_cert": "A2333",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34942",
+ "implementation": "EcDSAUtils",
+ "product_id": "14805",
+ "description": "Firmware implementation of EcDSA, SP 800-56A KAS using Ephemeral Unified and One Pass schemes.",
+ "version": "EcDSAUtils-1.5.0",
+ "type": "FIRMWARE",
+ "first_validated": "2/14/2022",
+ "vendor": "ViaSat, Inc.",
+ "vendor_website": "http://www.viasat.com",
+ "oes": [
+  {
+   "name": "Freescale PowerPC MPC8313",
+   "details": [
+    "cpu: Freescale PowerPC MPC8313"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-384, P-521",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-521",
+    "Function: Full Validation, Key Pair Generation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-512",
+    "        Fixed Info Pattern: algorithmId|uPartyInfo|vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-384",
+    "Function: Full Validation, Key Pair Generation",
+    "Scheme:",
+    "  onePassDh:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "        Fixed Info Pattern: algorithmId|uPartyInfo|vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 192"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

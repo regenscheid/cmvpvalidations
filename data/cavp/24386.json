@@ -1,0 +1,43 @@
+{
+ "cavp_id": "24386",
+ "cavp_cert": "AES 1531",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24386",
+ "implementation": "IBM Encrypting Tape Drive GCM Read",
+ "product_id": "7860",
+ "description": "The hardware ASIC implementation provides AES GCM decryption.",
+ "version": "1.0",
+ "type": "HARDWARE",
+ "first_validated": "12/16/2010",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1204",
+    "AAD Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

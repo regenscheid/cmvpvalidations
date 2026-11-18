@@ -1,0 +1,150 @@
+{
+ "cert": 2142,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2142",
+ "module": "RSA BSAFE® Crypto-C Micro Edition",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Crypto-C Micro Edition (ME) Module is RSA Security, Inc.'s cryptographic library designed for securing mobile devices like wireless phones and personal digital assistants. It contains assembly-level optimizations on key wireless processors. Its functionality includes a wide range of data encryption and signing algorithms, including Triple-DES, the Advanced Encryption Standard (AES) algorithm, the RSA Public Key Cryptosystem, the DSA government signature algorithm, MD5 and SHA1 message digest routines, and more.",
+ "tested_configurations": [
+  "Timesys Linux 2.6.28-rt16 running on a Konica Minolta A5C1H020 with PowerPC (32-bit) (single-user mode)"
+ ],
+ "software_versions": "3.0.0.17",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2248",
+   "cavp_id": "16100",
+   "cavp_ref": "AES:2248"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 272",
+   "cavp_id": "17074",
+   "cavp_ref": "DRBG:272"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 700",
+   "cavp_id": "7216",
+   "cavp_ref": "DSA:700"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 356",
+   "cavp_id": "15245",
+   "cavp_ref": "ECDSA:356"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 358",
+   "cavp_id": "13268",
+   "cavp_ref": "ECDSA:358"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1377",
+   "cavp_id": "1071",
+   "cavp_ref": "HMAC:1377"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1122",
+   "cavp_id": "26453",
+   "cavp_ref": "RNG:1122"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1153",
+   "cavp_id": "8107",
+   "cavp_ref": "RSA:1153"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1937",
+   "cavp_id": "10456",
+   "cavp_ref": "SHS:1937"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1407",
+   "cavp_id": "8196",
+   "cavp_ref": "TDES:1407"
+  }
+ ],
+ "vendor": "RSA, The Security Division of EMC",
+ "vendor_info": {
+  "name": "RSA, The Security Division of EMC",
+  "website": "http://www.rsa.com",
+  "address": [
+   "174 Middlesex Turnpike",
+   "Bedford, MA 01730",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Rohit Mathur"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2142.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0041.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/6/2014",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "2/12/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "5/6/2014",
+ "last_updated": "2/12/2016",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2142.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; DES40; Diffie-Hellman; EC Diffie-Hellman; ECAES; ECIES; Entropy RNG; HMAC MD5; MD2; MD5; OTP RNG; PBKDF1 SHA-1; PBKDF2 HMAC SHA-1/SHA-224/SHA-256/SHA-384/SHA-512 (non-compliant); RC2; RC4; RC5; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA PKCS #1 v2.0 (OAEP; non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2142,
+  "vendor": "RSA, The Security Division of EMC",
+  "module": "RSA BSAFE® Crypto-C Micro Edition",
+  "type": "Software",
+  "validation_dates": [
+   "05/06/2014",
+   "02/12/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

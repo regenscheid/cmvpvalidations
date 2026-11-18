@@ -1,0 +1,210 @@
+{
+ "cert": 2412,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2412",
+ "module": "CellTrust Cryptographic Module (CTCM)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The CellTrust Cryptographic Module v2.0 (CTCM) is part of CellTrust Trusted Foundation that performs cryptographic operations for transmission and storage of sensitive information. The CTCM is classified by FIPS 140-2 as a software module, multi-chip standalone module embodiment. FIPS is Federal Information Processing Standards developed by the United States federal government.",
+ "tested_configurations": [
+  "Android 4.2 running on Nvidia Tegra 3 (ARMv7) with Neon (gcc Compiler Version 4.6)",
+  "Android 4.2 running on Nvidia Tegra 3 (ARMv7) without NEON (gcc Compiler Version 4.6)",
+  "Apple iOS 7.1 64-bit running on Apple A7 (ARMv8) with NEON (clang Compiler Version 5.1) (single-user mode)",
+  "Apple iOS 7.1 64-bit running on Apple A7 (ARMv8) without NEON (clang Compiler Version 5.1)"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2234",
+   "cavp_id": "18258",
+   "cavp_ref": "AES:2234"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3090",
+   "cavp_id": "5307",
+   "cavp_ref": "AES:3090"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 49",
+   "cavp_id": "16005",
+   "cavp_ref": "Component:49"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 372",
+   "cavp_id": "12331",
+   "cavp_ref": "Component:372"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 264",
+   "cavp_id": "17629",
+   "cavp_ref": "DRBG:264"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 607",
+   "cavp_id": "2298",
+   "cavp_ref": "DRBG:607"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 693",
+   "cavp_id": "2468",
+   "cavp_ref": "DSA:693"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 896",
+   "cavp_id": "30021",
+   "cavp_ref": "DSA:896"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 378",
+   "cavp_id": "16639",
+   "cavp_ref": "ECDSA:378"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 558",
+   "cavp_id": "7815",
+   "cavp_ref": "ECDSA:558"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1363",
+   "cavp_id": "5223",
+   "cavp_ref": "HMAC:1363"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1937",
+   "cavp_id": "2834",
+   "cavp_ref": "HMAC:1937"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1119",
+   "cavp_id": "24497",
+   "cavp_ref": "RNG:1119"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1314",
+   "cavp_id": "20561",
+   "cavp_ref": "RNG:1314"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1145",
+   "cavp_id": "27063",
+   "cavp_ref": "RSA:1145"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1581",
+   "cavp_id": "28387",
+   "cavp_ref": "RSA:1581"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1923",
+   "cavp_id": "16667",
+   "cavp_ref": "SHS:1923"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2553",
+   "cavp_id": "15886",
+   "cavp_ref": "SHS:2553"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1398",
+   "cavp_id": "8057",
+   "cavp_ref": "TDES:1398"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1780",
+   "cavp_id": "26110",
+   "cavp_ref": "TDES:1780"
+  }
+ ],
+ "vendor": "CellTrust® Corporation",
+ "vendor_info": {
+  "name": "CellTrust® Corporation",
+  "website": "http://www.celltrust.com",
+  "address": [
+   "20701 N. Scottsdale Rd",
+   "Suite #107-451",
+   "Scottsdale, AZ 85255",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Behnam B. Shariati"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2412.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0055.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/22/2015",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "7/22/2015",
+ "last_updated": "7/22/2015",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2412.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "EC Diffie-Hellman; RSA (encrypt/decrypt)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2412,
+  "vendor": "CellTrust® Corporation",
+  "module": "CellTrust Cryptographic Module (CTCM)",
+  "type": "Software",
+  "validation_dates": [
+   "07/22/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

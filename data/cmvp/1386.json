@@ -1,0 +1,138 @@
+{
+ "cert": 1386,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1386",
+ "module": "Red Hat Enterprise Linux 5 OpenSwan Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When obtained, installed, and initialized as assumed by the Crypto Officer role and specified in Section 9 of the provided Security Policy. This module contains the embedded modules Red Hat Enterprise Linux 5 OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #1320 operating in FIPS mode and the Network Security Services (NSS) Cryptographic Module validated to FIPS 140-2 under Cert. #815 (Approved algorithms retested on listed operating environment) operating in FIPS mode. Section 1 of the provided Security Policy specifies the precise RPM files containing this module. The integrity of the RPMs is automatically verified during the installation and the Crypto officer shall not install the RPM files if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Red Hat Enterprise Linux 5 OpenSwan Cryptographic Module is a software only cryptographic module that provides the IKE protocol version 1 and version 2 key agreement services required for IPSec.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 5.4 (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1368",
+   "cavp_id": "19136",
+   "cavp_ref": "AES:1368"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 449",
+   "cavp_id": "5714",
+   "cavp_ref": "DSA:449"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 661",
+   "cavp_id": "25494",
+   "cavp_ref": "HMAC:661"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 662",
+   "cavp_id": "26267",
+   "cavp_ref": "HMAC:662"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 663",
+   "cavp_id": "29419",
+   "cavp_ref": "HMAC:663"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 755",
+   "cavp_id": "18218",
+   "cavp_ref": "RNG:755"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 669",
+   "cavp_id": "20710",
+   "cavp_ref": "RSA:669"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1250",
+   "cavp_id": "8333",
+   "cavp_ref": "SHS:1250"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 943",
+   "cavp_id": "23221",
+   "cavp_ref": "TDES:943"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "314 Littleton Road",
+   "Raleigh, NC 27606",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Irina Boverman"
+   },
+   {
+    "name": "Karl Wirth"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1386.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1386.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/12/2010",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "8/12/2010",
+ "last_updated": "8/12/2010",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1386.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 bits and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 bits and 192 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RC2; RC4; DES; MD2; MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1386,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 5 OpenSwan Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/12/2010"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

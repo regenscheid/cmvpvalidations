@@ -1,0 +1,60 @@
+{
+ "cavp_id": "13766",
+ "cavp_cert": "RSA 720",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13766",
+ "implementation": "Feitian-FIPS-COS Hardware Cryptographic Library",
+ "product_id": "7787",
+ "description": "The Feitian-FIPS-COS Hardware Cryptographic Library provides cryptographic algorithm support to the Feitian-FIPS-COS cryptographic module.",
+ "version": "0.0.5.6 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/27/2010",
+ "vendor": "Feitian Technologies Co., Ltd.",
+ "vendor_website": "http://www.ftsafe.com",
+ "oes": [
+  {
+   "name": "ST Visual Develop BR6",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,206 @@
+{
+ "cert": 2389,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2389",
+ "module": "SafeZone FIPS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "SafeZone FIPS Cryptographic Module is a FIPS 140-2 Security Level 1 validated software cryptographic module from Rambus. The module is a toolkit which provides the most commonly needed cryptographic primitives for a large variety of applications, including but not limited to, primitives needed for DAR, DRM, TLS, and VPN on mobile devices.",
+ "tested_configurations": [
+  "<t-base 300 running on an Arndale",
+  "Android 4.2 running on a Samsung Galaxy Tab 3 10.1",
+  "Android 4.4 running on a Samsung Galaxy Note 3",
+  "iOS 7.1 running on a iPad Mini with Retina Display (32-bit)",
+  "iOS 7.1 running on a iPad Mini with Retina Display (64-bit)",
+  "Linux kernel 3.10 running on a Raspberry Pi",
+  "Linux kernel 3.13 running on an ASUS Transformer (x64) with AES-NI (single-user mode)",
+  "Linux kernel 3.13 running on an ASUS Transformer (x64) without AES-NI",
+  "Linux kernel 3.13 running on an ASUS Transformer (x86) with AES-NI"
+ ],
+ "software_versions": "1.1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3123",
+   "cavp_id": "24332",
+   "cavp_ref": "AES:3123"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 384",
+   "cavp_id": "19314",
+   "cavp_ref": "Component:384"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 385",
+   "cavp_id": "20790",
+   "cavp_ref": "Component:385"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 634",
+   "cavp_id": "6717",
+   "cavp_ref": "DRBG:634"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 637",
+   "cavp_id": "18446",
+   "cavp_ref": "DRBG:637"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 905",
+   "cavp_id": "8658",
+   "cavp_ref": "DSA:905"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 567",
+   "cavp_id": "27819",
+   "cavp_ref": "ECDSA:567"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1980",
+   "cavp_id": "15670",
+   "cavp_ref": "HMAC:1980"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 37",
+   "cavp_id": "16944",
+   "cavp_ref": "KDF:37"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 38",
+   "cavp_id": "531",
+   "cavp_ref": "KDF:38"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 39",
+   "cavp_id": "13490",
+   "cavp_ref": "KDF:39"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 40",
+   "cavp_id": "17539",
+   "cavp_ref": "KDF:40"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3123, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1593",
+   "cavp_id": "16601",
+   "cavp_ref": "RSA:1593"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2599",
+   "cavp_id": "14988",
+   "cavp_ref": "SHS:2599"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1793",
+   "cavp_id": "24488",
+   "cavp_ref": "TDES:1793"
+  }
+ ],
+ "vendor": "Rambus Global Inc., Finnish branch",
+ "vendor_info": {
+  "name": "Rambus Global Inc., Finnish branch",
+  "website": "http://www.rambus.com",
+  "address": [
+   "Sokerilinnantie 11 C",
+   "Espoo FI-02600",
+   "Finland"
+  ],
+  "contacts": [
+   {
+    "name": "Markku Kontio"
+   },
+   {
+    "name": "Gijs Willemse"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2389.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0054.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/2/2015",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "5/26/2020",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "6/2/2015",
+ "last_updated": "5/26/2020",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2389.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "NDRNG; MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2389,
+  "vendor": "Rambus Global Inc., Finnish branch",
+  "module": "SafeZone FIPS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "06/02/2015",
+   "05/26/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

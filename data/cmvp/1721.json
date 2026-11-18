@@ -1,0 +1,120 @@
+{
+ "cert": 1721,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1721",
+ "module": "Vormetric Encryption Expert Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Vormetric Encryption Expert Cryptographic Module is a loadable kernel module also known as \"SECFS\" (SECure File System). This module is a file system layer that enforces an access and encryption policy upon selected data on end-user systems. The policy specifies a key to be used when writing data to disk and while reading data from disk. This module contains the Vormetric Encryption Expert Cryptographic Library, which provides all cryptographic services.",
+ "tested_configurations": [
+  "HPUX 11i v3 64-bit (single-user mode)",
+  "Redhat Linux 5.7 64-bit",
+  "Solaris 10 64-bit",
+  "Windows 2003 32-bit",
+  "Windows 2008 64-bit"
+ ],
+ "software_versions": "4.4.1",
+ "product_url": "http://www.vormetric.com/products/encryption",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1820",
+   "cavp_id": "1436",
+   "cavp_ref": "AES:1820"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1075",
+   "cavp_id": "16804",
+   "cavp_ref": "HMAC:1075"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1596",
+   "cavp_id": "27656",
+   "cavp_ref": "SHS:1596"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1173",
+   "cavp_id": "16739",
+   "cavp_ref": "TDES:1173"
+  }
+ ],
+ "vendor": "Vormetric, Inc.",
+ "vendor_info": {
+  "name": "Vormetric, Inc.",
+  "website": "http://www.vormetric.com",
+  "address": [
+   "2545 N. 1st Street",
+   "San Jose, CA 95131-1003",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Yoder"
+   },
+   {
+    "name": "Richard Gorman"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1721.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/23/2012",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  },
+  {
+   "date": "6/5/2012",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "5/23/2012",
+ "last_updated": "6/5/2012",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1721.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "ARIA; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1721,
+  "vendor": "Vormetric, Inc.",
+  "module": "Vormetric Encryption Expert Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/23/2012",
+   "06/05/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

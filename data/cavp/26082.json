@@ -1,0 +1,60 @@
+{
+ "cavp_id": "26082",
+ "cavp_cert": "AES 4525",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=26082",
+ "implementation": "iLO SSL Firmware Crypto Library",
+ "product_id": "815",
+ "description": "HPE Integrated Lights-Out (iLO) management built into HPE Proliant servers is an autonomous management subsystem embedded directly on the server. iLO monitors each server’s overall \"health\", reports issues, and provides a means for setup and managing of power and thermal settings.",
+ "version": "iLO 5 v1.11 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/2/2017",
+ "vendor": "Hewlett Packard Enterprise Company",
+ "vendor_website": "http://www.hpe.com",
+ "oes": [
+  {
+   "name": "Cortex A9",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

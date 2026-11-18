@@ -1,0 +1,42 @@
+{
+ "cavp_id": "20484",
+ "cavp_cert": "AES 5347",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20484",
+ "implementation": "Junos FIPS Version 17.4R1 - SRX5600 - Dataplane",
+ "product_id": "9354",
+ "description": "Juniper Networks SRX Series Services Gateways provide the essential capabilities necessary to connect, secure, and manage enterprise and service provider networks, from the smallest sites to the largest headquarters and data centers.",
+ "version": "XLP832 17.4R1 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "3/30/2018",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Broadcom XLP832 accelerator",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

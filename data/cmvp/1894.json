@@ -1,0 +1,130 @@
+{
+ "cert": 1894,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1894",
+ "module": "Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, Microsoft Windows Phone 8, and Microsoft Windows Storage Server 2012 Enhanced Cryptographic Provider (RSAENH.DLL)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with modules Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Code Integrity (CI.DLL) validated to FIPS 140-2 under Cert. #1897 operating in FIPS mode, Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Cryptographic Primitives Library (BCRYPTPRIMITIVES.DLL) validated to FIPS 140-2 under Cert. #1892 operating in FIPS mode, and Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Kernel Mode Cryptographic Primitives Library (CNG.SYS) validated to FIPS 140-2 under Cert. #1891 operating in FIPS mode.",
+ "level_exceptions": [
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Enhanced Cryptographic Provider (RSAENH.DLL) encapsulates several different cryptographic algorithms in an easy-to-use cryptographic module accessible via the Microsoft CryptoAPI. It can be dynamically linked into applications by software developers to permit the use of general-purpose FIPS 140-2 validated cryptography. This cryptographic module also maintains FIPS 140-2 validation compliance (according to FIPS 140-2 PUB Implementation Guidance G.5) on Microsoft Windows 8, Microsoft Windows 8 Pro, and Microsoft Windows Server 2012 Datacenter.",
+ "tested_configurations": [
+  "[Microsoft Windows 8 Enterprise (x86) running on a Dell Dimension C521",
+  "Microsoft Windows 8 Enterprise (x64) running on a Dell PowerEdge SC430 without PAA",
+  "Microsoft Windows 8 Enterprise (x64) running on Intel Core i7 with PAA running on an Intel Client Desktop",
+  "Microsoft Windows 8 Pro (x64) running on an Intel x64 Processor with PAA running on a Microsoft Surface Windows 8 Pro",
+  "Microsoft Windows Phone 8 (ARMv7 Thumb-2) running on a Windows Phone 8",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on a Microsoft Surface Windows RT",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on a Qualcomm Tablet",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on an NVIDIA Tegra 3 Tablet",
+  "Microsoft Windows Server 2012 (x64) running on a Dell PowerEdge SC430 without PAA",
+  "Microsoft Windows Server 2012 (x64) running on Intel Core i7 with PAA running on an Intel Client Desktop",
+  "Microsoft Windows Storage Server 2012 (x64) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows Storage Server 2012 (x64) running on an Intel Maho Bay without PAA (single-user mode)"
+ ],
+ "software_versions": "6.2.9200",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2196",
+   "cavp_id": "6709",
+   "cavp_ref": "AES:2196"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1346",
+   "cavp_id": "22405",
+   "cavp_ref": "HMAC:1346"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1132",
+   "cavp_id": "6141",
+   "cavp_ref": "RSA:1132"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1902",
+   "cavp_id": "13890",
+   "cavp_ref": "SHS:1902"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1386",
+   "cavp_id": "22555",
+   "cavp_ref": "TDES:1386"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1894.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0032.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/27/2013",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/9/2015",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "8/27/2013",
+ "last_updated": "1/9/2015",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1894.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #1892",
+  "Other Algorithms": "AES (Cert. #2196, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); DES; MD2; MD4; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Triple-DES (Cert. #1386, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1894,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, Microsoft Windows Phone 8, and Microsoft Windows Storage Server 2012 Enhanced Cryptographic Provider (RSAENH.DLL)",
+  "type": "Software",
+  "validation_dates": [
+   "08/27/2013",
+   "01/09/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

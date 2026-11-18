@@ -1,0 +1,48 @@
+{
+ "cavp_id": "11802",
+ "cavp_cert": "AES 2067",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11802",
+ "implementation": "HGST Hardware TcgCryptoLib",
+ "product_id": "258",
+ "description": "Hitachi GST Travelstar BDE, Opal TCG Drive and Enterprise SSC TCG Drive containing System on Chip (SOC) hardware Implementation of XTS-AES Encryption Algorithm, using either 128-bit or 256-bit keys.",
+ "version": "SVN2876 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/20/2012",
+ "vendor": "HGST, Inc.",
+ "vendor_website": "http://www.hitachigst.com",
+ "oes": [
+  {
+   "name": "Simulator: Mentor Graphics Modelsim Questasim 6.6c",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Block Size: Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Partial"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

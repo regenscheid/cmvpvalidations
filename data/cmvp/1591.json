@@ -1,0 +1,124 @@
+{
+ "cert": 1591,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1591",
+ "module": "Symantec Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Symantec Cryptographic Module is a software module with a multi-chip standalone embodiment. The overall security level of the module is 1. SymCrypt is implemented in the C programming language and consists of a shared library that is linked with SSIM application components. It is designed to execute on a host system with a General Purpose Computer (GPC) hardware platform.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2003 (32-bit)",
+  "Red Hat Enterprise Linux 4.8 (32-bit) (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1607",
+   "cavp_id": "10205",
+   "cavp_ref": "AES:1607"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 498",
+   "cavp_id": "8744",
+   "cavp_ref": "DSA:498"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 943",
+   "cavp_id": "646",
+   "cavp_ref": "HMAC:943"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 861",
+   "cavp_id": "5644",
+   "cavp_ref": "RNG:861"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 789",
+   "cavp_id": "10678",
+   "cavp_ref": "RSA:789"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1420",
+   "cavp_id": "13365",
+   "cavp_ref": "SHS:1420"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1052",
+   "cavp_id": "13065",
+   "cavp_ref": "TDES:1052"
+  }
+ ],
+ "vendor": "Symantec Corporation",
+ "vendor_info": {
+  "name": "Symantec Corporation",
+  "website": "http://www.symantec.com",
+  "address": [
+   "20330 Stevens Creek Blvd",
+   "Cupertino, CA 95014",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "John Bordwine"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1591.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0008.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/12/2011",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "8/12/2011",
+ "last_updated": "8/12/2011",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1591.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; Blowfish; CAST; IDEA; RC2; RC4; RC5; MD2; MD4; MD5; RipeMD; MDC-2; Diffie-Hellman (key agreement; key establishment methodology provides 80 bits of encryption strength; non-compliant); RSA (Cert. #789, key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1591,
+  "vendor": "Symantec Corporation",
+  "module": "Symantec Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/12/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

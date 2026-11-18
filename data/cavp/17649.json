@@ -1,0 +1,90 @@
+{
+ "cavp_id": "17649",
+ "cavp_cert": "RSA 2051",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17649",
+ "implementation": "ESKM OpenSSL",
+ "product_id": "5477",
+ "description": "Enterprise Secure Key Manager (ESKM) provides key generation, retrieval, and management for encryption devices and solutions. ESKM is a hardened security appliance with secure access control, administration, and logging. ESKM supports high availability with automatic multi-site clustering, replication, and failover.",
+ "version": "7.0.0_OpenSSL_1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/21/2016",
+ "vendor": "Hewlett Packard Enterprise",
+ "vendor_website": "http://www8.hp.com/us/en/software-solutions/eskm-enterprise-secure-key-management/index.html",
+ "oes": [
+  {
+   "name": "Intel Xeon E5-2600 Family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "      Properties:",
+    "        Modulo: 3072",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Random",
+    "Private Key Format: Standard"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

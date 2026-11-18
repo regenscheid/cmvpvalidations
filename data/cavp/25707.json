@@ -1,0 +1,44 @@
+{
+ "cavp_id": "25707",
+ "cavp_cert": "AES 5497",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25707",
+ "implementation": "Silvus SC4200 Hardware Crypto Module",
+ "product_id": "9643",
+ "description": "The Silvus Hardware Crypto Library is a programmable logic AES-GCM-256 implementation for use in Silvus Technologies SC4000 Series mesh radios.",
+ "version": "XC7Z030, v3.15.1 3.15.1 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "6/15/2018",
+ "vendor": "Silvus Technologies",
+ "vendor_website": "http://www.silvustechnologies.com",
+ "oes": [
+  {
+   "name": "Xilinx Zynq-7000",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 96",
+    "IV Length: 96",
+    "Payload Length: 8, 128, 256, 5000",
+    "AAD Length: 8, 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

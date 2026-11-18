@@ -1,0 +1,168 @@
+{
+ "cert": 1007,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1007",
+ "module": "Microsoft Windows Server 2008 Kernel Mode Security Support Provider Interface (ksecdd.sys)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Windows Server 2008 OS Loader (winload.exe) validated to FIPS 140-2 under Cert. #1005 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "KSECDD.SYS runs as a kernel mode export driver, and provides cryptographic services, through their documented interfaces, to Windows Vista kernel components. It supports several cryptographic algorithms accessible via a FIPS function table request irp (I/O request packet).",
+ "tested_configurations": [
+  "Microsoft Windows Server 2008 (IA64 version) (single-user mode)",
+  "Microsoft Windows Server 2008 (x64 version)",
+  "Microsoft Windows Server 2008 (x86 Version)"
+ ],
+ "software_versions": "6.0.6001.18709, 6.0.6001.18272, 6.0.6001.18796, 6.0.6001.22202, 6.0.6001.22450, 6.0.6001.22987, 6.0.6001.23069, 6.0.6002.18005, 6.0.6002.18051, 6.0.6002.18541, 6.0.6002.18643, 6.0.6002.22152, 6.0.6002.22742 and 6.0.6002.22869",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 739",
+   "cavp_id": "16244",
+   "cavp_ref": "AES:739"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 757",
+   "cavp_id": "4859",
+   "cavp_ref": "AES:757"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 83",
+   "cavp_id": "8499",
+   "cavp_ref": "ECDSA:83"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 413",
+   "cavp_id": "11408",
+   "cavp_ref": "HMAC:413"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 435",
+   "cavp_id": "12220",
+   "cavp_ref": "RNG:435",
+   "note": "SP800-90 AES-CTR  vendor affirmed"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 353",
+   "cavp_id": "198",
+   "cavp_ref": "RSA:353"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 358",
+   "cavp_id": "22783",
+   "cavp_ref": "RSA:358"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 753",
+   "cavp_id": "19283",
+   "cavp_ref": "SHS:753"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 656",
+   "cavp_id": "13627",
+   "cavp_ref": "TDES:656"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1007.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1007.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/15/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "2/23/2009",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "7/30/2009",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "10/16/2009",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "2/9/2012",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "9/27/2012",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "8/15/2008",
+ "last_updated": "9/27/2012",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1007.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (GCM and GMAC; non-compliant); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD2; MD4; MD5; HMAC MD5; RC2; RC4; RNG (SP 800-90 Dual-EC; non-compliant); RSA (key wrapping: key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1007,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Windows Server 2008 Kernel Mode Security Support Provider Interface (ksecdd.sys)",
+  "type": "Software",
+  "validation_dates": [
+   "08/15/2008",
+   "02/23/2009",
+   "07/30/2009",
+   "10/16/2009",
+   "02/09/2012",
+   "09/27/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

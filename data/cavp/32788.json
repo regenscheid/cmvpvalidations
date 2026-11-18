@@ -1,0 +1,734 @@
+{
+ "cavp_id": "32788",
+ "cavp_cert": "C1884",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32788",
+ "implementation": "NetApp Cryptomod with AES-NI",
+ "product_id": "12691",
+ "description": "NetApp CryptoMod will be integrated into select NetApp ONTAP releases for the purpose of supporting FIPS 140-2 compliant data-at-rest and data-in-flight encryption and key management.",
+ "version": "2.2",
+ "type": "SOFTWARE",
+ "first_validated": "6/24/2020",
+ "vendor": "NetApp, Inc.",
+ "vendor_website": "http://www.netapp.com",
+ "oes": [
+  {
+   "name": "ONTAP 9.7P6 on Intel® Xeon® D-1528 (Broadwell) processor with AES-NI",
+   "details": [
+    "processor: Intel Xeon® D-1528 (Broadwell) processor with AES-NI",
+    "  manufacturer: Intel",
+    "software: ONTAP 9.7P6"
+   ]
+  },
+  {
+   "name": "ONTAP 9.7P6 on Intel® Xeon® E5-2620 (Sandy Bridge) processor with AES-NI",
+   "details": [
+    "processor: Intel Xeon® E5-2620 (Sandy Bridge) processor with AES-NI",
+    "  manufacturer: Intel",
+    "software: ONTAP 9.7P6"
+   ]
+  },
+  {
+   "name": "ONTAP 9.7P6 on Intel® Xeon® Platinum 8160 (Skylake-SP) processor with AES-NI",
+   "details": [
+    "processor: Intel Xeon® Platinum 8160 (Skylake-SP) processor with AES-NI",
+    "  manufacturer: Intel",
+    "software: ONTAP 9.7P6"
+   ]
+  },
+  {
+   "name": "ONTAP 9.7P6 on Intel® Xeon® Silver 4210 (Cascade Lake) processor with AES-NI",
+   "details": [
+    "processor: Intel Xeon® Silver 4210 (Cascade Lake) processor with AES-NI",
+    "  manufacturer: Intel",
+    "software: ONTAP 9.7P6"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 88",
+    "Payload Length: 0-256",
+    "AAD Length: 8-256",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 88",
+    "Payload Length: 0-256",
+    "AAD Length: 8-256",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 2,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 88",
+    "Payload Length: 0-256",
+    "AAD Length: 8-256",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 3,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 88",
+    "Payload Length: 0-256",
+    "AAD Length: 8-256",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 408, 480, 512",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 512, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 808",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 808",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 808",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 808",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 136, 200, 256, 65536",
+    "Tweak Mode: Hex",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 136, 200, 256, 65536",
+    "Tweak Mode: Hex",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 136, 200, 256, 65536",
+    "Tweak Mode: Hex",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 136, 200, 256, 65536",
+    "Tweak Mode: Hex",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 136, 200, 256, 65536",
+    "Tweak Mode: Hex",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 136, 200, 256, 65536",
+    "Tweak Mode: Hex",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 136, 200, 256, 65536",
+    "Tweak Mode: Hex",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 136, 200, 256, 65536",
+    "Tweak Mode: Hex",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 2,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 3,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C1884 (AES)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 80, 96, 128, 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 80, 96, 128, 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 80, 96, 128, 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 80, 96, 128, 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256, 320, 384, 448, 512",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256, 320, 384, 448, 512",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 256, 320, 384, 448, 512",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 256, 320, 384, 448, 512",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1884 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-512",
+    "    Supported Lengths: 224, 256, 32736, 32768",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "C1884 (DRBG)",
+    "C1884 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-512",
+    "    Supported Lengths: 224, 256, 32736, 32768",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "C1884 (DRBG)",
+    "C1884 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-512",
+    "    Supported Lengths: 224, 256, 32736, 32768",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "C1884 (DRBG)",
+    "C1884 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-512",
+    "    Supported Lengths: 224, 256, 32736, 32768",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "C1884 (DRBG)",
+    "C1884 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,52 @@
+{
+ "cavp_id": "14795",
+ "cavp_cert": "RSA 2407",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14795",
+ "implementation": "x86 Processor RSA 2048 (SigGen_SigVer)",
+ "product_id": "632",
+ "description": "An implementation of RSA Digital Signature generation/verification used inside Dolby Media Blocks.",
+ "version": "FH8065501516702 1.1 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "3/10/2017",
+ "vendor": "Dolby Laboratories, Inc.",
+ "vendor_website": "http://www.dolby.com",
+ "oes": [
+  {
+   "name": "x86 Processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

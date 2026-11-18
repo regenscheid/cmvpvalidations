@@ -1,0 +1,194 @@
+{
+ "cert": 2859,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2859",
+ "module": "Mocana Cryptographic Suite B Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Mocana Cryptographic Module is the engine of Mocana's Device Security Framework - a software framework that secures all aspects of a system. The Device Security Framework helps applications and device designers reduce development costs and dramatically enhance cryptographic performance. For details see www.mocana.com.",
+ "tested_configurations": [
+  "Mentor Graphics Linux 4.0 running on Avaya VSP4450GSX",
+  "Wind River Linux 6.0 running on Intel Atom E3800 (single-user mode)"
+ ],
+ "software_versions": "6.4.1f",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4100",
+   "cavp_id": "21671",
+   "cavp_ref": "AES:4100"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4265",
+   "cavp_id": "2083",
+   "cavp_ref": "AES:4265"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 971",
+   "cavp_id": "29344",
+   "cavp_ref": "Component:971"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1007",
+   "cavp_id": "20627",
+   "cavp_ref": "Component:1007"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1232",
+   "cavp_id": "4660",
+   "cavp_ref": "DRBG:1232"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1336",
+   "cavp_id": "9224",
+   "cavp_ref": "DRBG:1336"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1115",
+   "cavp_id": "913",
+   "cavp_ref": "DSA:1115",
+   "note": "1140"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 928",
+   "cavp_id": "10116",
+   "cavp_ref": "ECDSA:928"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 994",
+   "cavp_id": "2959",
+   "cavp_ref": "ECDSA:994"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2679",
+   "cavp_id": "10948",
+   "cavp_ref": "HMAC:2679"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2810",
+   "cavp_id": "26611",
+   "cavp_ref": "HMAC:2810"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2219",
+   "cavp_id": "16825",
+   "cavp_ref": "RSA:2219"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2296",
+   "cavp_id": "2660",
+   "cavp_ref": "RSA:2296"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3375",
+   "cavp_id": "29033",
+   "cavp_ref": "SHS:3375"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3511",
+   "cavp_id": "2185",
+   "cavp_ref": "SHS:3511"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2243",
+   "cavp_id": "13252",
+   "cavp_ref": "TDES:2243"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2306",
+   "cavp_id": "23450",
+   "cavp_ref": "TDES:2306"
+  }
+ ],
+ "vendor": "Mocana Corporation",
+ "vendor_info": {
+  "name": "Mocana Corporation",
+  "website": "http://www.mocana.com",
+  "address": [
+   "20 California Street",
+   "San Francisco, CA 94111",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Srinivas Kumar"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2859.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMar2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/8/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "6/14/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "3/8/2017",
+ "last_updated": "6/14/2017",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2859.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (CVL Cert. #971 with CVL Cert. #1007, key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #971 with CVL Cert. #1007, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); AES GCM (AES Certs. #4100 and #4265; non-compliant); AES XTS (AES Certs. #4100 and #4265; non-compliant); DES; HMAC-MD5; MD2; MD4; MD5; PRNG; RSA (encrypt/decrypt)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2859,
+  "vendor": "Mocana Corporation",
+  "module": "Mocana Cryptographic Suite B Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/08/2017",
+   "06/14/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

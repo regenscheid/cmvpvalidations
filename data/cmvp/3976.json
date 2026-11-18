@@ -1,0 +1,191 @@
+{
+ "cert": 3976,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3976",
+ "module": "Keeper Security Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 8 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Keeper is a password manager application and digital vault that stores passwords, authentication information and other sensitive documents using 256-bit AES encryption, zero-knowledge architecture and two-factor authentication.",
+ "tested_configurations": [
+  "VMware Photon OS 2.0 with JDK 11 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5",
+  "VMware Photon OS 2.0 with JDK 7 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5",
+  "VMware Photon OS 2.0 with JDK 8 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5 (single user mode)"
+ ],
+ "allowed_algorithms": "NDRNG; MD5; RSA (CVL Cert. #C2204, key wrapping; key establishment methodology provides between 150 and 256 bits of encryption strength)",
+ "software_versions": "1.0.2.1",
+ "product_url": "N/A",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C2204; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #C2204; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "SHA-3-Customized",
+   "cavp_cert": "SHA-3 Cert. #C2204, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  }
+ ],
+ "vendor": "Keeper Security Inc.",
+ "vendor_info": {
+  "name": "Keeper Security Inc.",
+  "website": "https://www.keepersecurity.com/",
+  "address": [
+   "820 W. Jackson Blvd., Suite 400",
+   "Chicago, IL 60607",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Information Security Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3976.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202021_020821_0740_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/12/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "7/27/2021",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "7/12/2021",
+ "last_updated": "7/27/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3976.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; MD5; RSA (CVL Cert. #C2204, key wrapping; key establishment methodology provides between 150 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3976,
+  "vendor": "Keeper Security Inc.",
+  "module": "Keeper Security Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "07/12/2021",
+   "07/27/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

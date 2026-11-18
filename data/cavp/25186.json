@@ -1,0 +1,50 @@
+{
+ "cavp_id": "25186",
+ "cavp_cert": "AES 3461",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25186",
+ "implementation": "Samsung Kernel Cryptographic Module",
+ "product_id": "930",
+ "description": "General purpose Cryptographic services available for Linux kernel used by Samsung devices to provide secured services.",
+ "version": "SKC1.6",
+ "type": "SOFTWARE",
+ "first_validated": "7/10/2015",
+ "vendor": "Samsung Electronics Co., Ltd",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Android Lollipop 5.1 on ARMv7",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,55 @@
+{
+ "cavp_id": "1912",
+ "cavp_cert": "AES 4542",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1912",
+ "implementation": "IEEE 802.11 Crypto API",
+ "product_id": "1701",
+ "description": "Algorithms used by the Wifi applications and corresponding Linux kernel driver.",
+ "version": "2.6 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/16/2017",
+ "vendor": "GE MDS, LLC",
+ "vendor_website": "http://www.gemds.com",
+ "oes": [
+  {
+   "name": "Freescale IMX 6 (ARM)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 176-240"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128",
+    "    MAC Length: 64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

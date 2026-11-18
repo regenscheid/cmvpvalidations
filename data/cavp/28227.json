@@ -1,0 +1,41 @@
+{
+ "cavp_id": "28227",
+ "cavp_cert": "AES 944",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28227",
+ "implementation": "Redline BWI Cryptographic Library",
+ "product_id": "2502",
+ "description": "The Redline BWI Cryptographic Library provides encryption/decryption, hashing, and signing services to Redline's Broadband Wireless Infrastructure (BWI) solutions, including the RedCONNEX point-to-point and RedACCESS point-to-multipoint family of products.",
+ "version": "v1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/26/2008",
+ "vendor": "Aviat Networks, Inc.",
+ "vendor_website": "http://www.aviatnetworks.com",
+ "oes": [
+  {
+   "name": "Xilinx Spartan-3 FPGA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,201 @@
+{
+ "cert": 2100,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2100",
+ "module": "Cisco FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3.2 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Cisco FIPS Object Module (FOM) is a software library that provides cryptographic services to a vast array of Cisco's networking and collaboration products. The module provides FIPS 140 validated cryptographic algorithms for services such as IPSEC, SRTP, SSH, TLS, 802.1x, etc. The module does not directly implement any of these protocols, instead it provides the cryptographic primitives and functions to allow a developer to implement the various protocols.",
+ "tested_configurations": [
+  "Android v4.0 running on a Samsung Galaxy S II",
+  "FreeBSD 9.0 running on a Cisco UCS C210 M2 without-PAA",
+  "Linux 2.6 running an Intel Xeon on a Cisco UCS C200 M2 without PAA (single-user mode)",
+  "Linux 2.6 running on a Cisco ASR1002",
+  "Linux 2.6 running on a Cisco UCS C22 M3 with PAA",
+  "Linux 2.6 running on an Octeon Evaluation Board EBH5200 with Octeon",
+  "Linux 2.6 running on an Octeon Evaluation Board EBH5200 without Octeon",
+  "Windows 7 running on a Cisco UCS C200 M2 without PAA",
+  "Windows 7 running on a Cisco UCS C210 M2 with PAA"
+ ],
+ "software_versions": "4.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2678",
+   "cavp_id": "28635",
+   "cavp_ref": "AES:2678"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2685",
+   "cavp_id": "6266",
+   "cavp_ref": "AES:2685"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 151",
+   "cavp_id": "13423",
+   "cavp_ref": "Component:151"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 153",
+   "cavp_id": "10641",
+   "cavp_ref": "Component:153"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 431",
+   "cavp_id": "20131",
+   "cavp_ref": "DRBG:431"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 435",
+   "cavp_id": "19564",
+   "cavp_ref": "DRBG:435"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 812",
+   "cavp_id": "5801",
+   "cavp_ref": "DSA:812"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 814",
+   "cavp_id": "7093",
+   "cavp_ref": "DSA:814"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 467",
+   "cavp_id": "747",
+   "cavp_ref": "ECDSA:467"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 471",
+   "cavp_id": "19334",
+   "cavp_ref": "ECDSA:471"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1664",
+   "cavp_id": "20629",
+   "cavp_ref": "HMAC:1664"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1672",
+   "cavp_id": "17371",
+   "cavp_ref": "HMAC:1672"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1377",
+   "cavp_id": "9946",
+   "cavp_ref": "RSA:1377"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1385",
+   "cavp_id": "11728",
+   "cavp_ref": "RSA:1385"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2247",
+   "cavp_id": "29886",
+   "cavp_ref": "SHS:2247"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2256",
+   "cavp_id": "5241",
+   "cavp_ref": "SHS:2256"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1606",
+   "cavp_id": "23976",
+   "cavp_ref": "TDES:1606"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1611",
+   "cavp_id": "29041",
+   "cavp_ref": "TDES:1611"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2100.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0039.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/7/2014",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "3/7/2014",
+ "last_updated": "3/7/2014",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2100.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength; non-compliant less then 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less then 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less then 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2100,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "Cisco FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/07/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

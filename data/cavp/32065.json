@@ -1,0 +1,52 @@
+{
+ "cavp_id": "32065",
+ "cavp_cert": "C1553",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32065",
+ "implementation": "Qualcomm(R) Inline Crypto Engine (UFS) Encryption (Version 3.1.0)",
+ "product_id": "12016",
+ "description": "Qualcomm Inline Crypto Engine provides high throughput storage data encryption.",
+ "version": "3.1.0",
+ "type": "HARDWARE",
+ "first_validated": "1/30/2020",
+ "vendor": "Qualcomm Technologies, Inc.",
+ "vendor_website": "http://www.qualcomm.com/",
+ "oes": [
+  {
+   "name": "Qualcomm(R) Snapdragon(TM) 765 5G Mobile Platform",
+   "details": [
+    "processor: Qualcomm(R) Snapdragon(TM) 765 5G Mobile Platform"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128",
+    "Payload Length: 4096, 8192, 65536",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096, 8192, 65536",
+    "Tweak Mode: Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

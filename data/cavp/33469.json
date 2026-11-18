@@ -1,0 +1,294 @@
+{
+ "cavp_id": "33469",
+ "cavp_cert": "A871",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33469",
+ "implementation": "Junos OS 20.3R1 - OpenSSL",
+ "product_id": "13362",
+ "description": "The Juniper Networks ACX5000 line of Universal Metro Routers adds operational intelligence to metro environments, giving you the option to deploy packet optical, Metro Ethernet, and IP/MPLS infrastructure. The ACX5448-M model supports 44 1GbE/10GbE and six 40GbE/100GbE ports, as well as advanced security capabilities such as Media Access Control Security (MACsec) on all 1GbE/10GbE ports.",
+ "version": "Junos OS 20.3R1",
+ "type": "FIRMWARE",
+ "first_validated": "11/6/2020",
+ "vendor": "Juniper Networks, Inc",
+ "vendor_website": "https://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Intel Xeon D1528",
+   "details": [
+    "processor: Intel Xeon D1528",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 80, 96, 128, 160",
+    "Key Length: 8-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 112, 128, 160, 192, 224",
+    "Key Length: 8-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128-256 Increment 64",
+    "Key Length: 8-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128-256 Increment 64",
+    "Key Length: 8-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256, TDES",
+    "Hash Algorithm: SHA-1, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "      Properties:",
+    "        Modulo: 3072",
+    "        Primality Tests: Table C.2",
+    "      Properties:",
+    "        Modulo: 4096",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: Standard"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8",
+    "Function: SHA1"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,167 @@
+{
+ "cavp_id": "32674",
+ "cavp_cert": "C1775",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32674",
+ "implementation": "Christine Wireless TKMD & RIC-Mz Cryptographic Library",
+ "product_id": "12576",
+ "description": "The Christine Wireless TKMD & RIC-Mz Cryptographic Library provides cryptographic operations and functionality for the Tactical Key Management Device (TKMD) & Radio Internet-Protocol Communications (RIC-Mz) modules.",
+ "version": "Stack Version 7.32-H3.2",
+ "type": "FIRMWARE",
+ "first_validated": "6/2/2020",
+ "vendor": "Christine Wireless, Inc.",
+ "vendor_website": "http://Christinewireless.com",
+ "oes": [
+  {
+   "name": "Microchip PIC32MZ2048EFM100",
+   "details": [
+    "processor: Microchip PIC32MZ2048EFM100"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 360, 512",
+    "AAD Length: 0, 72, 104, 128, 512"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 72, 104, 128, 512"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128, 192, 256, 320, 4096",
+    "C1775 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 1024",
+    "C1775 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C1775 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.2",
+    "Hash Algorithm: SHA2-384",
+    "C1775 (SHS)",
+    "C1775 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "C1775 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "oe": 0,
+   "capabilities": [
+    "Private Key Format: standard"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "Public Exponent Mode: Random",
+    "C1775 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51712 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

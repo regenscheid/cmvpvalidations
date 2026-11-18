@@ -1,0 +1,62 @@
+{
+ "cavp_id": "34527",
+ "cavp_cert": "A1918",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34527",
+ "implementation": "librte_crypto_post",
+ "product_id": "14416",
+ "description": "The librte_crypto_post implementation provides integrity service to the VPN module.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "9/3/2021",
+ "vendor": "VMware, Inc.",
+ "vendor_website": "http://www.vmware.com",
+ "oes": [
+  {
+   "name": "Ubuntu 18.04 on VMware ESXi 7.0 on Intel Xeon Gold 6230R with AES-NI",
+   "details": [
+    "Operating System: Ubuntu 18.04",
+    "Processor: VMware ESXi 7.0 on Intel Xeon Gold 6230R"
+   ]
+  },
+  {
+   "name": "Ubuntu 18.04 on VMware ESXi 7.0 on Intel Xeon Gold 6230R without AES-NI",
+   "details": [
+    "Operating System: Ubuntu 18.04",
+    "Processor: VMware ESXi 7.0 on Intel Xeon Gold 6230R"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

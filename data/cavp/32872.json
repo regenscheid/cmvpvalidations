@@ -1,0 +1,355 @@
+{
+ "cavp_id": "32872",
+ "cavp_cert": "C1966",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32872",
+ "implementation": "RF7800W & RF7850W SW Cryptographic Library v3.0",
+ "product_id": "12776",
+ "description": "Cryptographic library for RF7800W and RF7850W radios.",
+ "version": "3.0",
+ "type": "FIRMWARE",
+ "first_validated": "7/1/2020",
+ "vendor": "L3Harris Technologies, Inc.",
+ "vendor_website": "http://www.harris.com/solution/harris-falcon",
+ "oes": [
+  {
+   "name": "Broadcom XLS108",
+   "details": [
+    "processor: Broadcom XLS108"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 64, 128, 192, 256",
+    "AAD Length: 0, 64, 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 64, 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128, 192, 256, 960, 1024",
+    "C1966 (AES)"
+   ]
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 224",
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 256"
+   ]
+  },
+  {
+   "algorithm": "DSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 224",
+    "    Hash Algorithm: SHA2-224",
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 256",
+    "    Hash Algorithm: SHA2-256",
+    "C1966 (SHS)",
+    "C1966 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "DSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 224",
+    "    Hash Algorithm: SHA2-224",
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 256",
+    "    Hash Algorithm: SHA2-256",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Testing Candidates",
+    "C1966 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 1024",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192, 256, 320, 384",
+    "Key size = block size",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256, 320, 384, 448, 512",
+    "Key size = block size",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation, Key Pair Generation",
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation, Key Pair Generation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-256",
+    "C1966 (ECDSA)",
+    "C1966 (SHS)",
+    "C1966 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation, Key Pair Generation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF without Key Confirmation:",
+    "      KDF Option:",
+    "        Concatenation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256",
+    "          MAC Option:",
+    "            HMAC-SHA2-256:",
+    "              Key Length: 256",
+    "              MAC Length: 256",
+    "C1966 (DSA)",
+    "C1966 (SHS)",
+    "C1966 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "KDF SNMP",
+   "oe": 0,
+   "capabilities": [
+    "Password Length: 64-128",
+    "Engine ID: 800001220366554433221100, 800001220366554433221100",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA2-256",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.2",
+    "Hash Algorithm: SHA2-256, SHA2-384",
+    "C1966 (SHS)",
+    "C1966 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "Private Key Format: Standard",
+    "C1966 (SHS)",
+    "C1966 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "oe": 0,
+   "capabilities": [
+    "Private Key Format: standard"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "C1966 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

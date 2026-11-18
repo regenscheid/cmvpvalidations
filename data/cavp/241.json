@@ -1,0 +1,84 @@
+{
+ "cavp_id": "241",
+ "cavp_cert": "AES 963",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=241",
+ "implementation": "AES Execution Unit (AESU) r3.0.0",
+ "product_id": "7548",
+ "description": "\"Freescale's AESU r3.0.0 is an algorithm specific accelerator for AES supporting the NIST modes and key lengths listed above. This revision of the AESU is used in multiple versions of the SEC (Freescale's Embedded Security Acceleration Engine).",
+ "version": "",
+ "type": "UNKNOWN",
+ "first_validated": "12/18/2008",
+ "vendor": "NXP Semiconductor",
+ "vendor_website": "http://www.freescale.com",
+ "oes": [
+  {
+   "name": "Freescale Semiconductor MPC8572E",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 8-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 8-128",
+    "    Message Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

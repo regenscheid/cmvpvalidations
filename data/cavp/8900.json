@@ -1,0 +1,62 @@
+{
+ "cavp_id": "8900",
+ "cavp_cert": "RSA 2427",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=8900",
+ "implementation": "Common Criteria Evaluation (CCE) Certification for ALE AoS OmniSwitch (OS6900 PowerPC P2040 ECDSA-GCM-TDES-RSA-PSS)",
+ "product_id": "671",
+ "description": "ALE AOS cryptographic module supports the Alcatel-Lucent Enterprise OmniSwitch. The testing applies to Common Criteria mode.",
+ "version": "AOS 8.3.1.R01",
+ "type": "SOFTWARE",
+ "first_validated": "3/31/2017",
+ "vendor": "ALE (Alcatel Lucent Enterprise)",
+ "vendor_website": "http://www.al-enterprise.com",
+ "oes": [
+  {
+   "name": "AOS 8.3.1.R01 on PowerPC P2040",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 0",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

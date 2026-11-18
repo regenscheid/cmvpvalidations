@@ -1,0 +1,117 @@
+{
+ "cavp_id": "31461",
+ "cavp_cert": "C1064",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31461",
+ "implementation": "Standalone IMB Cryptographic Module",
+ "product_id": "11417",
+ "description": "A digital cinema standalone integrated media block that is compliant with DCI specifications and SMPTE digital cinema standards. The supported features include JPEG2000 decoding, AES decryption, key management, and logging.",
+ "version": "2.0.11",
+ "type": "FIRMWARE",
+ "first_validated": "9/5/2019",
+ "vendor": "GDC Technology (USA) LLC",
+ "vendor_website": "http://gdc-tech.com",
+ "oes": [
+  {
+   "name": "Xilinx Zynq Ultrascale+",
+   "details": [
+    "processor: Xilinx Zynq Ultrascale+"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1064 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1",
+    "C1064 (SHS)",
+    "C1064 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "Private Key Format: Standard",
+    "C1064 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "C1064 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "C1064 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

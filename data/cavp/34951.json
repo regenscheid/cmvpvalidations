@@ -1,0 +1,172 @@
+{
+ "cavp_id": "34951",
+ "cavp_cert": "A2342",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34951",
+ "implementation": "SBP Firmware Crypto Engine",
+ "product_id": "14822",
+ "description": "Resident Firmware which provides a mailbox based API providing access to the different hardware engines",
+ "version": "95b53165a1",
+ "type": "FIRMWARE",
+ "first_validated": "2/15/2022",
+ "vendor": "Fungible Inc.",
+ "vendor_website": "http://www.fungible.com",
+ "oes": [
+  {
+   "name": "F1 MIPS32 DPU",
+   "details": [
+    "Processor: F1 MIPS32 DPU"
+   ]
+  },
+  {
+   "name": "S1 MIPS32 DPU",
+   "details": [
+    "Processor: S1 MIPS32 DPU"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-224",
+    "    Entropy Input: 224",
+    "    Nonce: 224",
+    "    Personalization String Length: 224",
+    "    Additional Input: 0",
+    "    Returned Bits: 896",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 256",
+    "    Additional Input: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "    Entropy Input: 384",
+    "    Nonce: 384",
+    "    Personalization String Length: 384",
+    "    Additional Input: 0",
+    "    Returned Bits: 1536",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 512",
+    "    Nonce: 512",
+    "    Personalization String Length: 512",
+    "    Additional Input: 0",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-224",
+    "    Entropy Input: 224",
+    "    Nonce: 224",
+    "    Personalization String Length: 224",
+    "    Additional Input: 0",
+    "    Returned Bits: 896",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 256",
+    "    Additional Input: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "    Entropy Input: 384",
+    "    Nonce: 384",
+    "    Personalization String Length: 384",
+    "    Additional Input: 0",
+    "    Returned Bits: 1536",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 512",
+    "    Nonce: 512",
+    "    Personalization String Length: 512",
+    "    Additional Input: 0",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "oe": 0,
+   "capabilities": [
+    "Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "Field Size: 256, 521",
+    "Shared Info Length: 0, 1024",
+    "Key Data Length: 128, 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "oe": 1,
+   "capabilities": [
+    "Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "Field Size: 256, 521",
+    "Shared Info Length: 0, 1024",
+    "Key Data Length: 128, 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128",
+    "    Supported Lengths: 128",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128",
+    "    Supported Lengths: 128",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1-10000000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "    Password Length: 8-128 Increment 8",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

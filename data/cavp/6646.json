@@ -1,0 +1,77 @@
+{
+ "cavp_id": "6646",
+ "cavp_cert": "RSA 3094",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6646",
+ "implementation": "MC VA Java Cryptographic Library",
+ "product_id": "10271",
+ "description": "The MC VA Java Cryptographic Library provides the necessary cryptographic services for Java the Management Center software developed specifically for use in the Management Center appliances.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "10/26/2018",
+ "vendor": "Symantec Corporation",
+ "vendor_website": "http://www.symantec.com",
+ "oes": [
+  {
+   "name": "RHEL 6.9 on ESXi 6.0 on Intel E5 4620v4",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "      Properties:",
+    "        Modulo: 3072",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

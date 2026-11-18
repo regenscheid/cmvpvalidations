@@ -1,0 +1,127 @@
+{
+ "cert": 1837,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1837",
+ "module": "NSS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and when obtained, installed, and initialized as specified in Section 5 of the provided Security Policy. Section 5 also specifies the precise RPM file containing this module. The integrity of the RPM is automatically verified during the installation and the Crypto officer shall not install the RPM file if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Network Security Services (NSS) is a set of open source C libraries designed to support cross-platform development of security-enabled applications. NSS implements major Internet security standards. NSS is available free of charge under a variety of open source compatible licenses. See http://www.mozilla.org/projects/security/pki/nss/ .",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux v6.2 32-bit running on an Intel Core i7 system",
+  "Red Hat Enterprise Linux v6.2 64-bit running on an Intel Core i7 system",
+  "Red Hat Enterprise Linux v6.2 64-bit running on an Intel Core i7 system with PAA (single-user mode)"
+ ],
+ "software_versions": "3.12.9.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1908",
+   "cavp_id": "16549",
+   "cavp_ref": "AES:1908"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 165",
+   "cavp_id": "22267",
+   "cavp_ref": "DRBG:165"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 602",
+   "cavp_id": "24136",
+   "cavp_ref": "DSA:602"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1145",
+   "cavp_id": "23767",
+   "cavp_ref": "HMAC:1145"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 979",
+   "cavp_id": "21249",
+   "cavp_ref": "RSA:979"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1675",
+   "cavp_id": "4201",
+   "cavp_ref": "SHS:1675"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1240",
+   "cavp_id": "28928",
+   "cavp_ref": "TDES:1240"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "100 East Davie Street",
+   "Raleigh, NC 27601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Robert Relyea"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1837.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0023.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/8/2012",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "11/8/2012",
+ "last_updated": "11/8/2012",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1837.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "AES (Cert. #1908, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Camellia; DES; Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); HKDF; J-PAKE; MD2; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); SEED; Triple-DES (Cert. #1240, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1837,
+  "vendor": "Red Hat®, Inc.",
+  "module": "NSS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "11/08/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,66 @@
+{
+ "cavp_id": "33511",
+ "cavp_cert": "A912",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33511",
+ "implementation": "Kavacha Crypto Library",
+ "product_id": "13372",
+ "description": "RSA Module implements Signature Verification per PSS PKCS#1 V2.1 with 2048 bit Modulus and fixed and variable exponent. PBKDF Module implements support for variable length password up to 32 bytes, salt of 32 bytes generating output of 32 bytes. DRBG Module implements the CTR-DRBG as per the SP 800-90A specification.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "12/17/2020",
+ "vendor": "SK hynix memory solutions America Inc.",
+ "vendor_website": "http://www.skhms.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-R8 without Neon",
+   "details": [
+    "cpu: ARM Cortex-R8 without Neon"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-2048 Increment 128",
+    "    Entropy Input: 256-2048 Increment 128",
+    "    Nonce: 128-1024 Increment 128",
+    "    Personalization String Length: 0-2048 Increment 128",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000",
+    "    HMAC Algorithm: SHA2-256",
+    "    Password Length: 8-32 Increment 1",
+    "    Salt Length: 256",
+    "    Key Data Length: 256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "Public Exponent Mode: Random"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

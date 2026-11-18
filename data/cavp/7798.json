@@ -1,0 +1,60 @@
+{
+ "cavp_id": "7798",
+ "cavp_cert": "RSA 805",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7798",
+ "implementation": "HP TippingPoint SMS (NSS JCE Provider)",
+ "product_id": "8012",
+ "description": "The TippingPoint SMS is a centeralized management solution for managing and monitoring a deployment of TippingPoint security devices. The SMS provides cryptographic services for communicating with the security devices and user interfaces. This implementation focuses on the NSS cryptographic library which is used to implement a SUN JCE Provider.",
+ "version": "3.12.6 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/5/2011",
+ "vendor": "Hewlett-Packard TippingPoint",
+ "vendor_website": "http://www.tippingpoint.com",
+ "oes": [
+  {
+   "name": "Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

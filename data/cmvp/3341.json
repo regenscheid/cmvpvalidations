@@ -1,0 +1,175 @@
+{
+ "cert": 3341,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3341",
+ "module": "Cisco FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 4.2 and operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cisco FIPS Object Module (FOM) is a software library that provides cryptographic services to a vast array of Cisco's networking and collaboration products. The module provides FIPS 140 validated cryptographic algorithms for services such as IPSEC, SRTP, SSH, TLS, 802.1x, etc. The module does not directly implement any of these protocols, instead it provides the cryptographic primitives and functions to allow a developer to implement the various protocols.",
+ "tested_configurations": [
+  "Android 7.1 running on Google Nexus 5x with ARMv8 without PAA",
+  "iOS 11.2 running on Apple iPhone 8 with ARMv8 without PAA",
+  "macOS 10.12 on a MacBook Pro with Intel Core i7 with PAA",
+  "macOS 10.12 on a MacBook Pro with Intel Core i7 without PAA",
+  "SUSE Linux Enterprise 11 on Vmware ESXi 6.0 running on Cisco UCSC-C220-M5SX with Intel Xeon Bronze without PAA",
+  "SUSE Linux Enterprise 11 running on Cisco UCSC-C220-M5SX with Intel Xeon Bronze with PAA",
+  "Wind River Linux 4 running on a Advantech NCP-3110 with Cavium Octeon II 68XX without PAA",
+  "Wind River Linux 5 running on a Cisco N3K-C3172PQ-10GE with Intel Pentium without PAA (single-user mode)",
+  "Windows 10 on a Lenovo ThinkCentre M900 with Intel Core i5 with PAA",
+  "Windows 10 on a Lenovo ThinkCentre M900 with Intel Core i5 without PAA"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1779 with CVL Cert. #1780, key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1779 with CVL Cert. #1780, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides between 112 and 132 bits of encryption strength)",
+ "software_versions": "7.0; 7.0a",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5310",
+   "cavp_id": "3128",
+   "cavp_ref": "AES:5310"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1779",
+   "cavp_id": "28823",
+   "cavp_ref": "Component:1779"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1780",
+   "cavp_id": "13355",
+   "cavp_ref": "Component:1780"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2048",
+   "cavp_id": "23960",
+   "cavp_ref": "DRBG:2048"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1374",
+   "cavp_id": "11042",
+   "cavp_ref": "DSA:1374"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1395",
+   "cavp_id": "10034",
+   "cavp_ref": "ECDSA:1395"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3513",
+   "cavp_id": "28606",
+   "cavp_ref": "HMAC:3513"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 186",
+   "cavp_id": "1007",
+   "cavp_ref": "KDF:186"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5310; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2845",
+   "cavp_id": "8862",
+   "cavp_ref": "RSA:2845"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4267",
+   "cavp_id": "7462",
+   "cavp_ref": "SHS:4267"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2685",
+   "cavp_id": "5485",
+   "cavp_ref": "TDES:2685"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3341.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Dec2018Cert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/17/2018",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "5/9/2019",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/17/2018",
+ "last_updated": "5/9/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3341.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1779 with CVL Cert. #1780, key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1779 with CVL Cert. #1780, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides between 112 and 132 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3341,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "Cisco FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/17/2018",
+   "05/09/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

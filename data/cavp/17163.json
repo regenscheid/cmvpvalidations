@@ -1,0 +1,50 @@
+{
+ "cavp_id": "17163",
+ "cavp_cert": "AES 1810",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17163",
+ "implementation": "ACC (Atos Worldline Cryptographic Core)",
+ "product_id": "8182",
+ "description": "The ACC is the cryptographic engine of Atos Worldline Hardware Security Module. The ACC makes use of dedicated hardware accelerators.",
+ "version": "1.2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/30/2011",
+ "vendor": "Atos Worldline SA/NV",
+ "vendor_website": "http://www.atosworldline.com",
+ "oes": [
+  {
+   "name": "Freescale",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 256",
+    "    MAC Length: 32-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,53 @@
+{
+ "cavp_id": "31075",
+ "cavp_cert": "C679",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31075",
+ "implementation": "Ubuntu 18.04 OpenSSL SSSE3 for Bit Slice AES,PCLMULQDQ for multiplication and GHASH",
+ "product_id": "11037",
+ "description": "The test covers SSSE3 for Bit Slice AES, and PCLMULQDQ for multiplication and GHASH for Ubuntu 18.04 OpenSSL.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/8/2019",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 18.04 on Intel® Xeon® CPU E5",
+   "details": [
+    "processor: Intel Xeon® CPU E5",
+    "  manufacturer: Intel",
+    "software: Ubuntu 18.04"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 1024",
+    "Payload Length: 160, 384, 800, 1024",
+    "AAD Length: 0, 160, 384, 800, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 1024",
+    "AAD Length: 0, 160, 384, 800, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

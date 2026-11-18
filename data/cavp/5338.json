@@ -1,0 +1,48 @@
+{
+ "cavp_id": "5338",
+ "cavp_cert": "RSA 294",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5338",
+ "implementation": "TrustedFlash v1.0 - microSD",
+ "product_id": "5261",
+ "description": "TrustedFlash(TM) v1.0 - microSD is SanDisk's proprietary TrustedFlash v1.0 advanced security technology. It implements FIPS-Approved algorithms including AES, Triple-DES, RSA, SHA, HMAC, and ANSI X9.31 RNG. They provide authentication, data encryption/decryption, and signature generation/verification functions for TrustedFlash(TM) v1.0 - microSD.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/27/2007",
+ "vendor": "SanDisk Corporation",
+ "vendor_website": "http://www.sandisk.com",
+ "oes": [
+  {
+   "name": "SanDisk Controller Chip",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

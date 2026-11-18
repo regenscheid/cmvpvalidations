@@ -1,0 +1,38 @@
+{
+ "cavp_id": "477",
+ "cavp_cert": "DRBG 1584",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=477",
+ "implementation": "Kernel Crypto API using C implementation of AES",
+ "product_id": "1898",
+ "description": "The test covers implementations of gcm_base(ctr(aes-generic), ghash-generic), ccm_base(ctr(aes-generic),aes-generic), cbc(aes-generic), ecb(aes-generic), xts(aes-generic), kw(aes-generic), cmac(aes-generic).",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "8/4/2017",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 SP2 on z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

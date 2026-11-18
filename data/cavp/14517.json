@@ -1,0 +1,52 @@
+{
+ "cavp_id": "14517",
+ "cavp_cert": "RSA 750",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14517",
+ "implementation": "Sony IMB RSA Core-C",
+ "product_id": "7896",
+ "description": "Sony IMB RSA Core-C is the firmware module for digital cinema system.",
+ "version": "1.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "1/6/2011",
+ "vendor": "Sony Corporation",
+ "vendor_website": "http://www.sony.net",
+ "oes": [
+  {
+   "name": "Altera Cyclone III FPGA on Xilinx Virtex-6 FPGA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 2048",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

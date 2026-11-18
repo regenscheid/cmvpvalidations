@@ -1,0 +1,186 @@
+{
+ "cert": 3105,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3105",
+ "module": "ISC Cryptographic Development Kit (CDK)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The CDK is a software module. The physical embodiment of the computer hardware on which it runs is a \"multi-chip standalone module\" in FIPS 140-2 terminology. The \"physical cryptographic boundary\" is defined to be the entire computer on which the CDK software runs. As a software module, the \"logical boundary\" contains the software modules that comprise the CDK shared link library.",
+ "tested_configurations": [
+  "CentOS 6.7 (64-bit) running on Intel Core i7 with PAA",
+  "CentOS 6.7 (64-bit) running on Intel Core i7 without PAA",
+  "Microsoft Windows 10 (64-bit) running on AMD A8-3850 without PAA",
+  "Microsoft Windows 10 (64-bit) running on Intel Core i7 with PAA",
+  "Microsoft Windows 10 (64-bit) running on Intel Core i7 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #853, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "8.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4002",
+   "cavp_id": "13678",
+   "cavp_ref": "AES:4002"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 831",
+   "cavp_id": "16661",
+   "cavp_ref": "Component:831"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 832",
+   "cavp_id": "28509",
+   "cavp_ref": "Component:832"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 853",
+   "cavp_id": "1609",
+   "cavp_ref": "Component:853"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 854",
+   "cavp_id": "19348",
+   "cavp_ref": "Component:854"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1192",
+   "cavp_id": "27949",
+   "cavp_ref": "DRBG:1192"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1090",
+   "cavp_id": "3234",
+   "cavp_ref": "DSA:1090"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 892",
+   "cavp_id": "30267",
+   "cavp_ref": "ECDSA:892"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2615",
+   "cavp_id": "7530",
+   "cavp_ref": "HMAC:2615"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 85",
+   "cavp_id": "2871",
+   "cavp_ref": "KAS:85"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4002; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2065",
+   "cavp_id": "29153",
+   "cavp_ref": "RSA:2065"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 4",
+   "cavp_id": "21633",
+   "cavp_ref": "SHA-3:4"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3307",
+   "cavp_id": "29216",
+   "cavp_ref": "SHS:3307"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2197",
+   "cavp_id": "9180",
+   "cavp_ref": "TDES:2197"
+  }
+ ],
+ "vendor": "Information Security Corporation",
+ "vendor_info": {
+  "name": "Information Security Corporation",
+  "website": "http://www.infoseccorp.com",
+  "address": [
+   "1011 Lake St.",
+   "Suite 425",
+   "Oak Park, IL 60118",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jonathan Schulze-Hewett"
+   },
+   {
+    "name": "Michael Markowitz"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3105.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/5/2018",
+   "type": "Initial",
+   "lab": "COACT INC CAFE LAB"
+  },
+  {
+   "date": "8/15/2018",
+   "type": "Update",
+   "lab": "COACT INC CAFE LAB"
+  }
+ ],
+ "first_validated": "1/5/2018",
+ "last_updated": "8/15/2018",
+ "labs": "COACT INC CAFE LAB",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3105.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #853, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3105,
+  "vendor": "Information Security Corporation",
+  "module": "ISC Cryptographic Development Kit (CDK)",
+  "type": "Software",
+  "validation_dates": [
+   "01/05/2018",
+   "08/15/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,74 @@
+{
+ "cavp_id": "33468",
+ "cavp_cert": "A870",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33468",
+ "implementation": "Junos OS 20.3R1 - MACsec",
+ "product_id": "13361",
+ "description": "The Juniper Networks ACX5000 line of Universal Metro Routers adds operational intelligence to metro environments, giving you the option to deploy packet optical, Metro Ethernet, and IP/MPLS infrastructure. The ACX5448-M model supports 44 1GbE/10GbE and six 40GbE/100GbE ports, as well as advanced security capabilities such as Media Access Control Security (MACsec) on all 1GbE/10GbE ports.",
+ "version": "Junos OS 20.3R1",
+ "type": "FIRMWARE",
+ "first_validated": "11/6/2020",
+ "vendor": "Juniper Networks, Inc",
+ "vendor_website": "https://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Intel Xeon D1528",
+   "details": [
+    "processor: Intel Xeon D1528",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 8-120 Increment 56",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES256",
+    "    Supported Lengths: 128-256 Increment 128",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

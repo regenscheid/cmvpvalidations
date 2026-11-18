@@ -1,0 +1,48 @@
+{
+ "cavp_id": "30098",
+ "cavp_cert": "RSA 292",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30098",
+ "implementation": "Athena IDProtect XL",
+ "product_id": "5250",
+ "description": "IDProtect is a cryptographic module based on the Athena OS755 Java Card 2.2.2 and GlobalPlatform2. 1.1 specifications and F IPS 140-2 Level 3 (Level 4 for physical security).IDProtect supports F IPS approved Random Number Generator, TDES,A ES, SHA-I, SHA-256, and RSA up to 2048 bits including on board key generation.",
+ "version": "AT90SC144144CT 010A.7204.0004 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "9/27/2007",
+ "vendor": "Athena Smartcard Inc.",
+ "vendor_website": "http://www.athena-scs.com",
+ "oes": [
+  {
+   "name": "Atmel AT90SC144144CT",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,42 @@
+{
+ "cavp_id": "16494",
+ "cavp_cert": "Component 882",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=16494",
+ "implementation": "IBM z/OS(R) Cryptographic Services ICSF PKCS #11 with CEX5A",
+ "product_id": "5625",
+ "description": "ICSF is a software element of z/OS that works with hardware cryptographic features and the Security Server (RACF) to provide secure, high-speed cryptographic services in the z/OS environment. ICSF, which runs as a started task, provides the application programming interfaces by which applications request the cryptographic services.",
+ "version": "OA50113",
+ "type": "SOFTWARE",
+ "first_validated": "8/24/2016",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "IBM z/OS(R) v2.1 on IBM z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Key Pair Generation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256",
+    "  dhOneFlow:",
+    "    KAS Role: Initiator, Responder",
+    "  dhStatic:",
+    "    KAS Role: Initiator, Responder"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

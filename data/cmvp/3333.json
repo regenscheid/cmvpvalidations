@@ -1,0 +1,191 @@
+{
+ "cert": 3333,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3333",
+ "module": "7705 SAR-OS SAR-18/8/X/Ax/Wx/W/H/Hc Control Plane Cryptographic Module (SARCPCM)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in the Security Policy Section 9.1",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The 7705 SAR-OS SAR-18/8/X/Ax/Wx/W/H/Hc Control Plane Cryptographic Module (SARCPCM) provides the cryptographic algorithm functions needed to allow SAR-OS to implement cryptography for those services and protocols that require it.",
+ "tested_configurations": [
+  "SAR-OS Rel 8.0R6 on a SAR-18 with Cavium Octeon Plus, Winpath 3 and Winpath 4 processors",
+  "SAR-OS Rel 8.0R6 on a SAR-Ax with Cavium Octeon II and Winpath 3 processors",
+  "SAR-OS Rel 8.0R6 running on a SAR-8 with Cavium Octeon II, Winpath 3 and Winpath 4 processors",
+  "SAR-OS Rel 8.0R6 running on a SAR-H with Cavium Octeon Plus and Winpath 3 processors",
+  "SAR-OS Rel 8.0R6 running on a SAR-Hc with Cavium Octeon II and Winpath 3 processors",
+  "SAR-OS Rel 8.0R6 running on a SAR-W with Cavium Octeon Plus and Winpath 3 processors",
+  "SAR-OS Rel 8.0R6 running on a SAR-Wx with Cavium Octeon II and Winpath 3 processors",
+  "SAR-OS Rel 8.0R6 running on a SAR-X with Cavium Octeon II and Winpath 4 processors"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #1304 and #1305, key agreement; key establishment methodology provides 112 bits of encryption strength); NDRNG",
+ "software_versions": "SAR-OS Rel 8.0R6",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4655",
+   "cavp_id": "27066",
+   "cavp_ref": "AES:4655"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4656",
+   "cavp_id": "20863",
+   "cavp_ref": "AES:4656"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1304",
+   "cavp_id": "5211",
+   "cavp_ref": "Component:1304"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1305",
+   "cavp_id": "5189",
+   "cavp_ref": "Component:1305"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1571",
+   "cavp_id": "10981",
+   "cavp_ref": "DRBG:1571"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1572",
+   "cavp_id": "22554",
+   "cavp_ref": "DRBG:1572"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1230",
+   "cavp_id": "24870",
+   "cavp_ref": "DSA:1230"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1231",
+   "cavp_id": "30131",
+   "cavp_ref": "DSA:1231"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3083",
+   "cavp_id": "27304",
+   "cavp_ref": "HMAC:3083"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3084",
+   "cavp_id": "7158",
+   "cavp_ref": "HMAC:3084"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2539",
+   "cavp_id": "461",
+   "cavp_ref": "RSA:2539"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2540",
+   "cavp_id": "8401",
+   "cavp_ref": "RSA:2540"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3814",
+   "cavp_id": "23364",
+   "cavp_ref": "SHS:3814"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3815",
+   "cavp_id": "24072",
+   "cavp_ref": "SHS:3815"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2476",
+   "cavp_id": "27588",
+   "cavp_ref": "TDES:2476"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2477",
+   "cavp_id": "29011",
+   "cavp_ref": "TDES:2477"
+  }
+ ],
+ "vendor": "Nokia Corporation",
+ "vendor_info": {
+  "name": "Nokia Corporation",
+  "website": "http://www.nokia.com",
+  "address": [
+   "600 March Road",
+   "Ottawa, ON K2K 2EK",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Hooman Bidgoli"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3333.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Consolidated-Nov2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/28/2018",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "11/28/2018",
+ "last_updated": "11/28/2018",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3333.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #1304 and #1305, key agreement; key establishment methodology provides 112 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3333,
+  "vendor": "Nokia Corporation",
+  "module": "7705 SAR-OS SAR-18/8/X/Ax/Wx/W/H/Hc Control Plane Cryptographic Module (SARCPCM)",
+  "type": "Software",
+  "validation_dates": [
+   "11/28/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

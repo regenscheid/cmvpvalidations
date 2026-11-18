@@ -1,0 +1,53 @@
+{
+ "cavp_id": "6556",
+ "cavp_cert": "RSA 1779",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6556",
+ "implementation": "Nuvoton NPCT6xx TPM 1.2 Cryptographic Engine",
+ "product_id": "943",
+ "description": "Nuvoton TPM (Trusted Platform Module), a TCG 1.2 compliant security processor with embedded firmware",
+ "version": "FB5C85E",
+ "type": "HARDWARE",
+ "first_validated": "7/10/2015",
+ "vendor": "Nuvoton Technology Corporation",
+ "vendor_website": "http://www.nuvoton.com",
+ "oes": [
+  {
+   "name": "Nuvoton NPCT6xx TPM 1.2 Cryptographic Engine",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,56 @@
+{
+ "cavp_id": "673",
+ "cavp_cert": "AES 3878",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=673",
+ "implementation": "P384 FPGA",
+ "product_id": "1623",
+ "description": "The AES and SHA2 library running on the NXP implements the register and memory interface to the FPGA. The FPGA implements AES ECB, CBC and XTS as well as SHA224, 256, 384 and 512.",
+ "version": "FPGA Vendor Xilinx Part No. XC35500E Version: 2.0.0.2 03.00.0D (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "2/26/2016",
+ "vendor": "SPYRUS Inc.",
+ "vendor_website": "http://www.spyrus.com",
+ "oes": [
+  {
+   "name": "ARM9 Vendor NXP Part No. LPC3131",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full, Partial"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

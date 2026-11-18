@@ -1,0 +1,45 @@
+{
+ "cavp_id": "35033",
+ "cavp_cert": "A2423",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35033",
+ "implementation": "wolfCrypt",
+ "product_id": "12092",
+ "description": "wolfCrypt module is a comprehensive suite of FIPS Approved algorithms. All key sizes and modes have been implemented to allow flexibility and efficiency.",
+ "version": "4.3.0",
+ "type": "SOFTWARE",
+ "first_validated": "3/9/2022",
+ "vendor": "wolfSSL Inc",
+ "vendor_website": "http://www.wolfssl.com",
+ "oes": [
+  {
+   "name": "Linux socfpga cyclone V on Armv7 rev 0, Cortex A-9",
+   "details": [
+    "processor: Armv7 rev 0, Cortex A-9",
+    "software: Linux socfpga cyclone V"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384, P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

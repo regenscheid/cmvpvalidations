@@ -1,0 +1,71 @@
+{
+ "cavp_id": "34428",
+ "cavp_cert": "A1819",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34428",
+ "implementation": "OpenSSL (64 bit) (BAES_CTASM_ASM)",
+ "product_id": "14325",
+ "description": "The OpenSSL toolkit provides support for secure communications between machines. OpenSSL includes a certificate management tool and shared libraries which provide various cryptographic algorithms and protocols. The following cipher implementation is covered: Constant-time bit slice AES using GCM with assembler GHASH implementation.",
+ "version": "rhel8.20220323",
+ "type": "SOFTWARE",
+ "first_validated": "8/4/2021",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 8 on Intel Cascade Lake Xeon Silver 4216",
+   "details": [
+    "software: Red Hat Enterprise Linux 8",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "processor: Xeon Silver 4216",
+    "  Processor Xeon Silver 4216 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

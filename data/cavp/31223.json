@@ -1,0 +1,44 @@
+{
+ "cavp_id": "31223",
+ "cavp_cert": "C827",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31223",
+ "implementation": "N3FIPS-KeyWrap-AES",
+ "product_id": "11181",
+ "description": "This implementation supports AES key wrap with and without padding of key sizes 128bits, 192bits and 256bits.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "6/20/2019",
+ "vendor": "Marvell",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 256, 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,41 @@
+{
+ "cavp_id": "6200",
+ "cavp_cert": "AES 3469",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6200",
+ "implementation": "RDL-3000 Hardware Data Encryption",
+ "product_id": "944",
+ "description": "Implements a hardware-accelerated data encryption and decryption engine, used by RDL-3000 systems to secure all over-the-air communications.",
+ "version": "3.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/10/2015",
+ "vendor": "Aviat Networks, Inc.",
+ "vendor_website": "http://www.aviatnetworks.com",
+ "oes": [
+  {
+   "name": "ModelSim PE (simulator)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,169 @@
+{
+ "cert": 1782,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1782",
+ "module": "ProtectServer Internal Express (PSI-e)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode",
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The SafeNet PSI-e is a high-end intelligent PCI adapter card, used either standalone or in the SafeNet PSE appliance, that provides a wide range of cryptographic functions using firmware and dedicated hardware processors. The module provides key management (e.g., generation, storage, deletion, and backup), an extensive suite of cryptographic mechanisms, and process management including separation between operators. The PSI-e also features non-volatile tamper protected memory for key storage, a hardware random number generator, and an RTC.",
+ "hardware_versions": "VBD-04-0302 and VBD-04-0303",
+ "firmware_versions": "3.20.00, 3.20.01, 3.20.05, 3.20.09 and 3.20.10",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1859",
+   "cavp_id": "16077",
+   "cavp_ref": "AES:1859"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1860",
+   "cavp_id": "25651",
+   "cavp_ref": "AES:1860"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 579",
+   "cavp_id": "16513",
+   "cavp_ref": "DSA:579"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 259",
+   "cavp_id": "17852",
+   "cavp_ref": "ECDSA:259"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1106",
+   "cavp_id": "6311",
+   "cavp_ref": "HMAC:1106"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 975",
+   "cavp_id": "27989",
+   "cavp_ref": "RNG:975"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 940",
+   "cavp_id": "20194",
+   "cavp_ref": "RSA:940"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1636",
+   "cavp_id": "20713",
+   "cavp_ref": "SHS:1636"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1206",
+   "cavp_id": "18546",
+   "cavp_ref": "TDES:1206"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1207",
+   "cavp_id": "7672",
+   "cavp_ref": "TDES:1207"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1206, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "SafeNet, Inc.",
+ "vendor_info": {
+  "name": "SafeNet, Inc.",
+  "website": "http://www.safenet.com",
+  "address": [
+   "20 Colonnade Drive",
+   "Suite 200",
+   "Ottawa, Ontario K2E 7M6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security and Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1782.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0020.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/7/2012",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "11/5/2012",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "10/16/2014",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/27/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/7/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "8/7/2012",
+ "last_updated": "7/7/2016",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab; SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1782.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES MAC (AES Cert. #1859; non-compliant); ARIA; CAST-128; CAST MAC; DES; DES MAC; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); ECIES; EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); IDEA; IDEA MAC; MD2; MD5; MD5 HMAC; RC2; RC2 MAC; RC4; RIPEMD-128; RIPEMD-160; RMD128 HMAC; RMD160 HMAC; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); SEED; SEED MAC; Triple-DES (Certs. #1206 and #1207, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); AES (Certs. #1859 and #1860, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1782,
+  "vendor": "SafeNet, Inc.",
+  "module": "ProtectServer Internal Express (PSI-e)",
+  "type": "Hardware",
+  "validation_dates": [
+   "08/07/2012",
+   "11/05/2012",
+   "10/16/2014",
+   "01/27/2016",
+   "07/07/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,122 @@
+{
+ "cavp_id": "31848",
+ "cavp_cert": "A45",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31848",
+ "implementation": "Samsung Kernel Cryptographic Module with Crypto-Extensions",
+ "product_id": "11752",
+ "description": "Provides general purpose cryptographic functions to services in the Linux kernel and user-space applications, intended to protect data at rest and in transit.",
+ "version": "2.1",
+ "type": "SOFTWARE",
+ "first_validated": "12/3/2019",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://http:www.samsung.com",
+ "oes": [
+  {
+   "name": "Linux Kernel 4.19 on Qualcomm SM8250",
+   "details": [
+    "os: Linux Kernel 4.19",
+    "processor: Qualcomm SM8250",
+    "  manufacturer: Qualcomm"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0, 128",
+    "    Additional Input: 0, 128",
+    "    Returned Bits: 640",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 256, 384, 768, 1024"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 256, 384, 768, 1024"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256, 384, 768, 1024"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

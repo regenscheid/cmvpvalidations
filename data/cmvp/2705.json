@@ -1,0 +1,177 @@
+{
+ "cert": 2705,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2705",
+ "module": "Enhanced Bandwidth Efficient Modem (EBEM) Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "The tamper evident seal installed as indicated in the Security Policy for the optional ESEM feature",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Enhanced Bandwidth Efficient Modem (EBEM) is the only commercially-available bandwith efficient modem certified to MIL-STD-188-165B and compliant with STANAG 4486 ed. 3. The MD-1366 defines a new military standard in FDMA for high-speed satellite communications. Using military and commercial satellites at X-, C-, Ku-, and Ka-band frequencies, the MD-1366 delivers much-needed capacity for the military's high speed broadband and multimedia transmissions.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "P/Ns 1010162 Version 1, 1010162 with ESEM Version 1, 1091549 Version 1, 1075559 Version 1, 1075559 with ESEM Version 1, 1091551 Version 1, 1010163 Version 1, 1010163 with ESEM Version 1, 1091550 Version 1, 1075560 Version 1, 1075560 with ESEM Version 1 and 1091552 Version 1; P/N 1047117 (tamper evident seal applied over ESEM)",
+ "firmware_versions": "02.09.06 and 02.09.08",
+ "product_url": "http://www.viasat.com/government-communications/high-speed-modems-for-c4i-satcom",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3449",
+   "cavp_id": "9242",
+   "cavp_ref": "AES:3449"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3450",
+   "cavp_id": "3779",
+   "cavp_ref": "AES:3450"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3879",
+   "cavp_id": "10814",
+   "cavp_ref": "AES:3879"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 454",
+   "cavp_id": "11516",
+   "cavp_ref": "Component:454"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 747",
+   "cavp_id": "4537",
+   "cavp_ref": "Component:747"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1107",
+   "cavp_id": "12833",
+   "cavp_ref": "DRBG:1107"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 839",
+   "cavp_id": "3097",
+   "cavp_ref": "ECDSA:839"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2521",
+   "cavp_id": "8153",
+   "cavp_ref": "HMAC:2521"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 76",
+   "cavp_id": "12684",
+   "cavp_ref": "KAS:76"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3879",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2689",
+   "cavp_id": "28315",
+   "cavp_ref": "SHS:2689"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3201",
+   "cavp_id": "4177",
+   "cavp_ref": "SHS:3201"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3202",
+   "cavp_id": "9883",
+   "cavp_ref": "SHS:3202"
+  }
+ ],
+ "vendor": "ViaSat, Inc.",
+ "vendor_info": {
+  "name": "ViaSat, Inc.",
+  "website": "http://www.viasat.com",
+  "address": [
+   "6155 El Camino Real",
+   "Carlsbad, CA 92009-1699",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Savitha Naik"
+   },
+   {
+    "name": "David Suksumrit"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2705.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/8/2016",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "11/17/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/30/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "8/8/2016",
+ "last_updated": "1/30/2018",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2705.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG; AES (non-compliant); DES; DSA (non-compliant); ECDSA (non-compliant); HMAC (non-compliant); HMAC MD5; MD5; PBKDF (non-compliant); RSA (non-compliant); SHS (non-compliant); Triple-DES (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2705,
+  "vendor": "ViaSat, Inc.",
+  "module": "Enhanced Bandwidth Efficient Modem (EBEM) Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "08/08/2016",
+   "11/17/2016",
+   "01/30/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

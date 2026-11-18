@@ -1,0 +1,131 @@
+{
+ "cert": 1642,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1642",
+ "module": "PKI BLADE Cosmo",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode with the fingerprint authentication mechanism parameters configured as indicated in the Security Policy Section 8.6",
+ "piv_cert": "25",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: Level 4",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single-chip",
+ "description": "The PKI/BLADE applet is based on ISO 7816 and GSC-IS commands interface. The applet is designed to be loaded on any Java card compliant with JavaCard v2.2.1 and Global Platform v2.1.1 specifications including PIV certified Java cards. It is designed to provide services for PKI based logical access applications and to provide strong two factor authentication using fingerprint biometrics.",
+ "hardware_versions": "P/N B0",
+ "firmware_versions": "FC10 (with op-code 071964) with ID-One PIV Applet Suite V2.3.2-a and PKI BLADE Applet V1.2",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 840",
+   "cavp_id": "18502",
+   "cavp_ref": "AES:840"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 3",
+   "cavp_id": "22403",
+   "cavp_ref": "Component:3"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 94",
+   "cavp_id": "26898",
+   "cavp_ref": "ECDSA:94"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 480",
+   "cavp_id": "18566",
+   "cavp_ref": "RNG:480"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 403",
+   "cavp_id": "14706",
+   "cavp_ref": "RSA:403"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 833",
+   "cavp_id": "10570",
+   "cavp_ref": "SHS:833"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 698",
+   "cavp_id": "12739",
+   "cavp_ref": "TDES:698"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #698, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "U.S. Department of State",
+ "vendor_info": {
+  "name": "U.S. Department of State",
+  "website": "http://www.state.gov",
+  "address": [
+   "301 4th Street SW SA-44",
+   "Washington, DC 20547",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Paul Newton"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1642.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0011.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/21/2011",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "11/21/2011",
+ "last_updated": "11/21/2011",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1642.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Triple-DES (Cert. #698, key wrapping; key establishment methodology provides 112 bits of encryption strength); AES (Cert. #840, key wrapping; key establishment methodology provides 128 bits of encryption strength); AES MAC (AES Cert. #840; non-compliant); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1642,
+  "vendor": "U.S. Department of State",
+  "module": "PKI BLADE Cosmo",
+  "type": "Hardware",
+  "validation_dates": [
+   "11/21/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

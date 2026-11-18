@@ -1,0 +1,151 @@
+{
+ "cert": 3068,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3068",
+ "module": "NetBrain OpenSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The NetBrain OpenSSL Cryptographic Module is a C library of cryptographic functions which provides cryptographic services to applications via easy-to-use API. It can be dynamically linked into applications for the use of general-purpose FIPS 140-2 validated cryptography.",
+ "tested_configurations": [
+  "Windows Server 2012 R2 Standard running on a Dell PowerEdge R330 (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1335, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1335, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (Key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "product_url": "http://www.netbraintech.com/product",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4690",
+   "cavp_id": "23575",
+   "cavp_ref": "AES:4690"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1335",
+   "cavp_id": "20770",
+   "cavp_ref": "Component:1335"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1336",
+   "cavp_id": "21864",
+   "cavp_ref": "Component:1336"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1591",
+   "cavp_id": "11142",
+   "cavp_ref": "DRBG:1591"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1242",
+   "cavp_id": "7419",
+   "cavp_ref": "DSA:1242"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1158",
+   "cavp_id": "22450",
+   "cavp_ref": "ECDSA:1158"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3105",
+   "cavp_id": "25841",
+   "cavp_ref": "HMAC:3105"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4690; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2559",
+   "cavp_id": "9892",
+   "cavp_ref": "RSA:2559"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3840",
+   "cavp_id": "19139",
+   "cavp_ref": "SHS:3840"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2493",
+   "cavp_id": "29376",
+   "cavp_ref": "TDES:2493"
+  }
+ ],
+ "vendor": "NetBrain Technologies, Inc.",
+ "vendor_info": {
+  "name": "NetBrain Technologies, Inc.",
+  "website": "http://www.netbraintech.com",
+  "address": [
+   "15 Network Drive 2nd Floor",
+   "Burlington, Massachusetts 01803",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Michael Passanisi"
+   },
+   {
+    "name": "Boyang Zhang"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3068.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/27/2017",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "11/27/2017",
+ "last_updated": "11/27/2017",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3068.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1335, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1335, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (Key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3068,
+  "vendor": "NetBrain Technologies, Inc.",
+  "module": "NetBrain OpenSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "11/27/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

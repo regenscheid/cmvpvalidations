@@ -1,0 +1,189 @@
+{
+ "cert": 3517,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3517",
+ "module": "YubiKey 4 Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and configured as specified in Section 1.3 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: Level 3",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "The Yubikey 4 cryptographic module is a secure element that supports multiple protocols designed to be embedded in USB security tokens. The module can generate, store, and perform cryptographic operations for sensitive data and can be utilized via an external touch-button for Test of User Presence in addition to PIN for smart card authentication.The module implements five major functions - Yubico One Time Password (OTP), FIDO Universal 2nd Factor (U2F), PIV-compatible smart card, OpenPGP smart card and OATH OTP authentication.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #1356, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG",
+ "hardware_versions": "SLE78CLUFX3000PH",
+ "firmware_versions": "4.4.5",
+ "product_url": "http://www.yubico.com/products/yubikey-FIPS",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4712",
+   "cavp_id": "17203",
+   "cavp_ref": "AES:4712"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4713",
+   "cavp_id": "13154",
+   "cavp_ref": "AES:4713"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4714",
+   "cavp_id": "6043",
+   "cavp_ref": "AES:4714"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1356",
+   "cavp_id": "17985",
+   "cavp_ref": "Component:1356"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1358",
+   "cavp_id": "27565",
+   "cavp_ref": "Component:1358"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1360",
+   "cavp_id": "6977",
+   "cavp_ref": "Component:1360"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1395",
+   "cavp_id": "6066",
+   "cavp_ref": "Component:1395"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1604",
+   "cavp_id": "26119",
+   "cavp_ref": "DRBG:1604"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1165",
+   "cavp_id": "13720",
+   "cavp_ref": "ECDSA:1165"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3133",
+   "cavp_id": "24476",
+   "cavp_ref": "HMAC:3133"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3134",
+   "cavp_id": "25984",
+   "cavp_ref": "HMAC:3134"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4714",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2569",
+   "cavp_id": "19844",
+   "cavp_ref": "RSA:2569"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3861",
+   "cavp_id": "2158",
+   "cavp_ref": "SHS:3861"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3862",
+   "cavp_id": "21770",
+   "cavp_ref": "SHS:3862"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2498",
+   "cavp_id": "2931",
+   "cavp_ref": "TDES:2498"
+  }
+ ],
+ "vendor": "Yubico, Inc.",
+ "vendor_info": {
+  "name": "Yubico, Inc.",
+  "website": "http://www.yubico.com",
+  "address": [
+   "530 Lytton Avenue",
+   "Suite 301",
+   "Palo Alto, CA 94301",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jakob Ehrensvärd"
+   },
+   {
+    "name": "Jerrod Chong"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3517.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/SeptConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/3/2019",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "9/3/2019",
+ "last_updated": "9/3/2019",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3517.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #1356, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3517,
+  "vendor": "Yubico, Inc.",
+  "module": "YubiKey 4 Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "09/03/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,73 @@
+{
+ "cavp_id": "31394",
+ "cavp_cert": "C997",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31394",
+ "implementation": "AWS Nitro Card Security Engine",
+ "product_id": "11351",
+ "description": "The Cryptographic Module (CM) is a multi-chip standalone firmware-hybrid module. The cryptographic services provided by the module are: Data encryption / decryption utilizing symmetric ciphers, i.e. AES algorithms., Computation of hash values, i.e. SHA-256 and SHA-512, Message authentication utilizing HMAC-SHA256, HMAC-SHA512",
+ "version": "AL5+",
+ "type": "HARDWARE",
+ "first_validated": "8/7/2019",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "https://aws.amazon.com/",
+ "oes": [
+  {
+   "name": "AWS Nitro Card Security Engine",
+   "details": [
+    "device: AWS Nitro Card Security Engine"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 4096, 32768",
+    "Tweak Mode: Hex"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096, 32768",
+    "Tweak Mode: Hex"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,298 @@
+{
+ "cert": 2984,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2984",
+ "module": "Cisco FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 4.2 and operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cisco FIPS Object Module (FOM) is a software library that provides cryptographic services to a vast array of Cisco's networking and collaboration products. The module provides FIPS 140 validated cryptographic algorithms for services such as IPSEC, SRTP, SSH, TLS, 802.1x, etc. The module does not directly implement any of these protocols, instead it provides the cryptographic primitives and functions to allow a developer to implement the various protocols.",
+ "tested_configurations": [
+  "Android 3.10 running on an ARMv8 on a Google Nexus 5x",
+  "Apple iOS 9 running on an ARMv8 on an Apple iPad Air 2",
+  "FreeBSD 10.3 running on an Intel Xeon E5 on a Cisco UCS C220 M4 (single-user mode)",
+  "FreeBSD 10.3 running on an Intel Xeon on a Supermicro Intel Xeon E5",
+  "Linux 2.6 running on a Cavium Octeon MIPS64 on a Cisco WLC 5508",
+  "Linux 2.6 running on a Cavium Octeon MIPS64 with assembler on a Cisco WLC 5508",
+  "Linux 3.10 running on a Cavium Octeon MIPS64 with assembler on a Cisco ASA FPR-2100",
+  "Linux 3.10 running on an Intel Core i5 with PAA on a Lenovo M900",
+  "Linux 3.10 running on an Intel Core i5 without PAA on a Lenovo M900",
+  "Windows 10 running on an Intel Core i5 with PAA on a Lenovo M900",
+  "Windows 10 running on an Intel Core i5 without PAA on a Lenovo M900"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides between 112 and 132 bits of encryption strength)",
+ "software_versions": "6.2",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4233",
+   "cavp_id": "17026",
+   "cavp_ref": "AES:4233"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4234",
+   "cavp_id": "18917",
+   "cavp_ref": "AES:4234"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4235",
+   "cavp_id": "8208",
+   "cavp_ref": "AES:4235"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4236",
+   "cavp_id": "30084",
+   "cavp_ref": "AES:4236"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4237",
+   "cavp_id": "29276",
+   "cavp_ref": "AES:4237"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 981",
+   "cavp_id": "23076",
+   "cavp_ref": "Component:981"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 982",
+   "cavp_id": "28576",
+   "cavp_ref": "Component:982"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 983",
+   "cavp_id": "5424",
+   "cavp_ref": "Component:983"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 984",
+   "cavp_id": "28287",
+   "cavp_ref": "Component:984"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1316",
+   "cavp_id": "21103",
+   "cavp_ref": "DRBG:1316"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1317",
+   "cavp_id": "26264",
+   "cavp_ref": "DRBG:1317"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1129",
+   "cavp_id": "5705",
+   "cavp_ref": "DSA:1129"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1130",
+   "cavp_id": "13497",
+   "cavp_ref": "DSA:1130"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 978",
+   "cavp_id": "3738",
+   "cavp_ref": "ECDSA:978"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 979",
+   "cavp_id": "16652",
+   "cavp_ref": "ECDSA:979"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2771",
+   "cavp_id": "5677",
+   "cavp_ref": "HMAC:2771"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2772",
+   "cavp_id": "15791",
+   "cavp_ref": "HMAC:2772"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2773",
+   "cavp_id": "24624",
+   "cavp_ref": "HMAC:2773"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2774",
+   "cavp_id": "947",
+   "cavp_ref": "HMAC:2774"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2775",
+   "cavp_id": "8094",
+   "cavp_ref": "HMAC:2775"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2776",
+   "cavp_id": "25528",
+   "cavp_ref": "HMAC:2776"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 108",
+   "cavp_id": "16544",
+   "cavp_ref": "KDF:108"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 109",
+   "cavp_id": "20744",
+   "cavp_ref": "KDF:109"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2285",
+   "cavp_id": "26366",
+   "cavp_ref": "RSA:2285"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2286",
+   "cavp_id": "1365",
+   "cavp_ref": "RSA:2286"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3470",
+   "cavp_id": "20427",
+   "cavp_ref": "SHS:3470"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3471",
+   "cavp_id": "30167",
+   "cavp_ref": "SHS:3471"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3472",
+   "cavp_id": "15715",
+   "cavp_ref": "SHS:3472"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3473",
+   "cavp_id": "19049",
+   "cavp_ref": "SHS:3473"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3474",
+   "cavp_id": "8274",
+   "cavp_ref": "SHS:3474"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3475",
+   "cavp_id": "30150",
+   "cavp_ref": "SHS:3475"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2292",
+   "cavp_id": "11119",
+   "cavp_ref": "TDES:2292"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2293",
+   "cavp_id": "16819",
+   "cavp_ref": "TDES:2293"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2294",
+   "cavp_id": "26657",
+   "cavp_ref": "TDES:2294"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2984.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/3/2017",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "8/3/2017",
+ "last_updated": "8/3/2017",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2984.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides between 112 and 132 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 2984,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "Cisco FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/03/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

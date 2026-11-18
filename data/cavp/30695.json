@@ -1,0 +1,86 @@
+{
+ "cavp_id": "30695",
+ "cavp_cert": "C299",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30695",
+ "implementation": "Apple Secure Key Store CoreCrypto Module (watchOS 5, S4, Assembler_VNG)",
+ "product_id": "10659",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple Secure Key Store.The testing is applicable to the SEP and VNG assembler implementations.",
+ "version": "9.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/19/2019",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "watchOS 5 on Apple S4",
+   "details": [
+    "processor: Apple S4",
+    "  manufacturer: Apple",
+    "software: watchOS 5"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0",
+    "AAD Length: 0",
+    "C299 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 960, 1024",
+    "AAD Length: 120, 128, 960, 1024",
+    "C299 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-128",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0-128",
+    "    Returned Bits: 128",
+    "C299 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

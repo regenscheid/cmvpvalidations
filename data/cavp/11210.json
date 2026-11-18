@@ -1,0 +1,56 @@
+{
+ "cavp_id": "11210",
+ "cavp_cert": "AES 1678",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11210",
+ "implementation": "Marvell_Einstein2_BCM_AES/XTS_HW_Engine",
+ "product_id": "8056",
+ "description": "An area optimized AES encryption/decryption hardware design. It supports CBC, CTR and XTS modes of operation.",
+ "version": "BCM_EINSTEIN_2.0_02281 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/16/2011",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "VCS Compiler version C-2009.06-7 simulation environment",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Block Size: Full"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

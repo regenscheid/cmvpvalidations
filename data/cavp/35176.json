@@ -1,0 +1,70 @@
+{
+ "cavp_id": "35176",
+ "cavp_cert": "A2565",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35176",
+ "implementation": "RF7800W & RF7850W SW Cryptographic Library v3.0",
+ "product_id": "12776",
+ "description": "Cryptographic library for RF7800W and RF7850W radios.",
+ "version": "3.0",
+ "type": "FIRMWARE",
+ "first_validated": "5/6/2022",
+ "vendor": "L3Harris Technologies, Inc.",
+ "vendor_website": "http://www.harris.com/solution/harris-falcon",
+ "oes": [
+  {
+   "name": "Broadcom XLS108",
+   "details": [
+    "processor: Broadcom XLS108"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC",
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "        Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

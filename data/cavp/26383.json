@@ -1,0 +1,67 @@
+{
+ "cavp_id": "26383",
+ "cavp_cert": "AES 3338",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=26383",
+ "implementation": "Harris AES Load Module (HALM)",
+ "product_id": "7012",
+ "description": "The HALM provides Harris terminals with AES encryption of digital voice and data for mission-critical assured communications by First Responders.",
+ "version": "R06A02 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "4/17/2015",
+ "vendor": "Harris Corporation",
+ "vendor_website": "http://www.harris.com",
+ "oes": [
+  {
+   "name": "ADI BlackFin DSP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 256",
+    "    MAC Length: 0",
+    "    Message Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256, 256, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

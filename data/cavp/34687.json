@@ -1,0 +1,44 @@
+{
+ "cavp_id": "34687",
+ "cavp_cert": "A2078",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34687",
+ "implementation": "SSC KAS - OpenSSL FIPS Object Module 2.0.8",
+ "product_id": "14555",
+ "description": "FFC DH and ECC DH from OpenSSL FOM with Avaya modifications for compliance with SP 800-56Arev3",
+ "version": "V1.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/9/2021",
+ "vendor": "Avaya, Inc.",
+ "vendor_website": "http://www.avaya.com",
+ "oes": [
+  {
+   "name": "NXP T1024",
+   "details": [
+    "cpu: NXP T1024"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384, P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-4096",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

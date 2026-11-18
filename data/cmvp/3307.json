@@ -1,0 +1,115 @@
+{
+ "cert": 3307,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3307",
+ "module": "Samsung NVMe TCG Opal SSC SEDs PM1723b Series",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When installed, initialized and configured as specified in the Security Rules Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "EMI/EMC: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Samsung NVMe TCG Opal SSC SEDs PM1723b Series are a high-performance Self-Encrypting SSDs supporting NVMe Interface that provides on-the-fly encryption/decryption of user data without performance loss. It implements AES256-XTS for user data encryption, ECDSA P-224 for FW authentication, and Hash_DRBG for key generation.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "hardware_versions": "MZWLL3T8HAJQ-000G6",
+ "firmware_versions": "NA00",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5007",
+   "cavp_id": "16441",
+   "cavp_ref": "AES:5007"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1845",
+   "cavp_id": "2200",
+   "cavp_ref": "DRBG:1845"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1288",
+   "cavp_id": "27675",
+   "cavp_ref": "ECDSA:1288"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4072",
+   "cavp_id": "26578",
+   "cavp_ref": "SHS:4072"
+  }
+ ],
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_info": {
+  "name": "Samsung Electronics Co., Ltd.",
+  "website": "http://www.samsung.com",
+  "address": [
+   "1-1, Samsungjeonja-ro",
+   "Hwaseong-si, Gyeonggi-do 18448",
+   "Korea"
+  ],
+  "contacts": [
+   {
+    "name": "Jisoo Kim"
+   },
+   {
+    "name": "Seungjae Lee"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3307.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/19/2018",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "10/19/2018",
+ "last_updated": "10/19/2018",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3307.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3307,
+  "vendor": "Samsung Electronics Co., Ltd.",
+  "module": "Samsung NVMe TCG Opal SSC SEDs PM1723b Series",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/19/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

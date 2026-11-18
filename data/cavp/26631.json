@@ -1,0 +1,51 @@
+{
+ "cavp_id": "26631",
+ "cavp_cert": "ECDSA 1466",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=26631",
+ "implementation": "EbemCrypto",
+ "product_id": "9572",
+ "description": "Implements key establishment, random number generation, certificate and private key management, and wrap/unwrap of key material, and controls the FPGA implementation of traffic encryption in Viasat's Enhanced Bandwidth Efficient Modem (EBEM).",
+ "version": "13 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/15/2018",
+ "vendor": "ViaSat, Inc.",
+ "vendor_website": "http://www.viasat.com",
+ "oes": [
+  {
+   "name": "IBM PowerPC 405GPr",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-384",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

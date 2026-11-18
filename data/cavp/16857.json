@@ -1,0 +1,53 @@
+{
+ "cavp_id": "16857",
+ "cavp_cert": "DRBG 2147",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=16857",
+ "implementation": "JUNOS 18.1R1 MTRE-OpenSSL",
+ "product_id": "9603",
+ "description": "Juniper MX and Ex9200 Series are comprehensive, Scalable and secure switching and routing solutions specifically designed to meet the needs of campus, enterprises and service providers. They deliver high performance , reliability and scale to enable a cost effective solution.",
+ "version": "Junos OS 18.1R1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/8/2018",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Intel Xeon CPU E5",
+   "details": []
+  },
+  {
+   "name": "Intel Xeon CPU E5",
+   "details": [
+    "processor: Intel Xeon CPU E5",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "  Capabilities:",
+    "    Mode: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 8-256",
+    "    Additional Input: 8-256",
+    "    Returned Bits: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

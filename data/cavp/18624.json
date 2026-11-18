@@ -1,0 +1,48 @@
+{
+ "cavp_id": "18624",
+ "cavp_cert": "AES 4540",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18624",
+ "implementation": "Mocana DSF",
+ "product_id": "1699",
+ "description": "Cryptographic algorithm API and self-test routines implemented by Mocana, Inc.",
+ "version": "5.5 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/16/2017",
+ "vendor": "GE MDS, LLC",
+ "vendor_website": "http://www.gemds.com",
+ "oes": [
+  {
+   "name": "Freescale IMX 6 (ARM)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher, Inverse",
+    "Key Length: 128",
+    "Payload Length: 128, 192, 256, 320, 320"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

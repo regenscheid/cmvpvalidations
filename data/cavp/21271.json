@@ -1,0 +1,52 @@
+{
+ "cavp_id": "21271",
+ "cavp_cert": "RSA 218",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21271",
+ "implementation": "TANDBERG MXP Codec Cryptography Implementation",
+ "product_id": "5016",
+ "description": "The TANDBERG MXP Codec Cryptography Implementation is part of the firmware for the TANDBERG MXP Codec. The Cryptography Implementation provides an Application Programming Interface (API) to support all security-relevent services of the TANDBERG MXP Codec.",
+ "version": "F6.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/27/2007",
+ "vendor": "TANDBERG Telecom AS",
+ "vendor_website": "http://www.tandberg.net",
+ "oes": [
+  {
+   "name": "On target testing with Nucleus Plus RTOS running under MPC8270 PowerPC processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048, 4096",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

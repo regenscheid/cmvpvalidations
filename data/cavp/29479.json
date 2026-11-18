@@ -1,0 +1,95 @@
+{
+ "cavp_id": "29479",
+ "cavp_cert": "RSA 1468",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=29479",
+ "implementation": "Symantec PGP Cryptographic Engine",
+ "product_id": "3562",
+ "description": "The Symantec PGP Cryptographic Engine is a FIPS 140-2 validated software only cryptographic module. The module implements the cryptographic functions for Symantec Encryption products, including the Symantec Drive Encryption, Symantec Desktop Email, Symantec File Share Encryption, Symantec Encryption Desktop, and Symantec Gateway Email. It includ",
+ "version": "4.3",
+ "type": "SOFTWARE",
+ "first_validated": "3/21/2014",
+ "vendor": "Symantec Corporation",
+ "vendor_website": "http://www.symantec.com",
+ "oes": [
+  {
+   "name": "Linux 64 bit RHEL with AESNI on Dell Precision M6400 Intel Core i7",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "      Properties:",
+    "        Modulo: 3072",
+    "        Primality Tests: Table C.2, Table C.3",
+    "Public Exponent Mode: Fixed"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

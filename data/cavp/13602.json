@@ -1,0 +1,39 @@
+{
+ "cavp_id": "13602",
+ "cavp_cert": "AES 4463",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13602",
+ "implementation": "Marvell XTS-AES Media Encryption Engine",
+ "product_id": "710",
+ "description": "Hardware support for HGST Self-Encrypting Drives (SEDs)",
+ "version": "Insignia version 3.1",
+ "type": "HARDWARE",
+ "first_validated": "4/7/2017",
+ "vendor": "HGST, a Western Digital brand",
+ "vendor_website": "http://www.hgst.com/products/solid-state-solutions",
+ "oes": [
+  {
+   "name": "Marvell XTS-AES Media Encryption Engine",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full, Partial"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

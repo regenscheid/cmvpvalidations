@@ -1,0 +1,59 @@
+{
+ "cavp_id": "32717",
+ "cavp_cert": "A509",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32717",
+ "implementation": "OpenSSL (64 bit) (AES_C_GCM)",
+ "product_id": "12619",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: Generic C AES GCM implementation.",
+ "version": "4.1",
+ "type": "SOFTWARE",
+ "first_validated": "6/11/2020",
+ "vendor": "SUSE LLC.",
+ "vendor_website": "http://www.suse.de",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP2 on Qualcomm ARMv8 Cavium ThunderX2 CN9975",
+   "details": [
+    "processor: Cavium ThunderX2 CN9975",
+    "  Processor Cavium ThunderX2 CN9975 (processor family ARM64) from Qualcomm",
+    "  family: ARM64",
+    "  manufacturer: Qualcomm",
+    "  series: ARMv8",
+    "software: SUSE Linux Enterprise Server 15 SP2",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

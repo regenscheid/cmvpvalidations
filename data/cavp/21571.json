@@ -1,0 +1,58 @@
+{
+ "cavp_id": "21571",
+ "cavp_cert": "ECDSA 454",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21571",
+ "implementation": "Entrust Authority™ Security Kernel",
+ "product_id": "3290",
+ "description": "The Security Kernel is a C++ implementation of cryptographic functions accessible by an object-oriented API. Depending on configuration, the algorithms may be implemented in software, hardware or both. The industry standard Cryptoki API from PKCS #11, is used as the interface to hardware-based cryptographic modules.",
+ "version": "8.1Sp1 R2",
+ "type": "SOFTWARE",
+ "first_validated": "9/27/2013",
+ "vendor": "Entrust Corporation",
+ "vendor_website": "http://www.entrust.com",
+ "oes": [
+  {
+   "name": "Microsoft Windows Server 2008 R2 Enterprise Edition on Intel Core 2 Duo E8400",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-192, P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-192, P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-192",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

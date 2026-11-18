@@ -1,0 +1,65 @@
+{
+ "cavp_id": "31401",
+ "cavp_cert": "C1004",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31401",
+ "implementation": "ExaSPEED 600 cipher module",
+ "product_id": "11358",
+ "description": "NEL's ExaSPEED 600 cipher module is a hardware module that provides crypto function for up to 600Gbps Optical Transfer Networks. The module performs AES-256 cipher function and AES-GCM authentication function.",
+ "version": "NLD0690CPB-E",
+ "type": "HARDWARE",
+ "first_validated": "8/9/2019",
+ "vendor": "NTT Electronics Corporation",
+ "vendor_website": "http://www.ntt-electronics.com/en",
+ "oes": [
+  {
+   "name": "ExaSPEED 600 cipher module",
+   "details": [
+    "device: ExaSPEED 600 cipher module"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 8, 96, 1024",
+    "Payload Length: 104, 128, 256, 408",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 8, 96, 1024",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

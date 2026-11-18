@@ -1,0 +1,72 @@
+{
+ "cavp_id": "30126",
+ "cavp_cert": "RSA 896",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30126",
+ "implementation": "IOS",
+ "product_id": "8158",
+ "description": "The Cisco 800 Series of integrated Services Routers intelligently embed data and security into a single, resilient system for fast, scalable delivery of mission-critical business applications from small offices to demanding enterprise environments.",
+ "version": "15.1(3)T2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/20/2011",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "Freescale MPC8358E",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 1536, 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

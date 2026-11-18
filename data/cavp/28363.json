@@ -1,0 +1,66 @@
+{
+ "cavp_id": "28363",
+ "cavp_cert": "RSA 2664",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28363",
+ "implementation": "Vormetric Data Security Manager Virtual Appliance Module",
+ "product_id": "8563",
+ "description": "The Vormetric Data Security Manager is a multi-chip standalone cryptographic module. The Vormetric Data Security Manager is the central point of management for the Vormetric Data Security product. It manages keys and policies, and controls Vormetric Encryption Expert Agents.",
+ "version": "6.0.2",
+ "type": "SOFTWARE",
+ "first_validated": "11/3/2017",
+ "vendor": "Thales e-Security Inc.",
+ "vendor_website": "http://www.thales-esecurity.com",
+ "oes": [
+  {
+   "name": "Centos 7.2 on VMware ESXi 6.5. on Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,179 @@
+{
+ "cert": 1859,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1859",
+ "module": "Red Hat Enterprise Linux 6.2 Openswan Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and when obtained, installed, and initialized as assumed by the Crypto Officer role and specified in Section 9 of the provided Security Policy. This module contains the embedded Red Hat Enterprise Linux 6.2 OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #1758 operating in FIPS mode and the Network Security Services (NSS) Cryptographic Module validated to FIPS 140-2 under Cert. #1837 operating in FIPS mode. Section 1 of the provided Security Policy specifies the precise RPM files containing this module. The integrity of the RPMs are verified during the installation and the Crypto officer shall not install the RPM files if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Red Hat Enterprise Linux 6.2 OpenSwan Cryptographic Module is a software only cryptographic module that provides the IKE protocol version 1 and version 2 key agreement services required for IPSec.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 6.2 (single-user mode)"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1985",
+   "cavp_id": "16574",
+   "cavp_ref": "AES:1985",
+   "note": "1986"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 183",
+   "cavp_id": "14507",
+   "cavp_ref": "DRBG:183"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 184",
+   "cavp_id": "19508",
+   "cavp_ref": "DRBG:184"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 634",
+   "cavp_id": "4153",
+   "cavp_ref": "DSA:634"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 635",
+   "cavp_id": "5218",
+   "cavp_ref": "DSA:635"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1129",
+   "cavp_id": "27897",
+   "cavp_ref": "HMAC:1129"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1130",
+   "cavp_id": "23812",
+   "cavp_ref": "HMAC:1130"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1134",
+   "cavp_id": "3429",
+   "cavp_ref": "HMAC:1134"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1135",
+   "cavp_id": "11479",
+   "cavp_ref": "HMAC:1135"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1199",
+   "cavp_id": "8845",
+   "cavp_ref": "HMAC:1199"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1200",
+   "cavp_id": "8970",
+   "cavp_ref": "HMAC:1200"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 979",
+   "cavp_id": "21249",
+   "cavp_ref": "RSA:979",
+   "note": "vendor affirmed"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1741",
+   "cavp_id": "10888",
+   "cavp_ref": "SHS:1741"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1742",
+   "cavp_id": "6750",
+   "cavp_ref": "SHS:1742"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1289",
+   "cavp_id": "6458",
+   "cavp_ref": "TDES:1289"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1290",
+   "cavp_id": "15151",
+   "cavp_ref": "TDES:1290"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "314 Littleton Road",
+   "Raleigh, NC 27606",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ann-Marie Rubin"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1859.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0024.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/3/2012",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "12/3/2012",
+ "last_updated": "12/3/2012",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1859.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 bits and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RC2; RC4; DES; Seed; CAMELLIA; MD2; MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1859,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 6.2 Openswan Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/03/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,40 @@
+{
+ "cavp_id": "10814",
+ "cavp_cert": "AES 3879",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10814",
+ "implementation": "EbemCrypto",
+ "product_id": "1626",
+ "description": "Implements key establishment, random number generation, certificate and private key management, and wrap/unwrap of key material, and controls the FPGA implementation of traffic encryption in ViaSat's Enhanced Bandwidth Efficient Modem (EBEM).",
+ "version": "Version 12 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/26/2016",
+ "vendor": "ViaSat, Inc.",
+ "vendor_website": "http://www.viasat.com",
+ "oes": [
+  {
+   "name": "IBM PowerPC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128, 192, 2624, 2688, 2688"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

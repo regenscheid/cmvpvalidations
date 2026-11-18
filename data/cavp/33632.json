@@ -1,0 +1,48 @@
+{
+ "cavp_id": "33632",
+ "cavp_cert": "A1023",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33632",
+ "implementation": "TA100 ACE ECDH KAS P384",
+ "product_id": "13508",
+ "description": "The TA100 device is a member of the Microchip CryptoAutomotive family. It is a cryptographic Co-processor with secure hardware-based key storage used for secure authentication, product validation and other root-of-trust based operations. It is typically a companion device to an MCU/MPU on the same board.",
+ "version": "V1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "2/9/2021",
+ "vendor": "Microchip Technology Inc",
+ "vendor_website": "http://www.microchip.com",
+ "oes": [
+  {
+   "name": "Cadence Xcelium 18.03-s007 simulator",
+   "details": [
+    "firmware: Cadence Xcelium 18.03-s007 simulator",
+    "  Firmware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-224, P-256, P-384",
+    "Function: Full Validation, Key Pair Generation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      twoStepKdf:",
+    "          Capabilities:",
+    "            MAC Salting Methods: random",
+    "            Supported Lengths: 224, 256, 384",
+    "            Fixed Info Pattern: literal[123456]||uPartyInfo||vPartyInfo||l",
+    "            Fixed Info Encoding: Concatenation",
+    "            KDF Mode: Counter",
+    "            MAC Modes: HMAC-SHA2-256",
+    "            Fixed Data Order: Before Fixed Data",
+    "            Counter Lengths: 8",
+    "    Key Length: 384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

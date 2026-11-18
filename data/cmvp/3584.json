@@ -1,0 +1,203 @@
+{
+ "cert": 3584,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3584",
+ "module": "HPE SimpliVity OmniStack Crypto Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The module consists of a cryptographic library based on the OpenSSL FIPS Canister (OpenSSL FIPS Object Module version 2.0.13). It is compiled into object form (fipscanister.o for Linux-based systems, fipscanister.lib on Windows-based systems) and then statically linked to an instance of the OpenSSL version 1.0.2k libcrypto library at build-time. The OpenSSL libcrypto library is then linked to the calling application (dynamically linked on Linux, statically linked on Windows), which is loaded into memory for execution by the operating system loader.",
+ "tested_configurations": [
+  "OmniCube CN-3400-12bcc appliance with an Intel Xeon E5-2600 V3 Series processor with VMware ESXi 6.0.0 hosting a virtual machine running Ubuntu 14.04.5 LTS",
+  "OmniCube CN-3400-12bcc appliance with an Intel Xeon E5-2600 V3 Series processor with VMware ESXi 6.0.0 hosting a virtual machine running Windows Server 2012 R2 (single-user mode)"
+ ],
+ "software_versions": "2.1",
+ "product_url": "https://www.hpe.com/us/en/integrated-systems/simplivity.html",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5045",
+   "cavp_id": "14844",
+   "cavp_ref": "AES:5045"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5059",
+   "cavp_id": "10484",
+   "cavp_ref": "AES:5059"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5538",
+   "cavp_id": "12106",
+   "cavp_ref": "AES:5538"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "Vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1599",
+   "cavp_id": "22778",
+   "cavp_ref": "Component:1599"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1600",
+   "cavp_id": "26721",
+   "cavp_ref": "Component:1600"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1616",
+   "cavp_id": "5142",
+   "cavp_ref": "Component:1616"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1617",
+   "cavp_id": "18582",
+   "cavp_ref": "Component:1617"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1866",
+   "cavp_id": "15901",
+   "cavp_ref": "DRBG:1866"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1880",
+   "cavp_id": "20959",
+   "cavp_ref": "DRBG:1880"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1300",
+   "cavp_id": "14725",
+   "cavp_ref": "ECDSA:1300"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1311",
+   "cavp_id": "29696",
+   "cavp_ref": "ECDSA:1311"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3365",
+   "cavp_id": "1114",
+   "cavp_ref": "HMAC:3365"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3379",
+   "cavp_id": "23196",
+   "cavp_ref": "HMAC:3379"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2731",
+   "cavp_id": "12398",
+   "cavp_ref": "RSA:2731"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2744",
+   "cavp_id": "5704",
+   "cavp_ref": "RSA:2744"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4110",
+   "cavp_id": "11970",
+   "cavp_ref": "SHS:4110"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4124",
+   "cavp_id": "18852",
+   "cavp_ref": "SHS:4124"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2605",
+   "cavp_id": "9355",
+   "cavp_ref": "TDES:2605"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2617",
+   "cavp_id": "28476",
+   "cavp_ref": "TDES:2617"
+  }
+ ],
+ "vendor": "Hewlett Packard Enterprise Development LP",
+ "vendor_info": {
+  "name": "Hewlett Packard Enterprise Development LP",
+  "website": "https://www.hpe.org",
+  "address": [
+   "8 Technology Drive",
+   "Westborough, MA 01581",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Aftab Alan"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3584.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedDec2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/17/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/17/2019",
+ "last_updated": "12/17/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3584.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 3584,
+  "vendor": "Hewlett Packard Enterprise Development LP",
+  "module": "HPE SimpliVity OmniStack Crypto Library",
+  "type": "Software",
+  "validation_dates": [
+   "12/17/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

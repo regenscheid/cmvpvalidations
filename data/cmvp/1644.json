@@ -1,0 +1,121 @@
+{
+ "cert": 1644,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1644",
+ "module": "PCoIP Cryptographic Module for VMware View",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The PCoIP Cryptographic module for VMware View is a multi-chip standalone cryptographic module evaluated for use on a standard General Purpose Computer (GPC) platform. The overal security level is Level 2. The module consists of a single shared library which is used by both the PCoIP server and the PCoIP client applications.",
+ "tested_configurations": [
+  "Microsoft Windows XP running on a Dell Optiplex GX260",
+  "Microsoft Windows XP running on a Dell Poweredge 2850",
+  "Red Hat Enterprise Linux (RHEL) 5.1 running on a Dell Poweredge 2850"
+ ],
+ "software_versions": "3.5.0",
+ "product_url": "http://www.vmware.com/products/view/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1639",
+   "cavp_id": "15442",
+   "cavp_ref": "AES:1639"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1640",
+   "cavp_id": "7623",
+   "cavp_ref": "AES:1640"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1642",
+   "cavp_id": "7366",
+   "cavp_ref": "AES:1642"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 964",
+   "cavp_id": "18851",
+   "cavp_ref": "HMAC:964"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 879",
+   "cavp_id": "29910",
+   "cavp_ref": "RNG:879"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1443",
+   "cavp_id": "24020",
+   "cavp_ref": "SHS:1443"
+  }
+ ],
+ "vendor": "VMware, Inc.",
+ "vendor_info": {
+  "name": "VMware, Inc.",
+  "website": "http://www.vmware.com",
+  "address": [
+   "3401 Hillview Avenue",
+   "Palo Alto, CA 94304",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Pam Takahama"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1644.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0012.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/6/2011",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "12/6/2011",
+ "last_updated": "12/6/2011",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1644.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Salsa12; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1644,
+  "vendor": "VMware, Inc.",
+  "module": "PCoIP Cryptographic Module for VMware View",
+  "type": "Software",
+  "validation_dates": [
+   "12/06/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

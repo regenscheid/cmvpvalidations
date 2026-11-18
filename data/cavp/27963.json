@@ -1,0 +1,142 @@
+{
+ "cavp_id": "27963",
+ "cavp_cert": "AES 4527",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27963",
+ "implementation": "AWS Key Management Service Cryptographic Algorithm Library",
+ "product_id": "821",
+ "description": "The AWS Key Management Service Cryptographic Algorithm Library provides cryptographic functionality for the AWS Key Management Service Hardware Security Module.",
+ "version": "1.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/9/2017",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "http://aws.amazon.com",
+ "oes": [
+  {
+   "name": "Intel Xeon E5-2640v4",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128",
+    "    MAC Length: 8-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 192, 256",
+    "    MAC Length: 8-128",
+    "    Message Length: 104-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 136, 256, 272",
+    "AAD Length: 128, 136, 272, 384"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 128, 136, 272, 384"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher, Inverse",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher, Inverse",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8, 32, 72, 96, 808"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

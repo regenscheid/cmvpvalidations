@@ -1,0 +1,199 @@
+{
+ "cert": 4444,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4444",
+ "module": "BoringCrypto SoC",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications.",
+ "tested_configurations": [
+  "Google prodimage with Linux 4.15.0 running on Ampere Altra SoC with ARM Neoverse N1 CPU with PAA",
+  "Google prodimage with Linux 4.15.0 running on Ampere Altra SoC with ARM Neoverse N1 CPU without PAA (single-user mode)",
+  "Google prodimage with Linux 5.4.99 running on Google IN762 SoC with Aarch64 ARMv8 CPU with PAA",
+  "Google prodimage with Linux 5.4.99 running on Google IN762 SoC with Aarch64 ARMv8 CPU without PAA"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "853ca1ea1168dff08011e5d42d94609cc0ca2e27",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1657 and #A1727; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1657",
+   "cavp_id": "34266",
+   "cavp_ref": "A:1657"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1727",
+   "cavp_id": "34336",
+   "cavp_ref": "A:1727"
+  }
+ ],
+ "vendor": "Google, LLC.",
+ "vendor_info": {
+  "name": "Google, LLC.",
+  "website": "https://www.google.com/",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Adam Langley"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4444.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202023_010323_0649.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/27/2023",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "2/27/2023",
+ "last_updated": "2/27/2023",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4444.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4444,
+  "vendor": "Google, LLC.",
+  "module": "BoringCrypto SoC",
+  "type": "Software",
+  "validation_dates": [
+   "02/27/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

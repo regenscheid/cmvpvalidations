@@ -1,0 +1,102 @@
+{
+ "cavp_id": "31526",
+ "cavp_cert": "C1129",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31526",
+ "implementation": "Junos OS 19.2R1 - Dataplane",
+ "product_id": "11482",
+ "description": "Juniper Networks SRX Series Services Gateways provide the essential capabilities necessary to connect, secure, and manage enterprise and service provider networks, from the smallest sites to the largest headquarters and data centers",
+ "version": "Junos OS 19.2R1",
+ "type": "FIRMWARE",
+ "first_validated": "9/19/2019",
+ "vendor": "Juniper Networks, Inc",
+ "vendor_website": "http://juniper.net",
+ "oes": [
+  {
+   "name": "Intel Xeon E5-2658 v4 with Intel Coleto Creek QAT",
+   "details": [
+    "processor: Intel Xeon E5-2658 v4 with Intel Coleto Creek QAT",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 96",
+    "Key sizes < block size",
+    "C1129 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128",
+    "Key sizes < block size",
+    "C1129 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192",
+    "Key sizes < block size",
+    "C1129 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

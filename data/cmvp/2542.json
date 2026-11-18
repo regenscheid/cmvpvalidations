@@ -1,0 +1,155 @@
+{
+ "cert": 2542,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2542",
+ "module": "FortiClient 5.0 VPN Client",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and configured according to the Entropy Token Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy. There is no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The FortiClient VPN client provides a FIPS 140-2 validated, IPSec and SSL VPN client for Windows platforms.",
+ "tested_configurations": [
+  "Windows 7 Enterprise Edition running on a Dell Optiplex 755 with the Fortinet entropy token (part number FTR-ENT-1) (single-user mode)"
+ ],
+ "software_versions": "FortiClient 5.0, build0367, 151201",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2912",
+   "cavp_id": "2335",
+   "cavp_ref": "AES:2912"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2924",
+   "cavp_id": "3791",
+   "cavp_ref": "AES:2924"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 329",
+   "cavp_id": "19357",
+   "cavp_ref": "Component:329"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 538",
+   "cavp_id": "18165",
+   "cavp_ref": "DRBG:538"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1842",
+   "cavp_id": "26588",
+   "cavp_ref": "HMAC:1842"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1851",
+   "cavp_id": "4600",
+   "cavp_ref": "HMAC:1851"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1533",
+   "cavp_id": "9229",
+   "cavp_ref": "RSA:1533"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2451",
+   "cavp_id": "2981",
+   "cavp_ref": "SHS:2451"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2460",
+   "cavp_id": "21185",
+   "cavp_ref": "SHS:2460"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1728",
+   "cavp_id": "14941",
+   "cavp_ref": "TDES:1728"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1737",
+   "cavp_id": "301",
+   "cavp_ref": "TDES:1737"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "326 Moodie Drive",
+   "Ottawa, ON K2H 8G3",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2542.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/26/2016",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  }
+ ],
+ "first_validated": "1/26/2016",
+ "last_updated": "1/26/2016",
+ "labs": "DXC Technology",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2542.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 196 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 or 144 bits of encryption strength; non-compliant less than 112 bits of encryption strength); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2542,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiClient 5.0 VPN Client",
+  "type": "Software",
+  "validation_dates": [
+   "01/26/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

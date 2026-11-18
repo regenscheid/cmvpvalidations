@@ -1,0 +1,106 @@
+{
+ "cert": 981,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/981",
+ "module": "FRAMA PSD-I",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "None",
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The cryptographic module (called Postal Security Device, PSD) supports booking processes within postal meters as well as value loading processes in order to increase the postage credits. The postage credits are kept as CSPs within the PSD. In detail the use of cryptographic services, like the production of cryptographic keys, the encoding, decoding or signature and signature verification is part of PSD internal purposes to the booking processes mentioned above. The PSD uses the following algorithms in the approved mode of operation: Triple-DES; RSA; SHA-1; RNG acc. to FIPS 186-2.",
+ "hardware_versions": "2.4",
+ "firmware_versions": "1.0.6",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 215",
+   "cavp_id": "30243",
+   "cavp_ref": "RNG:215"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 157",
+   "cavp_id": "25801",
+   "cavp_ref": "RSA:157"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 489",
+   "cavp_id": "685",
+   "cavp_ref": "SHS:489"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 450",
+   "cavp_id": "20241",
+   "cavp_ref": "TDES:450"
+  }
+ ],
+ "vendor": "FRAMA AG",
+ "vendor_info": {
+  "name": "FRAMA AG",
+  "website": "http://www.framaswiss.com",
+  "address": [
+   "Unterdorf",
+   "Lauperswil CH-3438",
+   "Switzerland"
+  ],
+  "contacts": [
+   {
+    "name": "Beat C. Waelti"
+   },
+   {
+    "name": "Markus Arn"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp981.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt981.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/17/2008",
+   "type": "Initial",
+   "lab": "TUVIT Evaluation Body for IT Security"
+  }
+ ],
+ "first_validated": "7/17/2008",
+ "last_updated": "7/17/2008",
+ "labs": "TUVIT Evaluation Body for IT Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp981.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 80 bits of encryption strength; non-compliant); CRC32"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 981,
+  "vendor": "FRAMA AG",
+  "module": "FRAMA PSD-I",
+  "type": "Hardware",
+  "validation_dates": [
+   "07/17/2008"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

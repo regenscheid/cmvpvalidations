@@ -1,0 +1,271 @@
+{
+ "cavp_id": "32143",
+ "cavp_cert": "C1565",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32143",
+ "implementation": "Intel Communication chipset 8955 hardware cryptographic accelerator",
+ "product_id": "12091",
+ "description": "The library provides the data plane cryptographic services and data plane TLS KDF to the Citrix Application Delivery Controller product line.",
+ "version": "Intel® 8955 Chipset",
+ "type": "HARDWARE",
+ "first_validated": "2/7/2020",
+ "vendor": "Citrix Systems, Inc.",
+ "vendor_website": "http://www.citrix.com",
+ "oes": [
+  {
+   "name": "Intel Communication chipset 8955 hardware cryptographic accelerator",
+   "details": [
+    "device: Intel Communication chipset 8955 hardware cryptographic accelerator"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 504, 512, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "C1565 (DRBG)",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 80, 96, 128, 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192, 256, 320, 384",
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256, 320, 384, 448, 512",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1, v1.2",
+    "Hash Algorithm: SHA2-256, SHA2-384",
+    "C1565 (SHS)",
+    "C1565 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "C1565 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

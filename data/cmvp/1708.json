@@ -1,0 +1,177 @@
+{
+ "cert": 1708,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1708",
+ "module": "nShield F3 4000 [1], nShield F3 2000 [2], nShield F3 2000 for NetHSM [3], nShield F3 500 [4] and nShield F3 500 for NetHSM [5]",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy",
+ "level_exceptions": [
+  "Physical Security: Level 3 + EFP"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The nShield modules: nCipher 4000, nShield 2000, nShield 2000 for NetHSM, nShield 500, and nShield 500 for NetHSM family of secure e-commerce HSM's are multi-tasking hardware modules that is optimized for performing modular arithmetic on very large integers. The nShield modules are FIPS 140-2 level 3 embedded devices. The units are identical in operation and only vary in the processing speed.",
+ "hardware_versions": "nC4033P-4K0 [1], nC4033P-2K0 [2], nC4033P-2K0N [3], nC4033P-500 [4] and nC4033P-500N [5], Build Standard N",
+ "firmware_versions": "2.50.16-3, 2.51.10-3, 2.50.35-3 and 2.55.1-3",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1579",
+   "cavp_id": "22345",
+   "cavp_ref": "AES:1579"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1",
+   "cavp_id": "8491",
+   "cavp_ref": "Component:1"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 72",
+   "cavp_id": "4974",
+   "cavp_ref": "DRBG:72"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 487",
+   "cavp_id": "9907",
+   "cavp_ref": "DSA:487"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 192",
+   "cavp_id": "12953",
+   "cavp_ref": "ECDSA:192"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 925",
+   "cavp_id": "22603",
+   "cavp_ref": "HMAC:925"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 770",
+   "cavp_id": "11925",
+   "cavp_ref": "RSA:770"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1092",
+   "cavp_id": "12982",
+   "cavp_ref": "RSA:1092"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1398",
+   "cavp_id": "25456",
+   "cavp_ref": "SHS:1398"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 132",
+   "cavp_id": "9985",
+   "cavp_ref": "TDES:132"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1035",
+   "cavp_id": "10256",
+   "cavp_ref": "TDES:1035"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1035, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "nCipher Security Limited",
+ "vendor_info": {
+  "name": "nCipher Security Limited",
+  "website": "http://www.ncipher.com",
+  "address": [
+   "One Station Square",
+   "Suite 710",
+   "Cambridge, FL CB1 2GA",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "[email protected]"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1708.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/27/2012",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "3/8/2013",
+   "type": "Update",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "8/16/2013",
+   "type": "Update",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "11/16/2015",
+   "type": "Update",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "1/29/2020",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "4/27/2012",
+ "last_updated": "1/29/2020",
+ "labs": "DXC Technology; Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1708.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "ARC4; Aria; Camellia; CAST-6; DES; MD5; SEED; HMAC-MD5; HMAC-Tiger; HMAC-RIPEMD160; RIPEMD-160; Tiger; El-Gamal; KCDSA; HAS-160; AES (Cert. #1579, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Triple-DES (Cert. #1035, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (CVL Cert. #1, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); ECMQV (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1708,
+  "vendor": "nCipher Security Limited",
+  "module": "nShield F3 4000 [1], nShield F3 2000 [2], nShield F3 2000 for NetHSM [3], nShield F3 500 [4] and nShield F3 500 for NetHSM [5]",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/27/2012",
+   "03/08/2013",
+   "08/16/2013",
+   "11/16/2015",
+   "01/29/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,216 @@
+{
+ "cavp_id": "32491",
+ "cavp_cert": "C1706",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32491",
+ "implementation": "WiSECURE Cryptographic Hardware-Accelerated Library",
+ "product_id": "12394",
+ "description": "The WiSECURE cryptographic Hardware-Accelerated library is a hardware-based cryptographic module that integrated into WiSECURE Series Products. The cryptographic module utilizes dedicated hardware accelerators for better performance and security. It is also designed with countermeasures to against the side channel attacks.",
+ "version": "HA 1.0",
+ "type": "HARDWARE",
+ "first_validated": "4/29/2020",
+ "vendor": "WiSECURE Technology",
+ "vendor_website": "http://www.wisecure-tech.com",
+ "oes": [
+  {
+   "name": "WiSECURE Cryptographic Hardware-Accelerated Library",
+   "details": [
+    "device: WiSECURE Cryptographic Hardware-Accelerated Library"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096, 32768, 65536",
+    "Tweak Mode: Number",
+    "C1706 (AES)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 4096",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "Private Key Format: Standard"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 0"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "oe": 0,
+   "capabilities": [
+    "Private Key Format: standard"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 0"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 0",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

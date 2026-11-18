@@ -1,0 +1,424 @@
+{
+ "cavp_id": "22676",
+ "cavp_cert": "KDF 194",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22676",
+ "implementation": "VMware BC-FJA (Bouncy Castle FIPS Java API)",
+ "product_id": "9361",
+ "description": "The VMware BC-FJA (Bouncy Castle FIPS Java API) is a software cryptographic module that provides cryptographic functions and services to various VMware applications via a well-defined Java-language application programming interface (API).",
+ "version": "1.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "4/9/2018",
+ "vendor": "VMware, Inc.",
+ "vendor_website": "http://www.vmware.com",
+ "oes": [
+  {
+   "name": "BLUX 4.9 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "PhotonOS 1.0 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "PhotonOS 1.0 with JRE 1.8 on ESXi 6.7 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "PhotonOS 2.0 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "PhotonOS 2.0 with JRE 1.8 on ESXi 6.7 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "SLES 12 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "Ubuntu 16.04 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "Ubuntu 16.04 with JRE 1.8 on ESXi 6.7 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "Windows 10 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "Windows 7 (32-bit) with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "Windows Server 2008 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "Windows Server 2012 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "Windows Server 2016 with JRE 1.8 on ESXi 6.5 on Intel Xeon",
+   "details": []
+  },
+  {
+   "name": "Windows Server 2016 with JRE 1.8 on ESXi 6.7 on Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 4,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 5,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 6,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 7,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 8,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 9,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 10,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 11,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 12,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 13,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, In the Middle of Fixed Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32",
+    "    Supports Empty IV",
+    "  Capabilities:",
+    "    KDF Mode: Double Pipeline Iteration",
+    "    SPs used to generate K: SP 800-56A, SP 800-56B, SP 800-90A",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, CMAC-TDES, HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data, Before Iteration Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

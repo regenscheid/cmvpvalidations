@@ -1,0 +1,38 @@
+{
+ "cavp_id": "15251",
+ "cavp_cert": "AES 262",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=15251",
+ "implementation": "SafeEnterprise SONET Crypto Module",
+ "product_id": "4434",
+ "description": "SafeEnterprise SONET Module is a cryptographic accelerator that provides AES encryption operating at 2.4 Gbps. The data encryption algorithms are implemented in the firmware and support Counter Mode AES.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/4/2005",
+ "vendor": "SafeNet, Inc.",
+ "vendor_website": "http://www.safeNet-inc.com",
+ "oes": [
+  {
+   "name": "Xilinx XC2V4000 Processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

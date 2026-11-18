@@ -1,0 +1,145 @@
+{
+ "cert": 3594,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3594",
+ "module": "Key Management Security Module (KMSM) Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The KeyNexus Inc. KMSM cryptographic module is a software library which provides cryptographic functionality to the KeyNexus Key Management Service. KeyNexus Unified Key Manager (UKM) allows enterprises to leverage a single, central key management server to support many different encryption and security use cases. KeyNexus UKM can be deployed as a hosted service, on-premise in any virtual environment, in public or private clouds and embedded in a variety of chipset compute environments.",
+ "tested_configurations": [
+  "Ubuntu 14.04.1 with Java JRE 1.8 on VirtualBox 5.2 on Windows 7 Professional 7 64-bit running on a Dell OptiPlex 980 with an Intel Core i7-870"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5453",
+   "cavp_id": "28537",
+   "cavp_ref": "AES:5453"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2137",
+   "cavp_id": "19555",
+   "cavp_ref": "DRBG:2137"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1454",
+   "cavp_id": "3412",
+   "cavp_ref": "ECDSA:1454"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3611",
+   "cavp_id": "21583",
+   "cavp_ref": "HMAC:3611"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5453; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #2741; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2927",
+   "cavp_id": "1931",
+   "cavp_ref": "RSA:2927"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 46",
+   "cavp_id": "16863",
+   "cavp_ref": "SHA-3:46"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4373",
+   "cavp_id": "14050",
+   "cavp_ref": "SHS:4373"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2741",
+   "cavp_id": "14323",
+   "cavp_ref": "TDES:2741"
+  }
+ ],
+ "vendor": "KeyNexus, Inc.",
+ "vendor_info": {
+  "name": "KeyNexus, Inc.",
+  "website": "https://keynexus.net/",
+  "address": [
+   "650 W. Georgia St., Suite 3200",
+   "Vancouver, BC V6B 4P7",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "KeyNexus Support"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3594.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Jan2020ConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/7/2020",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "1/7/2020",
+ "last_updated": "1/7/2020",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3594.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3594,
+  "vendor": "KeyNexus, Inc.",
+  "module": "Key Management Security Module (KMSM) Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/07/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

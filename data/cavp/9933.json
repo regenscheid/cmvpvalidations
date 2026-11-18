@@ -1,0 +1,44 @@
+{
+ "cavp_id": "9933",
+ "cavp_cert": "AES 5079",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=9933",
+ "implementation": "uMACE HW AES256",
+ "product_id": "8972",
+ "description": "AES256(ECB,GCM) implementation for the uMace cryptographic processor which is used in security modules embedded in Motorola Solutions security products.",
+ "version": "AT58Z04",
+ "type": "HARDWARE",
+ "first_validated": "1/12/2018",
+ "vendor": "Motorola Solutions Inc",
+ "vendor_website": "http://www.motorolasolutions.com",
+ "oes": [
+  {
+   "name": "uMACE HW AES256",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 248, 256, 1000, 1024",
+    "AAD Length: 248, 256, 1000, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

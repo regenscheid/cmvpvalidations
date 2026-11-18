@@ -1,0 +1,72 @@
+{
+ "cavp_id": "19936",
+ "cavp_cert": "RSA 2090",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19936",
+ "implementation": "X-Wall MX+ Cryptographic Library",
+ "product_id": "5626",
+ "description": "The X-Wall MX+ is a SATA-to-SATA realtime single chip cryptographic module capable of encrypting entire disk (or SSD) with SATA Gen3 (6Gbps)/Gen2 (3 Gbps)/Gen1 (1.5Gbps) performance. It includes RSA2048 Key Generation/Signature/Verification, HASH-DRBG RNG, HMAC, CMAC, SHA256 and AES CBC/XTS/ECB symmetric ciphers.",
+ "version": "xF and xN",
+ "type": "HARDWARE",
+ "first_validated": "8/24/2016",
+ "vendor": "Enova Technology Corporation",
+ "vendor_website": "http://www.enovatech.net",
+ "oes": [
+  {
+   "name": "X-Wall MX+ Cryptographic Library",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.2",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 0"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

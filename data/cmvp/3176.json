@@ -1,0 +1,145 @@
+{
+ "cert": 3176,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3176",
+ "module": "Digi ConnectCore Security Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2398",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Digi ConnectCore Security Module provides cryptographic services for Digi International Inc. products.",
+ "tested_configurations": [
+  "Yocto Linux 2.4 running on ConnectCore 6/6UL SoM (ARMv7) without PAA (gcc Compiler Version 7.3.0), Yocto Linux 2.4 running on ConnectCore 6/6UL SoM (ARMv7) with PAA (gcc Compiler Version 7.3.0) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5323",
+   "cavp_id": "22871",
+   "cavp_ref": "AES:5323"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1788",
+   "cavp_id": "3774",
+   "cavp_ref": "Component:1788"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2053",
+   "cavp_id": "16352",
+   "cavp_ref": "DRBG:2053"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1375",
+   "cavp_id": "815",
+   "cavp_ref": "DSA:1375"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1397",
+   "cavp_id": "19909",
+   "cavp_ref": "ECDSA:1397"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3521",
+   "cavp_id": "24817",
+   "cavp_ref": "HMAC:3521"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2851",
+   "cavp_id": "1324",
+   "cavp_ref": "RSA:2851"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4275",
+   "cavp_id": "21924",
+   "cavp_ref": "SHS:4275"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2686",
+   "cavp_id": "10342",
+   "cavp_ref": "TDES:2686"
+  }
+ ],
+ "vendor": "Digi International, Inc.",
+ "vendor_info": {
+  "name": "Digi International, Inc.",
+  "website": "http://www.digi.com",
+  "address": [
+   "11001 Bren Road East",
+   "Minnetonka, MN 55343",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Donald Schleede"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3176.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/26/2018",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "6/12/2018",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "4/26/2018",
+ "last_updated": "6/12/2018",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3176.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition"
+ },
+ "other_text": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3176,
+  "vendor": "Digi International, Inc.",
+  "module": "Digi ConnectCore Security Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/26/2018",
+   "06/12/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,160 @@
+{
+ "cert": 2298,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2298",
+ "module": "Advanced Configurable Cryptographic Environment (ACCE) v3 HSM Crypto Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "4",
+ "caveat": "When operated in FIPS mode and when installed, initialized and configured as specified in the Security Policy in Appendix A",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The Advanced Configurable Cryptographic Environment (ACCE) v3 crypto module offers the next-generation security platform for managing cryptographic keys and protecting sensitive applications. It is used in the Keyper Plus hardware security module (HSM), which is designed for mission-critical applications that demand maximum security. It is ideally suited for companies that need secure key management for PKI certification authorities, registration authorities, OCSP responders, smart card issuers, web servers, DNSSEC and other applications.",
+ "hardware_versions": "2870-G1",
+ "firmware_versions": "2r3 and 2r4",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2684",
+   "cavp_id": "29345",
+   "cavp_ref": "AES:2684"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 434",
+   "cavp_id": "10646",
+   "cavp_ref": "DRBG:434"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 786",
+   "cavp_id": "10944",
+   "cavp_ref": "DRBG:786"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 813",
+   "cavp_id": "29079",
+   "cavp_ref": "DSA:813"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 470",
+   "cavp_id": "3715",
+   "cavp_ref": "ECDSA:470"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1671",
+   "cavp_id": "7134",
+   "cavp_ref": "HMAC:1671"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2138",
+   "cavp_id": "9902",
+   "cavp_ref": "HMAC:2138"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1384",
+   "cavp_id": "19068",
+   "cavp_ref": "RSA:1384"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2255",
+   "cavp_id": "7605",
+   "cavp_ref": "SHS:2255"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2782",
+   "cavp_id": "13760",
+   "cavp_ref": "SHS:2782"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1610",
+   "cavp_id": "12860",
+   "cavp_ref": "TDES:1610"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1610, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Ultra Electronics AEP",
+ "vendor_info": {
+  "name": "Ultra Electronics AEP",
+  "website": "http://www.ultra-aep.com",
+  "address": [
+   "Knaves Beech Business Centre",
+   "Loud Water",
+   "High Wycombe",
+   "Buckinghamshire HP10 9UT",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "Rob Stubbs"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2298.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0049.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/8/2015",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  },
+  {
+   "date": "5/29/2015",
+   "type": "Update",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "1/8/2015",
+ "last_updated": "5/29/2015",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2298.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); XOR_BASE_AND_DATA KDF (non-compliant); PBKDF2 (non-compliant); PKCS#12 KDF (non-compliant); SPKM KDF (non-compliant); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); AES MAC (AES Cert. #2684; non-compliant); AES (key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Triple-DES (Cert. #1610, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); SHA-1 KDF (non-compliant); Triple-DES KDF (Triple-DES Cert. #1610; non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2298,
+  "vendor": "Ultra Electronics AEP",
+  "module": "Advanced Configurable Cryptographic Environment (ACCE) v3 HSM Crypto Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "01/08/2015",
+   "05/29/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

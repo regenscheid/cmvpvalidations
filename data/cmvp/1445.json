@@ -1,0 +1,148 @@
+{
+ "cert": 1445,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1445",
+ "module": "Scalar Key Manager",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated with the Red Hat Enterprise Linux 5 OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #1320 operating in FIPS mode (approved algorithms retested on listed operating environment)",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Scalar Key Manager implements a client/server interface for key administration. The user application has the client role, and the key manager has the server role. The user opens a secure connection to the key server, sends an administrative request (create a key, change a key, etc.), receives a response from the server, and the session is disconnected.",
+ "tested_configurations": [
+  "rPath Linux, Version 2.6.29 (single-user mode)"
+ ],
+ "software_versions": "2.0.3.a",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1255",
+   "cavp_id": "14476",
+   "cavp_ref": "AES:1255"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1499",
+   "cavp_id": "26613",
+   "cavp_ref": "AES:1499"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 734",
+   "cavp_id": "25745",
+   "cavp_ref": "HMAC:734"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 882",
+   "cavp_id": "24562",
+   "cavp_ref": "HMAC:882"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 698",
+   "cavp_id": "25126",
+   "cavp_ref": "RNG:698"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 816",
+   "cavp_id": "11671",
+   "cavp_ref": "RNG:816"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 736",
+   "cavp_id": "15374",
+   "cavp_ref": "RSA:736"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1151",
+   "cavp_id": "23032",
+   "cavp_ref": "SHS:1151"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1350",
+   "cavp_id": "13475",
+   "cavp_ref": "SHS:1350"
+  }
+ ],
+ "vendor": "Quantum Corporation",
+ "vendor_info": {
+  "name": "Quantum Corporation",
+  "website": "http://www.quantum.com",
+  "address": [
+   "1650 Technology Drive",
+   "Suite 700",
+   "San Jose, CA 95110-1382",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Steve McKissick"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1445.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1445.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/15/2010",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "12/6/2010",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "3/15/2011",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "11/15/2010",
+ "last_updated": "3/15/2011",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1445.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "MD5, RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1445,
+  "vendor": "Quantum Corporation",
+  "module": "Scalar Key Manager",
+  "type": "Software",
+  "validation_dates": [
+   "11/15/2010",
+   "12/06/2010",
+   "03/15/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

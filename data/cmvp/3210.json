@@ -1,0 +1,213 @@
+{
+ "cert": 3210,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3210",
+ "module": "Thales Luna USB Hardware Security Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and initialized to Overall Level 2 per Security Policy",
+ "level_exceptions": [
+  "Physical Security: Level 3",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Thales Luna USB HSM delivers key management in a portable appliance. All key materials are maintained exclusively within the confines of the hardware. The small form-factor and on-board key storage sets the product apart, making it especially attractive to customers who need to physically remove and store the small appliance holding PKI root keys. The appliance directly connects the HSM to the application server via a USB interface.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "AES (Certs. #4849 and #5012, key unwrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 152 bits of encryption strength); Triple-DES (Certs. #2552 and #2585, key unwrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "LTK-03, Version Code 0102 [1, 2] and LTK-03, Version Code 0103 [1, 2]",
+ "firmware_versions": "6.24.6 [1] and 6.24.7 [2]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4849",
+   "cavp_id": "12857",
+   "cavp_ref": "AES:4849"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5012",
+   "cavp_id": "14167",
+   "cavp_ref": "AES:5012"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1562",
+   "cavp_id": "16786",
+   "cavp_ref": "Component:1562"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1704",
+   "cavp_id": "12151",
+   "cavp_ref": "DRBG:1704"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1298",
+   "cavp_id": "11361",
+   "cavp_ref": "DSA:1298"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1315",
+   "cavp_id": "19032",
+   "cavp_ref": "DSA:1315"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1242",
+   "cavp_id": "24846",
+   "cavp_ref": "ECDSA:1242"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1278",
+   "cavp_id": "17258",
+   "cavp_ref": "ECDSA:1278"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3306",
+   "cavp_id": "12548",
+   "cavp_ref": "HMAC:3306"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3330",
+   "cavp_id": "395",
+   "cavp_ref": "HMAC:3330"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 154",
+   "cavp_id": "25712",
+   "cavp_ref": "KAS:154"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 164",
+   "cavp_id": "25675",
+   "cavp_ref": "KDF:164"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5012; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2691",
+   "cavp_id": "7868",
+   "cavp_ref": "RSA:2691"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2704",
+   "cavp_id": "11436",
+   "cavp_ref": "RSA:2704"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3988",
+   "cavp_id": "5224",
+   "cavp_ref": "SHS:3988"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4075",
+   "cavp_id": "15557",
+   "cavp_ref": "SHS:4075"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2552",
+   "cavp_id": "27490",
+   "cavp_ref": "TDES:2552"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2585",
+   "cavp_id": "28502",
+   "cavp_ref": "TDES:2585"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Certs. #2552 and #2585, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Thales",
+ "vendor_info": {
+  "name": "Thales",
+  "website": "http://www.gemalto.com",
+  "address": [
+   "20 Colonnade Road, Suite 200",
+   "Ottawa, ON K2E 7M6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security & Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3210.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JuneCertFinal.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/27/2018",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  },
+  {
+   "date": "8/31/2021",
+   "type": "Update",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "6/27/2018",
+ "last_updated": "8/31/2021",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3210.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "AES (Certs. #4849 and #5012, key unwrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 152 bits of encryption strength); Triple-DES (Certs. #2552 and #2585, key unwrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3210,
+  "vendor": "Thales",
+  "module": "Thales Luna USB Hardware Security Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/27/2018",
+   "08/31/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

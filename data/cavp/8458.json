@@ -1,0 +1,41 @@
+{
+ "cavp_id": "8458",
+ "cavp_cert": "AES 3300",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=8458",
+ "implementation": "Redpine AES CCMP Hardware Accelerator",
+ "product_id": "6946",
+ "description": "This hardware accelerator implements AES algorithm as specified in FIPS PUB 197 - 2001. It supports 128-bit key size and 128-bit block size as required by the CCMP mode specified in 802.11i standard. It supports only encryption.",
+ "version": "RS9113",
+ "type": "HARDWARE",
+ "first_validated": "3/27/2015",
+ "vendor": "Redpine Signals, Inc.",
+ "vendor_website": "http://www.redpinesginals.com",
+ "oes": [
+  {
+   "name": "Redpine AES CCMP Hardware Accelerator",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 120-240"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

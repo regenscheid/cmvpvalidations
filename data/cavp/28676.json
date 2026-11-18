@@ -1,0 +1,58 @@
+{
+ "cavp_id": "28676",
+ "cavp_cert": "HMAC 3919",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28676",
+ "implementation": "AOS Crypto Module",
+ "product_id": "10340",
+ "description": "Comprehensive module implementing various FIPS approved cryptographic algorithms using modified OpenSSL. This provides necessary crypto functionalities for the user space applications on the access points.",
+ "version": "XD-Crypto-1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/9/2018",
+ "vendor": "Riverbed Technology",
+ "vendor_website": "http://www.riverbed.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon 7030",
+   "details": []
+  },
+  {
+   "name": "Cavium Octeon 7130",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

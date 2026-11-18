@@ -1,0 +1,66 @@
+{
+ "cavp_id": "31294",
+ "cavp_cert": "C897",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31294",
+ "implementation": "MiniCrypt",
+ "product_id": "11252",
+ "description": "MiniCrypt is a general purpose firmware cryptographic module, to provide symmetric encryption, hashing, and message authentication code creation for resource constrained embedded systems.",
+ "version": "1.6",
+ "type": "FIRMWARE",
+ "first_validated": "7/11/2019",
+ "vendor": "Teledyne Webb Research",
+ "vendor_website": "http://www.teledynemarine.com",
+ "oes": [
+  {
+   "name": "STM32F103ZGT6",
+   "details": [
+    "processor: STM32F103ZGT6"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key size = block size",
+    "C897 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "C897 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

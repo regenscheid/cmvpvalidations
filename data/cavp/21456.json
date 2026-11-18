@@ -1,0 +1,73 @@
+{
+ "cavp_id": "21456",
+ "cavp_cert": "Component 1710",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21456",
+ "implementation": "Silver Spring Networks Endpoint Security Module",
+ "product_id": "9165",
+ "description": "Silver Spring Networks Endpoint Security Module provides acceleration and off-load of standard cryptographic algorithms and secure network protocols, key storage and generation, bootloader and firmware verification, and encrypted data storage. It is included in the SoC designed for SSN's Gen5 endpoint and infrastructure products.",
+ "version": "130-0117-03 82136; 1.00 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "2/9/2018",
+ "vendor": "Silver Spring Networks",
+ "vendor_website": "http://www.silverspringnet.com",
+ "oes": [
+  {
+   "name": "ESM instruction manager processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF ANS 9.63",
+   "oe": 0,
+   "capabilities": [
+    "Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Diffie-Hellman Shared Secret Length: 256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Diffie-Hellman Shared Secret Length: 384",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Responder Nonce Length: 160-512",
+    "    Diffie-Hellman Shared Secret Length: 256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Responder Nonce Length: 160-512",
+    "    Diffie-Hellman Shared Secret Length: 384",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Responder Nonce Length: 160-512",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1, v1.2",
+    "Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

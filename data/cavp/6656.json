@@ -1,0 +1,60 @@
+{
+ "cavp_id": "6656",
+ "cavp_cert": "RSA 1073",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6656",
+ "implementation": "HP ESKM RSA",
+ "product_id": "264",
+ "description": "HP Enterprise Secure Key Manager (ESKM) provides key generation, retrieval, and management for encryption devices and solutions. ESKM is a hardened security appliance with secure access control, administration, and logging. ESKM supports high availability with automatic multi-site clustering, replication, and failover.",
+ "version": "5.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/25/2012",
+ "vendor": "Hewlett Packard Enterprise",
+ "vendor_website": "http://www.hp.com/go/atalla",
+ "oes": [
+  {
+   "name": "Intel Xeon E5-2640",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 2048",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

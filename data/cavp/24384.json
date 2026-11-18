@@ -1,0 +1,41 @@
+{
+ "cavp_id": "24384",
+ "cavp_cert": "AES 861",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24384",
+ "implementation": "Octeon Plus CN5010",
+ "product_id": "2316",
+ "description": "Cavium security algorithms are implemented via hardware acceleration blocks that are party of the Co-Processor 2 in the MIPs Release 2 architecture. Cavium also offers APIs to allow software interaction and updates that utilize these hardware blocks. Cavium can disable security cores to comply with related export laws and regulations.",
+ "version": "CN5010-400BG564-SCP-G",
+ "type": "HARDWARE",
+ "first_validated": "9/11/2008",
+ "vendor": "Cavium Networks",
+ "vendor_website": "http://www.caviumnetworks.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 120-240"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

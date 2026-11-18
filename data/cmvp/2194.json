@@ -1,0 +1,138 @@
+{
+ "cert": 2194,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2194",
+ "module": "Blue Coat® Systems SSL Visibility Appliance",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode with the tamper evident seals installed as indicated in the Security Policy",
+ "level_exceptions": [
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The SSL Visibility Appliance is designed to detect SSL traffic and then under policy control to \"inspect\" the traffic. Inspection involves decrypting and re-encrypting the traffic to gain access to the clear text then passing this data to one or more associated security appliance(s) that need to see decrypted traffic.",
+ "hardware_versions": "Model: SV2800; 090-03063 and 080-03562 with FIPS Label Kit: FIPS-LABELS-SV",
+ "firmware_versions": "3.5.2 build 961",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2642",
+   "cavp_id": "15310",
+   "cavp_ref": "AES:2642"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 123",
+   "cavp_id": "26323",
+   "cavp_ref": "Component:123"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1634",
+   "cavp_id": "30054",
+   "cavp_ref": "HMAC:1634"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1246",
+   "cavp_id": "22597",
+   "cavp_ref": "RNG:1246"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1238",
+   "cavp_id": "9999",
+   "cavp_ref": "RSA:1238"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1352",
+   "cavp_id": "23348",
+   "cavp_ref": "RSA:1352"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2215",
+   "cavp_id": "20843",
+   "cavp_ref": "SHS:2215"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1585",
+   "cavp_id": "18041",
+   "cavp_ref": "TDES:1585"
+  }
+ ],
+ "vendor": "Blue Coat® Systems, Inc.",
+ "vendor_info": {
+  "name": "Blue Coat® Systems, Inc.",
+  "website": "http://www.bluecoat.com",
+  "address": [
+   "420 N. Mary Avenue",
+   "Sunnyvale, CA 94085",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Diana Robinson"
+   },
+   {
+    "name": "Tammy Green"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2194.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/27/2014",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "6/27/2014",
+ "last_updated": "6/27/2014",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2194.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less then 112 bits of encryption strength); TRNG; NDRNG; MD5; RC4; HMAC-MD5; Camelia; DES"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2194,
+  "vendor": "Blue Coat® Systems, Inc.",
+  "module": "Blue Coat® Systems SSL Visibility Appliance",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/27/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

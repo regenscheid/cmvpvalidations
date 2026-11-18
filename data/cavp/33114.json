@@ -1,0 +1,48 @@
+{
+ "cavp_id": "33114",
+ "cavp_cert": "C2061",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33114",
+ "implementation": "Azure Host OS; Cryptography Next Generation (CNG) Implementations",
+ "product_id": "13020",
+ "description": "The Microsoft Windows Kernel Mode Cryptographic Primitives Library -- Cryptography Next Generation (CNG) -- is a general purpose, software-based, cryptographic module which provides FIPS 140-2 Level 1 cryptography.",
+ "version": "1.65",
+ "type": "SOFTWARE",
+ "first_validated": "8/17/2020",
+ "vendor": "Microsoft Corporation",
+ "vendor_website": "http://www.microsoft.com",
+ "oes": [
+  {
+   "name": "Azure Host OS (x64) on Intel Xeon Platinum 8260 with AES-NI and without SHA Extensions w/ Dell PowerEdge R840",
+   "details": [
+    "software: Azure Host OS (x64)",
+    "processor: Intel Xeon Platinum 8260 with AES-NI and without SHA Extensions w/ Dell PowerEdge R840",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 2048"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256, HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 160, 168, 504, 512",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,46 @@
+{
+ "cavp_id": "6046",
+ "cavp_cert": "AES 917",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6046",
+ "implementation": "AES",
+ "product_id": "2462",
+ "description": "This is the EF Johnson implementation of the AES algorithm. The modes of operation for this implementation are: OFB, ECB, and CBC using 128, 192, or 256 bits. This algorithm is used in the EF Johnson infrastructure components and KMF, which use the FIPS 140-2 certified JEM2 module.",
+ "version": "2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/14/2008",
+ "vendor": "EFJohnson Technologies",
+ "vendor_website": "http://www.efjohnson.com",
+ "oes": [
+  {
+   "name": "TMS320C6454",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

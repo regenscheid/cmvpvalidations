@@ -1,0 +1,87 @@
+{
+ "cavp_id": "33433",
+ "cavp_cert": "A837",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33433",
+ "implementation": "SCAES",
+ "product_id": "13066",
+ "description": "Autotalks Hardware Security Module provide a FIPS 140-2 Level 3 certified, hardened, tamper-resistant environment for secure cryptographic processing needed for Automotive Vehicle-to-Everything communication systems including: • ECC Public Key cryptography • Symmetric key cryptography • Key protection • TRNG/DRBG",
+ "version": "3.0",
+ "type": "FIRMWARE",
+ "first_validated": "10/23/2020",
+ "vendor": "Autotalks",
+ "vendor_website": "http://www.auto-talks.com/",
+ "oes": [
+  {
+   "name": "Simulator: Cadence NC-Verilog",
+   "details": [
+    "firmware: Simulator: Cadence NC-Verilog"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56-104 Increment 8",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0-522232 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 8-522232 Increment 8",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 192",
+    "    MAC Length: 128",
+    "    Message Length: 8-522232 Increment 8",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-522232 Increment 8",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 8-522232 Increment 8",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 192",
+    "    MAC Length: 128",
+    "    Message Length: 8-522232 Increment 8",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-522232 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

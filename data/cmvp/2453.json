@@ -1,0 +1,134 @@
+{
+ "cert": 2453,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2453",
+ "module": "Panorama M-100",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and with the tamper evident seals and opacity shields installed as indicated in the Security Policy",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "Panorama on the M-100 provides centralized management and visibilty of multiple Palo Alto Networks next-generation firewalls and supports distributed management and logging functions. It allows you to oversee all applications, users, and content traversing the network and then create application enablement policies that protect and control the entire network. Using Panorama for policy and device management increases operational effeciency in managing and maintaining distributed network of firewalls.",
+ "hardware_versions": "P/Ns 910-000030 Version 00D, 910-000092 Version 00D, FIPS Kit P/N 920-000140 Version 00A",
+ "firmware_versions": "6.1.3",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3180",
+   "cavp_id": "3537",
+   "cavp_ref": "AES:3180"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 425",
+   "cavp_id": "19346",
+   "cavp_ref": "Component:425"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 662",
+   "cavp_id": "1031",
+   "cavp_ref": "DRBG:662"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2006",
+   "cavp_id": "29086",
+   "cavp_ref": "HMAC:2006"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1616",
+   "cavp_id": "18769",
+   "cavp_ref": "RSA:1616"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2632",
+   "cavp_id": "15859",
+   "cavp_ref": "SHS:2632"
+  }
+ ],
+ "vendor": "Palo Alto Networks",
+ "vendor_info": {
+  "name": "Palo Alto Networks",
+  "website": "http://www.paloaltonetworks.com",
+  "address": [
+   "3000 Tannery Way",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Amir Shahhosseini"
+   },
+   {
+    "name": "Jake Bajic"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2453.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0057.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/30/2015",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/21/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/13/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "9/30/2015",
+ "last_updated": "2/13/2018",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2453.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-131A transition which disallows key wrapping not compliant to SP 800-38F.",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); AES (key wrapping; key establishment methodology provides 128 or 256 bits of encryption strength); NDRNG; MD5; RC4; Camellia; RC2; SEED; DES"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2453,
+  "vendor": "Palo Alto Networks",
+  "module": "Panorama M-100",
+  "type": "Hardware",
+  "validation_dates": [
+   "09/30/2015",
+   "04/21/2016",
+   "02/13/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,65 @@
+{
+ "cavp_id": "25669",
+ "cavp_cert": "AES 4767",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25669",
+ "implementation": "Bomgar Cryptographic Engine",
+ "product_id": "8404",
+ "description": "The Bomgar Cryptographic Engine provides the cryptographic functionality required by the Bomgar FIPS appliance. This appliance allows support professionals to connect securely to remote clients and co-workers via the Internet, providing complete desktop access for remote support.",
+ "version": "2.0.13 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/15/2017",
+ "vendor": "Bomgar Corporation",
+ "vendor_website": "http://www.bomgar.com",
+ "oes": [
+  {
+   "name": "Intel® Xeon E5-2640 v3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

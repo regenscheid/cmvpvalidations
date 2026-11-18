@@ -1,0 +1,156 @@
+{
+ "cert": 2909,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2909",
+ "module": "Arista EOS Crypto Module v1.0",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Arista’s crypto library is a comprehensive suite of FIPS Approved algorithms. Many key sizes and modes have been implemented to allow flexibility and efficiency.",
+ "tested_configurations": [
+  "EOS v4 running on Arista 7050SX-72 with AMD G Series: eKabini",
+  "EOS v4 running on Arista 7060CX-32S with AMD G Series: Steppe Eagle",
+  "EOS v4 running on Arista 7150S-24 with AMD Athlon NEO X2",
+  "EOS v4 running on Arista 7300 (DCS-7300-SUP supervisor, DCS-7308 chassis) with Intel Sandy Bridge EN",
+  "EOS v4 running on Arista 7500R (DCS-7500-SUP2 supervisor, DCS-7508 chassis) with Intel Broadwell-DE (single-user mode)"
+ ],
+ "software_versions": "v1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4280",
+   "cavp_id": "10998",
+   "cavp_ref": "AES:4280"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1012",
+   "cavp_id": "25531",
+   "cavp_ref": "Component:1012"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1340",
+   "cavp_id": "8625",
+   "cavp_ref": "DRBG:1340"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1141",
+   "cavp_id": "16436",
+   "cavp_ref": "DSA:1141"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 998",
+   "cavp_id": "5907",
+   "cavp_ref": "ECDSA:998"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2816",
+   "cavp_id": "23701",
+   "cavp_ref": "HMAC:2816"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2301",
+   "cavp_id": "28831",
+   "cavp_ref": "RSA:2301"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3516",
+   "cavp_id": "20972",
+   "cavp_ref": "SHS:3516"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2309",
+   "cavp_id": "29918",
+   "cavp_ref": "TDES:2309"
+  }
+ ],
+ "vendor": "Arista Networks, Inc.",
+ "vendor_info": {
+  "name": "Arista Networks, Inc.",
+  "website": "http://www.arista.com",
+  "address": [
+   "5453 Great America Parkway",
+   "Santa Clara, CA 95054"
+  ],
+  "contacts": [
+   {
+    "name": "Richard Whitney"
+   },
+   {
+    "name": "Ethan Rahn"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2909.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMay2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/15/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/28/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/10/2020",
+   "type": "Update",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "5/15/2017",
+ "last_updated": "7/10/2020",
+ "labs": "CYGNACOM SOLUTIONS INC; UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2909.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; RSA (key transport; key establishment methodology provides 112 or 128 bits of encryption strength); AES KW (non-compliant); AES-XTS (non-compliant); Blowfish; Camellia; CAST5; DES; DES-X; HMAC-MD5; IDEA; MD4; RC2; RC4; RC5; RIPEMD-160; SEED; Triple-DES KW (non-compliant); Whirlpool"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2909,
+  "vendor": "Arista Networks, Inc.",
+  "module": "Arista EOS Crypto Module v1.0",
+  "type": "Software",
+  "validation_dates": [
+   "05/15/2017",
+   "01/28/2019",
+   "07/10/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

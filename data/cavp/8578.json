@@ -1,0 +1,53 @@
+{
+ "cavp_id": "8578",
+ "cavp_cert": "AES 4390",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=8578",
+ "implementation": "Security Analytics Crypto Library v7.2",
+ "product_id": "6160",
+ "description": "The Security Analytics Crypto Library v7.2 provides the necessary cryptographic services for the Security Analytics software developed specifically for use in the Security Analytics Central Manager (CM) and Forensic Appliances (FA).",
+ "version": "7.2",
+ "type": "SOFTWARE",
+ "first_validated": "2/10/2017",
+ "vendor": "Symantec Corporation",
+ "vendor_website": "http://www.symantec.com",
+ "oes": [
+  {
+   "name": "Fedora Core 10 on Intel Xeon Processor IvyBridge (E5-2680 v2 and E5-2609v2)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

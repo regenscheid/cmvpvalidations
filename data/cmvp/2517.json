@@ -1,0 +1,128 @@
+{
+ "cert": 2517,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2517",
+ "module": "FortiManager-1000D",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode with the tamper evident seals installed as indicated in the Security Policy and configured according to the Entropy Token Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy. There is no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Ports and Interfaces: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "FortiManager Network Security Management Appliances were designed to provide security management for large enterprise organizations and service providers. They enable you to centrally manage any number of Fortinet devices, including FortiManager, FortiWiFi, and FortiCarrier™. FortiManager provides the high performance and scalability you need to efficiently apply policies and distribute content security/firmware updates, regardless of the size of your network.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "C1AA82-01AA-0000 with Tamper Evident Seal Kits: FIPS-SEAL-RED",
+ "firmware_versions": "v5.2.4-build0738 150923 (GA)",
+ "product_url": "http://www.fortinet.com/products/index.html",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3594",
+   "cavp_id": "14005",
+   "cavp_ref": "AES:3594"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 616",
+   "cavp_id": "21625",
+   "cavp_ref": "Component:616"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 929",
+   "cavp_id": "9411",
+   "cavp_ref": "DRBG:929"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2291",
+   "cavp_id": "25251",
+   "cavp_ref": "HMAC:2291"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1848",
+   "cavp_id": "3527",
+   "cavp_ref": "RSA:1848"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2956",
+   "cavp_id": "179",
+   "cavp_ref": "SHS:2956"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2001",
+   "cavp_id": "28653",
+   "cavp_ref": "TDES:2001"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "326 Moodie Drive",
+   "Ottawa, ON K2H 8G3",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2517.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/5/2016",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "1/5/2016",
+ "last_updated": "1/5/2016",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2517.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 201 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; MD5; HMAC-MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2517,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiManager-1000D",
+  "type": "Hardware",
+  "validation_dates": [
+   "01/05/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

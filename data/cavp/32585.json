@@ -1,0 +1,47 @@
+{
+ "cavp_id": "32585",
+ "cavp_cert": "A446",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32585",
+ "implementation": "Linux Kernel crypto API (OFB_CPACF_C)",
+ "product_id": "12490",
+ "description": "The Linux kernel crpyto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface.",
+ "version": "3.2",
+ "type": "SOFTWARE",
+ "first_validated": "5/19/2020",
+ "vendor": "SUSE LLC.",
+ "vendor_website": "http://www.suse.de",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP2 on IBM Z System z15(TM)",
+   "details": [
+    "software: SUSE Linux Enterprise Server 15 SP2",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15",
+    "processor: z15(TM)",
+    "  Processor z15(TM) (processor family S390) from IBM",
+    "  family: S390",
+    "  manufacturer: IBM",
+    "  series: Z System"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "TDES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

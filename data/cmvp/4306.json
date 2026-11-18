@@ -1,0 +1,226 @@
+{
+ "cert": 4306,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4306",
+ "module": "RSA BSAFE® Crypto-C Micro Edition",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When entropy is externally loaded, no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "BSAFE Crypto-C Micro Edition is a software module providing a comprehensive set of cryptographic algorithms, including asymmetric key algorithms, symmetric key algorithms, message digests, message authentication, and deterministic random bit generator (DRBG) support. Developers can use the full set of algorithms through a single Application Programming Interface (API) or select a specific set of algorithms to reduce code size or meet performance requirements.",
+ "tested_configurations": [
+  "Apple iOS 12 ARMv8 (64-bit) running on an iPhone 8 with an Apple A11 with PAA",
+  "Apple iOS 12 ARMv8 (64-bit) running on an iPhone 8 with an Apple A11 without PAA",
+  "Apple macOS 10.15 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Mac Pro with an Intel Xeon E5-1650 v2 with PAA",
+  "Apple macOS 10.15 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Mac Pro with an Intel Xeon E5-1650 v2 without PAA",
+  "Canonical Ubuntu 16.04 ARMv7 (32-bit) running on a BeagleBoard BeagleBone Black with a Texas Instruments Sitara AM335x",
+  "FreeBSD 11.3 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA",
+  "FreeBSD 11.3 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA",
+  "Google Android 10 ARMv7 (32-bit) running on a Pixel 3 with Qualcomm Snapdragon 845",
+  "Google Android 10 ARMv8 (64-bit) running on a Pixel 3 with Qualcomm Snapdragon 845 with PAA",
+  "Google Android 10 ARMv8 (64-bit) running on a Pixel 3 with Qualcomm Snapdragon 845 without PAA (single-user mode)",
+  "IBM AIX 7.2 PowerPC (32-bit) on PowerVM Virtual I/O Server 2.2.6.41 running on an IBM Power 8284-22A with an IBM POWER8",
+  "IBM AIX 7.2 PowerPC (64-bit) on PowerVM Virtual I/O Server 2.2.6.41 running on an IBM Power 8284-22A with an IBM POWER8",
+  "Microsoft Windows 10 Enterprise x86 (32-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA",
+  "Microsoft Windows 10 Enterprise x86 (32-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA",
+  "Microsoft Windows 10 Enterprise x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA (VS2013)",
+  "Microsoft Windows 10 Enterprise x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA (VS2017)",
+  "Microsoft Windows 10 Enterprise x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA (VS2013)",
+  "Microsoft Windows 10 Enterprise x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA (VS2017)",
+  "Microsoft Windows Server 2016 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA",
+  "Microsoft Windows Server 2016 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA",
+  "Microsoft Windows Server 2019 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA",
+  "Microsoft Windows Server 2019 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA",
+  "Microsoft Windows Server 2019 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R7425 with AMD EPYC 7451 with PAA",
+  "Microsoft Windows Server 2019 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R7425 with AMD EPYC 7451 without PAA",
+  "Oracle Solaris 11.4 SPARC v8+ (32-bit) on Oracle VM Server 11 running on a Oracle SPARC T4-2 with a SPARC T4-2 with PAA",
+  "Oracle Solaris 11.4 SPARC v8+ (32-bit) on Oracle VM Server 11 running on a Oracle SPARC T4-2 with a SPARC T4-2 without PAA",
+  "Oracle Solaris 11.4 SPARC v9 (64-bit) on Oracle VM Server 11 running on a Oracle SPARC T4-2 with a SPARC T4-2 with PAA",
+  "Oracle Solaris 11.4 SPARC v9 (64-bit) on Oracle VM Server 11 running on a Oracle SPARC T4-2 with a SPARC T4-2 without PAA",
+  "Oracle Solaris 11.4 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA",
+  "Oracle Solaris 11.4 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA",
+  "Red Hat Enterprise Linux 7.8 PowerPC (64-bit) on PowerVM Virtual I/O Server 2.2.6.41 running on an IBM Power 8284-22A with an IBM POWER8",
+  "SUSE Linux Enterprise Server 11 SP4 PowerPC (64-bit) on PowerVM Virtual I/O Server 2.2.6.41 running on an IBM Power 8284-22A with an IBM POWER8",
+  "SUSE Linux Enterprise Server 12 SP5 ARMv8 (64-bit) running on a SoftIron Overdrive 1000 with an AMD Opteron A1100 with PAA",
+  "SUSE Linux Enterprise Server 12 SP5 ARMv8 (64-bit) running on a SoftIron Overdrive 1000 with an AMD Opteron A1100 without PAA",
+  "SUSE Linux Enterprise Server 12 SP5 PowerPC (64-bit) on PowerVM Virtual I/O Server 2.2.6.41 running on an IBM Power 8284-22A with an IBM POWER8",
+  "SUSE Linux Enterprise Server 12 SP5 x86 (32-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA",
+  "SUSE Linux Enterprise Server 12 SP5 x86 (32-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA",
+  "SUSE Linux Enterprise Server 12 SP5 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 with PAA",
+  "SUSE Linux Enterprise Server 12 SP5 x86_64 (64-bit) on VMware ESXi 6.7.0 running on a Dell PowerEdge R640 with Intel Xeon Gold 6136 without PAA"
+ ],
+ "allowed_algorithms": "MD5; NDRNG",
+ "software_versions": "4.1.5",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C2130; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2130",
+   "cavp_id": "33283",
+   "cavp_ref": "C:2130"
+  }
+ ],
+ "vendor": "Dell Australia Pty Limited, BSAFE Product Team",
+ "vendor_info": {
+  "name": "Dell Australia Pty Limited, BSAFE Product Team",
+  "website": "http://www.dell.com",
+  "address": [
+   "207 Pacific Highway",
+   "Building A",
+   "St Leonards, NSW 2065",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "BSAFE FIPS Program"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4306.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202022_031022_0652_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/19/2022",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "10/24/2022",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "4/12/2023",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "9/19/2022",
+ "last_updated": "4/12/2023",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4306.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4306,
+  "vendor": "Dell Australia Pty Limited, BSAFE Product Team",
+  "module": "RSA BSAFE® Crypto-C Micro Edition",
+  "type": "Software",
+  "validation_dates": [
+   "09/19/2022",
+   "10/24/2022",
+   "04/12/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

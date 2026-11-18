@@ -1,0 +1,144 @@
+{
+ "cert": 4100,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4100",
+ "module": "Sophos Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Sophos Cryptographic Module is a general-purpose cryptographic library incorporated into the Sophos Firewall systems to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+ "tested_configurations": [
+  "Sophos Firewall Operating System (SFOS) 18.5 running on XGS 3100 with AMD Ryzen Embedded V1780B with PAA",
+  "Sophos Firewall Operating System (SFOS) 18.5 running on XGS 3100 with AMD Ryzen Embedded V1780B without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "product_url": "https://www.sophos.com/en-us/products/next-gen-firewall.aspx",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1398",
+   "cavp_id": "34007",
+   "cavp_ref": "A:1398"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1398",
+   "cavp_id": "34007",
+   "cavp_ref": "A:1398"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1398",
+   "cavp_id": "34007",
+   "cavp_ref": "A:1398"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1398",
+   "cavp_id": "34007",
+   "cavp_ref": "A:1398"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1398",
+   "cavp_id": "34007",
+   "cavp_ref": "A:1398"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmation",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1398",
+   "cavp_id": "34007",
+   "cavp_ref": "A:1398"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1398",
+   "cavp_id": "34007",
+   "cavp_ref": "A:1398"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1398",
+   "cavp_id": "34007",
+   "cavp_ref": "A:1398"
+  }
+ ],
+ "vendor": "Sophos Limited",
+ "vendor_info": {
+  "name": "Sophos Limited",
+  "website": "http://www.sophos.com",
+  "address": [
+   "The Pentagon, Abingdon Science Park",
+   "Abingdon OX14 3YP",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "Martin Becker"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4100.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202021_020122_0905_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/13/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/13/2021",
+ "last_updated": "12/13/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4100.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4100,
+  "vendor": "Sophos Limited",
+  "module": "Sophos Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/13/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

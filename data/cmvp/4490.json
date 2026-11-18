@@ -1,0 +1,340 @@
+{
+ "cert": 4490,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4490",
+ "module": "AWS OpenSSL FIPS Provider",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Module is a software library providing a C-language application program interface (API) for use by applications that require cryptographic functionality. The Module is classified under FIPS 140-2 as a software module, with a multi-chip standalone module embodiment. The physical cryptographic boundary is the general-purpose computer on which the module is installed.",
+ "tested_configurations": [
+  "Amazon Linux 2 on Intel Xeon Platinum 8275CL (Cascade Lake) with PAA",
+  "Amazon Linux 2 on Intel Xeon Platinum 8275CL (Cascade Lake) without PAA",
+  "Amazon Linux 2 running on AWS EC2 c6g instance with AWS Graviton 2 with PAA",
+  "Amazon Linux 2 running on AWS EC2 c6g instance with AWS Graviton 2 without PAA",
+  "Amazon Linux 2 running on AWS EC2 c7g instance with AWS Graviton 3 with PAA",
+  "Amazon Linux 2 running on AWS EC2 c7g instance with AWS Graviton 3 without PAA",
+  "Amazon Linux 2023 on Intel Xeon Platinum 8275CL (Cascade Lake) with PAA",
+  "Amazon Linux 2023 on Intel Xeon Platinum 8275CL (Cascade Lake) without PAA",
+  "Amazon Linux 2023 running on AWS EC2 c6g instance with AWS Graviton 2 with PAA",
+  "Amazon Linux 2023 running on AWS EC2 c6g instance with AWS Graviton 2 without PAA",
+  "Amazon Linux 2023 running on AWS EC2 c7g instance with AWS Graviton 3 with PAA",
+  "Amazon Linux 2023 running on AWS EC2 c7g instance with AWS Graviton 3 without PAA",
+  "Debian 11.5 running on Dell Inspiron 7591 with Intel i7(x64) with PAA",
+  "Debian 11.5 running on Dell Inspiron 7591 with Intel i7(x64) without PAA",
+  "FreeBSD 13.1 running on Dell Inspiron 7591 with Intel i7(x64) with PAA",
+  "FreeBSD 13.1 running on Dell Inspiron 7591 with Intel i7(x64) without PAA",
+  "macOS 11.5.2 running on Apple i7 Mac Mini with Intel i7(x64) with PAA",
+  "macOS 11.5.2 running on Apple i7 Mac Mini with Intel i7(x64) without PAA",
+  "macOS 11.5.2 running on Apple M1 Mac Mini with M1 with PAA",
+  "macOS 11.5.2 running on Apple M1 Mac Mini with M1 without PAA",
+  "Ubuntu Linux 22.04.1 LTS running on Dell Inspiron 7591 with Intel i7(x64) with PAA",
+  "Ubuntu Linux 22.04.1 LTS running on Dell Inspiron 7591 with Intel i7(x64) without PAA",
+  "Windows 10 running on Dell Inspiron 7591 with Intel i7(x64) with PAA",
+  "Windows 10 running on Dell Inspiron 7591 with Intel i7(x64) without PAA (single-user mode)"
+ ],
+ "software_versions": "3.0.9",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "KAS-RSA-SSC",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "KAS-RSA-SSC",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "KMAC",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "KMAC",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A4086 and #A6725; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A4086 and #A6725 and AES Certs. #A4086 and #A6725; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A4086 and #A6725 and HMAC Certs. #A4086 and #A6725; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Certs. #A4086 and #A6725 and HMAC Certs. #A4086 and #A6725; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS-RSA",
+   "cavp_cert": "Certs. #A4086 and #A6725; key establishment methodology provides between 112 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A4086",
+   "cavp_id": "36696",
+   "cavp_ref": "A:4086"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A6725",
+   "cavp_id": "39335",
+   "cavp_ref": "A:6725"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "http://www.aws.amazon.com",
+  "address": [
+   "410 Terry Ave N, Ste 1200",
+   "Seattle, WA 98109-5210",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "AWS Crypto Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4490.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202023_010523_0646.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/26/2023",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "7/26/2023",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "10/20/2025",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "4/26/2023",
+ "last_updated": "10/20/2025",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4490.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4490,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "AWS OpenSSL FIPS Provider",
+  "type": "Software",
+  "validation_dates": [
+   "04/26/2023",
+   "07/26/2023",
+   "10/20/2025"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

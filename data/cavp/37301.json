@@ -1,0 +1,47 @@
+{
+ "cavp_id": "37301",
+ "cavp_cert": "A4691",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37301",
+ "implementation": "Inline Crypto Engine (ICE) SADB",
+ "product_id": "17277",
+ "description": "The Intel® QAT ICE SADB supports Secure SADB where SA keys are encrypted for writing to DRAM and decrypted when reading from DRAM.",
+ "version": "Intel® QuickAssist Technology (Intel® QAT) ICE version 1.0a",
+ "type": "FIRMWARE",
+ "first_validated": "11/14/2023",
+ "vendor": "Intel Corporation",
+ "vendor_website": "https://www.intel.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS® (Verilog Compiler Simulator)",
+   "details": [
+    "Simulator: Synopsys VCS® (Verilog Compiler Simulator)",
+    "  Verilog language simulation program for chip design"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 288",
+    "AAD Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

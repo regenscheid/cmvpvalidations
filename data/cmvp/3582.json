@@ -1,0 +1,195 @@
+{
+ "cert": 3582,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3582",
+ "module": "Oracle Linux 7 OpenSSH Client Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Oracle Linux OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #3474 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Oracle Linux OpenSSH Cryptographic Module is a software module that supplies cryptographic support for the SSH protocol.",
+ "tested_configurations": [
+  "Oracle Linux 7.6 64 bit running on Oracle Server X7-2 with an Intel(R) Xeon(R) Silver 4114 with PAA",
+  "Oracle Linux 7.6 64 bit running on Oracle Server X7-2 with an Intel(R) Xeon(R) Silver 4114 without PAA",
+  "Oracle Linux 7.6 64 bit running on Oracle X7-2 Server with AMD® EPYC® 7551 with PAA",
+  "Oracle Linux 7.6 64 bit running on Oracle X7-2 Server with AMD® EPYC® 7551 without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert #C429 with CVL Cert #C611, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C429 with CVL Cert #C611, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG",
+ "software_versions": "R7-4.0.0",
+ "product_url": "http://www.oracle.com/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C422",
+   "cavp_id": "30818",
+   "cavp_ref": "C:422"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C423",
+   "cavp_id": "30819",
+   "cavp_ref": "C:423"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C429",
+   "cavp_id": "30825",
+   "cavp_ref": "C:429"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C429",
+   "cavp_id": "30825",
+   "cavp_ref": "C:429"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C611",
+   "cavp_id": "31007",
+   "cavp_ref": "C:611"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C422",
+   "cavp_id": "30818",
+   "cavp_ref": "C:422"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C423",
+   "cavp_id": "30819",
+   "cavp_ref": "C:423"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C429",
+   "cavp_id": "30825",
+   "cavp_ref": "C:429"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C429",
+   "cavp_id": "30825",
+   "cavp_ref": "C:429"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C422",
+   "cavp_id": "30818",
+   "cavp_ref": "C:422"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C423",
+   "cavp_id": "30819",
+   "cavp_ref": "C:423"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C429",
+   "cavp_id": "30825",
+   "cavp_ref": "C:429"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C429",
+   "cavp_id": "30825",
+   "cavp_ref": "C:429"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C422",
+   "cavp_id": "30818",
+   "cavp_ref": "C:422"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C423",
+   "cavp_id": "30819",
+   "cavp_ref": "C:423"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C429",
+   "cavp_id": "30825",
+   "cavp_ref": "C:429"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C429",
+   "cavp_id": "30825",
+   "cavp_ref": "C:429"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Chris Brych"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3582.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedDec2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/12/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "5/6/2020",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/12/2019",
+ "last_updated": "5/6/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3582.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert #C429 with CVL Cert #C611, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C429 with CVL Cert #C611, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3582,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Linux 7 OpenSSH Client Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/12/2019",
+   "05/06/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

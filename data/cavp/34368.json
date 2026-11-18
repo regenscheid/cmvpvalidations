@@ -1,0 +1,133 @@
+{
+ "cavp_id": "34368",
+ "cavp_cert": "A1759",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34368",
+ "implementation": "openssl_mist",
+ "product_id": "14266",
+ "description": "Mist Openssl Crypto Module",
+ "version": "openssl-1.0.2u with openssl-fips-2.0.16 module",
+ "type": "FIRMWARE",
+ "first_validated": "7/28/2021",
+ "vendor": "Mist Systems",
+ "vendor_website": "http://www.mist.com",
+ "oes": [
+  {
+   "name": "BCM49408(Arm Cortex A-53)",
+   "details": [
+    "cpu: BCM49408(Arm Cortex A-53)",
+    "  Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128",
+    "Payload Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0, 256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0, 256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 160"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 1-4096 Increment 1",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 16",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 160-480 Increment 8",
+    "Function: SHA1"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 16-4096 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 16-4096 Increment 8",
+    "Function: SHA2"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

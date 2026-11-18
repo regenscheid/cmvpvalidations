@@ -1,0 +1,51 @@
+{
+ "cavp_id": "15306",
+ "cavp_cert": "AES 5404",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=15306",
+ "implementation": "Fortinet FortiGate-VM SSL Cryptographic Library v5.4",
+ "product_id": "9449",
+ "description": "This document focuses on the software implementation of the Fortinet FortiGate-VM SSL Cryptographic Library v5.4 running on Intel x86 compatible processors.",
+ "version": "5.4",
+ "type": "SOFTWARE",
+ "first_validated": "5/3/2018",
+ "vendor": "Fortinet Inc.",
+ "vendor_website": "http://www.fortinet.com",
+ "oes": [
+  {
+   "name": "FortiGate-VM running on FortiHypervisor-500D on Intel Xeon E3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "Payload Length: 128, 1000, 6400, 8000",
+    "AAD Length: 0, 96, 128, 776, 2048"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "AAD Length: 0, 96, 128, 776, 2048"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,76 @@
+{
+ "cavp_id": "22468",
+ "cavp_cert": "RSA 2362",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22468",
+ "implementation": "HP NSVLE C API Library",
+ "product_id": "6116",
+ "description": "Hewlett Packard's NonStop platform is used in complex computing environments, where business-critical applications need 24 x 7 availability, extreme scalability, and fault-tolerance. NonStop plays an important role in major industries and markets, including finance, healthcare, telecommunications, manufacturing, retail, and government.",
+ "version": "0.4",
+ "type": "SOFTWARE",
+ "first_validated": "1/27/2017",
+ "vendor": "Hewlett Packard Enterprise Company",
+ "vendor_website": "http://www.hpe.com",
+ "oes": [
+  {
+   "name": "Debian Linux HPTE Version 7.9.1 on Intel(R) Xeon(R) E5-2640v3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048, 3072, 4096",
+    "Public Key Value: 3, 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

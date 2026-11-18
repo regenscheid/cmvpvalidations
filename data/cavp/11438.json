@@ -1,0 +1,53 @@
+{
+ "cavp_id": "11438",
+ "cavp_cert": "AES 5863",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11438",
+ "implementation": "Oracle Linux 7 GnuTLS aesni Implementation",
+ "product_id": "10202",
+ "description": "GnuTLS is a set of libraries implementing general purpose cryptographic algorithms and network protocols such as TLS and DTLS.",
+ "version": "R7-2.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "10/12/2018",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 7.3 64 bit on Intel(R) Xeon(R) Silver 4114",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 248, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 248, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

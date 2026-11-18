@@ -1,0 +1,206 @@
+{
+ "cert": 3555,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3555",
+ "module": "IBM® z/OS® Version 2 Release 3 ICSF PKCS #11 Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module IBM(R) z/OS(R) Version 2 Release 3 Security Server RACF(R) Signature Verification Module validated to FIPS 140-2 under Cert. #2691 operating in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "ICSF is a software element of z/OS that works with hardware cryptographic features and the Security Server (RACF) to provide secure, high-speed cryptographic services in the z/OS environment. ICSF, which runs as a started task, provides the application programming interfaces by which applications request the cryptographic services.",
+ "tested_configurations": [
+  "IBM z/OS Version 2 Release 3 running on an IBM z14 with CP Assist for Cryptographic Functions [1]",
+  "IBM z/OS Version 2 Release 3 running on an IBM z14 with CP Assist for Cryptographic Functions with CEX5A [2]",
+  "IBM z/OS Version 2 Release 3 running on an IBM z14 with CP Assist for Cryptographic Functions with CEX6A [3] (single-user mode)"
+ ],
+ "allowed_algorithms": "AES (Cert. #C424, key unwrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); HMAC-MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength); Triple-DES (Cert. #C79, key unwrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "COP chips integrated within processor unit [1], COP chips integrated within processor unit and P/N 00LV498 [2] and COP chips integrated within processor unit and P/N 01PP167 [3]",
+ "software_versions": "HCR77C0 with APAR OA56129",
+ "firmware_versions": "Feature 3863 (aka FC3863) with System Driver Level 32L [1], Feature 3863 (aka FC3863) with System Driver Level 32L and CCA 5.3.20z [2] and Feature 3863 (aka FC3863) with System Driver Level 32L and CCA 6.0.8z [3]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C79",
+   "cavp_id": "30474",
+   "cavp_ref": "C:79"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C424",
+   "cavp_id": "30820",
+   "cavp_ref": "C:424"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C424",
+   "cavp_id": "30820",
+   "cavp_ref": "C:424"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C507",
+   "cavp_id": "30903",
+   "cavp_ref": "C:507"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C508",
+   "cavp_id": "30904",
+   "cavp_ref": "C:508"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C424",
+   "cavp_id": "30820",
+   "cavp_ref": "C:424"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C436",
+   "cavp_id": "30832",
+   "cavp_ref": "C:436"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C424",
+   "cavp_id": "30820",
+   "cavp_ref": "C:424"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C424",
+   "cavp_id": "30820",
+   "cavp_ref": "C:424"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C424",
+   "cavp_id": "30820",
+   "cavp_ref": "C:424"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C424; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C79 and #C424; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C79 and #C424 and HMAC Cert. #C424; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C219",
+   "cavp_id": "30615",
+   "cavp_ref": "C:219"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C424",
+   "cavp_id": "30820",
+   "cavp_ref": "C:424"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C507",
+   "cavp_id": "30903",
+   "cavp_ref": "C:507"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C508",
+   "cavp_id": "30904",
+   "cavp_ref": "C:508"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C79",
+   "cavp_id": "30474",
+   "cavp_ref": "C:79"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C424",
+   "cavp_id": "30820",
+   "cavp_ref": "C:424"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C79",
+   "cavp_id": "30474",
+   "cavp_ref": "C:79"
+  }
+ ],
+ "vendor": "IBM Corporation",
+ "vendor_info": {
+  "name": "IBM Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "2455 South Road",
+   "Poughkeepsie, NY 12601-5400",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "John Monti"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3555.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedOct2019%20.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/23/2019",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "10/23/2019",
+ "last_updated": "10/23/2019",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3555.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "AES (Cert. #C424, key unwrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); HMAC-MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength); Triple-DES (Cert. #C79, key unwrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3555,
+  "vendor": "IBM Corporation",
+  "module": "IBM® z/OS® Version 2 Release 3 ICSF PKCS #11 Cryptographic Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "10/23/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

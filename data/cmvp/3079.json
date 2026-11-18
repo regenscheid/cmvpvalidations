@@ -1,0 +1,361 @@
+{
+ "cert": 3079,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3079",
+ "module": "Datrium FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Datrium FIPS Object Module is a general purpose cryptographic module delivered as open source code. It is designed for ease of use with the popular OpenSSL cryptographic library and toolkit and is available for use without charge for a wide variety of platforms. The basic validation can also be extended quickly and affordably to accommodate new platforms and many types of modifications.",
+ "tested_configurations": [
+  "AIX 6.1 32-bit running on IBM POWER 7 (PPC) (IBM XL C/C++ for AIX Compiler Version V13.1), AIX 6.1 32-bit running on IBM POWER 7 (PPC) with optimizations (IBM XL C/C++ for AIX Compiler Version V10.1), AIX 6.1 64-bit running on IBM POWER 7 (PPC) (IBM XL C/C++ for AIX Compiler Version V13.1), AIX 6.1 64-bit running on IBM POWER 7 (PPC) with optimizations (IBM XL C/C++ for AIX Compiler Version V10.1), AIX 7.1 32-bit running on IBM POWER 7 (PPC) (IBM XL C/C++ for AIX Compiler Version V13.1), AIX 7.1 64-bit running on IBM POWER 7 (PPC) (IBM XL C/C++ for AIX Compiler Version V13.1), Android 5.0 32-bit running on Qualcomm APQ8084 (ARMv7) with NEON (gcc Compiler Version 4.9), Android 5.0 32-bit running on Qualcomm APQ8084 (ARMv7) without NEON (gcc Compiler Version 4.9), Android 5.0 64-bit running on SAMSUNG Exynos7420 (ARMv8) with NEON and Crypto Extensions (gcc Compiler Version 4.9), Android 5.0 64-bit running on SAMSUNG Exynos7420 (ARMv8) without NEON and Crypto Extensions (gcc Compiler Version 4.9), DataGravity Discovery Series OS V2.0 running on Intel Xeon E5-2420 (x86) with PAA (gcc Compiler Version 4.7.2), DataGravity Discovery Series OS V2.0 running on Intel Xeon E5-2420 (x86) without PAA (gcc Compiler Version 4.7.2), iOS 8.1 32¬bit running on Apple A7 (ARMv8) with NEON (clang Compiler Version 600.0.56), iOS 8.1 32¬bit running on Apple A7 (ARMv8) without NEON (clang Compiler Version 600.0.56), iOS 8.1 64¬bit running on Apple A7 (ARMv8) with NEON and Crypto Extensions (clang Compiler Version 600.0.56), iOS 8.1 64¬bit running on Apple A7 (ARMv8) without NEON and Crypto Extensions (clang Compiler Version 600.0.56), Linux 3.10 running on Datrium F12X2 Data Node with Intel Xeon E5-2618L v4 (x86-64) CPU and with PAA (gcc Compiler Version 4.4.6), Linux 3.10 32-bit running on Intel Atom E3845 (x86) with PAA (gcc Compiler Version 4.8.1), Linux 3.10 32-bit running on Intel Atom E3845 (x86) without PAA (gcc Compiler Version 4.8.1), Red Hat Enterprise Linux 7.3 running on Datrium CN2100-SYS-1 Compute Node with Intel Xeon Gold 6148 (x86-64) CPU and with PAA (gcc Compiler Version 4.4.6), TS-Linux 2.4 running on Arm920Tid (ARMv4) (gcc Compiler Version 4.3.2), Ubuntu 12.04 running on Intel Xeon E5-2430L (x86) with PAA (gcc Compiler Version 4.6.3), Ubuntu 12.04 running on Intel Xeon E5-2430L (x86) without PAA (gcc Compiler Version 4.6.3), VMWare ESXi 6.5.0 u1 running on Datrium CN2100-SYS-1 Compute Node with Intel Xeon Gold 6148 (x86-64) CPU and with PAA (gcc Compiler Version 4.6.3), VxWorks 6.7 running on Intel Core 2 Duo (x86) (gcc Compiler Version 4.1.2), VxWorks 6.9 running on Freescale P2020 (PPC) (gcc Compiler Version 4.3.3) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman; RSA (encrypt/decrypt)",
+ "software_versions": "2.0.9, 2.0.10, 2.0.11 or 2.0.12",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3090",
+   "cavp_id": "5307",
+   "cavp_ref": "AES:3090"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3264",
+   "cavp_id": "22452",
+   "cavp_ref": "AES:3264"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3451",
+   "cavp_id": "15424",
+   "cavp_ref": "AES:3451"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3751",
+   "cavp_id": "16709",
+   "cavp_ref": "AES:3751"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5178",
+   "cavp_id": "16596",
+   "cavp_ref": "AES:5178"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 372",
+   "cavp_id": "12331",
+   "cavp_ref": "Component:372"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 472",
+   "cavp_id": "1617",
+   "cavp_ref": "Component:472"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 534",
+   "cavp_id": "19744",
+   "cavp_ref": "Component:534"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 699",
+   "cavp_id": "16479",
+   "cavp_ref": "Component:699"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1680",
+   "cavp_id": "379",
+   "cavp_ref": "Component:1680"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 607",
+   "cavp_id": "2298",
+   "cavp_ref": "DRBG:607"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 723",
+   "cavp_id": "20042",
+   "cavp_ref": "DRBG:723"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 845",
+   "cavp_id": "1896",
+   "cavp_ref": "DRBG:845"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1027",
+   "cavp_id": "28158",
+   "cavp_ref": "DRBG:1027"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1953",
+   "cavp_id": "6923",
+   "cavp_ref": "DRBG:1953"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 896",
+   "cavp_id": "30021",
+   "cavp_ref": "DSA:896"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 933",
+   "cavp_id": "7706",
+   "cavp_ref": "DSA:933"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 970",
+   "cavp_id": "17340",
+   "cavp_ref": "DSA:970"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1040",
+   "cavp_id": "26696",
+   "cavp_ref": "DSA:1040"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1343",
+   "cavp_id": "25311",
+   "cavp_ref": "DSA:1343"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 558",
+   "cavp_id": "7815",
+   "cavp_ref": "ECDSA:558"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 620",
+   "cavp_id": "5662",
+   "cavp_ref": "ECDSA:620"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 698",
+   "cavp_id": "20099",
+   "cavp_ref": "ECDSA:698"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 801",
+   "cavp_id": "14743",
+   "cavp_ref": "ECDSA:801"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1342",
+   "cavp_id": "13194",
+   "cavp_ref": "ECDSA:1342"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1937",
+   "cavp_id": "2834",
+   "cavp_ref": "HMAC:1937"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2063",
+   "cavp_id": "28962",
+   "cavp_ref": "HMAC:2063"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2197",
+   "cavp_id": "27677",
+   "cavp_ref": "HMAC:2197"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2452",
+   "cavp_id": "192",
+   "cavp_ref": "HMAC:2452"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3434",
+   "cavp_id": "10225",
+   "cavp_ref": "HMAC:3434"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1581",
+   "cavp_id": "28387",
+   "cavp_ref": "RSA:1581"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1664",
+   "cavp_id": "21593",
+   "cavp_ref": "RSA:1664"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1766",
+   "cavp_id": "29622",
+   "cavp_ref": "RSA:1766"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1928",
+   "cavp_id": "2305",
+   "cavp_ref": "RSA:1928"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2780",
+   "cavp_id": "6411",
+   "cavp_ref": "RSA:2780"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2553",
+   "cavp_id": "15886",
+   "cavp_ref": "SHS:2553"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2702",
+   "cavp_id": "8189",
+   "cavp_ref": "SHS:2702"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2847",
+   "cavp_id": "16489",
+   "cavp_ref": "SHS:2847"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3121",
+   "cavp_id": "1464",
+   "cavp_ref": "SHS:3121"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4182",
+   "cavp_id": "29962",
+   "cavp_ref": "SHS:4182"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1780",
+   "cavp_id": "26110",
+   "cavp_ref": "TDES:1780"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1853",
+   "cavp_id": "419",
+   "cavp_ref": "TDES:1853"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1942",
+   "cavp_id": "12626",
+   "cavp_ref": "TDES:1942"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2086",
+   "cavp_id": "2050",
+   "cavp_ref": "TDES:2086"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2635",
+   "cavp_id": "16559",
+   "cavp_ref": "TDES:2635"
+  }
+ ],
+ "vendor": "Datrium",
+ "vendor_info": {
+  "name": "Datrium",
+  "website": "http://www.datrium.com",
+  "address": [
+   "385 Moffett Park Drive, Suite 205",
+   "Sunnyvale, CA 94089",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "R. Hugo Patterson"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3079.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/11/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/15/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "12/11/2017",
+ "last_updated": "2/15/2018",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3079.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition"
+ },
+ "other_text": "EC Diffie-Hellman; RSA (encrypt/decrypt)",
+ "sparse": false,
+ "list": {
+  "cert": 3079,
+  "vendor": "Datrium",
+  "module": "Datrium FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/11/2017",
+   "02/15/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

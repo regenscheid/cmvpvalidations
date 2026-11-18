@@ -1,0 +1,140 @@
+{
+ "cert": 2849,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2849",
+ "module": "Symantec Messaging Gateway Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Symantec Messaging Gateway Cryptographic Module provides cryptographic functions for the Messaging Gateway platforms software. The module's logical cryptographic boundary is the shared library files and their integrity check HMAC files. The module is a multi-chip standalone embodiment installed on a General Purpose Device. All operations of the module occur via calls from host applications and their respective internal daemons/processes. As such there are no untrusted services calling the services of the module.",
+ "tested_configurations": [
+  "CentOS 6 running on a Dell PowerEdge R430 with Intel Xeon E5-2600"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4124",
+   "cavp_id": "20604",
+   "cavp_ref": "AES:4124"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 931",
+   "cavp_id": "1734",
+   "cavp_ref": "Component:931"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1244",
+   "cavp_id": "19244",
+   "cavp_ref": "DRBG:1244"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1117",
+   "cavp_id": "17402",
+   "cavp_ref": "DSA:1117"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 939",
+   "cavp_id": "26239",
+   "cavp_ref": "ECDSA:939"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2695",
+   "cavp_id": "11399",
+   "cavp_ref": "HMAC:2695"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2238",
+   "cavp_id": "188",
+   "cavp_ref": "RSA:2238"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3393",
+   "cavp_id": "10123",
+   "cavp_ref": "SHS:3393"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2255",
+   "cavp_id": "4335",
+   "cavp_ref": "TDES:2255"
+  }
+ ],
+ "vendor": "Symantec Corporation",
+ "vendor_info": {
+  "name": "Symantec Corporation",
+  "website": "http://www.symantec.com",
+  "address": [
+   "350 Ellis Street",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": []
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2849.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertFeb2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/27/2017",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  },
+  {
+   "date": "4/16/2019",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "2/27/2017",
+ "last_updated": "4/16/2019",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2849.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "EC Diffie-Hellman (CVL Cert. #931, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); AES XTS (AES Cert. #4124; non-compliant); PRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2849,
+  "vendor": "Symantec Corporation",
+  "module": "Symantec Messaging Gateway Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "02/27/2017",
+   "04/16/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,92 @@
+{
+ "cavp_id": "18550",
+ "cavp_cert": "ECDSA 1442",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18550",
+ "implementation": "Cohesity OpenSSL FIPS Object Module",
+ "product_id": "9504",
+ "description": "The Cohesity OpenSSL FIPS Object Module is a general purpose cryptographic module compiled from the source code for the OpenSSL FIPS Object Module. It is incorporated into the family of Cohesity storage appliances.",
+ "version": "1.0.2",
+ "type": "SOFTWARE",
+ "first_validated": "5/10/2018",
+ "vendor": "Cohesity, Inc.",
+ "vendor_website": "http://www.cohesity.com",
+ "oes": [
+  {
+   "name": "CentOS 7 on Intel Xeon with AES-NI",
+   "details": []
+  },
+  {
+   "name": "CentOS 7 on Intel Xeon without AES-NI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits, Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits, Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-192, P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-192, P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,134 @@
+{
+ "cert": 3282,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3282",
+ "module": "HPE LTO-7 and LTO-8 Encrypting Tape Drive",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The HPE LTO-7 and LTO-8 Ultrium tape drives represent Hewlett Packard Enterprise's seventh and eight generations of LTO tape drive technology, capable of storing up to 15TB (LTO-7 compressed 2.5:1) and 30TB (LTO-8 compressed 2.5:1) per cartridge while providing AES 256-bit hardware data encryption to protect the most sensitive data and prevent unauthorized access of tape cartridges. Capable of data transfer rates up to 300 MB/sec (native), its Speed Matching feature further optimizes performance by matching the speed of the host to keep drives streaming and increase the reliability of the drive and media. The HPE LTO-7 and LTO-8 Ultrium tape drives are available as standalone internal and desktop devices or for integration into HPE MSL autoloaders and tape libraries.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "AQ308A#103 [1], AQ303A#103 [2], AQ338A#103 [3], AQ333A#103 [4]",
+ "firmware_versions": "LTO_15000_FC_G986_MSL_S.frm [1], LTO_15000_SAS_G986_MSL_S.frm [2], LTO_30750_FC_J4DB_MSL_S.frm [3], LTO_30750_SAS_J4DB_MSL_S.frm [4]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3357",
+   "cavp_id": "29668",
+   "cavp_ref": "AES:3357"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3358",
+   "cavp_id": "18269",
+   "cavp_ref": "AES:3358"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4810",
+   "cavp_id": "11546",
+   "cavp_ref": "AES:4810"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1672",
+   "cavp_id": "19088",
+   "cavp_ref": "DRBG:1672"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4810",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2634",
+   "cavp_id": "4084",
+   "cavp_ref": "RSA:2634"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3954",
+   "cavp_id": "11204",
+   "cavp_ref": "SHS:3954"
+  }
+ ],
+ "vendor": "Hewlett Packard Enterprise",
+ "vendor_info": {
+  "name": "Hewlett Packard Enterprise",
+  "website": "http://www.hpe.com/storage/tape/",
+  "address": [
+   "Long Down Avenue",
+   "Stoke Gifford, Bristol BS34 8QZ",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "Laura Loredo"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3282.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/SeptConsolidated2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/12/2018",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "4/8/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "9/12/2018",
+ "last_updated": "4/8/2019",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3282.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3282,
+  "vendor": "Hewlett Packard Enterprise",
+  "module": "HPE LTO-7 and LTO-8 Encrypting Tape Drive",
+  "type": "Hardware",
+  "validation_dates": [
+   "09/12/2018",
+   "04/08/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

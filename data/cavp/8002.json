@@ -1,0 +1,64 @@
+{
+ "cavp_id": "8002",
+ "cavp_cert": "RSA 897",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=8002",
+ "implementation": "565/5100/5200 SP Cryptography Engine",
+ "product_id": "8159",
+ "description": "The 565/5100/5200 Advanced Services Platform offers an integrated transport encryption solution providing an ultra-low latency and protocol-agnostic wirespeed encryption service for use in small to large enterprises or datacenters and also offered through service providers as a differentiated managed service.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/20/2011",
+ "vendor": "Ciena Corporation",
+ "vendor_website": "http://www.ciena.com",
+ "oes": [
+  {
+   "name": "MPC8270",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048, 4096",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 2048, 4096",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

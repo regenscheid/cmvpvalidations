@@ -1,0 +1,42 @@
+{
+ "cavp_id": "19084",
+ "cavp_cert": "Component 1989",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19084",
+ "implementation": "IBM z/VM System SSL",
+ "product_id": "9728",
+ "description": "z/VM System SSL provides cryptographic functions which allows z/VM to protect data using the SSL/TLS protocols. z/VM System SSL also enables administrators to create and manage X.509 V3 certificates and keys within key database files.",
+ "version": "V6.4",
+ "type": "SOFTWARE",
+ "first_validated": "7/13/2018",
+ "vendor": "International Business Machines",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "IBM z/VM V6.4 on IBM z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Partial Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256",
+    "  dhOneFlow:",
+    "    KAS Role: Initiator, Responder",
+    "  dhStatic:",
+    "    KAS Role: Initiator, Responder"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

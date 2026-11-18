@@ -1,0 +1,46 @@
+{
+ "cavp_id": "11224",
+ "cavp_cert": "AES 3383",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11224",
+ "implementation": "Apple OSX CoreCrypto Kernel Module (AES-NI with generic modes, Core M)",
+ "product_id": "7070",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to kernel space and the AES-NI Intel instruction set using the generic block chaining modes of CBC and XTS.",
+ "version": "5.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/22/2015",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "OSX 10.10 on Core M",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

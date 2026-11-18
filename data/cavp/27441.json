@@ -1,0 +1,64 @@
+{
+ "cavp_id": "27441",
+ "cavp_cert": "TDES 1822",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27441",
+ "implementation": "WatchKey ProX USB Token",
+ "product_id": "6822",
+ "description": "The WatchKey ProX USB token provides digital signature generation and verification for online authentication of online transactions and data encryption/decryption to online service users",
+ "version": "AS518 and PCB K023314A",
+ "type": "HARDWARE",
+ "first_validated": "2/13/2015",
+ "vendor": "Watchdata Technologies Pte Ltd",
+ "vendor_website": "http://www.watchdata.com",
+ "oes": [
+  {
+   "name": "WatchKey ProX USB Token",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Keying Option: 1",
+    "    MAC Length: 32",
+    "    Message Length: 0-1984",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Keying Option: 1",
+    "    MAC Length: 32",
+    "    Message Length: 0-1984",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

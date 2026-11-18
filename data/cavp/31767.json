@@ -1,0 +1,54 @@
+{
+ "cavp_id": "31767",
+ "cavp_cert": "C1338",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31767",
+ "implementation": "CN9120 Ethernet Crypto Module",
+ "product_id": "11723",
+ "description": "The CN9120 Ethernet Crypto Module is a cryptographic accelerator that contains FIPS 140-2 approved cryptographic algorithms. This module provides encryption services for the CN9120 Series Encryptor.",
+ "version": "1.2",
+ "type": "FIRMWARE",
+ "first_validated": "11/8/2019",
+ "vendor": "Senetas Corporation Ltd, distributed by Thales SA (SafeNet)",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "Xilinx Ultrascale",
+   "details": [
+    "processor: Xilinx Ultrascale"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 368, 384, 1016, 1024",
+    "AAD Length: 112, 128, 640, 688"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

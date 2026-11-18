@@ -1,0 +1,261 @@
+{
+ "cert": 3145,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3145",
+ "module": "Red Hat Enterprise Linux Kernel Crypto API Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Red Hat Enterprise Linux NSS Cryptographic Module validated to FIPS 140-2 under Cert. #3070 operating in FIPS mode. The module generates random strings whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Linux kernel Crypto API implemented in Red Hat Enterprise Linux 7.4 provides services operating inside the Linux kernel with various ciphers, message digests and an approved random number generator.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 7.4 running on Dell PowerEdge R630 with PAA",
+  "Red Hat Enterprise Linux 7.4 running on Dell PowerEdge R630 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "5.0",
+ "product_url": "http://redhat.com/en/technologies/linux-platforms/enterprise-linux",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4780",
+   "cavp_id": "17789",
+   "cavp_ref": "AES:4780"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4781",
+   "cavp_id": "12056",
+   "cavp_ref": "AES:4781"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4782",
+   "cavp_id": "2819",
+   "cavp_ref": "AES:4782"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4783",
+   "cavp_id": "26535",
+   "cavp_ref": "AES:4783"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4784",
+   "cavp_id": "21381",
+   "cavp_ref": "AES:4784"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4785",
+   "cavp_id": "10457",
+   "cavp_ref": "AES:4785"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4786",
+   "cavp_id": "7106",
+   "cavp_ref": "AES:4786"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4787",
+   "cavp_id": "16350",
+   "cavp_ref": "AES:4787"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1656",
+   "cavp_id": "21783",
+   "cavp_ref": "DRBG:1656"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1657",
+   "cavp_id": "24394",
+   "cavp_ref": "DRBG:1657"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1658",
+   "cavp_id": "19914",
+   "cavp_ref": "DRBG:1658"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1659",
+   "cavp_id": "19095",
+   "cavp_ref": "DRBG:1659"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1660",
+   "cavp_id": "8906",
+   "cavp_ref": "DRBG:1660"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1663",
+   "cavp_id": "15684",
+   "cavp_ref": "DRBG:1663"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1664",
+   "cavp_id": "21752",
+   "cavp_ref": "DRBG:1664"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3156",
+   "cavp_id": "4431",
+   "cavp_ref": "HMAC:3156"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3157",
+   "cavp_id": "28367",
+   "cavp_ref": "HMAC:3157"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3188",
+   "cavp_id": "19676",
+   "cavp_ref": "HMAC:3188"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3189",
+   "cavp_id": "10979",
+   "cavp_ref": "HMAC:3189"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3193",
+   "cavp_id": "10392",
+   "cavp_ref": "HMAC:3193"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3194",
+   "cavp_id": "11983",
+   "cavp_ref": "HMAC:3194"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2619",
+   "cavp_id": "28609",
+   "cavp_ref": "RSA:2619"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2620",
+   "cavp_id": "8097",
+   "cavp_ref": "RSA:2620"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2626",
+   "cavp_id": "15044",
+   "cavp_ref": "RSA:2626"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3924",
+   "cavp_id": "18563",
+   "cavp_ref": "SHS:3924"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3925",
+   "cavp_id": "29630",
+   "cavp_ref": "SHS:3925"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3930",
+   "cavp_id": "569",
+   "cavp_ref": "SHS:3930"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3931",
+   "cavp_id": "7133",
+   "cavp_ref": "SHS:3931"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2540",
+   "cavp_id": "26458",
+   "cavp_ref": "TDES:2540"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "100 East Davie Street",
+   "Raleigh, NC 27601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jaroslav Reznik"
+   },
+   {
+    "name": "Steve Grubb"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3145.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/5/2018",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "3/5/2018",
+ "last_updated": "3/5/2018",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3145.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #3070"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3145,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux Kernel Crypto API Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/05/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

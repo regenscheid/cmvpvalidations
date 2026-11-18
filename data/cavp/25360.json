@@ -1,0 +1,63 @@
+{
+ "cavp_id": "25360",
+ "cavp_cert": "TDES 2487",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25360",
+ "implementation": "Kernel Crypto API using C implementation of TDES",
+ "product_id": "1895",
+ "description": "The test covers implementations of cbc(des3_ede), ecb(des3_ede), ctr(des3_ede), cmac(des3_ede).",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "8/4/2017",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 SP2 on z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Keying Option: 1",
+    "    MAC Length: 0-64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Keying Option: 1",
+    "    MAC Length: 0-64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "TDES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

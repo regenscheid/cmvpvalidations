@@ -1,0 +1,460 @@
+{
+ "cavp_id": "33058",
+ "cavp_cert": "A646",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33058",
+ "implementation": "Linux Kernel crypto API (DH_C)",
+ "product_id": "12959",
+ "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: Generic C non-optimized DH implementation.",
+ "version": "v3.0",
+ "type": "SOFTWARE",
+ "first_validated": "7/23/2020",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 18.04 on Intel Haswell Xeon E5",
+   "details": [
+    "software: Ubuntu 18.04",
+    "  Linux distribution developed by Canonical Ltd. and targeted toward the commercial market.",
+    "processor: Xeon E5",
+    "  Processor Xeon E5 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Haswell"
+   ]
+  },
+  {
+   "name": "Ubuntu 20.04 on Intel Sky Lake Xeon Gold",
+   "details": [
+    "software: Ubuntu 20.04",
+    "  Linux distribution developed by Canonical Ltd. and targeted toward the commercial market.",
+    "processor: Xeon Gold",
+    "  Processor Xeon Gold (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Sky Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 65536"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 65536"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 160",
+    "    Nonce: 160",
+    "    Personalization String Length: 0, 160",
+    "    Additional Input: 0, 160",
+    "    Returned Bits: 320",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 384",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 160",
+    "    Nonce: 160",
+    "    Personalization String Length: 0, 160",
+    "    Additional Input: 0, 160",
+    "    Returned Bits: 320",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 384",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 160",
+    "    Nonce: 160",
+    "    Personalization String Length: 0, 160",
+    "    Additional Input: 0, 160",
+    "    Returned Bits: 320",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 384",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 160",
+    "    Nonce: 160",
+    "    Personalization String Length: 0, 160",
+    "    Additional Input: 0, 160",
+    "    Returned Bits: 320",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 384",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 1,
+   "capabilities": [
+    "Function: Full Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 1,
+   "capabilities": [
+    "Function: Full Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 1,
+   "capabilities": [
+    "Domain Parameter Generation Methods: ffdhe2048, ffdhe3072, ffdhe4096, ffdhe6144, ffdhe8192, MODP-2048, MODP-3072, MODP-4096, MODP-6144, MODP-8192",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

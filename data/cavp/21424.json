@@ -1,0 +1,69 @@
+{
+ "cavp_id": "21424",
+ "cavp_cert": "RSA 1851",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21424",
+ "implementation": "Ciena 6500 Packet-Optical Platform 4x10G Cryptography Engine",
+ "product_id": "1153",
+ "description": "The Ciena 6500 Packet-Optical Platform 4x10G Encryption OTR offers an integrated transport encryption solution providing a protocol-agnostic wirespeed encryption service for use in small to large enterprises or datacenters and also offered through service providers as a differentiated managed service.",
+ "version": "2.00 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/27/2015",
+ "vendor": "Ciena Corporation",
+ "vendor_website": "http://www.ciena.com",
+ "oes": [
+  {
+   "name": "Xilinx XC7Z045",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

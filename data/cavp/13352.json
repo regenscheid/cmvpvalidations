@@ -1,0 +1,38 @@
+{
+ "cavp_id": "13352",
+ "cavp_cert": "AES 108",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13352",
+ "implementation": "GoodFipsCrypto.prc",
+ "product_id": "4123",
+ "description": "The GoodFipsCrypto.prc is a FIPS 140-2 compliant software-based cryptographic module that implements the TDES, AES, SHA-1 and HMAC-SHA-1 algorithms.",
+ "version": "20031028",
+ "type": "SOFTWARE",
+ "first_validated": "11/7/2003",
+ "vendor": "Good Technology, Inc.",
+ "vendor_website": "http://www.good.com",
+ "oes": [
+  {
+   "name": "Palm 5 on ARM-based processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

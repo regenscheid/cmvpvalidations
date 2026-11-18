@@ -1,0 +1,82 @@
+{
+ "cavp_id": "32293",
+ "cavp_cert": "C1652",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32293",
+ "implementation": "Fortinet FortiWLM RBG Cryptographic Library",
+ "product_id": "12240",
+ "description": "This document focuses on the firmware implementation of the Fortinet FortiWLM RBG Cryptographic Library running on Intel x86 compatible processors.",
+ "version": "8.5",
+ "type": "FIRMWARE",
+ "first_validated": "3/24/2020",
+ "vendor": "Fortinet Inc.",
+ "vendor_website": "http://www.fortinet.com",
+ "oes": [
+  {
+   "name": "Intel Celeron J1900 (Bay Trail)",
+   "details": [
+    "processor: Intel Celeron J1900 (Bay Trail)",
+    "  manufacturer: Intel"
+   ]
+  },
+  {
+   "name": "Intel Core i7-4790S (Haswell)",
+   "details": [
+    "processor: Intel Core i7-4790S (Haswell)",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C1652 (AES)"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C1652 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

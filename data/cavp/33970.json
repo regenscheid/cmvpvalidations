@@ -1,0 +1,163 @@
+{
+ "cavp_id": "33970",
+ "cavp_cert": "A1361",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33970",
+ "implementation": "Secure Management",
+ "product_id": "13743",
+ "description": "Eclipse Intelligent Node Unit (INUe). The module provides data security by encrypting the payload traffic on the microwave link between up to three radios. It also provides the Strong Encryption Suite for secure module management and uses AES encryption to secure SNMP v3 management traffic.",
+ "version": "8.13",
+ "type": "FIRMWARE",
+ "first_validated": "5/5/2021",
+ "vendor": "Aviat Networks",
+ "vendor_website": "http://www.aviatnetworks.com",
+ "oes": [
+  {
+   "name": "Motorola MPC866",
+   "details": [
+    "processor: Motorola MPC866"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode:",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 64-128 Increment 32",
+    "Payload Length: 8-128 Increment 8",
+    "AAD Length: 8-160 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0-2147483640 Increment 8",
+    "    Additional Input: 0-2147483640 Increment 8",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 160-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 120-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.2",
+    "Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8, 160"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8, 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8, 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

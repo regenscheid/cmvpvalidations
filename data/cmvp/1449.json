@@ -1,0 +1,139 @@
+{
+ "cert": 1449,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1449",
+ "module": "Alliance Key Manager",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated with the Red Hat Enterprise Linux 5 OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #1320 operating in FIPS mode (approved algorithms retested on listed operating environment)",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Alliance Key Manager implements a client/server interface for key administration. The user application has the client role, and the key manager has the server role. The user opens a secure connection to the key server, sends an administrative request (create a key, change a key, etc.), receives a response from the server, and the session is disconnected.",
+ "tested_configurations": [
+  "rPath Linux, Version 2.6.29 (single-user mode)"
+ ],
+ "software_versions": "2.0.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1245",
+   "cavp_id": "8368",
+   "cavp_ref": "AES:1245"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1486",
+   "cavp_id": "1147",
+   "cavp_ref": "AES:1486"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 728",
+   "cavp_id": "20268",
+   "cavp_ref": "HMAC:728"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 875",
+   "cavp_id": "10466",
+   "cavp_ref": "HMAC:875"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 692",
+   "cavp_id": "23008",
+   "cavp_ref": "RNG:692"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 810",
+   "cavp_id": "4765",
+   "cavp_ref": "RNG:810"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 729",
+   "cavp_id": "3521",
+   "cavp_ref": "RSA:729"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1144",
+   "cavp_id": "3419",
+   "cavp_ref": "SHS:1144"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1342",
+   "cavp_id": "27140",
+   "cavp_ref": "SHS:1342"
+  }
+ ],
+ "vendor": "[email protected]",
+ "vendor_info": {
+  "name": "[email protected]",
+  "website": "/cdn-cgi/l/email-protection",
+  "address": [
+   "406 Legion Way SE",
+   "Suite 300",
+   "Olympia, WA 98501",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Paul Ohmart"
+   },
+   {
+    "name": "Patrick Townsend"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1449.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1449.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/15/2010",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "11/15/2010",
+ "last_updated": "11/15/2010",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1449.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "MD5, RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1449,
+  "vendor": "Patrick Townsend Security Solutions",
+  "module": "Alliance Key Manager",
+  "type": "Software",
+  "validation_dates": [
+   "11/15/2010"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

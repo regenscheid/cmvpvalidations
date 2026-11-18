@@ -1,0 +1,42 @@
+{
+ "cavp_id": "13046",
+ "cavp_cert": "AES 5307",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13046",
+ "implementation": "Junos OS 17.4R1-S1 - Quicksec",
+ "product_id": "9295",
+ "description": "The SRX1500 Services Gateway is a next-generation firewall and security services gateway offering outstanding protection, performance, scalability, availability, and security service integration. With best in class networking and security in a single platform, SRX1500 best suited for enterprise data centers, campuses, and regional headquarters.",
+ "version": "Junos OS 17.4R1-S1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/16/2018",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Intel Xeon E3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

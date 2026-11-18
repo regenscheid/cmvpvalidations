@@ -1,0 +1,258 @@
+{
+ "cavp_id": "33893",
+ "cavp_cert": "A1284",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33893",
+ "implementation": "Linux Kernel crypto API (SSSE3)",
+ "product_id": "13760",
+ "description": "The Linux kernel crpyto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: SSSE3 SHA implementation.",
+ "version": "rhel8.20210302",
+ "type": "SOFTWARE",
+ "first_validated": "4/15/2021",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 8 on Intel Cascade Lake Xeon Silver 4216",
+   "details": [
+    "software: Red Hat Enterprise Linux 8",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "processor: Xeon Silver 4216",
+    "  Processor Xeon Silver 4216 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 160",
+    "    Nonce: 160",
+    "    Personalization String Length: 0, 160",
+    "    Additional Input: 0, 160",
+    "    Returned Bits: 320",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 384",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 160",
+    "    Nonce: 160",
+    "    Personalization String Length: 0, 160",
+    "    Additional Input: 0, 160",
+    "    Returned Bits: 320",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 384",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 256",
+    "    Personalization String Length: 0, 256",
+    "    Additional Input: 0, 256",
+    "    Returned Bits: 2048"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

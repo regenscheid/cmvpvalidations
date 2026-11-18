@@ -1,0 +1,64 @@
+{
+ "cavp_id": "13160",
+ "cavp_cert": "DRBG 2315",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13160",
+ "implementation": "Apple CoreCrypto Module v9.0 for ARM (iOS12, A9, Assembler)",
+ "product_id": "10001",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to user space assembler optimized AES.",
+ "version": "9.0",
+ "type": "SOFTWARE",
+ "first_validated": "9/21/2018",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "iOS 12 on Apple A9",
+   "details": []
+  },
+  {
+   "name": "iOS 12 on Apple A9",
+   "details": [
+    "processor: Apple A9",
+    "  manufacturer: Apple",
+    "software: iOS 12"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-128",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0-128",
+    "    Returned Bits: 128",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

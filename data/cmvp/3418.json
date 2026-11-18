@@ -1,0 +1,128 @@
+{
+ "cert": 3418,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3418",
+ "module": "Thycotic HSM Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) validated to FIPS 140-2 Cert. #2357 operating in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "THYCOTIC.HSM.DLL provides cryptographic primitive services. The module generates cryptographic keys whose strengths are modified by available entropy of the validated Microsoft libraries.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2012 R2 (x64) running on a Dell OptiPlex 7010 DT with an Intel Core i7 and with PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "1.2.5",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2832",
+   "cavp_id": "10580",
+   "cavp_ref": "AES:2832"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 323",
+   "cavp_id": "4770",
+   "cavp_ref": "Component:323"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 489",
+   "cavp_id": "23514",
+   "cavp_ref": "DRBG:489"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1773",
+   "cavp_id": "12381",
+   "cavp_ref": "HMAC:1773"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1487",
+   "cavp_id": "27512",
+   "cavp_ref": "RSA:1487"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2373",
+   "cavp_id": "27863",
+   "cavp_ref": "SHS:2373"
+  }
+ ],
+ "vendor": "Thycotic Software LLC",
+ "vendor_info": {
+  "name": "Thycotic Software LLC",
+  "website": "http://www.thycotic.com",
+  "address": [
+   "1101 17th St NW",
+   "#1102",
+   "Washington, DC 20036",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jai Dargan"
+   },
+   {
+    "name": "Richard Wang"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3418.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedMarch2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/27/2019",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "3/27/2019",
+ "last_updated": "3/27/2019",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3418.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3418,
+  "vendor": "Thycotic Software LLC",
+  "module": "Thycotic HSM Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/27/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

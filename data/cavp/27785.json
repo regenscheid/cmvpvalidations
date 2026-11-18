@@ -1,0 +1,41 @@
+{
+ "cavp_id": "27785",
+ "cavp_cert": "AES 835",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27785",
+ "implementation": "Vocera Communications Badge B2000 Security Engine",
+ "product_id": "2259",
+ "description": "The Vocera Communications Badge is a small, wearable, wireless device that provides a voice-controlled user interface to the Vocera Communications System. The Badge enables immediate, hands-free conversations among people at the point of care or service. It contains a speaker, microphone, wireless radio, and a high-contrast OLED display.",
+ "version": "1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/25/2008",
+ "vendor": "Vocera Communications, Inc.",
+ "vendor_website": "http://www.vocera.com",
+ "oes": [
+  {
+   "name": "OMAP5912 and Marvell 88W8686",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 120-240"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

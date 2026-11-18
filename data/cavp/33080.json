@@ -1,0 +1,86 @@
+{
+ "cavp_id": "33080",
+ "cavp_cert": "C2036",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33080",
+ "implementation": "Junos OS 20.2R1 - Dataplane",
+ "product_id": "12983",
+ "description": "The Juniper Networks SRX Series Services Gateways provide the essential capabilities necessary to connect, secure, and manage enterprise and service provider networks, from the smallest sites to the largest headquarters and data centers.",
+ "version": "Junos OS 20.2R1",
+ "type": "FIRMWARE",
+ "first_validated": "8/3/2020",
+ "vendor": "Juniper Networks, Inc",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Intel Xeon E3-1200 v2 with Intel Cave Creek QAT",
+   "details": [
+    "processor: Intel Xeon E3-1200 v2 with Intel Cave Creek QAT",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 96",
+    "Key sizes < block size",
+    "C2036 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128",
+    "Key sizes < block size",
+    "C2036 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

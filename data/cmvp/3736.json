@@ -1,0 +1,148 @@
+{
+ "cert": 3736,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3736",
+ "module": "LoadMaster FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The LoadMaster is a family of load balancing appliances running a custom operating system developed by Kemp Technologies Inc.",
+ "tested_configurations": [
+  "LMOS 7.2 on Vmware ESXi 6.7 running on a Dell PowerEdge R830 with an Intel Xeon E5 4620 v4 processor with PAA",
+  "LMOS 7.2 on Vmware ESXi 6.7 running on a Dell PowerEdge R830 with an Intel Xeon E5 4620 v4 processor without PAA (single-user mode)",
+  "LMOS 7.2 running on LoadMasterX15 with an Intel Xeon E3 1275 V6 processor with PAA",
+  "LMOS 7.2 running on LoadMasterX15 with an Intel Xeon E3 1275 V6 processor without PAA"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C2076, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "v1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C2076",
+   "cavp_id": "33135",
+   "cavp_ref": "C:2076"
+  }
+ ],
+ "vendor": "Kemp Technologies Inc.",
+ "vendor_info": {
+  "name": "Kemp Technologies Inc.",
+  "website": "http://www.kemp.ax",
+  "address": [
+   "989 6th Avenue",
+   "16th floor",
+   "New York, NY 10018",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mark Hoffmann"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3736.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202020_021120_0702_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/27/2020",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "10/27/2020",
+ "last_updated": "10/27/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3736.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C2076, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3736,
+  "vendor": "Kemp Technologies Inc.",
+  "module": "LoadMaster FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "10/27/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

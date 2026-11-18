@@ -1,0 +1,41 @@
+{
+ "cavp_id": "26452",
+ "cavp_cert": "AES 2260",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=26452",
+ "implementation": "Aviat Networks Payload Encryption ECP2",
+ "product_id": "501",
+ "description": "This cryptographic module performs encryption of data carried over a microwave radio link.",
+ "version": "21-08-09_10-04-02_090828_ECP2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/23/2012",
+ "vendor": "Aviat Networks",
+ "vendor_website": "http://www.aviatnetworks.com",
+ "oes": [
+  {
+   "name": "ModelSim PE 6.5d (Mentor Graphics), with Lattice ispLEVER 8.0sp1 libraries",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 64"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

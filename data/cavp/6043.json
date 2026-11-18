@@ -1,0 +1,41 @@
+{
+ "cavp_id": "6043",
+ "cavp_cert": "AES 4714",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6043",
+ "implementation": "Yubico HW/FW Symmetric",
+ "product_id": "3706",
+ "description": "This module contains four parts: 1) AES ECB encrypt/decrypt core HW/FW implementation; 2) TDEA ECB encrypt/decrypt HW/FW; 3) AES CCM encrypt/decrypt FW implementation, relying on underlying AES ECB encrypt; 4) Common symmetric- and hash routines, used for initialization and SCA protection",
+ "version": "SLE78CLUFX3000PH 2a789718 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "8/11/2017",
+ "vendor": "Yubico",
+ "vendor_website": "http://www.yubico.com",
+ "oes": [
+  {
+   "name": "Infineon SLE78V2",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 104",
+    "Payload Length: 0",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

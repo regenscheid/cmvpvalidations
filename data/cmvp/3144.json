@@ -1,0 +1,192 @@
+{
+ "cert": 3144,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3144",
+ "module": "Palo Alto Networks VM-Series",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The VM-Series allows you to protect your applications and data from cyber threats with our next-generation firewall security and advanced threat prevention features.",
+ "tested_configurations": [
+  "KVM on CentOS 7.2 running on a Dell Power Edge R730",
+  "Microsoft Hyper-V 2012R2 running on a Dell PowerEdge R730",
+  "VMware ESXi v5.5 running on a Dell PowerEdge R730",
+  "VMware ESXi v5.5 running on a PacStar 451 (single user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #1203 and #1204, key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "8.0.3, 8.0.6, 8.0.9, 8.0.12 or 8.0.13",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4526",
+   "cavp_id": "18092",
+   "cavp_ref": "AES:4526"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1203",
+   "cavp_id": "23318",
+   "cavp_ref": "Component:1203"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1204",
+   "cavp_id": "13939",
+   "cavp_ref": "Component:1204"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1205",
+   "cavp_id": "22801",
+   "cavp_ref": "Component:1205"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1486",
+   "cavp_id": "21564",
+   "cavp_ref": "DRBG:1486"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1205",
+   "cavp_id": "26605",
+   "cavp_ref": "DSA:1205"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1101",
+   "cavp_id": "9328",
+   "cavp_ref": "ECDSA:1101"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2986",
+   "cavp_id": "5857",
+   "cavp_ref": "HMAC:2986"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "SP 800-56Arev2 with CVL Certs. #1203 and #1204, vendor affirmed; key establishment methodology provides between 112 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4526; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4526 and HMAC Cert. #2986; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2463",
+   "cavp_id": "27074",
+   "cavp_ref": "RSA:2463"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3707",
+   "cavp_id": "13843",
+   "cavp_ref": "SHS:3707"
+  }
+ ],
+ "vendor": "Palo Alto Networks",
+ "vendor_info": {
+  "name": "Palo Alto Networks",
+  "website": "http://www.paloaltonetworks.com",
+  "address": [
+   "3000 Tannery Way",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jake Bajic"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3144.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/5/2018",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "6/18/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/6/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "10/31/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/21/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "3/5/2018",
+ "last_updated": "2/21/2020",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3144.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #1203 and #1204, key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3144,
+  "vendor": "Palo Alto Networks",
+  "module": "Palo Alto Networks VM-Series",
+  "type": "Software",
+  "validation_dates": [
+   "03/05/2018",
+   "06/18/2018",
+   "07/06/2018",
+   "10/31/2018",
+   "02/21/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

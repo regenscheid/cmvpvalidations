@@ -1,0 +1,48 @@
+{
+ "cavp_id": "19349",
+ "cavp_cert": "RSA 296",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19349",
+ "implementation": "Athena IDProtect Duo",
+ "product_id": "5265",
+ "description": "IDProtect is a cryptographic module based on the Athena OS755 Java Card smart card operating system. IDProtect is compliant with the latest Java Card 2.2.2 and Global Platform 2.1.1 specifications and FIPS 140-2 Level 3 (Level 4 Physical Security). IDProtect supports FIPS approved RNG, TDES, AES, SHA-1, SHA-256, and RSA up to 2048 bits.",
+ "version": "AT90SC12872RCFT Rev M 0107.7099.0105 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "10/15/2007",
+ "vendor": "Athena Smartcard Inc.",
+ "vendor_website": "http://www.athena-scs.com",
+ "oes": [
+  {
+   "name": "Atmel AT90SC12872RCFT",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

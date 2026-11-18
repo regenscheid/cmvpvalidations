@@ -1,0 +1,57 @@
+{
+ "cavp_id": "17745",
+ "cavp_cert": "Component 632",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17745",
+ "implementation": "GnuTLS-32 for s390x",
+ "product_id": "1183",
+ "description": "GnuTLS supported by Nettle is a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them. It provides a simple C language application programming interface (API) to access the secure ommunications protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and other required structures.",
+ "version": "4.0",
+ "type": "SOFTWARE",
+ "first_validated": "11/27/2015",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 7.1 on IBM/z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Public Key Regeneration",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Public Key Regeneration",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

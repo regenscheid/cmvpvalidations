@@ -1,0 +1,74 @@
+{
+ "cavp_id": "7518",
+ "cavp_cert": "AES 4088",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7518",
+ "implementation": "Vormetric Application Encryption",
+ "product_id": "5674",
+ "description": "The Vormetric Application Encryption software module is a user space library. This module is a shared object (.so) in Linux and a dynamic link library (.dll) on Windows. The application encryption software module provides a set of documented standard based APIs used to perform cryptographic and key management operations.",
+ "version": "5.2.5",
+ "type": "SOFTWARE",
+ "first_validated": "9/16/2016",
+ "vendor": "Vormetric, Inc.",
+ "vendor_website": "http://www.vormetric.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 7.1 on Intel Core(TM) i7-4770 CPU @ 3.4 GHz",
+   "details": []
+  },
+  {
+   "name": "Windows Server 2012 R2 on Intel Core(TM) i7-4770 CPU @ 3.4 GHz",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

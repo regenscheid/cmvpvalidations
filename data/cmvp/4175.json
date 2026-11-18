@@ -1,0 +1,144 @@
+{
+ "cert": 4175,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4175",
+ "module": "Octopus Authentication Server Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Octopus Authentication Server manages the authentication requests and the connection to the application on the mobile device to get the user approval.",
+ "tested_configurations": [
+  "Oracle® Linux 7.6 64 bit running on Oracle® X7-2 Server with Intel® Xeon® Silver 4114 with PAA",
+  "Oracle® Linux 7.6 64 bit running on Oracle® X7-2 Server with Intel® Xeon® Silver 4114 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "product_url": "https://doubleoctopus.com/products/the-octopus-passwordless-enterprise/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1651",
+   "cavp_id": "32292",
+   "cavp_ref": "C:1651"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1651",
+   "cavp_id": "32292",
+   "cavp_ref": "C:1651"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1651",
+   "cavp_id": "32292",
+   "cavp_ref": "C:1651"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1651",
+   "cavp_id": "32292",
+   "cavp_ref": "C:1651"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1651",
+   "cavp_id": "32292",
+   "cavp_ref": "C:1651"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "Cert. C1651",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1651",
+   "cavp_id": "32292",
+   "cavp_ref": "C:1651"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1651",
+   "cavp_id": "32292",
+   "cavp_ref": "C:1651"
+  }
+ ],
+ "vendor": "Secret Double Octopus",
+ "vendor_info": {
+  "name": "Secret Double Octopus",
+  "website": "https://doubleoctopus.com",
+  "address": [
+   "1600 El Camino Real",
+   "Ste, 280",
+   "Menlo Park, CA 94025",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Shimrit Tzur David"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4175.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202022_010422_0648_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/13/2022",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/13/2022",
+ "last_updated": "3/13/2022",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4175.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4175,
+  "vendor": "Secret Double Octopus",
+  "module": "Octopus Authentication Server Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/13/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

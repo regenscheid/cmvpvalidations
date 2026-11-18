@@ -1,0 +1,209 @@
+{
+ "cert": 4198,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4198",
+ "module": "Summit Linux FIPS Core Crypto Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 10.1 of the Security Policy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Summit FIPS Core Crypto Module is defined as a Software, Multi-chip Standalone module running on Ezurio's WB45NBT wireless bridge. This solution is equipped with a Microchip AT91SAM9G (ARM926EJ-S) processor.",
+ "tested_configurations": [
+  "Summit Linux 7.1 running on a Ezurio WB45NBT wireless bridge with Microchip AT91SAM9G (ARM926EJ-S) (single-user mode)"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "7.1",
+ "product_url": "https://www.ezurio.com/iot-software/summit-suite/fips-cryptographic",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1480",
+   "cavp_id": "34089",
+   "cavp_ref": "A:1480"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1481",
+   "cavp_id": "34090",
+   "cavp_ref": "A:1481"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1483",
+   "cavp_id": "34092",
+   "cavp_ref": "A:1483"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1485",
+   "cavp_id": "34094",
+   "cavp_ref": "A:1485"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1488",
+   "cavp_id": "34097",
+   "cavp_ref": "A:1488"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1489",
+   "cavp_id": "34098",
+   "cavp_ref": "A:1489"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1490",
+   "cavp_id": "34099",
+   "cavp_ref": "A:1490"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1488",
+   "cavp_id": "34097",
+   "cavp_ref": "A:1488"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1490",
+   "cavp_id": "34099",
+   "cavp_ref": "A:1490"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1490",
+   "cavp_id": "34099",
+   "cavp_ref": "A:1490"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "NP",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1490",
+   "cavp_id": "34099",
+   "cavp_ref": "A:1490"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1487",
+   "cavp_id": "34096",
+   "cavp_ref": "A:1487"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1490",
+   "cavp_id": "34099",
+   "cavp_ref": "A:1490"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A1486",
+   "cavp_id": "34095",
+   "cavp_ref": "A:1486"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A1488; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1480, #A1483 and #A1489; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1490",
+   "cavp_id": "34099",
+   "cavp_ref": "A:1490"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1490",
+   "cavp_id": "34099",
+   "cavp_ref": "A:1490"
+  }
+ ],
+ "vendor": "Ezurio",
+ "vendor_info": {
+  "name": "Ezurio",
+  "website": "http://www.ezurio.com",
+  "address": [
+   "50 South Main Street",
+   "Suite 1100",
+   "Akron, OH 44308",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dan Kephart"
+   },
+   {
+    "name": "Andrew Dobbing"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4198.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/CMVP%20Certificates%20%28FCVC%29%20April%202022_020522_0649_mmsigned.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/21/2022",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "4/12/2024",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "4/21/2022",
+ "last_updated": "4/12/2024",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4198.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4198,
+  "vendor": "Ezurio",
+  "module": "Summit Linux FIPS Core Crypto Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/21/2022",
+   "04/12/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

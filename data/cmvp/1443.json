@@ -1,0 +1,135 @@
+{
+ "cert": 1443,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1443",
+ "module": "Cloakware Security Kernel",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Cloakware Security Kernel from Cloakware, Inc. is a module contained in a single library designed to provide cryptographic functionality within calling applications operating on multi-chip standard server platforms. This single library is linked at run-time to a C/C++ library, which can be called by host applications to provide cryptographic services. This library can also be dynamically loaded at runtime by a Java application running within a Java Virtual Machine (JVM) via Java Native Interface (JNI), providing cryptographic services to the Java application.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux (RHEL) AS 5.0",
+  "Solaris 10",
+  "Windows Server 2008 (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1306",
+   "cavp_id": "21236",
+   "cavp_ref": "AES:1306"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1309",
+   "cavp_id": "19951",
+   "cavp_ref": "AES:1309"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 441",
+   "cavp_id": "17948",
+   "cavp_ref": "DSA:441"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 761",
+   "cavp_id": "5229",
+   "cavp_ref": "HMAC:761"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 731",
+   "cavp_id": "25432",
+   "cavp_ref": "RNG:731"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 663",
+   "cavp_id": "5715",
+   "cavp_ref": "RSA:663"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1197",
+   "cavp_id": "2832",
+   "cavp_ref": "SHS:1197"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 914",
+   "cavp_id": "19752",
+   "cavp_ref": "TDES:914"
+  }
+ ],
+ "vendor": "Cloakware, Inc.",
+ "vendor_info": {
+  "name": "Cloakware, Inc.",
+  "website": "http://www.cloakware.com",
+  "address": [
+   "8219 Leesburg Pike",
+   "Suite 350",
+   "Vienna, VA 22182-2656",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Trevor Brown"
+   },
+   {
+    "name": "Garney Adams"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1443.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1443.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/8/2010",
+   "type": "Initial",
+   "lab": "DOMUS"
+  }
+ ],
+ "first_validated": "11/8/2010",
+ "last_updated": "11/8/2010",
+ "labs": "DOMUS",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1443.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement, key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1443,
+  "vendor": "Cloakware, Inc.",
+  "module": "Cloakware Security Kernel",
+  "type": "Software",
+  "validation_dates": [
+   "11/08/2010"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

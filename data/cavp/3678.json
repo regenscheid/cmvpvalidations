@@ -1,0 +1,165 @@
+{
+ "cavp_id": "3678",
+ "cavp_cert": "AES 5282",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3678",
+ "implementation": "SDKMS Crypto Library",
+ "product_id": "9269",
+ "description": "Fortanix Self-Defending Key Management Service (SDKMS) is the world's first cloud service secured with Intel® SGX. With SDKMS, you can securely generate, store and use cryptographic keys & certificates, as well as secrets, such as passwords, API keys or tokens. It provides access control to users & applications to enforce authorized access to keys.",
+ "version": "1.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/9/2018",
+ "vendor": "Fortanix, Inc.",
+ "vendor_website": "http://www.fortanix.com",
+ "oes": [
+  {
+   "name": "Intel® Xeon E3-1230v5 4-Core, 3.40GHz with AES-NI",
+   "details": []
+  },
+  {
+   "name": "Intel® Xeon E3-1230v5 4-Core, 3.40GHz with AES-NI",
+   "details": [
+    "processor: Intel Xeon E3-1230v5 4-Core, 3.40GHz with AES-NI",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 0, 128, 160, 192, 512, 524288",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 192",
+    "    MAC Length: 128",
+    "    Message Length: 0, 128, 160, 192, 512, 524288",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 0, 128, 160, 192, 512, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 0, 128, 160, 192, 512, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 192",
+    "    MAC Length: 128",
+    "    Message Length: 0, 128, 160, 192, 512, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 0, 128, 160, 192, 512, 524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 64, 128, 192, 256",
+    "AAD Length: 0, 64, 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 64, 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 4096",
+    "AES 5282 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 808",
+    "AES 5282 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

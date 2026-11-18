@@ -1,0 +1,157 @@
+{
+ "cert": 1995,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1995",
+ "module": "Sun Crypto Accelerator 6000",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode",
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The SCA-6000 is a high performance hardware security module for Sun SPARC, x86, x64 platforms in a low-profile, short PCI-E (X8) card. Supported on Linux and Solaris-10, it provides on-board cryptographic acceleration hardware and key store. It supports remote management with serial and USB ports for local administration. It enhances performance by off-loading compute intensive cryptographic calculations, accelerating IPsec and SSL processing and performs many financial service functions. The SCA6000 performs primary cryptographic functions for the Sun KMS 2.X Key Management System.",
+ "hardware_versions": "375-3424, Revisions -02, -03, -04, -05 and -06",
+ "firmware_versions": "Bootstrap version 1.0.1 or 1.0.10, Operational firmware versions 1.1.7, 1.1.8 or 1.1.9",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 397",
+   "cavp_id": "23496",
+   "cavp_ref": "AES:397"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2312",
+   "cavp_id": "23775",
+   "cavp_ref": "AES:2312"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 319",
+   "cavp_id": "22344",
+   "cavp_ref": "DSA:319"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 377",
+   "cavp_id": "30328",
+   "cavp_ref": "ECDSA:377"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1427",
+   "cavp_id": "22804",
+   "cavp_ref": "HMAC:1427"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1428",
+   "cavp_id": "11249",
+   "cavp_ref": "HMAC:1428"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1155",
+   "cavp_id": "4223",
+   "cavp_ref": "RNG:1155"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1195",
+   "cavp_id": "25769",
+   "cavp_ref": "RSA:1195"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1196",
+   "cavp_id": "10420",
+   "cavp_ref": "RSA:1196"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1995",
+   "cavp_id": "29300",
+   "cavp_ref": "SHS:1995"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1996",
+   "cavp_id": "6096",
+   "cavp_ref": "SHS:1996"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 435",
+   "cavp_id": "12531",
+   "cavp_ref": "TDES:435"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Security Evaluations Manager"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1995.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0033.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/11/2013",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "12/17/2013",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "9/11/2013",
+ "last_updated": "12/17/2013",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab; SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1995.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (Cert. #2312, key wrapping; key establishment methodology provides between 128 and 160 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; MD5; HMAC-MD5; RC2"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1995,
+  "vendor": "Oracle Corporation",
+  "module": "Sun Crypto Accelerator 6000",
+  "type": "Hardware",
+  "validation_dates": [
+   "09/11/2013",
+   "12/17/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

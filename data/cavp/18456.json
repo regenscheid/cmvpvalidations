@@ -1,0 +1,40 @@
+{
+ "cavp_id": "18456",
+ "cavp_cert": "AES 3750",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18456",
+ "implementation": "Apple iOS CoreCrypto Module (Hardware AES, A5)",
+ "product_id": "1431",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to user space and the AES hardware offered by the processor.",
+ "version": "6.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/18/2015",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "iOS 9 on Apple A5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

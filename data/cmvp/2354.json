@@ -1,0 +1,142 @@
+{
+ "cert": 2354,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2354",
+ "module": "BitLocker® Dump Filter (dumpfve.sys) in Microsoft Windows 8.1 Enterprise, Windows Server 2012 R2, Windows Storage Server 2012 R2, Surface Pro 3, Surface Pro 2, Surface Pro,Surface 2, Surface, Windows RT 8.1, Windows Phone 8.1, Windows Embedded 8.1 Industry Enterprise, StorSimple 8000 Series",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 2 with modules Boot Manager in Microsoft Windows 8.1 Enterprise, Windows Server 2012 R2, Windows Storage Server 2012 R2, Surface Pro 3, Surface Pro 2, Surface Pro, Surface 2, Surface, Windows RT 8.1, Windows Phone 8.1, Windows Embedded 8.1 Industry Enterprise, StorSimple 8000 Series validated to FIPS 140-2 under Cert. #2351 operating in FIPS mode, BitLocker(R) Windows OS Loader (winload) in Microsoft Windows 8.1 Enterprise, Windows Server 2012 R2, Windows Storage Server 2012 R2, Surface Pro 3, Surface Pro 2, Surface Pro, Surface 2, Surface, Windows RT 8.1, Windows Phone 8.1, Windows Embedded 8.1 Industry Enterprise, StorSimple 8000 Series validated to FIPS 140-2 under Cert. #2352 operating in FIPS mode, and Code Integrity (ci.dll) in Microsoft Windows 8.1 Enterprise, Windows Server 2012 R2, Windows Storage Server 2012 R2, Surface Pro 3, Surface Pro 2, Surface Pro, Surface 2, Surface, Windows RT 8.1, Windows Phone 8.1, Windows Embedded 8.1 Industry, Enterprise, StorSimple 8000 Series validated to FIPS 140-2 under Cert. #2355 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The BitLocker® Dump Filter (dumpfve.sys) is the full volume encryption filter that resides in the system dump stack. Whenever the dump stack is called (in the event of a system crash or for hibernation), this filter ensures that all data is encrypted before it gets written to the disk as a dump file or hibernation file.",
+ "tested_configurations": [
+  "Microsoft Server 2012 R2 (x64) running on a Microsoft StorSimple 8100 with PAA",
+  "Microsoft Server 2012 R2 (x64) running on a Microsoft StorSimple 8100 without PAA",
+  "Microsoft Windows 8.1 Enterprise (x64) running on a Dell Dimension E521 without PAA",
+  "Microsoft Windows 8.1 Enterprise (x64) running on a Dell Inspiron 660s without PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows 8.1 Enterprise (x64) running on a Dell PowerEdge SC440 without PAA",
+  "Microsoft Windows 8.1 Enterprise (x64) running on a Microsoft Surface Pro 2 with PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows 8.1 Enterprise (x64) running on an HP Compaq Pro 6305 with PAA",
+  "Microsoft Windows 8.1 Enterprise (x64) running on an HP Compaq Pro 6305 with PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows 8.1 Enterprise (x64) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows 8.1 Enterprise (x86) running on a Dell Dimension E521 without PAA",
+  "Microsoft Windows 8.1 Enterprise (x86) running on a Dell PowerEdge SC440 without PAA",
+  "Microsoft Windows 8.1 Enterprise (x86) running on an HP Compaq Pro 6305 with PAA",
+  "Microsoft Windows 8.1 Enterprise (x86) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows 8.1 Pro (x64) running on an Intel Core i7 with PAA and PCLMULQDQ and SSSE 3 running on a Microsoft Surface Pro 3 (single-user mode)",
+  "Microsoft Windows 8.1 Pro (x64) running on an Intel i5 with PAA running on a Microsoft Surface Pro 2",
+  "Microsoft Windows 8.1 Pro (x64) running on an Intel x64 Processor with PAA running on a Microsoft Surface Pro",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x64) running on a Dell Dimension E521 without PAA",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x64) running on a Dell Inspiron 660s without PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x64) running on a Dell PowerEdge SC440 without PAA",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x64) running on an HP Compaq Pro 6305 with PAA",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x64) running on an HP Compaq Pro 6305 with PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x64) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x64) running on an Intel Maho Bay with PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x86) running on a Dell Dimension E521 without PAA",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x86) running on a Dell PowerEdge SC440 without PAA",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x86) running on an HP Compaq Pro 6305 with PAA",
+  "Microsoft Windows Embedded 8.1 Industry Enterprise (x86) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows Phone 8.1 (ARMv7 Thumb-2) running on a Qualcomm Snapdragon 400 running on a Windows Phone 8.1",
+  "Microsoft Windows Phone 8.1 (ARMv7 Thumb-2) running on a Qualcomm Snapdragon 800 running on a Windows Phone 8.1",
+  "Microsoft Windows Phone 8.1 (ARMv7 Thumb-2) running on a Qualcomm Snapdragon S4 running on a Windows Phone 8.1",
+  "Microsoft Windows RT 8.1 (ARMv7 Thumb-2) running on a Microsoft Surface 2",
+  "Microsoft Windows RT 8.1 (ARMv7 Thumb-2) running on a Microsoft Surface RT",
+  "Microsoft Windows RT 8.1 (ARMv7 Thumb-2) running on a Qualcomm Tablet",
+  "Microsoft Windows RT 8.1 (ARMv7 Thumb-2) running on an NVIDIA Tegra 3 Tablet",
+  "Microsoft Windows Server 2012 R2 (x64) running on a Dell Dimension E521 without PAA",
+  "Microsoft Windows Server 2012 R2 (x64) running on a Dell Inspiron 660s without PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows Server 2012 R2 (x64) running on a Dell PowerEdge SC440 without PAA",
+  "Microsoft Windows Server 2012 R2 (x64) running on an HP Compaq Pro 6305 with PAA",
+  "Microsoft Windows Server 2012 R2 (x64) running on an HP Compaq Pro 6305 with PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows Server 2012 R2 (x64) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows Server 2012 R2 (x64) running on an Intel Maho Bay with PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows Storage Server 2012 R2 (x64) running on a Dell Dimension E521 without PAA",
+  "Microsoft Windows Storage Server 2012 R2 (x64) running on a Dell Inspiron 660s without PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows Storage Server 2012 R2 (x64) running on a Dell PowerEdge SC440 without PAA",
+  "Microsoft Windows Storage Server 2012 R2 (x64) running on an HP Compaq Pro 6305 with PAA",
+  "Microsoft Windows Storage Server 2012 R2 (x64) running on an HP Compaq Pro 6305 with PAA and with PCLMULQDQ and SSSE 3",
+  "Microsoft Windows Storage Server 2012 R2 (x64) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows Storage Server 2012 R2 (x64) running on an Intel Maho Bay with PAA and with PCLMULQDQ and SSSE 3"
+ ],
+ "software_versions": "6.3.9600 and 6.3.9600.17031",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2832",
+   "cavp_id": "10580",
+   "cavp_ref": "AES:2832"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2354.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0052.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/23/2015",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "5/29/2015",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/23/2015",
+ "last_updated": "5/29/2015",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2354.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2354,
+  "vendor": "Microsoft Corporation",
+  "module": "BitLocker® Dump Filter (dumpfve.sys) in Microsoft Windows 8.1 Enterprise, Windows Server 2012 R2, Windows Storage Server 2012 R2, Surface Pro 3, Surface Pro 2, Surface Pro,Surface 2, Surface, Windows RT 8.1, Windows Phone 8.1, Windows Embedded 8.1 Industry Enterprise, StorSimple 8000 Series",
+  "type": "Software",
+  "validation_dates": [
+   "04/23/2015",
+   "05/29/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

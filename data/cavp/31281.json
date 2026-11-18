@@ -1,0 +1,61 @@
+{
+ "cavp_id": "31281",
+ "cavp_cert": "C885",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31281",
+ "implementation": "Aegis Translator 2.0KE",
+ "product_id": "11239",
+ "description": "Secure communication for device setup",
+ "version": "Apricorn AFSC-Q01v2.0 AT_2.0KE_Rev1.0",
+ "type": "HARDWARE",
+ "first_validated": "7/8/2019",
+ "vendor": "Apricorn",
+ "vendor_website": "http://www.apricorn.com",
+ "oes": [
+  {
+   "name": "Apricorn AFSC-Q01v2.0",
+   "details": [
+    "processor: Apricorn AFSC-Q01v2.0"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation, Public Key Regeneration",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Responder",
+    "    KDF without Key Confirmation:",
+    "      KDF Option:",
+    "        Concatenation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "          MAC Option:",
+    "            HMAC-SHA2-256:",
+    "              Key Length: 256",
+    "              MAC Length: 64",
+    "C885 (ECDSA)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

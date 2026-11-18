@@ -1,0 +1,515 @@
+{
+ "cert": 1092,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1092",
+ "module": "RSA BSAFE® Crypto-C Micro Edition",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Crypto-C Micro Edition (ME) Module is RSA Security, Inc.'s cryptographic library designed for securing mobile devices like wireless phones and personal digital assistants. It contains assembly-level optimizations on key wireless processors. Its functionality includes a wide range of data encryption and signing algorithms, including Triple-DES, the Advanced Encryption Standard (AES) algorithm, the RSA Public Key Cryptosystem, the DSA government signature algorithm, MD5 and SHA1 message digest routines, and more.",
+ "tested_configurations": [
+  "Linaro Linux (kernel 3.10.33) [6] (single user mode)",
+  "Linux 2.6.28-rt16 PowerPC (32-bit) [2, 4]",
+  "NetBSD v2.0.3 (x86 32-bit) [3]",
+  "NetBSD v2.0.3 MIPS (RM7035c 32-bit) [3]",
+  "Red Hat Enterprise Linux AS 4.0 (x86 32-bit) with LSB 3.0.3 [1]",
+  "TimeSys Linux 2.6.33.9-rt (ARM 32-bit) [5]",
+  "TimeSys Linux 3.0.0-rt (ARM 32-bit) [5]",
+  "Windows Vista Ultimate (x86 32-bit) - Visual Studio 2005 SP1 /MD option [1]",
+  "Windows XP Professional SP2 (x86 32-bit) - Visual Studio 2005 SP1 /MT option [1]"
+ ],
+ "software_versions": "3.0.0.1 [1], 3.0.0.14 [2], 3.0.0.15 [3], 3.0.0.19 [4], 3.0.0.21 [5] and 3.0.0.23 [6]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 860",
+   "cavp_id": "24503",
+   "cavp_ref": "AES:860"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1771",
+   "cavp_id": "17134",
+   "cavp_ref": "AES:1771"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1951",
+   "cavp_id": "467",
+   "cavp_ref": "AES:1951"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2808",
+   "cavp_id": "12591",
+   "cavp_ref": "AES:2808"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3120",
+   "cavp_id": "26630",
+   "cavp_ref": "AES:3120",
+   "note": "[1]    [2  4]    [3]    [5]    [6]"
+  },
+  {
+   "algorithm": "AES GCM",
+   "cavp_cert": "AES 860",
+   "cavp_id": "24503",
+   "cavp_ref": "AES:860"
+  },
+  {
+   "algorithm": "AES GCM",
+   "cavp_cert": "AES 1771",
+   "cavp_id": "17134",
+   "cavp_ref": "AES:1771"
+  },
+  {
+   "algorithm": "AES GCM",
+   "cavp_cert": "AES 1951",
+   "cavp_id": "467",
+   "cavp_ref": "AES:1951"
+  },
+  {
+   "algorithm": "AES GCM",
+   "cavp_cert": "AES 2808",
+   "cavp_id": "12591",
+   "cavp_ref": "AES:2808"
+  },
+  {
+   "algorithm": "AES GCM",
+   "cavp_cert": "AES 3120",
+   "cavp_id": "26630",
+   "cavp_ref": "AES:3120",
+   "note": "[1]    [2  4]    [3]    [5]    [6]  vendor affirmed: SP 800-38D"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 4",
+   "cavp_id": "14497",
+   "cavp_ref": "DRBG:4"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 122",
+   "cavp_id": "8788",
+   "cavp_ref": "DRBG:122"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 172",
+   "cavp_id": "25622",
+   "cavp_ref": "DRBG:172"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 480",
+   "cavp_id": "18867",
+   "cavp_ref": "DRBG:480"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 632",
+   "cavp_id": "17333",
+   "cavp_ref": "DRBG:632",
+   "note": "[1]    [2  4]    [3]    [5]    [6]"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 311",
+   "cavp_id": "4515",
+   "cavp_ref": "DSA:311"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 554",
+   "cavp_id": "8607",
+   "cavp_ref": "DSA:554"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 623",
+   "cavp_id": "2441",
+   "cavp_ref": "DSA:623"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 850",
+   "cavp_id": "14230",
+   "cavp_ref": "DSA:850"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 904",
+   "cavp_id": "11386",
+   "cavp_ref": "DSA:904",
+   "note": "[1]    [2  4]    [3]    [5]    [6]"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 98",
+   "cavp_id": "6873",
+   "cavp_ref": "ECDSA:98"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 100",
+   "cavp_id": "23438",
+   "cavp_ref": "ECDSA:100"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 239",
+   "cavp_id": "15249",
+   "cavp_ref": "ECDSA:239"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 240",
+   "cavp_id": "21871",
+   "cavp_ref": "ECDSA:240"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 281",
+   "cavp_id": "19950",
+   "cavp_ref": "ECDSA:281"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 282",
+   "cavp_id": "246",
+   "cavp_ref": "ECDSA:282"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 491",
+   "cavp_id": "2698",
+   "cavp_ref": "ECDSA:491"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 492",
+   "cavp_id": "27152",
+   "cavp_ref": "ECDSA:492"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 503",
+   "cavp_id": "15182",
+   "cavp_ref": "ECDSA:503"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 504",
+   "cavp_id": "22596",
+   "cavp_ref": "ECDSA:504"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 565",
+   "cavp_id": "13337",
+   "cavp_ref": "ECDSA:565"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 569",
+   "cavp_id": "14769",
+   "cavp_ref": "ECDSA:569",
+   "note": "[1]    [1]    [2  4]    [2  4]    [3]    [3]    [5]    [5]    [5]    [5]    [6]    [6]"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 477",
+   "cavp_id": "16079",
+   "cavp_ref": "HMAC:477"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1040",
+   "cavp_id": "25407",
+   "cavp_ref": "HMAC:1040"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1177",
+   "cavp_id": "26988",
+   "cavp_ref": "HMAC:1177"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1759",
+   "cavp_id": "5371",
+   "cavp_ref": "HMAC:1759"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1959",
+   "cavp_id": "26506",
+   "cavp_ref": "HMAC:1959",
+   "note": "[1]    [2  4]    [3]    [5]    [6]"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 492",
+   "cavp_id": "23911",
+   "cavp_ref": "RNG:492"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 943",
+   "cavp_id": "208",
+   "cavp_ref": "RNG:943"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1027",
+   "cavp_id": "6712",
+   "cavp_ref": "RNG:1027"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1274",
+   "cavp_id": "21785",
+   "cavp_ref": "RNG:1274"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1330",
+   "cavp_id": "24279",
+   "cavp_ref": "RNG:1330",
+   "note": "[1]    [2  4]    [3]    [5]    [6]"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 412",
+   "cavp_id": "23007",
+   "cavp_ref": "RSA:412"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 887",
+   "cavp_id": "29",
+   "cavp_ref": "RSA:887"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1012",
+   "cavp_id": "21437",
+   "cavp_ref": "RSA:1012"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1470",
+   "cavp_id": "1037",
+   "cavp_ref": "RSA:1470"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1489",
+   "cavp_id": "26397",
+   "cavp_ref": "RSA:1489"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1591",
+   "cavp_id": "5832",
+   "cavp_ref": "RSA:1591",
+   "note": "[1]    [2  4]    [3]    [5]    [5]    [6]"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 855",
+   "cavp_id": "19479",
+   "cavp_ref": "SHS:855"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1555",
+   "cavp_id": "20243",
+   "cavp_ref": "SHS:1555"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1713",
+   "cavp_id": "18450",
+   "cavp_ref": "SHS:1713"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2356",
+   "cavp_id": "28000",
+   "cavp_ref": "SHS:2356"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2578",
+   "cavp_id": "6331",
+   "cavp_ref": "SHS:2578",
+   "note": "[1]    [2  4]    [3]    [5]    [6]"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 707",
+   "cavp_id": "138",
+   "cavp_ref": "TDES:707"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1147",
+   "cavp_id": "1106",
+   "cavp_ref": "TDES:1147"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1268",
+   "cavp_id": "659",
+   "cavp_ref": "TDES:1268"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1686",
+   "cavp_id": "25890",
+   "cavp_ref": "TDES:1686"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1791",
+   "cavp_id": "27284",
+   "cavp_ref": "TDES:1791",
+   "note": "[1]    [2  4]    [3]    [5]    [6]"
+  }
+ ],
+ "vendor": "RSA, The Security Division of EMC",
+ "vendor_info": {
+  "name": "RSA, The Security Division of EMC",
+  "website": "http://www.rsa.com",
+  "address": [
+   "174 Middlesex Turnpike",
+   "Bedford, MA 01730",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Rohit Mathur"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1092.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1092.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/24/2009",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "3/6/2009",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "9/7/2010",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "3/28/2011",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "10/4/2011",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "4/2/2012",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "12/12/2012",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "1/24/2013",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "4/3/2014",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "6/27/2014",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "12/31/2014",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "2/12/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "2/24/2009",
+ "last_updated": "2/12/2016",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab; SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1092.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; DES40; Diffie-Hellman; EC Diffie-Hellman; ECAES (non-compliant); ECIES; HMAC MD5; MD2; MD5; PBKDF1 SHA-1; PBKDF2 HMAC SHA-1/SHA-224/SHA-256/SHA-384/SHA-512 (non-compliant); RC2; RC4; RC5; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA PKCS #1 v2.0 (OAEP; non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1092,
+  "vendor": "RSA, The Security Division of EMC",
+  "module": "RSA BSAFE® Crypto-C Micro Edition",
+  "type": "Software",
+  "validation_dates": [
+   "02/24/2009",
+   "03/06/2009",
+   "09/07/2010",
+   "03/28/2011",
+   "10/04/2011",
+   "04/02/2012",
+   "12/12/2012",
+   "01/24/2013",
+   "04/03/2014",
+   "06/27/2014",
+   "12/31/2014",
+   "02/12/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

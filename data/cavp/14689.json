@@ -1,0 +1,49 @@
+{
+ "cavp_id": "14689",
+ "cavp_cert": "AES 3234",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14689",
+ "implementation": "HP ACS Loader",
+ "product_id": "6870",
+ "description": "The Atalla Cryptographic Subsystem (ACS) is a multi-chip embedded cryptographic module that provides secure cryptographic processing, key management, and storage capabilities.",
+ "version": "0.67 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/6/2015",
+ "vendor": "Hewlett Packard Enterprise",
+ "vendor_website": "http://www.hp.com/go/atalla",
+ "oes": [
+  {
+   "name": "AMCC PowerPC440EPx",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 256",
+    "AAD Length: 224"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,68 @@
+{
+ "cavp_id": "25342",
+ "cavp_cert": "DRBG 646",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25342",
+ "implementation": "Linux Kernel crypto API (ibm-64-gen)",
+ "product_id": "6741",
+ "description": "Linux kernel crypto API implementation providing cryptographic services to software components executing as part of the Linux kernel - this tests covers the generic C implementations of various ciphers on Intel x86 64 bit IBM hardware.",
+ "version": "2.6.32-504.23.1",
+ "type": "SOFTWARE",
+ "first_validated": "12/5/2014",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 6.6 on Intel x86",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512/256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

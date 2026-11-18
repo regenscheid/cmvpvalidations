@@ -1,0 +1,154 @@
+{
+ "cert": 3281,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3281",
+ "module": "Mojo Wireless Manager",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The module transmits policy and configuration information to wireless access points, wireless intrusion protection sensors, switches and traffic gateway that are deployed on the network. It receives, stores and processes information about network performance and security from the edge devices.",
+ "tested_configurations": [
+  "CentOS Linux 2.6.32 on VMware ESXi hypervisor 6.000 running on a MA-370"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1782, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1782 and #1783, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); MD5; NDRNG; RSA (CVL Certs. #1782 and #1784, key wrapping; key establishment methodology provides 112 bits of encryption strength).",
+ "firmware_versions": "MA-VM 8.2.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5318",
+   "cavp_id": "28243",
+   "cavp_ref": "AES:5318"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1782",
+   "cavp_id": "16844",
+   "cavp_ref": "Component:1782"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1783",
+   "cavp_id": "24720",
+   "cavp_ref": "Component:1783"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1784",
+   "cavp_id": "6657",
+   "cavp_ref": "Component:1784"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2049",
+   "cavp_id": "3361",
+   "cavp_ref": "DRBG:2049"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1396",
+   "cavp_id": "19107",
+   "cavp_ref": "ECDSA:1396"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3516",
+   "cavp_id": "19039",
+   "cavp_ref": "HMAC:3516"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 188",
+   "cavp_id": "20265",
+   "cavp_ref": "KDF:188"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5318 and HMAC Cert. #3516; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2848",
+   "cavp_id": "24410",
+   "cavp_ref": "RSA:2848"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4270",
+   "cavp_id": "3012",
+   "cavp_ref": "SHS:4270"
+  }
+ ],
+ "vendor": "Mojo Networks, Inc.",
+ "vendor_info": {
+  "name": "Mojo Networks, Inc.",
+  "website": "http://www.mojonetworks.com",
+  "address": [
+   "339 N. Bernardo Avenue",
+   "Suite 200",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Hemant Chaskar"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3281.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/SeptConsolidated2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/5/2018",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "9/5/2018",
+ "last_updated": "9/5/2018",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3281.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1782, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1782 and #1783, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); MD5; NDRNG; RSA (CVL Certs. #1782 and #1784, key wrapping; key establishment methodology provides 112 bits of encryption strength).",
+ "sparse": false,
+ "list": {
+  "cert": 3281,
+  "vendor": "Mojo Networks, Inc.",
+  "module": "Mojo Wireless Manager",
+  "type": "Firmware",
+  "validation_dates": [
+   "09/05/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

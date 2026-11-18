@@ -1,0 +1,36 @@
+{
+ "cavp_id": "34386",
+ "cavp_cert": "A1777",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34386",
+ "implementation": "ARMv7 PBKDF in Firmware",
+ "product_id": "14278",
+ "description": "FW implementation of Password Based Key Derivation Function in Seagate's self-encrypting drives (SEDs).",
+ "version": "0.2",
+ "type": "FIRMWARE",
+ "first_validated": "7/30/2021",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com/",
+ "oes": [
+  {
+   "name": "ARM Cortex-R Family",
+   "details": [
+    "processor: ARM Cortex-R Family"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1-10000000 Increment 1",
+    "    HMAC Algorithm: SHA2-256",
+    "    Password Length: 8-32 Increment 1",
+    "    Salt Length: 128-512 Increment 8",
+    "    Key Data Length: 112-4096 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

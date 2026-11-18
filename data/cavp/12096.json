@@ -1,0 +1,158 @@
+{
+ "cavp_id": "12096",
+ "cavp_cert": "AES 2572",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12096",
+ "implementation": "Oracle Solaris Userland Cryptographic Framework with SPARC T4/T5",
+ "product_id": "3234",
+ "description": "The Oracle Solaris OS uses the Oracle Solaris Userland Cryptographic Framework module for cryptographic functionality for any applications running in user space through one of the three exposed APIs. The module includes the SPARC T4 and SPARC T5 processor special instruction sets for hardware-accelerated cryptography.",
+ "version": "1.1",
+ "type": "SOFTWARE",
+ "first_validated": "7/22/2013",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Solaris 11.1 on SPARC T4",
+   "details": []
+  },
+  {
+   "name": "Oracle Solaris 11.1 on SPARC T5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 160, 256, 1024",
+    "AAD Length: 0, 160, 256, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 160, 256, 1024",
+    "AAD Length: 0, 160, 256, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 160, 256, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 160, 256, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

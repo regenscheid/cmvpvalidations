@@ -1,0 +1,109 @@
+{
+ "cavp_id": "31788",
+ "cavp_cert": "C1358",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31788",
+ "implementation": "Phison TCG OPAL SSC SSD solutions",
+ "product_id": "11744",
+ "description": "Phison PS5012-E12 based TCG Opal SSC SSD solutions are high-performance Self-Encrypting SSDs supporting NVMe PCIe Interface. Cryptographic algorithm includes AES256-XTS on-the-fly user data encryption/decryption, RSA-2048 for firmware verification, HMAC_DRBG for key generation as well as AES Keywrap for key protection.",
+ "version": "PS5012-E12 Module V1.00",
+ "type": "HARDWARE",
+ "first_validated": "11/15/2019",
+ "vendor": "Phison Electronics Corporation",
+ "vendor_website": "https://www.phison.com/en/",
+ "oes": [
+  {
+   "name": "PS5012-E12 with ARM Cortex-R5",
+   "details": [
+    "processor: PS5012-E12 with ARM Cortex-R5"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256",
+    "C1358 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 4096",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 1024",
+    "C1358 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1358 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 256",
+    "Public Exponent Mode: Random",
+    "C1358 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

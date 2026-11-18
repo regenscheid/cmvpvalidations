@@ -1,0 +1,65 @@
+{
+ "cavp_id": "22928",
+ "cavp_cert": "AES 5699",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22928",
+ "implementation": "Cryptographic Module for BIG-IP with AES-NI and SHA SSSE3",
+ "product_id": "9976",
+ "description": "Cryptographic library offering various cryptographic mechanisms to BigIP Virtual Edition",
+ "version": "13.1.1",
+ "type": "SOFTWARE",
+ "first_validated": "9/21/2018",
+ "vendor": "F5 Networks",
+ "vendor_website": "http://f5.com",
+ "oes": [
+  {
+   "name": "BIG-IP 13.1.1 on VMware ESXi 6.5 on Intel (R) Xeon (R) E5-2697",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 104, 128, 256, 408",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

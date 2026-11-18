@@ -1,0 +1,65 @@
+{
+ "cavp_id": "7261",
+ "cavp_cert": "HMAC 3814",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7261",
+ "implementation": "ICU Medical Lifecare PCA Crypto Library",
+ "product_id": "10072",
+ "description": "ICU Medical Lifecare PCA Crypto Library provides secure communication for the Lifecare PCA Infusion Pumps.",
+ "version": "lifecare-pca-fips-2.0.16-trunk CL# 649181 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/21/2018",
+ "vendor": "ICU Medical",
+ "vendor_website": "http://www.Icumed.com",
+ "oes": [
+  {
+   "name": "Net Silicon NS7520 ARM7",
+   "details": []
+  },
+  {
+   "name": "Net Silicon NS7520 ARM7",
+   "details": [
+    "processor: Net Silicon NS7520 ARM7"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 384",
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

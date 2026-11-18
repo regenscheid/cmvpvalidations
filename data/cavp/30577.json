@@ -1,0 +1,79 @@
+{
+ "cavp_id": "30577",
+ "cavp_cert": "C182",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30577",
+ "implementation": "Apple CoreCrypto Kernel Module v9.0 for ARM (watchOS 5, S1P, Assembler_PAA)",
+ "product_id": "10543",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to kernel space and assembler implentations using PAA within watchOS.",
+ "version": "9.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/18/2018",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "watchOS 5 on Apple S1P",
+   "details": [
+    "processor: S1P",
+    "  Apple S1P",
+    "  manufacturer: Apple",
+    "software: watchOS 5"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 65536",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 65536",
+    "Tweak Mode: Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

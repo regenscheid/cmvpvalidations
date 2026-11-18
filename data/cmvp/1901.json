@@ -1,0 +1,215 @@
+{
+ "cert": 1901,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1901",
+ "module": "Red Hat Enterprise Linux 6.2 Kernel Crypto API Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Network Security Services (NSS) Cryptographic Module validated to FIPS 140-2 under Cert. #1837, Section 1 of the provided Security Policy specifies the precise RPM files containing this module. The integrity of the RPMs is automatically verified during the installation and the Crypto officer shall not install the RPM files if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Linux kernel Crypto API implemented in Red Hat Enterprise Linux 6.2 provides services operating inside the Linux kernel with various ciphers, message digests and an approved random number generator.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 6.2 with PAA running on IBM HS22",
+  "Red Hat Enterprise Linux 6.2 without PAA running on HP ProLiant DL585",
+  "Red Hat Enterprise Linux 6.2 without PAA running on IBM HS22 (single-user mode)"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1968",
+   "cavp_id": "14273",
+   "cavp_ref": "AES:1968"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1969",
+   "cavp_id": "4999",
+   "cavp_ref": "AES:1969"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1970",
+   "cavp_id": "12861",
+   "cavp_ref": "AES:1970"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1971",
+   "cavp_id": "5535",
+   "cavp_ref": "AES:1971"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1972",
+   "cavp_id": "22057",
+   "cavp_ref": "AES:1972"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 628",
+   "cavp_id": "3397",
+   "cavp_ref": "DSA:628"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 629",
+   "cavp_id": "5090",
+   "cavp_ref": "DSA:629"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 634",
+   "cavp_id": "4153",
+   "cavp_ref": "DSA:634"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 635",
+   "cavp_id": "5218",
+   "cavp_ref": "DSA:635"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1187",
+   "cavp_id": "28447",
+   "cavp_ref": "HMAC:1187"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1188",
+   "cavp_id": "11850",
+   "cavp_ref": "HMAC:1188"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1199",
+   "cavp_id": "8845",
+   "cavp_ref": "HMAC:1199"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1200",
+   "cavp_id": "8970",
+   "cavp_ref": "HMAC:1200"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1033",
+   "cavp_id": "9977",
+   "cavp_ref": "RNG:1033"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1034",
+   "cavp_id": "9559",
+   "cavp_ref": "RNG:1034"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1035",
+   "cavp_id": "15429",
+   "cavp_ref": "RNG:1035"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1036",
+   "cavp_id": "27589",
+   "cavp_ref": "RNG:1036"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1037",
+   "cavp_id": "16185",
+   "cavp_ref": "RNG:1037"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1725",
+   "cavp_id": "1720",
+   "cavp_ref": "SHS:1725"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1726",
+   "cavp_id": "9757",
+   "cavp_ref": "SHS:1726"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1278",
+   "cavp_id": "14803",
+   "cavp_ref": "TDES:1278"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1279",
+   "cavp_id": "26777",
+   "cavp_ref": "TDES:1279"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "314 Littleton Road",
+   "Westford, MA 01886",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ann-Marie Rubin"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1901.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/21/2013",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "2/21/2013",
+ "last_updated": "2/21/2013",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1901.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; Triple-DES (CTR; non-compliant); AES (192 bits, XTS; non-compliant); RNG (X9.31 with stdrng or ansi_cprng; non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1901,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 6.2 Kernel Crypto API Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "02/21/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

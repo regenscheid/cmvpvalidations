@@ -1,0 +1,209 @@
+{
+ "cert": 4158,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4158",
+ "module": "Cryptographic Module for Intel® Converged Security and Manageability Engine (CSME)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Firmware-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cryptographic Module for Intel® Converged Security and Manageability Engine(CSME) (hereafter referred to as 'the module') is classified as a multiple-chip standalone firmware-hybrid module for FIPS 140-2 purpose. The module consists of both hardware and firmware. The hardware portion is the Converged Security Engine (CSE) and the firmware portion is the crypto driver process of the Manageability Engine (ME). The two portions form the logical cryptographic boundary and they combine as Converged Security and Manageability Engine (CSME) to perform cryptographic functions within the Cannon Point PCH applications executing on the CSME.",
+ "tested_configurations": [
+  "embedded IA-32 dedicated to support the functionality of the CSME firmware version 12.0.70.1652 running on Cannon Point PCH with Intel Whiskey Lake with device firmware version 12.0.70.1652",
+  "embedded IA-32 dedicated to support the functionality of the CSME firmware version 12.0.70.1652 running on Intel Cannon Point PCH with Intel Coffee Lake with device firmware version 12.0.70.1652"
+ ],
+ "hardware_versions": "3.0",
+ "firmware_versions": "2.5 and 2.6",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1769",
+   "cavp_id": "32668",
+   "cavp_ref": "C:1769"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1770",
+   "cavp_id": "32669",
+   "cavp_ref": "C:1770"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1769",
+   "cavp_id": "32668",
+   "cavp_ref": "C:1769"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1770",
+   "cavp_id": "32669",
+   "cavp_ref": "C:1770"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1769",
+   "cavp_id": "32668",
+   "cavp_ref": "C:1769"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1770",
+   "cavp_id": "32669",
+   "cavp_ref": "C:1770"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1769",
+   "cavp_id": "32668",
+   "cavp_ref": "C:1769"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1770",
+   "cavp_id": "32669",
+   "cavp_ref": "C:1770"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "P",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1769",
+   "cavp_id": "32668",
+   "cavp_ref": "C:1769"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1770",
+   "cavp_id": "32669",
+   "cavp_ref": "C:1770"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A688",
+   "cavp_id": "33195",
+   "cavp_ref": "A:688"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C1769",
+   "cavp_id": "32668",
+   "cavp_ref": "C:1769"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C1770",
+   "cavp_id": "32669",
+   "cavp_ref": "C:1770"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1769 and #C1770; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1769",
+   "cavp_id": "32668",
+   "cavp_ref": "C:1769"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1770",
+   "cavp_id": "32669",
+   "cavp_ref": "C:1770"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1769",
+   "cavp_id": "32668",
+   "cavp_ref": "C:1769"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1770",
+   "cavp_id": "32669",
+   "cavp_ref": "C:1770"
+  }
+ ],
+ "vendor": "Intel Corporation",
+ "vendor_info": {
+  "name": "Intel Corporation",
+  "website": "http://www.intel.com",
+  "address": [
+   "2200 Mission College Blvd.",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Prashant Madhukar"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4158.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202022_010322_0121_Signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/17/2022",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "8/21/2023",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "2/17/2022",
+ "last_updated": "8/21/2023",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4158.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4158,
+  "vendor": "Intel Corporation",
+  "module": "Cryptographic Module for Intel® Converged Security and Manageability Engine (CSME)",
+  "type": "Firmware-Hybrid",
+  "validation_dates": [
+   "02/17/2022",
+   "08/21/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

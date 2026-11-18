@@ -1,0 +1,52 @@
+{
+ "cavp_id": "4413",
+ "cavp_cert": "RSA 164",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4413",
+ "implementation": "GemXpresso R4 E36/E72 PK Cryptographic Library",
+ "product_id": "4850",
+ "description": "This implementation is dedicated to provide the crypto algorithm on the GemXpresso R4 E36/E72 PK Java card product through the Java Card 2.2.1 API. It provides Random Number generation, 3DES, AES, SHA-1 and RSA up to 2048 bits key length as well as RSA On Board Key generation up to 2048 bits long.",
+ "version": "GX4-S_E005 (MSA029) (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/5/2006",
+ "vendor": "Gemalto",
+ "vendor_website": "http://www.gemalto.com",
+ "oes": [
+  {
+   "name": "Samsung S3CC9TC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

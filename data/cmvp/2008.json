@@ -1,0 +1,120 @@
+{
+ "cert": 2008,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2008",
+ "module": "HP TippingPoint Intrusion Prevention System",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode with pick-resistant locks and opaque cover installed as indicated in the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "Inserted transparently into the network, the HP TippingPoint Intrusion Prevention System (IPS) is an in-line security device that performs high-performance, deep packet inspection to protect customer networks from attack. The IPS blocks malicious and unwanted traffic, while allowing good traffic to pass unimpeded. In fact, the IPS optimizes the performance of good traffic by continually cleansing the network and prioritizing applications that are mission critical.",
+ "hardware_versions": "5200NX and 7100NX",
+ "firmware_versions": "3.5",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2183",
+   "cavp_id": "11240",
+   "cavp_ref": "AES:2183"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1337",
+   "cavp_id": "20565",
+   "cavp_ref": "HMAC:1337"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1105",
+   "cavp_id": "24002",
+   "cavp_ref": "RNG:1105"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1126",
+   "cavp_id": "27515",
+   "cavp_ref": "RSA:1126"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1892",
+   "cavp_id": "6614",
+   "cavp_ref": "SHS:1892"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1383",
+   "cavp_id": "4392",
+   "cavp_ref": "TDES:1383"
+  }
+ ],
+ "vendor": "Hewlett-Packard TippingPoint",
+ "vendor_info": {
+  "name": "Hewlett-Packard TippingPoint",
+  "website": "http://www.tippingpoint.com",
+  "address": [
+   "7501N. Capital of Texas Highway",
+   "Austin, TX 78731",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dinesh Vakharia"
+   },
+   {
+    "name": "Freddie Jimenez Jr."
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2008.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0034.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/25/2013",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "10/25/2013",
+ "last_updated": "10/25/2013",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2008.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Blowfish; DES; Diffie-Hellman (key agreement; key establishment methodology provides 80 bits of encryption strength; non-compliant); HMAC-MD5; MD5; NDRNG; RC2; RC4; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2008,
+  "vendor": "Hewlett-Packard TippingPoint",
+  "module": "HP TippingPoint Intrusion Prevention System",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/25/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

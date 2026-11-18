@@ -1,0 +1,156 @@
+{
+ "cert": 4040,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4040",
+ "module": "Avaya BoringCrypto Android",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Avaya BoringCrypto Android cryptographic module is a library that provides FIPS 140-2 approved cryptographic algorithms for the BoringSSL and other user-space Android applications which require cryptographic functionality.",
+ "tested_configurations": [
+  "Android 9 running on Avaya Vantage™ K155 with RockChip 3399 (32-bit core) with PAA",
+  "Android 9 running on Avaya Vantage™ K155 with RockChip 3399 (32-bit core) without PAA",
+  "Android 9 running on Avaya Vantage™ K155 with RockChip 3399 (32-bit vendor) with PAA",
+  "Android 9 running on Avaya Vantage™ K155 with RockChip 3399 (32-bit vendor) without PAA",
+  "Android 9 running on Avaya Vantage™ K155 with RockChip 3399 (64-bit core) with PAA",
+  "Android 9 running on Avaya Vantage™ K155 with RockChip 3399 (64-bit core) without PAA",
+  "Android 9 running on Avaya Vantage™ K155 with RockChip 3399 (64-bit vendor) with PAA",
+  "Android 9 running on Avaya Vantage™ K155 with RockChip 3399 (64-bit vendor) without PAA",
+  "Android 9 running on Avaya Vantage™ K175 with RockChip 3399 (32-bit core) with PAA",
+  "Android 9 running on Avaya Vantage™ K175 with RockChip 3399 (32-bit core) without PAA",
+  "Android 9 running on Avaya Vantage™ K175 with RockChip 3399 (32-bit vendor) with PAA",
+  "Android 9 running on Avaya Vantage™ K175 with RockChip 3399 (32-bit vendor) without PAA",
+  "Android 9 running on Avaya Vantage™ K175 with RockChip 3399 (64-bit core) with PAA",
+  "Android 9 running on Avaya Vantage™ K175 with RockChip 3399 (64-bit core) without PAA",
+  "Android 9 running on Avaya Vantage™ K175 with RockChip 3399 (64-bit vendor) with PAA",
+  "Android 9 running on Avaya Vantage™ K175 with RockChip 3399 (64-bit vendor) without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1910",
+   "cavp_id": "32814",
+   "cavp_ref": "C:1910"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1910",
+   "cavp_id": "32814",
+   "cavp_ref": "C:1910"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1910",
+   "cavp_id": "32814",
+   "cavp_ref": "C:1910"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1910",
+   "cavp_id": "32814",
+   "cavp_ref": "C:1910"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1910",
+   "cavp_id": "32814",
+   "cavp_ref": "C:1910"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1910; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1910",
+   "cavp_id": "32814",
+   "cavp_ref": "C:1910"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1910",
+   "cavp_id": "32814",
+   "cavp_ref": "C:1910"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1910",
+   "cavp_id": "32814",
+   "cavp_ref": "C:1910"
+  }
+ ],
+ "vendor": "Avaya, Inc.",
+ "vendor_info": {
+  "name": "Avaya, Inc.",
+  "website": "http://avaya.com",
+  "address": [
+   "26 Harokmim st., Bldg. D, Floor 10th",
+   "Holon 5885849",
+   "Israel"
+  ],
+  "contacts": [
+   {
+    "name": "Ronen Bar-Yoav"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4040.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202021_011121_0730_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/5/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "10/5/2021",
+ "last_updated": "10/5/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4040.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4040,
+  "vendor": "Avaya, Inc.",
+  "module": "Avaya BoringCrypto Android",
+  "type": "Software",
+  "validation_dates": [
+   "10/05/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

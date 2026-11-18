@@ -1,0 +1,61 @@
+{
+ "cavp_id": "7434",
+ "cavp_cert": "AES 2345",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7434",
+ "implementation": "OCTEON II CN6600 Series Die",
+ "product_id": "2899",
+ "description": "The Octeon II CN 6XXX family of multi-core MIPS64 processors targets datacenter, routers, switches, control plane, base stations, and UTM applications. Part numbers: CN6010 CN6020 CN6120 CN6130 CN6220 CN6230 CN6330 CN6335 CN6630 CN6635 CN6640 CN6645 CN6740 CN6750 CN6760 CN6860 CN6870 CN6880, all with -SCP and -AAP options.",
+ "version": "CN6630/CN6635/CN6640/CN6645, -SCP and -AAP options Version # -Y",
+ "type": "HARDWARE",
+ "first_validated": "2/21/2013",
+ "vendor": "Cavium, Inc.",
+ "vendor_website": "http://www.cavium.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 1000, 1024",
+    "AAD Length: 0, 120, 128, 1000, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 1000, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

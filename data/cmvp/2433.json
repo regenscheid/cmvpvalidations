@@ -1,0 +1,141 @@
+{
+ "cert": 2433,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2433",
+ "module": "Websense Java Crypto Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Websense Java Crypto Module provides cryptographic functions for a variety of security solutions from Forcepoint.",
+ "tested_configurations": [
+  "Windows Server 2012 with Java Runtime Environment (JRE) v1.7.0_17 running on OEM PowerEdge R420 (single-user mode)"
+ ],
+ "software_versions": "2.0.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3192",
+   "cavp_id": "303",
+   "cavp_ref": "AES:3192"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 668",
+   "cavp_id": "26766",
+   "cavp_ref": "DRBG:668"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 914",
+   "cavp_id": "21982",
+   "cavp_ref": "DSA:914"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 583",
+   "cavp_id": "300",
+   "cavp_ref": "ECDSA:583"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2011",
+   "cavp_id": "23107",
+   "cavp_ref": "HMAC:2011"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1622",
+   "cavp_id": "832",
+   "cavp_ref": "RSA:1622"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2637",
+   "cavp_id": "11273",
+   "cavp_ref": "SHS:2637"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1818",
+   "cavp_id": "18953",
+   "cavp_ref": "TDES:1818"
+  }
+ ],
+ "vendor": "Forcepoint",
+ "vendor_info": {
+  "name": "Forcepoint",
+  "website": "http://www.forcepoint.com",
+  "address": [
+   "10240 Sorrento Valley Road",
+   "San Diego, CA 92121",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Matt Sturm"
+   },
+   {
+    "name": "Paul Lee"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2433.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0056.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/19/2015",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/11/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "8/19/2015",
+ "last_updated": "4/11/2016",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2433.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); AES (non-compliant); RNG (non-compliant); Blowfish; Camellia; CAST5; CAST6; ChaCha; DES; Triple-DES (non-compliant); ElGamal; GOST28147; GOST3411; Grain128; Grainv1; HC128; HC256; IDEA; IES; ISAAC; MD2; MD4; MD5; Naccache Stern; Noekeon; Password-Based-Encryption (PBE); RC2; RC2 Key Wrapping; RC4; RC532; RC564; RC6; RFC3211 Wrapping; RFC3394 Wrapping; Rijndael; Ripe MD128; Ripe MD160; Ripe MD256; Ripe MD320; RSA Encryption; Salsa 20; SEED; SEED Wrapping; Serpent; Shacal2; SHA-3 (non-compliant); SHA-512/t (non-compliant); Skein-256-*; Skein-512-*; Skein-1024-*; Skipjack; DRBG (non-compliant); TEA; Threefish; Tiger; TLS v1.0 KDF (non-compliant); Twofish; VMPC; Whirlpool; XSalsa20; XTEAEngine"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2433,
+  "vendor": "Forcepoint",
+  "module": "Websense Java Crypto Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/19/2015",
+   "04/11/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

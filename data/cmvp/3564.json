@@ -1,0 +1,175 @@
+{
+ "cert": 3564,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3564",
+ "module": "ProtectServer Internal Express 2 (PSI-E2)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the Security Policy Section 3. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The SafeNet PSI-E 2 is a high-end intelligent PCI adapter card, used either standalone or in the SafeNet PSE 2 appliance, that provides a wide range of cryptographic functions using firmware and dedicated hardware processors. The module provides key management (e.g., generation, storage, deletion, and backup), an extensive suite of cryptographic mechanisms, and process management including separation between operators. The PSI-E 2 also features non-volatile tamper protected memory for key storage, a hardware random number generator, and an RTC.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "AES (Cert. #5571, key unwrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength); Triple-DES (Cert. #2807, key unwrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "VBD-05, Version Code 0200",
+ "firmware_versions": "5.03.01 and 5.03.02",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4849",
+   "cavp_id": "12857",
+   "cavp_ref": "AES:4849"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4960",
+   "cavp_id": "23311",
+   "cavp_ref": "AES:4960"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5571",
+   "cavp_id": "11279",
+   "cavp_ref": "AES:5571"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1704",
+   "cavp_id": "12151",
+   "cavp_ref": "DRBG:1704"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1434",
+   "cavp_id": "17522",
+   "cavp_ref": "DSA:1434"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1503",
+   "cavp_id": "25495",
+   "cavp_ref": "ECDSA:1503"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3713",
+   "cavp_id": "9451",
+   "cavp_ref": "HMAC:3713"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 192",
+   "cavp_id": "18570",
+   "cavp_ref": "KAS:192"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5571; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #2807; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2998",
+   "cavp_id": "592",
+   "cavp_ref": "RSA:2998"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 57",
+   "cavp_id": "10147",
+   "cavp_ref": "SHA-3:57"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4476",
+   "cavp_id": "9917",
+   "cavp_ref": "SHS:4476"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2573",
+   "cavp_id": "10277",
+   "cavp_ref": "TDES:2573"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2807",
+   "cavp_id": "4573",
+   "cavp_ref": "TDES:2807"
+  }
+ ],
+ "vendor": "Gemalto",
+ "vendor_info": {
+  "name": "Gemalto",
+  "website": "http://www.gemalto.com",
+  "address": [
+   "20 Colonnade Road, Suite 200",
+   "Ottawa, ON K2E 7M6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security & Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3564.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/15/2019",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "11/15/2019",
+ "last_updated": "11/15/2019",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3564.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "AES (Cert. #5571, key unwrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength); Triple-DES (Cert. #2807, key unwrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3564,
+  "vendor": "Gemalto",
+  "module": "ProtectServer Internal Express 2 (PSI-E2)",
+  "type": "Hardware",
+  "validation_dates": [
+   "11/15/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

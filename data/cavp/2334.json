@@ -1,0 +1,84 @@
+{
+ "cavp_id": "2334",
+ "cavp_cert": "RSA 154",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2334",
+ "implementation": "MXP",
+ "product_id": "4811",
+ "description": "Stealth MXP is a USB powered Portable Security Device with authentication and cryptographic services. It provides secure storage and digital identity operations for enterprise security and user authentication via biometric and password.",
+ "version": "v3.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/7/2006",
+ "vendor": "Imation Corp.",
+ "vendor_website": "http://www.imation.com/mobilesecurity",
+ "oes": [
+  {
+   "name": "32-bit ARM946E MCU",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048, 3072",
+    "Public Key Value: 3, 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048, 3072",
+    "    Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "    Modulo: 1024, 2048, 3072",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

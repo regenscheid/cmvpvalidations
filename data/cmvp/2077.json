@@ -1,0 +1,182 @@
+{
+ "cert": 2077,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2077",
+ "module": "Oracle Solaris Userland Cryptographic Framework",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Oracle Solaris OS utilizes the Oracle Solaris Userland Cryptographic Framework module for cryptographic functionality for any applications running in user space. It exposes PKCS#11 APIs, uCrypto APIs, and libmd public interfaces to provide cryptography to any application designed to utilize them.",
+ "tested_configurations": [
+  "Oracle Solaris 11.1 running on a M3000 Enterprise Server",
+  "Oracle Solaris 11.1 running on a Sun Server X3-2 with PAA",
+  "Oracle Solaris 11.1 running on a Sun Server X3-2 without PAA (single-user mode)"
+ ],
+ "software_versions": "1.0 and 1.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2308",
+   "cavp_id": "19298",
+   "cavp_ref": "AES:2308"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2569",
+   "cavp_id": "23482",
+   "cavp_ref": "AES:2569"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 726",
+   "cavp_id": "16205",
+   "cavp_ref": "DSA:726"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 785",
+   "cavp_id": "10216",
+   "cavp_ref": "DSA:785"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 373",
+   "cavp_id": "14175",
+   "cavp_ref": "ECDSA:373"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 443",
+   "cavp_id": "11075",
+   "cavp_ref": "ECDSA:443"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1422",
+   "cavp_id": "10812",
+   "cavp_ref": "HMAC:1422"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1586",
+   "cavp_id": "13791",
+   "cavp_ref": "HMAC:1586"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1150",
+   "cavp_id": "3848",
+   "cavp_ref": "RNG:1150"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1221",
+   "cavp_id": "14093",
+   "cavp_ref": "RNG:1221"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1191",
+   "cavp_id": "20495",
+   "cavp_ref": "RSA:1191"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1317",
+   "cavp_id": "13819",
+   "cavp_ref": "RSA:1317"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1992",
+   "cavp_id": "25616",
+   "cavp_ref": "SHS:1992"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2165",
+   "cavp_id": "22056",
+   "cavp_ref": "SHS:2165"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1455",
+   "cavp_id": "11024",
+   "cavp_ref": "TDES:1455"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1556",
+   "cavp_id": "28486",
+   "cavp_ref": "TDES:1556"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Security Evaluations Manager"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2077.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/6/2014",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "2/6/2014",
+ "last_updated": "2/6/2014",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2077.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES-XCBC-MAC (non-compliant); SHA-512/224 (non-compliant); SHA-512/256 (non-compliant); MD4; MD5; RC4; DES; Blowfish; RSA (key wrapping; key establishment methodology provides between 112 and 192 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 192 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2077,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Solaris Userland Cryptographic Framework",
+  "type": "Software",
+  "validation_dates": [
+   "02/06/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

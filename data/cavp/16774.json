@@ -1,0 +1,39 @@
+{
+ "cavp_id": "16774",
+ "cavp_cert": "AES 5240",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=16774",
+ "implementation": "RFX AES Core",
+ "product_id": "9171",
+ "description": "PM 1643 Series is high-performance Self-Encrypting SSD supporting SAS 12G Interface that provides on-the-fly encryption/decryption of user data without performance loss. It implements AES256-XTS for user data encryption, RSA-PSS 2048 for FW authentication, and Hash_DRBG for key generation.",
+ "version": "CRYPTO_AES_SSD_X2_V1.1",
+ "type": "HARDWARE",
+ "first_validated": "2/9/2018",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "RFX AES Core",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

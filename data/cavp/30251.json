@@ -1,0 +1,38 @@
+{
+ "cavp_id": "30251",
+ "cavp_cert": "DRBG 1459",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30251",
+ "implementation": "KC API using AES-NI for AES core and CLMUL for GHASH",
+ "product_id": "761",
+ "description": "Ubuntu Kernel Crypto API cryptographic module provides cryptographic services to the software components executing as part of the Linux kernel. This test covers the implementations of gcm_base(ctr-aes-aesni,ghash-clmulni), ccm_base(ctr-aes-aesni,aes-aesni), cbc(aes-aesni), ecb(aes-aesni), xts(aes-aesni), kw(aes-aesni), and cmac(aes-aesni).",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on Intel(R) Xeon(R) CPU E5-2620v3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

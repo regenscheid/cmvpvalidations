@@ -1,0 +1,88 @@
+{
+ "cavp_id": "33474",
+ "cavp_cert": "A875",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33474",
+ "implementation": "TA100 ACE RSA",
+ "product_id": "13346",
+ "description": "The TA100 device is a member of the Microchip CryptoAutomotive family. It is a cryptographic Co-processor with secure hardware-based key storage used for secure authentication, product validation and other root-of-trust based operations. It is typically a companion device to an MCU/MPU on the same board.",
+ "version": "V1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/12/2020",
+ "vendor": "Microchip Technology Inc",
+ "vendor_website": "http://www.microchip.com",
+ "oes": [
+  {
+   "name": "Cadence Xcelium 18.03-s007 simulator",
+   "details": [
+    "firmware: Cadence Xcelium 18.03-s007 simulator",
+    "  Firmware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: Chinese Remainder Theorem"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

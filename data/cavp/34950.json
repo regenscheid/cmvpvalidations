@@ -1,0 +1,43 @@
+{
+ "cavp_id": "34950",
+ "cavp_cert": "A2341",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34950",
+ "implementation": "Cryptographic Module (Gen2 TRANSEC) FPGA",
+ "product_id": "14836",
+ "description": "The Comtech TRANSEC features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via Comtech Satellite Modems, and firmware to provide the cryptographic functions needed to act as an endpoint for secure TLS- and SSH-based M&C traffic.",
+ "version": "12-28-2021",
+ "type": "HARDWARE",
+ "first_validated": "2/15/2022",
+ "vendor": "Comtech Satellite Network Technologies, Inc.",
+ "vendor_website": "http://www.comtechefdata.com",
+ "oes": [
+  {
+   "name": "Xilinx Artix 7 XC7A50T",
+   "details": [
+    "processor: Xilinx Artix 7 XC7A50T"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

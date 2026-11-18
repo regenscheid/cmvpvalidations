@@ -1,0 +1,52 @@
+{
+ "cavp_id": "5922",
+ "cavp_cert": "RSA 650",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5922",
+ "implementation": "ARMv7 RSA in Firmware",
+ "product_id": "7583",
+ "description": "FW implementation of RSA signatures in Seagate's self encryption disk drives (SEDs).",
+ "version": "3.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/10/2010",
+ "vendor": "Seagate Technology LLC.",
+ "vendor_website": "http://www.seagate.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-R Family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

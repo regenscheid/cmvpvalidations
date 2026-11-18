@@ -1,0 +1,46 @@
+{
+ "cavp_id": "25827",
+ "cavp_cert": "AES 217",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25827",
+ "implementation": "Subscriber Encryption Module AES",
+ "product_id": "4348",
+ "description": "This is the E.F. Johnson implementation of the AES algorithm. The modes of operation for this implementation are: OFB, ECB, and CBC using 128, 192 or 256 bits. This algorithm is used in the E.F. Johnson portable radios and Johnson Encryption Module (JEM) which contain the FIPS 140-2 certified SEM module installed.",
+ "version": "4.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "1/28/2005",
+ "vendor": "E.F. Johnson",
+ "vendor_website": "http://www.efjohnson.com",
+ "oes": [
+  {
+   "name": "DSP/BIOS",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

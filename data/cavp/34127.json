@@ -1,0 +1,79 @@
+{
+ "cavp_id": "34127",
+ "cavp_cert": "A1518",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34127",
+ "implementation": "DocuSign-SA-TLS",
+ "product_id": "13996",
+ "description": "DocuSign is a digital signature appliance that is connected to the organizational network and manages all signature keys and certificates of organization's end-users. End-users will connect securely to DocuSign from their PC for the purpose of signing documents and data.",
+ "version": "9.4",
+ "type": "FIRMWARE",
+ "first_validated": "6/14/2021",
+ "vendor": "DocuSign, Inc.",
+ "vendor_website": "http://www.docusign.com",
+ "oes": [
+  {
+   "name": "Intel® Xeon Quad-Core",
+   "details": [
+    "processor: Intel® Xeon Quad-Core",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 128-192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 128-192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1, v1.2",
+    "Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

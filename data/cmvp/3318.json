@@ -1,0 +1,156 @@
+{
+ "cert": 3318,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3318",
+ "module": "BoringCrypto",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Section 12.1 of the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications.",
+ "tested_configurations": [
+  "and Ubuntu Linux 18.04 running on POWER9 with PAA (clang Compiler Version 6.0.1) (single-user mode)",
+  "Debian Linux 4.9.0 running on Intel Xeon E5-2680 with PAA (clang Compiler Version 6.0.1)",
+  "Debian Linux 4.9.0 running on Intel Xeon E5-2680 without PAA (clang Compiler Version 6.0.1)",
+  "Ubuntu Linux 18.04 running on POWER9 without PAA (clang Compiler Version 6.0.1)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Certs. #2033 and #2034; key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "66005f41fbc3529ffe8d007708756720529da20d",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5612",
+   "cavp_id": "12633",
+   "cavp_ref": "AES:5612"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2033",
+   "cavp_id": "5824",
+   "cavp_ref": "Component:2033"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2034",
+   "cavp_id": "22042",
+   "cavp_ref": "Component:2034"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2035",
+   "cavp_id": "12809",
+   "cavp_ref": "Component:2035"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2253",
+   "cavp_id": "3239",
+   "cavp_ref": "DRBG:2253"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1520",
+   "cavp_id": "17912",
+   "cavp_ref": "ECDSA:1520"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3743",
+   "cavp_id": "1349",
+   "cavp_ref": "HMAC:3743"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5612; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3020",
+   "cavp_id": "20860",
+   "cavp_ref": "RSA:3020"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4509",
+   "cavp_id": "8661",
+   "cavp_ref": "SHS:4509"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2825",
+   "cavp_id": "27628",
+   "cavp_ref": "TDES:2825"
+  }
+ ],
+ "vendor": "Google, Inc.",
+ "vendor_info": {
+  "name": "Google, Inc.",
+  "website": "http://www.google.com/",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Adam Langley"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3318.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Consolidated-Nov2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/2/2018",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "11/2/2018",
+ "last_updated": "11/2/2018",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3318.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Certs. #2033 and #2034; key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3318,
+  "vendor": "Google, Inc.",
+  "module": "BoringCrypto",
+  "type": "Software",
+  "validation_dates": [
+   "11/02/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

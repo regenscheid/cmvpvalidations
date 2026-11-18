@@ -1,0 +1,203 @@
+{
+ "cert": 3039,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3039",
+ "module": "ID-One PIV on Cosmo V8.1 - SPE Configurations",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per the Security Policy",
+ "level_exceptions": [
+  "Physical Security: Level 4"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "ID-One PIV on Cosmo V8.1 is the next generation of Personal Identification and Verification cards, avalaible in multiple FIPS 140-2 validated configurations. The SPE configurations are extensions to the PIV/CIV configurations where the module enforces the encryption of the PIN when submitted to the module for card holder verification, regardless of the communication interface being used (contact & contactless). The EP (Enhanced Privacy) option added to the default SPE configuration prevents the leaking from the card of any traceable or PII over the contactless interface.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "hardware_versions": "P/Ns ‘30-5F01’ [1], ‘30-5F02’ [2], '40-6001' [3] and '40-6002' [4]",
+ "firmware_versions": "Firmware Extension: ‘086294’+’086683’ (ID-One PIV Applet Suite 2.4.0 on Cosmo V8.1 LARGE) [1], Firmware Extension: ‘090191’ (ID-One PIV 2.4.1 on Cosmo V8.1 LARGE) [2], Firmware Extension: ‘086294’+’086693’ (ID-One PIV Applet Suite 2.4.0 on Cosmo V8.1 STD) [3] and Firmware Extension: ‘090211’ (ID-One PIV 2.4.1 on Cosmo V8.1 STD) [4]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4107",
+   "cavp_id": "28301",
+   "cavp_ref": "AES:4107"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4108",
+   "cavp_id": "15839",
+   "cavp_ref": "AES:4108"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4109",
+   "cavp_id": "6451",
+   "cavp_ref": "AES:4109"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 921",
+   "cavp_id": "26021",
+   "cavp_ref": "Component:921"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 953",
+   "cavp_id": "18892",
+   "cavp_ref": "Component:953"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 954",
+   "cavp_id": "410",
+   "cavp_ref": "Component:954"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1234",
+   "cavp_id": "28168",
+   "cavp_ref": "DRBG:1234"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 933",
+   "cavp_id": "8756",
+   "cavp_ref": "ECDSA:933"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2683",
+   "cavp_id": "20468",
+   "cavp_ref": "HMAC:2683"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 48",
+   "cavp_id": "1151",
+   "cavp_ref": "KAS:48"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 106",
+   "cavp_id": "17849",
+   "cavp_ref": "KDF:106"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4107 and AES Cert. #4108; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4109; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2252",
+   "cavp_id": "18396",
+   "cavp_ref": "RSA:2252"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2253",
+   "cavp_id": "11931",
+   "cavp_ref": "RSA:2253"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 6",
+   "cavp_id": "3280",
+   "cavp_ref": "SHA-3:6"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3379",
+   "cavp_id": "1630",
+   "cavp_ref": "SHS:3379"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3380",
+   "cavp_id": "20347",
+   "cavp_ref": "SHS:3380"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2245",
+   "cavp_id": "23609",
+   "cavp_ref": "TDES:2245"
+  }
+ ],
+ "vendor": "Oberthur Technologies",
+ "vendor_info": {
+  "name": "Oberthur Technologies",
+  "website": "http://www.oberthur.com",
+  "address": [
+   "4250 Pleasant Valley Road",
+   "Chantilly, VA 20151",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Christophe Goyet"
+   },
+   {
+    "name": "Said Boukyoud"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3039.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/6/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "11/9/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "10/6/2017",
+ "last_updated": "11/9/2017",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3039.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3039,
+  "vendor": "Oberthur Technologies",
+  "module": "ID-One PIV on Cosmo V8.1 - SPE Configurations",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/06/2017",
+   "11/09/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

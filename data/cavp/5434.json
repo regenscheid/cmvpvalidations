@@ -1,0 +1,50 @@
+{
+ "cavp_id": "5434",
+ "cavp_cert": "Component 858",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5434",
+ "implementation": "RUGGEDCOM ROS (Rugged Operating System) Cryptographic Core",
+ "product_id": "5565",
+ "description": "The RUGGEDCOM Ethernet Switches is designed specifically to withstand harsh environmental conditions including temperature and humidity extremes, shock, vibration, and electromagnetic interference. The ruggedized switches, equipped with RUGGEDCOM ROS, provide Ethernet switching capabilities for customer networks in virtually any environment.",
+ "version": "1.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/31/2016",
+ "vendor": "Siemens Canada Ltd.",
+ "vendor_website": "http://www.siemens.com",
+ "oes": [
+  {
+   "name": "Freescale PowerPC MPC8308",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation, Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

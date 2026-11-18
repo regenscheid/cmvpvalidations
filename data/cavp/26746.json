@@ -1,0 +1,44 @@
+{
+ "cavp_id": "26746",
+ "cavp_cert": "AES 3866",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=26746",
+ "implementation": "OpenSSL 1.02d - FIPS",
+ "product_id": "1602",
+ "description": "OpenSSL is used to manage SSL certs. RSA firmware signing verification. Used to originate and terminate SSL tunnels.",
+ "version": "Std. Library FIPS Module 2.0.9 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/12/2016",
+ "vendor": "APCON, Inc.",
+ "vendor_website": "http://www.apcon.com",
+ "oes": [
+  {
+   "name": "Freescale PowerQUICC® II Pro MPC8349",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

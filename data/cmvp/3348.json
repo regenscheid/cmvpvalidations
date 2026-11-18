@@ -1,0 +1,811 @@
+{
+ "cert": 3348,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3348",
+ "module": "Oracle Linux Unbreakable Enterprise Kernel (UEK) Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Oracle Linux NSS Cryptographic Module validated to FIPS 140-2 under Certs. #3111[1] and #3143[2] operating in FIPS mode. The module generates random strings whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Oracle Linux Unbreakable Enterprise Kernel Cryptographic Module provides general-purpose cryptographic services to the remainder of the Linux kernel.",
+ "tested_configurations": [
+  "Oracle Linux 6.9 64 bit running on Oracle Server X6-2 with Intel(R) Xeon(R) CPU E5-2699 v4 with PAA [1]",
+  "Oracle Linux 6.9 64 bit running on Oracle Server X6-2 with Intel(R) Xeon(R) CPU E5-2699 v4 without PAA [1]",
+  "Oracle Linux 6.9 64 bit running on Oracle Server X7-2 with Intel(R) Xeon(R) Silver 4114 with PAA [1]",
+  "Oracle Linux 6.9 64 bit running on Oracle Server X7-2 with Intel(R) Xeon(R) Silver 4114 without PAA [1]",
+  "Oracle Linux 7.3 64 bit running on Oracle Server X6-2 with Intel(R) Xeon(R) CPU E5-2699 v4 with PAA [2]",
+  "Oracle Linux 7.3 64 bit running on Oracle Server X6-2 with Intel(R) Xeon(R) CPU E5-2699 v4 without PAA [2]",
+  "Oracle Linux 7.3 64 bit running on Oracle Server X7-2 with Intel(R) Xeon(R) Silver 4114 with PAA [2]",
+  "Oracle Linux 7.3 64 bit running on Oracle Server X7-2 with Intel(R) Xeon(R) Silver 4114 without PAA [2] (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "R6-1.0.0[1] and R7-2.0.0[2]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5398",
+   "cavp_id": "810",
+   "cavp_ref": "AES:5398"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5400",
+   "cavp_id": "14703",
+   "cavp_ref": "AES:5400"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5401",
+   "cavp_id": "21572",
+   "cavp_ref": "AES:5401"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5402",
+   "cavp_id": "9178",
+   "cavp_ref": "AES:5402"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5403",
+   "cavp_id": "766",
+   "cavp_ref": "AES:5403"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5423",
+   "cavp_id": "12876",
+   "cavp_ref": "AES:5423"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5424",
+   "cavp_id": "6400",
+   "cavp_ref": "AES:5424"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5425",
+   "cavp_id": "25074",
+   "cavp_ref": "AES:5425"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5614",
+   "cavp_id": "29792",
+   "cavp_ref": "AES:5614"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5615",
+   "cavp_id": "10077",
+   "cavp_ref": "AES:5615"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5617",
+   "cavp_id": "9073",
+   "cavp_ref": "AES:5617"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5618",
+   "cavp_id": "9124",
+   "cavp_ref": "AES:5618"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5619",
+   "cavp_id": "23029",
+   "cavp_ref": "AES:5619"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5620",
+   "cavp_id": "27622",
+   "cavp_ref": "AES:5620"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5621",
+   "cavp_id": "9105",
+   "cavp_ref": "AES:5621"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5622",
+   "cavp_id": "14331",
+   "cavp_ref": "AES:5622"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5623",
+   "cavp_id": "17360",
+   "cavp_ref": "AES:5623"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5624",
+   "cavp_id": "21682",
+   "cavp_ref": "AES:5624"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5625",
+   "cavp_id": "25121",
+   "cavp_ref": "AES:5625"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5626",
+   "cavp_id": "28407",
+   "cavp_ref": "AES:5626"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5627",
+   "cavp_id": "16411",
+   "cavp_ref": "AES:5627"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5628",
+   "cavp_id": "3734",
+   "cavp_ref": "AES:5628"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5629",
+   "cavp_id": "10782",
+   "cavp_ref": "AES:5629"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5630",
+   "cavp_id": "29625",
+   "cavp_ref": "AES:5630"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5631",
+   "cavp_id": "17468",
+   "cavp_ref": "AES:5631"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5632",
+   "cavp_id": "19921",
+   "cavp_ref": "AES:5632"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5633",
+   "cavp_id": "5381",
+   "cavp_ref": "AES:5633"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5634",
+   "cavp_id": "13536",
+   "cavp_ref": "AES:5634"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5635",
+   "cavp_id": "18926",
+   "cavp_ref": "AES:5635"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5636",
+   "cavp_id": "11617",
+   "cavp_ref": "AES:5636"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5637",
+   "cavp_id": "7166",
+   "cavp_ref": "AES:5637"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5638",
+   "cavp_id": "782",
+   "cavp_ref": "AES:5638"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2092",
+   "cavp_id": "19777",
+   "cavp_ref": "DRBG:2092"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2093",
+   "cavp_id": "21557",
+   "cavp_ref": "DRBG:2093"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2097",
+   "cavp_id": "9851",
+   "cavp_ref": "DRBG:2097"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2098",
+   "cavp_id": "28397",
+   "cavp_ref": "DRBG:2098"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2099",
+   "cavp_id": "17194",
+   "cavp_ref": "DRBG:2099"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2100",
+   "cavp_id": "2685",
+   "cavp_ref": "DRBG:2100"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2101",
+   "cavp_id": "7649",
+   "cavp_ref": "DRBG:2101"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2254",
+   "cavp_id": "16848",
+   "cavp_ref": "DRBG:2254"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2255",
+   "cavp_id": "6741",
+   "cavp_ref": "DRBG:2255"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2256",
+   "cavp_id": "4611",
+   "cavp_ref": "DRBG:2256"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2257",
+   "cavp_id": "23788",
+   "cavp_ref": "DRBG:2257"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2258",
+   "cavp_id": "21862",
+   "cavp_ref": "DRBG:2258"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2259",
+   "cavp_id": "9316",
+   "cavp_ref": "DRBG:2259"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2260",
+   "cavp_id": "5811",
+   "cavp_ref": "DRBG:2260"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2261",
+   "cavp_id": "11201",
+   "cavp_ref": "DRBG:2261"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2262",
+   "cavp_id": "8792",
+   "cavp_ref": "DRBG:2262"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2263",
+   "cavp_id": "3422",
+   "cavp_ref": "DRBG:2263"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2264",
+   "cavp_id": "15157",
+   "cavp_ref": "DRBG:2264"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2265",
+   "cavp_id": "27136",
+   "cavp_ref": "DRBG:2265"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2266",
+   "cavp_id": "21262",
+   "cavp_ref": "DRBG:2266"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2267",
+   "cavp_id": "3088",
+   "cavp_ref": "DRBG:2267"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2268",
+   "cavp_id": "19326",
+   "cavp_ref": "DRBG:2268"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2269",
+   "cavp_id": "23133",
+   "cavp_ref": "DRBG:2269"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2270",
+   "cavp_id": "24075",
+   "cavp_ref": "DRBG:2270"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2271",
+   "cavp_id": "8923",
+   "cavp_ref": "DRBG:2271"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2272",
+   "cavp_id": "1245",
+   "cavp_ref": "DRBG:2272"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2273",
+   "cavp_id": "13431",
+   "cavp_ref": "DRBG:2273"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2274",
+   "cavp_id": "1003",
+   "cavp_ref": "DRBG:2274"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3077",
+   "cavp_id": "17250",
+   "cavp_ref": "HMAC:3077"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3184",
+   "cavp_id": "29266",
+   "cavp_ref": "HMAC:3184"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3574",
+   "cavp_id": "15170",
+   "cavp_ref": "HMAC:3574"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3575",
+   "cavp_id": "23645",
+   "cavp_ref": "HMAC:3575"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3577",
+   "cavp_id": "26409",
+   "cavp_ref": "HMAC:3577"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3578",
+   "cavp_id": "17127",
+   "cavp_ref": "HMAC:3578"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3628",
+   "cavp_id": "17297",
+   "cavp_ref": "HMAC:3628"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3744",
+   "cavp_id": "22573",
+   "cavp_ref": "HMAC:3744"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3745",
+   "cavp_id": "1787",
+   "cavp_ref": "HMAC:3745"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3746",
+   "cavp_id": "12814",
+   "cavp_ref": "HMAC:3746"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3747",
+   "cavp_id": "23182",
+   "cavp_ref": "HMAC:3747"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3748",
+   "cavp_id": "30001",
+   "cavp_ref": "HMAC:3748"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3749",
+   "cavp_id": "11584",
+   "cavp_ref": "HMAC:3749"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3750",
+   "cavp_id": "18610",
+   "cavp_ref": "HMAC:3750"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3751",
+   "cavp_id": "29510",
+   "cavp_ref": "HMAC:3751"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3752",
+   "cavp_id": "8116",
+   "cavp_ref": "HMAC:3752"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3753",
+   "cavp_id": "2398",
+   "cavp_ref": "HMAC:3753"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3754",
+   "cavp_id": "14599",
+   "cavp_ref": "HMAC:3754"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3755",
+   "cavp_id": "357",
+   "cavp_ref": "HMAC:3755"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3767",
+   "cavp_id": "22852",
+   "cavp_ref": "HMAC:3767"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2886",
+   "cavp_id": "29613",
+   "cavp_ref": "RSA:2886"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2887",
+   "cavp_id": "359",
+   "cavp_ref": "RSA:2887"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2888",
+   "cavp_id": "20708",
+   "cavp_ref": "RSA:2888"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2889",
+   "cavp_id": "882",
+   "cavp_ref": "RSA:2889"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3021",
+   "cavp_id": "16087",
+   "cavp_ref": "RSA:3021"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3022",
+   "cavp_id": "27070",
+   "cavp_ref": "RSA:3022"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3023",
+   "cavp_id": "27165",
+   "cavp_ref": "RSA:3023"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3024",
+   "cavp_id": "13979",
+   "cavp_ref": "RSA:3024"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3025",
+   "cavp_id": "26327",
+   "cavp_ref": "RSA:3025"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3026",
+   "cavp_id": "1333",
+   "cavp_ref": "RSA:3026"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3027",
+   "cavp_id": "12036",
+   "cavp_ref": "RSA:3027"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3028",
+   "cavp_id": "20050",
+   "cavp_ref": "RSA:3028"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3029",
+   "cavp_id": "23362",
+   "cavp_ref": "RSA:3029"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3030",
+   "cavp_id": "6925",
+   "cavp_ref": "RSA:3030"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3031",
+   "cavp_id": "17919",
+   "cavp_ref": "RSA:3031"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3032",
+   "cavp_id": "25105",
+   "cavp_ref": "RSA:3032"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4330",
+   "cavp_id": "19886",
+   "cavp_ref": "SHS:4330"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4331",
+   "cavp_id": "12364",
+   "cavp_ref": "SHS:4331"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4336",
+   "cavp_id": "25876",
+   "cavp_ref": "SHS:4336"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4337",
+   "cavp_id": "28806",
+   "cavp_ref": "SHS:4337"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4510",
+   "cavp_id": "3102",
+   "cavp_ref": "SHS:4510"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4511",
+   "cavp_id": "16078",
+   "cavp_ref": "SHS:4511"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4512",
+   "cavp_id": "21212",
+   "cavp_ref": "SHS:4512"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4513",
+   "cavp_id": "24047",
+   "cavp_ref": "SHS:4513"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4514",
+   "cavp_id": "1124",
+   "cavp_ref": "SHS:4514"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4515",
+   "cavp_id": "13850",
+   "cavp_ref": "SHS:4515"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4516",
+   "cavp_id": "13155",
+   "cavp_ref": "SHS:4516"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4517",
+   "cavp_id": "22184",
+   "cavp_ref": "SHS:4517"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4518",
+   "cavp_id": "14250",
+   "cavp_ref": "SHS:4518"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4519",
+   "cavp_id": "10229",
+   "cavp_ref": "SHS:4519"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4520",
+   "cavp_id": "28485",
+   "cavp_ref": "SHS:4520"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4521",
+   "cavp_id": "26431",
+   "cavp_ref": "SHS:4521"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2721",
+   "cavp_id": "6690",
+   "cavp_ref": "TDES:2721"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2728",
+   "cavp_id": "641",
+   "cavp_ref": "TDES:2728"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2826",
+   "cavp_id": "22456",
+   "cavp_ref": "TDES:2826"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2827",
+   "cavp_id": "2576",
+   "cavp_ref": "TDES:2827"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2828",
+   "cavp_id": "26467",
+   "cavp_ref": "TDES:2828"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2829",
+   "cavp_id": "13024",
+   "cavp_ref": "TDES:2829"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2830",
+   "cavp_id": "27029",
+   "cavp_ref": "TDES:2830"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2831",
+   "cavp_id": "22842",
+   "cavp_ref": "TDES:2831"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Honglin Su"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3348.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JanuaryConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/2/2019",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "1/2/2019",
+ "last_updated": "1/2/2019",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3348.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #3111"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3348,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Linux Unbreakable Enterprise Kernel (UEK) Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/02/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

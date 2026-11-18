@@ -1,0 +1,156 @@
+{
+ "cert": 2263,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2263",
+ "module": "SafeGuard® CryptoServer Se",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "SafeGuard® CryptoServer Se is an encapsulated, tamper-protected hardware security module which provides secure cryptographic services like encryption or decryption, hashing, signing and verification of data, random number generation, on-board secure key generation, key storage and further key management functions.",
+ "hardware_versions": "P/N CryptoServer Se, Version 3.00.3.1",
+ "firmware_versions": "3.0.2.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2739",
+   "cavp_id": "14523",
+   "cavp_ref": "AES:2739"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 749",
+   "cavp_id": "13083",
+   "cavp_ref": "Component:749"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 459",
+   "cavp_id": "5521",
+   "cavp_ref": "DRBG:459"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 840",
+   "cavp_id": "1806",
+   "cavp_ref": "ECDSA:840"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1717",
+   "cavp_id": "18737",
+   "cavp_ref": "HMAC:1717"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1435",
+   "cavp_id": "27327",
+   "cavp_ref": "RSA:1435"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1436",
+   "cavp_id": "28885",
+   "cavp_ref": "RSA:1436"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2308",
+   "cavp_id": "16850",
+   "cavp_ref": "SHS:2308"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2309",
+   "cavp_id": "9741",
+   "cavp_ref": "SHS:2309"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2310",
+   "cavp_id": "19265",
+   "cavp_ref": "SHS:2310"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1649",
+   "cavp_id": "6802",
+   "cavp_ref": "TDES:1649"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1649, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Utimaco IS GmbH",
+ "vendor_info": {
+  "name": "Utimaco IS GmbH",
+  "website": "http://hsm.utimaco.de",
+  "address": [
+   "Germanusstraße 4",
+   "Aachen 52080",
+   "Germany"
+  ],
+  "contacts": [
+   {
+    "name": "Dr. Gesa Ott"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2263.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0046.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/7/2014",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "5/4/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "10/7/2014",
+ "last_updated": "5/4/2016",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2263.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); AES (Cert. #2739, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Triple-DES (Cert. #1649, key wrapping; key establishment methodology provides 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement); RSA (non-compliant); ECIES; MD5; MDC-2; RIPEMD-160; DES; Retail-TDES MAC; AES MAC (AES Cert. #2739; non-compliant); PIN generation/PIN verification (e.g., VISA/MasterCard); KDF_ENC_DATA; KDF_HASH; KDF_ECDH; KDF_DH; KDF_XOR_BASE_AND_DATA; KDF_CAT_BASE_AND_KEY; KDF_CAT_BASE_AND_DATA; KDF_CAT_DATA_AND_BASE; KDF_EXTRACT_KEY_FROM_KEY"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2263,
+  "vendor": "Utimaco IS GmbH",
+  "module": "SafeGuard® CryptoServer Se",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/07/2014",
+   "05/04/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

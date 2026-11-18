@@ -1,0 +1,83 @@
+{
+ "cavp_id": "31617",
+ "cavp_cert": "C1211",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31617",
+ "implementation": "KCAPI using AES-NI for AES and RFC4106 GCM with external IV",
+ "product_id": "11573",
+ "description": "Linux kernel crypto API implementation providing cryptographic services to software components executing as part of the Linux kernel.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "10/8/2019",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on Intel(R) Xeon(R) E5",
+   "details": [
+    "processor: Intel Xeon(R) E5",
+    "  manufacturer: Intel",
+    "software: Ubuntu 16.04"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 256, 65536",
+    "Tweak Mode: Hex"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 256, 65536",
+    "Tweak Mode: Hex"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

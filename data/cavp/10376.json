@@ -1,0 +1,65 @@
+{
+ "cavp_id": "10376",
+ "cavp_cert": "AES 5496",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10376",
+ "implementation": "Silvus Crypto Module",
+ "product_id": "9642",
+ "description": "The Silvus Crypto Library implements cryptographic functions for use in Silvus Technologies SC4000 Series mesh radios.",
+ "version": "3.15.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/15/2018",
+ "vendor": "Silvus Technologies",
+ "vendor_website": "http://www.silvustechnologies.com",
+ "oes": [
+  {
+   "name": "Xilinx Zynq-7000",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 8, 128, 256, 5000",
+    "AAD Length: 0, 8, 64, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 8, 64, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,140 @@
+{
+ "cert": 2600,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2600",
+ "module": "Boot Manager in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Windows system boot manager is called by the bootstrapping code that resides in the boot sector. It checks its own integrity, checks the integrity of the Windows OS Loader, and then launches it.",
+ "tested_configurations": [
+  "Windows 10 (x64) running on a Dell XPS 8700 with PAA",
+  "Windows 10 (x64) running on a HP Compaq Pro 6305 with PAA",
+  "Windows 10 (x86) running on a Dell Inspiron 660s without PAA",
+  "Windows 10 Enterprise (x64) running on a HP Compaq Pro 6305 with PAA",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface 3 with PAA",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro 2 with PAA",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro 3 with PAA",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro with PAA",
+  "Windows 10 Enterprise (x86) running on a Dell Inspiron 660s without PAA",
+  "Windows 10 Enterprise LTSB (x64) running on a Dell XPS 8700 with PAA (single-user mode)",
+  "Windows 10 Enterprise LTSB (x64) running on a HP Compaq Pro 6305 with PAA",
+  "Windows 10 Enterprise LTSB (x86) running on a Dell Inspiron without PAA",
+  "Windows 10 Pro (x64) running on a HP Compaq Pro 6305 with PAA",
+  "Windows 10 Pro (x64) running on a Microsoft Surface Pro 2 with PAA",
+  "Windows 10 Pro (x64) running on a Microsoft Surface Pro 3 with PAA",
+  "Windows 10 Pro (x64) running on a Microsoft Surface Pro with PAA",
+  "Windows 10 Pro (x86) running on a Dell Inspiron 660s without PAA"
+ ],
+ "software_versions": "10.0.10240",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3497",
+   "cavp_id": "8412",
+   "cavp_ref": "AES:3497"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2233",
+   "cavp_id": "13173",
+   "cavp_ref": "HMAC:2233"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3498",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1784",
+   "cavp_id": "8528",
+   "cavp_ref": "RSA:1784"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2871",
+   "cavp_id": "20881",
+   "cavp_ref": "SHS:2871"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2886",
+   "cavp_id": "11296",
+   "cavp_ref": "SHS:2886"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2600.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/2/2016",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "6/2/2016",
+ "last_updated": "6/2/2016",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2600.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "MD5; KDF (non-compliant); PBKDF (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2600,
+  "vendor": "Microsoft Corporation",
+  "module": "Boot Manager in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB",
+  "type": "Software",
+  "validation_dates": [
+   "06/02/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

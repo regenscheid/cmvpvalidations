@@ -1,0 +1,153 @@
+{
+ "cert": 2139,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2139",
+ "module": "IBM® z/VM® Version 6 Release 3 System SSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-chip standalone",
+ "description": "Module Description: z/VM System SSL provides cryptographic functions which allows z/VM to protect data using the SSL/TLS protocols. z/VM System SSL also enables administrators to create and manage X.509 V3 certificates and keys within key database files.",
+ "tested_configurations": [
+  "z/VM Version 6 Release 3 running on IBM System z10 (TM) Enterprise Class (z10 EC) with CP Assist for Cryptographic Functions DES/TDES Enablement Feature 3863 (single-user mode)"
+ ],
+ "hardware_versions": "z10 CP Assist for Cryptographic Functions DES/TDES Enablement Feature 3863",
+ "software_versions": "5735FAL00: z/VM Version 6 Release 3 plus APAR PM95516",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 976",
+   "cavp_id": "21305",
+   "cavp_ref": "AES:976"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2627",
+   "cavp_id": "28095",
+   "cavp_ref": "AES:2627"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 110",
+   "cavp_id": "5911",
+   "cavp_ref": "Component:110"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 792",
+   "cavp_id": "16080",
+   "cavp_ref": "DSA:792"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1624",
+   "cavp_id": "16716",
+   "cavp_ref": "HMAC:1624"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1241",
+   "cavp_id": "21669",
+   "cavp_ref": "RNG:1241"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1344",
+   "cavp_id": "27503",
+   "cavp_ref": "RSA:1344"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 946",
+   "cavp_id": "5460",
+   "cavp_ref": "SHS:946"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2203",
+   "cavp_id": "11007",
+   "cavp_ref": "SHS:2203"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 769",
+   "cavp_id": "992",
+   "cavp_ref": "TDES:769"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1577",
+   "cavp_id": "24971",
+   "cavp_ref": "TDES:1577"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.IBM.com",
+  "address": [
+   "1701 North Street, Building 256-3",
+   "Endicott, NY 13760",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Brian W. Hugenbruch"
+   },
+   {
+    "name": "William F Penny"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2139.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0040.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/30/2014",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "4/30/2014",
+ "last_updated": "4/30/2014",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2139.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength); HMAC-MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2139,
+  "vendor": "IBM® Corporation",
+  "module": "IBM® z/VM® Version 6 Release 3 System SSL Cryptographic Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "04/30/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

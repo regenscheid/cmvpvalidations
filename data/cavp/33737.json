@@ -1,0 +1,80 @@
+{
+ "cavp_id": "33737",
+ "cavp_cert": "A1128",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33737",
+ "implementation": "Pensando Elba PenAccel Hardware Crypto Library",
+ "product_id": "13595",
+ "description": "Pensando’s ElbaTM Services Processor offers various networking and security services to data center servers. It incorporates the PenTrustTM subsystem implementing a root of trust, secure boot and key management functions. It also includes the PenAccelTM subsystem providing asymmetric/symmetric cryptographic algorithms, hashing & RNG capabilities.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "3/17/2021",
+ "vendor": "Pensando Systems, Inc",
+ "vendor_website": "https://pensando.io",
+ "oes": [
+  {
+   "name": "Synopsys VCS (O-2018.09-SP2-2_Full64)",
+   "details": [
+    "processor: Synopsys VCS (O-2018.09-SP2-2_Full64)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 120, 128, 1024",
+    "AAD Length: 0, 8, 120, 128, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 120, 128, 1024",
+    "AAD Length: 0, 8, 120, 128, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 136, 4096, 4104, 65536",
+    "Tweak Mode: Hex, Number"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 136, 4096, 4104, 65536",
+    "Tweak Mode: Hex, Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

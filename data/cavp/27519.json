@@ -1,0 +1,60 @@
+{
+ "cavp_id": "27519",
+ "cavp_cert": "RSA 810",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27519",
+ "implementation": "EXP9000",
+ "product_id": "8017",
+ "description": "The EXP9000 cryptographic module provides secure encryption, storage, and transmmission of sensitive data used in a wide variety of applications including Futurex Hardware Security Modules (HSM) and Key Management Servers (KMS).",
+ "version": "9750-2075 4.0.0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "5/12/2011",
+ "vendor": "Futurex",
+ "vendor_website": "http://www.futurex.com",
+ "oes": [
+  {
+   "name": "Amcc PowerPC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

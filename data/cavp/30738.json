@@ -1,0 +1,164 @@
+{
+ "cavp_id": "30738",
+ "cavp_cert": "C342",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30738",
+ "implementation": "Linux Kernel crypto API (shaavx)",
+ "product_id": "10702",
+ "description": "Linux kernel crypto API implementation providing cryptographic services to software components executing as part of the Linux kernel.",
+ "version": "7.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/19/2019",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 7 on Intel(R) Xeon(R) E5",
+   "details": [
+    "processor: Intel Xeon(R) E5",
+    "  manufacturer: Intel",
+    "software: Red Hat Enterprise Linux 7"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0-128",
+    "    Additional Input: 0-128",
+    "    Returned Bits: 640",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 2048",
+    "C342 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0-128",
+    "    Additional Input: 0-128",
+    "    Returned Bits: 640",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 2048",
+    "C342 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C342 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C342 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C342 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Random",
+    "C342 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

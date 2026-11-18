@@ -1,0 +1,52 @@
+{
+ "cavp_id": "34269",
+ "cavp_cert": "A1660",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34269",
+ "implementation": "AES-GCM FPGA Implementation",
+ "product_id": "14155",
+ "description": "AES-GCM FPGA implementation supports either encryption or decryption (specified at build time) with 256 bit keys, 128 bit authentication tags, AAD (including NULL-length), and non-zero length byte-aligned data in GCM mode.",
+ "version": "1.0",
+ "type": "HARDWARE",
+ "first_validated": "7/8/2021",
+ "vendor": "QNet Security, Inc.",
+ "vendor_website": "http://qnetsecurity.com/",
+ "oes": [
+  {
+   "name": "Intel Cyclone 5",
+   "details": [
+    "cpu: Intel Cyclone 5"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-65536 Increment 8",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-65536 Increment 8",
+    "AAD Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

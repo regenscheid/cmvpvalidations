@@ -1,0 +1,46 @@
+{
+ "cavp_id": "6342",
+ "cavp_cert": "AES 3952",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6342",
+ "implementation": "FX AES Kernel Module",
+ "product_id": "5397",
+ "description": "FX AES Kernel Module provides cryptographic services within the Linux kernel",
+ "version": "1.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "4/29/2016",
+ "vendor": "Fuji Xerox Co., Ltd.",
+ "vendor_website": "http://www.fujixerox.com/eng",
+ "oes": [
+  {
+   "name": "Wind River Linux 6 on Broadcom ARMv6l BCM2835",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

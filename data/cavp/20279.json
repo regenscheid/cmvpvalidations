@@ -1,0 +1,58 @@
+{
+ "cavp_id": "20279",
+ "cavp_cert": "AES 2666",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20279",
+ "implementation": "Box JCA Cryptographic Module",
+ "product_id": "3363",
+ "description": "Box JCA Cryptographic Module is a Java Cryptography Architecture provider that provides encryption, hashing and random number generation utilizing FIPS 140-2 validated algorithms.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "11/8/2013",
+ "vendor": "Box, Inc.",
+ "vendor_website": "http://www.box.com",
+ "oes": [
+  {
+   "name": "Scientific Linux 6.4 with Java JRE 1.6.0 running on VMware vSphere 5.0 on Intel(R) Xeon(R)",
+   "details": []
+  },
+  {
+   "name": "Scientific Linux 6.4 with Java JRE 1.7.0 running on VMware vSphere 5.0 on Intel(R) Xeon(R)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

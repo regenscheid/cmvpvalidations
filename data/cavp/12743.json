@@ -1,0 +1,96 @@
+{
+ "cavp_id": "12743",
+ "cavp_cert": "AES 4547",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12743",
+ "implementation": "Oracle Acme Packet OpenSSL Cryptographic Library",
+ "product_id": "1708",
+ "description": "The Acme Packet 1100 and 3900 feature Oracle's purpose-built hardware design that is tightly integrated with a hardened version of Oracle Linux, to provide the critical controls for delivering trusted, real-time communications - voice, video, and application data sessions - across Internet Protocol (IP) network borders.",
+ "version": "ECz 7.5.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/23/2017",
+ "vendor": "Oracle Communications",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Intel Atom C2358",
+   "details": []
+  },
+  {
+   "name": "Intel Xeon D-1548 (Intel Broadwell-DE)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 120, 128, 248, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

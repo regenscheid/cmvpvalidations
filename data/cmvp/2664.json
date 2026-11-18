@@ -1,0 +1,124 @@
+{
+ "cert": 2664,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2664",
+ "module": "ACOS5-64",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section Secure Initialization. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "ACOS5-64 is a hardware cryptographic module validated against FIPS 140-2 at Security Level 3. It is a two-factor authentication smart card module. It provides digital signature creation/verification for online authentication and data encryption/decryption for online transactions.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "ACOS5-64",
+ "firmware_versions": "3.00",
+ "product_url": "http://www.acs.com.hk/en/products/308/acos5-64-cryptographic-card-contact",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3539",
+   "cavp_id": "17862",
+   "cavp_ref": "AES:3539"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 591",
+   "cavp_id": "2184",
+   "cavp_ref": "Component:591"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 893",
+   "cavp_id": "21951",
+   "cavp_ref": "DRBG:893"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1816",
+   "cavp_id": "16061",
+   "cavp_ref": "RSA:1816"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2917",
+   "cavp_id": "26662",
+   "cavp_ref": "SHS:2917"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1982",
+   "cavp_id": "8301",
+   "cavp_ref": "TDES:1982"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1982, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Advanced Card Systems Ltd.",
+ "vendor_info": {
+  "name": "Advanced Card Systems Ltd.",
+  "website": "http://www.acs.com.hk",
+  "address": [
+   "Units 2010-2013, 20/F Chevalier Commercial Centre",
+   "8 Wang Hoi Road Kowloon Bay",
+   "Hong Kong"
+  ],
+  "contacts": [
+   {
+    "name": "Andrew Chan"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2664.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/20/2016",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "6/20/2016",
+ "last_updated": "6/20/2016",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2664.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-131A transition which disallows key wrapping not compliant to SP 800-38F.",
+  "Other Algorithms": "NDRNG; Triple-DES (Cert. #1982, key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2664,
+  "vendor": "Advanced Card Systems Ltd.",
+  "module": "ACOS5-64",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/20/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

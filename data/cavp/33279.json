@@ -1,0 +1,45 @@
+{
+ "cavp_id": "33279",
+ "cavp_cert": "A759",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33279",
+ "implementation": "Pavilion AES Cryptographic Module",
+ "product_id": "13173",
+ "description": "Software Algorithms",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "9/23/2020",
+ "vendor": "Pavilion Data Systems",
+ "vendor_website": "http://pavilion.io",
+ "oes": [
+  {
+   "name": "Oracle Linux 8.0 with Intel Xeon D-1548 with PAA (AES- NI)",
+   "details": [
+    "cpu: Intel Xeon D-1548 with PAA (AES- NI)",
+    "  System CPU",
+    "os: Oracle Linux 8.0",
+    "  System Operating System"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 32768, 65536",
+    "Tweak Mode: Hex"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

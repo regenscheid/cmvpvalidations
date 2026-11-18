@@ -1,0 +1,46 @@
+{
+ "cavp_id": "19975",
+ "cavp_cert": "AES 803",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19975",
+ "implementation": "Nitrox PX Series Die V1.2",
+ "product_id": "2206",
+ "description": "Each identical processor core on the NITROX PX die implements several security and math algorithms, including ModEx (and RSA), ECC, 3DES, AES256, KASUMI, SHA1, SHA2, and MD5 (hash and HMAC). Performance ranges: 500Mbps to 2.5Gbps of encryption bandwidth; 4k to 17k RSA's; 6k to 25k DH operations per second. Accelerate IPSec, SSL, XML, and WLAN.",
+ "version": "Nitrox PX Series Die V1.2",
+ "type": "HARDWARE",
+ "first_validated": "6/13/2008",
+ "vendor": "Cavium Networks",
+ "vendor_website": "http://www.caviumnetworks.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

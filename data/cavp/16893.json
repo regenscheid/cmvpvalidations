@@ -1,0 +1,62 @@
+{
+ "cavp_id": "16893",
+ "cavp_cert": "RSA 1063",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=16893",
+ "implementation": "appRsa",
+ "product_id": "228",
+ "description": "The Pitney Bowes Cygnus X-3 Hardware Security Module (HSM) employs strong cryptographic and physical security techniques for the protection of funds in Pitney Bowes Postage systems.",
+ "version": "0200000C (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/7/2012",
+ "vendor": "Pitney Bowes, Inc.",
+ "vendor_website": "http://www.pb.com",
+ "oes": [
+  {
+   "name": "ARM 7 TDMI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024",
+    "Public Key Value: 3, 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024",
+    "    Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "    Modulo: 1024",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

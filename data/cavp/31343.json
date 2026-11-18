@@ -1,0 +1,86 @@
+{
+ "cavp_id": "31343",
+ "cavp_cert": "C946",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31343",
+ "implementation": "Junos OS Dataplane libcrypto",
+ "product_id": "11300",
+ "description": "The NFX150 Network Services Platform provides multiple network connections and an open, standards-based architecture. It uses SRX Series next-generation firewall software for security. The NFX150 delivers business services, such as SD-WAN. It is for enterprise organizations and for service providers that deliver managed services to the enterprise.",
+ "version": "Junos OS 19.2R1",
+ "type": "FIRMWARE",
+ "first_validated": "7/25/2019",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Intel ATOM C3000 series",
+   "details": [
+    "processor: Intel ATOM C3000 series",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 96",
+    "Key sizes < block size",
+    "C946 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128",
+    "Key sizes < block size",
+    "C946 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

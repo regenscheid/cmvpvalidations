@@ -1,0 +1,161 @@
+{
+ "cert": 3823,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3823",
+ "module": "Cisco ASA and ISA Firepower Threat Defense Cryptographic Modules",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. When installed with the tamper evident seals and opacity shields, initialized and configured as specified in Section 3 of the Security Policy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Cisco Firepower Threat Defense (FTD) is a unified software image, which includes the Cisco ASA features and FirePOWER Services. This unified software is capable of offering the functions of ASA and FirePOWER deployed on Cisco Firepower 4100 Series and the Firepower 9300 appliances as well the FTD can be also be deployed on Cisco Firepower Threat Defense (FTD) ASA 5508-X, ASA 5516-X, ISA 3000-4C and ISA 3000-2C2F.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1521, key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1521, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "ASA 5508-X[1][2], ASA 5516-X[1][3], ISA 3000-4C[1] and ISA 3000-2C2F[1] with [AIR-AP-FIPSKIT=][1], [ASA5508-FIPS-KIT=][2] and [ASA5516-FIPS-KIT=][3]",
+ "firmware_versions": "6.4",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3301",
+   "cavp_id": "29471",
+   "cavp_ref": "AES:3301"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4905",
+   "cavp_id": "25795",
+   "cavp_ref": "AES:4905"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1521",
+   "cavp_id": "12050",
+   "cavp_ref": "Component:1521"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 819",
+   "cavp_id": "5738",
+   "cavp_ref": "DRBG:819"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1735",
+   "cavp_id": "2001",
+   "cavp_ref": "DRBG:1735"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1254",
+   "cavp_id": "21179",
+   "cavp_ref": "ECDSA:1254"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2095",
+   "cavp_id": "23257",
+   "cavp_ref": "HMAC:2095"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3272",
+   "cavp_id": "9402",
+   "cavp_ref": "HMAC:3272"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2678",
+   "cavp_id": "10732",
+   "cavp_ref": "RSA:2678"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2737",
+   "cavp_id": "24682",
+   "cavp_ref": "SHS:2737"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4012",
+   "cavp_id": "21377",
+   "cavp_ref": "SHS:4012"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1881",
+   "cavp_id": "22953",
+   "cavp_ref": "TDES:1881"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2559",
+   "cavp_id": "14677",
+   "cavp_ref": "TDES:2559"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3823.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202021_010321_1145_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/23/2021",
+   "type": "Initial",
+   "lab": "Gossamer Security Solutions"
+  }
+ ],
+ "first_validated": "2/23/2021",
+ "last_updated": "2/23/2021",
+ "labs": "Gossamer Security Solutions",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3823.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1521, key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1521, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3823,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "Cisco ASA and ISA Firepower Threat Defense Cryptographic Modules",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/23/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,44 @@
+{
+ "cavp_id": "1886",
+ "cavp_cert": "AES 1426",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1886",
+ "implementation": "Cisco MacSec Generation 1",
+ "product_id": "7701",
+ "description": "Cisco Alkindi MACSec ASIC is the Cisco processing engine that performs AES-GCM encryption/decryption to support IEEE 802.1AE, IETF ESP-GCM/GMAC and other port and PHY features at 1 gigabit line rate used on Cisco Catalyst and Nexus series switches.",
+ "version": "Alkindi Revision 4 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/15/2010",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS v2005.06",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 1024",
+    "AAD Length: 160, 728",
+    "AES 1426 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

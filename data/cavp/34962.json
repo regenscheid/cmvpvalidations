@@ -1,0 +1,71 @@
+{
+ "cavp_id": "34962",
+ "cavp_cert": "A2353",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34962",
+ "implementation": "Google Cr50 Crypto & U2F Library",
+ "product_id": "14854",
+ "description": "Google Cr50 is a firmware used in Root of Trust in Google Chromebooks featuring Google H1B2 chip (H1 for short). It implements a service for ‘Universal 2nd factor authentication’, (U2F).",
+ "version": "1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "2/18/2022",
+ "vendor": "Google, LLC",
+ "vendor_website": "https://www.google.com/",
+ "oes": [
+  {
+   "name": "Google H1B2 with ARM V7-M with PAA",
+   "details": [
+    "processor: Google H1B2 with ARM V7-M with PAA"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128-1024 Increment 8",
+    "    Personalization String Length: 0-4096 Increment 8",
+    "    Additional Input: 0-4096 Increment 8",
+    "    Returned Bits: 4096"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-15360 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-16000 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

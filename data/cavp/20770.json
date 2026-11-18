@@ -1,0 +1,59 @@
+{
+ "cavp_id": "20770",
+ "cavp_cert": "Component 1335",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20770",
+ "implementation": "NetBrain OpenSSL Cryptographic Module",
+ "product_id": "1937",
+ "description": "The NetBrain OpenSSL Cryptographic Module is a C library of cryptographic functions which provides cryptographic services to applications via easy-to-use API. It can be dynamically linked into applications for the use of general-purpose FIPS 140-2 validated cryptography.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "8/11/2017",
+ "vendor": "NetBrain Technologies, Inc",
+ "vendor_website": "http://www.netbraintech.com",
+ "oes": [
+  {
+   "name": "Windows Server 2012 R2 Standard on Intel Xeon E3 family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Key Pair Generation, Partial Public Key Validation, Public Key Regeneration",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Public Key Regeneration",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

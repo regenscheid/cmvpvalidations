@@ -1,0 +1,54 @@
+{
+ "cavp_id": "12647",
+ "cavp_cert": "RSA 1249",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12647",
+ "implementation": "TRANSEC Cryptographic Engine",
+ "product_id": "3003",
+ "description": "The Comtech EF Data FIPS Security Module features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via Comtech Satellite Modems, as well as firmware to provide the cryptographic functions needed to act as a endpoint for TLS management and control traffic.",
+ "version": "2.1.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/10/2013",
+ "vendor": "Comtech EF Data Corporation",
+ "vendor_website": "http://www.comtechefdata.com",
+ "oes": [
+  {
+   "name": "AMCC PowerPC 440EP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048",
+    "Public Key Value: 3, 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 2048",
+    "    Hash Algorithm: SHA-1, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

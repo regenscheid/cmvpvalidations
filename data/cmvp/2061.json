@@ -1,0 +1,170 @@
+{
+ "cert": 2061,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2061",
+ "module": "Oracle Solaris Kernel Cryptographic Framework",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy and operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Oracle Solaris OS utilizes the Oracle Solaris Kernel Cryptographic Framework module to provide cryptographic functionality for any kernel-level processes that require it, via Oracle-proprietary APIs.",
+ "tested_configurations": [
+  "Oracle Solaris 11.1 running on a M3000 Enterprise Server without PAA",
+  "Oracle Solaris 11.1 running on a Sun Server X3-2 with PAA",
+  "Oracle Solaris 11.1 running on a Sun Server X3-2 without PAA (single-user mode)"
+ ],
+ "software_versions": "1.0 and 1.1",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2309",
+   "cavp_id": "9083",
+   "cavp_ref": "AES:2309"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2573",
+   "cavp_id": "23543",
+   "cavp_ref": "AES:2573"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 374",
+   "cavp_id": "2547",
+   "cavp_ref": "ECDSA:374"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 445",
+   "cavp_id": "18504",
+   "cavp_ref": "ECDSA:445"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1423",
+   "cavp_id": "13077",
+   "cavp_ref": "HMAC:1423"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1595",
+   "cavp_id": "29358",
+   "cavp_ref": "HMAC:1595"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1151",
+   "cavp_id": "554",
+   "cavp_ref": "RNG:1151"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1225",
+   "cavp_id": "29087",
+   "cavp_ref": "RNG:1225"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1192",
+   "cavp_id": "3006",
+   "cavp_ref": "RSA:1192"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1320",
+   "cavp_id": "1056",
+   "cavp_ref": "RSA:1320"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1993",
+   "cavp_id": "30203",
+   "cavp_ref": "SHS:1993"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2173",
+   "cavp_id": "10370",
+   "cavp_ref": "SHS:2173"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1456",
+   "cavp_id": "12150",
+   "cavp_ref": "TDES:1456"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1559",
+   "cavp_id": "6155",
+   "cavp_ref": "TDES:1559"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Joshua Brickman"
+   },
+   {
+    "name": "Linda Gallops"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2061.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0036.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/13/2013",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "12/13/2013",
+ "last_updated": "12/13/2013",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2061.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES-CTS (non-compliant); AES-XCBC-MAC (non-compliant); MD4; MD5; HMAC-MD5; RC4; DES; Blowfish; Triple-DES (non-compliant); RSA (key wrapping; key establishment methodology provides between 112 and 192 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2061,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Solaris Kernel Cryptographic Framework",
+  "type": "Software",
+  "validation_dates": [
+   "12/13/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

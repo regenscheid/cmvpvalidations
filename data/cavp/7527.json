@@ -1,0 +1,67 @@
+{
+ "cavp_id": "7527",
+ "cavp_cert": "RSA 2762",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7527",
+ "implementation": "Standalone IMB Cryptographic Module",
+ "product_id": "9052",
+ "description": "A digital cinema standalone integrated media block that is compliant with DCI specifications and SMPTE digital cinema standards. The supported features include JPEG2000 decoding, AES decryption, key management, and logging.",
+ "version": "2.0.11 (Firmware)",
+ "type": "UNKNOWN",
+ "first_validated": "1/19/2018",
+ "vendor": "GDC Technology (USA) LLC",
+ "vendor_website": "http://www.gdc-tech.com",
+ "oes": [
+  {
+   "name": "Xilinx Zynq Ultrascale+",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

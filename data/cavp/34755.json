@@ -1,0 +1,71 @@
+{
+ "cavp_id": "34755",
+ "cavp_cert": "A2146",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34755",
+ "implementation": "OpenSSL (64 bit) (VPAES_GCM)",
+ "product_id": "14642",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64 bit word size. The following cipher implementation is covered: ARM NEON bit slicing AES using GCM implementation.",
+ "version": "R8-8.4.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/6/2021",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 8.4 on Ampere(R) Ampere(R) Altra(R) Neoverse-N1",
+   "details": [
+    "processor: Neoverse-N1",
+    "  Processor Neoverse-N1 (processor family ARM64) from Ampere(R)",
+    "  family: ARM64",
+    "  manufacturer: Ampere(R)",
+    "  series: Ampere(R) Altra(R)",
+    "software: Oracle Linux 8.4",
+    "  Linux distribution developed by Oracle"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,126 @@
+{
+ "cert": 2219,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2219",
+ "module": "Symantec Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Symantec Cryptographic Module is a software module with a multi-chip standalone embodiment. The overall security level of the module is 1. SymCrypt is implemented in the C programming language and consists of a shared library that is linked with SSIM application components. It is designed to execute on a host system with a General Purpose Computer (GPC) hardware platform.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 6.4 (64-bit) on a Dell OptiPlex 755 (single-user mode)"
+ ],
+ "software_versions": "1.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2646",
+   "cavp_id": "30306",
+   "cavp_ref": "AES:2646"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 413",
+   "cavp_id": "5789",
+   "cavp_ref": "DRBG:413"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 797",
+   "cavp_id": "17034",
+   "cavp_ref": "DSA:797"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1637",
+   "cavp_id": "19649",
+   "cavp_ref": "HMAC:1637"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1355",
+   "cavp_id": "26908",
+   "cavp_ref": "RSA:1355"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2219",
+   "cavp_id": "9148",
+   "cavp_ref": "SHS:2219"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1587",
+   "cavp_id": "16518",
+   "cavp_ref": "TDES:1587"
+  }
+ ],
+ "vendor": "Symantec Corporation",
+ "vendor_info": {
+  "name": "Symantec Corporation",
+  "website": "http://www.symantec.com",
+  "address": [
+   "350 Ellis Street",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Rose Quijano-Nguyen"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2219.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0044.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/7/2014",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "8/7/2014",
+ "last_updated": "8/7/2014",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2219.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 128 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2219,
+  "vendor": "Symantec Corporation",
+  "module": "Symantec Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/07/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,41 @@
+{
+ "cavp_id": "1495",
+ "cavp_cert": "AES 647",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1495",
+ "implementation": "AES-256 CCM",
+ "product_id": "5266",
+ "description": "The Encrypting Tape Drive uses AES-256 in CCM mode for operator authentication, for protecting communication with the Key Token, and for decrypting key packages created by the Key Management Station.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/15/2007",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "ARM926EJ",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 104",
+    "Payload Length: 0-240",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,59 @@
+{
+ "cavp_id": "430",
+ "cavp_cert": "Component 1417",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=430",
+ "implementation": "Oracle Linux 6 NSS without AES-NI",
+ "product_id": "8415",
+ "description": "Oracle Linux 6 NSS Cryptographic Module is a set of libraries designed to support cross-platform development of security-enabled applications.",
+ "version": "R6-1.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "9/26/2017",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 6.9 64 bit on Intel Xeon E5-2699 v4",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

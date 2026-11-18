@@ -1,0 +1,78 @@
+{
+ "cavp_id": "32721",
+ "cavp_cert": "C1818",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32721",
+ "implementation": "NXP JCOP4 HMAC and Feedback mode KBKDF Component For N7121",
+ "product_id": "12623",
+ "description": "NXP JCOP4 is a Global Platform Java Card smart card operating system implementing HMAC and KBKDF in Feedback Mode using HMAC.",
+ "version": "168729.0.0.1",
+ "type": "FIRMWARE",
+ "first_validated": "6/11/2020",
+ "vendor": "NXP Semiconductors",
+ "vendor_website": "http://NXP.com",
+ "oes": [
+  {
+   "name": "N7121 B1",
+   "details": [
+    "processor: N7121 B1"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512",
+    "    Supported Lengths: 112, 160, 6144",
+    "    Fixed Data Order: After Fixed Data",
+    "    Counter Length: 8",
+    "    Supports Empty IV",
+    "C1818 (HMAC)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

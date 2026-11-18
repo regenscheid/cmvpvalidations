@@ -1,0 +1,555 @@
+{
+ "cert": 4138,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4138",
+ "module": "NETSCOUT FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The NETSCOUT FIPS Object Module provides cryptographic functionality to NETSCOUT’s series of applications.",
+ "tested_configurations": [
+  "ArbOS 7.0 running on a NETSCOUT APS 2600 Series {APS 2600} with an Intel® Xeon® E5-2608L v3 with PAA",
+  "ArbOS 7.0 running on a NETSCOUT APS 2600 Series {APS 2600} with an Intel® Xeon® E5-2608L v3 without PAA",
+  "ArbOS 7.0 running on a NETSCOUT APS 2800 Series {APS 2800l} with an Intel® Xeon® E5-2648L v3 with PAA",
+  "ArbOS 7.0 running on a NETSCOUT APS 2800 Series {APS 2800l} with an Intel® Xeon® E5-2648L v3 without PAA",
+  "ArbOS 7.2 running on a NETSCOUT 2800 Series {APS 2800, AED 2800, TMS 2800, SP 7000, AEM 7000} with an Intel® Xeon® E5-2648L v3 with PAA",
+  "ArbOS 7.2 running on a NETSCOUT 2800 Series {APS 2800, AED 2800, TMS 2800, SP 7000, AEM 7000} with an Intel® Xeon® E5-2648L v3 without PAA",
+  "ArbOS 7.2 running on a NETSCOUT 7500 Series {SP 7500, AEM 8000} with an Intel® Xeon® Gold 5218T without PAA",
+  "ArbOS 7.2 running on a NETSCOUT 7500 Series {SP 7500, AEM 8000} with an Intel® Xeon® Gold 5218T with PAA",
+  "ArbOS 7.3 running on a NETSCOUT 2600 Series {APS 2600, AED 2600, TMS 2600} with an Intel® Xeon® E5-2608L v3 with PAA",
+  "ArbOS 7.3 running on a NETSCOUT 2600 Series {APS 2600, AED 2600, TMS 2600} with an Intel® Xeon® E5-2608L v3 without PAA",
+  "ArbOS 7.3 running on a NETSCOUT 8100 Series {AED 8100, TMS 8100} with an Intel® Xeon® Silver 4210T with PAA",
+  "ArbOS 7.3 running on a NETSCOUT 8100 Series {AED 8100, TMS 8100} with an Intel® Xeon® Silver 4210T without PAA",
+  "ArbOS 7.3 running on a NETSCOUT HD1000 Series {AED HD1000, TMS HD1000} with an Intel® Xeon® D-1548 with PAA",
+  "ArbOS 7.3 running on a NETSCOUT HD1000 Series {AED HD1000, TMS HD1000} with an Intel® Xeon® D-1548 without PAA",
+  "ArbOS 7.4 running on a NETSCOUT 8200 Series {AED 8200, TMS 8200} with an Intel® Xeon® Gold 5418Y (Sapphire Rapids) with PAA (single-user mode)",
+  "ArbOS 7.4 running on a NETSCOUT 8200 Series {AED 8200, TMS 8200} with an Intel® Xeon® Gold 5418Y (Sapphire Rapids) without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 1400 Series {1410J} with an Intel® Xeon® Silver 4110 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 1400 Series {1410J} with an Intel® Xeon® Silver 4110 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 2400 Series {2410J} with an Intel® Xeon® Silver 4110 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 2400 Series {2410J} with an Intel® Xeon® Silver 4110 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 2600 Series {2695J} with an Intel® Xeon® Gold 6126 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 2600 Series {2695J} with an Intel® Xeon® Gold 6126 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 4700 Series {4795J} with an Intel® Xeon® Gold 6126 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 4700 Series {4795J} with an Intel® Xeon® Gold 6126 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 4800 Series {4895J} with an Intel® Xeon® Gold 6152 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 4800 Series {4895J} with an Intel® Xeon® Gold 6152 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 6600 Series {6695J} with an Intel® Xeon® Gold 6126 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 6600 Series {6695J} with an Intel® Xeon® Gold 6126 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 690 Series {690J} with an Intel Atom® Processor C3955 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 690 Series {690J} with an Intel Atom® Processor C3955 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 9700 Series {9795J} with an Intel® Xeon® Gold 6126 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 9700 Series {9795J} with an Intel® Xeon® Gold 6126 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 9800 Series {9802J} with an Intel® Xeon® Gold 6152 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 9800 Series {9802J} with an Intel® Xeon® Gold 6152 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 9800 Series {9807J} with an Intel® Xeon® Gold 6152 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 9800 Series {9807J} with an Intel® Xeon® Gold 6152 without PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 9800 Series {9895J} with an Intel® Xeon® Gold 6152 with PAA",
+  "Custom Linux 3.10 running on a NETSCOUT 9800 Series {9895J} with an Intel® Xeon® Gold 6152 without PAA",
+  "Custom Linux 3.7.5 running on a NETSCOUT 3300 Series {3300D} with an Intel® Xeon® E5-2620 v3 with PAA",
+  "Custom Linux 3.7.5 running on a NETSCOUT 3300 Series {3300D} with an Intel® Xeon® E5-2620 v3 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5000 Series {5010} with an Intel Atom® Processor C2538 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5000 Series {5010} with an Intel Atom® Processor C2538 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5000 Series {5010-16X} with an Intel Atom® Processor C2538 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5000 Series {5010-16X} with an Intel Atom® Processor C2538 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5100 Series {5100} with an Intel Atom® Processor C2538 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5100 Series {5100} with an Intel Atom® Processor C2538 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5100 Series {5110} with an Intel Atom® Processor C2538 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5100 Series {5110} with an Intel Atom® Processor C2538 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5100 Series {5120} with an Intel® Xeon® D-1518 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 5100 Series {5120} with an Intel® Xeon® D-1518 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 7000 Series {7010} with an Intel Atom® Processor C2538 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 7000 Series {7010} with an Intel Atom® Processor C2538 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 7100 Series {7100} with an Intel Atom® Processor C2538 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 7100 Series {7100} with an Intel Atom® Processor C2538 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 7100 Series {7110} with an Intel Atom® Processor C2538 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 7100 Series {7110} with an Intel Atom® Processor C2538 without PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 7100 Series {7120} with an Intel® Xeon® D-1518 with PAA",
+  "Custom Linux 4.14.151 running on a NETSCOUT 7100 Series {7120} with an Intel® Xeon® D-1518 without PAA",
+  "Linux 3.10 running on a NETSCOUT PowerEdge R740 {enhanced} with an Intel® Xeon® Gold 6142 with PAA",
+  "Linux 3.10 running on a NETSCOUT PowerEdge R740 {enhanced} with an Intel® Xeon® Gold 6142 without PAA",
+  "Linux 3.10 running on a NETSCOUT PowerEdge R740 {standard} with an Intel® Xeon® Silver 4110 with PAA",
+  "Linux 3.10 running on a NETSCOUT PowerEdge R740 {standard} with an Intel® Xeon® Silver 4110 without PAA",
+  "Timesys Linux 3.8.13 running on a NETSCOUT 3900 Series {3900} with an NXP QorIQ® P4081 without PAA"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength)",
+ "software_versions": "v1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C976",
+   "cavp_id": "31373",
+   "cavp_ref": "C:976"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C976",
+   "cavp_id": "31373",
+   "cavp_ref": "C:976"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C977",
+   "cavp_id": "31374",
+   "cavp_ref": "C:977"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1878",
+   "cavp_id": "32782",
+   "cavp_ref": "C:1878"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1879",
+   "cavp_id": "32783",
+   "cavp_ref": "C:1879"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1880",
+   "cavp_id": "32784",
+   "cavp_ref": "C:1880"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1881",
+   "cavp_id": "32785",
+   "cavp_ref": "C:1881"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C2144",
+   "cavp_id": "33305",
+   "cavp_ref": "C:2144"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1882",
+   "cavp_id": "34491",
+   "cavp_ref": "A:1882"
+  }
+ ],
+ "vendor": "NETSCOUT Systems, Inc.",
+ "vendor_info": {
+  "name": "NETSCOUT Systems, Inc.",
+  "website": "http://www.netscout.com",
+  "address": [
+   "310 Littleton Road",
+   "Westford, MA 01886",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Steve Swidrak"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4138.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January%202022_010222_0702_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/18/2022",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "4/4/2023",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "7/29/2025",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "1/18/2022",
+ "last_updated": "7/29/2025",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4138.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4138,
+  "vendor": "NETSCOUT Systems, Inc.",
+  "module": "NETSCOUT FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/18/2022",
+   "04/04/2023",
+   "07/29/2025"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,104 @@
+{
+ "cavp_id": "34077",
+ "cavp_cert": "A1468",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34077",
+ "implementation": "CyberCogs HSM P11 Crypto extensions",
+ "product_id": "13904",
+ "description": "libZZp11.so implements all the computational and state logic associated with PKCS11, operating on state maintained by ZZslotd. Its implementation is primaily the stock openCryptoki soft-token. Changes from thatcode include bug fixes, enhanced ECC support, SHA-3 support, and tie-ins to the hardware available.",
+ "version": "acvpCertified-93a239afde1ed380b847a878d454b2721ab4d43e-210504",
+ "type": "FIRMWARE",
+ "first_validated": "5/28/2021",
+ "vendor": "CyberCogs Inc.",
+ "vendor_website": "http://www.cybercogs.com",
+ "oes": [
+  {
+   "name": "ARMv8 (Cortex-A53)",
+   "details": [
+    "Processor: ARMv8 (Cortex-A53)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-4096 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-224",
+    "    MAC Salting Methods: random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "    MAC Salting Methods: random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-384",
+    "    MAC Salting Methods: random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512",
+    "    MAC Salting Methods: random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-224",
+    "    MAC Salting Methods: random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-256",
+    "    MAC Salting Methods: random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-384",
+    "    MAC Salting Methods: random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-512",
+    "    MAC Salting Methods: random",
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 1024",
+    "Shared Secret Length: 256-512 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA3-224, HMAC-SHA3-256, HMAC-SHA3-384, HMAC-SHA3-512",
+    "    Supported Lengths: 8, 72, 128, 776, 3456, 4096",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256",
+    "    Supported Lengths: 8, 72, 128, 776, 3456, 4096",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

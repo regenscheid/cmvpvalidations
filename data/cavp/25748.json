@@ -1,0 +1,96 @@
+{
+ "cavp_id": "25748",
+ "cavp_cert": "AES 895",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25748",
+ "implementation": "ArubaOS Kernel",
+ "product_id": "2423",
+ "description": "Aruba's single/multi-radio wireless 802.11 a/b/g/n APs are featured to address the needs of secure, mobile networks of all sizes. They may be configured for enterprise and/or Mesh topologies, or to provide secure remote connectivity across high latency links. Aruba APs support the IEEE 802.1X and 802.11i standards with up to 256-bit AES encryption.",
+ "version": "3.3.2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/16/2008",
+ "vendor": "Aruba Networks, Inc.",
+ "vendor_website": "http://www.arubanetworks.com",
+ "oes": [
+  {
+   "name": "Atheros AR5312",
+   "details": []
+  },
+  {
+   "name": "IDT79RC3234",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 120-240"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 120-240"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,57 @@
+{
+ "cavp_id": "2353",
+ "cavp_cert": "AES 1611",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2353",
+ "implementation": "VersaNode Cryptographic Acceleration Module",
+ "product_id": "7988",
+ "description": "AES hardware enc/dec engine utilized in IEEE 802.15.4 based low-power wireless sensing and control nodes. The implementation is compliant to all security policies stipulated in the IEEE 802.15.4 standard. Wireless nodes ready to be embedded in various commercial and industrial standards based wireless products.",
+ "version": "Freescale MC13224",
+ "type": "HARDWARE",
+ "first_validated": "4/8/2011",
+ "vendor": "Nivis LLC",
+ "vendor_website": "http://www.nivis.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 32, 64, 128",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

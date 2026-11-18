@@ -1,0 +1,69 @@
+{
+ "cavp_id": "9510",
+ "cavp_cert": "KAS 184",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=9510",
+ "implementation": "Primus HSM Cryptographic Library",
+ "product_id": "9632",
+ "description": "Cryptographic library in an embedded environment. Uses hardware accelerator where it fits. Seeds DRBG from TRNG.",
+ "version": "XC7K160T 2.5.3 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "6/15/2018",
+ "vendor": "Securosys SA",
+ "vendor_website": "http://www.securosys.ch",
+ "oes": [
+  {
+   "name": "Marvell Armada XP PJ4Bv7",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC",
+   "oe": 0,
+   "capabilities": [
+    "Scheme:",
+    "  Static Unified:",
+    "    KAS Role: Responder",
+    "    KDF without Key Confirmation:",
+    "      Parameter Set:",
+    "        EB:",
+    "          Hash Algorithm: SHA2-224",
+    "          Curve: P-224",
+    "          MAC Option:",
+    "            HMAC:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "          MAC Option:",
+    "            HMAC:",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "          MAC Option:",
+    "            HMAC:",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521",
+    "          MAC Option:",
+    "            HMAC:"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Key Pair Generation",
+    "Scheme:",
+    "  dhStatic:",
+    "    KAS Role: Responder",
+    "    KDF without Key Confirmation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-512",
+    "          MAC Option:",
+    "            HMAC:"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,39 @@
+{
+ "cavp_id": "33675",
+ "cavp_cert": "A1066",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33675",
+ "implementation": "CryptoServer Se2 DRBG",
+ "product_id": "13563",
+ "description": "DRBG component implements deterministic random bit generation based on SMOS SHA as transition function.",
+ "version": "DRBG_5.6.3.90",
+ "type": "FIRMWARE",
+ "first_validated": "2/25/2021",
+ "vendor": "Utimaco IS GmbH",
+ "vendor_website": "https://hsm.utimaco.com",
+ "oes": [
+  {
+   "name": "Texas Instruments Digital Signal Processor TMS320C6416T",
+   "details": [
+    "processor: Texas Instruments Digital Signal Processor TMS320C6416T"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 512",
+    "    Nonce: 256",
+    "    Personalization String Length: 64",
+    "    Additional Input: 0-4096 Increment 8",
+    "    Returned Bits: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

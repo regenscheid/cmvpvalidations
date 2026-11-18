@@ -1,0 +1,105 @@
+{
+ "cert": 2071,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2071",
+ "module": "ETERNUS DX400/DX8000 Controller Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS Mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A",
+  "Tested: ETERNUS DX410 with VxWorks 6.3",
+  "ETERNUS DX8400 with VxWorks 6.3"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-chip embedded",
+ "description": "ETERNUS DX400/DX8000 Controller Module is a module which manages the whole disk storage system. In order to prevent a data leakage by removal of disks, the disk encryption mechanism encrypts data on the disks. This encryption function is valid if the Disk Encryption mechanism is activated through GUI.",
+ "firmware_versions": "V20L80-1000",
+ "product_url": "http://www.fujitsu.com/global/services/computing/storage",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2542",
+   "cavp_id": "23763",
+   "cavp_ref": "AES:2542"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1207",
+   "cavp_id": "19430",
+   "cavp_ref": "RNG:1207"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2142",
+   "cavp_id": "15703",
+   "cavp_ref": "SHS:2142"
+  }
+ ],
+ "vendor": "Fujitsu limited",
+ "vendor_info": {
+  "name": "Fujitsu limited",
+  "website": "http://www.fujitsu.com",
+  "address": [
+   "4-1-1 Kamikodanaka",
+   "Nakahara-ku",
+   "Kawasaki, Kanagawa 211-8588",
+   "Japan"
+  ],
+  "contacts": [
+   {
+    "name": "Eugene Owens"
+   },
+   {
+    "name": "Hiroyuki Miura"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2071.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0037.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/24/2014",
+   "type": "Initial",
+   "lab": "IT SECURITY CENTER"
+  }
+ ],
+ "first_validated": "1/24/2014",
+ "last_updated": "1/24/2014",
+ "labs": "IT SECURITY CENTER",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2071.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Fujitsu Original Encryption (Encryption/Decryption); AES (Cert. #2542, key wrapping)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2071,
+  "vendor": "Fujitsu limited",
+  "module": "ETERNUS DX400/DX8000 Controller Module",
+  "type": "Firmware",
+  "validation_dates": [
+   "01/24/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

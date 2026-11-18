@@ -1,0 +1,201 @@
+{
+ "cert": 3654,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3654",
+ "module": "FortiGate-6301F/6501F",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the FIPS 140-2 Compliant Operation Section of the Security Policy with the tamper evident seals and entropy token installed as indicated in the Security Policy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The FortiGate-6301F and FortiGate-6501F are multiple chip, standalone cryptographic modules consisting of production grade components contained in a physically protected enclosure in accordance with FIPS 140-2 Level 2 requirements.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #C599 and #C644, key agreement; key establishment methodology provides between 112 and 196 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C644, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "hardware_versions": "C1AG85, C1AG83 with Tamper Evident Seal Kits: FIPS-SEAL-RED",
+ "firmware_versions": "FortiOS 5.6, build4265,190820",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C531",
+   "cavp_id": "30927",
+   "cavp_ref": "C:531"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C599",
+   "cavp_id": "30995",
+   "cavp_ref": "C:599"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C644",
+   "cavp_id": "31040",
+   "cavp_ref": "C:644"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C531",
+   "cavp_id": "30927",
+   "cavp_ref": "C:531"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C599",
+   "cavp_id": "30995",
+   "cavp_ref": "C:599"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C644",
+   "cavp_id": "31040",
+   "cavp_ref": "C:644"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C613",
+   "cavp_id": "31009",
+   "cavp_ref": "C:613"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C531",
+   "cavp_id": "30927",
+   "cavp_ref": "C:531"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C599",
+   "cavp_id": "30995",
+   "cavp_ref": "C:599"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C644",
+   "cavp_id": "31040",
+   "cavp_ref": "C:644"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C531",
+   "cavp_id": "30927",
+   "cavp_ref": "C:531"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C599",
+   "cavp_id": "30995",
+   "cavp_ref": "C:599"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C644",
+   "cavp_id": "31040",
+   "cavp_ref": "C:644"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C644 and HMAC Cert. #C644; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C644; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C531",
+   "cavp_id": "30927",
+   "cavp_ref": "C:531"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C644",
+   "cavp_id": "31040",
+   "cavp_ref": "C:644"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C531",
+   "cavp_id": "30927",
+   "cavp_ref": "C:531"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C599",
+   "cavp_id": "30995",
+   "cavp_ref": "C:599"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C644",
+   "cavp_id": "31040",
+   "cavp_ref": "C:644"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "16 Fitzgerald Road",
+   "Ottawa, ON K2H 8R6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3654.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202020_010620_1115.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/19/2020",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "5/19/2020",
+ "last_updated": "5/19/2020",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3654.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #C599 and #C644, key agreement; key establishment methodology provides between 112 and 196 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C644, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3654,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiGate-6301F/6501F",
+  "type": "Hardware",
+  "validation_dates": [
+   "05/19/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

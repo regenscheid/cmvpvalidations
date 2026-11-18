@@ -1,0 +1,161 @@
+{
+ "cert": 4014,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4014",
+ "module": "MFP Cryptographic Module(A)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 10.3 of the Security Policy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "MFP Cryptographic Module(A) is a cryptographic security chip for encrypting data written to a storage device and other security function of Kyocera multifunction printer. Secure key generation and fast AES encryption/decryption are offered through SATA interface. SecureBoot verifies the integrity of the firmware when the product starts up.",
+ "tested_configurations": [
+  "Kyocera SCH114C"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #C1892 with SP 800-56C, vendor affirmed, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG",
+ "hardware_versions": "VaultIP-2.1.10 and EIP38-3.2",
+ "firmware_versions": "2.2.18",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1892",
+   "cavp_id": "32796",
+   "cavp_ref": "C:1892"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1933",
+   "cavp_id": "32837",
+   "cavp_ref": "C:1933"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1892",
+   "cavp_id": "32796",
+   "cavp_ref": "C:1892"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1892",
+   "cavp_id": "32796",
+   "cavp_ref": "C:1892"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1892",
+   "cavp_id": "32796",
+   "cavp_ref": "C:1892"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1892",
+   "cavp_id": "32796",
+   "cavp_ref": "C:1892"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C1892",
+   "cavp_id": "32796",
+   "cavp_ref": "C:1892"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1892; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1892 and AES Cert. #C1892; key establishment methodology provides 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1892",
+   "cavp_id": "32796",
+   "cavp_ref": "C:1892"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1892",
+   "cavp_id": "32796",
+   "cavp_ref": "C:1892"
+  }
+ ],
+ "vendor": "Kyocera Document Solutions Inc.",
+ "vendor_info": {
+  "name": "Kyocera Document Solutions Inc.",
+  "website": "http://www.kyoceradocumentsolutions.com",
+  "address": [
+   "1-2-28 Tamatsukuri",
+   "Chuo-ku",
+   "Osaka 540-8585",
+   "Osaka",
+   "Japan"
+  ],
+  "contacts": [
+   {
+    "name": "Masaki Sone"
+   },
+   {
+    "name": "Akihiro Kanekawa"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4014.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202021_010921_0733.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/24/2021",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "8/24/2021",
+ "last_updated": "8/24/2021",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4014.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4455"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #C1892 with SP 800-56C, vendor affirmed, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4014,
+  "vendor": "Kyocera Document Solutions Inc.",
+  "module": "MFP Cryptographic Module(A)",
+  "type": "Hardware",
+  "validation_dates": [
+   "08/24/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

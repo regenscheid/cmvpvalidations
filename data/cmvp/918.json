@@ -1,0 +1,118 @@
+{
+ "cert": 918,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/918",
+ "module": "OpenSSL FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and specified in the provided Security Policy. Appendix B of the provided Security Policy specifies the complete set of source files of this module. There shall be no additions, deletions or alterations of this set as used during module build. All source files, including the specified OpenSSL distribution tar file, shall be verified as specified in Appendix B of the provided Security Policy. Installation, protection, and initialization shall be completed as specified in Appendix C of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a FIPS 140-2 non-compliant module.",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The OpenSSL FIPS Object Module is a cryptographic library that can be downloaded from http://www.openssl.org/source/",
+ "tested_configurations": [
+  "SuSE Linux Version 10.2 (gcc Compiler Version 4.1.2)"
+ ],
+ "product_url": "http://www.openssl.org/source/",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 668",
+   "cavp_id": "3749",
+   "cavp_ref": "AES:668"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 352",
+   "cavp_id": "24987",
+   "cavp_ref": "HMAC:352"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 387",
+   "cavp_id": "22286",
+   "cavp_ref": "RNG:387"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 310",
+   "cavp_id": "11177",
+   "cavp_ref": "RSA:310"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 701",
+   "cavp_id": "28763",
+   "cavp_ref": "SHS:701"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 613",
+   "cavp_id": "8115",
+   "cavp_ref": "TDES:613"
+  }
+ ],
+ "vendor": "Open Source Software Institute",
+ "vendor_info": {
+  "name": "Open Source Software Institute",
+  "website": "http://www.oss-institute.org",
+  "address": [
+   "Administrative Office",
+   "P.O. Box 547",
+   "Oxford, MS 38655",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "John Weathersby"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp918.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt918.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/29/2008",
+   "type": "Initial",
+   "lab": "DOMUS"
+  }
+ ],
+ "first_validated": "2/29/2008",
+ "last_updated": "2/29/2008",
+ "labs": "DOMUS",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp918.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DSA (Cert. #250; non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 918,
+  "vendor": "Open Source Software Institute",
+  "module": "OpenSSL FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "02/29/2008"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

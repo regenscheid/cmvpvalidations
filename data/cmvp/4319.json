@@ -1,0 +1,186 @@
+{
+ "cert": 4319,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4319",
+ "module": "Raytheon Cryptographic Module for Java",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Raytheon Cryptographic Module for Java is a standards-based cryptographic engine for native Java environments. The module delivers core cryptographic functions to mobile and server platforms and features robust algorithm support, including Suite B algorithms. Raytheon Cryptographic Module for Java offloads secure key management, data integrity, data at rest encryption, and secure communications to a trusted implementation.",
+ "tested_configurations": [
+  "VMware Photon OS 2.0 with JDK 11 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5 (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG; MD5; RSA (CVL Cert. #A2720, key wrapping; key establishment methodology provides between 150 and 256 bits of encryption strength)",
+ "software_versions": "3.0.2.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A2720; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #A2720; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "SHA3",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "SHA-3-Customized",
+   "cavp_cert": "SHA-3 Cert. #A2720, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A2720",
+   "cavp_id": "35331",
+   "cavp_ref": "A:2720"
+  }
+ ],
+ "vendor": "Raytheon Technologies",
+ "vendor_info": {
+  "name": "Raytheon Technologies",
+  "website": "http://www.rtx.com",
+  "address": [
+   "870 Winter Street",
+   "Waltham, MA 02451",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Gates Hartley"
+   },
+   {
+    "name": "Jesse Morritt"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4319.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202022_021122_1233_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/4/2022",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "10/4/2022",
+ "last_updated": "10/4/2022",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4319.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; MD5; RSA (CVL Cert. #A2720, key wrapping; key establishment methodology provides between 150 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4319,
+  "vendor": "Raytheon Technologies",
+  "module": "Raytheon Cryptographic Module for Java",
+  "type": "Software",
+  "validation_dates": [
+   "10/04/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

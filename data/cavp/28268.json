@@ -1,0 +1,58 @@
+{
+ "cavp_id": "28268",
+ "cavp_cert": "AES 1785",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28268",
+ "implementation": "Luna G4",
+ "product_id": "8149",
+ "description": "The Luna PCM/PCM KE/CA4 offer dedicated hardware key management to protect sensitive cryptographic keys from attack. Digital sign/verify operations are performed in the HSM to increase performance and maintain security. Cryptographic keys are backed up by a FIPS-approved algorithm and can be stored in software or replicated on one or more tokens.",
+ "version": "4.8.7 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/6/2011",
+ "vendor": "SafeNet, Inc.",
+ "vendor_website": "http://www.safenet-inc.com",
+ "oes": [
+  {
+   "name": "StrongARM-11 80200 600 MHz",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 64-128",
+    "    Message Length: 256-131072",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

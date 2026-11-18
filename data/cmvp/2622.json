@@ -1,0 +1,140 @@
+{
+ "cert": 2622,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2622",
+ "module": "SUSE Linux Enterprise Server 12 - NSS Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "SUSE Network Security Services (NSS) is a set of libraries designed to support cross-platform development of security-enabled client and server applications.",
+ "tested_configurations": [
+  "SUSE Linux Enterprise Server 12 running on HP ProLiant DL320e Gen8 without PAA (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "product_url": "http://www.suse.com/products/server/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3452",
+   "cavp_id": "27464",
+   "cavp_ref": "AES:3452"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 846",
+   "cavp_id": "24302",
+   "cavp_ref": "DRBG:846"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 971",
+   "cavp_id": "14589",
+   "cavp_ref": "DSA:971"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 699",
+   "cavp_id": "18346",
+   "cavp_ref": "ECDSA:699"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2198",
+   "cavp_id": "26823",
+   "cavp_ref": "HMAC:2198"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1767",
+   "cavp_id": "11556",
+   "cavp_ref": "RSA:1767"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2848",
+   "cavp_id": "19826",
+   "cavp_ref": "SHS:2848"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1943",
+   "cavp_id": "21239",
+   "cavp_ref": "TDES:1943"
+  }
+ ],
+ "vendor": "SUSE, LLC",
+ "vendor_info": {
+  "name": "SUSE, LLC",
+  "website": "http://www.suse.com",
+  "address": [
+   "10 Canal Park, Suite 200",
+   "Cambridge, Massachusetts 02141",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Thomas Biege"
+   },
+   {
+    "name": "Michael Hager"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2622.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertApril2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/22/2016",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "7/6/2018",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "4/22/2016",
+ "last_updated": "7/6/2018",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2622.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides at least 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2622,
+  "vendor": "SUSE, LLC",
+  "module": "SUSE Linux Enterprise Server 12 - NSS Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/22/2016",
+   "07/06/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

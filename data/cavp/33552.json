@@ -1,0 +1,61 @@
+{
+ "cavp_id": "33552",
+ "cavp_cert": "A951",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33552",
+ "implementation": "AxioCrypto-M235x",
+ "product_id": "12157",
+ "description": "The AxioCrypto Module is firmware module integrated into the TrustZone Secure Partition of Nuvoton M235X Series products.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "1/6/2021",
+ "vendor": "Security Platform Inc.",
+ "vendor_website": "http://www.securityplatform.co.kr",
+ "oes": [
+  {
+   "name": "Nuvoton M235X (Cortex-M23)",
+   "details": [
+    "processor: Nuvoton M235X (Cortex-M23)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256-768 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Partial Public Key Validation",
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: responder"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: literal[475530f22f799d1e3f3e9b2cb912e30e]||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 256",
+    "Shared Secret Length: 256-512 Increment 64",
+    "HMAC Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

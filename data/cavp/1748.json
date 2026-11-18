@@ -1,0 +1,54 @@
+{
+ "cavp_id": "1748",
+ "cavp_cert": "Component 1729",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1748",
+ "implementation": "IOS Common Cryptographic Module (IC2M)",
+ "product_id": "9208",
+ "description": "The IC2M module provides the FIPS validated cryptographic algorithms for services requiring those algorithms. The module does not implement any protocols directly. Instead, it provides the cryptographic primitives and functions to allow IOS to implement those various protocols.",
+ "version": "Rel5 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/23/2018",
+ "vendor": "Cisco Systems, Inc",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "ARMv8",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,159 @@
+{
+ "cert": 4113,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4113",
+ "module": "FortiSandbox-1000F/2000E/3000E",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the FIPS 140-2 Compliant Operation Section of the Security Policy with the tamper evident seals and entropy token installed as indicated in the Security Policy. Authentication at level 3 is only applicable when identity-based authentication is enforced for the User role. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The FortiSandbox-2000E, 1000F and 3000E are multiple chip, standalone cryptographic modules consisting of production grade components contained in a physically protected enclosure in accordance with FIPS 140-2 Level 2 requirements.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #C1988 and #C1989, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1988, key agreement; key establishment methodology provides 128 bits of encryption strength)",
+ "hardware_versions": "FortiSandbox-2000E (C1AG28), FortiSandbox-1000F (C1AH16) and FortiSandbox-3000E (C1AF74) with Tamper Evident Seal Kit: FIPS-SEAL-RED",
+ "firmware_versions": "FortiSandbox 3.1, build 5166",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1909",
+   "cavp_id": "32813",
+   "cavp_ref": "C:1909"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1988",
+   "cavp_id": "32894",
+   "cavp_ref": "C:1988"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1989",
+   "cavp_id": "32895",
+   "cavp_ref": "C:1989"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1988",
+   "cavp_id": "32894",
+   "cavp_ref": "C:1988"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1989",
+   "cavp_id": "32895",
+   "cavp_ref": "C:1989"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1986",
+   "cavp_id": "32892",
+   "cavp_ref": "C:1986"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1988",
+   "cavp_id": "32894",
+   "cavp_ref": "C:1988"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1989",
+   "cavp_id": "32895",
+   "cavp_ref": "C:1989"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1988; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1909 and HMAC Cert. #C1988; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1988",
+   "cavp_id": "32894",
+   "cavp_ref": "C:1988"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1988",
+   "cavp_id": "32894",
+   "cavp_ref": "C:1988"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1989",
+   "cavp_id": "32895",
+   "cavp_ref": "C:1989"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "16 Fitzgerald Road",
+   "Ottawa, ON K2H 8R6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4113.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202021_020122_0905_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/20/2021",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "12/20/2021",
+ "last_updated": "12/20/2021",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4113.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #C1988 and #C1989, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1988, key agreement; key establishment methodology provides 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4113,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiSandbox-1000F/2000E/3000E",
+  "type": "Hardware",
+  "validation_dates": [
+   "12/20/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

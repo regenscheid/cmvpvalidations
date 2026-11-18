@@ -1,0 +1,265 @@
+{
+ "cert": 3893,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3893",
+ "module": "Oracle Linux Unbreakable Enterprise Kernel (UEK 5) Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Oracle Linux 7 NSS Cryptographic Module validated to FIPS 140-2 under Cert. #4586 operating in FIPS mode. The module generates random strings whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Oracle Linux Unbreakable Enterprise Kernel Cryptographic Module provides cryptographic services to applications requiring Kernel level cryptography via the Kernel Crypto API.",
+ "tested_configurations": [
+  "Oracle Linux 7.6 64 bit running on Oracle Server X7-2 with AMD® EPYC® 7551 with PAA",
+  "Oracle Linux 7.6 64 bit running on Oracle Server X7-2 with AMD® EPYC® 7551 without PAA (single-user mode)",
+  "Oracle Linux 7.6 64 bit running on Oracle Server X7-2 with Intel® Xeon® Silver 4114 with PAA",
+  "Oracle Linux 7.6 64 bit running on Oracle Server X7-2 with Intel® Xeon® Silver 4114 without PAA"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "R7-5.0.0",
+ "product_url": "http://www.oracle.com/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1733",
+   "cavp_id": "32544",
+   "cavp_ref": "C:1733"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1734",
+   "cavp_id": "32545",
+   "cavp_ref": "C:1734"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1735",
+   "cavp_id": "32546",
+   "cavp_ref": "C:1735"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1736",
+   "cavp_id": "32547",
+   "cavp_ref": "C:1736"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1733",
+   "cavp_id": "32544",
+   "cavp_ref": "C:1733"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1734",
+   "cavp_id": "32545",
+   "cavp_ref": "C:1734"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1735",
+   "cavp_id": "32546",
+   "cavp_ref": "C:1735"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1738",
+   "cavp_id": "32549",
+   "cavp_ref": "C:1738"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1739",
+   "cavp_id": "32550",
+   "cavp_ref": "C:1739"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1740",
+   "cavp_id": "32551",
+   "cavp_ref": "C:1740"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1744",
+   "cavp_id": "32555",
+   "cavp_ref": "C:1744"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1738",
+   "cavp_id": "32549",
+   "cavp_ref": "C:1738"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1739",
+   "cavp_id": "32550",
+   "cavp_ref": "C:1739"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1740",
+   "cavp_id": "32551",
+   "cavp_ref": "C:1740"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1744",
+   "cavp_id": "32555",
+   "cavp_ref": "C:1744"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1733, #C1734, #C1735 and #C1736; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1733, #C1734, #C1735 and #C1736 and HMAC Certs. #C1738, #C1739, #C1740 and #C1744; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1738",
+   "cavp_id": "32549",
+   "cavp_ref": "C:1738"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1739",
+   "cavp_id": "32550",
+   "cavp_ref": "C:1739"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1740",
+   "cavp_id": "32551",
+   "cavp_ref": "C:1740"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1744",
+   "cavp_id": "32555",
+   "cavp_ref": "C:1744"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1738",
+   "cavp_id": "32549",
+   "cavp_ref": "C:1738"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1739",
+   "cavp_id": "32550",
+   "cavp_ref": "C:1739"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1740",
+   "cavp_id": "32551",
+   "cavp_ref": "C:1740"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1744",
+   "cavp_id": "32555",
+   "cavp_ref": "C:1744"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1737",
+   "cavp_id": "32548",
+   "cavp_ref": "C:1737"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1741",
+   "cavp_id": "32552",
+   "cavp_ref": "C:1741"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Honglin Su"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3893.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202021_030521_0757_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/15/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "1/30/2022",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "9/28/2023",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "4/15/2021",
+ "last_updated": "9/28/2023",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3893.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #4586"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3893,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Linux Unbreakable Enterprise Kernel (UEK 5) Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/15/2021",
+   "01/30/2022",
+   "09/28/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

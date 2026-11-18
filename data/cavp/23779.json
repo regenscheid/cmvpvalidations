@@ -1,0 +1,60 @@
+{
+ "cavp_id": "23779",
+ "cavp_cert": "AES 3582",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=23779",
+ "implementation": "mToken CryptoID",
+ "product_id": "1118",
+ "description": "mToken CryptoID is designed based on a secure smartcard chip that utilizes the in-built mCOS to communicate with computer device via USB interface in a \"plug and play\" manner. It can realize various Public Key Infrastructure (PKI) applications including digital signature, online authentications, online transactions, software security, etc.",
+ "version": "SCC-X",
+ "type": "HARDWARE",
+ "first_validated": "11/6/2015",
+ "vendor": "Century Longmai Technology Co. Ltd",
+ "vendor_website": "http://www.longmai.net",
+ "oes": [
+  {
+   "name": "mToken CryptoID",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 0-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

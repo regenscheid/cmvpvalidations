@@ -1,0 +1,52 @@
+{
+ "cavp_id": "21231",
+ "cavp_cert": "RSA 1019",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21231",
+ "implementation": "TOP V2",
+ "product_id": "117",
+ "description": "This module is based on a Java Card platform (TOP DL V2) with 128K EEPROM memory available. The Cryptographic Module provides dual interfaces (i.e. contact and contact-less) where the same security level is achieved.",
+ "version": "Version #11-M1005011+Softmask V04 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/21/2012",
+ "vendor": "Gemalto",
+ "vendor_website": "http://www.gemalto.com",
+ "oes": [
+  {
+   "name": "Infineon SLE66CLX1280PE",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

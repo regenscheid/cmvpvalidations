@@ -1,0 +1,44 @@
+{
+ "cavp_id": "29668",
+ "cavp_cert": "AES 3357",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=29668",
+ "implementation": "TS1150 AES-GCM Read",
+ "product_id": "7031",
+ "description": "The hardware ASIC implementation provides AES-GCM decryption.",
+ "version": "9626122",
+ "type": "HARDWARE",
+ "first_validated": "5/8/2015",
+ "vendor": "IBM",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "TS1150 AES-GCM Read",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 128, 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

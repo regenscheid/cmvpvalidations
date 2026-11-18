@@ -1,0 +1,41 @@
+{
+ "cavp_id": "12559",
+ "cavp_cert": "AES 1021",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12559",
+ "implementation": "3eTI CryptoLib (Kernel Module) Algorithm Implementation",
+ "product_id": "2651",
+ "description": "Algorithms listed are used to encrypt and hash data packets in kernel space.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/25/2009",
+ "vendor": "3e Technologies International, Inc.",
+ "vendor_website": "http://www.3eti.com",
+ "oes": [
+  {
+   "name": "Intel XScale",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 176-240"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

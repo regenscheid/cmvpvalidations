@@ -1,0 +1,124 @@
+{
+ "cert": 4068,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4068",
+ "module": "Unisys Linux Kernel Cryptographic API Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Unisys Linux strongSwan Cryptographic Module validated to FIPS 140-2 under Cert. #3971 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The module is a software-only cryptographic module that comprises a set of Linux kernel modules; this set defines the module's cryptographic boundary. It provides cryptographic functionality for any application that calls into it.",
+ "tested_configurations": [
+  "Ubuntu 18.04 LTS server edition running on a Dell PowerEdge R640 Server with an Intel Xeon Gold 5115 with PAA",
+  "Ubuntu 18.04 LTS server edition running on a Dell PowerEdge R640 Server with an Intel Xeon Gold 5115 without PAA (single-user mode)"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C873",
+   "cavp_id": "31269",
+   "cavp_ref": "C:873"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1012",
+   "cavp_id": "31409",
+   "cavp_ref": "C:1012"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C873",
+   "cavp_id": "31269",
+   "cavp_ref": "C:873"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C873",
+   "cavp_id": "31269",
+   "cavp_ref": "C:873"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C873",
+   "cavp_id": "31269",
+   "cavp_ref": "C:873"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C873",
+   "cavp_id": "31269",
+   "cavp_ref": "C:873"
+  }
+ ],
+ "vendor": "Unisys Corporation",
+ "vendor_info": {
+  "name": "Unisys Corporation",
+  "website": "http://www.unisys.com",
+  "address": [
+   "801 Lakeview Drive",
+   "Suite 100",
+   "Blue Bell, PA 19422",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mark K Vallevand"
+   },
+   {
+    "name": "Karl Dehmelt"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4068.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November%202021_011221_0923_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/9/2021",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "11/9/2021",
+ "last_updated": "11/9/2021",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4068.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #3971"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4068,
+  "vendor": "Unisys Corporation",
+  "module": "Unisys Linux Kernel Cryptographic API Module",
+  "type": "Software",
+  "validation_dates": [
+   "11/09/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

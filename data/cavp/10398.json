@@ -1,0 +1,93 @@
+{
+ "cavp_id": "10398",
+ "cavp_cert": "AES 4366",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10398",
+ "implementation": "Panasonic Cryptographic Module",
+ "product_id": "6119",
+ "description": "Panasonic Cryptographic Module provides high performance cryptographic processing",
+ "version": "1.04",
+ "type": "SOFTWARE",
+ "first_validated": "1/27/2017",
+ "vendor": "Panasonic Corporation",
+ "vendor_website": "http://www.panasonic.com/global/home.html",
+ "oes": [
+  {
+   "name": "Linux 3.13 32bit on Intel Core i7 without AES-NI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 104, 128, 256, 408",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

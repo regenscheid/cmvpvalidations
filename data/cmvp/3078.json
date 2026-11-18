@@ -1,0 +1,145 @@
+{
+ "cert": 3078,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3078",
+ "module": "TrustedKeep Encryption Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode as assumed by the Crypto Officer role and as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from the procedures outlined in the Security Policy will result in a non FIPS 140-2 compliant module.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "TrustedKeep is a secure object storage and sharing solution, providing robust access controls around your objects and securing them both in transit and at rest. It is designed from the ground up for object-level encryption, assigning a unique key to each object being stored, and capable of managing billions of objects in a single cluster. TrustedKeep handles all encryption and decryption at the boundaries, maintaining control at all times over key material, so that engineering mistakes do not result in key material (or sensitive data) being swapped to disk or left in memory.",
+ "tested_configurations": [
+  "MacBook Pro running on Intel Core i7 on CentOS 7.3 (gcc Compiler Version 4.8.5) with PAA",
+  "MacBook Pro running on Intel Core i7 on CentOS 7.3 (gcc Compiler Version 4.8.5) without PAA. (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #1295, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength)",
+ "software_versions": "1.8.3",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4637",
+   "cavp_id": "7195",
+   "cavp_ref": "AES:4637"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "Vendor Affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1295",
+   "cavp_id": "4418",
+   "cavp_ref": "Component:1295"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1563",
+   "cavp_id": "28048",
+   "cavp_ref": "DRBG:1563"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1227",
+   "cavp_id": "8692",
+   "cavp_ref": "DSA:1227"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1142",
+   "cavp_id": "6151",
+   "cavp_ref": "ECDSA:1142"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3070",
+   "cavp_id": "828",
+   "cavp_ref": "HMAC:3070"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2532",
+   "cavp_id": "10549",
+   "cavp_ref": "RSA:2532"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3801",
+   "cavp_id": "28392",
+   "cavp_ref": "SHS:3801"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2466",
+   "cavp_id": "19133",
+   "cavp_ref": "TDES:2466"
+  }
+ ],
+ "vendor": "Trusted Concepts, Inc.",
+ "vendor_info": {
+  "name": "Trusted Concepts, Inc.",
+  "website": "http://www.trustedconcepts.com",
+  "address": [
+   "205 Van Buren St.",
+   "Suite 440",
+   "Herndon, VA 20170",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Chris Greenlee"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3078.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/11/2017",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/11/2017",
+ "last_updated": "12/11/2017",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3078.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #1295, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3078,
+  "vendor": "Trusted Concepts, Inc.",
+  "module": "TrustedKeep Encryption Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/11/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

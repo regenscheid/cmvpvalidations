@@ -1,0 +1,47 @@
+{
+ "cavp_id": "15498",
+ "cavp_cert": "AES 3940",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=15498",
+ "implementation": "Myna AES in Hardware",
+ "product_id": "5378",
+ "description": "AES encryption and decryption core of the controller ASIC \"Myna\" in Seagate's Self-Encrypting Drives (SEDs).",
+ "version": "Myna",
+ "type": "HARDWARE",
+ "first_validated": "4/15/2016",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com",
+ "oes": [
+  {
+   "name": "Myna AES in Hardware",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full, Partial"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,52 @@
+{
+ "cavp_id": "24366",
+ "cavp_cert": "AES 4399",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24366",
+ "implementation": "CN6100 Ethernet Crypto Module",
+ "product_id": "6190",
+ "description": "The CN6100 Ethernet Crypto Module is a cryptographic accelerator that contains FIPS 140-2 approved cryptographic algorithms. This module provides encryption and TRANSEC (Traffic Flow Security) services for the CN6100 Series Encryptors.",
+ "version": "1.7 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/28/2017",
+ "vendor": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet)",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "Xilinx XC6VLX195T",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 368, 384, 1016, 1024",
+    "AAD Length: 112, 128, 640, 688"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

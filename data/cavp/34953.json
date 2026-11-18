@@ -1,0 +1,49 @@
+{
+ "cavp_id": "34953",
+ "cavp_cert": "A2344",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34953",
+ "implementation": "Dynamic Key Traffic Encryption",
+ "product_id": "14837",
+ "description": "The Comtech TRANSEC features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via Comtech Satellite Modems, and firmware to provide the cryptographic functions needed to act as an endpoint for secure TLS- and SSH-based M&C traffic.",
+ "version": "a82c3f616dcb725d1a397679e7e4bf9bddd4f8c5523b5064e2633a39eac7c75c",
+ "type": "FIRMWARE",
+ "first_validated": "2/16/2022",
+ "vendor": "Comtech Satellite Network Technologies, Inc.",
+ "vendor_website": "http://www.comtechefdata.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon III CN7130",
+   "details": [
+    "processor: Cavium Octeon III CN7130"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512",
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 512",
+    "Shared Secret Length: 512"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

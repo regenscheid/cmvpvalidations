@@ -1,0 +1,42 @@
+{
+ "cavp_id": "13505",
+ "cavp_cert": "AES 2057",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13505",
+ "implementation": "Cat4K ASIC Algorithm Implementation",
+ "product_id": "248",
+ "description": "ASIC cryptographic implementation used within Cisco Cat4K platform.",
+ "version": "2.1",
+ "type": "HARDWARE",
+ "first_validated": "6/13/2012",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 1024",
+    "AAD Length: 160, 728"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

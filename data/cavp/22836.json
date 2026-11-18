@@ -1,0 +1,62 @@
+{
+ "cavp_id": "22836",
+ "cavp_cert": "Component 1816",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22836",
+ "implementation": "Oracle Linux OpenSSL with AESNI, SHA1 AVX, SHA2 ASM",
+ "product_id": "9341",
+ "description": "Oracle Linux OpenSSL Cryptographic Module is a software module supporting FIPS 140-2-approved cryptographic algorithms for general use by vendors.",
+ "version": "R6-1.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "3/30/2018",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 6.9 64 bit on Intel(R) Xeon(R) Silver 4114",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Public Key Regeneration",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EB:",
+    "          Hash Algorithm: SHA2-224",
+    "          Curve: P-224",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Public Key Regeneration",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

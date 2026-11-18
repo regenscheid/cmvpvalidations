@@ -1,0 +1,183 @@
+{
+ "cert": 4249,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4249",
+ "module": "Nutanix Cryptographic Module for OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Nutanix Cryptographic Module for OpenSSL is a cryptographic software library, designated as a multi-chip standalone embodiment, and used in Nutanix, Inc. solutions to provide FIPS 140-2 Approved cryptographic algorithms and TLS secure communication.",
+ "tested_configurations": [
+  "CentOS 7.9 on Nutanix Acropolis Hypervisor (AHV) 7.1.1 running on a Nutanix NX-3360-G7 (CVM) with an Intel® Xeon® Gold 6234 with PAA",
+  "CentOS 7.9 on Nutanix Acropolis Hypervisor (AHV) 7.1.1 running on a Nutanix NX-3360-G7 (CVM) with an Intel® Xeon® Gold 6234 without PAA (single-user mode)",
+  "CentOS 7.9 running on a Nutanix NX-3360-G7 (CVM) with an Intel® Xeon® Gold 6234 with PAA",
+  "CentOS 7.9 running on a Nutanix NX-3360-G7 (CVM) with an Intel® Xeon® Gold 6234 without PAA"
+ ],
+ "software_versions": "6.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Cert. #A1403, CVL Cert. #A1403",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A1403; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A1403 and HMAC Cert. #A1403; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  }
+ ],
+ "vendor": "Nutanix, Inc.",
+ "vendor_info": {
+  "name": "Nutanix, Inc.",
+  "website": "http://www.nutanix.com",
+  "address": [
+   "1740 Technology Drive",
+   "Suite 150",
+   "San Jose, CA 95110",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Matt Keller"
+   },
+   {
+    "name": "Ashutosh Pangasa"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4249.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June%202022_010722_0704_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/13/2022",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "5/11/2023",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "6/27/2023",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "6/13/2022",
+ "last_updated": "6/27/2023",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4249.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4249,
+  "vendor": "Nutanix, Inc.",
+  "module": "Nutanix Cryptographic Module for OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "06/13/2022",
+   "05/11/2023",
+   "06/27/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

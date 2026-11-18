@@ -1,0 +1,48 @@
+{
+ "cavp_id": "8109",
+ "cavp_cert": "AES 4111",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=8109",
+ "implementation": "Aegis Crypto Lib",
+ "product_id": "5715",
+ "description": "Aegis Crypto Lib provides general encryption/decryption services, Random number generator, Firmware sign verification, Encryption key confidentiality and integrity check, Security parameter integrity check services to Aegis Firmware on Micron SSD platforms.",
+ "version": "v1.3 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/30/2016",
+ "vendor": "Micron Technology, Inc.",
+ "vendor_website": "http://www.Micron.com",
+ "oes": [
+  {
+   "name": "Marvell 88SS1074 (ARM v5) Dual Core",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher, Inverse",
+    "Key Length: 256",
+    "Payload Length: 128, 192, 320, 512, 576"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

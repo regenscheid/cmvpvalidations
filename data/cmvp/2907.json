@@ -1,0 +1,736 @@
+{
+ "cert": 2907,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2907",
+ "module": "Ubuntu OpenSSH Client Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Ubuntu OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #2888 [1][2] and #3725 [3] operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Ubuntu OpenSSH Client cryptographic module provides the client-side component for an SSH protocol version 2 protected communication channel. Its cryptographic mechanisms use the OpenSSL library in FIPS 140-2 mode.",
+ "tested_configurations": [
+  "Ubuntu 16.04 LTS 64-bit Little Endian running on IBM Power System 8001-22C with PAA [1][2]",
+  "Ubuntu 16.04 LTS 64-bit Little Endian running on IBM Power System 8001-22C without PAA [1][2]",
+  "Ubuntu 16.04 LTS 64-bit Little Endian running on IBM Power System 8247-22L with PAA [1][2]",
+  "Ubuntu 16.04 LTS 64-bit Little Endian running on IBM Power System 8247-22L without PAA [1][2]",
+  "Ubuntu 16.04 LTS 64-bit Little Endian running on IBM Power System 8335-GTB with PAA [1][2]",
+  "Ubuntu 16.04 LTS 64-bit Little Endian running on IBM Power System 8335-GTB without PAA [1][2]",
+  "Ubuntu 16.04 LTS 64-bit running on IBM z13 with PAI [1][2]",
+  "Ubuntu 16.04 LTS 64-bit running on IBM z13 without PAI [1][2] (single-user mode)",
+  "Ubuntu 16.04 LTS 64-bit running on Supermicro SYS-5018R-WR with PAA [1][2][3]",
+  "Ubuntu 16.04 LTS 64-bit running on Supermicro SYS-5018R-WR without PAA [1][2][3]"
+ ],
+ "software_versions": "1.0[1], 1.1[2] and 1.2[3]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4354",
+   "cavp_id": "22604",
+   "cavp_ref": "AES:4354"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4355",
+   "cavp_id": "19477",
+   "cavp_ref": "AES:4355"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4356",
+   "cavp_id": "24668",
+   "cavp_ref": "AES:4356"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4357",
+   "cavp_id": "22310",
+   "cavp_ref": "AES:4357"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4358",
+   "cavp_id": "22108",
+   "cavp_ref": "AES:4358"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4359",
+   "cavp_id": "10210",
+   "cavp_ref": "AES:4359"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4360",
+   "cavp_id": "17238",
+   "cavp_ref": "AES:4360"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4361",
+   "cavp_id": "18",
+   "cavp_ref": "AES:4361"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1258",
+   "cavp_id": "31664",
+   "cavp_ref": "C:1258"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1259",
+   "cavp_id": "31665",
+   "cavp_ref": "C:1259"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1260",
+   "cavp_id": "31666",
+   "cavp_ref": "C:1260"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1261",
+   "cavp_id": "31667",
+   "cavp_ref": "C:1261"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1264",
+   "cavp_id": "31670",
+   "cavp_ref": "C:1264"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1265",
+   "cavp_id": "31671",
+   "cavp_ref": "C:1265"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1266",
+   "cavp_id": "31672",
+   "cavp_ref": "C:1266"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1267",
+   "cavp_id": "31673",
+   "cavp_ref": "C:1267"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1270",
+   "cavp_id": "31676",
+   "cavp_ref": "C:1270"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1053",
+   "cavp_id": "25148",
+   "cavp_ref": "Component:1053"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1054",
+   "cavp_id": "12479",
+   "cavp_ref": "Component:1054"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1056",
+   "cavp_id": "20736",
+   "cavp_ref": "Component:1056"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1057",
+   "cavp_id": "22760",
+   "cavp_ref": "Component:1057"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1059",
+   "cavp_id": "8633",
+   "cavp_ref": "Component:1059"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1060",
+   "cavp_id": "4191",
+   "cavp_ref": "Component:1060"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1062",
+   "cavp_id": "10212",
+   "cavp_ref": "Component:1062"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1063",
+   "cavp_id": "21524",
+   "cavp_ref": "Component:1063"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1065",
+   "cavp_id": "19896",
+   "cavp_ref": "Component:1065"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1067",
+   "cavp_id": "9943",
+   "cavp_ref": "Component:1067"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1068",
+   "cavp_id": "7395",
+   "cavp_ref": "Component:1068"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1069",
+   "cavp_id": "20872",
+   "cavp_ref": "Component:1069"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1085",
+   "cavp_id": "25590",
+   "cavp_ref": "Component:1085"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1086",
+   "cavp_id": "16619",
+   "cavp_ref": "Component:1086"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1087",
+   "cavp_id": "3293",
+   "cavp_ref": "Component:1087"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1088",
+   "cavp_id": "2014",
+   "cavp_ref": "Component:1088"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1089",
+   "cavp_id": "20440",
+   "cavp_ref": "Component:1089"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1090",
+   "cavp_id": "29009",
+   "cavp_ref": "Component:1090"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1091",
+   "cavp_id": "23189",
+   "cavp_ref": "Component:1091"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1269",
+   "cavp_id": "31675",
+   "cavp_ref": "C:1269"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1304",
+   "cavp_id": "31710",
+   "cavp_ref": "C:1304"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1305",
+   "cavp_id": "31711",
+   "cavp_ref": "C:1305"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1390",
+   "cavp_id": "14266",
+   "cavp_ref": "DRBG:1390"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1391",
+   "cavp_id": "14565",
+   "cavp_ref": "DRBG:1391"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1392",
+   "cavp_id": "742",
+   "cavp_ref": "DRBG:1392"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1393",
+   "cavp_id": "29428",
+   "cavp_ref": "DRBG:1393"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1394",
+   "cavp_id": "24809",
+   "cavp_ref": "DRBG:1394"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1395",
+   "cavp_id": "19792",
+   "cavp_ref": "DRBG:1395"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1396",
+   "cavp_id": "28937",
+   "cavp_ref": "DRBG:1396"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1397",
+   "cavp_id": "22598",
+   "cavp_ref": "DRBG:1397"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1269",
+   "cavp_id": "31675",
+   "cavp_ref": "C:1269"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1304",
+   "cavp_id": "31710",
+   "cavp_ref": "C:1304"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1305",
+   "cavp_id": "31711",
+   "cavp_ref": "C:1305"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1156",
+   "cavp_id": "17246",
+   "cavp_ref": "DSA:1156"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1157",
+   "cavp_id": "11472",
+   "cavp_ref": "DSA:1157"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1158",
+   "cavp_id": "12917",
+   "cavp_ref": "DSA:1158"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1159",
+   "cavp_id": "14",
+   "cavp_ref": "DSA:1159"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1160",
+   "cavp_id": "4131",
+   "cavp_ref": "DSA:1160"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1161",
+   "cavp_id": "26529",
+   "cavp_ref": "DSA:1161"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1162",
+   "cavp_id": "16775",
+   "cavp_ref": "DSA:1162"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1269",
+   "cavp_id": "31675",
+   "cavp_ref": "C:1269"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1304",
+   "cavp_id": "31710",
+   "cavp_ref": "C:1304"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1305",
+   "cavp_id": "31711",
+   "cavp_ref": "C:1305"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1031",
+   "cavp_id": "4533",
+   "cavp_ref": "ECDSA:1031"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1032",
+   "cavp_id": "7550",
+   "cavp_ref": "ECDSA:1032"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1033",
+   "cavp_id": "20028",
+   "cavp_ref": "ECDSA:1033"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1034",
+   "cavp_id": "23677",
+   "cavp_ref": "ECDSA:1034"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1035",
+   "cavp_id": "30354",
+   "cavp_ref": "ECDSA:1035"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1036",
+   "cavp_id": "10162",
+   "cavp_ref": "ECDSA:1036"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1037",
+   "cavp_id": "15156",
+   "cavp_ref": "ECDSA:1037"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1269",
+   "cavp_id": "31675",
+   "cavp_ref": "C:1269"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1304",
+   "cavp_id": "31710",
+   "cavp_ref": "C:1304"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1305",
+   "cavp_id": "31711",
+   "cavp_ref": "C:1305"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2895",
+   "cavp_id": "18418",
+   "cavp_ref": "HMAC:2895"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2896",
+   "cavp_id": "10693",
+   "cavp_ref": "HMAC:2896"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2897",
+   "cavp_id": "16986",
+   "cavp_ref": "HMAC:2897"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2898",
+   "cavp_id": "25787",
+   "cavp_ref": "HMAC:2898"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2899",
+   "cavp_id": "2444",
+   "cavp_ref": "HMAC:2899"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2900",
+   "cavp_id": "30164",
+   "cavp_ref": "HMAC:2900"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2901",
+   "cavp_id": "8199",
+   "cavp_ref": "HMAC:2901"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1269",
+   "cavp_id": "31675",
+   "cavp_ref": "C:1269"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1304",
+   "cavp_id": "31710",
+   "cavp_ref": "C:1304"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1305",
+   "cavp_id": "31711",
+   "cavp_ref": "C:1305"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2351",
+   "cavp_id": "25585",
+   "cavp_ref": "RSA:2351"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2352",
+   "cavp_id": "3869",
+   "cavp_ref": "RSA:2352"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2353",
+   "cavp_id": "948",
+   "cavp_ref": "RSA:2353"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2354",
+   "cavp_id": "3194",
+   "cavp_ref": "RSA:2354"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2355",
+   "cavp_id": "21401",
+   "cavp_ref": "RSA:2355"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2356",
+   "cavp_id": "8886",
+   "cavp_ref": "RSA:2356"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2357",
+   "cavp_id": "9019",
+   "cavp_ref": "RSA:2357"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1269",
+   "cavp_id": "31675",
+   "cavp_ref": "C:1269"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1304",
+   "cavp_id": "31710",
+   "cavp_ref": "C:1304"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1305",
+   "cavp_id": "31711",
+   "cavp_ref": "C:1305"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3593",
+   "cavp_id": "936",
+   "cavp_ref": "SHS:3593"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3594",
+   "cavp_id": "14800",
+   "cavp_ref": "SHS:3594"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3595",
+   "cavp_id": "1248",
+   "cavp_ref": "SHS:3595"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3596",
+   "cavp_id": "10696",
+   "cavp_ref": "SHS:3596"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3597",
+   "cavp_id": "17893",
+   "cavp_ref": "SHS:3597"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3598",
+   "cavp_id": "8344",
+   "cavp_ref": "SHS:3598"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3599",
+   "cavp_id": "23855",
+   "cavp_ref": "SHS:3599"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1269",
+   "cavp_id": "31675",
+   "cavp_ref": "C:1269"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1304",
+   "cavp_id": "31710",
+   "cavp_ref": "C:1304"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1305",
+   "cavp_id": "31711",
+   "cavp_ref": "C:1305"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2355",
+   "cavp_id": "15805",
+   "cavp_ref": "TDES:2355"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2356",
+   "cavp_id": "4187",
+   "cavp_ref": "TDES:2356"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2357",
+   "cavp_id": "11314",
+   "cavp_ref": "TDES:2357"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1257",
+   "cavp_id": "31663",
+   "cavp_ref": "C:1257"
+  }
+ ],
+ "vendor": "Canonical Ltd.",
+ "vendor_info": {
+  "name": "Canonical Ltd.",
+  "website": "http://www.canonical.com",
+  "address": [
+   "5th floor, Blue Fin Building",
+   "110 Southwark Street",
+   "London SE1 0SU",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "Canonical Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2907.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMay2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/10/2017",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "8/9/2019",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "3/23/2021",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "10/18/2021",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "5/10/2017",
+ "last_updated": "10/18/2021",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2907.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #2888",
+  "Other Algorithms": "Diffie-Hellman (CVL Certs. #1053, #1056, #1059, #1062, #1065, #1067, #1069, #C1269, #C1304 and #C1305 with CVL Certs. #1085, #1086, #1087, #1088, #1089, #1090 #1091 key agreement; key establishment methodology provides between 112 and 192 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1053, #1054, #1056, #1057, #1059, #1060, #1063, #1065, #1067, #1068, #1069, #C1269, #C1304 and #C1305 with CVL Certs. #1085, #1086, #1087, #1088, #1089, #1090 and #1091 key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2907,
+  "vendor": "Canonical Ltd.",
+  "module": "Ubuntu OpenSSH Client Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/10/2017",
+   "08/09/2019",
+   "03/23/2021",
+   "10/18/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

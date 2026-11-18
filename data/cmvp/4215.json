@@ -1,0 +1,634 @@
+{
+ "cert": 4215,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4215",
+ "module": "Oracle Linux 8 OpenSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Oracle Linux OpenSSL Cryptographic Module is a software module supporting FIPS 140-2 approved cryptographic algorithms for general use by vendors.",
+ "tested_configurations": [
+  "Oracle Linux 8.4 64 bit running on Oracle Server A1-2C with Ampere(R) Altra(R) Neoverse-N1 with PAA",
+  "Oracle Linux 8.4 64 bit running on Oracle Server A1-2C with Ampere(R) Altra(R) Neoverse-N1 without PAA (single-user mode)",
+  "Oracle Linux 8.4 64 bit running on Oracle Server E1-2C with AMD EPYC(TM) 7551 with PAA",
+  "Oracle Linux 8.4 64 bit running on Oracle Server E1-2C with AMD EPYC(TM) 7551 without PAA",
+  "Oracle Linux 8.4 64 bit running on Oracle Server X7-2C with Intel(R) Xeon(R) Platinum 8167M with PAA",
+  "Oracle Linux 8.4 64 bit running on Oracle Server X7-2C with Intel(R) Xeon(R) Platinum 8167M without PAA"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "R8-8.4.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1673",
+   "cavp_id": "34282",
+   "cavp_ref": "A:1673"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1674",
+   "cavp_id": "34283",
+   "cavp_ref": "A:1674"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1675",
+   "cavp_id": "34284",
+   "cavp_ref": "A:1675"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1677",
+   "cavp_id": "34286",
+   "cavp_ref": "A:1677"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1678",
+   "cavp_id": "34287",
+   "cavp_ref": "A:1678"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1679",
+   "cavp_id": "34288",
+   "cavp_ref": "A:1679"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1680",
+   "cavp_id": "34289",
+   "cavp_ref": "A:1680"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1685",
+   "cavp_id": "34294",
+   "cavp_ref": "A:1685"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1686",
+   "cavp_id": "34295",
+   "cavp_ref": "A:1686"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1687",
+   "cavp_id": "34296",
+   "cavp_ref": "A:1687"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1688",
+   "cavp_id": "34297",
+   "cavp_ref": "A:1688"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1689",
+   "cavp_id": "34298",
+   "cavp_ref": "A:1689"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1690",
+   "cavp_id": "34299",
+   "cavp_ref": "A:1690"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1691",
+   "cavp_id": "34300",
+   "cavp_ref": "A:1691"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1692",
+   "cavp_id": "34301",
+   "cavp_ref": "A:1692"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1693",
+   "cavp_id": "34302",
+   "cavp_ref": "A:1693"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2139",
+   "cavp_id": "34748",
+   "cavp_ref": "A:2139"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2141",
+   "cavp_id": "34750",
+   "cavp_ref": "A:2141"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2142",
+   "cavp_id": "34751",
+   "cavp_ref": "A:2142"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2144",
+   "cavp_id": "34753",
+   "cavp_ref": "A:2144"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2145",
+   "cavp_id": "34754",
+   "cavp_ref": "A:2145"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2146",
+   "cavp_id": "34755",
+   "cavp_ref": "A:2146"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1677",
+   "cavp_id": "34286",
+   "cavp_ref": "A:1677"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1678",
+   "cavp_id": "34287",
+   "cavp_ref": "A:1678"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1679",
+   "cavp_id": "34288",
+   "cavp_ref": "A:1679"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1680",
+   "cavp_id": "34289",
+   "cavp_ref": "A:1680"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1694",
+   "cavp_id": "34303",
+   "cavp_ref": "A:1694"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1695",
+   "cavp_id": "34304",
+   "cavp_ref": "A:1695"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1696",
+   "cavp_id": "34305",
+   "cavp_ref": "A:1696"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1697",
+   "cavp_id": "34306",
+   "cavp_ref": "A:1697"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2143",
+   "cavp_id": "34752",
+   "cavp_ref": "A:2143"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1673",
+   "cavp_id": "34282",
+   "cavp_ref": "A:1673"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1674",
+   "cavp_id": "34283",
+   "cavp_ref": "A:1674"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1675",
+   "cavp_id": "34284",
+   "cavp_ref": "A:1675"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2139",
+   "cavp_id": "34748",
+   "cavp_ref": "A:2139"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2141",
+   "cavp_id": "34750",
+   "cavp_ref": "A:2141"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2142",
+   "cavp_id": "34751",
+   "cavp_ref": "A:2142"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1694",
+   "cavp_id": "34303",
+   "cavp_ref": "A:1694"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1695",
+   "cavp_id": "34304",
+   "cavp_ref": "A:1695"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1696",
+   "cavp_id": "34305",
+   "cavp_ref": "A:1696"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1697",
+   "cavp_id": "34306",
+   "cavp_ref": "A:1697"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1683",
+   "cavp_id": "34292",
+   "cavp_ref": "A:1683"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1694",
+   "cavp_id": "34303",
+   "cavp_ref": "A:1694"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1695",
+   "cavp_id": "34304",
+   "cavp_ref": "A:1695"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1696",
+   "cavp_id": "34305",
+   "cavp_ref": "A:1696"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1697",
+   "cavp_id": "34306",
+   "cavp_ref": "A:1697"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "NP",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1681",
+   "cavp_id": "34290",
+   "cavp_ref": "A:1681"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1682",
+   "cavp_id": "34291",
+   "cavp_ref": "A:1682"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1683",
+   "cavp_id": "34292",
+   "cavp_ref": "A:1683"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1694",
+   "cavp_id": "34303",
+   "cavp_ref": "A:1694"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1695",
+   "cavp_id": "34304",
+   "cavp_ref": "A:1695"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1696",
+   "cavp_id": "34305",
+   "cavp_ref": "A:1696"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1697",
+   "cavp_id": "34306",
+   "cavp_ref": "A:1697"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2140",
+   "cavp_id": "34749",
+   "cavp_ref": "A:2140"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Certs. #A1694, #A1695, #A1696, #A1697 and #A1699, CVL Certs. #A1694, #A1695, #A1696 and #A1697",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1694",
+   "cavp_id": "34303",
+   "cavp_ref": "A:1694"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1695",
+   "cavp_id": "34304",
+   "cavp_ref": "A:1695"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1696",
+   "cavp_id": "34305",
+   "cavp_ref": "A:1696"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1697",
+   "cavp_id": "34306",
+   "cavp_ref": "A:1697"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1699",
+   "cavp_id": "34308",
+   "cavp_ref": "A:1699"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A1698",
+   "cavp_id": "34307",
+   "cavp_ref": "A:1698"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A1676",
+   "cavp_id": "34285",
+   "cavp_ref": "A:1676"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1673, #A1674, #A1675, #A1685, #A1686, #A1687, #A1688, #A1689, #A1690, #A1691, #A1692, #A1693, #A2139, #A2141, #A2142, #A2144, #A2145 and #A2146; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1673, #A1674, #A1675, #A2139, #A2141 and #A2142 and HMAC Certs. #A1694, #A1695, #A1696, #A1697 and #A2140; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #A1672 and HMAC Certs. #A1694, #A1695, #A1696, #A1697 and #A2140; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS-RSA",
+   "cavp_cert": "Certs. #A1694, #A1695, #A1696 and #A1697; key establishment methodology provides between 112 and 200 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1681",
+   "cavp_id": "34290",
+   "cavp_ref": "A:1681"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1682",
+   "cavp_id": "34291",
+   "cavp_ref": "A:1682"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1683",
+   "cavp_id": "34292",
+   "cavp_ref": "A:1683"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1694",
+   "cavp_id": "34303",
+   "cavp_ref": "A:1694"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1695",
+   "cavp_id": "34304",
+   "cavp_ref": "A:1695"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1696",
+   "cavp_id": "34305",
+   "cavp_ref": "A:1696"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1697",
+   "cavp_id": "34306",
+   "cavp_ref": "A:1697"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1694",
+   "cavp_id": "34303",
+   "cavp_ref": "A:1694"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1695",
+   "cavp_id": "34304",
+   "cavp_ref": "A:1695"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1696",
+   "cavp_id": "34305",
+   "cavp_ref": "A:1696"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1697",
+   "cavp_id": "34306",
+   "cavp_ref": "A:1697"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1681",
+   "cavp_id": "34290",
+   "cavp_ref": "A:1681"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1682",
+   "cavp_id": "34291",
+   "cavp_ref": "A:1682"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1683",
+   "cavp_id": "34292",
+   "cavp_ref": "A:1683"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1694",
+   "cavp_id": "34303",
+   "cavp_ref": "A:1694"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1695",
+   "cavp_id": "34304",
+   "cavp_ref": "A:1695"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1696",
+   "cavp_id": "34305",
+   "cavp_ref": "A:1696"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1697",
+   "cavp_id": "34306",
+   "cavp_ref": "A:1697"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2140",
+   "cavp_id": "34749",
+   "cavp_ref": "A:2140"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1672",
+   "cavp_id": "34281",
+   "cavp_ref": "A:1672"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1677",
+   "cavp_id": "34286",
+   "cavp_ref": "A:1677"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1678",
+   "cavp_id": "34287",
+   "cavp_ref": "A:1678"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1679",
+   "cavp_id": "34288",
+   "cavp_ref": "A:1679"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1680",
+   "cavp_id": "34289",
+   "cavp_ref": "A:1680"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "2300 Oracle Way",
+   "Austin, TX 78741",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Security Evaluation team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4215.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202022_010622_0641_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/9/2022",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "7/15/2022",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "5/9/2022",
+ "last_updated": "7/15/2022",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4215.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4215,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Linux 8 OpenSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/09/2022",
+   "07/15/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

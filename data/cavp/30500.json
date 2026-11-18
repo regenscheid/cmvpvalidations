@@ -1,0 +1,95 @@
+{
+ "cavp_id": "30500",
+ "cavp_cert": "C105",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30500",
+ "implementation": "Apple CoreCrypto Module v9.0 for ARM (iOS12, A12X Bionic, Assembler_VNG)",
+ "product_id": "10466",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to user space and assembler VNG implementations.",
+ "version": "9.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/17/2018",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "iOS 12 on Apple A12X Bionic",
+   "details": [
+    "processor: A12X Bionic",
+    "  Apple A12X Bionic",
+    "  manufacturer: Apple",
+    "software: iOS 12"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0",
+    "AAD Length: 0",
+    "C105 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 960, 1024",
+    "AAD Length: 120, 128, 960, 1024",
+    "C105 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-128",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0-128",
+    "    Returned Bits: 128",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 128",
+    "C105 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

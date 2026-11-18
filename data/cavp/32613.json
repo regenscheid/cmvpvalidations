@@ -1,0 +1,72 @@
+{
+ "cavp_id": "32613",
+ "cavp_cert": "A474",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32613",
+ "implementation": "NSS (64 bit) (AESNI)",
+ "product_id": "12517",
+ "description": "User space library providing general cryptographic services used by the NSS cryptographic library. The module was tested with 64 bit word size. The following cipher implementation is covered: Intel AES-NI AES implementation.",
+ "version": "3.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/19/2020",
+ "vendor": "SUSE LLC.",
+ "vendor_website": "http://www.suse.de",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP2 on Intel Cascade Lake Xeon Gold 6234",
+   "details": [
+    "software: SUSE Linux Enterprise Server 15 SP2",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15",
+    "processor: Xeon Gold 6234",
+    "  Processor Xeon Gold 6234 (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 64, 96, 128",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,63 @@
+{
+ "cavp_id": "32077",
+ "cavp_cert": "A129",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32077",
+ "implementation": "GnuTLS (64 bit) (AESNI)",
+ "product_id": "12055",
+ "description": "GnuTLS is a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them. It provides a simple C language application programming interface (API) to access the secure communications protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and other required structures.",
+ "version": "rhel8.20190816",
+ "type": "SOFTWARE",
+ "first_validated": "2/4/2020",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "RHEL 8 on Intel Sandy Bridge Xeon E5",
+   "details": [
+    "software: RHEL 8",
+    "  Linux distribution developed by Red Hat, Inc. and targeted toward the commercial market.",
+    "processor: Xeon E5",
+    "  Processor Xeon E5 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Sandy Bridge"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 128",
+    "    Message Length: 128, 136, 256, 264, 524288"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

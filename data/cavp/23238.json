@@ -1,0 +1,59 @@
+{
+ "cavp_id": "23238",
+ "cavp_cert": "Component 431",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=23238",
+ "implementation": "OpenSSL (AES-NI and AVX+SSSE3 for SHA-1)",
+ "product_id": "6823",
+ "description": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C. This test covers the AES-NI implementation of AES and AVX+SSSE3 assembler implementation of SHA-1 on Intel x86 64bit HP hardware.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/13/2015",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 on Intel x86-64",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Public Key Regeneration",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Public Key Regeneration",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

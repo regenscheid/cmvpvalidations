@@ -1,0 +1,40 @@
+{
+ "cavp_id": "11546",
+ "cavp_cert": "AES 4810",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11546",
+ "implementation": "IBM LTO 7 Cryptographic Firmware Library",
+ "product_id": "8474",
+ "description": "Firmware cryptographic implementation that adds secure key channel capabilities to the IBM LTO 7 tape drive.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/13/2017",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "IBM PowerPC 405",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256, 256, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

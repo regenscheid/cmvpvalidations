@@ -1,0 +1,52 @@
+{
+ "cavp_id": "16334",
+ "cavp_cert": "RSA 628",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=16334",
+ "implementation": "OpenSSL Library version 1.2",
+ "product_id": "7535",
+ "description": "The implementation performs wireless intrusion detection and prevention. It monitors radio channels to ensure conformance of wireless activity to security policy. It mitigates various types of wireless security violations such as rogue wireless networks, unauthorized wireless connections, network mis-configurations and denial of service attacks.",
+ "version": "6.2.36 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "4/9/2010",
+ "vendor": "AirTight® Networks",
+ "vendor_website": "http://www.airtightnetworks.com",
+ "oes": [
+  {
+   "name": "AR7161 from Atheros Communications",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,148 @@
+{
+ "cert": 4157,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4157",
+ "module": "Tactical Key Management Device (TKMD)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The TKMD is a low-cost single unit that implements the TIA Project 25 Over-the-Air Rekey standard to provide a Key Management Facility (KMF) for 500 and up to 3000 Subscriber Radios. The TKMD can be utilized as a stand-alone KMF for use in a campus environment or can be utilized in a network environment where Subscriber Radio configurations can be securely shared between TKMDs. The networked TKMDs can also securely share collections of Cryptographic keys to allow periodic updating of Cryptographic keys. Control of the TKMD is accomplished with a secure (https) connection to a web browser.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "AES MAC (AES Cert. #C1775, vendor affirmed; P25 AES OTAR); NDRNG",
+ "hardware_versions": "TKMD Spin 3",
+ "firmware_versions": "TKMD_FIPS_FINAL_11_01_20",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1775",
+   "cavp_id": "32674",
+   "cavp_ref": "C:1775"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1775",
+   "cavp_id": "32674",
+   "cavp_ref": "C:1775"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1775",
+   "cavp_id": "32674",
+   "cavp_ref": "C:1775"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A881",
+   "cavp_id": "33480",
+   "cavp_ref": "A:881"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1775",
+   "cavp_id": "32674",
+   "cavp_ref": "C:1775"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A862",
+   "cavp_id": "33460",
+   "cavp_ref": "A:862"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1775; key establishment methodology provides 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1775",
+   "cavp_id": "32674",
+   "cavp_ref": "C:1775"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1775",
+   "cavp_id": "32674",
+   "cavp_ref": "C:1775"
+  }
+ ],
+ "vendor": "Christine Wireless, Inc.",
+ "vendor_info": {
+  "name": "Christine Wireless, Inc.",
+  "website": "http://www.christinewireless.com",
+  "address": [
+   "3079 Saint Johns Lane",
+   "Ellicott City, MD 21042",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Richard Brockway"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4157.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202022_010322_0121_Signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/16/2022",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "2/16/2022",
+ "last_updated": "2/16/2022",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4157.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "AES MAC (AES Cert. #C1775, vendor affirmed; P25 AES OTAR); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4157,
+  "vendor": "Christine Wireless, Inc.",
+  "module": "Tactical Key Management Device (TKMD)",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/16/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

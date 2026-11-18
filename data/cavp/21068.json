@@ -1,0 +1,65 @@
+{
+ "cavp_id": "21068",
+ "cavp_cert": "TDES 1999",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21068",
+ "implementation": "HiCOS Cryptographic Library",
+ "product_id": "1138",
+ "description": "It supports SHA-1, SHA-256, SHA-384, SHA-512, Hash-DRBG, 3DES-3Key-MAC, 3DES-3Key encrypt/decrypt, ECDSA(p-224/256/384), RSA 2048 encrypt/decrypt (including RSA-CRT), RSA signature generation /verification(including RSA-CRT) and APDU command/response encryption and/or MAC.",
+ "version": "3.7 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/9/2015",
+ "vendor": "Chunghwa Telecom Co., Ltd. Telecommunication Laboratories",
+ "vendor_website": "http://www.chttl.com.tw",
+ "oes": [
+  {
+   "name": "Renesas RS-4 series",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Keying Option: 1",
+    "    MAC Length: 64",
+    "    Message Length: 0-1024",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Keying Option: 1",
+    "    MAC Length: 64",
+    "    Message Length: 0-1024",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Payload Length: 64, 96, 128, 160, 224"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

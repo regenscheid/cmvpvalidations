@@ -1,0 +1,51 @@
+{
+ "cavp_id": "13785",
+ "cavp_cert": "ECDSA 1362",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13785",
+ "implementation": "Silver Spring Networks Endpoint Security Module",
+ "product_id": "9165",
+ "description": "Silver Spring Networks Endpoint Security Module provides acceleration and off-load of standard cryptographic algorithms and secure network protocols, key storage and generation, bootloader and firmware verification, and encrypted data storage. It is included in the SoC designed for SSN's Gen5 endpoint and infrastructure products.",
+ "version": "130-0117-03 82136; 1.00 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "2/9/2018",
+ "vendor": "Silver Spring Networks",
+ "vendor_website": "http://www.silverspringnet.com",
+ "oes": [
+  {
+   "name": "ESM instruction manager processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

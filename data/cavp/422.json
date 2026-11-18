@@ -1,0 +1,54 @@
+{
+ "cavp_id": "422",
+ "cavp_cert": "RSA 1780",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=422",
+ "implementation": "RDL-3000 Management Cryptographic Suite",
+ "product_id": "948",
+ "description": "Provides several cryptographically-secure management interfaces for use in the administration and operation of the RDL-3000 platform.",
+ "version": "3.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/17/2015",
+ "vendor": "Aviat Networks, Inc.",
+ "vendor_website": "http://www.aviatnetworks.com",
+ "oes": [
+  {
+   "name": "Cavium ECONA CNS3411 SoC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

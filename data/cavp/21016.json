@@ -1,0 +1,60 @@
+{
+ "cavp_id": "21016",
+ "cavp_cert": "RSA 938",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21016",
+ "implementation": "TippingPoint S6100N Intrusion Prevention System (IPS) Firmware",
+ "product_id": "8253",
+ "description": "The TippingPoint S6100N Intrusion Prevention System (IPS) operates in-line in the network, blocking malicious and unwanted traffic, while allowing good traffic to pass unimpeded.",
+ "version": "3.2.1.1639 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/31/2011",
+ "vendor": "Hewlett-Packard (TippingPoint)",
+ "vendor_website": "http://www.tippingpoint.com",
+ "oes": [
+  {
+   "name": "NetLogic XLR",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

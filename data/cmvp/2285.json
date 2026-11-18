@@ -1,0 +1,130 @@
+{
+ "cert": 2285,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2285",
+ "module": "PacketAssure iQ1000",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and with the tamper evident seals installed as indicated in the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Ultra Electronics DNE Technologies PacketAssure iQ1000 is a rugged, one 19\" rack unit Service Delivery Management (SDM) network appliance. It integrates IP adaptation for legacy circuit based traffic with high-performance layer-2 IP switching and intelligent IP quality of service, allowing the user to precisely classify/manage their voice, video and data services.",
+ "hardware_versions": "Chassis v.003, PSM v.101",
+ "firmware_versions": "3.2.0 and 3.4.0",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2191",
+   "cavp_id": "28915",
+   "cavp_ref": "AES:2191"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 685",
+   "cavp_id": "11283",
+   "cavp_ref": "DSA:685"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1343",
+   "cavp_id": "14549",
+   "cavp_ref": "HMAC:1343"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1109",
+   "cavp_id": "11425",
+   "cavp_ref": "RNG:1109"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1130",
+   "cavp_id": "15209",
+   "cavp_ref": "RSA:1130"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1899",
+   "cavp_id": "26399",
+   "cavp_ref": "SHS:1899"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1384",
+   "cavp_id": "13917",
+   "cavp_ref": "TDES:1384"
+  }
+ ],
+ "vendor": "Ultra Electronics DNE Technologies",
+ "vendor_info": {
+  "name": "Ultra Electronics DNE Technologies",
+  "website": "http://www.ultra-dne.com",
+  "address": [
+   "50 Barnes Park North",
+   "Wallingford, CT 06492",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Stephen Nichols"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2285.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0048.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/3/2014",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "12/21/2015",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "12/3/2014",
+ "last_updated": "12/21/2015",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2285.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (Cert. #2191, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); SNMP KDF; SSH KDF; TLS KDF"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2285,
+  "vendor": "Ultra Electronics DNE Technologies",
+  "module": "PacketAssure iQ1000",
+  "type": "Hardware",
+  "validation_dates": [
+   "12/03/2014",
+   "12/21/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

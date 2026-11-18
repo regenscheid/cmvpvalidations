@@ -1,0 +1,38 @@
+{
+ "cavp_id": "34771",
+ "cavp_cert": "A2162",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34771",
+ "implementation": "KAS-IFC-SSC-OpenSSL",
+ "product_id": "14654",
+ "description": "This implements basic KAS scheme for shared secret exchange using RSA key encapsulation techniques",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "12/16/2021",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-IFC-SSC",
+   "oe": 0,
+   "capabilities": [
+    "Modulo: 2048, 3072, 4096",
+    "Key Generation Methods: rsakpg1-crt",
+    "Scheme:",
+    "  KAS1:",
+    "    KAS Role: initiator, responder",
+    "  KAS2:",
+    "    KAS Role: initiator, responder",
+    "Fixed Public Exponent: 010001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

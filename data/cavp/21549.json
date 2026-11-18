@@ -1,0 +1,41 @@
+{
+ "cavp_id": "21549",
+ "cavp_cert": "AES 1671",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21549",
+ "implementation": "ZyFLEX AES Core",
+ "product_id": "8046",
+ "description": "The ZyFLEX AES Core is a comprehensive hardware IP implementation of AES in synthesizable Verilog code. The core can be synthesized as encryption engine, decryption engine or encryption/decryption engine, and can be targeted at commercial FPGAs or ASIC implementation.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/7/2011",
+ "vendor": "ZyFLEX Technologies, Inc.",
+ "vendor_website": "http://www.zyflex.com.tw",
+ "oes": [
+  {
+   "name": "Modelsim 6.4a Verilog simulator",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 104",
+    "Payload Length: 16-256",
+    "AAD Length: 0-112"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

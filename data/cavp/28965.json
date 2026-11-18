@@ -1,0 +1,56 @@
+{
+ "cavp_id": "28965",
+ "cavp_cert": "RSA 1102",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28965",
+ "implementation": "Armada PXA-2128",
+ "product_id": "375",
+ "description": "Armada PXA2128 is an application processor SoC (http://www.marvell.com/application-processors/armada/pxa2128/). It has a dedicated security hardware module, known as WTM, that runs secure firmware kernel to perform device trusted boot, access control, authentication, key management, DRM, disk encryption, and FIPS certified cryptographic operations.",
+ "version": "Armada PXA-2128 3.1.9 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "8/3/2012",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "Marvell® PJ4 application processor family (ARMv7 class)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

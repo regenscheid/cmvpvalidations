@@ -1,0 +1,248 @@
+{
+ "cert": 4197,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4197",
+ "module": "RSA BSAFE® Crypto-C Micro Edition",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When entropy is externally loaded, no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Crypto-C Micro Edition (ME) Module is RSA's cryptographic library designed for securing mobile devices like wireless phones and personal digital assistants. It contains assembly-level optimizations on key wireless processors. Its functionality includes a wide range of data encryption and signing algorithms, including Triple-DES, the Advanced Encryption Standard (AES) algorithm, the RSA Public Key Cryptosystem, the DSA government signature algorithm, MD5 and SHA1 message digest routines, and more.",
+ "tested_configurations": [
+  "AIX 6.1 on PowerVM Virtual I/O Server 2.2.6.21 running on an IBM Power 8284 - 22A (32-bit)",
+  "AIX 6.1 on PowerVM Virtual I/O Server 2.2.6.21 running on an IBM Power 8284 - 22A (64-bit)",
+  "AIX 7.2 on PowerVM Virtual I/O Server 2.2.6.21 running on an IBM Power 8231 - E2B (32-bit)",
+  "AIX 7.2 on PowerVM Virtual I/O Server 2.2.6.21 running on an IBM Power 8231 - E2B (64-bit)",
+  "Android 6.0 running on Google Nexus 5X with Qualcomm Snapdragon 808",
+  "Android 8.0 running on Google Pixel with Qualcomm Snapdragon 821",
+  "FreeBSD 11.2 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA",
+  "FreeBSD 11.2 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA",
+  "HP-UX 11.31 running on an HP 9000 rp3410 with HP PA-8800 (32-bit)",
+  "HP-UX 11.31 running on an HP 9000 rp3410 with HP PA-8800 (64-bit)",
+  "HP-UX 11.31 running on an HP Integrity RX2620 with Intel Itanium 2 (32-bit)",
+  "HP-UX 11.31 running on an HP Integrity RX2620 with Intel Itanium 2 (64-bit)",
+  "iOS 10 running on an iPhone 5C with Apple A6",
+  "iOS 11 running on an iPad Pro 9.7 with Apple A9X",
+  "macOS 10.12 on VMWare ESXi 6.0.0 running on a Mac Pro with Intel Xeon E5-1650 v2 with PAA",
+  "macOS 10.12 on VMWare ESXi 6.0.0 running on a Mac Pro with Intel Xeon E5-1650 v2 without PAA",
+  "macOS 10.13 on VMWare ESXi 6.0.0 running on a Mac Pro with Intel Xeon E5-1650 v2 with PAA",
+  "macOS 10.13 on VMWare ESXi 6.0.0 running on a Mac Pro with Intel Xeon E5-1650 v2 without PAA",
+  "Red Hat Enterprise Linux 5.8 on z/VM 6.0 running on an IBM zEnterprise 196 with IBM s390x (31-bit)",
+  "Red Hat Enterprise Linux 5.8 on z/VM 6.0 running on an IBM zEnterprise 196 with IBM s390x (64-bit)",
+  "Solaris 10 Update 11 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA",
+  "Solaris 11.4 running on a Solaris 11 LDOM on Oracle SPARC T4-2 (Sun C 5.13 32-bit v8+)",
+  "Solaris 11.4 running on a Solaris 11 LDOM on Oracle SPARC T4-2 (Sun C 5.13 64-bit v9)",
+  "Solaris 11.4 running on a Solaris 11 LDOM on Oracle SPARC T4-2 (Sun C 5.8 32-bit v8)",
+  "Solaris 11.4 running on a VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA",
+  "SUSE Linux Enterprise Server 11 SP4 on HP Integrity RX2600 with Intel Itanium 2 (64-bit)",
+  "SUSE Linux Enterprise Server 11 SP4 on PowerVM Virtual I/O Server 2.2.6.21 running on an IBM Power 8231 - E2B (32-bit)",
+  "SUSE Linux Enterprise Server 11 SP4 on PowerVM Virtual I/O Server 2.2.6.21 running on an IBM Power 8231 - E2B (64-bit)",
+  "SUSE Linux Enterprise Server 12 SP3 on PowerVM Virtual I/O Server 2.2.6.21 running on an IBM Power 8284 - 22A (64-bit)",
+  "SUSE Linux Enterprise Server 12 SP3 on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 with PAA (32-bit)",
+  "SUSE Linux Enterprise Server 12 SP3 on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 with PAA (64-bit)",
+  "SUSE Linux Enterprise Server 12 SP3 on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 without PAA (32-bit)",
+  "SUSE Linux Enterprise Server 12 SP3 on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 without PAA (64-bit)",
+  "SUSE Linux Enterprise Server 12 SP3 running on SoftIron Overdrive 1000 with ARM CORTEX A57 (AMD OPTERON A1100)",
+  "SUSE Linux Enterprise Server 15 on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 with PAA",
+  "SUSE Linux Enterprise Server 15 on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 without PAA",
+  "Ubuntu 16.04 LTS running on a Beagle Bone Black with ARM Cortex A8",
+  "Windows 10 Enterprise on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 with PAA (Visual Studio 2013 /MD)",
+  "Windows 10 Enterprise on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 with PAA (Visual Studio 2013 /MT)",
+  "Windows 10 Enterprise on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 with PAA (Visual Studio 2017 /MD)",
+  "Windows 10 Enterprise on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 with PAA (Visual Studio 2017 /MT)",
+  "Windows 10 Enterprise on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 without PAA (Visual Studio 2013 /MD)",
+  "Windows 10 Enterprise on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 without PAA (Visual Studio 2013 /MT)",
+  "Windows 10 Enterprise on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 without PAA (Visual Studio 2017 /MD)",
+  "Windows 10 Enterprise on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 without PAA (Visual Studio 2017 /MT)",
+  "Windows 7 Enterprise SP1 (x64) on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2005 /MT)",
+  "Windows 7 Enterprise SP1 (x64) on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2005 /MT)",
+  "Windows 7 Enterprise SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2005 /MD)",
+  "Windows 7 Enterprise SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2005 /MT)",
+  "Windows 7 Enterprise SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2010 /MD)",
+  "Windows 7 Enterprise SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2010 /MT)",
+  "Windows 7 Enterprise SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2005 /MD)",
+  "Windows 7 Enterprise SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2005 /MT)",
+  "Windows 7 Enterprise SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2010 /MD)",
+  "Windows 7 Enterprise SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2010 /MT)",
+  "Windows 8.1 Enterprise on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA",
+  "Windows 8.1 Enterprise on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA",
+  "Windows Server 2008 Enterprise R2 SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2005 /MD)",
+  "Windows Server 2008 Enterprise R2 SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2010 /MT)",
+  "Windows Server 2008 Enterprise R2 SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2005 /MD)",
+  "Windows Server 2008 Enterprise R2 SP1 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2010 /MT)",
+  "Windows Server 2008 Enterprise SP2 on HP Integrity RX2620 with Intel Itanium 2 (64-bit)",
+  "Windows Server 2012 R2 Standard on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2010 /MD)",
+  "Windows Server 2012 R2 Standard on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2013 /MD)",
+  "Windows Server 2012 R2 Standard on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA (Visual Studio 2017 /MT)",
+  "Windows Server 2012 R2 Standard on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2010 /MD)",
+  "Windows Server 2012 R2 Standard on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2013 /MD)",
+  "Windows Server 2012 R2 Standard on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (Visual Studio 2017 /MT)",
+  "Windows Server 2016 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 with PAA",
+  "Windows Server 2016 on VMWare ESXi 6.0.0 running on a Cisco C220 M3 with Intel Xeon E5-2650 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (CVL Cert. #C584, key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "4.1.4",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "KDF",
+   "cavp_cert": "SP 800-56Crev1, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C584; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  }
+ ],
+ "vendor": "Dell Inc, BSAFE Product Team",
+ "vendor_info": {
+  "name": "Dell Inc, BSAFE Product Team",
+  "website": "http://www.rsa.com",
+  "address": [
+   "174 Middlesex Turnpike",
+   "Bedford, MA 01730",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "BSAFE FIPS Program"
+   },
+   {
+    "name": "Francois Lamoureux"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4197.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/CMVP%20Certificates%20%28FCVC%29%20April%202022_020522_0649_mmsigned.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/18/2022",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/18/2022",
+ "last_updated": "4/18/2022",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4197.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (CVL Cert. #C584, key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4197,
+  "vendor": "Dell Inc, BSAFE Product Team",
+  "module": "RSA BSAFE® Crypto-C Micro Edition",
+  "type": "Software",
+  "validation_dates": [
+   "04/18/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

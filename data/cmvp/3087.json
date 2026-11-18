@@ -1,0 +1,127 @@
+{
+ "cert": 3087,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3087",
+ "module": "Motorola Solutions Cryptographic Firmware Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Crypto module is a comprehensive suite of FIPS Approved algorithms implemented in C and crossed compiled on Linux build server. The module is delivered to target application team as static library which is the logical boundary of the cryptographic module. Cryptographic module used in Motorola Solutions Astro APX series and VX series subscribers.",
+ "tested_configurations": [
+  "Mentor Graphics Nucleus 3.0 (v2013.08.1) running on an ARM926EJ-S core of Texas Instrument (TI) OMAP-L138 C6000 DSP+ARM",
+  "Texas Instrument (TI) DSP/BIOS 5.41.04.18 running on a C674x Megamodule (v4.0) of Texas Instrument (TI) OMAP-L138 C6000 DSP+ARM"
+ ],
+ "allowed_algorithms": "AES MAC (AES Cert. #4517, vendor affirmed; P25 AES OTAR)",
+ "firmware_versions": "R01.01.02",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4517",
+   "cavp_id": "13206",
+   "cavp_ref": "AES:4517"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5357",
+   "cavp_id": "12870",
+   "cavp_ref": "AES:5357"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1478",
+   "cavp_id": "23931",
+   "cavp_ref": "DRBG:1478"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2984",
+   "cavp_id": "14141",
+   "cavp_ref": "HMAC:2984"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #4517 and #5357",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3705",
+   "cavp_id": "27132",
+   "cavp_ref": "SHS:3705"
+  }
+ ],
+ "vendor": "Motorola Solutions, Inc.",
+ "vendor_info": {
+  "name": "Motorola Solutions, Inc.",
+  "website": "http://www.motorolasolutions.com",
+  "address": [
+   "1303 East Algonquin Road",
+   "Schaumburg, IL 60196",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Amalendu Roy"
+   },
+   {
+    "name": "Ken Fuchs"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3087.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/22/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/25/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "12/22/2017",
+ "last_updated": "4/25/2018",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3087.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "AES MAC (AES Cert. #4517, vendor affirmed; P25 AES OTAR)",
+ "sparse": false,
+ "list": {
+  "cert": 3087,
+  "vendor": "Motorola Solutions, Inc.",
+  "module": "Motorola Solutions Cryptographic Firmware Module",
+  "type": "Firmware",
+  "validation_dates": [
+   "12/22/2017",
+   "04/25/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

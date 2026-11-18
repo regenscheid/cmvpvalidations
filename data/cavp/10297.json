@@ -1,0 +1,45 @@
+{
+ "cavp_id": "10297",
+ "cavp_cert": "TDES 2454",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10297",
+ "implementation": "Kernel Crypto API using strict assembler for TDES",
+ "product_id": "1822",
+ "description": "The test covers implementations of ecb-des3_ede-asm, cbc-des3_ede-asm.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "7/21/2017",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 SP2 on Intel Xeon E5 family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

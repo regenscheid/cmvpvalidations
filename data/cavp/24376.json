@@ -1,0 +1,58 @@
+{
+ "cavp_id": "24376",
+ "cavp_cert": "AES 1241",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24376",
+ "implementation": "Wave Relay Cryptographic Engine",
+ "product_id": "7412",
+ "description": "The Wave Relay Mobile Ad Hoc Networking System provides persistent wireless network connectivity between highly mobile users in a true peer-to-peer topology. The Wave Relay Cryptographic Engine is a hardware cryptographic accelerator which enables high speed communication security.",
+ "version": "Version 1.0",
+ "type": "HARDWARE",
+ "first_validated": "12/10/2009",
+ "vendor": "Persistent Systems LLC",
+ "vendor_website": "http://www.persistentsystems.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 8, 1024",
+    "AAD Length: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

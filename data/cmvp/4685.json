@@ -1,0 +1,153 @@
+{
+ "cert": 4685,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4685",
+ "module": "Honeywell Mobility EdgeTM BoringCrypto",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Honeywell Mobility Edge BoringSSL cryptographic module is a library that provides FIPS 140-2 approved cryptographic algorithms for the BoringSSL and other user-space Android applications which require cryptographic functionality. The physical cryptographic boundary is Honeywell Android mobile computer on which this module is installed.",
+ "tested_configurations": [
+  "Android 12 running on Honeywell Mobility Edge CT47 with Qualcomm Snapdragon 6490 (QCM6490) 32-bit with PAA",
+  "Android 12 running on Honeywell Mobility Edge CT47 with Qualcomm Snapdragon 6490 (QCM6490) 32-bit without PAA",
+  "Android 12 running on Honeywell Mobility Edge CT47 with Qualcomm Snapdragon 6490 (QCM6490) 64-bit with PAA",
+  "Android 12 running on Honeywell Mobility Edge CT47 with Qualcomm Snapdragon 6490 (QCM6490) 64-bit without PAA"
+ ],
+ "allowed_algorithms": "MD5; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "dcdc7bbc6e59ac0123407a9dc4d1f43dd0d117cd",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Cert. #A4657, CVL Cert. #A4657",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A4657; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A4657",
+   "cavp_id": "37267",
+   "cavp_ref": "A:4657"
+  }
+ ],
+ "vendor": "[email protected]",
+ "vendor_info": {
+  "name": "[email protected]",
+  "website": "/cdn-cgi/l/email-protection",
+  "address": [
+   "9680 Old Bailes Road",
+   "Fort Mill, SC 29707",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Guo, Leo"
+   },
+   {
+    "name": "Zhou, Gun"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4685.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202024_010524_0757.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/2/2024",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "4/2/2024",
+ "last_updated": "4/2/2024",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4685.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4685,
+  "vendor": "Honeywell International, Inc.",
+  "module": "Honeywell Mobility EdgeTM BoringCrypto",
+  "type": "Software",
+  "validation_dates": [
+   "04/02/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

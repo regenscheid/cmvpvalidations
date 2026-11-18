@@ -1,0 +1,172 @@
+{
+ "cert": 3482,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3482",
+ "module": "CN8000 Multi-slot Encryptor",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode and installed, activated, and configured per Security Policy section 8.3",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The CN8000 is a high-speed multi-slot hardware encryption platform that secures data over optical Ethernet and Fibre Channel networks. The CN8000 supports up to 10 high speed encryption slots. Each slot can be configured by the user to support 1-10Gb/s Ethernet or 1-4Gb/s Fibre Channel. The CN8000 module contains removable SFP+ transceivers to provide flexibility in connecting to the physical network. Data privacy is provided by FIPS approved AES CFB and CTR algorithms. GCM is also available for applications that demand authentication.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1234, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1234, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "A8003-01, A8003-02, A8003-03, A8003-04, A8003-05, A8003-06, A8003-07, A8003-08, A8003-09 and A8003-10",
+ "firmware_versions": "3.0.3",
+ "product_url": "http://www.senetas.com/products/cn-encryptors/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4010",
+   "cavp_id": "14319",
+   "cavp_ref": "AES:4010"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4414",
+   "cavp_id": "10564",
+   "cavp_ref": "AES:4414"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4416",
+   "cavp_id": "20970",
+   "cavp_ref": "AES:4416"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4554",
+   "cavp_id": "11804",
+   "cavp_ref": "AES:4554"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1234",
+   "cavp_id": "26388",
+   "cavp_ref": "Component:1234"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1504",
+   "cavp_id": "27673",
+   "cavp_ref": "DRBG:1504"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1109",
+   "cavp_id": "21323",
+   "cavp_ref": "ECDSA:1109"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3008",
+   "cavp_id": "16881",
+   "cavp_ref": "HMAC:3008"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 124",
+   "cavp_id": "18186",
+   "cavp_ref": "KAS:124"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4554 and HMAC Cert. #3008; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2481",
+   "cavp_id": "325",
+   "cavp_ref": "RSA:2481"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3732",
+   "cavp_id": "27021",
+   "cavp_ref": "SHS:3732"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2425",
+   "cavp_id": "13719",
+   "cavp_ref": "TDES:2425"
+  }
+ ],
+ "vendor": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet) and ID Quantique SA",
+ "vendor_info": {
+  "name": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet) and ID Quantique SA",
+  "website": "http://www.senetas.com",
+  "address": [
+   "312 Kings Way",
+   "South Melbourne, Victoria 3205",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "John Weston"
+   },
+   {
+    "name": "Laurie Mack"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3482.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JulyConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/9/2019",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  }
+ ],
+ "first_validated": "7/9/2019",
+ "last_updated": "7/9/2019",
+ "labs": "DXC Technology",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3482.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1234, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1234, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3482,
+  "vendor": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet) and ID Quantique SA",
+  "module": "CN8000 Multi-slot Encryptor",
+  "type": "Hardware",
+  "validation_dates": [
+   "07/09/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

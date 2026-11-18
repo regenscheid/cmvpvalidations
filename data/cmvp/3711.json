@@ -1,0 +1,147 @@
+{
+ "cert": 3711,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3711",
+ "module": "Alteryx Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy and operated in FIPS mode. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #3220.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Alteryx FIPS Module for OpenSSL is a general-purpose cryptographic module integrated in Alteryx’s products to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+ "tested_configurations": [
+  "Windows Server 2016 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 with PAA",
+  "Windows Server 2016 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #C1990, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.9, 2.0.10, 2.0.11, 2.0.12, 2.0.13, 2.0.14, 2.0.15 or 2.0.16",
+ "product_url": "https://www.alteryx.com/products/alteryx-platform/alteryx-server",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1990",
+   "cavp_id": "32896",
+   "cavp_ref": "C:1990"
+  }
+ ],
+ "vendor": "Alteryx Inc.",
+ "vendor_info": {
+  "name": "Alteryx Inc.",
+  "website": "http://www.alteryx.com",
+  "address": [
+   "3345 Michelson Drive",
+   "Suite 400",
+   "Irvine, CA 92612",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Alteryx Information Security"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3711.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202020_011020_0703.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/21/2020",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "12/1/2020",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "9/21/2020",
+ "last_updated": "12/1/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3711.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #C1990, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3711,
+  "vendor": "Alteryx Inc.",
+  "module": "Alteryx Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/21/2020",
+   "12/01/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,64 @@
+{
+ "cavp_id": "31951",
+ "cavp_cert": "C1482",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31951",
+ "implementation": "KCAPI RFC4106 GCM with internal IV using strict assembler for AES",
+ "product_id": "11902",
+ "description": "Linux kernel crypto API implementation providing cryptographic services to software components executing as part of the Linux kernel.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/17/2020",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on Intel(R) Atom(TM) C2750",
+   "details": [
+    "processor: Intel Atom(TM) C2750",
+    "  manufacturer: Intel",
+    "software: Ubuntu 16.04"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,59 @@
+{
+ "cavp_id": "25438",
+ "cavp_cert": "RSA 1996",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25438",
+ "implementation": "Cryptographic Server HSM (AES-DRBG-ECDSA-HMAC-RSA-SHS)",
+ "product_id": "1665",
+ "description": "Cryptographic Server HSM is a hardware security module accelerated by GPU, providing cryptographic services including encryption, decryption, signature generation and verification, and key management.",
+ "version": "CS-HSM-2697v2-680-32G",
+ "type": "FIRMWARE",
+ "first_validated": "3/25/2016",
+ "vendor": "Beijing Lianshi Networks Technology Co.,Ltd.",
+ "vendor_website": "http://www.ciphergateway.com/",
+ "oes": [
+  {
+   "name": "HSM-ZJ2014",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

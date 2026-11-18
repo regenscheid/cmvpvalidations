@@ -1,0 +1,69 @@
+{
+ "cavp_id": "28863",
+ "cavp_cert": "AES 5605",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28863",
+ "implementation": "JUNOS 18.2R1 OpenSSL-MX104",
+ "product_id": "9835",
+ "description": "MX104 3D Universal Edge router is a modular, highly redundant, mobile back haul optimized full featured MX series platform built for space and power constrained service provider and enterprise facilities.",
+ "version": "Junos OS 18.2R1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/2/2018",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Freescale P5021",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 0, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

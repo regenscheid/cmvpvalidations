@@ -1,0 +1,225 @@
+{
+ "cert": 4565,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4565",
+ "module": "Amazon Linux 2 NSS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 10.2 of the Security Policy.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Amazon Linux 2 NSS Cryptographic Module is a set of libraries designed to support cross-platform development of security-enabled applications. These applications may support the TLS protocol, PKCS #5, PKCS #7, PKCS #11, PKCS #12, S/MIME, X.509 v3 certificates, and other security standards supporting FIPS 140-2 validated cryptographic algorithms.",
+ "tested_configurations": [
+  "Amazon Linux 2 running on Amazon EC2 c6g.metal with Graviton 2 with PAA",
+  "Amazon Linux 2 running on Amazon EC2 c6g.metal with Graviton 2 without PAA (single-user mode)",
+  "Amazon Linux 2 running on Amazon EC2 i3.metal with Intel Xeon E5 with PAA",
+  "Amazon Linux 2 running on Amazon EC2 i3.metal with Intel Xeon E5 without PAA"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 bits and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3742",
+   "cavp_id": "36352",
+   "cavp_ref": "A:3742"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C804",
+   "cavp_id": "31200",
+   "cavp_ref": "C:804"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A3741, #A3742, #C803, #C804; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "http://aws.amazon.com",
+  "address": [
+   "1918 8th Ave.",
+   "Seattle, WA 98121",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Samartha Chandrashekar"
+   },
+   {
+    "name": "Raghuram Kota"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4565.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202023_010923_0844.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/30/2023",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "3/25/2024",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "8/30/2023",
+ "last_updated": "3/25/2024",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4565.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 bits and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4565,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "Amazon Linux 2 NSS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/30/2023",
+   "03/25/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

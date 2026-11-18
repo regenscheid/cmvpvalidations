@@ -1,0 +1,119 @@
+{
+ "cert": 2261,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2261",
+ "module": "Cryptographic Module for CipherCloud Gateway",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Cryptographic Module enables all cryptographic operations performed by the CipherCloud Gateway. The CipherCloud Gateway is a software solution that organizations deploy within their network boundaries or delegate operation to a trusted third party. CipherCloud interfaces with clients (e.g., web browsers, mobile applications, APIs, etc.), and leverages format and operations preserving encryption technology to secure sensitive information in real time, before it's sent to cloud applications (e.g. web servers, API services, databases, etc.), without impacting usability or performance.",
+ "tested_configurations": [
+  "CentOS 6.3 with Java JRE 1.6.0 running on IBM 3620 M3 (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2339",
+   "cavp_id": "22323",
+   "cavp_ref": "AES:2339"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 303",
+   "cavp_id": "4667",
+   "cavp_ref": "DRBG:303"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1449",
+   "cavp_id": "22395",
+   "cavp_ref": "HMAC:1449"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2017",
+   "cavp_id": "20509",
+   "cavp_ref": "SHS:2017"
+  }
+ ],
+ "vendor": "CipherCloud, Inc.",
+ "vendor_info": {
+  "name": "CipherCloud, Inc.",
+  "website": "http://www.ciphercloud.com",
+  "address": [
+   "99 Almaden Blvd., Suite 500",
+   "San Jose, CA 95113",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Andy Loong"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2261.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0046.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/1/2014",
+   "type": "Initial",
+   "lab": "ADVANCED DATA SECURITY"
+  },
+  {
+   "date": "5/3/2016",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "10/1/2014",
+ "last_updated": "5/3/2016",
+ "labs": "ADVANCED DATA SECURITY",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2261.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "AES-PCBC (non-compliant); AES-CTR (non-compliant); AES-CTS (non-compliant); AES-OFB (non-compliant); AES-OFB8 (non-compliant); AES-OFB128 (non-compliant); ARC4; Blowfish; DES; Diffie-Hellman (non-compliant); DSA (non-compliant); RC2; RSA (encrypt/decrypt); Triple-DES (non-compliant); PBEWithMD5AndDES; PBEWithMD5AndTripleDES; PBEWithSHA1AndDESede; PBEWithSHA1AndRC2_40; MD2; MD5; SHA-384 (non-compliant); HMAC-MD5; HMAC SHA-384 (non-compliant); HMAC SHA-512 (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2261,
+  "vendor": "CipherCloud, Inc.",
+  "module": "Cryptographic Module for CipherCloud Gateway",
+  "type": "Software",
+  "validation_dates": [
+   "10/01/2014",
+   "05/03/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

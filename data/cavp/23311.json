@@ -1,0 +1,73 @@
+{
+ "cavp_id": "23311",
+ "cavp_cert": "AES 4960",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=23311",
+ "implementation": "SafeXcel 1746 Chip",
+ "product_id": "8804",
+ "description": "The SafeXcel 1746 allows host processors to offload packet processing and crypto computations, providing acceleration of IPsec, TLS/SSL/DTLS, SRTP, and MACsec security protocol functions, as well as acceleration of the latest cipher and hash cryptographic algorithms, including Suite B.",
+ "version": "SF914-17060-100B",
+ "type": "HARDWARE",
+ "first_validated": "11/22/2017",
+ "vendor": "Gemalto",
+ "vendor_website": "http://www.gemalto.com",
+ "oes": [
+  {
+   "name": "SafeXcel 1746 Chip",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB8",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 32, 64, 256, 384",
+    "AAD Length: 0, 32, 64, 256, 384"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 32, 64, 256, 384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

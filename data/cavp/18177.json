@@ -1,0 +1,41 @@
+{
+ "cavp_id": "18177",
+ "cavp_cert": "AES 694",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18177",
+ "implementation": "Fortress SWAB FPGA Algorithms",
+ "product_id": "7108",
+ "description": "Provides Fortress ES520 cryptographic services through the Xilinx Spartan FPGA.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "1/17/2008",
+ "vendor": "Fortress Technologies, Inc.",
+ "vendor_website": "http://www.fortresstech.com",
+ "oes": [
+  {
+   "name": "Xilinx Spartan FPGA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 176-240"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

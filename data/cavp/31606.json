@@ -1,0 +1,78 @@
+{
+ "cavp_id": "31606",
+ "cavp_cert": "C1200",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31606",
+ "implementation": "Linux kernel crypto",
+ "product_id": "11562",
+ "description": "Linux kernel based crypto algorithms for Ceragon IP-20 platforms",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "10/7/2019",
+ "vendor": "Ceragon Networks Ltd.",
+ "vendor_website": "http://www.ceragon.com",
+ "oes": [
+  {
+   "name": "Freescale P1012",
+   "details": [
+    "processor: Freescale P1012"
+   ]
+  },
+  {
+   "name": "MIPS34Kc",
+   "details": [
+    "processor: MIPS34Kc"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128",
+    "Key sizes < block size",
+    "C1200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 128",
+    "Key sizes < block size",
+    "C1200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

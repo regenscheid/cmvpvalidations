@@ -1,0 +1,127 @@
+{
+ "cert": 2855,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2855",
+ "module": "CryptoMod",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 3 of the Security Policy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "AutoSol’s CryptoMod is an end-point security device that protects data exchanged between remote industrial field devices and a centralized SCADA host. Installed in front of equipment, the CryptoMod encrypts traffic for the entire length of an industrial network. It provides authentication for controlling network access, integrity when data is in motion, and confidentiality. It is a CSA Class 1 Div. 2 Gr. ABCD device and a terminal server, so it can fit any existing industrial network. It has a hardware watchdog timer and the capability for remote configuration, management, and updates.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "CM5705-D9",
+ "firmware_versions": "1.0.51.FIPS",
+ "product_url": "http://autosoln.com/products/cryptomod/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4140",
+   "cavp_id": "7118",
+   "cavp_ref": "AES:4140"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 946",
+   "cavp_id": "11389",
+   "cavp_ref": "Component:946"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1255",
+   "cavp_id": "27961",
+   "cavp_ref": "DRBG:1255"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2713",
+   "cavp_id": "21916",
+   "cavp_ref": "HMAC:2713"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2257",
+   "cavp_id": "14387",
+   "cavp_ref": "RSA:2257"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3410",
+   "cavp_id": "18394",
+   "cavp_ref": "SHS:3410"
+  }
+ ],
+ "vendor": "Automation Solutions, Inc (AUTOSOL)",
+ "vendor_info": {
+  "name": "Automation Solutions, Inc (AUTOSOL)",
+  "website": "http://www.autosoln.com",
+  "address": [
+   "16055 Space Center Blvd.",
+   "Houston, TX 77062",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ken Brucker"
+   },
+   {
+    "name": "Edgar Cantu"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2855.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMar2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/3/2017",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/3/2017",
+ "last_updated": "3/3/2017",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2855.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 128 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); PBKDF (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2855,
+  "vendor": "Automation Solutions, Inc (AUTOSOL)",
+  "module": "CryptoMod",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/03/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

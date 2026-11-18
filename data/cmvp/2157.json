@@ -1,0 +1,144 @@
+{
+ "cert": 2157,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2157",
+ "module": "Mocana Cryptographic Suite B Hybrid Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Mocana Cryptographic Suite B Hybrid Module (Software Version 5.5fi) is a hybrid, multi-chip standalone cryptographic module that runs on a general purpose computer. The primary purpose of this module is to provide FIPS Approved cryptographic routines to consuming applications via an Application Programming Interface.",
+ "tested_configurations": [
+  "VxWorks 6.8 running on a XPedite5500 with a Freescale P2020 SEC3.1 processor (Single-user mode)"
+ ],
+ "hardware_versions": "Freescale P2020 SEC 3.1",
+ "software_versions": "5.5fi",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2290",
+   "cavp_id": "20414",
+   "cavp_ref": "AES:2290"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2291",
+   "cavp_id": "20219",
+   "cavp_ref": "AES:2291"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 284",
+   "cavp_id": "26805",
+   "cavp_ref": "DRBG:284"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 717",
+   "cavp_id": "3642",
+   "cavp_ref": "DSA:717"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 372",
+   "cavp_id": "29749",
+   "cavp_ref": "ECDSA:372"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1407",
+   "cavp_id": "25314",
+   "cavp_ref": "HMAC:1407"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1179",
+   "cavp_id": "20969",
+   "cavp_ref": "RSA:1179"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1974",
+   "cavp_id": "17976",
+   "cavp_ref": "SHS:1974"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1440",
+   "cavp_id": "16233",
+   "cavp_ref": "TDES:1440"
+  }
+ ],
+ "vendor": "Mocana Corporation",
+ "vendor_info": {
+  "name": "Mocana Corporation",
+  "website": "http://www.mocana.com",
+  "address": [
+   "350 Sansome Street",
+   "Suite 1010",
+   "San Francisco, CA 94104",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mocana Sales"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2157.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0041.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/20/2014",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/5/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "5/20/2014",
+ "last_updated": "4/5/2016",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2157.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); NDRNG; DES; Blowfish; ARC2; ARC4; MD2; MD4; MD5; HMAC-MD5; AES EAX (non-compliant); AES XCBC (non-compliant); RSA (encrypt/decrypt); RNG; Dual EC DRBG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2157,
+  "vendor": "Mocana Corporation",
+  "module": "Mocana Cryptographic Suite B Hybrid Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "05/20/2014",
+   "04/05/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

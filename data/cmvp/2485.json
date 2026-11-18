@@ -1,0 +1,120 @@
+{
+ "cert": 2485,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2485",
+ "module": "HiKey PKI Token",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "With tamper evident seals and security devices installed as indicated in the Security Policy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Ports and Interfaces: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The HiKey token modules are multi-chip standalone implementations of a cryptographic module. The Hikey token modules are USB tokens that adhere to ISO/IEC specifications for Integrated Circuit Chip (ICC) based identification cards.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "HiKey3.0-BK",
+ "firmware_versions": "HiKey COS V3.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 608",
+   "cavp_id": "15931",
+   "cavp_ref": "DRBG:608"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1585",
+   "cavp_id": "24325",
+   "cavp_ref": "RSA:1585"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2557",
+   "cavp_id": "7115",
+   "cavp_ref": "SHS:2557"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1783",
+   "cavp_id": "29320",
+   "cavp_ref": "TDES:1783"
+  }
+ ],
+ "vendor": "Chunghwa Telecom Co., Ltd.",
+ "vendor_info": {
+  "name": "Chunghwa Telecom Co., Ltd.",
+  "website": "http://www.cht.com.tw",
+  "address": [
+   "No.99, Dianyan Road",
+   "Yang-Mei",
+   "Taoyuan, Taiwan 326",
+   "Republic of China"
+  ],
+  "contacts": [
+   {
+    "name": "Yeou-Fuh Kuan"
+   },
+   {
+    "name": "Char-Shin Miou"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2485.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2015.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/14/2015",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "1/22/2016",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "12/14/2015",
+ "last_updated": "1/22/2016",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2485.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-131A transition which disallows key wrapping not compliant to SP 800-38F.",
+  "Other Algorithms": "NDRNG; Triple-DES (Cert. #1783, key wrapping methodology provides 112-bits of encryption strength; non-compliant less than 112-bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)."
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2485,
+  "vendor": "Chunghwa Telecom Co., Ltd.",
+  "module": "HiKey PKI Token",
+  "type": "Hardware",
+  "validation_dates": [
+   "12/14/2015",
+   "01/22/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,183 @@
+{
+ "cert": 3661,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3661",
+ "module": "SafeZone FIPS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Inside Secure FIPS Cryptographic Module is a FIPS 140-2 Security Level 1 validated software cryptographic module from INSIDE Secure. The module is a toolkit which provides the most commonly needed cryptographic primitives for a large variety of applications, including but not limited to, primitives needed for DAR, DRM, TLS, and VPN on mobile devices.",
+ "tested_configurations": [
+  "Debian 9 Linux running on a Raspberry Pi 2 with an ARM Cortex-A7",
+  "Debian 9 Linux running on a ROCK64 with an ARM Cortex-A53 with PAA",
+  "Debian 9 Linux running on a ROCK64 with an ARM Cortex-A53 without PAA",
+  "Xubuntu 18.04.1 LTS running on a Lenovo MIIX 320 with an Intel Atom x5 (32-bit) with PAA",
+  "Xubuntu 18.04.1 LTS running on a Lenovo MIIX 320 with an Intel Atom x5 (32-bit) without PAA",
+  "Xubuntu 18.04.1 LTS running on a Lenovo MIIX 320 with an Intel Atom x5 (64-bit) with PAA",
+  "Xubuntu 18.04.1 LTS running on a Lenovo MIIX 320 with an Intel Atom x5 (64-bit) without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #C510 with SP 800-56C, vendor affirmed, key agreement; key establishment methodology provides between 112 and 200 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C510 with SP 800-56C, vendor affirmed, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "software_versions": "1.2.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C510; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C510",
+   "cavp_id": "30906",
+   "cavp_ref": "C:510"
+  }
+ ],
+ "vendor": "Rambus Global Inc., Finnish branch",
+ "vendor_info": {
+  "name": "Rambus Global Inc., Finnish branch",
+  "website": "http://www.rambus.com",
+  "address": [
+   "Sokerilinnantie 11 C",
+   "Espoo FI-02600",
+   "Finland"
+  ],
+  "contacts": [
+   {
+    "name": "Markku Kontio"
+   },
+   {
+    "name": "Gijs Willemse"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3661.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202020_010620_1115.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/29/2020",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "5/29/2020",
+ "last_updated": "5/29/2020",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3661.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4588"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #C510 with SP 800-56C, vendor affirmed, key agreement; key establishment methodology provides between 112 and 200 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C510 with SP 800-56C, vendor affirmed, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3661,
+  "vendor": "Rambus Global Inc., Finnish branch",
+  "module": "SafeZone FIPS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/29/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

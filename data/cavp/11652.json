@@ -1,0 +1,74 @@
+{
+ "cavp_id": "11652",
+ "cavp_cert": "AES 1384",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11652",
+ "implementation": "FIPS Kernel Mode Cryptographic Module (VSEC.SYS)",
+ "product_id": "7651",
+ "description": "Previously called: Digital Guardian Security Kernel v1.0. VSEC.SYS is a Windows kernel mode export driver that provides FIPS Approved cryptographic services to Verdasys applications such as Digital Guardian.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/10/2010",
+ "vendor": "Digital Guardian, Inc.",
+ "vendor_website": "http://digitalguardian.com",
+ "oes": [
+  {
+   "name": "Microsoft Windows XP (32-bit) on Intel Core 2 Quad",
+   "details": []
+  },
+  {
+   "name": "Microsoft Windows XP (64-bit) on Intel Core 2 Quad",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

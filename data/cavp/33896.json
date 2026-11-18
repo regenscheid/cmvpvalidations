@@ -1,0 +1,86 @@
+{
+ "cavp_id": "33896",
+ "cavp_cert": "A1287",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33896",
+ "implementation": "Vormetric Transparent Encryption Cryptographic Module",
+ "product_id": "13778",
+ "description": "The Vormetric Transparent Encryption Cryptographic Module is a loadable kernel module providing cryptographic services through the Vormetric Transparent Encryption Cryptographic Library. Cryptographic services include AES-CBC, AES XTS, SHA-256 SHA-384, HMAC-SHA-256 and HMAC-SHA-384.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "4/15/2021",
+ "vendor": "Thales",
+ "vendor_website": "http://www.thalesesecurity.com/",
+ "oes": [
+  {
+   "name": "AIX 7.1 TL 7100-05-04-1914 on IBM EPXH 12-Core 3.52GHz Power8 Processor CPU",
+   "details": [
+    "os: AIX 7.1 TL 7100-05-04-1914",
+    "processor: IBM EPXH 12-Core 3.52GHz Power8 Processor CPU",
+    "  manufacturer: IBM"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256-448 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 256-448 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 100000",
+    "    HMAC Algorithm: SHA2-384",
+    "    Password Length: 48",
+    "    Salt Length: 256",
+    "    Key Data Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

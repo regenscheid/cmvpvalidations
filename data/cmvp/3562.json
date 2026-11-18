@@ -1,0 +1,217 @@
+{
+ "cert": 3562,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3562",
+ "module": "Amazon Linux 2 OpenSSH Server Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Amazon Linux 2 OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #3553 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Amazon Linux 2 OpenSSH Server Cryptographic Module is a software module implementing the SSH protocol and acts as a server daemon.",
+ "tested_configurations": [
+  "Amazon Linux 2 running on Amazon EC2 i3.metal with Intel Xeon E5-2686 with PAA",
+  "Amazon Linux 2 running on Amazon EC2 i3.metal with Intel Xeon E5-2686 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #C523 with CVL Cert. #C562, key agreement; key establishment methodology provides between 112 and 202 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C523 with CVL Cert. #C562, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C524",
+   "cavp_id": "30920",
+   "cavp_ref": "C:524"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C525",
+   "cavp_id": "30921",
+   "cavp_ref": "C:525"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C562",
+   "cavp_id": "30958",
+   "cavp_ref": "C:562"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C524",
+   "cavp_id": "30920",
+   "cavp_ref": "C:524"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C525",
+   "cavp_id": "30921",
+   "cavp_ref": "C:525"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C524",
+   "cavp_id": "30920",
+   "cavp_ref": "C:524"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C525",
+   "cavp_id": "30921",
+   "cavp_ref": "C:525"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C526",
+   "cavp_id": "30922",
+   "cavp_ref": "C:526"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C523, #C524 and #C525 and HMAC Certs. #C523, #C524, #C525 and #C526; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #C523 and HMAC Certs. #C523, #C524, #C525 and #C526; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C524",
+   "cavp_id": "30920",
+   "cavp_ref": "C:524"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C525",
+   "cavp_id": "30921",
+   "cavp_ref": "C:525"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C526",
+   "cavp_id": "30922",
+   "cavp_ref": "C:526"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "http://aws.amazon.com",
+  "address": [
+   "1918 8th Ave.",
+   "Seattle, WA 98121",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Samartha Chandrashekar"
+   },
+   {
+    "name": "Raghuram Kota"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3562.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/14/2019",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "11/14/2019",
+ "last_updated": "11/14/2019",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3562.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #C523 with CVL Cert. #C562, key agreement; key establishment methodology provides between 112 and 202 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C523 with CVL Cert. #C562, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3562,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "Amazon Linux 2 OpenSSH Server Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "11/14/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,101 @@
+{
+ "cert": 1006,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1006",
+ "module": "Windows Server 2008 Code Integrity (ci.dll)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Winload OS Loader (winload.exe) validated to FIPS 140-2 under Cert. #1005 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "This is a dynamically linked library that runs as ntoskrnl.exe. It verifies the integrity of executable files, including kernel mode drivers, critical system components and user mode crypto modules, before these files are loaded from disk into memory by the memory manager.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2008 (IA64 version) (single-user mode)",
+  "Microsoft Windows Server 2008 (x64 version)",
+  "Microsoft Windows Server 2008 (x86 Version)"
+ ],
+ "software_versions": "6.0.6001.18000 and 6.0.6002.18005",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 355",
+   "cavp_id": "19223",
+   "cavp_ref": "RSA:355"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 753",
+   "cavp_id": "19283",
+   "cavp_ref": "SHS:753"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dave Friant"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1006.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1006.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/15/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "7/24/2009",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "8/15/2008",
+ "last_updated": "7/24/2009",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1006.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1006,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows Server 2008 Code Integrity (ci.dll)",
+  "type": "Software",
+  "validation_dates": [
+   "08/15/2008",
+   "07/24/2009"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,178 @@
+{
+ "cert": 1470,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1470",
+ "module": "IBM® z/OS® Version 1 Release 11 ICSF PKCS#11 Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-chip standalone",
+ "description": "The ICSF PKCS #11 module consists of software-based cryptographic algorithms, as well as symmetric and hashing algorithms provided by the CP Assist for Cryptographic Function (CPACF) and RSA Hardware clear key modular math cryptography provided through the Crypto Express3 card (CEX3A). The RSA hardware support is accessed through auxiliary module CSFINPVT which acts as a pipe between ICSF PKCS #11 and the cryptographic cards.",
+ "tested_configurations": [
+  "(single-user mode)",
+  "IBM System z10® Enterprise Class (z10 EC) with CP Assist for Cryptographic Functions DES/TDES Enablement Feature 3863 [Base GPC, optional Crypto Express3 Card (Accelerator (CEX3A))] [IBM System z10® Enterprise Class (z10 EC) with CP Assist for Cryptographic Functions DES/TDES Enablement Feature 3863 (aka FC3863) includes FC3863 w/System Driver Level 77 and z/OS® V1R11]"
+ ],
+ "hardware_versions": "CPACF (P/N COP) and optional 4765-001 (P/N 45D6048)",
+ "software_versions": "APAR OA32012 and APAR OA30951",
+ "firmware_versions": "CPACF (FC3863 w/ System Driver Level 77) and optional 4765-001 (e1ced7a0)",
+ "product_url": "http://www-03.ibm.com/systems/z/os/zos/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1332",
+   "cavp_id": "3870",
+   "cavp_ref": "AES:1332"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 976",
+   "cavp_id": "21305",
+   "cavp_ref": "AES:976"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 437",
+   "cavp_id": "21448",
+   "cavp_ref": "DSA:437"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 171",
+   "cavp_id": "21039",
+   "cavp_ref": "ECDSA:171"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 780",
+   "cavp_id": "16567",
+   "cavp_ref": "HMAC:780"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 734",
+   "cavp_id": "27009",
+   "cavp_ref": "RNG:734"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 644",
+   "cavp_id": "21806",
+   "cavp_ref": "RSA:644"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 645",
+   "cavp_id": "1562",
+   "cavp_ref": "RSA:645"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 691",
+   "cavp_id": "11737",
+   "cavp_ref": "RSA:691"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 946",
+   "cavp_id": "5460",
+   "cavp_ref": "SHS:946"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1218",
+   "cavp_id": "4911",
+   "cavp_ref": "SHS:1218"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 931",
+   "cavp_id": "28767",
+   "cavp_ref": "TDES:931"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 769",
+   "cavp_id": "992",
+   "cavp_ref": "TDES:769"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "12 - 14 Marine Parade",
+   "Seabank Centre",
+   "Southport, QLD 4215",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "William F Penny"
+   },
+   {
+    "name": "James Sweeny"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1470.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1470.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/28/2010",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "6/1/2011",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "10/4/2011",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "12/28/2010",
+ "last_updated": "10/4/2011",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1470.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; Triple-DES (non-compliant); DSA (non-compliant); HMAC (non-compliant); RC4; BLOWFISH; MD5; MD2; RIPE-MD; EC Brainpool"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1470,
+  "vendor": "IBM® Corporation",
+  "module": "IBM® z/OS® Version 1 Release 11 ICSF PKCS#11 Cryptographic Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "12/28/2010",
+   "06/01/2011",
+   "10/04/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

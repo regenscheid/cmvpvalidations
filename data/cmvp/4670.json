@@ -1,0 +1,256 @@
+{
+ "cert": 4670,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4670",
+ "module": "Kernel Mode Cryptographic Primitives Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Windows OS Loader validated to FIPS 140-2 under Cert. #4545 operating in FIPS mode",
+ "level_exceptions": [
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Kernel Mode Cryptographic Primitives Library (cng.sys) runs as a kernel mode export driver, and provides cryptographic services, through their documented interfaces, to Windows kernel components. It supports several cryptographic algorithms accessible via a FIPS function table request IRP (I/O request packet).",
+ "tested_configurations": [
+  "Windows Server 2019 Datacenter Core (x64) running on a Dell PowerEdge R640 Server with an Intel Xeon Gold 6230 with PAA",
+  "Windows Server 2019 Datacenter Core (x64) running on a Dell PowerEdge R840 Server with an Intel Xeon Platinum 8260 with PAA",
+  "Windows Server 2019 Datacenter Core (x64) running on a Dell XR2 with an Intel Xeon Silver 4114 with PAA",
+  "Windows Server 2019 Datacenter Core (x64) running on a Rugged Mobile Appliance with an Intel Xeon D-1559 with PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256-bits of encryption strength); NDRNG",
+ "hardware_versions": "Intel Xeon Silver 4114, Intel Xeon Gold 6230, Intel Xeon Platinum 8260 and Intel Xeon D-1559",
+ "software_versions": "10.0.17763.10021 and 10.0.17763.10127",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1584",
+   "cavp_id": "32191",
+   "cavp_ref": "C:1584"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2050",
+   "cavp_id": "33103",
+   "cavp_ref": "C:2050"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C1584",
+   "cavp_id": "32191",
+   "cavp_ref": "C:1584"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C2050",
+   "cavp_id": "33103",
+   "cavp_ref": "C:2050"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1584 and #C2050; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1586",
+   "cavp_id": "32193",
+   "cavp_ref": "C:1586"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2052",
+   "cavp_id": "33105",
+   "cavp_ref": "C:2052"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1577",
+   "cavp_id": "32156",
+   "cavp_ref": "C:1577"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C2044",
+   "cavp_id": "33089",
+   "cavp_ref": "C:2044"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4670.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202023_020124_0656.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/12/2023",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "12/12/2023",
+ "last_updated": "12/12/2023",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4670.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256-bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4670,
+  "vendor": "Microsoft Corporation",
+  "module": "Kernel Mode Cryptographic Primitives Library",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "12/12/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

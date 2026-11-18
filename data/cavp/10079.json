@@ -1,0 +1,38 @@
+{
+ "cavp_id": "10079",
+ "cavp_cert": "AES 22",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10079",
+ "implementation": "Sigaba Gateway",
+ "product_id": "3841",
+ "description": "Ensures the confidentiality, integrity and authenticity of all email sent over the Internet. Resides between an organization's email server and firewall. It encrypts outbound messages and decrypts inbound messges based on organization-defined policies. It uses a key server to retrieve a unique key to individually encrypt each outgoing message and decrypt each incoming message. Works with any authenitication mechanism.",
+ "version": "3.0",
+ "type": "SOFTWARE",
+ "first_validated": "8/16/2002",
+ "vendor": "Proofpoint, Inc.",
+ "vendor_website": "http://www.proofpoint.com",
+ "oes": [
+  {
+   "name": "Windows 2000 on Pentium III",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

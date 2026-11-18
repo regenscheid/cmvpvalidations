@@ -1,0 +1,48 @@
+{
+ "cavp_id": "32795",
+ "cavp_cert": "C1891",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32795",
+ "implementation": "Juniper Linux Kernel Cryptographic Module (RFC4016-GCM-IIV)",
+ "product_id": "12698",
+ "description": "Linux kernel cryptographic services for the Junos OS. AES GCM RFC4016 with Internal IV",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/25/2020",
+ "vendor": "Juniper Networks",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Junos OS Evolved version 19.4R2 on Intel Xeon E5-2628L v4",
+   "details": [
+    "processor: Intel Xeon E5-2628L v4",
+    "  manufacturer: Intel",
+    "software: Junos OS Evolved version 19.4R2"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 160, 384, 800, 1024",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

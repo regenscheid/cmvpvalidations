@@ -1,0 +1,140 @@
+{
+ "cert": 2621,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2621",
+ "module": "Websense C Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Websense produces a family of web, e-mail and data security solutions that can be deployed on pre-configured, security hardened hardware or as customer installable software. The Websense C Crypto Module provides support for cryptographic and secure communications services for these solutions.",
+ "tested_configurations": [
+  "Windows Server 2008 R2 on a Dell OptiPlex 755"
+ ],
+ "software_versions": "2.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2273",
+   "cavp_id": "4636",
+   "cavp_ref": "AES:2273"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 44",
+   "cavp_id": "19567",
+   "cavp_ref": "Component:44"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 281",
+   "cavp_id": "29111",
+   "cavp_ref": "DRBG:281"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 709",
+   "cavp_id": "6658",
+   "cavp_ref": "DSA:709"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 368",
+   "cavp_id": "3803",
+   "cavp_ref": "ECDSA:368"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1391",
+   "cavp_id": "23455",
+   "cavp_ref": "HMAC:1391"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1166",
+   "cavp_id": "2122",
+   "cavp_ref": "RSA:1166"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1954",
+   "cavp_id": "1950",
+   "cavp_ref": "SHS:1954"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1420",
+   "cavp_id": "11139",
+   "cavp_ref": "TDES:1420"
+  }
+ ],
+ "vendor": "Forcepoint",
+ "vendor_info": {
+  "name": "Forcepoint",
+  "website": "http://www.forcepoint.com",
+  "address": [
+   "10900-A Stonelake Blvd.",
+   "Quarry Oaks 1",
+   "Ste. 350",
+   "Austin, TX 78759",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Matt Sturm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2621.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertApril2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/21/2016",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "4/21/2016",
+ "last_updated": "4/21/2016",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2621.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RNG; Dual EC DRBG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2621,
+  "vendor": "Forcepoint",
+  "module": "Websense C Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/21/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

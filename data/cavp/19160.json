@@ -1,0 +1,39 @@
+{
+ "cavp_id": "19160",
+ "cavp_cert": "AES 1638",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19160",
+ "implementation": "4 Gb/s FC I/O Module with Encryption",
+ "product_id": "2004",
+ "description": "EMC 4Gb/s FC I/O modules provide Data at Rest Encryption to all array drives using XTS-AES-256. Back-end encryption protects information when drives are removed from the array and supports rapid array decommissioning. The modules do the encryption and don't require self-encrypting drives. Supports all drives types.",
+ "version": "303-176-100B B04",
+ "type": "HARDWARE",
+ "first_validated": "5/12/2011",
+ "vendor": "EMC Corporation",
+ "vendor_website": "http://www.emc.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full, Partial"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

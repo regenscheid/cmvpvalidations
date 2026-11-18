@@ -1,0 +1,83 @@
+{
+ "cavp_id": "31288",
+ "cavp_cert": "C892",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31288",
+ "implementation": "QFlex HSM Secure Boot Library",
+ "product_id": "11246",
+ "description": "QFlex secure boot cryptographic operations run in firmware during the boot-up sequence of a QFlex HSM. Hashing and signature verification operations are used to validate firmware load on system prior to booting HSM software.",
+ "version": "1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "7/8/2019",
+ "vendor": "Envieta Systems LLC",
+ "vendor_website": "http://envieta.com",
+ "oes": [
+  {
+   "name": "Linux 4.1.33 on Arria 10 SoC with Cortex-A9 dual-core ARMv7",
+   "details": [
+    "processor: Arria 10 SoC with Cortex-A9 dual-core ARMv7",
+    "software: Linux 4.1.33"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C892 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key sizes < block size",
+    "C892 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 512",
+    "Public Exponent Mode: Random",
+    "C892 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

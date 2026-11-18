@@ -1,0 +1,54 @@
+{
+ "cavp_id": "32879",
+ "cavp_cert": "C1973",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32879",
+ "implementation": "XTS-AES Cipher Module",
+ "product_id": "12783",
+ "description": "The design consists of 10 XTS sub-engines. Each XTS sub-engine further consists of an AES engine alone with Cipher Text Stealing circuitry. Each XTS sub-engine has access to a key RAM in order to access the XTS and AES keys. The decryption key is determined ahead of time to allow for symmetric processing.",
+ "version": "14369:15c367cd7d19",
+ "type": "FIRMWARE",
+ "first_validated": "7/2/2020",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.wdc.com",
+ "oes": [
+  {
+   "name": "Simulator: Cadence NC Version 15.10.022",
+   "details": [
+    "processor: Simulator: Cadence NC Version 15.10.022"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 4160, 4224, 32832, 32896, 65536",
+    "Tweak Mode: Number",
+    "C1973 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4160, 4224, 32832, 32896, 65536",
+    "Tweak Mode: Number",
+    "C1973 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

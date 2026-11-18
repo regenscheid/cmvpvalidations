@@ -1,0 +1,69 @@
+{
+ "cavp_id": "31990",
+ "cavp_cert": "C1521",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31990",
+ "implementation": "Ubuntu 16.04 OpenSSL SSSE3 for Bit Slice AES, PCLMULQDQ for multiplication and GHASH",
+ "product_id": "11941",
+ "description": "The test covers SSSE3 for Bit Slice AES, and PCLMULQDQ for multiplication and GHASH for Ubuntu 16.04 OpenSSL.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/21/2020",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on Intel(R) Xeon(R) Silver 4216",
+   "details": [
+    "processor: Intel Xeon(R) Silver 4216",
+    "  manufacturer: Intel",
+    "software: Ubuntu 16.04"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 1024",
+    "Payload Length: 160, 384, 800, 1024",
+    "AAD Length: 0, 160, 384, 800, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 1024",
+    "AAD Length: 0, 160, 384, 800, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

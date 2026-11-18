@@ -1,0 +1,125 @@
+{
+ "cert": 2218,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2218",
+ "module": "Tripwire Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Tripwire Cryptographic Module supports many FIPS approved cryptographic operations, providing other Tripwire products and Java-based applications access to these algorithms via the standard Java Cryptographic Extension (JCE) framework.",
+ "tested_configurations": [
+  "Java SE Runtime Environment (build 1.6.0_33-b05) [JavaHotSpot 64-bit Server VM (build 20.8-b03 mixed mode)] on Windows 2008 Server R2 with SP1 (64-bit) running on a Dell Optiplex 9010 (single-user mode)",
+  "Java SE Runtime Environment (build 1.6.0_33-b05) [JavaHotSpot 64-bit Server VM (build 20.8-b03 mixed mode)] on Windows 2008 Server R2 with SP1 (64-bit) running on a Dell Optiplex 960"
+ ],
+ "software_versions": "2.0",
+ "product_url": "http://www.tripwire.com/fips",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2719",
+   "cavp_id": "4906",
+   "cavp_ref": "AES:2719"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 176",
+   "cavp_id": "18801",
+   "cavp_ref": "Component:176"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 835",
+   "cavp_id": "19172",
+   "cavp_ref": "DSA:835"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1698",
+   "cavp_id": "16673",
+   "cavp_ref": "HMAC:1698"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1260",
+   "cavp_id": "12540",
+   "cavp_ref": "RNG:1260"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1414",
+   "cavp_id": "26120",
+   "cavp_ref": "RSA:1414"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2284",
+   "cavp_id": "10103",
+   "cavp_ref": "SHS:2284"
+  }
+ ],
+ "vendor": "Tripwire, Inc.",
+ "vendor_info": {
+  "name": "Tripwire, Inc.",
+  "website": "http://www.tripwire.com",
+  "address": [
+   "101 SW Main St.",
+   "Suite 1500",
+   "Portland, OR 97204",
+   "USA"
+  ],
+  "contacts": []
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2218.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0044.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/7/2014",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "8/7/2014",
+ "last_updated": "8/7/2014",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2218.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "MD5; HMAC-MD5; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2218,
+  "vendor": "Tripwire, Inc.",
+  "module": "Tripwire Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/07/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,55 @@
+{
+ "cavp_id": "10492",
+ "cavp_cert": "ECDSA 922",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10492",
+ "implementation": "TRANSEC Cryptographic Engine",
+ "product_id": "5663",
+ "description": "The Comtech EF Data FIPS Security Module features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via Comtech Satellite Modems, as well as firmware to provide the cryptographic functions needed to act as a endpoint for TLS management and control traffic.",
+ "version": "2.2.4 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/9/2016",
+ "vendor": "Comtech EF Data Corporation",
+ "vendor_website": "http://www.comtechefdata.com",
+ "oes": [
+  {
+   "name": "AMCC PowerPC 440EP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits, Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: B-163, B-233, B-283, B-409, B-571, K-163, K-233, K-283, K-409, K-571, P-192, P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: B-163, B-233, B-283, B-409, B-571, K-163, K-233, K-283, K-409, K-571, P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

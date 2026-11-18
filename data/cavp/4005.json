@@ -1,0 +1,57 @@
+{
+ "cavp_id": "4005",
+ "cavp_cert": "AES 4832",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4005",
+ "implementation": "BigIP B7000 TMM Implementation",
+ "product_id": "8538",
+ "description": "F5® BIG-IP® Application Delivery Controller and Firewall software running on F5 BIG-IP.",
+ "version": "13.1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/3/2017",
+ "vendor": "F5 Networks",
+ "vendor_website": "http://f5.com",
+ "oes": [
+  {
+   "name": "Intel(R) Xeon(R) CPU E3-1275",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 104, 128, 256, 408",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

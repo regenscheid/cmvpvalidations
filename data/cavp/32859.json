@@ -1,0 +1,66 @@
+{
+ "cavp_id": "32859",
+ "cavp_cert": "C1953",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32859",
+ "implementation": "CAAM RSA",
+ "product_id": "12763",
+ "description": "A dedicated IP which is part of CAAM hardware provides complete implementation of RSA signature verification algorithm.",
+ "version": "CAAM: caam_mx8r2_003, caam_xt.c: ed3df60ffca08cef5e787594bd0c606e2beda240",
+ "type": "HARDWARE",
+ "first_validated": "7/1/2020",
+ "vendor": "NXP Semiconductors",
+ "vendor_website": "http://www.nxp.com",
+ "oes": [
+  {
+   "name": "ARM Cortex M0+",
+   "details": [
+    "processor: ARM Cortex M0+",
+    "  manufacturer: ARM"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Random"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

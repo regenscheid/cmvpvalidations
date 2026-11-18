@@ -1,0 +1,156 @@
+{
+ "cert": 2049,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2049",
+ "module": "SafeNet Software Cryptographic Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and when installed, initialized and configured as specified in Section 4 of the provided Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy; No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The SafeNet Software Cryptographic Library is SafeNet's cryptographic service provider that provides extended high performance cryptographic services for SafeNet's broad range of Data Protection products.",
+ "tested_configurations": [
+  "Android 4.0 running on Beagleboard xM with PAA",
+  "CentOS 5.6 32-bit running on a Dell PowerEdge 860 (Single User Mode)",
+  "NetBSD 4.0 32-bit on Vmware ESX running on Dell PowerEdge R210II with PAA",
+  "RHEL 6.2 64-bit running on a Dell PowerEdge R210II with PAA",
+  "Windows 7 32-bit running on a Acer Aspire AS5750",
+  "Windows 7 64-bit running on a Acer Aspire AS5750 with PAA",
+  "Windows Server 2008 64-bit running on Dell PowerEdge R210II",
+  "Windows Server 2008R2 64-bit running on Dell PowerEdge R210II with PAA"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2286",
+   "cavp_id": "28436",
+   "cavp_ref": "AES:2286"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 45",
+   "cavp_id": "824",
+   "cavp_ref": "Component:45"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 283",
+   "cavp_id": "23921",
+   "cavp_ref": "DRBG:283"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 714",
+   "cavp_id": "29978",
+   "cavp_ref": "DSA:714"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 370",
+   "cavp_id": "21205",
+   "cavp_ref": "ECDSA:370"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1402",
+   "cavp_id": "19849",
+   "cavp_ref": "HMAC:1402"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1176",
+   "cavp_id": "13250",
+   "cavp_ref": "RSA:1176"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1967",
+   "cavp_id": "27336",
+   "cavp_ref": "SHS:1967"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1434",
+   "cavp_id": "20559",
+   "cavp_ref": "TDES:1434"
+  }
+ ],
+ "vendor": "SafeNet, Inc.",
+ "vendor_info": {
+  "name": "SafeNet, Inc.",
+  "website": "http://www.safenet-inc.com",
+  "address": [
+   "4690 Millennium Drive",
+   "Belcamp, MD 21017",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Security and Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2049.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0035.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/27/2013",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "12/15/2015",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "1/10/2017",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "11/27/2013",
+ "last_updated": "1/10/2017",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2049.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 80 and 256 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 80 and 256 bits of encryption strength); RNG (non-compliant); DRBG (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2049,
+  "vendor": "SafeNet, Inc.",
+  "module": "SafeNet Software Cryptographic Library",
+  "type": "Software",
+  "validation_dates": [
+   "11/27/2013",
+   "12/15/2015",
+   "01/10/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

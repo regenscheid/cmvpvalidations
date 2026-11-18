@@ -1,0 +1,114 @@
+{
+ "cert": 1334,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1334",
+ "module": "Windows Server 2008 R2 Code Integrity (ci.dll)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Windows Server 2008 R2 Winload OS Loader (winload.exe) validated to FIPS 140-2 under Cert. #1333 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "This is a dynamically linked library that runs as ntoskrnl.exe. It verifies the integrity of executable files, including kernel mode drivers, critical system components and user mode crypto modules, before these files are loaded from disk into memory by the memory manager.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2008 R2 (IA64 version)",
+  "Microsoft Windows Server 2008 R2 (x64 Version)",
+  "Microsoft Windows Server 2008 R2 SP1 (IA64 version) (single-user mode)",
+  "Microsoft Windows Server 2008 R2 SP1 (x64 version)"
+ ],
+ "software_versions": "6.1.7600.16385, 6.1.7600.17122, 6.1.7600.21320, 6.1.7601.17514, 6.1.7601.17950 and 6.1.7601.22108",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 568",
+   "cavp_id": "25702",
+   "cavp_ref": "RSA:568"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1081",
+   "cavp_id": "20791",
+   "cavp_ref": "SHS:1081"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1334.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1334.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/15/2010",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "6/1/2011",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "6/21/2011",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "1/24/2013",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "6/15/2010",
+ "last_updated": "1/24/2013",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1334.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #1333",
+  "Other Algorithms": "MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1334,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows Server 2008 R2 Code Integrity (ci.dll)",
+  "type": "Software",
+  "validation_dates": [
+   "06/15/2010",
+   "06/01/2011",
+   "06/21/2011",
+   "01/24/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

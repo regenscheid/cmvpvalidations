@@ -1,0 +1,77 @@
+{
+ "cavp_id": "32498",
+ "cavp_cert": "C1709",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32498",
+ "implementation": "libALG GRV8000 AES",
+ "product_id": "12402",
+ "description": "libALG Cryptographic implementation for the Motorola Solutions GRV8000 Comparator.",
+ "version": "libALG_R01.07.00_AES",
+ "type": "FIRMWARE",
+ "first_validated": "5/6/2020",
+ "vendor": "Motorola Solutions Inc",
+ "vendor_website": "http://www.motorolasolutions.com",
+ "oes": [
+  {
+   "name": "NXP QorIQ P1021",
+   "details": [
+    "processor: NXP QorIQ P1021"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 248, 256, 1000, 1024",
+    "AAD Length: 0, 248, 256, 1000, 1024",
+    "C1709 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 248, 256, 1000, 1024",
+    "C1709 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

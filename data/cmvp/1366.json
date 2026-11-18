@@ -1,0 +1,149 @@
+{
+ "cert": 1366,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1366",
+ "module": "Lexmark PrintCryption",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "Requires Option P/N 30G0829 to enable the PrintCryption firmware.",
+ "level_exceptions": [
+  "Tested: Lexmark X463de Printer with ARM9 processor on Lexmark Linux v2.6",
+  "Lexmark X651de Printer with IBM750CL processor on Lexmark Linux v2.6"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Lexmark PrintCryption is an option for the Lexmark printers that enables the transfer and printing of encrypted print jobs. With the PrintCryption module installed, the printer is capable of decrypting print jobs encrypted with the AES (FIPS 197) algorithm. The Lexmark PrintCryption analyzes the encrypted data stream, determines if the correct key was used to encrypt the data, decrypts the data and allows the confidential document to be printed.",
+ "firmware_versions": "1.3.2a and 1.3.2i",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1208",
+   "cavp_id": "20922",
+   "cavp_ref": "AES:1208"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1209",
+   "cavp_id": "23383",
+   "cavp_ref": "AES:1209"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 703",
+   "cavp_id": "19686",
+   "cavp_ref": "HMAC:703"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 704",
+   "cavp_id": "27358",
+   "cavp_ref": "HMAC:704"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 669",
+   "cavp_id": "20625",
+   "cavp_ref": "RNG:669"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 670",
+   "cavp_id": "10524",
+   "cavp_ref": "RNG:670"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 578",
+   "cavp_id": "30279",
+   "cavp_ref": "RSA:578"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 579",
+   "cavp_id": "19871",
+   "cavp_ref": "RSA:579",
+   "note": "FIPS 186-3  vendor affirmed"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1111",
+   "cavp_id": "16384",
+   "cavp_ref": "SHS:1111"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1112",
+   "cavp_id": "7974",
+   "cavp_ref": "SHS:1112"
+  }
+ ],
+ "vendor": "Lexmark International, Inc.",
+ "vendor_info": {
+  "name": "Lexmark International, Inc.",
+  "website": "http://www.lexmark.com",
+  "address": [
+   "740 West New Circle Rd.",
+   "Lexington, KY 40550",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Graydon Dodson"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1366.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1366.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/21/2010",
+   "type": "Initial",
+   "lab": "COACT INC CAFE LAB"
+  },
+  {
+   "date": "8/12/2010",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "7/21/2010",
+ "last_updated": "8/12/2010",
+ "labs": "COACT INC CAFE LAB",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1366.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 80 bits of encryption strength; non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1366,
+  "vendor": "Lexmark International, Inc.",
+  "module": "Lexmark PrintCryption",
+  "type": "Firmware",
+  "validation_dates": [
+   "07/21/2010",
+   "08/12/2010"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

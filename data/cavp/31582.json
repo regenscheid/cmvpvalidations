@@ -1,0 +1,183 @@
+{
+ "cavp_id": "31582",
+ "cavp_cert": "C1182",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31582",
+ "implementation": "JUNOS 19.1R2 MX-QuickSec",
+ "product_id": "11544",
+ "description": "MX104 3D Universal Edge router is a modular, highly redundant, mobile back haul optimized full featured MX series platform built for space and power constrained service provider and enterprise facilities.",
+ "version": "Junos OS 19.1R2",
+ "type": "FIRMWARE",
+ "first_validated": "10/2/2019",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Freescale P5021",
+   "details": [
+    "processor: Freescale P5021"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 1024",
+    "C1182 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 80, 96, 128, 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1182 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C1182 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192, 256, 320, 384",
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size",
+    "C1182 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 256",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 384",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 8-2040",
+    "    Diffie-Hellman Shared Secret Length: 256",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 8-2040",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 8-2040",
+    "    Diffie-Hellman Shared Secret Length: 384",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "C1182 (SHS)",
+    "C1182 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128-2048",
+    "    Responder Nonce Length: 128-2048",
+    "    Diffie-Hellman Shared Secret Length: 256",
+    "    Derived Keying Material Length: 960-1792",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128-2048",
+    "    Responder Nonce Length: 128-2048",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Derived Keying Material Length: 960-1792",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128-2048",
+    "    Responder Nonce Length: 128-2048",
+    "    Diffie-Hellman Shared Secret Length: 384",
+    "    Derived Keying Material Length: 960-1792",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "C1182 (SHS)",
+    "C1182 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

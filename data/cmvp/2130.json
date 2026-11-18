@@ -1,0 +1,125 @@
+{
+ "cert": 2130,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2130",
+ "module": "SCS Linux Kernel Cryptographic Services module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module OpenSSL FIPS Object Module V2 validated to FIPS 140-2 under Cert. #1747 operating in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "A FIPS module that provides a C-language application program interface (API) for use by other processes that require cryptographic functionality within the SCS 100 and 200 hardware platforms.",
+ "tested_configurations": [
+  "Fedora 12 (Linux 2.6.32 kernel) running on M5 Network Security model SCS-100",
+  "Fedora 12 (Linux 2.6.32 kernel) running on M5 Network Security model SCS-200 (single-user mode)"
+ ],
+ "software_versions": "kernel-PAE-2.6.32.14-127.scs.fips.fc12.i686",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2604",
+   "cavp_id": "17496",
+   "cavp_ref": "AES:2604"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1126",
+   "cavp_id": "20990",
+   "cavp_ref": "HMAC:1126"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1612",
+   "cavp_id": "27607",
+   "cavp_ref": "HMAC:1612"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1232",
+   "cavp_id": "381",
+   "cavp_ref": "RNG:1232"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2188",
+   "cavp_id": "8434",
+   "cavp_ref": "SHS:2188"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1569",
+   "cavp_id": "1917",
+   "cavp_ref": "TDES:1569"
+  }
+ ],
+ "vendor": "Northrop Grumman M5 Network Security",
+ "vendor_info": {
+  "name": "Northrop Grumman M5 Network Security",
+  "website": "http://www.northropgrumman.com/BUSINESSVENTURES/M5NETWORKSECURITY",
+  "address": [
+   "Canberra, Australia Level 1 218 Northbourne Ave Braddon, ACT 2612",
+   "Level 1 / 218 Northbourne Ave",
+   "Braddon, ACT 2612",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "Warwick Hoyle"
+   },
+   {
+    "name": "Kristian Howard"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2130.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0041.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/6/2014",
+   "type": "Initial",
+   "lab": "BAE SYSTEMS APPLIED INTELLIGENCE"
+  }
+ ],
+ "first_validated": "5/6/2014",
+ "last_updated": "5/6/2014",
+ "labs": "BAE SYSTEMS APPLIED INTELLIGENCE",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2130.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; Triple-DES CTR (non-compliant); AES GCM (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2130,
+  "vendor": "Northrop Grumman M5 Network Security",
+  "module": "SCS Linux Kernel Cryptographic Services module",
+  "type": "Software",
+  "validation_dates": [
+   "05/06/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

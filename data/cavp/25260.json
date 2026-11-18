@@ -1,0 +1,84 @@
+{
+ "cavp_id": "25260",
+ "cavp_cert": "AES 3772",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25260",
+ "implementation": "FIPS Crypto Module",
+ "product_id": "1483",
+ "description": "Ionic Security’s Ionic Data Protection Platform implements the FIPS Crypto Module for all cryptographic functions such as key pair generation, digital signature generation and verification, encryption and decryption, hashing functions, and message authentication.",
+ "version": "1.1",
+ "type": "SOFTWARE",
+ "first_validated": "1/15/2016",
+ "vendor": "Ionic Security Inc.",
+ "vendor_website": "http://www.ionicsecurity.com",
+ "oes": [
+  {
+   "name": "CentOS 7.1.1503 on Intel Xeon E5-2650",
+   "details": []
+  },
+  {
+   "name": "Windows 7 SP1 on Intel Core i7",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "Payload Length: 248, 256, 504, 512",
+    "AAD Length: 120, 128, 248, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "Payload Length: 248, 256, 504, 512",
+    "AAD Length: 120, 128, 248, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

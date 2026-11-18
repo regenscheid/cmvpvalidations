@@ -1,0 +1,61 @@
+{
+ "cavp_id": "33449",
+ "cavp_cert": "A851",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33449",
+ "implementation": "TA100 ACE AES128-ECB/GCM/GMAC",
+ "product_id": "13339",
+ "description": "The TA100 device is a member of the Microchip CryptoAutomotive family. It is a cryptographic Co-processor with secure hardware-based key storage used for secure authentication, product validation and other root-of-trust based operations. It is typically a companion device to an MCU/MPU on the same board.",
+ "version": "V1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/3/2020",
+ "vendor": "Microchip Technology Inc",
+ "vendor_website": "http://www.microchip.com",
+ "oes": [
+  {
+   "name": "Cadence Xcelium 18.03-s007 simulator",
+   "details": [
+    "firmware: Cadence Xcelium 18.03-s007 simulator",
+    "  Firmware"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-3984 Increment 8",
+    "AAD Length: 0-3984 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 8-7968 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,249 @@
+{
+ "cavp_id": "33086",
+ "cavp_cert": "C2042",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33086",
+ "implementation": "Junos OS QuickSec",
+ "product_id": "12994",
+ "description": "The NFX250 Network Services Platform provides multiple network connections and an open, standards-based architecture. It uses SRX Series next-generation firewall software for security. The NFX250 delivers business services, such as SD-WAN. It is for enterprise organizations and for service providers that deliver managed services to the enterprise.",
+ "version": "Junos OS 20.1R1",
+ "type": "FIRMWARE",
+ "first_validated": "8/6/2020",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "https://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Intel Xeon D-1528 (Broadwell)",
+   "details": [
+    "processor: Intel Xeon D-1528 (Broadwell)",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Testing Candidates",
+    "C2042 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "C2042 (DRBG)",
+    "C2042 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "C2042 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 8-256",
+    "    Additional Input: 8-256",
+    "    Returned Bits: 1024",
+    "C2042 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 256",
+    "Key sizes < block size",
+    "C2042 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192, 384",
+    "Key sizes < block size",
+    "C2042 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 256",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 384",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 8-256",
+    "    Diffie-Hellman Shared Secret Length: 256",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 8-256",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 8-256",
+    "    Diffie-Hellman Shared Secret Length: 384",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "C2042 (SHS)",
+    "C2042 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 256",
+    "    Responder Nonce Length: 256",
+    "    Diffie-Hellman Shared Secret Length: 256",
+    "    Derived Keying Material Length: 1136-2432",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Initiator Nonce Length: 256",
+    "    Responder Nonce Length: 256",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Derived Keying Material Length: 1136-2432",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Initiator Nonce Length: 256",
+    "    Responder Nonce Length: 256",
+    "    Diffie-Hellman Shared Secret Length: 384",
+    "    Derived Keying Material Length: 1136-2432",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "C2042 (SHS)",
+    "C2042 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256",
+    "C2042 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "C2042 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Random",
+    "C2042 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,45 @@
+{
+ "cavp_id": "10952",
+ "cavp_cert": "AES 2736",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10952",
+ "implementation": "Garuda ASIC Encryption/Decryption",
+ "product_id": "3445",
+ "description": "Garuda ASIC supports AES-128 based Encryption/Decryption & Authentication. It Supports GCM & GMAC as per IEEE802.1AE Specifications. 96bit IV is formed as {SCI,PN}. SCI is 64bit & PN is 32bit.",
+ "version": "08-0877-02",
+ "type": "HARDWARE",
+ "first_validated": "12/20/2013",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 512, 576, 640, 704",
+    "AAD Length: 256, 384, 464, 576"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 256, 384, 464, 576"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

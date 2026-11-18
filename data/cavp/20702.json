@@ -1,0 +1,39 @@
+{
+ "cavp_id": "20702",
+ "cavp_cert": "AES 2802",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20702",
+ "implementation": "XTS-AES-256-CIPHER.2.0",
+ "product_id": "3556",
+ "description": "XTS-AES-256-CIPHER.2.0 is a faster, second generation IP core implementing XTS-AES-256. Mercury Systems integrates this IP core into the ARMOR II processor to support hardware based encryption and decryption in its line of solid state drive (SSD) and secure storage products.",
+ "version": "2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/7/2014",
+ "vendor": "Mercury Systems",
+ "vendor_website": "http://www.mrcy.com",
+ "oes": [
+  {
+   "name": "MODELSIM PE 10.0b",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

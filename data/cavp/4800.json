@@ -1,0 +1,31 @@
+{
+ "cavp_id": "4800",
+ "cavp_cert": "HMAC 3048",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4800",
+ "implementation": "VMware VMkernel Cryptographic Module Loader",
+ "product_id": "1786",
+ "description": "The VMware VMkernel Cryptographic Module Loader is a user-space software utility that performs integrity test on the VMkernel cryptographic module prior to loading it",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "7/14/2017",
+ "vendor": "VMware, Inc.",
+ "vendor_website": "http://www.vmware.com",
+ "oes": [
+  {
+   "name": "VMware ESXi 6.7 on Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

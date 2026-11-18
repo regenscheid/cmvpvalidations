@@ -1,0 +1,66 @@
+{
+ "cavp_id": "1872",
+ "cavp_cert": "RSA 926",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1872",
+ "implementation": "VSX",
+ "product_id": "8229",
+ "description": "Check Point VPN-1 Power VSX is a virtualized security gateway that allows virtualized enterprises and managed service providers to create up to 250 virtual systems (firewall, VPN, and intrusion prevention functionality within a virtual network environment) on a single, highly scalable hardware platform.",
+ "version": "R67.10 with R7x hotfix (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/18/2011",
+ "vendor": "Check Point Software Technologies",
+ "vendor_website": "http://www.checkpoint.com",
+ "oes": [
+  {
+   "name": "Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048, 4096",
+    "Public Key Value: 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048, 4096",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

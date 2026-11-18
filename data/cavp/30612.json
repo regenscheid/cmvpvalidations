@@ -1,0 +1,75 @@
+{
+ "cavp_id": "30612",
+ "cavp_cert": "C216",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30612",
+ "implementation": "uMACE",
+ "product_id": "10577",
+ "description": "Implementation for the uMace cryptographic processor which is used in security modules embedded in Motorola Solutions security products.",
+ "version": "R03.01.07",
+ "type": "FIRMWARE",
+ "first_validated": "1/30/2019",
+ "vendor": "Motorola Solutions Inc",
+ "vendor_website": "http://www.motorolasolutions.com/",
+ "oes": [
+  {
+   "name": "Motorola uMace AT58Z04",
+   "details": [
+    "processor: Motorola ?Mace AT58Z04"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-384",
+    "Secret Generation Mode: Extra Bits",
+    "C216 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384",
+    "C216 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF without Key Confirmation:",
+    "      KDF Option:",
+    "        Concatenation:",
+    "      Parameter Set:",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "          MAC Option:",
+    "            HMAC-SHA2-384:",
+    "              Key Length: 384",
+    "              MAC Length: 384",
+    "C216 (ECDSA)",
+    "C216 (DRBG)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

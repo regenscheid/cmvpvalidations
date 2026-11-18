@@ -1,0 +1,82 @@
+{
+ "cavp_id": "32503",
+ "cavp_cert": "C1713",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32503",
+ "implementation": "I-HLR Cryptographic Module",
+ "product_id": "12406",
+ "description": "The I-HLR Cryptographic Module provides cryptographic services that allows the HPE I-HLR to protect sensitive application and subscriber data at rest and during transit.",
+ "version": "I-HLR 1.08.01",
+ "type": "SOFTWARE",
+ "first_validated": "5/7/2020",
+ "vendor": "Hewlett Packard®, Enterprise",
+ "vendor_website": "http://www.hp.com",
+ "oes": [
+  {
+   "name": "NonStop OS J06.23 on Intel Itanium 9500",
+   "details": [
+    "processor: Intel Itanium 9500",
+    "  manufacturer: Intel",
+    "software: NonStop OS J06.23"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C1713 (AES)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key sizes < block size",
+    "C1713 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

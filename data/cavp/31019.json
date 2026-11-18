@@ -1,0 +1,34 @@
+{
+ "cavp_id": "31019",
+ "cavp_cert": "C623",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31019",
+ "implementation": "OpenSSH",
+ "product_id": "10982",
+ "description": "SSH may generate keys of any size. Default is 2048. Open source version slightly modified to read our CSPs and perform necessary testing and validation.",
+ "version": "openssh-7.4p1",
+ "type": "FIRMWARE",
+ "first_validated": "4/15/2019",
+ "vendor": "SonicWall",
+ "vendor_website": "http://www.sonicwall.com",
+ "oes": [
+  {
+   "name": "Intel Core i5 with AES-NI",
+   "details": [
+    "processor: Intel Core i5 with AES-NI",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-256",
+    "Hash Algorithm: SHA2-256",
+    "C623 (SHS)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

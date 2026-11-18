@@ -1,0 +1,167 @@
+{
+ "cert": 4144,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4144",
+ "module": "NetApp CryptoMod",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "None",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "CryptoMod is a software cryptographic module whose purpose is to provide encryption/decryption for NetApp’s ONTAP Operating System (OS) kernel. The CryptoMod module makes use of the AES-NI instruction set in Intel processors. Since CryptoMod can support non-PAA implementations as well as PAA implementations of the pertinent cryptographic algorithms, CryptoMod is designated as a software only cryptographic module.",
+ "tested_configurations": [
+  "(single-user mode)",
+  "ONTAP 9.7P6 running on AFF A800 system with an Intel® Xeon® Platinum 8160 with PAA",
+  "ONTAP 9.7P6 running on AFF A800 system with an Intel® Xeon® Platinum 8160 without PAA",
+  "ONTAP 9.7P6 running on FAS2650 system with an Intel® Xeon® D-1528 with PAA",
+  "ONTAP 9.7P6 running on FAS2650 system with an Intel® Xeon® D-1528 without PAA",
+  "ONTAP 9.7P6 running on FAS8300 system with an Intel® Xeon® Silver 4210 with PAA",
+  "ONTAP 9.7P6 running on FAS8300 system with an Intel® Xeon® Silver 4210 without PAA"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "v2.2",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1884",
+   "cavp_id": "32788",
+   "cavp_ref": "C:1884"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1885",
+   "cavp_id": "32789",
+   "cavp_ref": "C:1885"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1884",
+   "cavp_id": "32788",
+   "cavp_ref": "C:1884"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1885",
+   "cavp_id": "32789",
+   "cavp_ref": "C:1885"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1884",
+   "cavp_id": "32788",
+   "cavp_ref": "C:1884"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1885",
+   "cavp_id": "32789",
+   "cavp_ref": "C:1885"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C1884",
+   "cavp_id": "32788",
+   "cavp_ref": "C:1884"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C1885",
+   "cavp_id": "32789",
+   "cavp_ref": "C:1885"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1884 and #C1885",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1884",
+   "cavp_id": "32788",
+   "cavp_ref": "C:1884"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1885",
+   "cavp_id": "32789",
+   "cavp_ref": "C:1885"
+  }
+ ],
+ "vendor": "NetApp, Inc.",
+ "vendor_info": {
+  "name": "NetApp, Inc.",
+  "website": "http://www.netapp.com",
+  "address": [
+   "1375 Crossman Avenue",
+   "Sunnyvale, CA 94089",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Josh Ament"
+   },
+   {
+    "name": "Ann Bischoff"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4144.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202022_010322_0121_Signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/3/2022",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "2/3/2022",
+ "last_updated": "2/3/2022",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4144.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4144,
+  "vendor": "NetApp, Inc.",
+  "module": "NetApp CryptoMod",
+  "type": "Software",
+  "validation_dates": [
+   "02/03/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

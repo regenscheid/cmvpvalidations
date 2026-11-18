@@ -1,0 +1,61 @@
+{
+ "cavp_id": "25090",
+ "cavp_cert": "AES 1006",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25090",
+ "implementation": "AP 1131/1242 Crypto Toolkit",
+ "product_id": "2622",
+ "description": "The Cisco Aironet Access Points deliver the versatility, high capacity and enterprise-class features required for small, medium and large Government indoor and outdoor wireless deployments. In FIPS 140-2 mode of operation, the Cisco APs support the IEEE 802.11i and IEEE 802.1x standards and AES for WPA2 encryption.",
+ "version": "ppc-003j (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/6/2009",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "IBM PPC405EP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 96",
+    "IV Length: 104",
+    "Payload Length: 256",
+    "AAD Length: 176-240"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128",
+    "    MAC Length: 8-128",
+    "    Message Length: 0-12160",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

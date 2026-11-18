@@ -1,0 +1,58 @@
+{
+ "cavp_id": "32002",
+ "cavp_cert": "C1533",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32002",
+ "implementation": "SOLSDR NETNode Security Module",
+ "product_id": "11953",
+ "description": "The SOLSDR NETNode security module resides within the SOLSDR and NETNode IP Mesh Phase 5 product families onwards. It provides FIPS140-2 compliant AES128 and AES256 encryption and decryption functions and include two modes of operation both software only and hardware accelerated.",
+ "version": "V1.0",
+ "type": "FIRMWARE",
+ "first_validated": "1/22/2020",
+ "vendor": "Domo Tactical Communications Ltd.",
+ "vendor_website": "http://www.domotactical.com",
+ "oes": [
+  {
+   "name": "ARM v7 without PAI",
+   "details": [
+    "processor: ARM v7 without PAI",
+    "  manufacturer: ARM"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "C1533 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

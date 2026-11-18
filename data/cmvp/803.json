@@ -1,0 +1,111 @@
+{
+ "cert": 803,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/803",
+ "module": "SecurEdge Lock",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "This module contains the embedded module Axalto Cryptoflex e-Gate 32 smart card validated to FIPS 140-2 under Cert. #242 operating in FIPS mode",
+ "level_exceptions": [
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The KoolSpan Lock is a VHS-Cassette sized device that authenticates users and bridges their Ethernet traffic onto the network. It contains an embedded Smart Card and cryptographic processor. The case is tamper-resistant. Each Lock can support up to 512 simultaneous users each with 256-bit AES encryption. The Lock supports a \"Keyless Exchange\" and provides both Wi-Fi security and Remote Access (VPN) connections.",
+ "hardware_versions": "LRF05123",
+ "firmware_versions": "3.1.1",
+ "product_url": "http://www.koolspan.com/products/koolspan_lock.htm",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 388",
+   "cavp_id": "8361",
+   "cavp_ref": "AES:388"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 464",
+   "cavp_id": "16275",
+   "cavp_ref": "SHS:464"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 97",
+   "cavp_id": "7237",
+   "cavp_ref": "TDES:97",
+   "note": "; key wrapping; key establishment methodology provides 80-bits of encryption strength"
+  }
+ ],
+ "vendor": "KoolSpan, Inc.",
+ "vendor_info": {
+  "name": "KoolSpan, Inc.",
+  "website": "http://www.koolspan.com",
+  "address": [
+   "4962 Fairmont Ave.",
+   "2nd Floor",
+   "Bethesda, MD 20814",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tony Fascenda"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp803.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt803.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/26/2007",
+   "type": "Initial",
+   "lab": "COACT INC CAFE LAB"
+  },
+  {
+   "date": "8/29/2007",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "7/26/2007",
+ "last_updated": "8/29/2007",
+ "labs": "COACT INC CAFE LAB",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp803.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 803,
+  "vendor": "KoolSpan, Inc.",
+  "module": "SecurEdge Lock",
+  "type": "Hardware",
+  "validation_dates": [
+   "07/26/2007",
+   "08/29/2007"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

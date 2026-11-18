@@ -1,0 +1,46 @@
+{
+ "cavp_id": "30829",
+ "cavp_cert": "C433",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30829",
+ "implementation": "Qualcomm(R) Secure Processing Unit (DRBG)",
+ "product_id": "10792",
+ "description": "The Qualcomm Secure Processing Unit (SPU) is an isolated hardware security core implemented in the Qualcomm(R) Snapdragon(TM) chipset. Qualcomm SPU (DRBG) is a hardware random number generator that provides cryptographic functions through on-chip entropy sources and hash based DRBG.",
+ "version": "3.1.0",
+ "type": "HARDWARE",
+ "first_validated": "2/21/2019",
+ "vendor": "Qualcomm Technologies, Inc.",
+ "vendor_website": "http://www.qualcomm.com",
+ "oes": [
+  {
+   "name": "Snapdragon 855",
+   "details": [
+    "processor: Snapdragon 855"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-32",
+    "    Additional Input: 0",
+    "    Returned Bits: 1024",
+    "C433 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

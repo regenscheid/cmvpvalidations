@@ -1,0 +1,67 @@
+{
+ "cavp_id": "28241",
+ "cavp_cert": "RSA 1843",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28241",
+ "implementation": "mToken CryptoID",
+ "product_id": "1118",
+ "description": "mToken CryptoID is designed based on a secure smartcard chip that utilizes the in-built mCOS to communicate with computer device via USB interface in a \"plug and play\" manner. It can realize various Public Key Infrastructure (PKI) applications including digital signature, online authentications, online transactions, software security, etc.",
+ "version": "SCC-X",
+ "type": "HARDWARE",
+ "first_validated": "11/6/2015",
+ "vendor": "Century Longmai Technology Co. Ltd",
+ "vendor_website": "http://www.longmai.net",
+ "oes": [
+  {
+   "name": "mToken CryptoID",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

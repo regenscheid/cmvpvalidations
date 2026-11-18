@@ -1,0 +1,50 @@
+{
+ "cavp_id": "23430",
+ "cavp_cert": "AES 3484",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=23430",
+ "implementation": "Alcatel Lucent 7x50 SR OS Cryptographic Library",
+ "product_id": "970",
+ "description": "The Alcatel-Lucent 7x50 SR OS Cryptographic Library is used on the Alcatel-Lucent 7x50 Service Router products.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/31/2015",
+ "vendor": "Alcatel-Lucent",
+ "vendor_website": "http://www.alcatel-lucent.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128",
+    "    MAC Length: 64-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

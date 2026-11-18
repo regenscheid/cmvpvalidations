@@ -1,0 +1,183 @@
+{
+ "cert": 1891,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1891",
+ "module": "Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, Microsoft Windows Phone 8, and Microsoft Windows Storage Server 2012 Kernel Mode Cryptographic Primitives Library (CNG.SYS)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with modules Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Boot Manager validated to FIPS 140-2 under Cert. #1895 operating in FIPS mode, and Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 BitLocker® Windows OS Loader (WINLOAD) validated to FIPS 140-2 under Cert. #1896 operating in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Kernel Mode Cryptographic Primitives Library (CNG.SYS) runs as a kernel mode export driver, and provides cryptographic services, through their documented interfaces, to Windows kernel components. It supports several cryptographic algorithms accessible via a FIPS function table request IRP (I/O request packet). This cryptographic module also maintains FIPS 140-2 validation compliance (according to FIPS 140-2 PUB Implementation Guidance G.5) on Microsoft Windows 8, Microsoft Windows 8 Pro, and Microsoft Windows Server 2012 Datacenter.",
+ "tested_configurations": [
+  "Microsoft Windows 8 Enterprise (x64) running on a Dell PowerEdge SC430 without PAA",
+  "Microsoft Windows 8 Enterprise (x64) running on Intel Core i7 with PAA running on an Intel Client Desktop",
+  "Microsoft Windows 8 Enterprise (x86) running on a Dell Dimension C521",
+  "Microsoft Windows 8 Pro (x64) running on an Intel x64 Processor with PAA running on a Microsoft Surface Windows 8 Pro",
+  "Microsoft Windows Phone 8 (ARMv7 Thumb-2) running on a Windows Phone 8",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on a Microsoft Surface Windows RT",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on a Qualcomm Tablet",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on an NVIDIA Tegra 3 Tablet",
+  "Microsoft Windows Server 2012 (x64) running on a Dell PowerEdge SC430 without PAA",
+  "Microsoft Windows Server 2012 (x64) running on Intel Core i7 with PAA running on an Intel Client Desktop",
+  "Microsoft Windows Storage Server 2012 (x64) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows Storage Server 2012 (x64) running on an Intel Maho Bay without PAA (single-user mode)"
+ ],
+ "software_versions": "6.2.9200",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2197",
+   "cavp_id": "15531",
+   "cavp_ref": "AES:2197"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2216",
+   "cavp_id": "1616",
+   "cavp_ref": "AES:2216"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 258",
+   "cavp_id": "23567",
+   "cavp_ref": "DRBG:258"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 259",
+   "cavp_id": "7475",
+   "cavp_ref": "DRBG:259"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 341",
+   "cavp_id": "18605",
+   "cavp_ref": "ECDSA:341"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1345",
+   "cavp_id": "13709",
+   "cavp_ref": "HMAC:1345"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 36",
+   "cavp_id": "29541",
+   "cavp_ref": "KAS:36"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 3",
+   "cavp_id": "27020",
+   "cavp_ref": "KDF:3"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1110",
+   "cavp_id": "28738",
+   "cavp_ref": "RNG:1110"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1133",
+   "cavp_id": "3711",
+   "cavp_ref": "RSA:1133"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1134",
+   "cavp_id": "17518",
+   "cavp_ref": "RSA:1134"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1903",
+   "cavp_id": "17954",
+   "cavp_ref": "SHS:1903"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1387",
+   "cavp_id": "21227",
+   "cavp_ref": "TDES:1387"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1891.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0033.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/6/2013",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/9/2015",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "9/6/2013",
+ "last_updated": "1/9/2015",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1891.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (Cert. #2197, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); DES; Legacy CAPI KDF; MD2; MD4; MD5; HMAC MD5; RC2; RC4; RSA (encrypt/decrypt)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1891,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, Microsoft Windows Phone 8, and Microsoft Windows Storage Server 2012 Kernel Mode Cryptographic Primitives Library (CNG.SYS)",
+  "type": "Software",
+  "validation_dates": [
+   "09/06/2013",
+   "01/09/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,153 @@
+{
+ "cert": 2805,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2805",
+ "module": "ICU Medical CE3.0 OpenSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "ICU Medical CE3.0 OpenSSL Cryptographic Module 2.0.9 is used within various ICU Medical Infusion Pumps for providing secure communication between Infusion pumps and external server.",
+ "tested_configurations": [
+  "Android 2.3.7 running on ICUMedical Plum360 Infusion System with an i.MX53 Arm Cortex-A8 (single user mode)"
+ ],
+ "software_versions": "2.0.9",
+ "product_url": "http://www.icumed.com/products/infusion-therapy/iv-systems/large-volume-iv-pumps",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3930",
+   "cavp_id": "24163",
+   "cavp_ref": "AES:3930"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 781",
+   "cavp_id": "15648",
+   "cavp_ref": "Component:781"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1139",
+   "cavp_id": "20788",
+   "cavp_ref": "DRBG:1139"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1073",
+   "cavp_id": "19374",
+   "cavp_ref": "DSA:1073"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 860",
+   "cavp_id": "23417",
+   "cavp_ref": "ECDSA:860"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2553",
+   "cavp_id": "9518",
+   "cavp_ref": "HMAC:2553"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2007",
+   "cavp_id": "15946",
+   "cavp_ref": "RSA:2007"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3240",
+   "cavp_id": "7171",
+   "cavp_ref": "SHS:3240"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2157",
+   "cavp_id": "24684",
+   "cavp_ref": "TDES:2157"
+  }
+ ],
+ "vendor": "ICU Medical, Inc.",
+ "vendor_info": {
+  "name": "ICU Medical, Inc.",
+  "website": "http://www.icumed.com",
+  "address": [
+   "600 North Field Drive",
+   "Lake Forest, IL 60045",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Chaitanya Srinivasamurthy"
+   },
+   {
+    "name": "Slawomir Ciapala"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2805.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/13/2016",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/23/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/14/2021",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "12/13/2016",
+ "last_updated": "4/14/2021",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2805.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "EC Diffie-Hellman (CVL Cert. #781, key agreement, key establishment methodology provides between 112 and 256 bit of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Dual EC DRBG; RNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2805,
+  "vendor": "ICU Medical, Inc.",
+  "module": "ICU Medical CE3.0 OpenSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/13/2016",
+   "07/23/2020",
+   "04/14/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

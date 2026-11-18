@@ -1,0 +1,54 @@
+{
+ "cavp_id": "31771",
+ "cavp_cert": "C1342",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31771",
+ "implementation": "CN4010 Ethernet TIM Crypto Module",
+ "product_id": "11727",
+ "description": "The CN4010 Ethernet TIM Crypto Module is a cryptographic accelerator that contains FIPS 140-2 approved cryptographic algorithms. This module provides encryption and TRANSEC (Traffic Flow Security) services for the CN4010 Series Encryptor.",
+ "version": "1.8",
+ "type": "FIRMWARE",
+ "first_validated": "11/8/2019",
+ "vendor": "Senetas Corporation Ltd, distributed by Thales SA (SafeNet)",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "Xilinx XC7Z020",
+   "details": [
+    "processor: Xilinx XC7Z020"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 368, 384, 1016, 1024",
+    "AAD Length: 112, 128, 640, 688"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

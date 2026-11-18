@@ -1,0 +1,117 @@
+{
+ "cert": 2295,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2295",
+ "module": "Brocade® DCX, DCX 8510-8, DCX-4S and DCX 8510-4 Backbones, 6510 FC Switch, 6520 FC Switch and 7800 Extension Switch",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and when tamper evident labels are installed on the initially built configuration as indicated in the Security Policy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Brocade DCX, DCX 8510-8, DCX-4S and DCX 8510-4 Backbones and the 6510 and 6520 Switch provide a reliable, scalable Fibre Channel switching infrastructure with market-leading 16 Gbps technology and capabilities that support demanding, enterprise-class private cloud storage and highly virtualized environments. The Brocade 7800 Extension Switch provides fast, reliable WAN/MAN connectivity for remote data replication, backup, and migration with Fibre Channel and advanced Fibre Channel over IP (FCIP) technology.",
+ "hardware_versions": "{[DCX Backbone (P/Ns 80-1001064-10, 80-1006751-01, 80-1004920-04 and 80-1006752-01), DCX-4S Backbone (P/Ns 80-1002071-10, 80-1006773-01, 80-1002066-10 and 80-1006772-01), DCX 8510-4 Backbone (P/Ns 80-1004697-04, 80-1006963-01, 80-1005158-04 and 80-1006964-01), DCX 8510-8 Backbone (P/Ns 80-1004917-04 and 80-1007025-01)] with Blades (P/Ns 80-1001070-07, 80-1006794-01, 80-1004897-01, 80-1004898-01, 80-1002000-02, 80-1006771-01, 80-1001071-02, 80-1006750-01, 80-1005166-02, 80-1005187-02, 80-1001066-01, 80-1006936-01, 80-1001067-01, 80-1006779-01, 80-1001453-01, 80-1006823-01, 80-1003887-01, 80-1007000-01, 80-1002762-04, 80-1006991-01, 80-1002839-03, 80-1007017-01, 49-1000016-04, 49-1000064-02 and 49-1000294-05), 6510 FC Switch (P/Ns 80-1005232-03, 80-1005267-03, 80-1005268-03, 80-1005269-03, 80-1005271-03 and 80-1005272-03), 6520 FC Switch (P/Ns 80-1007245-03, 80-1007246-03, 80-1007242-03, 80-1007244-03, 80-1007257-03), 7800 Extension Switch (P/Ns 80-1002607-07, 80-1006977-02, 80-1002608-07, 80-1006980-02, 80-1002609-07 and 80-1006979-02)} with FIPS Kit P/N Brocade XBR-000195",
+ "firmware_versions": "Fabric OS v7.2.0 (P/N 63-1001405-01)",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1048",
+   "cavp_id": "13255",
+   "cavp_ref": "RSA:1048"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1049",
+   "cavp_id": "27180",
+   "cavp_ref": "RSA:1049"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1279",
+   "cavp_id": "23612",
+   "cavp_ref": "RSA:1279"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1281",
+   "cavp_id": "24946",
+   "cavp_ref": "RSA:1281"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 749",
+   "cavp_id": "11076",
+   "cavp_ref": "SHS:749"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1408",
+   "cavp_id": "4755",
+   "cavp_ref": "SHS:1408"
+  }
+ ],
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_info": {
+  "name": "Brocade Communications Systems, Inc.",
+  "website": "http://www.brocade.com",
+  "address": [
+   "130 Holger Way",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Christopher Marks"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2295.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0048.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/12/2014",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "12/12/2014",
+ "last_updated": "12/12/2014",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2295.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 80 bits of encryption strength; non-compliant); Diffie-Hellman (key agreement; key establishment methodology provides 80 bit of encryption strength; non-compliant); SNMPv3 KDF (non-compliant); HMAC-MD5; NDRNG; TLSv1.0 KDF (non-compliant); SSHv2 KDF (non-compliant); MD5; RADIUS PEAP MS-CHAP V2; AES (non-compliant); HMAC (non-compliant); RNG (non-compliant); Triple-DES (non-compliant); RSA (non-compliant); BF; CAST; CAST5; DES; DES3; DESX; RC2; RC4; MD2; MD4; MD5; RMD160; ARCFOUR BLOWFISH-CBC; CAST128; UMAC-64; HMAC-RIPEMD160; HMAC-SHA-1-96; HMAC-MD5-96"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2295,
+  "vendor": "Brocade Communications Systems, Inc.",
+  "module": "Brocade® DCX, DCX 8510-8, DCX-4S and DCX 8510-4 Backbones, 6510 FC Switch, 6520 FC Switch and 7800 Extension Switch",
+  "type": "Hardware",
+  "validation_dates": [
+   "12/12/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

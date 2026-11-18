@@ -1,0 +1,274 @@
+{
+ "cert": 4229,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4229",
+ "module": "Oracle Linux 8 GnuTLS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Oracle Linux 8 GnuTLS Cryptographic Module is a set of libraries implementing general purpose cryptographic algorithms and network protocols.",
+ "tested_configurations": [
+  "Oracle Linux 8.4 64 bit running on Oracle Server A1-2C with Ampere(R) Altra(R) Neoverse-N1 with PAA",
+  "Oracle Linux 8.4 64 bit running on Oracle Server A1-2C with Ampere(R) Altra(R) Neoverse-N1 without PAA (single-user mode)",
+  "Oracle Linux 8.4 64 bit running on Oracle Server E1-2C with AMD EPYC(TM) 7551 with PAA",
+  "Oracle Linux 8.4 64 bit running on Oracle Server E1-2C with AMD EPYC(TM) 7551 without PAA",
+  "Oracle Linux 8.4 64 bit running on Oracle Server X7-2C with Intel(R) Xeon(R) Platinum 8167M with PAA",
+  "Oracle Linux 8.4 64 bit running on Oracle Server X7-2C with Intel(R) Xeon(R) Platinum 8167M without PAA"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength);",
+ "software_versions": "R8-8.4.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1704",
+   "cavp_id": "34313",
+   "cavp_ref": "A:1704"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1705",
+   "cavp_id": "34314",
+   "cavp_ref": "A:1705"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1707",
+   "cavp_id": "34316",
+   "cavp_ref": "A:1707"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1708",
+   "cavp_id": "34317",
+   "cavp_ref": "A:1708"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1711",
+   "cavp_id": "34320",
+   "cavp_ref": "A:1711"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1713",
+   "cavp_id": "34322",
+   "cavp_ref": "A:1713"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2560",
+   "cavp_id": "35171",
+   "cavp_ref": "A:2560"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "NP",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1705",
+   "cavp_id": "34314",
+   "cavp_ref": "A:1705"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2560",
+   "cavp_id": "35171",
+   "cavp_ref": "A:2560"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Cert. #A1710, CVL Cert. #A1710",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A1709",
+   "cavp_id": "34318",
+   "cavp_ref": "A:1709"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1704, #A1705, #A1710 and #A2560; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1704, #A1705, #A1710 and #A2560 and HMAC Certs. #A1705, #A1710 and #A2560; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #A1710 and HMAC Certs. #A1705, #A1710 and #A2560; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1706",
+   "cavp_id": "34315",
+   "cavp_ref": "A:1706"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1712",
+   "cavp_id": "34321",
+   "cavp_ref": "A:1712"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1705",
+   "cavp_id": "34314",
+   "cavp_ref": "A:1705"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2560",
+   "cavp_id": "35171",
+   "cavp_ref": "A:2560"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1710",
+   "cavp_id": "34319",
+   "cavp_ref": "A:1710"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "2300 Oracle Way",
+   "Austin, TX 78741",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Security Evaluation team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4229.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202022_010622_0641_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/16/2022",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "8/2/2022",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "5/16/2022",
+ "last_updated": "8/2/2022",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4229.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength);",
+ "sparse": false,
+ "list": {
+  "cert": 4229,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Linux 8 GnuTLS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/16/2022",
+   "08/02/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

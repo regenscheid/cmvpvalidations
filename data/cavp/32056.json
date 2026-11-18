@@ -1,0 +1,41 @@
+{
+ "cavp_id": "32056",
+ "cavp_cert": "C1545",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32056",
+ "implementation": "S13X100E",
+ "product_id": "12008",
+ "description": "SHA-256 and HMAC-SHA-256 for CRYPOTN implementation",
+ "version": "1830 PSS R10.1.2",
+ "type": "SOFTWARE",
+ "first_validated": "1/27/2020",
+ "vendor": "Nokia",
+ "vendor_website": "http://nokia.com",
+ "oes": [
+  {
+   "name": "Wind River Linux 5 on Dual Core ARM A9",
+   "details": [
+    "processor: Dual Core ARM A9",
+    "software: Wind River Linux 5"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192, 256",
+    "Key sizes < block size",
+    "C1545 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

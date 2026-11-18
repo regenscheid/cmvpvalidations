@@ -1,0 +1,52 @@
+{
+ "cavp_id": "11251",
+ "cavp_cert": "AES 2189",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11251",
+ "implementation": "AES GCM for User Data and Key Wrapping",
+ "product_id": "428",
+ "description": "The Hewlett Packard LTO-6 Tape Drive is a multi-chip standalone module composed of hardware and firmware components, providing cryptographic services to a host.",
+ "version": "POPOVICH10 1.0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "8/27/2012",
+ "vendor": "Hewlett-Packard",
+ "vendor_website": "http://www.hp.com",
+ "oes": [
+  {
+   "name": "ARM966E",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 128, 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

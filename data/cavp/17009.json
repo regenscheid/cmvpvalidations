@@ -1,0 +1,38 @@
+{
+ "cavp_id": "17009",
+ "cavp_cert": "DRBG 1465",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17009",
+ "implementation": "KC API using Power ISA 2.07 for AES and GHASH",
+ "product_id": "775",
+ "description": "Ubuntu Kernel Crypto API cryptographic module provides cryptographic services to the software components executing as part of the Linux kernel. This test covers the implmentations of gcm_base(p8_aes_ctr,p8_ghash), p8_aes_cbc, and p8_aes_xts.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on POWER8",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

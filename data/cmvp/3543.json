@@ -1,0 +1,142 @@
+{
+ "cert": 3543,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3543",
+ "module": "Netskope Cryptographic Security Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy and operated in FIPS mode. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2398",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "FIPS 140-2 compliant.",
+ "tested_configurations": [
+  "Linux 3.12 running on NXP T2080 (PPC) (gcc Compiler Version 4.9.2) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #1181, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.16",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4469",
+   "cavp_id": "23293",
+   "cavp_ref": "AES:4469"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1181",
+   "cavp_id": "21885",
+   "cavp_ref": "Component:1181"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1451",
+   "cavp_id": "1775",
+   "cavp_ref": "DRBG:1451"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1195",
+   "cavp_id": "8630",
+   "cavp_ref": "DSA:1195"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1091",
+   "cavp_id": "177",
+   "cavp_ref": "ECDSA:1091"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2966",
+   "cavp_id": "1209",
+   "cavp_ref": "HMAC:2966"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2444",
+   "cavp_id": "11515",
+   "cavp_ref": "RSA:2444"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3681",
+   "cavp_id": "26790",
+   "cavp_ref": "SHS:3681"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2399",
+   "cavp_id": "17329",
+   "cavp_ref": "TDES:2399"
+  }
+ ],
+ "vendor": "Netskope Inc.",
+ "vendor_info": {
+  "name": "Netskope Inc.",
+  "website": "https://www.netskope.com",
+  "address": [
+   "2445 Augustine Drive",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "James Kawamoto"
+   },
+   {
+    "name": "Forrest McMahon"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3543.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedOct2019%20.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/2/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "10/2/2019",
+ "last_updated": "10/2/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3543.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #1181, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3543,
+  "vendor": "Netskope Inc.",
+  "module": "Netskope Cryptographic Security Module",
+  "type": "Software",
+  "validation_dates": [
+   "10/02/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

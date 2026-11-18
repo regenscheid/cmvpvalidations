@@ -1,0 +1,81 @@
+{
+ "cavp_id": "742",
+ "cavp_cert": "DRBG 1392",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=742",
+ "implementation": "OpenSSL using AES, SHA, GHASH and multiplication assemblers",
+ "product_id": "6111",
+ "description": "The test covers the assembler implementation of AES, SHA, GHASH and multiplication.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/27/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-224",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-224",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

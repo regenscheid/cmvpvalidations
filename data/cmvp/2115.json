@@ -1,0 +1,137 @@
+{
+ "cert": 2115,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2115",
+ "module": "FortiAnalyzer-4000B",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode with the tamper evident seals installed as indicated in the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The FortiAnalyzer family of logging, analyzing, and reporting appliances securely aggregate log data from Fortinet devices and other syslog-compatible devices. Using a comprehensive suite of customizable reports, users can filter and review records, including traffic, event, virus, attack, Web content, and email data.",
+ "hardware_versions": "4000-B with SKU-FIPS-SEAL-RED",
+ "firmware_versions": "v4.0, build3059, 130918",
+ "product_url": "http://www.fortinet.com/products",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2681",
+   "cavp_id": "25904",
+   "cavp_ref": "AES:2681"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1667",
+   "cavp_id": "17399",
+   "cavp_ref": "HMAC:1667"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1668",
+   "cavp_id": "4518",
+   "cavp_ref": "HMAC:1668"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1251",
+   "cavp_id": "27800",
+   "cavp_ref": "RNG:1251"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1030",
+   "cavp_id": "27755",
+   "cavp_ref": "RSA:1030"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2251",
+   "cavp_id": "9832",
+   "cavp_ref": "SHS:2251"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2252",
+   "cavp_id": "15367",
+   "cavp_ref": "SHS:2252"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1608",
+   "cavp_id": "23191",
+   "cavp_ref": "TDES:1608"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1609",
+   "cavp_id": "17550",
+   "cavp_ref": "TDES:1609"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "326 Moodie Drive",
+   "Ottawa, Ontario K2H 8G3",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2115.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0039.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/26/2014",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "3/26/2014",
+ "last_updated": "3/26/2014",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2115.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (non-compliant); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; MD5; HMAC-MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2115,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiAnalyzer-4000B",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/26/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,132 @@
+{
+ "cert": 1884,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1884",
+ "module": "Totemo Cryptographic Module (TCM)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of module integrity when operating in non-FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Totemo Cryptographic Module supplies the cryptographic services required by the Totemo Security Platform (TSP) and the Totemo products which provides secure email, file transfer, and mobile messaging solutions. These solutions secure all types of communication without any infrastructure prerequisites.",
+ "tested_configurations": [
+  "Totemo Appliance OS 2.0 v0711 with JRE 7.0 running on a Apligo NSA 7110 (single-user mode)"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2059",
+   "cavp_id": "14268",
+   "cavp_ref": "AES:2059"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 206",
+   "cavp_id": "10994",
+   "cavp_ref": "DRBG:206"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 652",
+   "cavp_id": "8732",
+   "cavp_ref": "DSA:652"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 302",
+   "cavp_id": "17193",
+   "cavp_ref": "ECDSA:302"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1252",
+   "cavp_id": "29023",
+   "cavp_ref": "HMAC:1252"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1071",
+   "cavp_id": "4228",
+   "cavp_ref": "RSA:1071"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1800",
+   "cavp_id": "6196",
+   "cavp_ref": "SHS:1800"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1326",
+   "cavp_id": "18153",
+   "cavp_ref": "TDES:1326"
+  }
+ ],
+ "vendor": "Totemo AG",
+ "vendor_info": {
+  "name": "Totemo AG",
+  "website": "http://www.totemo.com",
+  "address": [
+   "Freihofstrasse 22",
+   "Küsnacht CH-8700",
+   "Switzerland"
+  ],
+  "contacts": [
+   {
+    "name": "Marcel Mock"
+   },
+   {
+    "name": "Daniel Raap"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1884.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/8/2013",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "2/8/2013",
+ "last_updated": "2/8/2013",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1884.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "AES (Cert. #2059, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Triple-DES (Cert. #1326, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); ECMQV (key agreement; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1884,
+  "vendor": "Totemo AG",
+  "module": "Totemo Cryptographic Module (TCM)",
+  "type": "Software",
+  "validation_dates": [
+   "02/08/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,148 @@
+{
+ "cert": 1648,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1648",
+ "module": "Samsung Kernel Crypto API Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and only on the specific platforms specified on the reverse",
+ "level_exceptions": [
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Provides general purpose cryptographic services to services in the Linux kernel and user-space applications, intended to protect data in transit and at rest.",
+ "tested_configurations": [
+  "Android Gingerbread w/ Linux kernel v.2.6.35.7 (Galaxy S2 U1)",
+  "Android Honeycomb w/ Linux kernel v.2.6.36.3 (P4 LTE, P4 WiFi) (single-user mode)"
+ ],
+ "software_versions": "LK2.6.35.7_AGB_v1.2 and LK2.6.36.3_AHC_v1.2",
+ "product_url": "http://www.samsung.com/us/mobile/cell-phones/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1732",
+   "cavp_id": "16040",
+   "cavp_ref": "AES:1732"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1733",
+   "cavp_id": "7060",
+   "cavp_ref": "AES:1733"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1008",
+   "cavp_id": "10452",
+   "cavp_ref": "HMAC:1008"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1009",
+   "cavp_id": "1987",
+   "cavp_ref": "HMAC:1009"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 921",
+   "cavp_id": "27752",
+   "cavp_ref": "RNG:921"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 922",
+   "cavp_id": "29294",
+   "cavp_ref": "RNG:922"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1516",
+   "cavp_id": "16849",
+   "cavp_ref": "SHS:1516"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1517",
+   "cavp_id": "11638",
+   "cavp_ref": "SHS:1517"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1120",
+   "cavp_id": "16856",
+   "cavp_ref": "TDES:1120"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1121",
+   "cavp_id": "12143",
+   "cavp_ref": "TDES:1121"
+  }
+ ],
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_info": {
+  "name": "Samsung Electronics Co., Ltd.",
+  "website": "http://www.samsung.com",
+  "address": [
+   "416, Maetan 3-Dong Youngton Gu",
+   "Suwon, Gyeonggi 152-848",
+   "South Korea"
+  ],
+  "contacts": [
+   {
+    "name": "Ross Choi"
+   },
+   {
+    "name": "Bumhan Kim"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1648.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0012.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/14/2011",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "12/14/2011",
+ "last_updated": "12/14/2011",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1648.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; AES-CTS (non-compliant); Triple-DES (CTR; non-compliant); Twofish; AEAD; MD5; ansi_cprng; ARC4; GHASH (GCM hash)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1648,
+  "vendor": "Samsung Electronics Co., Ltd.",
+  "module": "Samsung Kernel Crypto API Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/14/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,58 @@
+{
+ "cavp_id": "1013",
+ "cavp_cert": "Component 1786",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1013",
+ "implementation": "Fortinet FortiMail SSL Cryptographic Library 6.0",
+ "product_id": "9279",
+ "description": "This focuses on the firmware implementation of the Fortinet FortiMail SSL Cryptographic Library v6.0 running on Intel x86 compatible processors.",
+ "version": "6.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/16/2018",
+ "vendor": "Fortinet Inc.",
+ "vendor_website": "http://www.fortinet.com",
+ "oes": [
+  {
+   "name": "Intel Xeon E5",
+   "details": [
+    "processor: Xeon E5",
+    "  Intel Xeon E5",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Partial Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

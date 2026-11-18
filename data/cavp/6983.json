@@ -1,0 +1,93 @@
+{
+ "cavp_id": "6983",
+ "cavp_cert": "AES 4959",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6983",
+ "implementation": "QTI Crypto Engine Core (version 5.4.1)",
+ "product_id": "8801",
+ "description": "Snapdragon 845 Crypto Engine Core is a general purpose cryptographic hardware engine capable of securely processing various confidentiality and integrity algorithms across multiple execution environments.",
+ "version": "Snapdragon 845",
+ "type": "HARDWARE",
+ "first_validated": "11/22/2017",
+ "vendor": "Qualcomm Technologies, Inc.",
+ "vendor_website": "http://www.qualcomm.com",
+ "oes": [
+  {
+   "name": "QTI Crypto Engine Core (version 5.4.1)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 8-256",
+    "AAD Length: 8-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 32-128",
+    "    Message Length: 128-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 32-128",
+    "    Message Length: 256-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External, Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Block Size: Full"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

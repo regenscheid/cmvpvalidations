@@ -1,0 +1,182 @@
+{
+ "cert": 2783,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2783",
+ "module": "FortiGate-1000D/1500D",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode with the tamper evident seals installed as indicated in the Security Policy and configured according to the Entropy Token Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy. There is no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Ports and Interfaces: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The FortiGate product family spans the full range of network environments, from SOHO to service provider, offering cost effective systems for any size of application. FortiGate appliances detect and eliminate the most damaging, content-based threats from email and Web traffic such as viruses, worms, intrusions, inappropriate Web content and more in real time - without degrading network performance.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "C1AB95 and C1AA64 with Tamper Evident Seal Kits: FIPS-SEAL-RED",
+ "firmware_versions": "5.2.7, build0718, 160328",
+ "product_url": "http://www.fortinet.com/products/index.html",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3963",
+   "cavp_id": "6529",
+   "cavp_ref": "AES:3963"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3964",
+   "cavp_id": "20681",
+   "cavp_ref": "AES:3964"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3966",
+   "cavp_id": "24881",
+   "cavp_ref": "AES:3966"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 794",
+   "cavp_id": "27477",
+   "cavp_ref": "Component:794"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 795",
+   "cavp_id": "20292",
+   "cavp_ref": "Component:795"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1161",
+   "cavp_id": "1400",
+   "cavp_ref": "DRBG:1161"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2581",
+   "cavp_id": "9854",
+   "cavp_ref": "HMAC:2581"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2582",
+   "cavp_id": "20593",
+   "cavp_ref": "HMAC:2582"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2584",
+   "cavp_id": "15698",
+   "cavp_ref": "HMAC:2584"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2024",
+   "cavp_id": "5248",
+   "cavp_ref": "RSA:2024"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2026",
+   "cavp_id": "222",
+   "cavp_ref": "RSA:2026"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3267",
+   "cavp_id": "28464",
+   "cavp_ref": "SHS:3267"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3268",
+   "cavp_id": "5717",
+   "cavp_ref": "SHS:3268"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3270",
+   "cavp_id": "25393",
+   "cavp_ref": "SHS:3270"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2172",
+   "cavp_id": "18601",
+   "cavp_ref": "TDES:2172"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2173",
+   "cavp_id": "15545",
+   "cavp_ref": "TDES:2173",
+   "note": "2175"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "899 Kifer Road",
+   "Sunnyvale, CA 94086",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2783.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/31/2016",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "10/31/2016",
+ "last_updated": "10/31/2016",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2783.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 201 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; HMAC-MD5; MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2783,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiGate-1000D/1500D",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/31/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

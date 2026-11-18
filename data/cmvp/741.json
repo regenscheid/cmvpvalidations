@@ -1,0 +1,107 @@
+{
+ "cert": 741,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/741",
+ "module": "Ultralock Symmetric Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and using the nForce Ultra Asymmetric Module validated to FIPS 140-2 under Cert. #740 and nCipher MiniHSM validated to FIPS 140-2 under Cert. #672 when operated in FIPS mode and initialized to Overall Level 2 per Security Policy",
+ "level_exceptions": [
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The Ultralock Symmetric Module performs all the cryptography required for SSL/TLS applications. This module is a common element of the Britestream BN2010 SSL Security ASIC, the industry's first single-chip solution for completely off-loading SSL/TLS processing from host systems. The innovative in-line architecture combines TCP.",
+ "hardware_versions": "010-00007 a.00",
+ "product_url": "http://www.ncipher.com/cryptographic_hardware/ssl_acceleration/2/nforce",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 263",
+   "cavp_id": "7009",
+   "cavp_ref": "AES:263"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 75",
+   "cavp_id": "9859",
+   "cavp_ref": "HMAC:75"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 342",
+   "cavp_id": "13980",
+   "cavp_ref": "SHS:342"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 345",
+   "cavp_id": "12261",
+   "cavp_ref": "TDES:345"
+  }
+ ],
+ "vendor": "nCipher Corporation Ltd.",
+ "vendor_info": {
+  "name": "nCipher Corporation Ltd.",
+  "website": "http://www.ncipher.com",
+  "address": [
+   "92 Montvale Ave",
+   "Suite 4500",
+   "Stoneham, MA 02180",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "nCipher Sales"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp741.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt741.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/1/2007",
+   "type": "Initial",
+   "lab": "DOMUS"
+  }
+ ],
+ "first_validated": "3/1/2007",
+ "last_updated": "3/1/2007",
+ "labs": "DOMUS",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp741.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "DES; RC4; MD5; HMAC-MD5; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 741,
+  "vendor": "nCipher Corporation Ltd.",
+  "module": "Ultralock Symmetric Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/01/2007"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

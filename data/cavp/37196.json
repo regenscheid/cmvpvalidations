@@ -1,0 +1,70 @@
+{
+ "cavp_id": "37196",
+ "cavp_cert": "A4586",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37196",
+ "implementation": "Titan-D Cryptographic Library",
+ "product_id": "17165",
+ "description": "Firmware implementation of standard algorithms written in C and assembly.",
+ "version": "1.1.6",
+ "type": "FIRMWARE",
+ "first_validated": "10/24/2023",
+ "vendor": "Google, LLC",
+ "vendor_website": "https://www.google.com/",
+ "oes": [
+  {
+   "name": "RISC-V RV32IMC CPU with Dcrypto Coprocessor",
+   "details": [
+    "Processor: RISC-V RV32IMC CPU with Dcrypto Coprocessor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 8-512 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

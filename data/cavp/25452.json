@@ -1,0 +1,38 @@
+{
+ "cavp_id": "25452",
+ "cavp_cert": "DRBG 1458",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25452",
+ "implementation": "KC API using strict assembler for AES and Triple-DES core",
+ "product_id": "757",
+ "description": "This test covers the implementations of gcm_base(ctr(aes-asm),ghash-generic), ccm_base(ctr(aes-asm),aes-asm), cbc(aes-asm), ecb(aes-asm), xts(aes-asm), kw(aes-asm), cmac(aes-asm), ecb(des3_ede-asm), and cbc(des3_ede-asm).",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on Intel(R) Xeon(R) CPU E5-2620v3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,129 @@
+{
+ "cert": 1726,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1726",
+ "module": "Voltage IBE Cryptographic Module for z/OS",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Voltage IBE Cryptographic Module for z/OS Version 4.0 is a FIPS 140-2 Level 1 compliant software-hybrid module that provides encrypt/decrypt and cryptographic signature services for Internet Protocol (IP) traffic.",
+ "tested_configurations": [
+  "IBM System z10 with z/OS PUT1106 / RSU1108"
+ ],
+ "hardware_versions": "Crypto Express2 card (CEX2C) [a separately configured version of 4764-001 (P/N 12R6536)]",
+ "software_versions": "4.0",
+ "firmware_versions": "4764-001(2096a16d)",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1812",
+   "cavp_id": "29767",
+   "cavp_ref": "AES:1812"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 139",
+   "cavp_id": "13970",
+   "cavp_ref": "DRBG:139"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 568",
+   "cavp_id": "3520",
+   "cavp_ref": "DSA:568"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1069",
+   "cavp_id": "13034",
+   "cavp_ref": "HMAC:1069"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 955",
+   "cavp_id": "4394",
+   "cavp_ref": "RNG:955"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 908",
+   "cavp_id": "14655",
+   "cavp_ref": "RSA:908"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1590",
+   "cavp_id": "24965",
+   "cavp_ref": "SHS:1590"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1168",
+   "cavp_id": "29478",
+   "cavp_ref": "TDES:1168"
+  }
+ ],
+ "vendor": "Voltage Security, Inc.",
+ "vendor_info": {
+  "name": "Voltage Security, Inc.",
+  "website": "http://www.voltage.com",
+  "address": [
+   "20400 Stevens Creek Blvd.",
+   "Cupertino, CA 95014",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Luther Martin"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1726.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/31/2012",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "5/31/2012",
+ "last_updated": "5/31/2012",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1726.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "NDRNG; IBE; FFX; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; Diffie-Hellman (key agreement; key establishment methodology provides 80 bits of encryption strength; non-compliant); DES"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1726,
+  "vendor": "Voltage Security, Inc.",
+  "module": "Voltage IBE Cryptographic Module for z/OS",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "05/31/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

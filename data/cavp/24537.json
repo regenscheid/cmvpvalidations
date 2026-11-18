@@ -1,0 +1,50 @@
+{
+ "cavp_id": "24537",
+ "cavp_cert": "AES 4497",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24537",
+ "implementation": "KC API RFC4106 GCM with external IV using Power ISA 2.07 for AES and GHASH",
+ "product_id": "777",
+ "description": "Ubuntu Kernel Crypto API cryptographic module provides cryptographic services to the software components executing as part of the Linux kernel. This test covers implementations of p8_aes_cbc, and rfc4106(gcm_base(p8_aes_ctr,p8_ghash))",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on POWER8",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

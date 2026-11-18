@@ -1,0 +1,49 @@
+{
+ "cavp_id": "24435",
+ "cavp_cert": "AES 4812",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24435",
+ "implementation": "NXP JCOP3 AES Component for P60-2 (JCOP3_P60D145_SID_002)",
+ "product_id": "8500",
+ "description": "NXP JCOP3 is a Global Platform Java Card smart card operating system implementing AES & CMAC.",
+ "version": "P60D145 0503.0202.0108 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "10/20/2017",
+ "vendor": "NXP Semiconductors",
+ "vendor_website": "http://www.nxp.com",
+ "oes": [
+  {
+   "name": "P6022y VB (NXP P60-2)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 64-128",
+    "    Message Length: 0-8192"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,43 @@
+{
+ "cavp_id": "28931",
+ "cavp_cert": "AES 1532",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28931",
+ "implementation": "IBM Encrypting Tape Drive GCM Write",
+ "product_id": "7861",
+ "description": "The hardware ASIC implementation provides AES GCM encryption.",
+ "version": "1.0",
+ "type": "HARDWARE",
+ "first_validated": "12/16/2010",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

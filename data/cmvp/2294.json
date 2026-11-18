@@ -1,0 +1,655 @@
+{
+ "cert": 2294,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2294",
+ "module": "RSA BSAFE® Crypto-C Micro Edition",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When entropy is externally loaded, no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Crypto-C Micro Edition (ME) Module is RSA, The Security Division of EMC's cryptographic library designed for securing mobile devices like wireless phones and personal digital assistants. It contains assembly-level optimizations on key wireless processors. Its functionality includes a wide range of data encryption and signing algorithms, including Triple-DES, the Advanced Encryption Standard (AES) algorithm, the RSA Public Key Cryptosystem, the DSA government signature algorithm, MD5 and SHA1 message digest routines, and more.",
+ "tested_configurations": [
+  "AIX 6.1 on Virtual I/O Server 2.2.2.1 running on a IBM Power 710 8231 - E2B [1][3]",
+  "AIX 6.1 on Virtual I/O Server 2.2.2.1 running on a IBM Power 710 8231 - E2B [1][3]",
+  "AIX 7.1 on Virtual I/O Server 2.2.2.1 running on a IBM Power 710 8231 - E1C [1][3]",
+  "AIX 7.1 on Virtual I/O Server 2.2.2.1 running on a IBM Power 710 8231 - E1C [1][3]",
+  "Android 2.3.6 running on a Samsung Galaxy S2 [1]",
+  "Android 4.0.3 running on a Motorola RAZR I [1]",
+  "Android 4.1 running on a Motorola RAZR I [3]",
+  "Android 4.1.2 running on a Google Nexus 7",
+  "Android 4.4 running on a Google Nexus 7 Tablet [3]",
+  "Android 5.1 running on a Google Nexus 5 [3]",
+  "Android 5.1 running on a Google Nexus 9 Tablet [3]",
+  "CentOS 6.6 running on a Dell R730xd [3]",
+  "CentOS 7.2 running on a Dell Latitude E6420 with PAA [3]",
+  "CentOS 7.2 running on a Dell Latitude E6420 without PAA [3]",
+  "Fedora Core 17 running on a Beagle dev board [1]",
+  "Fedora Core 20 running on a Wandboard Quad [3]",
+  "Fedora Core 22 running on an AMD Seattle A0 Overdrive Development System [3]",
+  "FreeBSD 10.2 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "FreeBSD 10.2 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "FreeBSD 8.3 on ESXi 5.0 running on a Dell M610 with PAA [1]",
+  "FreeBSD 8.3 on ESXi 5.0 running on a Dell M610 without PAA [1]",
+  "HPUX 11.31 running on a HP 9000/800/RP3410 [1][3]",
+  "HPUX 11.31 running on a HP 9000/800/RP3410 [1][3]",
+  "HPUX 11.31 running on a HP RX2620 [1][3]",
+  "HPUX 11.31 running on a HP RX2620 [1][3]",
+  "iOS 7.1 running on an Apple iPad 3 [1]",
+  "iOS 7.1 running on an Apple iPad 4 [1]",
+  "Linaro Linux 3.10.68 running on a Fujitsu MB86S72 [2]",
+  "Mac OS X 10.8 running on an Apple Mac Pro 5.1 with PAA [1]",
+  "Mac OS X 10.8 running on an Apple MacBook6,1 without PAA [1]",
+  "Mac OSX 10.10 on vCenter SUSE 11 running on a Mac Pro 6.10 with PAA [3]",
+  "Mac OSX 10.10 on vCenter SUSE 11 running on a Mac Pro 6.10 without PAA [3]",
+  "Oracle Linux 5.6 (x86-64) running on a Dell XPS 8700 with an Intel Core i7 with PAA [4]",
+  "Oracle Linux 5.6 (x86-64) running on a Dell XPS 8700 with an Intel Core i7 without PAA [4]",
+  "Oracle Linux 6.10 for Oracle Key Vault 18.1 (x86-64) running on a Dell OptiPlex 7040M with an Intel Core i5 with PAA [4]",
+  "Oracle Linux 6.10 for Oracle Key Vault 18.1 (x86-64) running on a Dell OptiPlex 7040M with an Intel Core i5 without PAA [4]",
+  "Oracle Linux 6.9 (x86-64) running on a Dell OptiPlex 5060 SFF with an Intel Core i7 with PAA [4]",
+  "Oracle Linux 6.9 (x86-64) running on a Dell OptiPlex 5060 SFF with an Intel Core i7 without PAA [4]",
+  "Oracle Linux 7.3 (x86-64) running on a Dell OptiPlex 5060 SFF with an Intel Core i7 with PAA [4]",
+  "Oracle Linux 7.3 (x86-64) running on a Dell OptiPlex 5060 SFF with an Intel Core i7 without PAA [4]",
+  "Oracle Linux 7.6 (x86-64) running on a Dell Latitude 5590 with an Intel Core i7 with PAA [4]",
+  "Oracle Linux 7.6 (x86-64) running on a Dell Latitude 5590 with an Intel Core i7 without PAA [4] (single-user mode)",
+  "Red Hat Enterprise Linux 5.11 on PowerVM 2.2 running on an IBM 8231-E2B [3]",
+  "Red Hat Enterprise Linux 5.11 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Red Hat Enterprise Linux 5.11 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Red Hat Enterprise Linux 5.11 on z/VM 6.2 running on a IBM s390x [3]",
+  "Red Hat Enterprise Linux 5.11 running on a HP Integrity RX2620 [3]",
+  "Red Hat Enterprise Linux 5.3 running on a IBM Power 710 8231 - E2B [1]",
+  "Red Hat Enterprise Linux 5.3 running on a IBM Power 710 8231 - E2B [1]",
+  "Red Hat Enterprise Linux 5.5 on ESX 4.0 running on a Dell M610 with PAA [1]",
+  "Red Hat Enterprise Linux 5.5 on ESX 4.0 running on a Dell M610 with PAA [1]",
+  "Red Hat Enterprise Linux 5.5 on ESX 4.0 running on a Dell M610 without PAA [1]",
+  "Red Hat Enterprise Linux 5.5 on ESX 4.0 running on a Dell M610 without PAA [1]",
+  "Red Hat Enterprise Linux 5.5 running on a Server HP RX 2620 [1]",
+  "Red Hat Enterprise Linux 5.8 on z/VM 6.2 running on a IBM s390x [1]",
+  "Red Hat Enterprise Linux 5.8 on z/VM 6.2 running on a IBM s390x [1]",
+  "Red Hat Enterprise Linux 6.1 on ESXi 4.1 running on a Dell M610 with PAA [1]",
+  "Red Hat Enterprise Linux 6.1 on ESXi 4.1 running on a Dell M610 with PAA [1]",
+  "Red Hat Enterprise Linux 6.1 on ESXi 4.1 running on a Dell M610 without PAA [1]",
+  "Red Hat Enterprise Linux 6.1 on ESXi 4.1 running on a Dell M610 without PAA [1]",
+  "Red Hat Enterprise Linux 6.7 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Red Hat Enterprise Linux 6.7 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Red Hat Enterprise Linux 7.1 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Red Hat Enterprise Linux 7.1 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Solaris 10 on ESXi 4.1 running on a Dell M610 with PAA [1]",
+  "Solaris 10 on ESXi 4.1 running on a Dell M610 without PAA [1]",
+  "Solaris 10 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Solaris 10 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Solaris 10 running on a Oracle SPARC T4-2 [1][3]",
+  "Solaris 10 running on a Oracle Sun Fire X2100 with PAA [1]",
+  "Solaris 10 running on a Oracle Sun Fire X2100 without PAA [1]",
+  "Solaris 11 running on a Oracle SPARC Enterprise T5120 [1][3]",
+  "Solaris 11 running on a Oracle SPARC T4-2 [1][3]",
+  "Solaris 11 running on a Oracle SPARC T4-2 with PAA [1][3]",
+  "Solaris 11 running on a Oracle SPARC T4-2 without PAA [1][3]",
+  "SUSE Linux Enterprise Server 11 on ESX 4.0 running on a Dell M610 with PAA [1]",
+  "SUSE Linux Enterprise Server 11 on ESX 4.0 running on a Dell M610 without PAA [1]",
+  "SUSE Linux Enterprise Server 11 on ESXi 4.1 running on a Dell M610 with PAA [1]",
+  "SUSE Linux Enterprise Server 11 on ESXi 4.1 running on a Dell M610 without PAA [1]",
+  "SUSE Linux Enterprise Server 11 on PowerVM 2.2 running on an IBM 8231-E2B [3]",
+  "SUSE Linux Enterprise Server 11 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "SUSE Linux Enterprise Server 11 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "SUSE Linux Enterprise Server 11 running on a IBM Power 710 8231 - E2B [1]",
+  "SUSE Linux Enterprise Server 11 running on a IBM Power 710 8231 - E2B [1]",
+  "SUSE Linux Enterprise Server 12 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "SUSE Linux Enterprise Server 12 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Timesys Linux 4.2.8 running on a ARMv7 Cortex A53 [5]",
+  "Ubuntu 12.04 LTS running on a Beagle dev board [1][3]",
+  "VxWorks 6.4 running on a MVME6100 [1][3]",
+  "VxWorks 6.7 running on a MVME6100 [1][3]",
+  "VxWorks 6.8 running on a MX31 Lite Kit [1][3]",
+  "Windows 10 Enterprise on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Windows 10 Enterprise on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Windows 7 Enterprise on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Windows 7 Enterprise on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Windows 7 Enterprise SP1 running on a Compaq Pro 6305 with PAA [1]",
+  "Windows 7 Enterprise SP1 running on a Compaq Pro 6305 with PAA [1]",
+  "Windows 7 Enterprise SP1 running on a Compaq Pro 6305 without PAA [1]",
+  "Windows 7 Enterprise SP1 running on a Compaq Pro 6305 without PAA [1]",
+  "Windows 7 Enterprise SP1 running on an Intel Mahobay with PAA [1]",
+  "Windows 7 Enterprise SP1 running on an Intel Mahobay with PAA [1]",
+  "Windows 7 Enterprise SP1 running on an Intel Mahobay without PAA [1]",
+  "Windows 7 Enterprise SP1 running on an Intel Mahobay without PAA [1]",
+  "Windows 8 Enterprise on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Windows 8 Enterprise on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Windows 8.1 Enterprise running on an Intel Mahobay with PAA [1]",
+  "Windows 8.1 Enterprise running on an Intel Mahobay without PAA [1]",
+  "Windows Server 2003 Enterprise R2 on ESX 5.1 running on a Dell M610 with PAA [1]",
+  "Windows Server 2003 Enterprise R2 running on a Dell Dimension E521 without PAA [1]",
+  "Windows Server 2003 Enterprise R2 running on a Dell Dimension E521 without PAA [1]",
+  "Windows Server 2003 Enterprise R2 running on a Dell Dimension E521 without PAA [1]",
+  "Windows Server 2003 Enterprise R2 running on a Dell Dimension E521 without PAA [1]",
+  "Windows Server 2003 Enterprise R2 running on a HP Integrity RX2620 [1]",
+  "Windows Server 2003 Enterprise R2 running on a HP Integrity RX2620 [1]",
+  "Windows Server 2003 Enterprise R2 running on an Apple Mac Pro 1.1 with PAA [1]",
+  "Windows Server 2003 Enterprise R2 running on an Apple Mac Pro 1.1 with PAA [1]",
+  "Windows Server 2003 Enterprise R2 running on an Intel Mahobay with PAA [1]",
+  "Windows Server 2008 Enterprise on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Windows Server 2008 Enterprise on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Windows Server 2008 Enterprise R2 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Windows Server 2008 Enterprise R2 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]",
+  "Windows Server 2008 Enterprise R2 running on a Dell Dimension E521 without PAA [1]",
+  "Windows Server 2008 Enterprise R2 running on a Dell Dimension E521 without PAA [1]",
+  "Windows Server 2008 Enterprise R2 running on a HP Integrity RX2620 [1]",
+  "Windows Server 2008 Enterprise R2 running on a HP Integrity RX2620 [1][3]",
+  "Windows Server 2008 Enterprise R2 running on an Intel Mahobay with PAA [1]",
+  "Windows Server 2008 Enterprise R2 running on an Intel Mahobay with PAA [1]",
+  "Windows Server 2008 Enterprise SP2 running on an Intel Mahobay with PAA [1]",
+  "Windows Server 2008 Enterprise SP2 running on an Intel Mahobay with PAA [1]",
+  "Windows Server 2008 Enterprise SP2 running on an Intel Mahobay without PAA [1]",
+  "Windows Server 2008 Enterprise SP2 running on an Intel Mahobay without PAA [1]",
+  "Windows Server 2012 R2 Standard running on a Compaq Pro 6305 with PAA [1]",
+  "Windows Server 2012 R2 Standard running on a Compaq Pro 6305 without PAA [1]",
+  "Windows Server 2012 Standard R2 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server with PAA [3]",
+  "Windows Server 2012 Standard R2 on vCenter SUSE 11 running on a Cisco UCS C220 M3 Rack Server without PAA [3]"
+ ],
+ "software_versions": "4.1 [1], 4.1.0.1 [2], 4.1.2 [3], 4.1.2.2 [4] and 4.1.3.2 [5]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2859",
+   "cavp_id": "1427",
+   "cavp_ref": "AES:2859"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3596",
+   "cavp_id": "8200",
+   "cavp_ref": "AES:3596"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3767",
+   "cavp_id": "21873",
+   "cavp_ref": "AES:3767"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4665",
+   "cavp_id": "19104",
+   "cavp_ref": "AES:4665"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [3]    [2]    [5]    [4]"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 296",
+   "cavp_id": "6909",
+   "cavp_ref": "Component:296"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 297",
+   "cavp_id": "25194",
+   "cavp_ref": "Component:297"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 298",
+   "cavp_id": "1555",
+   "cavp_ref": "Component:298"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 299",
+   "cavp_id": "16184",
+   "cavp_ref": "Component:299"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 300",
+   "cavp_id": "7012",
+   "cavp_ref": "Component:300"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 618",
+   "cavp_id": "10520",
+   "cavp_ref": "Component:618"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 619",
+   "cavp_id": "1177",
+   "cavp_ref": "Component:619"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 620",
+   "cavp_id": "20419",
+   "cavp_ref": "Component:620"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 621",
+   "cavp_id": "3491",
+   "cavp_ref": "Component:621"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 622",
+   "cavp_id": "6144",
+   "cavp_ref": "Component:622"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 714",
+   "cavp_id": "28260",
+   "cavp_ref": "Component:714"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 715",
+   "cavp_id": "29926",
+   "cavp_ref": "Component:715"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 716",
+   "cavp_id": "19083",
+   "cavp_ref": "Component:716"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 717",
+   "cavp_id": "22719",
+   "cavp_ref": "Component:717"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 740",
+   "cavp_id": "5300",
+   "cavp_ref": "Component:740"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1311",
+   "cavp_id": "19569",
+   "cavp_ref": "Component:1311"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1314",
+   "cavp_id": "21611",
+   "cavp_ref": "Component:1314"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1315",
+   "cavp_id": "24962",
+   "cavp_ref": "Component:1315"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1316",
+   "cavp_id": "17422",
+   "cavp_ref": "Component:1316"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1317",
+   "cavp_id": "21566",
+   "cavp_ref": "Component:1317"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [1]    [1]    [1]    [1]    [3]    [3]    [3]    [3]    [3]    [2]    [2]    [2]    [2]    [2]    [5]    [5]    [5]    [5]    [5]    [4]"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 507",
+   "cavp_id": "24983",
+   "cavp_ref": "DRBG:507"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 931",
+   "cavp_id": "13811",
+   "cavp_ref": "DRBG:931"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1037",
+   "cavp_id": "11579",
+   "cavp_ref": "DRBG:1037"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1577",
+   "cavp_id": "22261",
+   "cavp_ref": "DRBG:1577"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [3]    [2]    [5]    [4]"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 858",
+   "cavp_id": "4116",
+   "cavp_ref": "DSA:858"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 999",
+   "cavp_id": "7295",
+   "cavp_ref": "DSA:999"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1047",
+   "cavp_id": "5047",
+   "cavp_ref": "DSA:1047"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1236",
+   "cavp_id": "28196",
+   "cavp_ref": "DSA:1236"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [3]    [2]    [5]    [4]"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 507",
+   "cavp_id": "1137",
+   "cavp_ref": "ECDSA:507"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 733",
+   "cavp_id": "24746",
+   "cavp_ref": "ECDSA:733"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 810",
+   "cavp_id": "7766",
+   "cavp_ref": "ECDSA:810"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1149",
+   "cavp_id": "20450",
+   "cavp_ref": "ECDSA:1149"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [3]    [2]    [5]    [4]"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1799",
+   "cavp_id": "380",
+   "cavp_ref": "HMAC:1799"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2293",
+   "cavp_id": "23704",
+   "cavp_ref": "HMAC:2293"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2467",
+   "cavp_id": "17281",
+   "cavp_ref": "HMAC:2467"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3089",
+   "cavp_id": "120",
+   "cavp_ref": "HMAC:3089"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [3]    [2]    [5]    [4]"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #3596 [3], #4665 [5] and #C810 [4]; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1499",
+   "cavp_id": "24711",
+   "cavp_ref": "RSA:1499"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1850",
+   "cavp_id": "675",
+   "cavp_ref": "RSA:1850"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1938",
+   "cavp_id": "27823",
+   "cavp_ref": "RSA:1938"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2545",
+   "cavp_id": "4519",
+   "cavp_ref": "RSA:2545"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [3]    [2]    [5]    [4]"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2402",
+   "cavp_id": "2143",
+   "cavp_ref": "SHS:2402"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2958",
+   "cavp_id": "6858",
+   "cavp_ref": "SHS:2958"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3137",
+   "cavp_id": "21708",
+   "cavp_ref": "SHS:3137"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3822",
+   "cavp_id": "11634",
+   "cavp_ref": "SHS:3822"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [3]    [2]    [5]    [4]"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1706",
+   "cavp_id": "14982",
+   "cavp_ref": "TDES:1706"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2003",
+   "cavp_id": "25660",
+   "cavp_ref": "TDES:2003"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2095",
+   "cavp_id": "27799",
+   "cavp_ref": "TDES:2095"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2482",
+   "cavp_id": "8645",
+   "cavp_ref": "TDES:2482"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C810",
+   "cavp_id": "31206",
+   "cavp_ref": "C:810",
+   "note": "[1]    [3]    [2]    [5]    [4]"
+  }
+ ],
+ "vendor": "RSA",
+ "vendor_info": {
+  "name": "RSA",
+  "website": "http://www.rsa.com",
+  "address": [
+   "174 Middlesex Turnpike",
+   "Bedford, MA 01730",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Program"
+   },
+   {
+    "name": "Francois Lamoureux"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2294.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0048.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/12/2014",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "12/21/2015",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/19/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/22/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "2/12/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/18/2017",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "8/11/2017",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/29/2018",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/19/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "12/12/2014",
+ "last_updated": "7/19/2019",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2294.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); HMAC-MD5; MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2294,
+  "vendor": "RSA",
+  "module": "RSA BSAFE® Crypto-C Micro Edition",
+  "type": "Software",
+  "validation_dates": [
+   "12/12/2014",
+   "12/21/2015",
+   "01/19/2016",
+   "01/22/2016",
+   "02/12/2016",
+   "01/18/2017",
+   "08/11/2017",
+   "01/29/2018",
+   "07/19/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

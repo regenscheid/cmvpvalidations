@@ -1,0 +1,46 @@
+{
+ "cavp_id": "20124",
+ "cavp_cert": "DRBG 1836",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20124",
+ "implementation": "avcrypto",
+ "product_id": "8848",
+ "description": "Kernel-based implementation of DRBG, AES, SHA, HMAC, GCM derived from OpenSSL and Linux implementations. CPU optimizations used where appropriate: AESNI, RDRAND, SSE, AVX, etc.",
+ "version": "12.1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/8/2017",
+ "vendor": "SonicWALL Inc.",
+ "vendor_website": "http://www.sonicwall.com",
+ "oes": [
+  {
+   "name": "Intel Core i5 with AES-NI",
+   "details": []
+  },
+  {
+   "name": "Intel Xeon with AES-NI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

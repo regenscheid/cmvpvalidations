@@ -1,0 +1,136 @@
+{
+ "cert": 2761,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2761",
+ "module": "FIPS Crypto Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 3 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Ionic Security’s Fusion Platform implements the FIPS Crypto Module for all cryptographic functions such as key pair generation, digital signature generation/ and verification, encryption and decryption, hashing functions, and message authentication.",
+ "tested_configurations": [
+  "CentOS 7.1 running on an Intel Server System R1304GZ4GC (single-user mode)",
+  "Windows 7 SP1 running on a Hewlett-Packard (HP) Z230 desktop"
+ ],
+ "software_versions": "1.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3772",
+   "cavp_id": "25260",
+   "cavp_ref": "AES:3772"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1042",
+   "cavp_id": "3544",
+   "cavp_ref": "DRBG:1042"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2472",
+   "cavp_id": "20794",
+   "cavp_ref": "HMAC:2472"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2520",
+   "cavp_id": "1413",
+   "cavp_ref": "HMAC:2520"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1942",
+   "cavp_id": "8751",
+   "cavp_ref": "RSA:1942"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3142",
+   "cavp_id": "19706",
+   "cavp_ref": "SHS:3142"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3200",
+   "cavp_id": "10633",
+   "cavp_ref": "SHS:3200"
+  }
+ ],
+ "vendor": "Ionic Security Inc.",
+ "vendor_info": {
+  "name": "Ionic Security Inc.",
+  "website": "http://www.ionicsecurity.com",
+  "address": [
+   "1170 Peachtree Street NE",
+   "Suite 400",
+   "Atlanta, GA 30309",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ionic Support"
+   },
+   {
+    "name": "Nicholas Smith"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2761.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertSept2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/27/2016",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "9/27/2016",
+ "last_updated": "9/27/2016",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2761.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2761,
+  "vendor": "Ionic Security Inc.",
+  "module": "FIPS Crypto Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/27/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

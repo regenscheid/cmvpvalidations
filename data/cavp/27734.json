@@ -1,0 +1,69 @@
+{
+ "cavp_id": "27734",
+ "cavp_cert": "AES 1070",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27734",
+ "implementation": "SMAU Crypto/Auth",
+ "product_id": "2753",
+ "description": "SMAU Crypto/Auth contains hardware engines for AES, SHA-1/SHA-256 to support data encryption/decryption and integrity protection. The engines are used generically for crypto offload and in secure cache to protect external protected code/data caching.",
+ "version": "BCM5880, Version C0",
+ "type": "HARDWARE",
+ "first_validated": "5/7/2009",
+ "vendor": "Broadcom Corporation",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 32, 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 1024-32768",
+    "    Block Size: Full"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

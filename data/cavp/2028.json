@@ -1,0 +1,32 @@
+{
+ "cavp_id": "2028",
+ "cavp_cert": "DRBG 1771",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2028",
+ "implementation": "Apple macOS CoreCrypto v8 Userspace Module (Assembler VNG)",
+ "product_id": "8660",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to user space and the AES-NI Intel instructions set using the generic block chaining modes of CBC.",
+ "version": "8.0",
+ "type": "SOFTWARE",
+ "first_validated": "11/17/2017",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "macOS 10.13 on Intel i7",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

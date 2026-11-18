@@ -1,0 +1,140 @@
+{
+ "cert": 3384,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3384",
+ "module": "Delta Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Titan Chip validated to FIPS 140-2 under Cert. #3382 operating in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The Delta Cryptographic Module is a Network Interface Card (NIC) housed on a host device, which is designed to support Ethernet and IP networking. The Delta module contains cryptographic hardware and firmware support, which allows data packets to be encrypted and decrypted using AES-GCM-128 at \"line rate\", while supporting a very large number of simultaneous Security Associations.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "hardware_versions": "Delta [Configuration 0]; [Configuration 1]; [Configuration 2] with components ARM Cortex-M7 CPU, RR16FFGL_111UHD32768X39M16B8W0R1E1L1P0D0L16, RR16FFGL_111HS16384X8M16B8W1R1E1L0P0D0A0U20 and RR16FFGL_111HS32768X8M16B8W1R1E1L0P0D0A0U20",
+ "firmware_versions": "Delta-gqfips-1.2",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5656",
+   "cavp_id": "10140",
+   "cavp_ref": "AES:5656"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5659",
+   "cavp_id": "23332",
+   "cavp_ref": "AES:5659"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2285",
+   "cavp_id": "21182",
+   "cavp_ref": "DRBG:2285"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1529",
+   "cavp_id": "26464",
+   "cavp_ref": "ECDSA:1529"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5656",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3045",
+   "cavp_id": "3310",
+   "cavp_ref": "RSA:3045"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 58",
+   "cavp_id": "19687",
+   "cavp_ref": "SHA-3:58"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4536",
+   "cavp_id": "26973",
+   "cavp_ref": "SHS:4536"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4537",
+   "cavp_id": "17788",
+   "cavp_ref": "SHS:4537"
+  }
+ ],
+ "vendor": "Google, Inc.",
+ "vendor_info": {
+  "name": "Google, Inc.",
+  "website": "http://www.google.com",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Crypto Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3384.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedMarch2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/27/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/27/2019",
+ "last_updated": "3/27/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3384.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #3382"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3384,
+  "vendor": "Google, Inc.",
+  "module": "Delta Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/27/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

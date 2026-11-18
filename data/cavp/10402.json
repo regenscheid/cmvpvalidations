@@ -1,0 +1,38 @@
+{
+ "cavp_id": "10402",
+ "cavp_cert": "TDES 1655",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10402",
+ "implementation": "Openssl-fips",
+ "product_id": "3480",
+ "description": "OpenSSL is a third party open source code, which provides cryptographic services to user space daemons. The device uses openssl-fips-1.2 version. AP7131N userspace daemons (RADIUS, ntp, openssh, net-snmp, etc) using openssl crypto services call fips_mode_set() from their respective initialization functions.",
+ "version": "1.2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/31/2013",
+ "vendor": "Motorola Solutions, Inc.",
+ "vendor_website": "http://www.motorolasolutions.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon Plus CN5000 Family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

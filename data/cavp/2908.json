@@ -1,0 +1,62 @@
+{
+ "cavp_id": "2908",
+ "cavp_cert": "RSA 2074",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2908",
+ "implementation": "T10000D Firmware Crypto Library",
+ "product_id": "5579",
+ "description": "Oracle’s StorageTek T10000D Tape Drive blends the highest capacity, performance, reliability, and data security to support demanding, 24/7 data center operations. The T10000D delivers fast write speeds (252MB /sec) to a native 8.5 TB of magnetic tape storage; making it ideal for data center operations with growing data volume",
+ "version": "2.3 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/31/2016",
+ "vendor": "Oracle America, Inc.",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Altera NIOS II",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Fixed"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

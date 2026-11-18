@@ -1,0 +1,286 @@
+{
+ "cert": 3714,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3714",
+ "module": "Extron FIPS Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode (built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy). Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Extron FIPS Module is a cryptographic module whose purpose is to provide FIPS 140-2 validated cryptographic functions.",
+ "tested_configurations": [
+  "Android 4.4 32-bit running on Intel Atom Z3735F (x86) (gcc Compiler Version 4.8)",
+  "Android 5.0 32-bit running on Qualcomm APQ8084 (ARMv7) with NEON (gcc Compiler Version 4.9)",
+  "Android 5.0 32-bit running on Qualcomm APQ8084 (ARMv7) without NEON (gcc Compiler Version 4.9)",
+  "Android 5.0 64-bit running on SAMSUNG Exynos7420 (ARMv8) with NEON and Crypto Extensions (gcc Compiler Version 4.9)",
+  "Android 5.0 64-bit running on SAMSUNG Exynos7420 (ARMv8) without NEON and Crypto Extensions (gcc Compiler Version 4.9)",
+  "BAE Systems STOP 8.2 64-bit running on BAE XTS-600-W-T with PAA (gcc Compiler Version 4.8.5)",
+  "BAE Systems STOP 8.2 64-bit running on BAE XTS-600-W-T without PAA (gcc Compiler Version 4.8.5)",
+  "Debian 7.9 running on Marvell Mohawk (ARMv5TE) (gcc Compiler Version 4.4.5)",
+  "FreeBSD 10.2 running on Intel Xeon E5-2430L (x86) with PAA (clang Compiler Version 3.4.1)",
+  "FreeBSD 10.2 running on Intel Xeon E5-2430L (x86) without PAA (clang Compiler Version 3.4.1)",
+  "iOS 8.1 32-bit running on Apple A7 (ARMv8) with NEON (clang Compiler Version 600.0.56)",
+  "iOS 8.1 32-bit running on Apple A7 (ARMv8) without NEON (clang Compiler Version 600.0.56)",
+  "iOS 8.1 64-bit running on Apple A7 (ARMv8) with NEON and Crypto Extensions (clang Compiler Version 600.0.56)",
+  "iOS 8.1 64-bit running on Apple A7 (ARMv8) without NEON and Crypto Extensions (clang Compiler Version 600.0.56)",
+  "Linux 3.14 running on ARM Cortex A9 (ARMv7) with NEON (gcc Compiler Version 4.8.2)",
+  "Linux 3.14 running on ARM Cortex A9 (ARMv7) without NEON (gcc Compiler Version 4.8.2)",
+  "Linux 3.16 running on Atmel ATSAM9G45 (ARMv5TEJ) (gcc Compiler Version 4.8.3)",
+  "Linux 3.16 running on Atmel ATSAMA5D35 (ARMv7) (gcc Compiler Version 4.8.3)",
+  "Linux 4.14.0 running on an Extron E 101 with a Zynq Ultrascale+ Cortex A53 with PAA (gcc Compiler 7.2.1)",
+  "Linux 4.14.0 running on an Extron E 101 with a Zynq Ultrascale+ Cortex A53 without PAA (gcc Compiler 7.2.1)",
+  "Linux 4.14.0 running on an Extron SD 101 with a Zynq Ultrascale+ Cortex A53 with PAA (gcc Compiler 7.2.1)",
+  "Linux 4.14.0 running on an Extron SD 101 with a Zynq Ultrascale+ Cortex A53 without PAA (gcc Compiler 7.2.1)",
+  "Linux 4.4 running on ARM926EJS (ARMv5) (gcc Compiler Version 4.8.3)",
+  "Linux 4.9.11 running on an Extron NAVigator with an iMX.6 Cortex A9 with PAA (gcc Compiler 7.2.1)",
+  "Linux 4.9.11 running on an Extron NAVigator with an iMX.6 Cortex A9 without PAA (gcc Compiler 7.2.1)",
+  "LMOS 7.2 running on Intel Xeon E3-1231 (x86) with PAA (gcc Compiler Version 4.8.4)",
+  "LMOS 7.2 running on Intel Xeon E3-1231 (x86) without PAA (gcc Compiler Version 4.8.4)",
+  "LMOS 7.2 under Vmware ESXi 6.5 running on Intel Xeon E5-2430L (x86) with PAA (gcc Compiler Version 4.8.4)",
+  "LMOS 7.2 under Vmware ESXi 6.5 running on Intel Xeon E5-2430L (x86) without PAA (gcc Compiler Version 4.8.4)",
+  "Timesys 2.6 running on PowerPC 440 (PPC) (gcc Compiler Version 4.6.3)",
+  "TS-Linux 2.4 running on Arm920Tid (ARMv4) (gcc Compiler Version 4.3.2)",
+  "Ubuntu 12.04 running on Compulab CM-FX6 Cortex-A9 (ARMv7) (gcc Compiler Version 4.6.3)",
+  "uClibc 0.9 running on ARM922T (ARMv4T) (gcc Compiler Version 4.8.1)",
+  "uClibc 0.9 running on ARM926EJS (ARMv5TEJ) (gcc Compiler Version 4.8.1)",
+  "uClibc 0.9 running on Marvell PJ4 (ARMv7) (gcc Compiler Version 4.8.1)",
+  "uClinux-dist-5.0 running on Marvell Armada 370 (ARMv7) (gcc Compiler Version 4.8.3)",
+  "uClinux-dist-5.0 running on Marvell Feroceon 88FR131 (ARMv5TE) (gcc Compiler Version 4.8.3)",
+  "VxWorks 6.9 running on Freescale P2020 (PPC) (gcc Compiler Version 4.3.3)",
+  "Yocto Linux 3.10 running on Freescale i.MX6 (ARMv7) with NEON (gcc Compiler Version 4.8.1)",
+  "Yocto Linux 3.10 running on Freescale i.MX6 (ARMv7) without NEON (gcc Compiler Version 4.8.1) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Certs. #372, #472 and #C1924, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.9 or 2.0.10",
+ "product_url": "http://www.extron.com/nav",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3090",
+   "cavp_id": "5307",
+   "cavp_ref": "AES:3090"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3264",
+   "cavp_id": "22452",
+   "cavp_ref": "AES:3264"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 372",
+   "cavp_id": "12331",
+   "cavp_ref": "Component:372"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 472",
+   "cavp_id": "1617",
+   "cavp_ref": "Component:472"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 607",
+   "cavp_id": "2298",
+   "cavp_ref": "DRBG:607"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 723",
+   "cavp_id": "20042",
+   "cavp_ref": "DRBG:723"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 896",
+   "cavp_id": "30021",
+   "cavp_ref": "DSA:896"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 933",
+   "cavp_id": "7706",
+   "cavp_ref": "DSA:933"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 558",
+   "cavp_id": "7815",
+   "cavp_ref": "ECDSA:558"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 620",
+   "cavp_id": "5662",
+   "cavp_ref": "ECDSA:620"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1937",
+   "cavp_id": "2834",
+   "cavp_ref": "HMAC:1937"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2063",
+   "cavp_id": "28962",
+   "cavp_ref": "HMAC:2063"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1581",
+   "cavp_id": "28387",
+   "cavp_ref": "RSA:1581"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1664",
+   "cavp_id": "21593",
+   "cavp_ref": "RSA:1664"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2553",
+   "cavp_id": "15886",
+   "cavp_ref": "SHS:2553"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2702",
+   "cavp_id": "8189",
+   "cavp_ref": "SHS:2702"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1780",
+   "cavp_id": "26110",
+   "cavp_ref": "TDES:1780"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1853",
+   "cavp_id": "419",
+   "cavp_ref": "TDES:1853"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1924",
+   "cavp_id": "32828",
+   "cavp_ref": "C:1924"
+  }
+ ],
+ "vendor": "Extron Electronics",
+ "vendor_info": {
+  "name": "Extron Electronics",
+  "website": "http://www.extron.com",
+  "address": [
+   "1025 East Ball Road Road",
+   "Anaheim, CA 92805",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Sahand M. Naderi"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3714.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202020_011020_0703.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/28/2020",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "9/28/2020",
+ "last_updated": "9/28/2020",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3714.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Certs. #372, #472 and #C1924, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3714,
+  "vendor": "Extron Electronics",
+  "module": "Extron FIPS Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/28/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

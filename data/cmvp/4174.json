@@ -1,0 +1,163 @@
+{
+ "cert": 4174,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4174",
+ "module": "Cisco FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cisco FIPS Object Module (FOM) is a software library that provides cryptographic services to a vast array of Cisco's networking and collaboration products. The module provides FIPS 140 validated cryptographic algorithms for services such as IPSEC, SRTP, SSH, TLS, 802.1x, etc. The module does not directly implement any of these protocols, instead it provides the cryptographic primitives and functions to allow a developer to implement the various protocols.",
+ "tested_configurations": [
+  "Linux Kernel 4.9 running on a Cisco Catalyst 3850 with Cavium Octeon II MIPS64 (single-user mode)",
+  "Linux Kernel 5.10 on VMware ESXi 6.5 running on Cisco UCSC-C220-M5SX with Intel Xeon Platinum with PAA (single-user mode)",
+  "macOS 11.5 running on Apple MacBook Pro with Intel Core i7 with PAA (single-user mode)",
+  "Windows 10 running on Dell Inspiron 15 5000 with Intel Core i5 with PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "7.0b",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A1773; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1773",
+   "cavp_id": "34382",
+   "cavp_ref": "A:1773"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4174.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202022_010422_0648_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/9/2022",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/9/2022",
+ "last_updated": "3/9/2022",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4174.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4174,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "Cisco FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/09/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

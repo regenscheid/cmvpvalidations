@@ -1,0 +1,82 @@
+{
+ "cavp_id": "32470",
+ "cavp_cert": "C1688",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32470",
+ "implementation": "Crypto SSD",
+ "product_id": "12373",
+ "description": "Integral Crypto SSD is the Full Disk Encryption solution for Windows desktops and laptops. Featuring government department approved military-level AES 256-bit Hardware Encryption.",
+ "version": "PS3112-S12 (SATA)",
+ "type": "HARDWARE",
+ "first_validated": "4/17/2020",
+ "vendor": "Integral Memory Plc",
+ "vendor_website": "http://www.Integralmemory.com",
+ "oes": [
+  {
+   "name": "Crypto SSD",
+   "details": [
+    "device: Crypto SSD"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256",
+    "C1688 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 4096",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 256",
+    "Public Exponent Mode: Random",
+    "C1688 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

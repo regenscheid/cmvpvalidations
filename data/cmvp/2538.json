@@ -1,0 +1,179 @@
+{
+ "cert": 2538,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2538",
+ "module": "Brocade(R) 7840 Extension Switch",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and when tamper evident labels are installed as indicated in the Security Policy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Brocade 7840 Extension Switch provides fast, reliable WN/MAN connectivity for remote data replication, backup, and migration with Fibre Channel and advanced Fibre Channel over IP (FCIP) technology.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "{7840 Extension Switch (P/N 80-1008000-01)} with FIPS Kit P/N Brocade XBR-000195",
+ "firmware_versions": "Fabric OS v7.4.0 (P/N 51-1001672-01)",
+ "product_url": "http://www.brocade.com/products/all/index.page",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2892",
+   "cavp_id": "29453",
+   "cavp_ref": "AES:2892"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3130",
+   "cavp_id": "3083",
+   "cavp_ref": "AES:3130"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3132",
+   "cavp_id": "17674",
+   "cavp_ref": "AES:3132"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 318",
+   "cavp_id": "5269",
+   "cavp_ref": "Component:318"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 319",
+   "cavp_id": "3134",
+   "cavp_ref": "Component:319"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 396",
+   "cavp_id": "22149",
+   "cavp_ref": "Component:396"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 635",
+   "cavp_id": "17243",
+   "cavp_ref": "DRBG:635"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 672",
+   "cavp_id": "11180",
+   "cavp_ref": "DRBG:672"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 522",
+   "cavp_id": "10860",
+   "cavp_ref": "ECDSA:522"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1828",
+   "cavp_id": "17738",
+   "cavp_ref": "HMAC:1828"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1952",
+   "cavp_id": "10871",
+   "cavp_ref": "HMAC:1952"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1522",
+   "cavp_id": "27465",
+   "cavp_ref": "RSA:1522"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2435",
+   "cavp_id": "18819",
+   "cavp_ref": "SHS:2435"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2571",
+   "cavp_id": "22423",
+   "cavp_ref": "SHS:2571"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1723",
+   "cavp_id": "23057",
+   "cavp_ref": "TDES:1723"
+  }
+ ],
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_info": {
+  "name": "Brocade Communications Systems, Inc.",
+  "website": "http://www.brocade.com",
+  "address": [
+   "130 Holger Way",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Christopher Marks"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2538.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/19/2016",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  },
+  {
+   "date": "7/19/2016",
+   "type": "Update",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "1/19/2016",
+ "last_updated": "7/19/2016",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2538.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); SNMPv3 KDF (non-compliant); HMAC-RIPEMD160; HMAC-SHA1-96 (non-compliant); HMAC-MD5; HMAC-MD5-96; DES; DES3; DESX; RC2; RC4; NDRNG; MD2; MD4; MD5; ARCFOUR; BF; CAST; RIPEMD160; UMAC-64; EC Diffie-Hellman (CVL Certs. #311, #318 and #320, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); AES (non-compliant); IKEv2 KDF (non-compliant); SHA-1 (non-compliant); SHA-256 (non-compliant); HMAC-SHA-512 (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2538,
+  "vendor": "Brocade Communications Systems, Inc.",
+  "module": "Brocade(R) 7840 Extension Switch",
+  "type": "Hardware",
+  "validation_dates": [
+   "01/19/2016",
+   "07/19/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

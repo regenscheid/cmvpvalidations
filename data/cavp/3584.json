@@ -1,0 +1,61 @@
+{
+ "cavp_id": "3584",
+ "cavp_cert": "AES 4596",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3584",
+ "implementation": "SG VA Cryptograpchic Library",
+ "product_id": "1782",
+ "description": "The SG VA Crypto Library provides the necessary cryptographic services developed specifically for use in the Secure Web Gateway appliance line.",
+ "version": "4.1.1",
+ "type": "SOFTWARE",
+ "first_validated": "7/14/2017",
+ "vendor": "Symantec Corporation",
+ "vendor_website": "http://www.symantec.com",
+ "oes": [
+  {
+   "name": "SGOS 6.7 on Intel Xeon E5 Broadwell on VMWare ESXi v6.0",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,166 @@
+{
+ "cert": 2869,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2869",
+ "module": "Aviat Networks Eclipse Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. Installation of components shall be configured per Section 2.2.1 of the Security Policy",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "This cryptographic module performs encryption of data carried over a microwave radio link.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "INUe 2RU Chassis (P/N EXE-002), Fan Card (P/N EXF-101), Node Controller Card (P/N EXN-004 with FPGA_NCCV2_E1_DS1_004.bit and FPGA_NCCV2_STM1_006.bit), FIPS Installation Kit (P/N 179-530153-001 or 179-530153-002), Replacement Labels (P/N 007-600331-001), at least one of: [RAC 6X (P/N EXR-600-001 with FPGA_RAC6X_PDH_ACM-14.19.52.bit and FPGA_RAC6X_SDH-2.3.1.bit), RAC 6XE (P/N EXR-600-002 with FPGA_RAC6X_PDH_ACM-14.19.52.bit and FPGA_RAC6X_SDH-2.3.1.bit), RAC 60 (P/N EXR-660-001 with FPGA_RAC6X_PDH_ACM-14.19.52.bit and FPGA_RAC6X_SDH-2.3.1.bit), or RAC 60E (P/N EXR-660-002 with FPGA_RAC6X_PDH_ACM-14.19.52.bit and FPGA_RAC6X_SDH-2.3.1.bit)] and all remaining slots filled by excluded components as specified in the Security Policy.",
+ "firmware_versions": "08.02.91 and 08.03.90 with Bootloader version 1.0.36",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2260",
+   "cavp_id": "26452",
+   "cavp_ref": "AES:2260"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2418",
+   "cavp_id": "7786",
+   "cavp_ref": "AES:2418"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 73",
+   "cavp_id": "9043",
+   "cavp_ref": "Component:73"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 860",
+   "cavp_id": "19423",
+   "cavp_ref": "Component:860"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 970",
+   "cavp_id": "17992",
+   "cavp_ref": "Component:970"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 323",
+   "cavp_id": "19302",
+   "cavp_ref": "DRBG:323"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 902",
+   "cavp_id": "14870",
+   "cavp_ref": "ECDSA:902"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2634",
+   "cavp_id": "29965",
+   "cavp_ref": "HMAC:2634"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2071",
+   "cavp_id": "26753",
+   "cavp_ref": "RSA:2071"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2239",
+   "cavp_id": "2550",
+   "cavp_ref": "RSA:2239"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3328",
+   "cavp_id": "14972",
+   "cavp_ref": "SHS:3328"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3397",
+   "cavp_id": "27224",
+   "cavp_ref": "SHS:3397"
+  }
+ ],
+ "vendor": "Aviat Networks, Inc.",
+ "vendor_info": {
+  "name": "Aviat Networks, Inc.",
+  "website": "http://www.aviatnetworks.com",
+  "address": [
+   "860 N. McCarthy Blvd., Suite 200",
+   "Milpitas, CA 95035",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ruth French"
+   },
+   {
+    "name": "Martin Howard"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2869.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMar2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/27/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "3/29/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "3/27/2017",
+ "last_updated": "3/29/2018",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2869.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "EC Diffie-Hellman (CVL Cert. #860, key agreement; key establishment methodology provides 128 bits of encryption strength); MD5; NDRNG; DES; Diffie-Hellman (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2869,
+  "vendor": "Aviat Networks, Inc.",
+  "module": "Aviat Networks Eclipse Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/27/2017",
+   "03/29/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

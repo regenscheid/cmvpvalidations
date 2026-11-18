@@ -1,0 +1,140 @@
+{
+ "cert": 2671,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2671",
+ "module": "Duo Security Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. This validation entry is a non-security relevant modification to Cert. #1938. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Duo Security Cryptographic Module is a cryptographic engine for mobile devices. The module delivers core cryptographic functions to Duo Security's Two-Factor Authentication mobile application.",
+ "tested_configurations": [
+  "Android 4.0 running on a Galaxy Nexus"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2125",
+   "cavp_id": "19561",
+   "cavp_ref": "AES:2125"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 28",
+   "cavp_id": "27560",
+   "cavp_ref": "Component:28"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 233",
+   "cavp_id": "11917",
+   "cavp_ref": "DRBG:233"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 666",
+   "cavp_id": "4631",
+   "cavp_ref": "DSA:666"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 319",
+   "cavp_id": "13778",
+   "cavp_ref": "ECDSA:319"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1296",
+   "cavp_id": "5055",
+   "cavp_ref": "HMAC:1296"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1094",
+   "cavp_id": "7025",
+   "cavp_ref": "RSA:1094"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1849",
+   "cavp_id": "16822",
+   "cavp_ref": "SHS:1849"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1351",
+   "cavp_id": "8472",
+   "cavp_ref": "TDES:1351"
+  }
+ ],
+ "vendor": "Duo Security, Inc.",
+ "vendor_info": {
+  "name": "Duo Security, Inc.",
+  "website": "https://duo.com",
+  "address": [
+   "123 North Ashley Street",
+   "Suite 200",
+   "Ann Arbor, MI 48104",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Duo Mobile Security"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2671.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/7/2016",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "7/7/2016",
+ "last_updated": "7/7/2016",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2671.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RNG; Dual EC DRBG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2671,
+  "vendor": "Duo Security, Inc.",
+  "module": "Duo Security Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "07/07/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

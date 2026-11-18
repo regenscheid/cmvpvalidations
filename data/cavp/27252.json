@@ -1,0 +1,49 @@
+{
+ "cavp_id": "27252",
+ "cavp_cert": "AES 4371",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27252",
+ "implementation": "OpenSSL AES-NI for AES, and assembler for multiplication and GHASH",
+ "product_id": "6124",
+ "description": "The test covers AES-NI for AES, and assembler for multiplication and GHASH for OpenSSL.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/3/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on Intel(R) Xeon(R) CPU E5-2620v3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 160, 384, 800, 1024",
+    "AAD Length: 0, 160, 384, 800, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 160, 384, 800, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

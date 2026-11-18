@@ -1,0 +1,44 @@
+{
+ "cavp_id": "11879",
+ "cavp_cert": "RSA 57",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11879",
+ "implementation": "Athena Smartcard Solutions OS 755 on Renesas AE46C1",
+ "product_id": "4372",
+ "description": "The Cryptographic Module is the combination of a Java Card Operating System software that implements FIPS approved cryptographic functions and a state-of-the-art secure single chip silicon hardware. Athena Smartcard Solutions OSS755, the software component of the cryptographic module is a standards compliant Java Card 2.1.1 technology and GlobalPlatform 2.1 Operating System. The physical component of the cryptographic module is the assembly of an IC chip (Renesas AE46C1) protected by different types of tamper-evident resin covers. www.athena-scs.com and www.renesas.com.",
+ "version": "Renesas AE46C1 2.4.6 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "3/9/2005",
+ "vendor": "Athena Smartcard Solutions and Renesas",
+ "vendor_website": "http://www.athena-scs.com",
+ "oes": [
+  {
+   "name": "Emulators E6000 from Renesas, configured for emulating the AE46C1 chip",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

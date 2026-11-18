@@ -1,0 +1,114 @@
+{
+ "cert": 3506,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3506",
+ "module": "PowerMax NVMe and VMAX 12G SAS Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3",
+ "level_exceptions": [
+  "Physical Security: Level 2",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "Dell EMC Data at Rest Encryption (DARE) provides hardware-based, on-array, encryption for storage systems, including VMAX and PowerMax. DARE protects against unauthorized access when drives are physically removed. Encryption (AES-XTS 256-bit) occurs in the I/O module, allowing support for all back end drive types. Dell EMC Efficient Encryption leverages the same hardware module as DARE. Host encrypted data (AES-XTS 256-bit) is decrypted using shared keys, for the sole purpose of allowing Data Reduction capabilities to be applied before data is securely stored on drive.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "303-493-001C-03 [1]; and 303-305-100A-06 [2]",
+ "firmware_versions": "v3.09.34.00 [1]; and v3.08.41.00 [2]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3586",
+   "cavp_id": "9547",
+   "cavp_ref": "AES:3586"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3598",
+   "cavp_id": "24751",
+   "cavp_ref": "AES:3598"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2296",
+   "cavp_id": "20585",
+   "cavp_ref": "HMAC:2296"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2961",
+   "cavp_id": "5949",
+   "cavp_ref": "SHS:2961"
+  }
+ ],
+ "vendor": "Dell EMC",
+ "vendor_info": {
+  "name": "Dell EMC",
+  "website": "http://www.dellemc.com",
+  "address": [
+   "176 South Street",
+   "Hopkinton, MA 01748",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Kerry Bellefontaine"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3506.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugustConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/8/2019",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  },
+  {
+   "date": "2/25/2022",
+   "type": "Update",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "8/8/2019",
+ "last_updated": "2/25/2022",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3506.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 3506,
+  "vendor": "Dell EMC",
+  "module": "PowerMax NVMe and VMAX 12G SAS Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "08/08/2019",
+   "02/25/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

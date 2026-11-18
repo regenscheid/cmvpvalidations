@@ -1,0 +1,76 @@
+{
+ "cavp_id": "33340",
+ "cavp_cert": "C2171",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33340",
+ "implementation": "Microchip Mount Carmel Firmware Cryptographic Library",
+ "product_id": "13237",
+ "description": "The Microchip Mount Carmel Firmware Cryptographic Library provides cryptographic support for the key generation, signature verification, and encryption decryption performed in the Mount Carmel device.",
+ "version": "1.01.01",
+ "type": "FIRMWARE",
+ "first_validated": "10/5/2020",
+ "vendor": "Microchip Technology, Inc.",
+ "vendor_website": "http://www.microchip.com/",
+ "oes": [
+  {
+   "name": "Microchip MCU (F32P08xG3)",
+   "details": [
+    "processor: Microchip MCU (F32P08xG3)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128, 256, 4096",
+    "C2171 (AES)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C2171 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "C2171 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

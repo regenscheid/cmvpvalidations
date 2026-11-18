@@ -1,0 +1,40 @@
+{
+ "cavp_id": "33337",
+ "cavp_cert": "C2168",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33337",
+ "implementation": "AWS Nitro Card Security Engine Firmware",
+ "product_id": "13234",
+ "description": "The Cryptographic Module (CM) is a multi-chip standalone firmware-hybrid module. The cryptographic services provided by the module are: Data encryption / decryption utilizing symmetric ciphers, i.e. AES algorithms, Computation of hash values, i.e. SHA-256 and SHA-512 and Message authentication utilizing HMAC-SHA256, HMAC-SHA512",
+ "version": "HAL-rel-3.2-uemu-fips",
+ "type": "FIRMWARE",
+ "first_validated": "10/5/2020",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "https://aws.amazon.com/",
+ "oes": [
+  {
+   "name": "Cortex ARMv8 w/ AL5+",
+   "details": [
+    "processor: Cortex ARMv8 w/ AL5+"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 256",
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384, 512",
+    "Key size = block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

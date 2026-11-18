@@ -1,0 +1,56 @@
+{
+ "cavp_id": "35277",
+ "cavp_cert": "A2666",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35277",
+ "implementation": "IBM z/OS Version 2 Release 4 ICSF PKCS #11 (SOFTWARE)",
+ "product_id": "15154",
+ "description": "ICSF is a software element of z/OS that works with hardware cryptographic features and the Security Server (RACF) to provide secure, high-speed cryptographic services in the z/OS environment. ICSF, which runs as a started task, provides the application programming interfaces by which applications request the cryptographic services.",
+ "version": "HCR77D0 with APAR OA63132",
+ "type": "SOFTWARE",
+ "first_validated": "6/23/2022",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "IBM(R) z/OS(R) Version 2 Release 4 on IBM Corporation N/A IBM(R) z15(TM)",
+   "details": [
+    "software: IBM(R) z/OS(R) Version 2 Release 4",
+    "processor: IBM(R) z15(TM)",
+    "  Processor IBM(R) z15(TM) (processor family IBM) from IBM Corporation",
+    "  family: IBM",
+    "  manufacturer: IBM Corporation",
+    "  series: N/A"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-224, P-256, P-384, P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: ffdhe2048, MODP-2048",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: ffdhe2048, MODP-2048"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

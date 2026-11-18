@@ -1,0 +1,134 @@
+{
+ "cavp_id": "31932",
+ "cavp_cert": "C1464",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31932",
+ "implementation": "Vormetric Transparent Encryption Cryptographic Module",
+ "product_id": "11884",
+ "description": "The Vormetric Transparent Encryption Cryptographic Module is a loadable kernel module providing cryptographic services through the Vormetric Transparent Encryption Cryptographic Library. Cryptographic services include AES-CBC, AES XTS, SHA-256 SHA-384, HMAC-SHA-256 and HMAC-SHA-384.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/8/2020",
+ "vendor": "Thales",
+ "vendor_website": "http://www.thalesesecurity.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux (RHEL 7.7) on VMware EXSI 6.5.0 on Intel Xeon Skylake",
+   "details": [
+    "processor: Intel Xeon Skylake",
+    "  manufacturer: Intel",
+    "software: Red Hat Enterprise Linux (RHEL 7.7) on VMware EXSI 6.5.0"
+   ]
+  },
+  {
+   "name": "Windows 2016 Server on VMware EXSI 6.5.0 on Intel Xeon Skylake",
+   "details": [
+    "processor: Intel Xeon Skylake",
+    "  manufacturer: Intel",
+    "software: Windows 2016 Server on VMware EXSI 6.5.0"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 256, 65536",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 256, 65536",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C1464 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C1464 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key sizes < block size",
+    "C1464 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 384",
+    "Key sizes < block size",
+    "C1464 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

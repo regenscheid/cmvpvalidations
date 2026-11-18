@@ -1,0 +1,177 @@
+{
+ "cert": 3652,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3652",
+ "module": "Amazon Linux 2 Libreswan Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Amazon Linux 2 NSS Cryptographic Module validated to FIPS 140-2 under Cert. #3646 operating in FIPS mode and Amazon Linux 2 OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #3553 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Amazon Linux 2 Libreswan Cryptographic Module implements IKE protocol version 1 and version 2.",
+ "tested_configurations": [
+  "Amazon Linux 2 running on Amazon EC2 i3.metal with Intel Xeon E5 with PAA",
+  "Amazon Linux 2 running on Amazon EC2 i3.metal with Intel Xeon E5 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #C803 with CVL Cert. #C807, key agreement; key establishment methodology provides between 112 bits and 202 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C803 with CVL Cert. #C807, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C804",
+   "cavp_id": "31200",
+   "cavp_ref": "C:804"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C807",
+   "cavp_id": "31203",
+   "cavp_ref": "C:807"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C523",
+   "cavp_id": "30919",
+   "cavp_ref": "C:523"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C524",
+   "cavp_id": "30920",
+   "cavp_ref": "C:524"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C525",
+   "cavp_id": "30921",
+   "cavp_ref": "C:525"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C526",
+   "cavp_id": "30922",
+   "cavp_ref": "C:526"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "http://www.aws.amazon.com",
+  "address": [
+   "1918 8th Ave.",
+   "Seattle, WA 98121",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Samartha Chandrashekar"
+   },
+   {
+    "name": "Raghuram Kota"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3652.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202020_010620_1115.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/8/2020",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "5/8/2020",
+ "last_updated": "5/8/2020",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3652.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #C803 with CVL Cert. #C807, key agreement; key establishment methodology provides between 112 bits and 202 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C803 with CVL Cert. #C807, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3652,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "Amazon Linux 2 Libreswan Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/08/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

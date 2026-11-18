@@ -1,0 +1,56 @@
+{
+ "cavp_id": "7058",
+ "cavp_cert": "RSA 346",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7058",
+ "implementation": "OpenSSL 0.9.8d RSA",
+ "product_id": "2088",
+ "description": "Voice-over-IP media gateway",
+ "version": "0.9.8d",
+ "type": "SOFTWARE",
+ "first_validated": "3/18/2008",
+ "vendor": "AudioCodes",
+ "vendor_website": "http://www.audiocodes.com",
+ "oes": [
+  {
+   "name": "pSOS+ 2.5 on Freescale (MPC8xx/MPC82xx)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,186 @@
+{
+ "cert": 3518,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3518",
+ "module": "DocuSign Signature Appliance",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode. This module contains the embedded module eToken 5105 validated to FIPS 140-2 under Cert. #1883 operating in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The DocuSign Signature Appliance is a digital signature appliance that is connected to the organizational network and manages all signature keys and certificates of organization's end-users. End-users will connect securely to the appliance from their PC for the purpose of signing documents and data. The DocuSign Signature Appliance also enables organization using AES based encryption keys for encrypting/decrypting data.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); Triple-DES (Cert. #C85, key unwrapping)",
+ "hardware_versions": "8.0",
+ "firmware_versions": "9.0.9.10",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C85",
+   "cavp_id": "30480",
+   "cavp_ref": "C:85"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C86",
+   "cavp_id": "30481",
+   "cavp_ref": "C:86"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C86",
+   "cavp_id": "30481",
+   "cavp_ref": "C:86"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 98",
+   "cavp_id": "11512",
+   "cavp_ref": "DRBG:98"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C85",
+   "cavp_id": "30480",
+   "cavp_ref": "C:85"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C85",
+   "cavp_id": "30480",
+   "cavp_ref": "C:85"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C86",
+   "cavp_id": "30481",
+   "cavp_ref": "C:86"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C85 and AES Cert. #C85; key establishment methodolody provides 128 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C86 and HMAC Cert. #C86; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C85",
+   "cavp_id": "30480",
+   "cavp_ref": "C:85"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C86",
+   "cavp_id": "30481",
+   "cavp_ref": "C:86"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1465",
+   "cavp_id": "29726",
+   "cavp_ref": "SHS:1465"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C85",
+   "cavp_id": "30480",
+   "cavp_ref": "C:85"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C86",
+   "cavp_id": "30481",
+   "cavp_ref": "C:86"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C85",
+   "cavp_id": "30480",
+   "cavp_ref": "C:85"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Cert. #C85, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "DocuSign, Inc.",
+ "vendor_info": {
+  "name": "DocuSign, Inc.",
+  "website": "http://www.docusign.com",
+  "address": [
+   "221 Main St.",
+   "Suite 1000",
+   "San Francisco, CA 94105",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ezer Farhi"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3518.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/SeptConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/5/2019",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "9/5/2019",
+ "last_updated": "9/5/2019",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3518.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); Triple-DES (Cert. #C85, key unwrapping)",
+ "sparse": false,
+ "list": {
+  "cert": 3518,
+  "vendor": "DocuSign, Inc.",
+  "module": "DocuSign Signature Appliance",
+  "type": "Hardware",
+  "validation_dates": [
+   "09/05/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

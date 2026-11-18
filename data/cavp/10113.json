@@ -1,0 +1,65 @@
+{
+ "cavp_id": "10113",
+ "cavp_cert": "AES 2664",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10113",
+ "implementation": "SafeXcel 3120 Chip",
+ "product_id": "3361",
+ "description": "The SafeNet SafeXcel-3120 is a highly integrated device designed for modest performance and high security, where power and cost-sensitivity are a priority at the network edge. The embedded ARM processor, via a digital signature, will allow customer-specific application code to execute, enabling the device to implement a complete product solution.",
+ "version": "SF114-011206-001A, v2.9.2",
+ "type": "HARDWARE",
+ "first_validated": "11/8/2013",
+ "vendor": "SafeNet, Inc.",
+ "vendor_website": "http://www.safeNet-inc.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 192, 320, 512, 1024",
+    "AAD Length: 0, 192, 320, 512, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 192, 320, 512, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

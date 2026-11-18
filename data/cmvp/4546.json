@@ -1,0 +1,123 @@
+{
+ "cert": 4546,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4546",
+ "module": "Boot Manager",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Windows system boot manager is called by the bootstrapping code that resides in the boot sector. It checks its own integrity, checks the integrity of the Windows OS Loader, and then launches it.",
+ "tested_configurations": [
+  "Microsoft Windows 11 (64-bit) on Microsoft Surface Laptop 4 with 11th Gen Intel i5-1145G7 with PAA (single-user mode)"
+ ],
+ "hardware_versions": "Intel i5-1145G7",
+ "software_versions": "10.0.22000",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2000",
+   "cavp_id": "34609",
+   "cavp_ref": "A:2000"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2004",
+   "cavp_id": "34613",
+   "cavp_ref": "A:2004"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2004",
+   "cavp_id": "34613",
+   "cavp_ref": "A:2004"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A2004",
+   "cavp_id": "34613",
+   "cavp_ref": "A:2004"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2003",
+   "cavp_id": "34612",
+   "cavp_ref": "A:2003"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2004",
+   "cavp_id": "34613",
+   "cavp_ref": "A:2004"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4546.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June%202023_050723_0638%20%281%29.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/30/2023",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "6/30/2023",
+ "last_updated": "6/30/2023",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4546.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4546,
+  "vendor": "Microsoft Corporation",
+  "module": "Boot Manager",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "06/30/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

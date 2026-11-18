@@ -1,0 +1,48 @@
+{
+ "cavp_id": "31240",
+ "cavp_cert": "C844",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31240",
+ "implementation": "Citrix ADC DP Cryptographic Library",
+ "product_id": "11198",
+ "description": "The library provides the data plane cryptographic services and data plane TLS KDF to the Citrix Application Delivery Controller product line.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/21/2019",
+ "vendor": "Citrix Systems, Inc.",
+ "vendor_website": "http://www.citrix.com",
+ "oes": [
+  {
+   "name": "FreeBSD 8.4 on Intel® Xeon® E5-2680 v4 (Broadwell) with AES-NI",
+   "details": [
+    "software: FreeBSD 8.4",
+    "processor: Intel® Xeon® E5-2680 v4 (Broadwell) with AES-NI",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

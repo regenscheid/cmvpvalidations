@@ -1,0 +1,97 @@
+{
+ "cavp_id": "30934",
+ "cavp_cert": "C538",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30934",
+ "implementation": "Infinera Kernel Crypto Library",
+ "product_id": "10897",
+ "description": "Kernel Crypto Library is a software-based cryptographic module from Linux kernel and is integrated into mTera/mTera-8 product as the base cryptographic module for IPsec.",
+ "version": "1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "3/8/2019",
+ "vendor": "Infinera Corporation",
+ "vendor_website": "http://www.infinera.com",
+ "oes": [
+  {
+   "name": "Linux Kernel 3.4 on NXP QorIQ P4080 (e500mc)",
+   "details": [
+    "software: Linux Kernel 3.4",
+    "processor: NXP QorIQ P4080 (e500mc)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 136, 248, 256",
+    "AAD Length: 0, 128, 136, 248, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 96",
+    "Key sizes < block size",
+    "Key size = block size",
+    "C538 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "C538 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

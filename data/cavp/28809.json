@@ -1,0 +1,96 @@
+{
+ "cavp_id": "28809",
+ "cavp_cert": "AES 4411",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28809",
+ "implementation": "FMC FOM Virtual",
+ "product_id": "602",
+ "description": "A fault-tolerant, purpose-built network appliance that provides a centralized management console and database repository for your Firepower System deployment. FMC has a range of device management, event storage, host monitoring and user monitoring capabilities.",
+ "version": "6.0",
+ "type": "SOFTWARE",
+ "first_validated": "3/6/2017",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "ESXi 5.5 on Intel Xeon E5",
+   "details": []
+  },
+  {
+   "name": "ESXi 5.5 on Intel Xeon Eseries",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 136, 256, 264",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 136, 256, 264",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

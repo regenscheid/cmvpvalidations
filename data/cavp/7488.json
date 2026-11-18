@@ -1,0 +1,44 @@
+{
+ "cavp_id": "7488",
+ "cavp_cert": "AES 4232",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7488",
+ "implementation": "Ciena 6500 Flex3 WaveLogic 3e OCLD Cryptography Engine",
+ "product_id": "5915",
+ "description": "The Ciena 6500 Packet-Optical Platform Flex3 WaveLogic 3e OCLD Encryption Module offers an integrated transport encryption solution providing protocol-agnostic 100Gb/s or 200Gb/s wirespeed encryption service for enterprises, datacenters, government and also offered through service providers as differentiated managed service.",
+ "version": "2.01 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/9/2016",
+ "vendor": "Ciena Corporation",
+ "vendor_website": "http://www.ciena.com",
+ "oes": [
+  {
+   "name": "Xilinx XC7Z020",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 256",
+    "AAD Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

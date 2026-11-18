@@ -1,0 +1,78 @@
+{
+ "cavp_id": "30653",
+ "cavp_cert": "C257",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30653",
+ "implementation": "Apple CoreCrypto Kernel Module v9.0 for ARM (T2, Assembler_PAA)",
+ "product_id": "10617",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to kernel space and assembler implentations using PAA.",
+ "version": "9.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/19/2019",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "TxFW 16P374 / TxFW 16P4501 on Apple T2",
+   "details": [
+    "processor: Apple T2",
+    "  manufacturer: Apple",
+    "software: TxFW 16P374 / TxFW 16P4501"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 65536",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 65536",
+    "Tweak Mode: Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

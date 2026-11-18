@@ -1,0 +1,43 @@
+{
+ "cavp_id": "1425",
+ "cavp_cert": "Component 600",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1425",
+ "implementation": "Brocade FIPS Crypto Library",
+ "product_id": "1065",
+ "description": "The Brocade cryptographic library used in Brocade IP products implements crypto operations in software. The Brocade stackable switch delivers the performance, flexibility, and scalability required for enterprise Gigabit Ethernet (GbE) access deployment. It offers market-leading stacking density with up to 12 switches per stack and combines chassis-",
+ "version": "6.0.2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/16/2015",
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_website": "http://www.brocade.com",
+ "oes": [
+  {
+   "name": "E500mc",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Key Pair Generation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

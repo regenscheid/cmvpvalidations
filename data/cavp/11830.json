@@ -1,0 +1,96 @@
+{
+ "cavp_id": "11830",
+ "cavp_cert": "AES 2588",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11830",
+ "implementation": "CS Series Kernel Crypto Library",
+ "product_id": "3251",
+ "description": "The CS Series Kernel Crypto Library Module provides FIPS 140-2 approved cryptographic algorithms for the CS10 and CS100 Encryptors. Based upon OpenSSL the Kernel Crypto Library provides an Application Programming Interface (API) to support security relevant services.",
+ "version": "2.6.32 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/22/2013",
+ "vendor": "Senetas Corporation Ltd. and SafeNet Inc.",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "AMD Geode LX800",
+   "details": []
+  },
+  {
+   "name": "Intel Core 2 Duo LGA775",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

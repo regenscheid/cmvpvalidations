@@ -1,0 +1,48 @@
+{
+ "cavp_id": "21348",
+ "cavp_cert": "AES 4250",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21348",
+ "implementation": "CoolEngine AES-XTS",
+ "product_id": "5946",
+ "description": "MicroCloud X4's System on Chip (SoC) slices through complex AES-XTS tasks by dividing the work across five processing cores, resulting in fast and power efficient encryption/decryption of user data.",
+ "version": "1.7 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/16/2016",
+ "vendor": "Bluechip Systems LLC",
+ "vendor_website": "http://www.bluechipsys.com",
+ "oes": [
+  {
+   "name": "Bluechip Systems X4 SoC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Block Size: Full"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

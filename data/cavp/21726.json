@@ -1,0 +1,48 @@
+{
+ "cavp_id": "21726",
+ "cavp_cert": "ECDSA 559",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21726",
+ "implementation": "FP mCryptoLibrary ECDSA-P224 Engine",
+ "product_id": "6617",
+ "description": "The firmware implementation of the FP mCryptoLibrary, which runs on an embedded hardware module, with a Maxim IC0400 processor. The cryptographic algorithm implementation is used in the context of security critical services.",
+ "version": "2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/31/2014",
+ "vendor": "Francotyp Postalia GmbH",
+ "vendor_website": "http://www.francotyp.com",
+ "oes": [
+  {
+   "name": "Maxim IC0400",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

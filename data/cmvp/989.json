@@ -1,0 +1,122 @@
+{
+ "cert": 989,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/989",
+ "module": "Windows XP Enhanced Cryptographic Provider (RSAENH)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Microsoft Enhanced Cryptographic Provider, designed for FIPS 140-2 compliance, is a software-based, cryptographic module. RSAENH encapsulates several different cryptographic algorithms (including SHS, DES, TDES, AES, RSA, HMAC) in a cryptographic module accessible via the Microsoft CryptoAPI.",
+ "tested_configurations": [
+  "Microsoft Windows XP Professional SP3 (single-user mode)"
+ ],
+ "software_versions": "5.1.2600.5507",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 781",
+   "cavp_id": "19612",
+   "cavp_ref": "AES:781"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 428",
+   "cavp_id": "20426",
+   "cavp_ref": "HMAC:428"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 447",
+   "cavp_id": "24644",
+   "cavp_ref": "RNG:447"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 371",
+   "cavp_id": "2991",
+   "cavp_ref": "RSA:371"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 783",
+   "cavp_id": "24097",
+   "cavp_ref": "SHS:783"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 675",
+   "cavp_id": "14546",
+   "cavp_ref": "TDES:675"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #675, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dave Friant"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp989.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt989.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/24/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "7/24/2008",
+ "last_updated": "7/24/2008",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp989.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; MD2; MD4; MD5; HMAC MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 989,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows XP Enhanced Cryptographic Provider (RSAENH)",
+  "type": "Software",
+  "validation_dates": [
+   "07/24/2008"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,163 @@
+{
+ "cert": 2767,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2767",
+ "module": "Kaspersky Cryptographic Module (Kernel Mode)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Kaspersky Cryptographic Module (Kernel Mode) is a Windows kernel driver that provides cryptographic services for various Kaspersky Lab applications.",
+ "tested_configurations": [
+  "Windows 10 Enterprise 64 bit running on an Intel® Core™ i7-4600U CPU @ 2.10GHz system with PAA (single-user mode)",
+  "Windows 7 Enterprise 64-bit running on an Intel® Core™ i5-2400 CPU @ 3.10GHz system with PAA",
+  "Windows 7 Professional 32-bit running on an Intel® Core™2 Duo P9600 @ 2.53GHz system without PAA",
+  "Windows 8.1 Enterprise 64-bit running on an Intel® Core™ i7-3770S CPU @ 3.10GHz system with PAA"
+ ],
+ "software_versions": "3.0.1.25",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2956",
+   "cavp_id": "17827",
+   "cavp_ref": "AES:2956"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2957",
+   "cavp_id": "5043",
+   "cavp_ref": "AES:2957"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 557",
+   "cavp_id": "1804",
+   "cavp_ref": "DRBG:557"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 558",
+   "cavp_id": "6419",
+   "cavp_ref": "DRBG:558"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 892",
+   "cavp_id": "8163",
+   "cavp_ref": "DRBG:892"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1875",
+   "cavp_id": "18461",
+   "cavp_ref": "HMAC:1875"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1876",
+   "cavp_id": "14094",
+   "cavp_ref": "HMAC:1876"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1555",
+   "cavp_id": "10002",
+   "cavp_ref": "RSA:1555"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1556",
+   "cavp_id": "16782",
+   "cavp_ref": "RSA:1556"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2488",
+   "cavp_id": "15757",
+   "cavp_ref": "SHS:2488"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2489",
+   "cavp_id": "26649",
+   "cavp_ref": "SHS:2489"
+  }
+ ],
+ "vendor": "Kaspersky Lab UK Ltd.",
+ "vendor_info": {
+  "name": "Kaspersky Lab UK Ltd.",
+  "website": "http://www.kaspersky.com/",
+  "address": [
+   "1st Floor, 2 Kingdom Street",
+   "Paddington, London, W2 6BD",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "Oleg Andrianov"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2767.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/11/2016",
+   "type": "Initial",
+   "lab": "ADVANCED DATA SECURITY"
+  }
+ ],
+ "first_validated": "10/11/2016",
+ "last_updated": "10/11/2016",
+ "labs": "ADVANCED DATA SECURITY",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2767.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2767,
+  "vendor": "Kaspersky Lab UK Ltd.",
+  "module": "Kaspersky Cryptographic Module (Kernel Mode)",
+  "type": "Software",
+  "validation_dates": [
+   "10/11/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

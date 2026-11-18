@@ -1,0 +1,38 @@
+{
+ "cavp_id": "1076",
+ "cavp_cert": "AES 1538",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1076",
+ "implementation": "SLM-5650A Bulk Data Encryption",
+ "product_id": "7873",
+ "description": "The Comtech EF Data FIPS Security Module features an FPGA to perform bulk encryption/decryption for HDLC data traffic via the SLM-5650 Satellite Router, as well as firmware to provide the cryptographic functions needed to act as a endpoint for TLS management and control traffic.",
+ "version": "1.2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/16/2010",
+ "vendor": "Comtech EF Data Corporation",
+ "vendor_website": "http://www.comtechefdata.com",
+ "oes": [
+  {
+   "name": "Xilinx Spartan-3e FPGA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

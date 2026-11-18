@@ -1,0 +1,44 @@
+{
+ "cavp_id": "8332",
+ "cavp_cert": "AES 1427",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=8332",
+ "implementation": "Cisco MacSec Generation 2",
+ "product_id": "7702",
+ "description": "Cisco Ganita MACSec ASIC is the Cisco processing engine that performs AES-GCM encryption/decryption to support IEEE 802.1AE, IETF ESP-GCM/GMAC and other port and PHY features at 10 gigabit line rate used on Cisco Catalyst and Nexus series switches",
+ "version": "Ganita Revision 2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/15/2010",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS V2006.06",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 1024",
+    "AAD Length: 160, 728",
+    "AES 1427 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

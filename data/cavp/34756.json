@@ -1,0 +1,1222 @@
+{
+ "cavp_id": "34756",
+ "cavp_cert": "A2147",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34756",
+ "implementation": "Aruba VIA Crypto Module",
+ "product_id": "14644",
+ "description": "The Aruba VIA Cryptographic Module Version 1.0 is a software library that provides cryptographic services required by Aruba Virtual Intranet Access",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/6/2021",
+ "vendor": "Hewlett Packard Enterprise",
+ "vendor_website": "https://www.hpe.com/",
+ "oes": [
+  {
+   "name": "Android 11 on Qualcomm Snapdragon 865",
+   "details": [
+    "Operating System: Android 11",
+    "Processor: Qualcomm Snapdragon 865"
+   ]
+  },
+  {
+   "name": "iOS 14 for 64-bit ARM on Apple A13 Bionic",
+   "details": [
+    "Processor: Apple A13 Bionic",
+    "Operating System: iOS 14 for 64-bit ARM"
+   ]
+  },
+  {
+   "name": "Ubuntu 18.04 for 64-bit on Intel Core i7-6600U",
+   "details": [
+    "Processor: Intel Core i7-6600U",
+    "Operating System: Ubuntu 18.04 for 64-bit"
+   ]
+  },
+  {
+   "name": "Windows 10 64-bit on Intel Core i5-11400H",
+   "details": [
+    "Processor: Intel Core i5-11400H",
+    "Operating System: Windows 10 64-bit"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128",
+    "Incremental Counter"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128",
+    "Incremental Counter"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128",
+    "Incremental Counter"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128",
+    "Incremental Counter"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128-264 Increment 8",
+    "AAD Length: 128-264 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128-264 Increment 8",
+    "AAD Length: 128-264 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128-264 Increment 8",
+    "AAD Length: 128-264 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128-264 Increment 8",
+    "AAD Length: 128-264 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 128-256 Increment 8",
+    "    Entropy Input: 256",
+    "    Nonce: 64-256 Increment 8",
+    "    Personalization String Length: 128-256 Increment 8",
+    "    Returned Bits: 128",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 192-256 Increment 8",
+    "    Entropy Input: 320",
+    "    Nonce: 96-384 Increment 8",
+    "    Personalization String Length: 192-320 Increment 8",
+    "    Returned Bits: 192",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 256-384 Increment 8",
+    "    Entropy Input: 384",
+    "    Nonce: 128-512 Increment 8",
+    "    Personalization String Length: 256-384 Increment 8",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 128-256 Increment 8",
+    "    Entropy Input: 256",
+    "    Nonce: 64-256 Increment 8",
+    "    Personalization String Length: 128-256 Increment 8",
+    "    Returned Bits: 128",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 192-256 Increment 8",
+    "    Entropy Input: 320",
+    "    Nonce: 96-384 Increment 8",
+    "    Personalization String Length: 192-320 Increment 8",
+    "    Returned Bits: 192",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 256-384 Increment 8",
+    "    Entropy Input: 384",
+    "    Nonce: 128-512 Increment 8",
+    "    Personalization String Length: 256-384 Increment 8",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 2,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 128-256 Increment 8",
+    "    Entropy Input: 256",
+    "    Nonce: 64-256 Increment 8",
+    "    Personalization String Length: 128-256 Increment 8",
+    "    Returned Bits: 128",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 192-256 Increment 8",
+    "    Entropy Input: 320",
+    "    Nonce: 96-384 Increment 8",
+    "    Personalization String Length: 192-320 Increment 8",
+    "    Returned Bits: 192",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 256-384 Increment 8",
+    "    Entropy Input: 384",
+    "    Nonce: 128-512 Increment 8",
+    "    Personalization String Length: 256-384 Increment 8",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 3,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 128-256 Increment 8",
+    "    Entropy Input: 256",
+    "    Nonce: 64-256 Increment 8",
+    "    Personalization String Length: 128-256 Increment 8",
+    "    Returned Bits: 128",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 192-256 Increment 8",
+    "    Entropy Input: 320",
+    "    Nonce: 96-384 Increment 8",
+    "    Personalization String Length: 192-320 Increment 8",
+    "    Returned Bits: 192",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 256-384 Increment 8",
+    "    Entropy Input: 384",
+    "    Nonce: 128-512 Increment 8",
+    "    Personalization String Length: 256-384 Increment 8",
+    "    Returned Bits: 256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 2,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 3,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 2,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 3,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 192"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 192"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 192"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 192"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 192, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 192, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 192, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 192, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 256, 384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 256, 384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 256, 384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 256, 384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 256, 384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 256, 384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 256, 384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 256, 384"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 1,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 2,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 3,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC, MODP-2048",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 1,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC, MODP-2048",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 2,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC, MODP-2048",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 3,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC, MODP-2048",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "Info Generated By Server",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: Standard"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "Info Generated By Server",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: Standard"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "Info Generated By Server",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: Standard"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2, Table C.3",
+    "Info Generated By Server",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "Private Key Format: Standard"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "oe": 0,
+   "capabilities": [
+    "Private Key Format: standard",
+    "Public Exponent Mode: fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "oe": 1,
+   "capabilities": [
+    "Private Key Format: standard",
+    "Public Exponent Mode: fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "oe": 2,
+   "capabilities": [
+    "Private Key Format: standard",
+    "Public Exponent Mode: fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA Signature Primitive",
+   "oe": 3,
+   "capabilities": [
+    "Private Key Format: standard",
+    "Public Exponent Mode: fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 1,
+   "capabilities": [
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 2,
+   "capabilities": [
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 3,
+   "capabilities": [
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA1"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA1"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA1"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA1"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 3,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

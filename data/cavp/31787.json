@@ -1,0 +1,46 @@
+{
+ "cavp_id": "31787",
+ "cavp_cert": "C1357",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31787",
+ "implementation": "Phison TCG OPAL SSC SSD solutions",
+ "product_id": "11743",
+ "description": "Phison PS5012-E12 based TCG Opal SSC SSD solutions are high-performance Self-Encrypting SSDs supporting NVMe PCIe Interface. Cryptographic algorithm includes AES256-XTS on-the-fly user data encryption/decryption, RSA-2048 for firmware verification, HMAC_DRBG for key generation as well as AES Keywrap for key protection.",
+ "version": "PS5012-E12",
+ "type": "HARDWARE",
+ "first_validated": "11/15/2019",
+ "vendor": "Phison Electronics Corporation",
+ "vendor_website": "https://www.phison.com/en",
+ "oes": [
+  {
+   "name": "PS5012-E12 with ARM Cortex-R5",
+   "details": [
+    "processor: PS5012-E12 with ARM Cortex-R5"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 256",
+    "Public Exponent Mode: Random",
+    "C1357 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

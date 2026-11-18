@@ -1,0 +1,44 @@
+{
+ "cavp_id": "26012",
+ "cavp_cert": "AES 3478",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=26012",
+ "implementation": "Brocade NetIron IPSEC FPGA",
+ "product_id": "962",
+ "description": "AES-ECB-128; AES-GCM-128; AES-ECB-256; AES-GCM-256 algorithms running within Brocade NetIron IPSEC FPGA",
+ "version": "EXTR-NI-LP-FPGA-CRYPTO-VER-1.0",
+ "type": "HARDWARE",
+ "first_validated": "7/31/2015",
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_website": "http://www.brocade.com",
+ "oes": [
+  {
+   "name": "Brocade NetIron IPSEC FPGA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

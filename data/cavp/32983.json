@@ -1,0 +1,74 @@
+{
+ "cavp_id": "32983",
+ "cavp_cert": "A579",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32983",
+ "implementation": "GnuTLS (64 bit) (AESNI)",
+ "product_id": "12887",
+ "description": "GnuTLS is a secure communications library implementing the SSL, TLS and DTLS protocols and technologies around them. It provides a simple C language application programming interface (API) to access the secure communications protocols as well as APIs to parse and write X.509, PKCS #12, OpenPGP and other required structures. The following cipher implementation is covered: Intel AES-NI AES implementation.",
+ "version": "rhel8.20191106",
+ "type": "SOFTWARE",
+ "first_validated": "7/14/2020",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "RHEL 8 on Intel Sandy Bridge Xeon E5",
+   "details": [
+    "software: RHEL 8",
+    "  Linux distribution developed by Red Hat, Inc. and targeted toward the commercial market.",
+    "processor: Xeon E5",
+    "  Processor Xeon E5 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Sandy Bridge"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,111 @@
+{
+ "cavp_id": "31352",
+ "cavp_cert": "C955",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31352",
+ "implementation": "NesLib",
+ "product_id": "11309",
+ "description": "ST Microelectronics Trusted Platform Module is a hardware cryptographic module which implements advanced cryptographic algorithms, including symmetric and asymmetric cryptography, as well as key generation and random number generation as defined by the Trusted Computing Group (TCG) version 2.0 specifications.",
+ "version": "ST33G1M2A revision F 6.3.3 for ST33",
+ "type": "HARDWARE",
+ "first_validated": "7/25/2019",
+ "vendor": "ST Microelectronics (Protonworld)",
+ "vendor_website": "http://www.st.com",
+ "oes": [
+  {
+   "name": "SecureCore® SC300",
+   "details": [
+    "processor: SecureCore® SC300"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256, SHA2-384",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  Full Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF without Key Confirmation:",
+    "      KDF Option:",
+    "        Concatenation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256, SHA2-384",
+    "          Curve: P-256",
+    "          MAC Option:",
+    "            HMAC-SHA2-256:",
+    "              Key Length: 128",
+    "              MAC Length: 64",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "          MAC Option:",
+    "            HMAC-SHA2-384:",
+    "              Key Length: 192",
+    "              MAC Length: 64",
+    "  One Pass DH:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF without Key Confirmation:",
+    "      KDF Option:",
+    "        Concatenation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256, SHA2-384",
+    "          Curve: P-256",
+    "          MAC Option:",
+    "            HMAC-SHA2-256:",
+    "              Key Length: 128",
+    "              MAC Length: 64",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "          MAC Option:",
+    "            HMAC-SHA2-384:",
+    "              Key Length: 192",
+    "              MAC Length: 64",
+    "C955 (ECDSA)"
+   ]
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

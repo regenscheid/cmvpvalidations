@@ -1,0 +1,41 @@
+{
+ "cavp_id": "11683",
+ "cavp_cert": "AES 1085",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11683",
+ "implementation": "Tropos Networks CCM in hardware",
+ "product_id": "2757",
+ "description": "AES CCM implementation in Atheros AR9160 chipset.",
+ "version": "AR9160",
+ "type": "HARDWARE",
+ "first_validated": "5/29/2009",
+ "vendor": "Tropos Networks",
+ "vendor_website": "http://www.tropos.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 176-240"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,46 @@
+{
+ "cavp_id": "2190",
+ "cavp_cert": "AES 3516",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2190",
+ "implementation": "B+B Smartworx Kernel CryptoAPI Cryptographic Module",
+ "product_id": "6344",
+ "description": "The kernel Crypto API implemented in ConelOS v5 provides services operating inside the Linux kernel with various ciphers and message digests.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "9/11/2015",
+ "vendor": "B+B Smartworx",
+ "vendor_website": "http://www.bb-smartworx.com",
+ "oes": [
+  {
+   "name": "Conel Linux 5 on ARM Cortex",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

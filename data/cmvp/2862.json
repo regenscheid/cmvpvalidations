@@ -1,0 +1,185 @@
+{
+ "cert": 2862,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2862",
+ "module": "Enterprise Secure Key Manager",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Utimaco Enterprise Secure Key Manager (ESKM) provides key generation, retrieval, and management for encryption devices and solutions. ESKM is a hardened security appliance with secure access control, administration, and logging. ESKM supports high availability with automatic multi-site clustering, replication, and failover.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "P/N M6H81AA , Version 5.0",
+ "software_versions": "N/A",
+ "firmware_versions": "7.0.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3995",
+   "cavp_id": "15070",
+   "cavp_ref": "AES:3995"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 820",
+   "cavp_id": "15916",
+   "cavp_ref": "Component:820"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 821",
+   "cavp_id": "2330",
+   "cavp_ref": "Component:821"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 822",
+   "cavp_id": "12784",
+   "cavp_ref": "Component:822"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 823",
+   "cavp_id": "16930",
+   "cavp_ref": "Component:823"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 842",
+   "cavp_id": "29607",
+   "cavp_ref": "Component:842"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1185",
+   "cavp_id": "22973",
+   "cavp_ref": "DRBG:1185"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1186",
+   "cavp_id": "4866",
+   "cavp_ref": "DRBG:1186"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 889",
+   "cavp_id": "23489",
+   "cavp_ref": "ECDSA:889"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2609",
+   "cavp_id": "15396",
+   "cavp_ref": "HMAC:2609"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert #3995; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert #3995 and HMAC Cert. #2609; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert #2194 and HMAC Cert. #2609; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2051",
+   "cavp_id": "17649",
+   "cavp_ref": "RSA:2051"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3297",
+   "cavp_id": "15887",
+   "cavp_ref": "SHS:3297"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2194",
+   "cavp_id": "3190",
+   "cavp_ref": "TDES:2194"
+  }
+ ],
+ "vendor": "Utimaco Inc.",
+ "vendor_info": {
+  "name": "Utimaco Inc.",
+  "website": "http://hsm.utimaco.com",
+  "address": [],
+  "contacts": [
+   {
+    "name": "Indra Fitzgerald"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2862.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMar2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/10/2017",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "12/14/2017",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "12/4/2018",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "3/10/2017",
+ "last_updated": "12/4/2018",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2862.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #842; key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; MD5; RC4; RSA (encrypt/decrypt)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2862,
+  "vendor": "Utimaco Inc.",
+  "module": "Enterprise Secure Key Manager",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/10/2017",
+   "12/14/2017",
+   "12/04/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

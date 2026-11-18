@@ -1,0 +1,59 @@
+{
+ "cavp_id": "1352",
+ "cavp_cert": "Component 1877",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1352",
+ "implementation": "TI SimpleLink WiFi Networking Subsystem Crypto Module WolfSSL Component",
+ "product_id": "9524",
+ "description": "The TI SimpleLink Wi-Fi Family brings highly secured connectivity solutions for embedded Wi-Fi and Internet of Things applications. It consists of a Wi-Fi network and security processor subsystem, a Wi-Fi driver, multiple internet protocols in ROM and ARM Cortex-M4 application microcontroller with a rich set of peripherals.",
+ "version": "CC3235S Chip ID 0x311001 4.1.0.16 Chip ID 0x311001 (Firmware)",
+ "type": "HARDWARE",
+ "first_validated": "5/18/2018",
+ "vendor": "Texas Instruments, Inc.",
+ "vendor_website": "http://www.ti.com",
+ "oes": [
+  {
+   "name": "TI SimpleLink WiFi Networking Subsystem Crypto Module WolfSSL Component",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Key Pair Generation, Partial Public Key Validation, Public Key Regeneration",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

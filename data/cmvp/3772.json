@@ -1,0 +1,164 @@
+{
+ "cert": 3772,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3772",
+ "module": "Virtual SmartZone (vSZ) WLAN Controller",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 2 and 8 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Ruckus Virtual SmartZone (vSZ-E and vSZ-H hosted on a physical device) is an NFV-based WLAN controller for service providers and enterprises ready to elevate their WLAN deployment to the next level of flexibility, resiliency, and scale.",
+ "tested_configurations": [
+  "CentOS 6.8 on VMware ESXi v6.5.0 running on Dell PowerEdge R740 with Intel Xeon Platinum 8160 CPU with PAA",
+  "CentOS 6.8 on VMware ESXi v6.5.0 running on Dell PowerEdge R740 with Intel Xeon Platinum 8160 CPU without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #C815 with CVL Cert. #C815, key agreement; key establishment methodology provides between 112 and 128 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C815 with CVL Cert. #C815, key agreement; key establishment methodology provides 192 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C815 with CVL Cert. #C815, key agreement; key establishment methodology provides 192 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C815 with CVL Cert. #C815, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "software_versions": "5.1.1.3",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5098",
+   "cavp_id": "8601",
+   "cavp_ref": "AES:5098"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C814",
+   "cavp_id": "31210",
+   "cavp_ref": "C:814"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C815",
+   "cavp_id": "31211",
+   "cavp_ref": "C:815"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1904",
+   "cavp_id": "7835",
+   "cavp_ref": "DRBG:1904"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C815",
+   "cavp_id": "31211",
+   "cavp_ref": "C:815"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1323",
+   "cavp_id": "30192",
+   "cavp_ref": "ECDSA:1323"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3400",
+   "cavp_id": "15836",
+   "cavp_ref": "HMAC:3400"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C814",
+   "cavp_id": "31210",
+   "cavp_ref": "C:814"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5098 and HMAC Cert. #3400; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5098; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2760",
+   "cavp_id": "26301",
+   "cavp_ref": "RSA:2760"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4146",
+   "cavp_id": "3116",
+   "cavp_ref": "SHS:4146"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C814",
+   "cavp_id": "31210",
+   "cavp_ref": "C:814"
+  }
+ ],
+ "vendor": "Ruckus Wireless, Inc.",
+ "vendor_info": {
+  "name": "Ruckus Wireless, Inc.",
+  "website": "http://www.ruckuswireless.com",
+  "address": [
+   "350 W Java Drive",
+   "Sunnyvale, CA 94089",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Julie Lu"
+   },
+   {
+    "name": "Abhi Maras"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3772.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202020_040121_1006_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/16/2020",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "12/16/2020",
+ "last_updated": "12/16/2020",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3772.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #C815 with CVL Cert. #C815, key agreement; key establishment methodology provides between 112 and 128 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C815 with CVL Cert. #C815, key agreement; key establishment methodology provides 192 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C815 with CVL Cert. #C815, key agreement; key establishment methodology provides 192 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C815 with CVL Cert. #C815, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3772,
+  "vendor": "Ruckus Wireless, Inc.",
+  "module": "Virtual SmartZone (vSZ) WLAN Controller",
+  "type": "Software",
+  "validation_dates": [
+   "12/16/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

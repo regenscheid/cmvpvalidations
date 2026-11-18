@@ -1,0 +1,177 @@
+{
+ "cert": 3838,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3838",
+ "module": "Cryptographic Module for Intel® Platforms' Security Engine Chipset",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 2.3 and 9.1 of the Security Policy. When entropy is externally loaded, no assurance of the minimum strength of generated keys.",
+ "type": "Firmware-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cryptographic Module for Intel® CSME is a hardware-firmware hybrid module present on Intel® PCH platforms. The module performs crypto functions for CSME applications, including but are not limited to: PTT (Platform Trust Technology), AMT (Active Management Technology), and DAL (Dynamic Application Loader).",
+ "tested_configurations": [
+  "Intel Ice Point PCH chipset with CSME device firmware version 13.0.0.1084"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "hardware_versions": "3.1",
+ "firmware_versions": "3.0",
+ "product_url": "http://www.intel.com/content/www/us/en/design/products-and-solutions/processors-and-chipsets/ice-lake/overview.html",
+ "sunset": "",
+ "level_exceptions": [],
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C849",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C849; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C849 and AES Cert. #C849; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C849 and ECDSA Cert. #C849; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C849 and HMAC Cert. #C849; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C849 and RSA Cert. #C849; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C849",
+   "cavp_id": "31245",
+   "cavp_ref": "C:849"
+  }
+ ],
+ "vendor": "Intel Corporation",
+ "vendor_info": {
+  "name": "Intel Corporation",
+  "website": "http://www.intel.com",
+  "address": [
+   "2200 Mission College Blvd.",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Prashant Madhukar"
+   },
+   {
+    "name": "Mark Valcich"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3838.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202021_010421_0724_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/4/2021",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "3/4/2021",
+ "last_updated": "3/4/2021",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3838.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4599"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3838,
+  "vendor": "Intel Corporation",
+  "module": "Cryptographic Module for Intel® Platforms' Security Engine Chipset",
+  "type": "Firmware-Hybrid",
+  "validation_dates": [
+   "03/04/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

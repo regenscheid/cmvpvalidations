@@ -1,0 +1,291 @@
+{
+ "cert": 3939,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3939",
+ "module": "Red Hat Enterprise Linux 7 Kernel Crypto API Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Red Hat Enterprise Linux 7 NSS Module validated to FIPS 140-2 under Cert. #3860 operating in FIPS mode. The module generates random strings whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Linux kernel Crypto API implemented in Red Hat Enterprise Linux 7 provides services operating inside the Linux kernel with various ciphers, message digests and an approved random number generator.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 7 running on Dell PowerEdge R630 with an Intel(R) Xeon(R) E5 with PAA",
+  "Red Hat Enterprise Linux 7 running on Dell PowerEdge R630 with an Intel(R) Xeon(R) E5 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "rhel7.20190718, rhel7.20200812 and rhel7.20210526",
+ "product_url": "http://redhat.com/en/technologies/linux-platforms/enterprise-linux",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1395",
+   "cavp_id": "31830",
+   "cavp_ref": "C:1395"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1396",
+   "cavp_id": "31831",
+   "cavp_ref": "C:1396"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1397",
+   "cavp_id": "31832",
+   "cavp_ref": "C:1397"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1398",
+   "cavp_id": "31833",
+   "cavp_ref": "C:1398"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1399",
+   "cavp_id": "31834",
+   "cavp_ref": "C:1399"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1400",
+   "cavp_id": "31835",
+   "cavp_ref": "C:1400"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1401",
+   "cavp_id": "31836",
+   "cavp_ref": "C:1401"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1402",
+   "cavp_id": "31837",
+   "cavp_ref": "C:1402"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1395",
+   "cavp_id": "31830",
+   "cavp_ref": "C:1395"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1398",
+   "cavp_id": "31833",
+   "cavp_ref": "C:1398"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1399",
+   "cavp_id": "31834",
+   "cavp_ref": "C:1399"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1403",
+   "cavp_id": "31838",
+   "cavp_ref": "C:1403"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1405",
+   "cavp_id": "31840",
+   "cavp_ref": "C:1405"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1406",
+   "cavp_id": "31841",
+   "cavp_ref": "C:1406"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1407",
+   "cavp_id": "31842",
+   "cavp_ref": "C:1407"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1403",
+   "cavp_id": "31838",
+   "cavp_ref": "C:1403"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1405",
+   "cavp_id": "31840",
+   "cavp_ref": "C:1405"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1406",
+   "cavp_id": "31841",
+   "cavp_ref": "C:1406"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1407",
+   "cavp_id": "31842",
+   "cavp_ref": "C:1407"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1395, #C1396, #C1397, #C1398, #C1399, #C1400, #C1401 and #C1402; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1395, #C1396, #C1397, #C1398, #C1399, #C1400, #C1401 and #C1402 and HMAC Certs. #C1403, #C1405, #C1406 and #C1407; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Certs. #C1404 and HMAC Certs. #C1403, #C1405, #C1406 and #C1407, key wrapping; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1403",
+   "cavp_id": "31838",
+   "cavp_ref": "C:1403"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1405",
+   "cavp_id": "31840",
+   "cavp_ref": "C:1405"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1406",
+   "cavp_id": "31841",
+   "cavp_ref": "C:1406"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1407",
+   "cavp_id": "31842",
+   "cavp_ref": "C:1407"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1403",
+   "cavp_id": "31838",
+   "cavp_ref": "C:1403"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1405",
+   "cavp_id": "31840",
+   "cavp_ref": "C:1405"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1406",
+   "cavp_id": "31841",
+   "cavp_ref": "C:1406"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1407",
+   "cavp_id": "31842",
+   "cavp_ref": "C:1407"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1404",
+   "cavp_id": "31839",
+   "cavp_ref": "C:1404"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "100 East Davie Street",
+   "Raleigh, NC 27601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jaroslav Reznik"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3939.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June%202021_010721_0718.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/1/2021",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "10/1/2021",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "10/6/2021",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "6/1/2021",
+ "last_updated": "10/6/2021",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3939.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3939,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 7 Kernel Crypto API Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "06/01/2021",
+   "10/01/2021",
+   "10/06/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

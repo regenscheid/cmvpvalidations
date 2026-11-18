@@ -1,0 +1,77 @@
+{
+ "cavp_id": "24213",
+ "cavp_cert": "AES 3160",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24213",
+ "implementation": "SafeXcel-IP-160",
+ "product_id": "6755",
+ "description": "SafeXcel-IP-160 is the IEEE 802.1AE MAC Security (MACsec) cryptographic engine for the AppliedMicro X-Weave product family. The engine processes a continuous stream of Ethernet packets at 10 Gbps, 40 Gbps, or 100 Gbps data rates.",
+ "version": "HW4.0.3",
+ "type": "HARDWARE",
+ "first_validated": "12/19/2014",
+ "vendor": "Applied Micro Circuits Corporation",
+ "vendor_website": "http://www.apm.com",
+ "oes": [
+  {
+   "name": "SafeXcel-IP-160",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 0, 128, 192, 256, 320",
+    "AAD Length: 128, 192, 256, 320"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 0, 128, 192, 256, 320",
+    "AAD Length: 128, 192, 256, 320"
+   ]
+  },
+  {
+   "algorithm": "AES-XPN",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 0, 128, 192, 256, 320",
+    "AAD Length: 128, 192, 256, 320",
+    "Tag Length: 128",
+    "IV Generation: Internal",
+    "Salt Generation: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

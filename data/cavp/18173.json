@@ -1,0 +1,31 @@
+{
+ "cavp_id": "18173",
+ "cavp_cert": "HMAC 2014",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18173",
+ "implementation": "OpenSSL (AES-NI and AVX+SSSE3 for SHA-1)",
+ "product_id": "6823",
+ "description": "OpenSSL is an open-source library of various cryptographic algorithms written mainly in C. This test covers the AES-NI implementation of AES and AVX+SSSE3 assembler implementation of SHA-1 on Intel x86 64bit HP hardware.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/13/2015",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 on Intel x86-64",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

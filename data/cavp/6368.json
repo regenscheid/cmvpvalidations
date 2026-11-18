@@ -1,0 +1,50 @@
+{
+ "cavp_id": "6368",
+ "cavp_cert": "AES 1973",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6368",
+ "implementation": "TOP V2",
+ "product_id": "117",
+ "description": "This module is based on a Java Card platform (TOP DL V2) with 128K EEPROM memory available. The Cryptographic Module provides dual interfaces (i.e. contact and contact-less) where the same security level is achieved.",
+ "version": "Version #11-M1005011+Softmask V04 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/21/2012",
+ "vendor": "Gemalto",
+ "vendor_website": "http://www.gemalto.com",
+ "oes": [
+  {
+   "name": "Infineon SLE66CLX1280PE",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 120-2040",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

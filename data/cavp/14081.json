@@ -1,0 +1,42 @@
+{
+ "cavp_id": "14081",
+ "cavp_cert": "RSA 519",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14081",
+ "implementation": "The IBM UltraCypher 2 Cryptographic Engine - Accelerator supported RSA",
+ "product_id": "2786",
+ "description": "The IBM UltraCypher 2 Cryptographic Engine-Accelerator (i.e. CEX2A) supported RSA is a hybrid implementation for RSA Signature Verification. The RSA algorithm is architected and implemented in two layers: the top layer handles the PKCS#1 padding of the results; the bottom layer deals with the modulo arithmetic and exponentiation which is supported by CEX2A.CEX2A provides fast, ultrasecure, hardware-based arithmetic primitives.",
+ "version": "HW 1.0 SW OA26457 (Hybrid of SW and HW)",
+ "type": "FIRMWARE",
+ "first_validated": "6/17/2009",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com/security/products",
+ "oes": [
+  {
+   "name": "z/OS V1.10 on IBM System z10 Enterprise Class (z10 EC)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

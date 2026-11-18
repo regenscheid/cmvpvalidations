@@ -1,0 +1,63 @@
+{
+ "cavp_id": "34067",
+ "cavp_cert": "A1458",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34067",
+ "implementation": "Hughes IPsec IPGW Kernel Crypto Library",
+ "product_id": "13606",
+ "description": "The Hughes IPsec IPGW Kernel Crypto Library provides kernel-based cryptographic primitives for the Hughes IPsec IP Gateway Server.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "5/26/2021",
+ "vendor": "Hughes Network Systems, LLC",
+ "vendor_website": "http://www.hughes.com",
+ "oes": [
+  {
+   "name": "CentOS 8.2.2004 on Intel Xeon-Gold 6230",
+   "details": [
+    "os: CentOS 8.2.2004",
+    "cpu: Inter Xeon-Gold 6230 processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-160 Increment 8",
+    "Key Length: 256-448 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 256-448 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

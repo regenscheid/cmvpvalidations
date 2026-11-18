@@ -1,0 +1,1534 @@
+{
+ "cert": 3389,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3389",
+ "module": "wolfCrypt",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When entropy is externally loaded, no assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "wolfCrypt module is a comprehensive suite of FIPS Approved algorithms. All key sizes and modes have been implemented to allow flexibility and efficiency.",
+ "tested_configurations": [
+  "Android 11 running on Samsung Galaxy S20 5G with a Qualcomm Snapdragon 865 SoC with PAA",
+  "Android 11 running on Samsung Galaxy S20 5G with a Qualcomm Snapdragon 865 SoC without PAA",
+  "Android 13.0 running on Samsung Galaxy S22 with a Qualcomm Snapdragon 8 SoC with PAA",
+  "Android 6.0 (Linux 4.1) running on RICOH IM C6000 with a Freescale i.MX6 Quad/DualLite with PAA",
+  "Android 6.0 (Linux 4.1) running on RICOH IM C6000 with a Freescale i.MX6 Quad/DualLite without PAA",
+  "Android 8.1 (Linux 4.4) running on EchoNous Kosmos® Bridge with a Qualcomm Snapdragon 835 (APQ8098 / MSM8998) with PAA",
+  "Android 8.1 (Linux 4.4) running on EchoNous Kosmos® Bridge with a Qualcomm Snapdragon 835 (APQ8098 / MSM8998) without PAA",
+  "CentOS 7.9 on host Vmware ESXi 6.7 running on HP ProLiant DL360 with Intel® Xeon™ X5650 with PAA",
+  "CentOS 7.9 on host Vmware ESXi 6.7 running on HP ProLiant DL360 with Intel® Xeon™ X5650 without PAA",
+  "CMSIS-RTOS2 v2.1.3 running on Alto™ with Silicon Labs EFM32G (Gecko)",
+  "CodeOS v1.4 running on Series CR2700 Code Reader(s) with CodeCorp CT8200 (ARM FA626TE)",
+  "Debian GNU/Linux 8 (jessie) running on a Corning 1LAN-SDDP-24POE with a Broadcom BCM5634",
+  "Debian GNU/Linux 8 (jessie) running on an ufiSpace Cloud and Data Center Switch S7810-54QS with an Intel® Atom™ C2558 @ 2.40GHz",
+  "Endace Crypto Firmware 1.0 running on EndaceProbe 2184 with Intel® Xeon® Gold 6338N CPU @2.20GHz with PAA",
+  "Endace Crypto Firmware 1.0 running on EndaceProbe 92C8 with Intel® Xeon® Gold 6230N CPU @2.30GHz with PAA",
+  "Endace Crypto Firmware 1.0 running on EndaceProbe 94C8 with Intel® Xeon® Gold 5418N CPU @1.80GHz with PAA",
+  "Endace-Crypto-Firmware-1.0 running on EndaceProbe 2144 with Intel® Xeon® Silver 4316 CPU @2.30GHz with PAA",
+  "FreeBSD 10.3 on VMWare ESXi 7.0 running on a Supermicro X11DPH-I with an Intel® Xeon® Silver 4210 @ 2.20GHz",
+  "Fusion Embedded RTOS 5.0 running on Classone® IP Radio Gateway with Analog Devices ADSP-BF516 (BlackFin)",
+  "HP Imaging & Printing Linux 4.9 running on HP PN 3PZ95-60002 with ARM Cortex-A72 with PAA",
+  "HP Imaging & Printing Linux 4.9 running on HP PN 3PZ95-60002 with ARM Cortex-A72 without PAA",
+  "iOS 14 running on iPhone 12 with Apple A14 Bionic with PAA",
+  "iOS 14 running on iPhone 12 with Apple A14 Bionic without PAA",
+  "Janteq iMX8QM Linux 5.4 running on FLIP2 with i.MX8 Quad Max SoC with PAA",
+  "Janteq S5L Linux 4.9 running on Maximo with Ambarella S5L SoC with PAA",
+  "Janteq Zynq Linux 4.19 running on Bronte3 with Xilinx Zynq Ultrascale+ with PAA",
+  "Janteq Zynq Linux 5.4 running on AviTr3 with Xilinx Zynq-7000 SoC with PAA",
+  "Linux 3.10 (CentOS 7) running on a Beckman Coulter PROService RAP BOX with an Intel® Atom™ CPU D525 @ 1.80GHz with PAA",
+  "Linux 3.10 (CentOS 7) running on a Beckman Coulter PROService RAP BOX with an Intel® Atom™ CPU D525 @ 1.80GHz without PAA",
+  "Linux 4.12 running on HP PageWide XL with an Intel® Core™ i3 - 7101 with PAA",
+  "Linux 4.12 running on HP PageWide XL with an Intel® Core™ i3 – 7101 without PAA",
+  "Linux 4.12 Yocto Standard running on Metasys® SNC Series Network Control Engine with Freescale i.MX6 DualLite ARMv7 Cortex-A9 (x2) without PAA",
+  "Linux 4.12 Yocto Standard running on Metasys® SNC Series Network Control Engine with Freescale i.MX6 DualLite ARMv7 Cortex-A9 x2 with PAA",
+  "Linux 4.14 running on Lenovo Xclarity Controller with an ARM Cortex A9 (x2) with PAA",
+  "Linux 4.14 running on Lenovo Xclarity Controller with an ARM Cortex A9 (x2) without PAA",
+  "Linux 4.14 running on SEL-2742S with an ARMv8 Cortex A53 with PAA",
+  "Linux 4.14 running on SEL-2742S with an ARMv8 Cortex A53 without PAA",
+  "Linux 4.4 (Ubuntu 16.04 LTS) running on Intel Ultrabook 2 in 1 with an Intel® Core™ i5-5300U CPU @2.30GHz x 4 with PAA",
+  "Linux 4.4 (Ubuntu 16.04 LTS) running on Intel Ultrabook 2 in 1 with an Intel® Core™ i5-5300U CPU @2.30GHz x 4 without PAA",
+  "Linux 4.9 running on ZOLL Communications Module with a Freescale i.MX7 Dual ARM Cortex-A7 with PAA",
+  "Linux 4.9 running on ZOLL Communications Module with a Freescale i.MX7 Dual ARM Cortex-A7 without PAA",
+  "Linux 5.15 on VMWare ESXi 7.0 running on a Supermicro X11DPH-I with an Intel® Xeon® Silver 4210 @2.20GHz",
+  "Linux 5.4 running on a Dell PowerEdge R340 Rack Server with an Intel® Xeon® E-2244G with PAA",
+  "Linux 5.4 running on a Dell PowerEdge R340 Rack Server with an Intel® Xeon® E-2244G without PAA",
+  "Linux 5.4 running on a LiveAction LiveNX Appliance with an Intel® Xeon® Gold 5218 CPU @2.30GHz",
+  "Linux 5.4 running on an iSTAR physical access controller with a Freescale i.MX7 Dual Arm Cortex A-7 with PAA",
+  "Linux 5.4 running on an iSTAR physical access controller with a Freescale i.MX7 Dual Arm Cortex A-7 without PAA",
+  "Linux IPHO00550F22 4.1 running on a Corning 1LAN-SDAN-7691 with a Broadcom BCM6858",
+  "Linux IPHO00559B23 3.4 running on a Corning 1LAN-SDAN-7290 with a Broadcom BCM6838",
+  "Linux socfpga Cyclone V running on SEL 2700 Series 24-Port Ethernet Switch with an ARMv7 rev0, Cortex A-9",
+  "macOS Monterey 12.5 running on a Macbook Air with an Apple M1 with PAA",
+  "macOS Monterey 12.5 running on a Macbook Air with an Apple M1 without PAA",
+  "macOS Monterey 12.5 running on a Macbook Pro with an Apple M1 Max with PAA",
+  "macOS Monterey 12.5 running on a Macbook Pro with an Intel® Core™ i7-8569U @ 2.80Ghz with PAA",
+  "Net+OS v7.6 running on a Sigma IV Infusion Pump with a Digi International NS9210",
+  "NetBSD Rev 6.0.1 running on RICOH IM C2500 with an Intel® Atom® E3930",
+  "NetBSD Rev 6.0.1 running on RICOH IM C6000 with an Intel® Atom® E3940",
+  "Nucleus 3.0 version 2013.08.1 running on XL200 Radio with Freescale Vybrid VF500",
+  "OpenRTOS v10.1.1 running on STMicroelectronics STM32L4R9I-DISCO (Discovery Kit) with a STMicroelectronics STM32L4x",
+  "QNX 6.5 running on Zebra ZQ630 with an ARM9®",
+  "QNX 6.6 running on Zebra ZT610 with an ARM® Cortex®-A9",
+  "QNX 7.0 running on Zebra ZD621 with an ARM® Cortex®-A7",
+  "QNX 7.0 running on Zebra ZT421 with an ARM® Cortex®-A7 (x2)",
+  "SUSE Linux Enterprise Server on VMWare ESXi 6.7.0 running on Dell PowerEdge T340 with an Intel® Xeon® E-2234 with PAA",
+  "SUSE Linux Enterprise Server on VMWare ESXi 6.7.0 running on Dell PowerEdge T340 with an Intel® Xeon® E-2234 without PAA",
+  "Swoop Kernel 1.5 running on Skipper with a Xilinx Zynq Ultrascale+ XCZU9EG™ ARM® Cortex®-A53",
+  "Vortec Scheduler running on Avaya MP160 with an StarCore SC3850 DSP Core",
+  "Vx Works 7.0 running on G450 Media Gateway with an NXP T1024",
+  "VxWorks 5.5 running on ML6416E with Marvell Poncat2 Sheeva™",
+  "VxWorks 6.9 running on G430 Media Gateway with an NXP MPC8560",
+  "VxWorks 6.9 running on Sectéra vIPer™ Phone with TNETV1050",
+  "VxWorks 7 SR0630 running on F-16 WASP with Intel® Core™ i7-5850EQ @ 2.70GHz",
+  "Windows 10 Enterprise running on Radar FCL Package Utility with Intel® Core™ i7-7820 @2.9GHz x 4 with PAA",
+  "Windows 10 Enterprise running on Radar FCL Package Utility with Intel® Core™ i7-7820 @2.9GHz x 4 without PAA",
+  "Windows 10 Pro running on a Dell Precision 3570 with an Intel® Core™ i7-1255U @ 1.70 Ghz",
+  "Windows 10 Pro running on Lenovo Thinkpad T470 with an Intel® Core™ i7-7600 with PAA",
+  "Windows 10 Pro running on Lenovo Thinkpad T470 with an Intel® Core™ i7-7600 without PAA",
+  "Windows 10 running on Intel® Ultrabook 2 in 1 with an Intel® Core™ i5-5300U CPU @2.30GHz x 4 with PAA",
+  "Windows 10 running on Intel® Ultrabook 2 in 1 with an Intel® Core™ i5-5300U CPU @2.30GHz x 4 without PAA",
+  "Windows 11 Enterprise running on a Dell Latitude 7410 with an Intel® Core™ i7-10610U @ 1.80Ghz with PAA",
+  "Windows CE 6.0 running on HP LaserJet Enterprise with an ARM Cortex-A8",
+  "Windows Server 2016 Standard running on Dell PowerEdge R430 with an Intel® Xeon® E5-2603 with PAA",
+  "Windows Server 2016 Standard running on Dell PowerEdge R430 with an Intel® Xeon® E5-2603 without PAA",
+  "Windows Server 2019 running on HPE ProLiant DL360 with an Intel® Xeon® Silver 4116 with PAA",
+  "Windows Server 2019 running on HPE ProLiant DL360 with an Intel® Xeon® Silver 4116 without PAA",
+  "Yocto (dunfell) 3.1 running on a LinkGuard with an AMD GX-412TC SoC with PAA",
+  "Yocto (dunfell) 3.1 running on a LinkGuard with an AMD GX-412TC SoC without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "4.0, 4.0.1, 4.1.0, 4.2.0, 4.3.0, 4.3.2, 4.3.2a, 4.3.2b, 4.3.2c, 4.3.4, 4.4.1, 4.4.1a, 4.4.2, 4.5.2, 4.5.4, 4.5.4a, 4.5.4b, 4.6.1 and 4.6.2",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5446",
+   "cavp_id": "316",
+   "cavp_ref": "AES:5446"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1891",
+   "cavp_id": "29689",
+   "cavp_ref": "Component:1891"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1892",
+   "cavp_id": "6025",
+   "cavp_ref": "Component:1892"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2131",
+   "cavp_id": "24489",
+   "cavp_ref": "DRBG:2131"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1401",
+   "cavp_id": "19025",
+   "cavp_ref": "DSA:1401"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1451",
+   "cavp_id": "2367",
+   "cavp_ref": "ECDSA:1451"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3604",
+   "cavp_id": "2809",
+   "cavp_ref": "HMAC:3604"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2420",
+   "cavp_id": "35030",
+   "cavp_ref": "A:2420"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2421",
+   "cavp_id": "35031",
+   "cavp_ref": "A:2421"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2422",
+   "cavp_id": "35032",
+   "cavp_ref": "A:2422"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2423",
+   "cavp_id": "35033",
+   "cavp_ref": "A:2423"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2460",
+   "cavp_id": "35070",
+   "cavp_ref": "A:2460"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2465",
+   "cavp_id": "35075",
+   "cavp_ref": "A:2465"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2922",
+   "cavp_id": "7794",
+   "cavp_ref": "RSA:2922"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 45",
+   "cavp_id": "8514",
+   "cavp_ref": "SHA-3:45"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4365",
+   "cavp_id": "1791",
+   "cavp_ref": "SHS:4365"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2736",
+   "cavp_id": "12843",
+   "cavp_ref": "TDES:2736"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A894",
+   "cavp_id": "33493",
+   "cavp_ref": "A:894"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A902",
+   "cavp_id": "33501",
+   "cavp_ref": "A:902"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A949",
+   "cavp_id": "33548",
+   "cavp_ref": "A:949"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1103",
+   "cavp_id": "33712",
+   "cavp_ref": "A:1103"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1180",
+   "cavp_id": "33789",
+   "cavp_ref": "A:1180"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1261",
+   "cavp_id": "33870",
+   "cavp_ref": "A:1261"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1565",
+   "cavp_id": "34174",
+   "cavp_ref": "A:1565"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A2119",
+   "cavp_id": "34728",
+   "cavp_ref": "A:2119"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A2790",
+   "cavp_id": "35401",
+   "cavp_ref": "A:2790"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A3234",
+   "cavp_id": "35844",
+   "cavp_ref": "A:3234"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A3412",
+   "cavp_id": "36022",
+   "cavp_ref": "A:3412"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A4369",
+   "cavp_id": "36979",
+   "cavp_ref": "A:4369"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C663",
+   "cavp_id": "31059",
+   "cavp_ref": "C:663"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1051",
+   "cavp_id": "31448",
+   "cavp_ref": "C:1051"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1438",
+   "cavp_id": "31879",
+   "cavp_ref": "C:1438"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1568",
+   "cavp_id": "32146",
+   "cavp_ref": "C:1568"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1727",
+   "cavp_id": "32538",
+   "cavp_ref": "C:1727"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1746",
+   "cavp_id": "32621",
+   "cavp_ref": "C:1746"
+  }
+ ],
+ "vendor": "wolfSSL Inc.",
+ "vendor_info": {
+  "name": "wolfSSL Inc.",
+  "website": "http://www.wolfssl.com",
+  "address": [
+   "10016 Edmonds Way Suite C-300",
+   "Edmonds, WA 98020",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Todd Ouska"
+   },
+   {
+    "name": "Larry Stefonic"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3389.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedMarch2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/4/2019",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "5/31/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "10/22/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/6/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "3/26/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/22/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/6/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "8/27/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/29/2021",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "3/24/2021",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/14/2021",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "8/30/2021",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/14/2022",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "3/14/2022",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/15/2023",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/26/2023",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "9/13/2023",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/26/2024",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/15/2024",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "3/4/2019",
+ "last_updated": "2/15/2024",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3389.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3389,
+  "vendor": "wolfSSL Inc.",
+  "module": "wolfCrypt",
+  "type": "Software",
+  "validation_dates": [
+   "03/04/2019",
+   "05/31/2019",
+   "10/22/2019",
+   "01/06/2020",
+   "03/26/2020",
+   "04/22/2020",
+   "07/06/2020",
+   "08/27/2020",
+   "01/29/2021",
+   "03/24/2021",
+   "04/14/2021",
+   "08/30/2021",
+   "02/14/2022",
+   "03/14/2022",
+   "02/15/2023",
+   "04/26/2023",
+   "09/13/2023",
+   "01/26/2024",
+   "02/15/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

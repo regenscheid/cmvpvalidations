@@ -1,0 +1,135 @@
+{
+ "cavp_id": "33483",
+ "cavp_cert": "A884",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33483",
+ "implementation": "10TCE-PCN-16GU+AES100G-F Firmware (microcontroller part)",
+ "product_id": "13366",
+ "description": "Microcontroller part of the firmware of the ADVA 10TCE-PCN-16GU+AES100G-F encryption module.",
+ "version": "191.4.1",
+ "type": "FIRMWARE",
+ "first_validated": "11/25/2020",
+ "vendor": "ADVA Optical Networking SE",
+ "vendor_website": "http://www.adva.com",
+ "oes": [
+  {
+   "name": "Coldfire MCF5282",
+   "details": [
+    "processor: Coldfire MCF5282"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 384",
+    "    Entropy Input: 384",
+    "    Nonce: 128",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 256",
+    "  Capabilities:",
+    "    L: 3072",
+    "    N: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 80-256 Increment 8",
+    "Key Length: 8-256 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: MODP-3072",
+    "Scheme:",
+    "  dhHybrid1:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-512",
+    "        Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Confirmation Methods:",
+    "      Key Confirmation Directions:",
+    "      Key Confirmation Roles:",
+    "      Key Confirmation MAC Methods:",
+    "        HMAC-SHA2-256:",
+    "          Key Length: 160",
+    "          MAC Length: 256",
+    "    Key Length: 512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: MODP-3072"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: MODP-3072"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-1024 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

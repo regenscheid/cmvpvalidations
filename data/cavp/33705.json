@@ -1,0 +1,352 @@
+{
+ "cavp_id": "33705",
+ "cavp_cert": "A1096",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33705",
+ "implementation": "Motorola Solutions Cryptographic Software Module",
+ "product_id": "13585",
+ "description": "Motorola Solutions Cryptographic Software Module",
+ "version": "R01.11.00",
+ "type": "SOFTWARE",
+ "first_validated": "3/5/2021",
+ "vendor": "Motorola Solutions, Inc.",
+ "vendor_website": "http://www.motorolasolutions.com",
+ "oes": [
+  {
+   "name": "Red Hat OpenShift 4 on Red Hat UBI 8 on Intel Xeon E-2236 with AES-NI",
+   "details": [
+    "processor: Intel Xeon E-2236 with AES-NI",
+    "  Intel Xeon Processor with PAA Functionality Enabled",
+    "software: Red Hat OpenShift 4",
+    "  Red Hat Enterprise Container Platform",
+    "os: Red Hat UBI 8",
+    "  Red Hat Universal Basic Image 8"
+   ]
+  },
+  {
+   "name": "Red Hat OpenShift 4 on Red Hat UBI 8 on Intel Xeon E-2236 without AES-NI",
+   "details": [
+    "processor: Intel Xeon E-2236 without AES-NI",
+    "  Intel Xeon Processor with PAA Functionality Disabled",
+    "software: Red Hat OpenShift 4",
+    "  Red Hat Enterprise Container Platform",
+    "os: Red Hat UBI 8",
+    "  Red Hat Universal Basic Image 8"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-1024 Increment 8",
+    "AAD Length: 0-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-1024 Increment 8",
+    "AAD Length: 0-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128-1024 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128-1024 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 1024",
+    "    Entropy Input: 256-1024 Increment 128",
+    "    Nonce: 1024",
+    "    Personalization String Length: 1024",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 1024",
+    "    Entropy Input: 256-1024 Increment 128",
+    "    Nonce: 1024",
+    "    Personalization String Length: 1024",
+    "    Returned Bits: 128"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 192-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 192-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-384",
+    "Function: Key Pair Generation, Partial Validation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "        Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 384"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 1,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-384",
+    "Function: Key Pair Generation, Partial Validation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "        Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 384"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.2",
+    "Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 1,
+   "capabilities": [
+    "TLS Version: v1.2",
+    "Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1-100000 Increment 1",
+    "    HMAC Algorithm: SHA2-384",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1-100000 Increment 1",
+    "    HMAC Algorithm: SHA2-384",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-1024 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

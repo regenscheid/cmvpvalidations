@@ -1,0 +1,36 @@
+{
+ "cavp_id": "15520",
+ "cavp_cert": "AES 3297",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=15520",
+ "implementation": "Linux kernel crypto API (RFC 4106 GCM C implementation)",
+ "product_id": "6943",
+ "description": "Linux kernel crypto API is an open-source software written mainly in C. The module provides various cryptographic services to software components within the Linux kernel. This test covers the generic C implementation of RFC 4106 GCM.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "3/27/2015",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 on Intel x86-64",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 96, 120"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,180 @@
+{
+ "cert": 3899,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3899",
+ "module": "Aruba IAP-303H, IAP-304, IAP-305, IAP-314, IAP-315, IAP-324, IAP-325, IAP-334, and IAP-335 Wireless Access Points with Aruba Instant Firmware",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 13 of the Security Policy. The tamper evident labels installed as indicated in the security policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Aruba's Wi-Fi Instant Access Points operate at gigabit speeds, offering extreme performance for mobile devices. In FIPS 140-2 mode, Aruba IAPs support the IEEE 802.11i/WPA2 client standard. Aruba APs also support wireless intrusion detection/prevention services and wireless mesh topologies. The built-in GUI provides access to live monitoring and traffic visibility, while network configuration provides full customization of SSIDs, roles, guest access, and more.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "[IAP-303H-US TAA (HPE SKU JY681A), IAP-304-US TAA (HPE SKU JX944A), IAP-305-US TAA (HPE SKU JX950A), IAP-314-US TAA (HPE SKU JW808A), IAP-315-US TAA (HPE SKU JW814A), IAP-324-US TAA (HPE SKU JW322A), IAP-325-US TAA (HPE SKU JW328A), IAP-334-US TAA (HPE SKU JW820A), IAP-335-US TAA (HPE SKU JW826A)] with FIPS Kit 4011570-01 (HPE SKU JY894A)",
+ "firmware_versions": "ArubaInstant 8.5.0.12",
+ "sunset": "",
+ "level_exceptions": [],
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5412",
+   "cavp_id": "14940",
+   "cavp_ref": "AES:5412"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C564",
+   "cavp_id": "30960",
+   "cavp_ref": "C:564"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C565",
+   "cavp_id": "30961",
+   "cavp_ref": "C:565"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C564",
+   "cavp_id": "30960",
+   "cavp_ref": "C:564"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C565",
+   "cavp_id": "30961",
+   "cavp_ref": "C:565"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C565",
+   "cavp_id": "30961",
+   "cavp_ref": "C:565"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C564",
+   "cavp_id": "30960",
+   "cavp_ref": "C:564"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C565",
+   "cavp_id": "30961",
+   "cavp_ref": "C:565"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C565",
+   "cavp_id": "30961",
+   "cavp_ref": "C:565"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C564 and HMAC Cert. #C564; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C565 and HMAC Cert. #C565; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C563",
+   "cavp_id": "30959",
+   "cavp_ref": "C:563"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C564",
+   "cavp_id": "30960",
+   "cavp_ref": "C:564"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C565",
+   "cavp_id": "30961",
+   "cavp_ref": "C:565"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C563",
+   "cavp_id": "30959",
+   "cavp_ref": "C:563"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C564",
+   "cavp_id": "30960",
+   "cavp_ref": "C:564"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C565",
+   "cavp_id": "30961",
+   "cavp_ref": "C:565"
+  }
+ ],
+ "vendor": "Aruba, a Hewlett Packard Enterprise company",
+ "vendor_info": {
+  "name": "Aruba, a Hewlett Packard Enterprise company",
+  "website": "http://www.arubanetworks.com",
+  "address": [
+   "3333 Scott Blvd",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Kevin Micciche"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3899.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202021_030521_0757_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/19/2021",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/19/2021",
+ "last_updated": "4/19/2021",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3899.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3899,
+  "vendor": "Aruba, a Hewlett Packard Enterprise company",
+  "module": "Aruba IAP-303H, IAP-304, IAP-305, IAP-314, IAP-315, IAP-324, IAP-325, IAP-334, and IAP-335 Wireless Access Points with Aruba Instant Firmware",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/19/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

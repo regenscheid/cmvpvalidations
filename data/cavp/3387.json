@@ -1,0 +1,44 @@
+{
+ "cavp_id": "3387",
+ "cavp_cert": "AES 2154",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3387",
+ "implementation": "Broadcom MACSEC Verilog IP",
+ "product_id": "393",
+ "description": "Four channel, 10 Gigabit Ethernet PHY with MACsec.",
+ "version": "1.28.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/8/2012",
+ "vendor": "Broadcom Corporation",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "Chronologic VCS (Verilog simulator) Version F-2011.12",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 24, 1024",
+    "AAD Length: 160, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

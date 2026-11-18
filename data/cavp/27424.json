@@ -1,0 +1,55 @@
+{
+ "cavp_id": "27424",
+ "cavp_cert": "ECDSA 897",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27424",
+ "implementation": "CryptoServer Se2 ECDSA with Accelerator (Exar DX8204)",
+ "product_id": "5558",
+ "description": "ECDSA Component implements all ECDSA key sizes and curves to allow flexibility and efficiency. Accelerator chip is used to increase performance.",
+ "version": "Texas Instruments TMS320C6416T_EXAR DX8204 ecdsa1.1.8.7_eca1.1.7.6_hce2.2.2.1_exar2.1.1.4 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "7/31/2016",
+ "vendor": "Utimaco IS GmbH",
+ "vendor_website": "http://hsm.utimaco.com",
+ "oes": [
+  {
+   "name": "Texas Instruments TMS320C6416T + EXAR DX8204",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: B-163, B-233, B-283, B-409, B-571, K-163, K-233, K-283, K-409, K-571, P-192, P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: B-163, B-233, B-283, B-409, B-571, K-163, K-233, K-283, K-409, K-571, P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

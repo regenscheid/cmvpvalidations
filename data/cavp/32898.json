@@ -1,0 +1,46 @@
+{
+ "cavp_id": "32898",
+ "cavp_cert": "C1992",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32898",
+ "implementation": "Futurex Proprietary FIPS Low Power Cryptographic Engine",
+ "product_id": "12802",
+ "description": "This Crypto Library includes KDF, KWP, and KAS for use in the Futurex Cryptographic Module.",
+ "version": "0.1.5",
+ "type": "FIRMWARE",
+ "first_validated": "7/6/2020",
+ "vendor": "Futurex",
+ "vendor_website": "http://www.futurex.com",
+ "oes": [
+  {
+   "name": "TI AM3352",
+   "details": [
+    "processor: TI AM3352"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 144, 208, 272, 336, 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256",
+    "    Supported Lengths: 128, 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

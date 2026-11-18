@@ -1,0 +1,56 @@
+{
+ "cavp_id": "10403",
+ "cavp_cert": "RSA 302",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10403",
+ "implementation": "HP SKM RSA",
+ "product_id": "5280",
+ "description": "The HP Secure Key Manager automates encryption key generation and management. It is a hardened security appliance delivering identity-based access, administration and logging. Additionally, the Secure Key Manager provides reliable lifetime key archival with automatic multi-site key replication and failover capabilities.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "10/23/2007",
+ "vendor": "Hewlett Packard Enterprise",
+ "vendor_website": "http://www.hp.com/go/atalla",
+ "oes": [
+  {
+   "name": "CentOS v4.3 on Dual-Core Intel Xeon 5160",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

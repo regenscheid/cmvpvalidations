@@ -1,0 +1,56 @@
+{
+ "cavp_id": "27151",
+ "cavp_cert": "RSA 56",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27151",
+ "implementation": "Caymas Cryptographic Library Q",
+ "product_id": "4371",
+ "description": "Caymas Systems enables, controls, and secures the extended enterprise with the world's first Identity-Driven Access Gateways, allowing enterprises, government agencies, and institutions to securely extend their information assets to remote employees, customers, partners and suppliers. These are the cryptographic algorithm implementations used by the Caymas Systems gateways.",
+ "version": "1.00 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/3/2005",
+ "vendor": "Caymas Systems Inc.",
+ "vendor_website": "",
+ "oes": [
+  {
+   "name": "Intel Xeon 32-bit Processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048",
+    "Public Key Value: 3"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

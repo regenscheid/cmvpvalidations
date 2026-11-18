@@ -1,0 +1,66 @@
+{
+ "cavp_id": "4242",
+ "cavp_cert": "AES 4118",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4242",
+ "implementation": "Futurex Cryptographic Engine",
+ "product_id": "5725",
+ "description": "The Crypto Library includes CMAC, DRBG, GCM, KDF TLS, KDF CMAC, and KWP algorithms for use in the Futurex cryptographic module.",
+ "version": "6.2.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/6/2016",
+ "vendor": "Futurex",
+ "vendor_website": "http://www.futurex.com",
+ "oes": [
+  {
+   "name": "Intel i7-620UE",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 32-128",
+    "    Message Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "Payload Length: 128, 184, 312, 384",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 144, 208, 272, 336, 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

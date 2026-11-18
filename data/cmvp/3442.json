@@ -1,0 +1,178 @@
+{
+ "cert": 3442,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3442",
+ "module": "Vormetric Data Security Manager Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When Operated in FIPS mode. The protocol SSH shall not be used when operated in FIPS mode.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Cryptographic Key Management: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Vormetric Data Security Server is a multi-chip standalone cryptographic module. The Vormetric Data Security Server is the central point of management for the Vormetric Data Security product. It manages keys and policies, and controls Vormetric Transparent Encryption Agents. These agents contain the Vormetric Encryption Expert Cryptographic Module, which has been validated separately from this module.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Certs. #1481 and #1978, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "3.0",
+ "firmware_versions": "6.0.2",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4845",
+   "cavp_id": "3659",
+   "cavp_ref": "AES:4845"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5535",
+   "cavp_id": "5284",
+   "cavp_ref": "AES:5535"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1481",
+   "cavp_id": "14248",
+   "cavp_ref": "Component:1481"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1978",
+   "cavp_id": "9027",
+   "cavp_ref": "Component:1978"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1702",
+   "cavp_id": "5240",
+   "cavp_ref": "DRBG:1702"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1239",
+   "cavp_id": "2312",
+   "cavp_ref": "ECDSA:1239"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3245",
+   "cavp_id": "13056",
+   "cavp_ref": "HMAC:3245"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3687",
+   "cavp_id": "15353",
+   "cavp_ref": "HMAC:3687"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4845 and HMAC Cert. #3245; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5535",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2663",
+   "cavp_id": "1507",
+   "cavp_ref": "RSA:2663"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2969",
+   "cavp_id": "20110",
+   "cavp_ref": "RSA:2969"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3986",
+   "cavp_id": "1321",
+   "cavp_ref": "SHS:3986"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4442",
+   "cavp_id": "28122",
+   "cavp_ref": "SHS:4442"
+  }
+ ],
+ "vendor": "Thales eSecurity",
+ "vendor_info": {
+  "name": "Thales eSecurity",
+  "website": "http://www.thalesesecurity.com",
+  "address": [
+   "2860 Junction Ave",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Sales"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3442.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/26/2019",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  },
+  {
+   "date": "6/6/2019",
+   "type": "Update",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "4/26/2019",
+ "last_updated": "6/6/2019",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3442.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Certs. #1481 and #1978, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3442,
+  "vendor": "Thales eSecurity",
+  "module": "Vormetric Data Security Manager Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/26/2019",
+   "06/06/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,60 @@
+{
+ "cavp_id": "37300",
+ "cavp_cert": "A4690",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=37300",
+ "implementation": "Inline Crypto Engine (ICE) Egress",
+ "product_id": "17276",
+ "description": "The Intel® QAT ICE Egress is a dedicated packet processing engine for IPSec egress.",
+ "version": "Intel® QuickAssist Technology (Intel® QAT) ICE version 1.0a",
+ "type": "FIRMWARE",
+ "first_validated": "11/14/2023",
+ "vendor": "Intel Corporation",
+ "vendor_website": "https://www.intel.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS® (Verilog Compiler Simulator)",
+   "details": [
+    "Simulator: Synopsys VCS® (Verilog Compiler Simulator)",
+    "  Verilog language simulation program for chip design"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 192, 256, 384, 512, 640, 1024, 2048, 4096, 65536",
+    "AAD Length: 64, 96"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 128, 192, 256, 384, 512, 640, 768, 896, 1024, 1152, 1280, 1408, 1536, 1664, 2048, 4096, 8192, 16384, 32768, 65536"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

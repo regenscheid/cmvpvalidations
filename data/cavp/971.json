@@ -1,0 +1,52 @@
+{
+ "cavp_id": "971",
+ "cavp_cert": "RSA 10",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=971",
+ "implementation": "Cryptosec2048",
+ "product_id": "4209",
+ "description": "The Cryptosec2048 is a high-end PCI card that provides cryptographic services and secure storage of cryptographic keys. The module is built to perform general cryptographic processing (RSA, DES, SHA-1, MD5,...) and features a tamper-protective case to physically protect sensitive information contained within the card.",
+ "version": "Model 1.0 01.04.0004",
+ "type": "HARDWARE",
+ "first_validated": "6/23/2004",
+ "vendor": "Realia Technologies S.L.",
+ "vendor_website": "http://www.realsec.com",
+ "oes": [
+  {
+   "name": "N/A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

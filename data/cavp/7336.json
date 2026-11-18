@@ -1,0 +1,52 @@
+{
+ "cavp_id": "7336",
+ "cavp_cert": "RSA 183",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7336",
+ "implementation": "SafesITe Large Memory Dual Interface Open Platform Crypto Library",
+ "product_id": "4924",
+ "description": "This algorithm is used in the SafesITe Large Memory Dual Interface Open Platform card usable for PKI applications (network access), digital signature and access control (personal identification). This card provides: Java Card and Global Platform compliance, contact and contactless (ISO14443) communication interfaces, large data storage capacity.",
+ "version": "HM 4v1; SM 1v1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/13/2006",
+ "vendor": "Gemalto",
+ "vendor_website": "http://www.gemalto.com",
+ "oes": [
+  {
+   "name": "Proprietary",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

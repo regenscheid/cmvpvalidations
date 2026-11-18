@@ -1,0 +1,32 @@
+{
+ "cavp_id": "21974",
+ "cavp_cert": "DRBG 289",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21974",
+ "implementation": "DRBG",
+ "product_id": "2880",
+ "description": "The SP800-90 DRBG is implemented internally within Cisco. It is a CTR DRBG using AES256 as the block cipher. The crypto provider (for AES256) is OpenSSL0 0.9.8g-7.0.0 and the entropy provider is the hardware RNG on the Cavium Octeon Plus 5600 family data plane processor.",
+ "version": "Cavium Octeon Plus 5600 family CTR-DRBG-7.0.0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "1/31/2013",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon Plus 5600 Family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

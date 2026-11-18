@@ -1,0 +1,55 @@
+{
+ "cavp_id": "31608",
+ "cavp_cert": "C1202",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31608",
+ "implementation": "Junos Space 19.1R1 - Kernel",
+ "product_id": "11564",
+ "description": "The FIPS enabled Junos Space platform and the NM applications (Network Director & Security Director) installed on this platform will provide secured environment for managing the Juniper Devices.",
+ "version": "Junos Space 19.1R1_FIPS",
+ "type": "FIRMWARE",
+ "first_validated": "10/7/2019",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.com",
+ "oes": [
+  {
+   "name": "Intel(R) Xeon(R) E3-1225 V2",
+   "details": [
+    "processor: Intel Xeon(R) E3-1225 V2",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 1024",
+    "C1202 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

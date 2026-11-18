@@ -1,0 +1,56 @@
+{
+ "cavp_id": "5247",
+ "cavp_cert": "AES 4642",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5247",
+ "implementation": "AES Library",
+ "product_id": "1861",
+ "description": "AES Library implements 128/256 bit AES key. Supports ECB/CBC/XTS Modes. \"The AES 128/256 data encryption feature is implemented in the Sage's bridge chips, it provides the data security and protection for the user on the storage enclosure application.\"",
+ "version": "INIC-3637",
+ "type": "HARDWARE",
+ "first_validated": "8/4/2017",
+ "vendor": "Sage Microelectronics Corp.",
+ "vendor_website": "http://www.sage-micro.com",
+ "oes": [
+  {
+   "name": "AES Library",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Block Size: Full"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,115 @@
+{
+ "cert": 922,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/922",
+ "module": "iSTAR eX Controller",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The iSTAR eX controller is a security door controller which is connected to at least one card reader and a door. The iSTAR eX controller works from a database stored internally in memory for determining access privilege of an individual. When a card is swiped by a reader the data goes to the iSTAR eX controller. The controller then sends a notify message to the access database to determine if access is allowed. If access is granted then the iSTAR eX controller sends an open command back to the door and access is granted. If access is not granted the door remains closed and locked.",
+ "hardware_versions": "STAREX004W-64",
+ "firmware_versions": "4.1.1.12045",
+ "product_url": "http://www.swhouse.com/products/hardware_iSTAR.aspx",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 433",
+   "cavp_id": "23248",
+   "cavp_ref": "AES:433"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 283",
+   "cavp_id": "16002",
+   "cavp_ref": "RNG:283"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 219",
+   "cavp_id": "15787",
+   "cavp_ref": "RSA:219"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 575",
+   "cavp_id": "19351",
+   "cavp_ref": "SHS:575"
+  }
+ ],
+ "vendor": "Software House",
+ "vendor_info": {
+  "name": "Software House",
+  "website": "http://www.swhouse.com",
+  "address": [
+   "6 Technology Park Drive",
+   "Westford, MA 01886",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Rick Focke"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp922.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt922.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/29/2008",
+   "type": "Initial",
+   "lab": "ICSA"
+  },
+  {
+   "date": "3/7/2008",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "2/10/2011",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "2/29/2008",
+ "last_updated": "2/10/2011",
+ "labs": "ICSA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp922.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 80 bits of encryption strength; non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 922,
+  "vendor": "Software House",
+  "module": "iSTAR eX Controller",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/29/2008",
+   "03/07/2008",
+   "02/10/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

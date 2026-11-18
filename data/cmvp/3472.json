@@ -1,0 +1,147 @@
+{
+ "cert": 3472,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3472",
+ "module": "Nutanix Cryptographic Module for OpenSSH Client",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Nutanix Cryptographic Module for OpenSSL validated to FIPS 140-2 under Cert. #3460 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Nutanix Cryptographic Module for OpenSSH Client provides client-side support for SSH version 2. This cryptographic module functions together with the Nutanix Cryptographic Module for OpenSSL to provide FIPS validated cryptography for SSH connections.",
+ "tested_configurations": [
+  "CentOS 7.5 running on Nutanix NX-3360-G6 with Intel Xeon Silver-4116 with PAA",
+  "CentOS 7.5 running on Nutanix NX-3360-G6 with Intel Xeon Silver-4116 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1994 with CVL Cert. #1998, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1994 with CVL Cert. #1998, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "software_versions": "OpenSSH client RPM package 7.4p1-16.el7 and fipscheck RPM package 1.4.1-6.el7",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5562",
+   "cavp_id": "26188",
+   "cavp_ref": "AES:5562"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C661",
+   "cavp_id": "31057",
+   "cavp_ref": "C:661"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1994",
+   "cavp_id": "17107",
+   "cavp_ref": "Component:1994"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1998",
+   "cavp_id": "24955",
+   "cavp_ref": "Component:1998"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2216",
+   "cavp_id": "20262",
+   "cavp_ref": "DRBG:2216"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1499",
+   "cavp_id": "8067",
+   "cavp_ref": "ECDSA:1499"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3708",
+   "cavp_id": "7076",
+   "cavp_ref": "HMAC:3708"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4465",
+   "cavp_id": "20360",
+   "cavp_ref": "SHS:4465"
+  }
+ ],
+ "vendor": "Nutanix, Inc.",
+ "vendor_info": {
+  "name": "Nutanix, Inc.",
+  "website": "http://www.nutanix.com",
+  "address": [
+   "1740 Technology Drive, Suite 150",
+   "San Jose, CA 95110",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Matt Keller"
+   },
+   {
+    "name": "Ashutosh Pangasa"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3472.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JuneConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/12/2019",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/10/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/29/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "6/12/2019",
+ "last_updated": "7/29/2020",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3472.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1994 with CVL Cert. #1998, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1994 with CVL Cert. #1998, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3472,
+  "vendor": "Nutanix, Inc.",
+  "module": "Nutanix Cryptographic Module for OpenSSH Client",
+  "type": "Software",
+  "validation_dates": [
+   "06/12/2019",
+   "07/10/2020",
+   "07/29/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

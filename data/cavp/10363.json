@@ -1,0 +1,43 @@
+{
+ "cavp_id": "10363",
+ "cavp_cert": "AES 1269",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10363",
+ "implementation": "MACSec10G-AES",
+ "product_id": "7459",
+ "description": "The MACSec10G-AES module is a common security IP module integrated into Broadcom network switches, optical transceivers, copper PHYs, network controllers and network processors to support IEEE 802.1AE MACsec standard.",
+ "version": "MACSec10G-AES Version A0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "1/19/2010",
+ "vendor": "Broadcom Corporation",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "Synopsys Inc. HDL Hardware Design Simulator",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 64, 1024",
+    "AAD Length: 64, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

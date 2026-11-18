@@ -1,0 +1,119 @@
+{
+ "cert": 1331,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1331",
+ "module": "Windows 7 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Windows 7 Code Integrity (ci.dll) validated to FIPS 140-2 under Cert. #1327 operating in FIPS mode and Microsoft Windows 7 Kernel Mode Cryptographic Primitives Library (cng.sys) validated to FIPS 140-2 under Cert. #1328 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "DSSENH encapsulates several different cryptographic algorithms in an easy-to-use cryptographic module accessible via the Microsoft CryptoAPI. Software developers dynamically link the Microsoft DSSENH module into their applications to provide FIPS 140-2 compliant cryptographic support.",
+ "tested_configurations": [
+  "Microsoft Windows 7 Ultimate Edition (x64 version)",
+  "Microsoft Windows 7 Ultimate Edition (x86 Version)",
+  "Microsoft Windows 7 Ultimate Edition SP1 (x64 version) (single-user mode)",
+  "Microsoft Windows 7 Ultimate Edition SP1 (x86 version)"
+ ],
+ "software_versions": "6.1.7600.16385",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 385",
+   "cavp_id": "4391",
+   "cavp_ref": "DSA:385"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 649",
+   "cavp_id": "10536",
+   "cavp_ref": "RNG:649"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1081",
+   "cavp_id": "20791",
+   "cavp_ref": "SHS:1081"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 846",
+   "cavp_id": "9934",
+   "cavp_ref": "TDES:846"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #846, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1331.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1331.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/12/2010",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "6/1/2011",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "8/12/2010",
+ "last_updated": "6/1/2011",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1331.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman; MD5; RC2; RC2 MAC; RC4"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1331,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows 7 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)",
+  "type": "Software",
+  "validation_dates": [
+   "08/12/2010",
+   "06/01/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

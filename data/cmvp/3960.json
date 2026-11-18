@@ -1,0 +1,179 @@
+{
+ "cert": 3960,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3960",
+ "module": "DocuSign HSM Appliance",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode. This module contains the embedded module eToken 5105 validated to FIPS 140-2 under Cert. #1883 operating in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "DocuSign HSM Appliance is a high-performance cryptographic service provider. It performs high-speed cryptographic operations while protecting sensitive data. Its features include Triple-DES, AES, CCM, HMAC, RSA, ECDSA, SHA-1, SHA-256, SHA-384, SHA-512, public key database and certificate support, authenticated and encrypted communication with the module, secure storage of secret/private keys, software key medium and smartcard support, tamper-responsive enclosure, high level API requiring no cryptographic expertise, in-depth logging and auditing, and secure backup capabilities.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "5.0",
+ "firmware_versions": "5.0.4",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1160",
+   "cavp_id": "31557",
+   "cavp_ref": "C:1160"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1161",
+   "cavp_id": "31558",
+   "cavp_ref": "C:1161"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1160",
+   "cavp_id": "31557",
+   "cavp_ref": "C:1160"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 98",
+   "cavp_id": "11512",
+   "cavp_ref": "DRBG:98"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1161",
+   "cavp_id": "31558",
+   "cavp_ref": "C:1161"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1161",
+   "cavp_id": "31558",
+   "cavp_ref": "C:1161"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1160",
+   "cavp_id": "31557",
+   "cavp_ref": "C:1160"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1161",
+   "cavp_id": "31558",
+   "cavp_ref": "C:1161"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1160 and HMAC Cert. #C1160",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1161 and AES Cert. #C1161; key establishment methodology provides 128 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1161",
+   "cavp_id": "31558",
+   "cavp_ref": "C:1161"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1465",
+   "cavp_id": "29726",
+   "cavp_ref": "SHS:1465"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1160",
+   "cavp_id": "31557",
+   "cavp_ref": "C:1160"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1161",
+   "cavp_id": "31558",
+   "cavp_ref": "C:1161"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1161",
+   "cavp_id": "31558",
+   "cavp_ref": "C:1161"
+  }
+ ],
+ "vendor": "DocuSign, Inc.",
+ "vendor_info": {
+  "name": "DocuSign, Inc.",
+  "website": "http://www.docusign.com",
+  "address": [
+   "221 Main St.",
+   "Suite 1000",
+   "San Francisco, CA 94105",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ezer Farhi"
+   },
+   {
+    "name": "Moshe Harel"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3960.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June%202021_010721_0718.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/27/2021",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "6/27/2021",
+ "last_updated": "6/27/2021",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3960.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3960,
+  "vendor": "DocuSign, Inc.",
+  "module": "DocuSign HSM Appliance",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/27/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

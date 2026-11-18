@@ -1,0 +1,48 @@
+{
+ "cavp_id": "22408",
+ "cavp_cert": "RSA 144",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22408",
+ "implementation": "Atmel AT90SC RSA Engine",
+ "product_id": "4769",
+ "description": "Personal Identity Verification Smart Card, HSPD-12 implementation. Secure card OS, fully compliant with NIST 800-73-1 and FIPS PUB 201-1 requirements. RSA is implemented in AT90SC144144CT and AT90SC12872RCFT.",
+ "version": "AT90SC144144CT, Version AdvX V01.01 Atmel Toolbox, Version 00.03.01 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "6/1/2006",
+ "vendor": "Atmel",
+ "vendor_website": "http://www.atmel.com",
+ "oes": [
+  {
+   "name": "Citadel on AT90SC144144CT",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

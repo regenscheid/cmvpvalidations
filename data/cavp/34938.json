@@ -1,0 +1,42 @@
+{
+ "cavp_id": "34938",
+ "cavp_cert": "A2329",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34938",
+ "implementation": "AESUtils",
+ "product_id": "14801",
+ "description": "Firmware implementation of AES using 256-bit key size in ECB mode; AES Key Wrap using 256-bit plaintext key.",
+ "version": "v3k_102-AESUtils-1_5_0",
+ "type": "FIRMWARE",
+ "first_validated": "2/14/2022",
+ "vendor": "ViaSat, Inc.",
+ "vendor_website": "http://www.viasat.com",
+ "oes": [
+  {
+   "name": "Freescale PowerPC MPC8313",
+   "details": [
+    "cpu: Freescale PowerPC MPC8313"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128-384 Increment 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

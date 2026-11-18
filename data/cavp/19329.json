@@ -1,0 +1,69 @@
+{
+ "cavp_id": "19329",
+ "cavp_cert": "RSA 1828",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19329",
+ "implementation": "Satellite Communication",
+ "product_id": "1072",
+ "description": "VT iDirect, Inc's firmware cryptographic module, Secure Satelite Broadband Solution, provides all cryptographic operations for the management of iDirect's Transmission Security (TRANSEC) feature. The cryptographic module supports key management algorithms that allow for each member of the network to receive and decrypt data.",
+ "version": "2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/23/2015",
+ "vendor": "iDirect Government",
+ "vendor_website": "http://www.idirectgov.com",
+ "oes": [
+  {
+   "name": "Intel EWIXP465BAET 667 MHz",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

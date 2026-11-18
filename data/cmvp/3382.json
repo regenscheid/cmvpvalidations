@@ -1,0 +1,108 @@
+{
+ "cert": 3382,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3382",
+ "module": "Titan Chip",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with River Cryptographic Module validated to FIPS 140-2 under Cert. #3383 or Delta Cryptographic Module validated to FIPS 140-2 under Cert. #3384 operating in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "Titan is a custom secure micro-controller. It can implement a variety of security, encryption, and cryptography protocols. The protocols are running on a secure processor on-chip, interfacing with a host using an API across a trusted SPI peripheral. It provides secure EEPROM Boot, using SPI pass-through technology that allows Titan to confirm authorship of Boot Code, ensuring code-signing before code swap is completed.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "hardware_versions": "H1B2P",
+ "firmware_versions": "gqfips-1.2",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1529",
+   "cavp_id": "26464",
+   "cavp_ref": "ECDSA:1529"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3045",
+   "cavp_id": "3310",
+   "cavp_ref": "RSA:3045"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4536",
+   "cavp_id": "26973",
+   "cavp_ref": "SHS:4536"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4537",
+   "cavp_id": "17788",
+   "cavp_ref": "SHS:4537"
+  }
+ ],
+ "vendor": "Google, Inc.",
+ "vendor_info": {
+  "name": "Google, Inc.",
+  "website": "http://www.google.com",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "n/a",
+   "n/a",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Crypto Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3382.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedMarch2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/22/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/22/2019",
+ "last_updated": "3/22/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3382.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3382,
+  "vendor": "Google, Inc.",
+  "module": "Titan Chip",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/22/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

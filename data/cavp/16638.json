@@ -1,0 +1,60 @@
+{
+ "cavp_id": "16638",
+ "cavp_cert": "AES 4615",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=16638",
+ "implementation": "Kernel Crypto API RFC4106 GCM with internal IV using AES_NI for AES core and CLMUL for GHASH",
+ "product_id": "1809",
+ "description": "The test covers implementations of cbc(aes-aesni), ecb(aes-aesni), seqiv(rfc4106(gcm_base(ctr(aes-aesni),ghash-clmulni))).",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "7/21/2017",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 SP2 on Intel Xeon E5 family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 96, 120"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

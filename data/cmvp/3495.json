@@ -1,0 +1,140 @@
+{
+ "cert": 3495,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3495",
+ "module": "Panzura CloudFS™ FIPS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2398.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Cryptographic module for use with Panzura products.",
+ "tested_configurations": [
+  "PZ Base OS 1.0 x86 on VMware ESXI 6.7 with AES-NI running on Dell PowerEdge R320 with Intel Xeon CPU E5-2430L with PAA",
+  "PZ Base OS 1.0 x86 on VMware ESXI 6.7 without AES-NI running on Dell PowerEdge R320 with Intel Xeon CPU E5-2430L without PAA",
+  "PZ Base OS 1.0 x86 running on Dell PowerEdge R320 with Intel Xeon CPU E5-2403 with PAA",
+  "PZ Base OS 1.0 x86 running on Dell PowerEdge R320 with Intel Xeon CPU E5-2403 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #C659, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "product_url": "http://www.panzura.com/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C659",
+   "cavp_id": "31055",
+   "cavp_ref": "C:659"
+  }
+ ],
+ "vendor": "Panzura, Inc.",
+ "vendor_info": {
+  "name": "Panzura, Inc.",
+  "website": "http://www.panzura.com/",
+  "address": [
+   "695 Campbell Technology Parkway",
+   "#225",
+   "n/a",
+   "Campbell, CA 95008",
+   "USA"
+  ],
+  "contacts": []
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3495.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JulyConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/19/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "7/19/2019",
+ "last_updated": "7/19/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3495.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #C659, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3495,
+  "vendor": "Panzura, Inc.",
+  "module": "Panzura CloudFS™ FIPS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "07/19/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

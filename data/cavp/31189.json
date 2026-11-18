@@ -1,0 +1,61 @@
+{
+ "cavp_id": "31189",
+ "cavp_cert": "C793",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31189",
+ "implementation": "Crypto Utils",
+ "product_id": "11147",
+ "description": "Common cryptography wrapper library",
+ "version": "1.1",
+ "type": "FIRMWARE",
+ "first_validated": "6/7/2019",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Arm Cortex A, dual core",
+   "details": [
+    "processor: ARM Cortex A, dual core",
+    "  manufacturer: ARM"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128, 1280, 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

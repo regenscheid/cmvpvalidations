@@ -1,0 +1,218 @@
+{
+ "cert": 3326,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3326",
+ "module": "Self-Defending Key Management Service™",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy. When operated in FIPS mode",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Fortanix Self-Defending Key Management Service™ (SDKMS) is the world’s first cloud service secured with Intel® SGX and built using Fortanix’s patented Runtime Encryption Technology. With SDKMS, you can securely generate, store, and use cryptographic keys and certificates, as well as secrets, or any blob of data. You can integrate with SDKMS using legacy cryptographic interfaces or using its native RESTful interface. SDKMS ensures that you remain in complete control over your keys and secrets. It provides access control to users and applications to enforce authorized access to keys.",
+ "tested_configurations": [
+  "Ubuntu 16.04 running on a General purpose x86 based server (SuperMicro SYS-5019S-MR) with Intel® Xeon® CPU E3-1230 V5 @3.40GHz with PAA",
+  "Ubuntu 16.04 running on a General purpose x86 based server (SuperMicro SYS-5019S-MR) with Intel® Xeon® CPU E3-1230 V5 @3.40GHz without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "HMAC-MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "software_versions": "2.0.596 and 2.0.NOAESNI-182",
+ "product_url": "https://www.fortanix.com/products/sdkms/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5328",
+   "cavp_id": "7306",
+   "cavp_ref": "AES:5328"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5329",
+   "cavp_id": "15841",
+   "cavp_ref": "AES:5329"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5379",
+   "cavp_id": "12986",
+   "cavp_ref": "AES:5379"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5380",
+   "cavp_id": "14054",
+   "cavp_ref": "AES:5380"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1818",
+   "cavp_id": "10497",
+   "cavp_ref": "Component:1818"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1822",
+   "cavp_id": "25264",
+   "cavp_ref": "Component:1822"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2072",
+   "cavp_id": "13592",
+   "cavp_ref": "DRBG:2072"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2073",
+   "cavp_id": "23116",
+   "cavp_ref": "DRBG:2073"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1418",
+   "cavp_id": "23127",
+   "cavp_ref": "ECDSA:1418"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1419",
+   "cavp_id": "9228",
+   "cavp_ref": "ECDSA:1419"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3526",
+   "cavp_id": "7347",
+   "cavp_ref": "HMAC:3526"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3527",
+   "cavp_id": "3135",
+   "cavp_ref": "HMAC:3527"
+  },
+  {
+   "algorithm": "KDF",
+   "cavp_cert": "KDF 191",
+   "cavp_id": "28217",
+   "cavp_ref": "KDF:191"
+  },
+  {
+   "algorithm": "KDF",
+   "cavp_cert": "KDF 195",
+   "cavp_id": "10953",
+   "cavp_ref": "KDF:195"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5328 and HMAC Cert. #3526; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5329 and HMAC Cert. #3527; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5379; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5380; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2876",
+   "cavp_id": "13589",
+   "cavp_ref": "RSA:2876"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2877",
+   "cavp_id": "5459",
+   "cavp_ref": "RSA:2877"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4280",
+   "cavp_id": "23500",
+   "cavp_ref": "SHS:4280"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4281",
+   "cavp_id": "30076",
+   "cavp_ref": "SHS:4281"
+  }
+ ],
+ "vendor": "Fortanix, Inc.",
+ "vendor_info": {
+  "name": "Fortanix, Inc.",
+  "website": "https://www.fortanix.com/",
+  "address": [
+   "444 Castro St #702",
+   "Mountain View, CA 94041",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ambuj Kumar"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3326.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Consolidated-Nov2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/13/2018",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "11/13/2018",
+ "last_updated": "11/13/2018",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3326.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "HMAC-MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3326,
+  "vendor": "Fortanix, Inc.",
+  "module": "Self-Defending Key Management Service™",
+  "type": "Software",
+  "validation_dates": [
+   "11/13/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,239 @@
+{
+ "cert": 3152,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3152",
+ "module": "BC-FJA (Bouncy Castle FIPS Java API)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Bouncy Castle FIPS Java API is a comprehensive suite of FIPS Approved algorithms implemented in pure Java. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms are available in non-approved operation as well. The module is designed to integrate with the associated Bouncy Castle APIs including those for TLS, X.509, CMS, S/MIME, TSP, PKIX, and OpenPGP.",
+ "tested_configurations": [
+  "Linux 3.10 on Java SE Runtime Environment v8 (1.8.0) running on NetScout PowerEdge R730 with an Intel Xeon Processor E5-2697 v3",
+  "Linux 3.10 on Java SE Runtime Environment v8 (1.8.0) running on NetScout PowerEdge R740 with an Intel Xeon Processor Silver 4110",
+  "Lollipop Android 5.1 on Android 5 Java ART running on Zebra TC75 Touch Computer with a Qualcomm MS8960 Pro",
+  "Marshmallow Android 6.0 on Android 6 Java ART running on Zebra TC51-HC Touch Computer with a Qualcomm MSM8956",
+  "Microsoft Windows Server 2016 ESXi 6.7 on Java SE Runtime Environment v8 (1.8.0) running on Dell PowerEdge R740 with an Intel Xeon 6126",
+  "Oreo Android 8.1 on Android 8 Java ART running on Zebra TC52 Touch Computer with a Qualcomm SD660",
+  "Photon OS 2.0 on VMware ESXi 6.7 on Java SE Runtime Environment v8 (1.8.0) running on Dell PowerEdge R740 with an Intel Xeon 6126",
+  "Red Hat Enterprise Linux (RHEL) 7.3 on VMware ESXi 5.5 and Java SE Runtime Environment v7 (1.7.0) running on HP ProLiant DL360 G7 Server with an Intel Xeon X5670",
+  "Red Hat Enterprise Linux (RHEL) 7.3 on VMware ESXi 5.5 and Java SE Runtime Environment v8 (1.8.0) running on HP ProLiant DL360 G7 Server with an Intel Xeon X5670",
+  "Ubuntu 16.04 on VMware ESXi 6.7 on Java SE Runtime Environment v8 (1.8.0) running on Dell PowerEdge R740 with an Intel Xeon Processor 6126",
+  "Ubuntu 16.04 on VMware ESXi 7.0 on Java SE Runtime Environment v8 (1.8.0) running on Dell PowerEdge R740 with an Intel Xeon Gold 6126",
+  "Ubuntu 18.04 on VMware ESXi 7.0 on Java SE Runtime Environment v11 (1.11.0) running on Dell PowerEdge R740 with an Intel Xeon Gold 6126 (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "1.0.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4759",
+   "cavp_id": "18795",
+   "cavp_ref": "AES:4759"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1398",
+   "cavp_id": "30370",
+   "cavp_ref": "Component:1398"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1399",
+   "cavp_id": "27696",
+   "cavp_ref": "Component:1399"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1400",
+   "cavp_id": "18957",
+   "cavp_ref": "Component:1400"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1401",
+   "cavp_id": "21109",
+   "cavp_ref": "Component:1401"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1402",
+   "cavp_id": "24652",
+   "cavp_ref": "Component:1402"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1636",
+   "cavp_id": "9376",
+   "cavp_ref": "DRBG:1636"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1279",
+   "cavp_id": "15485",
+   "cavp_ref": "DSA:1279"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1191",
+   "cavp_id": "14463",
+   "cavp_ref": "ECDSA:1191"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3170",
+   "cavp_id": "539",
+   "cavp_ref": "HMAC:3170"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 135",
+   "cavp_id": "15591",
+   "cavp_ref": "KAS:135"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "SP 800-56Arev2, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 153",
+   "cavp_id": "18449",
+   "cavp_ref": "KDF:153"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4759; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "SP800-56B, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #2529; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2602",
+   "cavp_id": "14779",
+   "cavp_ref": "RSA:2602"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 38",
+   "cavp_id": "16212",
+   "cavp_ref": "SHA-3:38"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3901",
+   "cavp_id": "18272",
+   "cavp_ref": "SHS:3901"
+  },
+  {
+   "algorithm": "Triple DES",
+   "cavp_cert": "Cert. #2529",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Legion of the Bouncy Castle Inc.",
+ "vendor_info": {
+  "name": "Legion of the Bouncy Castle Inc.",
+  "website": "http://www.bouncycastle.org",
+  "address": [
+   "85 The Crescent",
+   "Ascot Vale, Victoria 3032",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "David Hook"
+   },
+   {
+    "name": "Jon Eaves"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3152.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/15/2018",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/2/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/9/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/23/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "3/15/2018",
+ "last_updated": "7/23/2020",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3152.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3152,
+  "vendor": "Legion of the Bouncy Castle Inc.",
+  "module": "BC-FJA (Bouncy Castle FIPS Java API)",
+  "type": "Software",
+  "validation_dates": [
+   "03/15/2018",
+   "04/02/2019",
+   "04/09/2019",
+   "07/23/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,147 @@
+{
+ "cert": 2085,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2085",
+ "module": "VPX3-685 Secure Routers",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The VPX3-685 Secure Routers are used for strong security in the embedded defense and aerospace industries. They support industry standard encryption algorithms used in IPSec/VPN/IKE/PKI and other networking standards. Including H/W accelerated AES bulk encryption.",
+ "hardware_versions": "Air-Cooled Chassis: VPX3-685-A13014-FC and VPX3-685-A13020-FC; Conduction-Cooled Chassis: VPX3-685-C23014-FC and VPX3-685-C23020-FC",
+ "firmware_versions": "2.0",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 963",
+   "cavp_id": "241",
+   "cavp_ref": "AES:963"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 713",
+   "cavp_id": "6906",
+   "cavp_ref": "DSA:713"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 538",
+   "cavp_id": "2762",
+   "cavp_ref": "HMAC:538"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1111",
+   "cavp_id": "8269",
+   "cavp_ref": "RNG:1111"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1135",
+   "cavp_id": "27126",
+   "cavp_ref": "RSA:1135"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 934",
+   "cavp_id": "27964",
+   "cavp_ref": "SHS:934"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1907",
+   "cavp_id": "9199",
+   "cavp_ref": "SHS:1907"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 758",
+   "cavp_id": "12354",
+   "cavp_ref": "TDES:758"
+  }
+ ],
+ "vendor": "Curtiss-Wright",
+ "vendor_info": {
+  "name": "Curtiss-Wright",
+  "website": "http://www.curtisswrightds.com",
+  "address": [
+   "333 Palladium Drive",
+   "Kanata, Ontario K2V 1A6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Aaron Frank"
+   },
+   {
+    "name": "Johan A Koppernaes"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2085.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/22/2014",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "5/22/2014",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "12/22/2015",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "2/22/2014",
+ "last_updated": "12/22/2015",
+ "labs": "DXC Technology",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2085.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; MD5; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2085,
+  "vendor": "Curtiss-Wright",
+  "module": "VPX3-685 Secure Routers",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/22/2014",
+   "05/22/2014",
+   "12/22/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

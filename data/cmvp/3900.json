@@ -1,0 +1,173 @@
+{
+ "cert": 3900,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3900",
+ "module": "Samsung BoringSSL Android",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Provides general purpose cryptographic services to user-space applications on the mobile platform for the protection of data.",
+ "tested_configurations": [
+  "Android 11 running on Galaxy A52 with Snapdragon 750 with PAA",
+  "Android 11 running on Galaxy A52 with Snapdragon 750 without PAA",
+  "Android 11 running on Galaxy A71 5G with Snapdragon 765 without PAA",
+  "Android 11 running on Galaxy A71 5G with Snapdragon 765 with PAA",
+  "Android 11 running on Galaxy Note10+ with Exynos 9825 with PAA",
+  "Android 11 running on Galaxy Note10+ with Exynos 9825 without PAA",
+  "Android 11 running on Galaxy S10+ with Exynos 9820 with PAA",
+  "Android 11 running on Galaxy S10+ with Exynos 9820 without PAA",
+  "Android 11 running on Galaxy S10+ with Snapdragon 855 with PAA",
+  "Android 11 running on Galaxy S10+ with Snapdragon 855 without PAA",
+  "Android 11 running on Galaxy S20+ 5G with Exynos 990 with PAA",
+  "Android 11 running on Galaxy S20+ 5G with Exynos 990 without PAA",
+  "Android 11 running on Galaxy S20+ 5G with Snapdragon 865 with PAA",
+  "Android 11 running on Galaxy S20+ 5G with Snapdragon 865 without PAA",
+  "Android 11 running on Galaxy S21+ with Exynos 2100 with PAA",
+  "Android 11 running on Galaxy S21+ with Exynos 2100 without PAA",
+  "Android 11 running on Galaxy S21+ with Snapdragon 888 with PAA",
+  "Android 11 running on Galaxy S21+ with Snapdragon 888 without PAA",
+  "Android 11 running on Galaxy Tab Active3 with Exynos 9810 with PAA",
+  "Android 11 running on Galaxy Tab Active3 with Exynos 9810 without PAA",
+  "Android 11 running on Galaxy Xcover Pro with Exynos 9611 with PAA",
+  "Android 11 running on Galaxy Xcover Pro with Exynos 9611 without PAA",
+  "Wear OS 3 running on Galaxy Watch 4 with Exynos 5515 with PAA",
+  "Wear OS 3 running on Galaxy Watch 4 with Exynos 5515 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.5",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A907",
+   "cavp_id": "33506",
+   "cavp_ref": "A:907"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A907",
+   "cavp_id": "33506",
+   "cavp_ref": "A:907"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A907",
+   "cavp_id": "33506",
+   "cavp_ref": "A:907"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A907",
+   "cavp_id": "33506",
+   "cavp_ref": "A:907"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A907",
+   "cavp_id": "33506",
+   "cavp_ref": "A:907"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A907; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A907",
+   "cavp_id": "33506",
+   "cavp_ref": "A:907"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A907",
+   "cavp_id": "33506",
+   "cavp_ref": "A:907"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A907",
+   "cavp_id": "33506",
+   "cavp_ref": "A:907"
+  }
+ ],
+ "vendor": "Samsung Electronic Co. Ltd.",
+ "vendor_info": {
+  "name": "Samsung Electronic Co. Ltd.",
+  "website": "http://www.samsung.com",
+  "address": [
+   "416 Maetan-3dong, Yeongtong-gu",
+   "Suwon-si, Geyeonggi-do 443-742",
+   "South Korea"
+  ],
+  "contacts": [
+   {
+    "name": "Brian Wood"
+   },
+   {
+    "name": "Jung Ha Paik"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3900.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202021_030521_0757_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/19/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "1/14/2022",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "4/19/2021",
+ "last_updated": "1/14/2022",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3900.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3900,
+  "vendor": "Samsung Electronic Co. Ltd.",
+  "module": "Samsung BoringSSL Android",
+  "type": "Software",
+  "validation_dates": [
+   "04/19/2021",
+   "01/14/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

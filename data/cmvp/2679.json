@@ -1,0 +1,143 @@
+{
+ "cert": 2679,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2679",
+ "module": "MultiApp V31 Platform",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys.",
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "The MultiApp ID smart cards are fully compliant with two major industry standards: Sun's Javacard 2.2.1 and Global Platform (GP) Card Specification version 2.1.1. They are therefore Java-GP cards, capable of managing applets in a controlled and secure manner in this multi-applet environment. This platform is delivered with a set of applet already loaded loaded in ROM and that can be installed if proper ordering options have been set.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "NXP P60D080P VC (MPH132), NXP P60D144P VA (MPH149)",
+ "firmware_versions": "MultiApp V31 patch 1.4, Demonstration Applet version V1.3",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3543",
+   "cavp_id": "22485",
+   "cavp_ref": "AES:3543"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 597",
+   "cavp_id": "29449",
+   "cavp_ref": "Component:597"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 900",
+   "cavp_id": "28423",
+   "cavp_ref": "DRBG:900"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 721",
+   "cavp_id": "6107",
+   "cavp_ref": "ECDSA:721"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 85",
+   "cavp_id": "17276",
+   "cavp_ref": "KDF:85"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1822",
+   "cavp_id": "3821",
+   "cavp_ref": "RSA:1822"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1823",
+   "cavp_id": "18896",
+   "cavp_ref": "RSA:1823"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2921",
+   "cavp_id": "12672",
+   "cavp_ref": "SHS:2921"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1984",
+   "cavp_id": "19532",
+   "cavp_ref": "TDES:1984"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1984, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Gemalto SA",
+ "vendor_info": {
+  "name": "Gemalto SA",
+  "website": "http://www.gemalto.com",
+  "address": [
+   "6, rue de la Verrerie - CS 20001",
+   "Meudon Cedex 92197",
+   "France"
+  ],
+  "contacts": [
+   {
+    "name": "Gilles ROMME"
+   },
+   {
+    "name": "Guennole Tripotin"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2679.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/15/2016",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "7/15/2016",
+ "last_updated": "7/15/2016",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2679.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); Triple-DES (Cert. #1984, key wrapping; key establishment methodology provides 112 bits of encryption strength); AES (Cert. #3543, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2679,
+  "vendor": "Gemalto SA",
+  "module": "MultiApp V31 Platform",
+  "type": "Hardware",
+  "validation_dates": [
+   "07/15/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

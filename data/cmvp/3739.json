@@ -1,0 +1,104 @@
+{
+ "cert": 3739,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3739",
+ "module": "AWS Nitro Card Security Engine",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The AWS Nitro Card Security Engine is a multi-chip standalone firmware-hybrid module. The Approved cryptographic services provided by the module are: - Data encryption / decryption utilizing symmetric ciphers, i.e. AES algorithms. - Computation of hash values, i.e. SHA-256, SHA-512. - Message authentication utilizing HMAC-SHA256, HMAC-SHA512, hashing algorithms.",
+ "tested_configurations": [
+  "Carbon Linux (Linux kernel 4.9.32) running on Cortex ARMv8 with AL5+"
+ ],
+ "hardware_versions": "AL5+",
+ "firmware_versions": "HAL-rel-3.2-uemu-fips",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C997",
+   "cavp_id": "31394",
+   "cavp_ref": "C:997"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2168",
+   "cavp_id": "33337",
+   "cavp_ref": "C:2168"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C997",
+   "cavp_id": "31394",
+   "cavp_ref": "C:997"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "https://aws.amazon.com",
+  "address": [
+   "410 Terry Ave N",
+   "Ste 1200",
+   "Seattle, WA 98109-5210",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Taeil Um"
+   },
+   {
+    "name": "Benita Bose"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3739.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202020_021120_0702_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/29/2020",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "10/29/2020",
+ "last_updated": "10/29/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3739.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 3739,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "AWS Nitro Card Security Engine",
+  "type": "Firmware-Hybrid",
+  "validation_dates": [
+   "10/29/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

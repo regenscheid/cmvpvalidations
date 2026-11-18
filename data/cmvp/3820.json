@@ -1,0 +1,184 @@
+{
+ "cert": 3820,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3820",
+ "module": "RSA BSAFE® Crypto-J JSAFE and JCE Software Module 6.2.5",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "RSA BSAFE Crypto-J security software is designed to help protect sensitive data as it is stored using strong encryption techniques to provide a persistent level of protection. It supports a wide range of industry standard encryption algorithms offering Java developers the flexibility to choose the option most appropriate to meet their requirements.",
+ "tested_configurations": [
+  "Google(TM) ART(TM) 8.0 on Google(TM) Android 8.0 ARM(R) v8 (64 bit) running on Samsung S9(TM) with a Qualcomm(R) Snapdragon(TM) 845 processor",
+  "OpenJDK 8.0 on CentOS 7.6 (64-bit) running on Dell PowerEdge(TM) R710 with an Intel Xeon(R) E5 processor (single-user mode)",
+  "Oracle(R) JRE 8.0 on Microsoft(R) Windows(R) Server 2016 (64-bit) running on Dell(TM) PowerEdge(TM) T130 with an Intel(R) Xeon(TM) E3 processor"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #C662 and #C1762, key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #C662 and #C1762, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; RSA (CVL Cert. #C662, key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "6.2.5",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1762",
+   "cavp_id": "32647",
+   "cavp_ref": "C:1762"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C662; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C662",
+   "cavp_id": "31058",
+   "cavp_ref": "C:662"
+  }
+ ],
+ "vendor": "Dell Inc. BSAFE Team",
+ "vendor_info": {
+  "name": "Dell Inc. BSAFE Team",
+  "website": "http://www.rsa.com",
+  "address": [
+   "345 Queen Street, Level 10 & 11",
+   "Brisbane, Queensland 4000",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "BSAFE FIPS Program"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3820.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202021_010321_1145_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/17/2021",
+   "type": "Initial",
+   "lab": "Gossamer Security Solutions"
+  },
+  {
+   "date": "2/24/2021",
+   "type": "Update",
+   "lab": "Gossamer Security Solutions"
+  }
+ ],
+ "first_validated": "2/17/2021",
+ "last_updated": "2/24/2021",
+ "labs": "Gossamer Security Solutions",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3820.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4646"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #C662 and #C1762, key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #C662 and #C1762, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; RSA (CVL Cert. #C662, key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3820,
+  "vendor": "Dell Inc. BSAFE Team",
+  "module": "RSA BSAFE® Crypto-J JSAFE and JCE Software Module 6.2.5",
+  "type": "Software",
+  "validation_dates": [
+   "02/17/2021",
+   "02/24/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,148 @@
+{
+ "cert": 3158,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3158",
+ "module": "Gallagher OpenSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2398",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Gallagher creates and delivers integrated security solutions to meet varying needs, from basic access control right through to high security alarm systems. The Gallagher OpenSSL Cryptographic Module provides cryptographic services for a range of Gallagher products.",
+ "tested_configurations": [
+  "Linux 4.9 running on ARM926EJ-S (ARMv5TEJ) (gcc Compiler Version 7.2.0) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #1712, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.12",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5206",
+   "cavp_id": "27971",
+   "cavp_ref": "AES:5206"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1712",
+   "cavp_id": "7064",
+   "cavp_ref": "Component:1712"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1978",
+   "cavp_id": "8360",
+   "cavp_ref": "DRBG:1978"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1348",
+   "cavp_id": "1697",
+   "cavp_ref": "DSA:1348"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1349",
+   "cavp_id": "17381",
+   "cavp_ref": "ECDSA:1349"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3448",
+   "cavp_id": "25464",
+   "cavp_ref": "HMAC:3448"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2788",
+   "cavp_id": "8374",
+   "cavp_ref": "RSA:2788"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4196",
+   "cavp_id": "7517",
+   "cavp_ref": "SHS:4196"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2640",
+   "cavp_id": "194",
+   "cavp_ref": "TDES:2640"
+  }
+ ],
+ "vendor": "Gallagher Group",
+ "vendor_info": {
+  "name": "Gallagher Group",
+  "website": "http://www.gallagher.com",
+  "address": [
+   "181 Kahikatea Drive",
+   "Hamilton 3206",
+   "New Zealand"
+  ],
+  "contacts": [
+   {
+    "name": "Andrew Scothern"
+   },
+   {
+    "name": "Simon Lawrence"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3158.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/25/2018",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "4/23/2020",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/25/2018",
+ "last_updated": "4/23/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3158.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #1712, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3158,
+  "vendor": "Gallagher Group",
+  "module": "Gallagher OpenSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/25/2018",
+   "04/23/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

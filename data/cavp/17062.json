@@ -1,0 +1,38 @@
+{
+ "cavp_id": "17062",
+ "cavp_cert": "AES 1233",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17062",
+ "implementation": "SEE 2093 Module",
+ "product_id": "7392",
+ "description": "The SEE 2093 Module is a cryptographic accelerator that implements the AES cryptographic algorithm operating at 10Gbps. This module provides encryption functionality for SafeNet Model 650 Ethernet Encryption systems.",
+ "version": "F2093.V1.1.57 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/24/2009",
+ "vendor": "SafeNet Canada, Inc.",
+ "vendor_website": "http://www.safenet-inc.com",
+ "oes": [
+  {
+   "name": "Xilinx XC4VLX100",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,92 @@
+{
+ "cavp_id": "10440",
+ "cavp_cert": "AES 5428",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10440",
+ "implementation": "TI SimpleLink WiFi MCU HW Crypto Engines Module",
+ "product_id": "9501",
+ "description": "The TI SimpleLink Wi-Fi Family brings highly secured connectivity solutions for embedded Wi-Fi and Internet of Things applications. It consists of a Wi-Fi network and security processor subsystem, a Wi-Fi driver, multiple internet protocols in ROM and ARM Cortex-M4 application microcontroller with a rich set of peripherals.",
+ "version": "0x311001",
+ "type": "HARDWARE",
+ "first_validated": "5/10/2018",
+ "vendor": "Texas Instruments, Inc.",
+ "vendor_website": "http://www.ti.com",
+ "oes": [
+  {
+   "name": "TI SimpleLink WiFi MCU HW Crypto Engines Module",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 88, 104",
+    "Payload Length: 8-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 360, 512",
+    "AAD Length: 0, 120, 128, 360, 512"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128, 360, 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

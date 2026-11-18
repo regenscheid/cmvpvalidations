@@ -1,0 +1,151 @@
+{
+ "cert": 3320,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3320",
+ "module": "Splunk Phantom Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Splunk Phantom Cryptographic Module is a statically linked object module, providing cryptographic functionality to Splunk’s Phantom series of applications. Phantom solutions provide security automation and orchestration functionality.",
+ "tested_configurations": [
+  "CentOS 6 running on a Dell PowerEdge 440 (Intel Xeon Silver ) with PAA",
+  "CentOS 6 running on a Dell PowerEdge 440 (Intel Xeon Silver) without PAA (single-user mode)",
+  "Red Hat Enterprise Linux Server 7.4 running on a Dell PowerEdge 440 (Intel Xeon Silver) with PAA",
+  "Red Hat Enterprise Linux Server 7.4 running on a Dell PowerEdge 440 (Intel Xeon Silver) without PAA"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5441",
+   "cavp_id": "29019",
+   "cavp_ref": "AES:5441"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5442",
+   "cavp_id": "10338",
+   "cavp_ref": "AES:5442"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1883",
+   "cavp_id": "25995",
+   "cavp_ref": "Component:1883"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2125",
+   "cavp_id": "15513",
+   "cavp_ref": "DRBG:2125"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1399",
+   "cavp_id": "27004",
+   "cavp_ref": "DSA:1399"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1446",
+   "cavp_id": "24573",
+   "cavp_ref": "ECDSA:1446"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3599",
+   "cavp_id": "23651",
+   "cavp_ref": "HMAC:3599"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2917",
+   "cavp_id": "14207",
+   "cavp_ref": "RSA:2917"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4361",
+   "cavp_id": "25313",
+   "cavp_ref": "SHS:4361"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2734",
+   "cavp_id": "2548",
+   "cavp_ref": "TDES:2734"
+  }
+ ],
+ "vendor": "Splunk, Inc.",
+ "vendor_info": {
+  "name": "Splunk, Inc.",
+  "website": "http://www.splunk.com",
+  "address": [
+   "270 Brannan Street",
+   "San Francisco, CA 94107",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Robert Truesdell"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3320.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Consolidated-Nov2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/6/2018",
+   "type": "Initial",
+   "lab": "BOOZ ALLEN HAMILTON"
+  }
+ ],
+ "first_validated": "11/6/2018",
+ "last_updated": "11/6/2018",
+ "labs": "BOOZ ALLEN HAMILTON",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3320.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3320,
+  "vendor": "Splunk, Inc.",
+  "module": "Splunk Phantom Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "11/06/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

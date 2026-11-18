@@ -1,0 +1,60 @@
+{
+ "cavp_id": "12432",
+ "cavp_cert": "AES 1364",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12432",
+ "implementation": "HP NSVLE Kernel Module AES",
+ "product_id": "7621",
+ "description": "AES CBC 256 bit encryption/decryption functionality for the HP NonStop Storage Cluster IO Module (CLIM).",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2010",
+ "vendor": "Hewlett–Packard Development Company, L.P.",
+ "vendor_website": "http://www.hp.com",
+ "oes": [
+  {
+   "name": "Debian Linux HPTE Version 3.0.0 on AMD Opteron",
+   "details": []
+  },
+  {
+   "name": "Debian Linux HPTE Version 4.0.0 on Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

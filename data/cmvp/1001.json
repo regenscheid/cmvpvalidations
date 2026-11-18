@@ -1,0 +1,155 @@
+{
+ "cert": 1001,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1001",
+ "module": "Microsoft Windows Vista Cryptographic Primitives Library (bcrypt.dll)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Code Integrity (ci.dll) validated to FIPS 140-2 under Cert. #980 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "BCRYPT.DLL provides cryptographic services, through its documented interfaces, to Windows Vista components and applications running on Windows Vista. The cryptographic module, BCRYPT.DLL, encapsulates several different cryptographic algorithms in an easy-to-use cryptographic module accessible via the Microsoft CNG (Cryptography, Next Generation) API. It can be dynamically linked into applications by software developers to permit the use of general-purpose FIPS 140-2 compliant cryptography.",
+ "tested_configurations": [
+  "Microsoft Windows Vista Ultimate Edition SP1 (x64 version) (single-user mode)",
+  "Microsoft Windows Vista Ultimate Edition SP1 (x86 Version)"
+ ],
+ "software_versions": "6.0.6001.22202, 6.0.6002.18005 and 6.0.6002.22872",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 739",
+   "cavp_id": "16244",
+   "cavp_ref": "AES:739"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 756",
+   "cavp_id": "6687",
+   "cavp_ref": "AES:756"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 283",
+   "cavp_id": "17895",
+   "cavp_ref": "DSA:283"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 82",
+   "cavp_id": "8890",
+   "cavp_ref": "ECDSA:82"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 412",
+   "cavp_id": "29615",
+   "cavp_ref": "HMAC:412"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 435",
+   "cavp_id": "12220",
+   "cavp_ref": "RNG:435",
+   "note": "SP 800-90  vendor affirmed"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 353",
+   "cavp_id": "198",
+   "cavp_ref": "RSA:353"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 357",
+   "cavp_id": "8287",
+   "cavp_ref": "RSA:357"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 753",
+   "cavp_id": "19283",
+   "cavp_ref": "SHS:753"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 656",
+   "cavp_id": "13627",
+   "cavp_ref": "TDES:656"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dave Friant"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1001.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1001.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/15/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "7/24/2009",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "9/6/2012",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "8/15/2008",
+ "last_updated": "9/6/2012",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1001.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (GCM and GMAC; non-compliant); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD2; MD4; MD5; RC2; RC4; RNG (SP 800-90 Dual-EC; non-compliant); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant provides less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1001,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Windows Vista Cryptographic Primitives Library (bcrypt.dll)",
+  "type": "Software",
+  "validation_dates": [
+   "08/15/2008",
+   "07/24/2009",
+   "09/06/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

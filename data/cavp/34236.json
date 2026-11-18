@@ -1,0 +1,82 @@
+{
+ "cavp_id": "34236",
+ "cavp_cert": "A1627",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34236",
+ "implementation": "NSS (64 bit) (AESNI_KW)",
+ "product_id": "14140",
+ "description": "User space library providing general cryptographic services used by the NSS cryptographic library. The module was tested with 64 bit word size. The following cipher implementation is covered: KW block mode using Intel AES-NI AES implementation.",
+ "version": "R8-8.4.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/29/2021",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 8.4 on AMD AMD EPYC(TM) 7001 Series EPYC 7551",
+   "details": [
+    "processor: EPYC 7551",
+    "  Processor EPYC 7551 (processor family X86) from AMD",
+    "  family: X86",
+    "  manufacturer: AMD",
+    "  series: AMD EPYC(TM) 7001 Series",
+    "software: Oracle Linux 8.4",
+    "  Linux distribution developed by Oracle"
+   ]
+  },
+  {
+   "name": "Oracle Linux 8.4 on Intel Skylake Xeon Platinum 8167M",
+   "details": [
+    "software: Oracle Linux 8.4",
+    "  Linux distribution developed by Oracle",
+    "processor: Xeon Platinum 8167M",
+    "  Processor Xeon Platinum 8167M (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Skylake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-4096 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-4096 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

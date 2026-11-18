@@ -1,0 +1,43 @@
+{
+ "cavp_id": "34167",
+ "cavp_cert": "A1558",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34167",
+ "implementation": "Quadient VPSD KAS",
+ "product_id": "13954",
+ "description": "Calculate encrypting key material based on SP800-56A soecification.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "6/17/2021",
+ "vendor": "Quadient, Inc",
+ "vendor_website": "http://www.quadient.com",
+ "oes": [
+  {
+   "name": "IBM-4767",
+   "details": [
+    "cpu: IBM-4767"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-521",
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  staticUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "            MAC Salting Methods: default",
+    "        Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

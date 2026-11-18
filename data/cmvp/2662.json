@@ -1,0 +1,136 @@
+{
+ "cert": 2662,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2662",
+ "module": "LG Framework Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The protocol TLS shall not be used when operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The LG Framework Cryptographic Module is a software library that provides cryptographic functionality.",
+ "tested_configurations": [
+  "Android 5.0.1 running on an LG G Flex 2 (Model LGLS996) (single-user mode)",
+  "Android 5.0.1 running on an LG G3 (Model VS985)"
+ ],
+ "software_versions": "1.0.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3289",
+   "cavp_id": "10249",
+   "cavp_ref": "AES:3289"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 748",
+   "cavp_id": "11476",
+   "cavp_ref": "DRBG:748"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 943",
+   "cavp_id": "10595",
+   "cavp_ref": "DSA:943"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2087",
+   "cavp_id": "3082",
+   "cavp_ref": "HMAC:2087"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1683",
+   "cavp_id": "9929",
+   "cavp_ref": "RSA:1683"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2728",
+   "cavp_id": "10509",
+   "cavp_ref": "SHS:2728"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1874",
+   "cavp_id": "1689",
+   "cavp_ref": "TDES:1874"
+  }
+ ],
+ "vendor": "LG Electronics, Inc.",
+ "vendor_info": {
+  "name": "LG Electronics, Inc.",
+  "website": "http://www.lg.com",
+  "address": [
+   "20 Yoido-dong",
+   "Youngdungpo-gu",
+   "Seoul 152-721",
+   "Republic of Korea"
+  ],
+  "contacts": [
+   {
+    "name": "Adam Wick"
+   },
+   {
+    "name": "Jongseong Kim"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2662.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/17/2016",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "9/2/2016",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "6/17/2016",
+ "last_updated": "9/2/2016",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2662.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 192 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength); PRNG; ECDSA (non-compliant); TLS KDF (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2662,
+  "vendor": "LG Electronics, Inc.",
+  "module": "LG Framework Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "06/17/2016",
+   "09/02/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

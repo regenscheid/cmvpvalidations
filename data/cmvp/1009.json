@@ -1,0 +1,118 @@
+{
+ "cert": 1009,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1009",
+ "module": "Windows Server 2008 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Code Integrity (ci.dll) validated to FIPS 140-2 under Cert. #1006 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "DSSENH encapsulates several different cryptographic algorithms in an easy-to-use cryptographic module accessible via the Microsoft CryptoAPI. Software developers dynamically link the Microsoft DSSENH module into their applications to provide FIPS 140-2 compliant cryptographic support.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2008 (IA64 version) (single-user mode)",
+  "Microsoft Windows Server 2008 (x64 version)",
+  "Microsoft Windows Server 2008 (x86 Version)"
+ ],
+ "software_versions": "6.0.6001.18000 and 6.0.6002.18005",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 282",
+   "cavp_id": "5673",
+   "cavp_ref": "DSA:282"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 435",
+   "cavp_id": "12220",
+   "cavp_ref": "RNG:435"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 753",
+   "cavp_id": "19283",
+   "cavp_ref": "SHS:753"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 656",
+   "cavp_id": "13627",
+   "cavp_ref": "TDES:656"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #656, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dave Friant"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1009.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1009.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/15/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "7/24/2009",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "8/15/2008",
+ "last_updated": "7/24/2009",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1009.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; DES MAC; DES40; DES40 MAC; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; RC2; RC2 MAC; RC4"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1009,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows Server 2008 Enhanced DSS and Diffie-Hellman Cryptographic Provider (DSSENH)",
+  "type": "Software",
+  "validation_dates": [
+   "08/15/2008",
+   "07/24/2009"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

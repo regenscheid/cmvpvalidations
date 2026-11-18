@@ -1,0 +1,52 @@
+{
+ "cavp_id": "30748",
+ "cavp_cert": "C352",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30748",
+ "implementation": "Samsung Flash Memory Protector",
+ "product_id": "10712",
+ "description": "On-the-fly hardware encryption module to flash memory for Disk/File Encryption solution.",
+ "version": "5.0",
+ "type": "HARDWARE",
+ "first_validated": "2/19/2019",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Samsung Exynos 9820",
+   "details": [
+    "processor: Samsung Exynos 9820"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 1024, 4096",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 1024, 4096",
+    "Tweak Mode: Number"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

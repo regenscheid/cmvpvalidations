@@ -1,0 +1,45 @@
+{
+ "cavp_id": "31224",
+ "cavp_cert": "C828",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31224",
+ "implementation": "N3FIPS-KAS",
+ "product_id": "11182",
+ "description": "This uses OpenSSL-1.1.1's EC implementation to support key agreement scheme.",
+ "version": "CNN35XX-NFBE-FW-3.4-01",
+ "type": "FIRMWARE",
+ "first_validated": "6/20/2019",
+ "vendor": "Marvell",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation, Key Pair Generation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF without Key Confirmation:",
+    "      KDF Option:",
+    "        Concatenation:",
+    "      Parameter Set:",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521",
+    "          MAC Option:",
+    "            HMAC-SHA2-512:",
+    "              Key Length: 256",
+    "              MAC Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

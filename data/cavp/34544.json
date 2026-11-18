@@ -1,0 +1,53 @@
+{
+ "cavp_id": "34544",
+ "cavp_cert": "A1935",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34544",
+ "implementation": "N3FIPS-KAS-RSA",
+ "product_id": "14419",
+ "description": "This implements basic key agreement schemes based on SP800-56B.",
+ "version": "1.0.0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "9/14/2021",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen, partialVal",
+    "Modulo: 2048, 3072, 4096",
+    "Key Generation Methods: rsakpg1-crt",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KAS1-basic:",
+    "    KAS Role: initiator, responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-512",
+    "        Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: concatenation",
+    "    Key Length: 512",
+    "  KAS2-basic:",
+    "    KAS Role: initiator, responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-512",
+    "        Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: concatenation",
+    "    Key Length: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,207 @@
+{
+ "cert": 2676,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2676",
+ "module": "Cohesity FIPS Object Module for OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2398",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cohesity FIPS Object Module for OpenSSL is a general purpose cryptographic module compiled from the source code for the OpenSSL FIPS Object Module. It is incorporated into the CS2000 family of Cohesity Storage Systems.",
+ "tested_configurations": [
+  "CentOS 7.2 running on a Cohesity CS2500 (single-user mode)"
+ ],
+ "software_versions": "1.0.1 [1] and 1.0.2 [2]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3967",
+   "cavp_id": "23114",
+   "cavp_ref": "AES:3967"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5426",
+   "cavp_id": "26868",
+   "cavp_ref": "AES:5426"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 796",
+   "cavp_id": "1916",
+   "cavp_ref": "Component:796"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1876",
+   "cavp_id": "27872",
+   "cavp_ref": "Component:1876"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1162",
+   "cavp_id": "6475",
+   "cavp_ref": "DRBG:1162"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2117",
+   "cavp_id": "710",
+   "cavp_ref": "DRBG:2117"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1081",
+   "cavp_id": "24350",
+   "cavp_ref": "DSA:1081"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1395",
+   "cavp_id": "20987",
+   "cavp_ref": "DSA:1395"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 873",
+   "cavp_id": "17605",
+   "cavp_ref": "ECDSA:873"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1442",
+   "cavp_id": "18550",
+   "cavp_ref": "ECDSA:1442"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2585",
+   "cavp_id": "19958",
+   "cavp_ref": "HMAC:2585"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3591",
+   "cavp_id": "20054",
+   "cavp_ref": "HMAC:3591"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2027",
+   "cavp_id": "24737",
+   "cavp_ref": "RSA:2027"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2906",
+   "cavp_id": "29343",
+   "cavp_ref": "RSA:2906"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3271",
+   "cavp_id": "14088",
+   "cavp_ref": "SHS:3271"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4353",
+   "cavp_id": "16263",
+   "cavp_ref": "SHS:4353"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2176",
+   "cavp_id": "1074",
+   "cavp_ref": "TDES:2176"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2724",
+   "cavp_id": "17232",
+   "cavp_ref": "TDES:2724"
+  }
+ ],
+ "vendor": "Cohesity, Inc.",
+ "vendor_info": {
+  "name": "Cohesity, Inc.",
+  "website": "http://www.cohesity.com",
+  "address": [
+   "300 Park Ave.",
+   "Suite 1700",
+   "San Jose, CA 95110",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Lintu Thomas"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2676.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/11/2016",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "10/12/2018",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "11/8/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "7/11/2016",
+ "last_updated": "11/8/2019",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2676.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "EC Diffie-Hellman; RSA (encrypt/decrypt)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2676,
+  "vendor": "Cohesity, Inc.",
+  "module": "Cohesity FIPS Object Module for OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "07/11/2016",
+   "10/12/2018",
+   "11/08/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

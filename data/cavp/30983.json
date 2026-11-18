@@ -1,0 +1,42 @@
+{
+ "cavp_id": "30983",
+ "cavp_cert": "C587",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30983",
+ "implementation": "Security Data Path",
+ "product_id": "10946",
+ "description": "Hardware implementation of AES XTS",
+ "version": "Betarock A1, SDP v2.0 RTL rev 15 (tag betarock.sdp.design.15)",
+ "type": "FIRMWARE",
+ "first_validated": "3/28/2019",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "VCS hardware simulator",
+   "details": [
+    "processor: VCS hardware simulator"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4128, 4256",
+    "Tweak Mode: Hex"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

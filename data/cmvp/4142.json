@@ -1,0 +1,146 @@
+{
+ "cert": 4142,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4142",
+ "module": "Oracle Solaris Userland Cryptographic Framework",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Oracle Solaris Userland Cryptographic Framework module provides cryptographic functionality for any application that calls into it. The module provides encryption, decryption, hashing, secure random number generation, signature generation and verification, certificate generation and verification, message authentication functions, and key pair generation for RSA and DSA. The module can leverage the algorithm acceleration from SPARC and x86 processors when available.",
+ "tested_configurations": [
+  "Oracle Solaris 11.4 running on Oracle SPARC T8 Server with a SPARC M8 with PAA",
+  "Oracle Solaris 11.4 running on Oracle SPARC T8 Server with a SPARC M8 without PAA",
+  "Oracle Solaris 11.4 running on Oracle ZS7-2 Server with an Intel® Xeon® Gold 6100 with PAA",
+  "Oracle Solaris 11.4 running on Oracle ZS7-2 Server with an Intel® Xeon® Gold 6100 without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "1.4",
+ "product_url": "http://www.oracle.com/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1914",
+   "cavp_id": "32818",
+   "cavp_ref": "C:1914"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Chris Brych"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4142.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202022_010322_0121_Signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/2/2022",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "2/2/2022",
+ "last_updated": "2/2/2022",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4142.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4142,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Solaris Userland Cryptographic Framework",
+  "type": "Software",
+  "validation_dates": [
+   "02/02/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

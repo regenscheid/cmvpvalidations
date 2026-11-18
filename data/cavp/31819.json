@@ -1,0 +1,75 @@
+{
+ "cavp_id": "31819",
+ "cavp_cert": "C1388",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31819",
+ "implementation": "Red Hat NSS Softoken (64 bit, AES-NI with generic GCM)",
+ "product_id": "11780",
+ "description": "User space library providing general cryptographic services used by the NSS cryptographic library. The module was tested with 64 bit word size.",
+ "version": "rhel7.20190606",
+ "type": "SOFTWARE",
+ "first_validated": "11/23/2019",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 7 on Intel(R) Xeon(R) E5",
+   "details": [
+    "processor: Intel Xeon(R) E5",
+    "  manufacturer: Intel",
+    "software: Red Hat Enterprise Linux 7"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128, 1024",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128, 1024",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

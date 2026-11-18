@@ -1,0 +1,113 @@
+{
+ "cert": 3593,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3593",
+ "module": "STOP 8 Kernel Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS Mode. When installed, initialized, and configured as specified in the Security Policy Sections 2.1.2 and 3.1. The output of the DRBG may not be used to generate keys.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The STOP 8 Kernel Cryptographic Module is a statically linked library that is linked into the monolithic kernel. The module provides the cryptographic functionality required by the kernel to perform data protection functionality of the STOP 8's encrypted filesystem.",
+ "tested_configurations": [
+  "BAE System STOP 8 Operating System running on BAE XTS-600-W-T with an Intel Xeon E5-1650 (single-user mode)"
+ ],
+ "software_versions": "1.2.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5935",
+   "cavp_id": "16487",
+   "cavp_ref": "AES:5935"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2488",
+   "cavp_id": "12888",
+   "cavp_ref": "DRBG:2488"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3913",
+   "cavp_id": "28388",
+   "cavp_ref": "HMAC:3913"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4690",
+   "cavp_id": "2212",
+   "cavp_ref": "SHS:4690"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2892",
+   "cavp_id": "27025",
+   "cavp_ref": "TDES:2892"
+  }
+ ],
+ "vendor": "BAE Systems",
+ "vendor_info": {
+  "name": "BAE Systems",
+  "website": "http://www.baesystems.com",
+  "address": [
+   "11487 Sunset Hills Rd",
+   "Reston, VA 20190-5228",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "John Ata"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3593.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Jan2020ConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/7/2020",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "1/7/2020",
+ "last_updated": "1/7/2020",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3593.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 3593,
+  "vendor": "BAE Systems",
+  "module": "STOP 8 Kernel Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/07/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

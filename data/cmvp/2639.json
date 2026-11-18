@@ -1,0 +1,159 @@
+{
+ "cert": 2639,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2639",
+ "module": "MiniHSM, MiniHSM for nShield Edge F3, and MiniHSM for Time Stamp Master Clock",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode and initialized to Overall Level 3 per Security Policy. The protocol TLS shall not be used when operated in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The MiniHSM, MiniHSM for nShield Edge F3 and MiniHSM for Time Stamp Master Clock are fully featured HSMs supplied in a single chip package. The MiniHSM Modules offer all the security and key management features of other nShield modules - but with reduced processing speed. The MiniHSM modules are OEM parts and will be included within other appliances or products, for example switches or routers. The MiniHSM modules have a real time clock which also makes them suitable for use as a time-stamping engine.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "nC4031Z-10, nC4031U-10 and TSMC200, Build Standard N",
+ "firmware_versions": "2.61.1-3",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3419",
+   "cavp_id": "12878",
+   "cavp_ref": "AES:3419"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 515",
+   "cavp_id": "26300",
+   "cavp_ref": "Component:515"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 824",
+   "cavp_id": "27319",
+   "cavp_ref": "DRBG:824"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 963",
+   "cavp_id": "23410",
+   "cavp_ref": "DSA:963"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 686",
+   "cavp_id": "13193",
+   "cavp_ref": "ECDSA:686"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2177",
+   "cavp_id": "17708",
+   "cavp_ref": "HMAC:2177"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 57",
+   "cavp_id": "14422",
+   "cavp_ref": "KDF:57"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3419; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1751",
+   "cavp_id": "12753",
+   "cavp_ref": "RSA:1751"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2825",
+   "cavp_id": "7795",
+   "cavp_ref": "SHS:2825"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1930",
+   "cavp_id": "21083",
+   "cavp_ref": "TDES:1930"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1930, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "nCipher Security Limited",
+ "vendor_info": {
+  "name": "nCipher Security Limited",
+  "website": "http://www.thales-esecurity.com",
+  "address": [
+   "One Station Square",
+   "Cambridge CB1 2GA",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "[email protected]"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2639.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMay2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/13/2016",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "6/3/2019",
+   "type": "Update",
+   "lab": "DXC Technology"
+  }
+ ],
+ "first_validated": "5/13/2016",
+ "last_updated": "6/3/2019",
+ "labs": "DXC Technology",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2639.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-131A transition which disallows key wrapping not compliant to SP 800-38F.",
+  "Other Algorithms": "ARC4; Aria; Camellia; CAST-256; DES; Diffie-Hellman (CVL Cert. #515, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #515, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); ECMQV (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); El-Gamal; HAS-160; HMAC-MD5; HMAC-RIPEMD160; HMAC-Tiger; KCDSA; MD5; NDRNG; RIPEMD-160; RSA (encrypt/decrypt); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); SEED; Tiger; TLS KDF (non-compliant); Triple-DES (Cert. #1930, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2639,
+  "vendor": "nCipher Security Limited",
+  "module": "MiniHSM, MiniHSM for nShield Edge F3, and MiniHSM for Time Stamp Master Clock",
+  "type": "Hardware",
+  "validation_dates": [
+   "05/13/2016",
+   "06/03/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

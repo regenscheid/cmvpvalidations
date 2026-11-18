@@ -1,0 +1,52 @@
+{
+ "cavp_id": "10555",
+ "cavp_cert": "RSA 430",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10555",
+ "implementation": "Z8D168 Cryptographic Library V1.0",
+ "product_id": "2406",
+ "description": "Z8D168 Cryptographic Library based on Nationz Z8D168 SmartCard IC is a single-chip firmware module providing RSA, TDES, AES, RNG cryptographic service for government and corporate identification, payment, banking and Web applications etc.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/16/2008",
+ "vendor": "Nationz Technologies Inc.",
+ "vendor_website": "http://www.nationz.com.cn",
+ "oes": [
+  {
+   "name": "Zi8051-Secure Core",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

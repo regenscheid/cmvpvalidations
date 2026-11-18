@@ -1,0 +1,60 @@
+{
+ "cavp_id": "31557",
+ "cavp_cert": "C1160",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31557",
+ "implementation": "PrivateServer-OpenSSL",
+ "product_id": "11513",
+ "description": "PrivateServer performs sensitive cryptographic operations internally in a tamper-proof, high performance device. PrivateServer is configured as a network server or as a cryptographic backend to a host.",
+ "version": "5.0.4",
+ "type": "FIRMWARE",
+ "first_validated": "9/26/2019",
+ "vendor": "DocuSign, Inc.",
+ "vendor_website": "http://www.docusign.com",
+ "oes": [
+  {
+   "name": "Intel® Xeon Quad-Core",
+   "details": [
+    "processor: Intel Xeon Quad-Core",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "C1160 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.2",
+    "Hash Algorithm: SHA2-256",
+    "C1160 (SHS)",
+    "C1160 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,48 @@
+{
+ "cavp_id": "17413",
+ "cavp_cert": "AES 5944",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17413",
+ "implementation": "TcgCryptoLib",
+ "product_id": "10338",
+ "description": "Cryptographic library support for encryption and decryption features on Western Digital's Self-Encrypting Drives (SEDs).",
+ "version": "SOCFWLIB-0021 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/9/2018",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.wdc.com",
+ "oes": [
+  {
+   "name": "Avago, ARM Cortex R5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 576, 576, 576"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,150 @@
+{
+ "cert": 3388,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3388",
+ "module": "Octopus Authentication Server Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #1747.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Octopus Authentication Server manages the authentication requests coming from the service provider and the connection to the application on the mobile device to get the user approval.",
+ "tested_configurations": [
+  "Ubuntu 13.04 running on AM335x Cortex-A8 (ARMv7) with PAA (gcc Compiler Version 4.7.3)",
+  "Ubuntu 13.04 running on AM335x Cortex-A8 (ARMv7) without PAA (gcc Compiler Version 4.7.3) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength)",
+ "software_versions": "2.0.5",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2484",
+   "cavp_id": "27363",
+   "cavp_ref": "AES:2484"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 85",
+   "cavp_id": "13447",
+   "cavp_ref": "Component:85"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 342",
+   "cavp_id": "6742",
+   "cavp_ref": "DRBG:342"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 764",
+   "cavp_id": "8150",
+   "cavp_ref": "DSA:764"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 413",
+   "cavp_id": "23972",
+   "cavp_ref": "ECDSA:413"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1526",
+   "cavp_id": "9280",
+   "cavp_ref": "HMAC:1526"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1273",
+   "cavp_id": "15008",
+   "cavp_ref": "RSA:1273"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2102",
+   "cavp_id": "7659",
+   "cavp_ref": "SHS:2102"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1522",
+   "cavp_id": "9708",
+   "cavp_ref": "TDES:1522"
+  }
+ ],
+ "vendor": "Secret Double Octopus Ltd.",
+ "vendor_info": {
+  "name": "Secret Double Octopus Ltd.",
+  "website": "https://doubleoctopus.com/",
+  "address": [
+   "Mixer House, 97 Rokach Blvd.",
+   "P.O. Box 53169",
+   "Tel Aviv 6153101",
+   "Isreal"
+  ],
+  "contacts": [
+   {
+    "name": "Shimrit Tzur-David"
+   },
+   {
+    "name": "Chen Tetelman"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3388.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedMarch2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/4/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "2/20/2021",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/4/2019",
+ "last_updated": "2/20/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3388.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 270 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3388,
+  "vendor": "Secret Double Octopus Ltd.",
+  "module": "Octopus Authentication Server Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/04/2019",
+   "02/20/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,53 @@
+{
+ "cavp_id": "10025",
+ "cavp_cert": "ECDSA 286",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10025",
+ "implementation": "appEcdsa",
+ "product_id": "134",
+ "description": "The Pitney Bowes Cygnus X-3 Hardware Security Module (HSM) employs strong cryptographic and physical security techniques for the protection of funds in Pitney Bowes Postage systems.",
+ "version": "02000003 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "4/9/2012",
+ "vendor": "Pitney Bowes, Inc.",
+ "vendor_website": "http://www.pb.com",
+ "oes": [
+  {
+   "name": "ARM 7 TDMI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-192, P-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-192",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192",
+    "    Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

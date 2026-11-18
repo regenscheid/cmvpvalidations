@@ -1,0 +1,40 @@
+{
+ "cavp_id": "34930",
+ "cavp_cert": "A2321",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34930",
+ "implementation": "F1 SBP TRNG Engine",
+ "product_id": "14820",
+ "description": "A ring oscillator based hardware engine providing True Random Number Generation",
+ "version": "1.0.0",
+ "type": "HARDWARE",
+ "first_validated": "2/9/2022",
+ "vendor": "Fungible Inc.",
+ "vendor_website": "http://www.fungible.com",
+ "oes": [
+  {
+   "name": "F1 SBP TRNG Engine",
+   "details": [
+    "Hardware: F1 SBP TRNG Engine"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "Conditioning Component AES-CBC-MAC SP800-90B",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Payload Length: 128-1920 Increment 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

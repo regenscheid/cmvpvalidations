@@ -1,0 +1,116 @@
+{
+ "cavp_id": "35914",
+ "cavp_cert": "A3304",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35914",
+ "implementation": "PacketLight Cryptographic Implementation",
+ "product_id": "10776",
+ "description": "Common software version controlling the PacketLight Networks Ltd. PL-2000M, PL-2000AD and PL-2000ADS products, providing the management interfaces, control and device drivers. The specified RTOS version and OpenSSL library are used as infrastructure.",
+ "version": "1.0.2n",
+ "type": "FIRMWARE",
+ "first_validated": "2/8/2023",
+ "vendor": "PacketLight Networks Ltd.",
+ "vendor_website": "http://www.packetlight.com",
+ "oes": [
+  {
+   "name": "MPC8314",
+   "details": [
+    "processor: MPC8314"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 224",
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 256",
+    "  Capabilities:",
+    "    L: 3072",
+    "    N: 256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: extra bits, testing candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-384",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FB, FC",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FB, FC",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-384",
+    "Fixed Info Pattern: algorithmId||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 384",
+    "Shared Secret Length: 384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

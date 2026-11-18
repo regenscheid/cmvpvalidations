@@ -1,0 +1,57 @@
+{
+ "cavp_id": "18900",
+ "cavp_cert": "AES 962",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18900",
+ "implementation": "AES Execution Unit (AESU) r2.1.5",
+ "product_id": "7544",
+ "description": "\"Freescale's AESU r2.1.5 is an algorithm specific accelerator for AES supporting the NIST modes and key Integrated Communications Processors and StarCore DSPs, including the MPC8548E, MPC8568E, MSC8144E, MPC8544E, MPC8349EA, MPC8360E, MPC8323E, and the MPC8313E.\" lengths listed above. This revision of the AESU is used in multiple versions of the SEC (Freescale's Embedded Security Acceleration Engine).",
+ "version": "",
+ "type": "UNKNOWN",
+ "first_validated": "12/18/2008",
+ "vendor": "NXP Semiconductor",
+ "vendor_website": "http://www.freescale.com",
+ "oes": [
+  {
+   "name": "Freescale Semiconductor MPC8548E",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 8-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

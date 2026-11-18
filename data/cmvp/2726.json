@@ -1,0 +1,142 @@
+{
+ "cert": 2726,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2726",
+ "module": "Xperia Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Xperia Cryptographic Module provides a functionality/service, intended to protect data in transit and at rest.",
+ "tested_configurations": [
+  "Android 5.0 running on Xperia Z4 tablet with ARMv8 Cryptographic Instruction",
+  "Android 5.0 running on Xperia Z4 tablet without ARMv8 Cryptographic Instruction (single-user mode)"
+ ],
+ "software_versions": "1.0.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3329",
+   "cavp_id": "17520",
+   "cavp_ref": "AES:3329"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 485",
+   "cavp_id": "13853",
+   "cavp_ref": "Component:485"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 774",
+   "cavp_id": "24098",
+   "cavp_ref": "DRBG:774"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 946",
+   "cavp_id": "28274",
+   "cavp_ref": "DSA:946"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 658",
+   "cavp_id": "7704",
+   "cavp_ref": "ECDSA:658"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2120",
+   "cavp_id": "7444",
+   "cavp_ref": "HMAC:2120"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1709",
+   "cavp_id": "25760",
+   "cavp_ref": "RSA:1709"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2762",
+   "cavp_id": "10522",
+   "cavp_ref": "SHS:2762"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1900",
+   "cavp_id": "12399",
+   "cavp_ref": "TDES:1900"
+  }
+ ],
+ "vendor": "Sony Mobile Communications, Inc.",
+ "vendor_info": {
+  "name": "Sony Mobile Communications, Inc.",
+  "website": "http://www.sonymobile.com/global-en/",
+  "address": [
+   "1-8-15 Kohnan",
+   "Minato-ku, Tokyo 108-0075",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Takuya Nishibayashi"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2726.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/29/2016",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "8/29/2016",
+ "last_updated": "8/29/2016",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2726.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "EC Diffie-Hellman (CVL Cert. #485, key agreement methodology provides between 112 and 256 bits of security strength; non-compliant less than 112 bits of encryption strength); DUAL EC DRBG; RSA (key wrapping methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2726,
+  "vendor": "Sony Mobile Communications, Inc.",
+  "module": "Xperia Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/29/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

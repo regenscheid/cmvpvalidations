@@ -1,0 +1,168 @@
+{
+ "cert": 3207,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3207",
+ "module": "SBC Software Edition Session Border Controller",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 2",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Sonus SBC Software Edition Session Border Controller (SBC SWe) is a software-based, cloud-optimized SBC architected to enable and secure real-time communications in the cloud. Starting at 25 sessions, and scaling to tens of thousands per instance, the unique architecture of the SBC SWe allows customers to define where on the performance curve their network needs to reside. The SBC SWe uses a \"microservices\" design to separate signaling, media, and transcoding to optimize virtual network resources. It also supports on-demand auto-scaling, with a feedback loop using Key Performance Indicator",
+ "tested_configurations": [
+  "HPE ProLiant DL380 Gen9 server with dual Intel Xeon processors running Sonus’s ConnexIP OS over a VMware ESXi 6.0 hypervisor"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1327, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "software_versions": "R5.1.2",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4685",
+   "cavp_id": "11199",
+   "cavp_ref": "AES:4685"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4686",
+   "cavp_id": "22830",
+   "cavp_ref": "AES:4686"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1327",
+   "cavp_id": "9278",
+   "cavp_ref": "Component:1327"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1380",
+   "cavp_id": "4258",
+   "cavp_ref": "Component:1380"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1588",
+   "cavp_id": "22689",
+   "cavp_ref": "DRBG:1588"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1202",
+   "cavp_id": "8764",
+   "cavp_ref": "ECDSA:1202"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3100",
+   "cavp_id": "16102",
+   "cavp_ref": "HMAC:3100"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3101",
+   "cavp_id": "19813",
+   "cavp_ref": "HMAC:3101"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2556",
+   "cavp_id": "17762",
+   "cavp_ref": "RSA:2556"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3835",
+   "cavp_id": "16256",
+   "cavp_ref": "SHS:3835"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3836",
+   "cavp_id": "19538",
+   "cavp_ref": "SHS:3836"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2490",
+   "cavp_id": "13389",
+   "cavp_ref": "TDES:2490"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2491",
+   "cavp_id": "13934",
+   "cavp_ref": "TDES:2491"
+  }
+ ],
+ "vendor": "Sonus Networks, Inc.",
+ "vendor_info": {
+  "name": "Sonus Networks, Inc.",
+  "website": "http://www.sonus.net",
+  "address": [
+   "4 Technology Park Drive",
+   "Westford, MA",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Adam Elshama"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3207.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JuneCertFinal.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/25/2018",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "6/25/2018",
+ "last_updated": "6/25/2018",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3207.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1327, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3207,
+  "vendor": "Sonus Networks, Inc.",
+  "module": "SBC Software Edition Session Border Controller",
+  "type": "Software",
+  "validation_dates": [
+   "06/25/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

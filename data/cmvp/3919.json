@@ -1,0 +1,251 @@
+{
+ "cert": 3919,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3919",
+ "module": "IBM® z/OS® Version 2 Release 4 System SSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with modules IBM(R) z/OS(R) Version 2 Release 4 Security Server RACF(R) Signature Verification Module validated to FIPS 140-2 under Cert. #2691 operating in FIPS mode and IBM(R) z/OS(R) Version 2 Release 4 ICSF PKCS #11 Cryptographic Module validated to FIPS 140-2 under Cert. #3909 operating in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "z/OS® System SSL provides a rich set of C based application programming interfaces that allow applications to protect data using the SSL/TLS protocols and through PKCS#7 cryptographic messages. z/OS System SSL also enables applications to create and manage X.509 V3 certificates and keys within key database files and PKCS#11 tokens.",
+ "tested_configurations": [
+  "IBM z/OS Version 2 Release 4 running on an IBM z14 with CP Assist for Cryptographic Functions",
+  "IBM z/OS Version 2 Release 4 running on an IBM z14 with CP Assist for Cryptographic Functions with CEX6A (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #C1635 and #C1637 with CVL Certs. #C1664 and #C1665, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1635 with CVL Certs. #C1664 and #C1665, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "hardware_versions": "COP chips integrated within processor unit",
+ "software_versions": "HCPT440/JCPT441 with APAR OA59268",
+ "firmware_versions": "Feature 3863 (aka FC3863) with System Driver Level 32L",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C79",
+   "cavp_id": "30474",
+   "cavp_ref": "C:79"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1635",
+   "cavp_id": "32273",
+   "cavp_ref": "C:1635"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1664",
+   "cavp_id": "32394",
+   "cavp_ref": "C:1664"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1665",
+   "cavp_id": "32395",
+   "cavp_ref": "C:1665"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1635",
+   "cavp_id": "32273",
+   "cavp_ref": "C:1635"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1637",
+   "cavp_id": "32275",
+   "cavp_ref": "C:1637"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1664",
+   "cavp_id": "32394",
+   "cavp_ref": "C:1664"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1665",
+   "cavp_id": "32395",
+   "cavp_ref": "C:1665"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1633",
+   "cavp_id": "32271",
+   "cavp_ref": "C:1633"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1664",
+   "cavp_id": "32394",
+   "cavp_ref": "C:1664"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1665",
+   "cavp_id": "32395",
+   "cavp_ref": "C:1665"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1635",
+   "cavp_id": "32273",
+   "cavp_ref": "C:1635"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1664",
+   "cavp_id": "32394",
+   "cavp_ref": "C:1664"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1665",
+   "cavp_id": "32395",
+   "cavp_ref": "C:1665"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1635; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1664 and #C1665 and HMAC Certs. #C1664 and #C1665; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Certs. #C1664 and #C1665 and HMAC Certs. #C1664 and #C1665; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1634",
+   "cavp_id": "32272",
+   "cavp_ref": "C:1634"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1635",
+   "cavp_id": "32273",
+   "cavp_ref": "C:1635"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1637",
+   "cavp_id": "32275",
+   "cavp_ref": "C:1637"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1664",
+   "cavp_id": "32394",
+   "cavp_ref": "C:1664"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1665",
+   "cavp_id": "32395",
+   "cavp_ref": "C:1665"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C79",
+   "cavp_id": "30474",
+   "cavp_ref": "C:79"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1664",
+   "cavp_id": "32394",
+   "cavp_ref": "C:1664"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1665",
+   "cavp_id": "32395",
+   "cavp_ref": "C:1665"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C79",
+   "cavp_id": "30474",
+   "cavp_ref": "C:79"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1664",
+   "cavp_id": "32394",
+   "cavp_ref": "C:1664"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1665",
+   "cavp_id": "32395",
+   "cavp_ref": "C:1665"
+  }
+ ],
+ "vendor": "IBM Corporation",
+ "vendor_info": {
+  "name": "IBM Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "2455 South Road",
+   "Poughkeepsie, NY 12601-5400",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "John Monti"
+   },
+   {
+    "name": "Alyson Comer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3919.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202021_010621_0658.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/3/2021",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "5/3/2021",
+ "last_updated": "5/3/2021",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3919.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #C1635 and #C1637 with CVL Certs. #C1664 and #C1665, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1635 with CVL Certs. #C1664 and #C1665, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3919,
+  "vendor": "IBM Corporation",
+  "module": "IBM® z/OS® Version 2 Release 4 System SSL Cryptographic Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "05/03/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

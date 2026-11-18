@@ -1,0 +1,38 @@
+{
+ "cavp_id": "24476",
+ "cavp_cert": "HMAC 3133",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24476",
+ "implementation": "Yubico FW HMAC",
+ "product_id": "8368",
+ "description": "This module contains of three parts: 1) SHA1/256 core HW/FW implementation; 2) SHA-HMAC core functionality, shared between all HMAC modules; 3) Common symmetric- and hash routines, used for initialization and SCA protection",
+ "version": "2a789718 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/18/2017",
+ "vendor": "Yubico",
+ "vendor_website": "http://www.yubico.com",
+ "oes": [
+  {
+   "name": "Infineon SLE78V2",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

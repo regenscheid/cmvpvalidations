@@ -1,0 +1,194 @@
+{
+ "cert": 4024,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4024",
+ "module": "Splunk Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The validation entry is a non-security relevant modification to Cert. #3503.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Splunk Cryptographic Module is a general-purpose cryptographic module integrated in Splunk's products to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+ "tested_configurations": [
+  "Ubuntu 18.04 LTS running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 with PAA",
+  "Ubuntu 18.04 LTS running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 without PAA",
+  "Windows Server 2019 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 with PAA",
+  "Windows Server 2019 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "product_url": "http://www.splunk.com/en_us/products/splunk-enterprise.html",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C904",
+   "cavp_id": "31301",
+   "cavp_ref": "C:904"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C904",
+   "cavp_id": "31301",
+   "cavp_ref": "C:904"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C904",
+   "cavp_id": "31301",
+   "cavp_ref": "C:904"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C904",
+   "cavp_id": "31301",
+   "cavp_ref": "C:904"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C904",
+   "cavp_id": "31301",
+   "cavp_ref": "C:904"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C904",
+   "cavp_id": "31301",
+   "cavp_ref": "C:904"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C904",
+   "cavp_id": "31301",
+   "cavp_ref": "C:904"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C904",
+   "cavp_id": "31301",
+   "cavp_ref": "C:904"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  }
+ ],
+ "vendor": "Splunk Inc.",
+ "vendor_info": {
+  "name": "Splunk Inc.",
+  "website": "https://www.splunk.com/",
+  "address": [
+   "270 Brannan Street",
+   "San Francisco, CA 94107",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Farzad Salim"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4024.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202021_011021_0714_Signed2.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/7/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "9/7/2021",
+ "last_updated": "9/7/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4024.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4024,
+  "vendor": "Splunk Inc.",
+  "module": "Splunk Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/07/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,38 @@
+{
+ "cavp_id": "372",
+ "cavp_cert": "DRBG 1582",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=372",
+ "implementation": "Kernel Crypto API using CPACF for AES, TDES and GHASH",
+ "product_id": "1892",
+ "description": "This test covers implementations of gcm_base(ctr-aes-s390,ghash-s390), ccm_base(ctr-aes-s390,aes-s390), cbc-aes-s390, ecb-aes-s390, xts-aes-s390, cbc-des3_ede-s390, ecb-des3_ede-s390, ctr-des3_ede-s390.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "8/4/2017",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 SP2 on z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,152 @@
+{
+ "cert": 2156,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2156",
+ "module": "Dell-CREDANT Cryptographic Kernel (Windows Kernel Mode) [1] and Dell-CREDANT Cryptographic Kernel (Windows User Mode) [2]",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "CREDANT CmgCryptoLib (also known as CREDANT Cryptographic Kernel) is a FIPS 140-2 validated, software based cryptography library implementing AES, DRBG SP 800-90A [CTR], SHA-2 [256, 384, 512], HMAC [SHA-1 & SHA-2], and Triple-DES. CmgCryptoLib is used by commercial products including CREDANT Mobile Guardian (CMG) and Dell Data Protection Encryption (DDPE). CREDANT provides a centrally managed data protection platform for authentication, encryption, access controls and data recovery for laptops, desktops, removable media, smart phones, servers, network shares, cloud storage and applications.",
+ "tested_configurations": [
+  "Windows 7 Enterprise (32-bit) running on Dell Optiplex 755 [1]",
+  "Windows 7 Enterprise (32-bit) running on Dell Optiplex 755 [2]",
+  "Windows 7 Enterprise x64 Edition (64-bit) running on Dell Optiplex 755 [1]",
+  "Windows 7 Enterprise x64 Edition (64-bit) running on Dell Optiplex 755 [2]"
+ ],
+ "software_versions": "1.8 [1,2]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2130",
+   "cavp_id": "27840",
+   "cavp_ref": "AES:2130"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2131",
+   "cavp_id": "23171",
+   "cavp_ref": "AES:2131"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 235",
+   "cavp_id": "28360",
+   "cavp_ref": "DRBG:235"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 236",
+   "cavp_id": "27474",
+   "cavp_ref": "DRBG:236"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1300",
+   "cavp_id": "27159",
+   "cavp_ref": "HMAC:1300"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1301",
+   "cavp_id": "19791",
+   "cavp_ref": "HMAC:1301"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1854",
+   "cavp_id": "28748",
+   "cavp_ref": "SHS:1854"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1855",
+   "cavp_id": "23631",
+   "cavp_ref": "SHS:1855"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1353",
+   "cavp_id": "7218",
+   "cavp_ref": "TDES:1353"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1354",
+   "cavp_id": "22426",
+   "cavp_ref": "TDES:1354"
+  }
+ ],
+ "vendor": "Dell, Inc.",
+ "vendor_info": {
+  "name": "Dell, Inc.",
+  "website": "http://www.credant.com",
+  "address": [
+   "2300 West Plano Parkway",
+   "Plano, TX 75075",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Chris Burchett"
+   },
+   {
+    "name": "Mike Phillips"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2156.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0041.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/15/2014",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "5/15/2014",
+ "last_updated": "5/15/2014",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2156.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Rijndael; RNG (non-compliant); AES (non-compliant); Triple-DES (non-compliant); SHS (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2156,
+  "vendor": "Dell, Inc.",
+  "module": "Dell-CREDANT Cryptographic Kernel (Windows Kernel Mode) [1] and Dell-CREDANT Cryptographic Kernel (Windows User Mode) [2]",
+  "type": "Software",
+  "validation_dates": [
+   "05/15/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

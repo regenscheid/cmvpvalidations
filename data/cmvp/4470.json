@@ -1,0 +1,166 @@
+{
+ "cert": 4470,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4470",
+ "module": "RSA BSAFE® Crypto-C Micro Edition",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When entropy is externally loaded, no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Crypto-C Micro Edition (ME) Module is RSA's cryptographic library designed for securing mobile devices like wireless phones and personal digital assistants. It contains assembly-level optimizations on key wireless processors. Its functionality includes a wide range of data encryption and signing algorithms, including Triple-DES, the Advanced Encryption Standard (AES) algorithm, the RSA Public Key Cryptosystem, the DSA government signature algorithm, MD5 and SHA1 message digest routines, and more.",
+ "tested_configurations": [
+  "SUSE Linux Enterprise Server 12 SP3 on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 with PAA (64-bit)",
+  "SUSE Linux Enterprise Server 12 SP3 on VMWare ESXi 6.0.0 running on a Dell R630 with Intel Xeon E5-2620 without PAA (64-bit) (single-user mode)"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key unwrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "4.1.4",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C584; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C584",
+   "cavp_id": "30980",
+   "cavp_ref": "C:584"
+  }
+ ],
+ "vendor": "Dell Inc., BSAFE Product Team",
+ "vendor_info": {
+  "name": "Dell Inc., BSAFE Product Team",
+  "website": "http://www.dell.com",
+  "address": [
+   "Building A",
+   "207 Pacific Highway",
+   "St Leonards, NSW 2065",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "BSAFE FIPS Program"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4470.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202023_010523_0646.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/11/2023",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/11/2023",
+ "last_updated": "4/11/2023",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4470.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key unwrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4470,
+  "vendor": "Dell Inc., BSAFE Product Team",
+  "module": "RSA BSAFE® Crypto-C Micro Edition",
+  "type": "Software",
+  "validation_dates": [
+   "04/11/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

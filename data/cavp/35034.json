@@ -1,0 +1,80 @@
+{
+ "cavp_id": "35034",
+ "cavp_cert": "A2424",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35034",
+ "implementation": "Trusted Platform Module 2.0 SLB 9670",
+ "product_id": "14877",
+ "description": "Infineon Trusted Platform Module 2.0 SLB9670 is an implementation according to the TPM Main Specification Version 2.0 Revision 01.38 Errata Version 1.4 by Trusted Computing Group.",
+ "version": "SLB 9670 7.85",
+ "type": "FIRMWARE",
+ "first_validated": "3/10/2022",
+ "vendor": "Infineon Technologies AG",
+ "vendor_website": "http://www.infineon.com/",
+ "oes": [
+  {
+   "name": "Infineon SLB 9670 security controller IC",
+   "details": [
+    "processor: Infineon SLB 9670 security controller IC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Function: Full Validation, Key Pair Generation, Partial Validation",
+    "Scheme:",
+    "  onePassDh:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA-1",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "        Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 512"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  onePassDh:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen, partialVal",
+    "Modulo: 2048",
+    "Key Generation Methods: rsakpg1-crt",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator, responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-256",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: label||literal[00]",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "RSA Decryption Primitive",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

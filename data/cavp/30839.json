@@ -1,0 +1,46 @@
+{
+ "cavp_id": "30839",
+ "cavp_cert": "C443",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30839",
+ "implementation": "Qualcomm (R) Pseudo Random Number Generator (Version 2.3.1)",
+ "product_id": "10802",
+ "description": "Qualcomm® Pseudo Random Number Generator is a hardware random number generator that provides cryptographic functions through on-chip entropy sources and hash based DRBG. Qualcomm Pseudo Random Number Generator version 2.3.1 is supported by various Qualcomm platforms including Snapdragon 855, Qualcomm Snapdragon 865 Mobile Platform, QCM8250, and QCS8250.",
+ "version": "2.3.1",
+ "type": "HARDWARE",
+ "first_validated": "2/21/2019",
+ "vendor": "Qualcomm Technologies, Inc.",
+ "vendor_website": "http://www.qualcomm.com/",
+ "oes": [
+  {
+   "name": "Snapdragon 855",
+   "details": [
+    "processor: Snapdragon 855"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-32",
+    "    Additional Input: 0",
+    "    Returned Bits: 1024",
+    "C443 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

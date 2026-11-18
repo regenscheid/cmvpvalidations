@@ -1,0 +1,44 @@
+{
+ "cavp_id": "3388",
+ "cavp_cert": "Component 20",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3388",
+ "implementation": "appKas",
+ "product_id": "135",
+ "description": "The Pitney Bowes Cygnus X-3 Hardware Security Module (HSM) employs strong cryptographic and physical security techniques for the protection of funds in Pitney Bowes Postage systems.",
+ "version": "02000007 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "4/9/2012",
+ "vendor": "Pitney Bowes, Inc.",
+ "vendor_website": "http://www.pb.com",
+ "oes": [
+  {
+   "name": "ARM 7 TDMI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation, Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

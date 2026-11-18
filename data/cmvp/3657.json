@@ -1,0 +1,199 @@
+{
+ "cert": 3657,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3657",
+ "module": "OpenSSL Cryptographic Module for Perimeta SBC",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Perimeta is the first cloud native virtualized session border controller (vSBC) proven to deliver the Session Initiation Protocol (SIP) interworking and security performance demanded of large-scale rich communications services. The OpenSSL cryptographic module provides cryptographic services to the users of the Perimeta SBC.",
+ "tested_configurations": [
+  "Metaswitch Linux 6 on VMWare Hypervisor ESXi 6.7 running on a Dell PowerEdge R630 with Intel(R) Xeon(R) E5 with PAA",
+  "Metaswitch Linux 6 on VMWare Hypervisor ESXi 6.7 running on a Dell PowerEdge R630 with Intel(R) Xeon(R) E5 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #C1009 with CVL Cert. #C1009, key agreement; key establishment methodology provides between 112 and 220 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1009 with CVL Cert. #C1009, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "product_url": "http://www.metaswitch.com/products/core-network/perimeta-sbc",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1008",
+   "cavp_id": "31405",
+   "cavp_ref": "C:1008"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1010",
+   "cavp_id": "31407",
+   "cavp_ref": "C:1010"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1007",
+   "cavp_id": "31404",
+   "cavp_ref": "C:1007"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1008",
+   "cavp_id": "31405",
+   "cavp_ref": "C:1008"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1010",
+   "cavp_id": "31407",
+   "cavp_ref": "C:1010"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1007",
+   "cavp_id": "31404",
+   "cavp_ref": "C:1007"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1010",
+   "cavp_id": "31407",
+   "cavp_ref": "C:1010"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1008, #C1009 and #C1010; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1007",
+   "cavp_id": "31404",
+   "cavp_ref": "C:1007"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1010",
+   "cavp_id": "31407",
+   "cavp_ref": "C:1010"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1009",
+   "cavp_id": "31406",
+   "cavp_ref": "C:1009"
+  }
+ ],
+ "vendor": "Metaswitch Networks Ltd",
+ "vendor_info": {
+  "name": "Metaswitch Networks Ltd",
+  "website": "http://www.metaswitch.com",
+  "address": [
+   "100 Church Street",
+   "Enfield, London EN2 6BQ",
+   "UK"
+  ],
+  "contacts": [
+   {
+    "name": "Sanjay Prasad"
+   },
+   {
+    "name": "Seenu Eswara"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3657.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202020_010620_1115.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/26/2020",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "5/26/2020",
+ "last_updated": "5/26/2020",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3657.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #C1009 with CVL Cert. #C1009, key agreement; key establishment methodology provides between 112 and 220 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1009 with CVL Cert. #C1009, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3657,
+  "vendor": "Metaswitch Networks Ltd",
+  "module": "OpenSSL Cryptographic Module for Perimeta SBC",
+  "type": "Software",
+  "validation_dates": [
+   "05/26/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

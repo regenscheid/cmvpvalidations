@@ -1,0 +1,150 @@
+{
+ "cert": 2110,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2110",
+ "module": "BlackBerry Cryptographic Library for Secure Work Space",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section A.1.1 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "BlackBerry® provides a suite of hardware, software, and services, which allow customers to utilize a single end-to-end Mobile Device Management (MDM) solution. The BlackBerry Cryptographic Library for Secure Work Space is a software module that provides cryptographic services required for secure operation of non-BlackBerry® devices running supported operating systems, when used in conjunction with BlackBerry® MDM solutions.",
+ "tested_configurations": [
+  "Android v4.1 running on a Samsung Galaxy SIII (single-user mode)",
+  "iOS v5 running on a iPad3",
+  "iOS v6 running on a iPhone5",
+  "Ubuntu 12.04 on ESXi 5.1 running on a Dell PowerEdge T110",
+  "Ubuntu 12.04 on ESXi 5.1 running on a SuperMicro AS-1011S-mR2",
+  "Ubuntu 12.04 running on a Dell PowerEdge T110",
+  "Ubuntu 12.04 running on a SuperMicro AS-1011S-mR2"
+ ],
+ "software_versions": "1.0",
+ "product_url": "http://us.blackberry.com/business/security.html",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2544",
+   "cavp_id": "327",
+   "cavp_ref": "AES:2544"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 89",
+   "cavp_id": "10847",
+   "cavp_ref": "Component:89"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 377",
+   "cavp_id": "140",
+   "cavp_ref": "DRBG:377"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 776",
+   "cavp_id": "12829",
+   "cavp_ref": "DSA:776"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 436",
+   "cavp_id": "25855",
+   "cavp_ref": "ECDSA:436"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1565",
+   "cavp_id": "3368",
+   "cavp_ref": "HMAC:1565"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1298",
+   "cavp_id": "26142",
+   "cavp_ref": "RSA:1298"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2145",
+   "cavp_id": "7785",
+   "cavp_ref": "SHS:2145"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1539",
+   "cavp_id": "11268",
+   "cavp_ref": "TDES:1539"
+  }
+ ],
+ "vendor": "BlackBerry Limited",
+ "vendor_info": {
+  "name": "BlackBerry Limited",
+  "website": "http://www.blackberry.com",
+  "address": [
+   "2200 University Avenue East",
+   "Waterloo, Ontario N2K OA7",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2110.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0039.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/21/2014",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "1/24/2016",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "3/21/2014",
+ "last_updated": "1/24/2016",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2110.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less then 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less then 112 bits of encryption strength), RNG; DRBG (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2110,
+  "vendor": "BlackBerry Limited",
+  "module": "BlackBerry Cryptographic Library for Secure Work Space",
+  "type": "Software",
+  "validation_dates": [
+   "03/21/2014",
+   "01/24/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,69 @@
+{
+ "cavp_id": "31229",
+ "cavp_cert": "C833",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31229",
+ "implementation": "FUJIFILM BI AES Kernel Module for A57",
+ "product_id": "11187",
+ "description": "FUJIFILM BI AES Kernel Module for A57 provides cryptographic services within the Linux kernel",
+ "version": "1.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/20/2019",
+ "vendor": "FUJIFILM Business Innovation Corp.",
+ "vendor_website": "http://www.fujixerox.com/eng/",
+ "oes": [
+  {
+   "name": "Wind River Linux 9 on Quad ARM Cortex-A57",
+   "details": [
+    "processor: Quad ARM Cortex-A57",
+    "software: Wind River Linux 9"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Payload Length: 128, 256, 65536",
+    "Tweak Mode: Hex"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 256, 512, 65536",
+    "Tweak Mode: Hex"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,187 @@
+{
+ "cert": 1328,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1328",
+ "module": "Microsoft Windows 7 Kernel Mode Cryptographic Primitives Library (cng.sys)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Windows 7 Winload OS Loader (winload.exe) validated to FIPS 140-2 under Cert. #1326 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "CNG.SYS runs as a kernel mode export driver, and provides cryptographic services, through their documented interfaces, to Windows 7 kernel components. It supports several cryptographic algorithms accessible via a FIPS function table request irp (I/O request packet).",
+ "tested_configurations": [
+  "Microsoft Windows 7 Ultimate Edition (x64 version)",
+  "Microsoft Windows 7 Ultimate Edition (x86 Version)",
+  "Microsoft Windows 7 Ultimate Edition SP1 (x64 version) (single-user mode)",
+  "Microsoft Windows 7 Ultimate Edition SP1 (x86 version)"
+ ],
+ "software_versions": "6.1.7600.16385, 6.1.7600.16915, 6.1.7600.21092, 6.1.7601.17514, 6.1.7601.17919, 6.1.7601.17725, 6.1.7601.21861 and 6.1.7601.22076",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1168",
+   "cavp_id": "6263",
+   "cavp_ref": "AES:1168"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1178",
+   "cavp_id": "14570",
+   "cavp_ref": "AES:1178"
+  },
+  {
+   "algorithm": "AES GCM",
+   "cavp_cert": "AES 1168",
+   "cavp_id": "6263",
+   "cavp_ref": "AES:1168",
+   "note": "vendor-affirmed"
+  },
+  {
+   "algorithm": "AES GMAC",
+   "cavp_cert": "AES 1168",
+   "cavp_id": "6263",
+   "cavp_ref": "AES:1168",
+   "note": "vendor-affirmed"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 23",
+   "cavp_id": "21664",
+   "cavp_ref": "DRBG:23"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 24",
+   "cavp_id": "6245",
+   "cavp_ref": "DRBG:24"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 141",
+   "cavp_id": "10736",
+   "cavp_ref": "ECDSA:141"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 677",
+   "cavp_id": "26036",
+   "cavp_ref": "HMAC:677"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "SP 800-56A, vendor affirmed, key agreement; key establishment methodology provides 80 to 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 649",
+   "cavp_id": "10536",
+   "cavp_ref": "RNG:649"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 559",
+   "cavp_id": "18817",
+   "cavp_ref": "RSA:559"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 560",
+   "cavp_id": "21148",
+   "cavp_ref": "RSA:560"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1081",
+   "cavp_id": "20791",
+   "cavp_ref": "SHS:1081"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 846",
+   "cavp_id": "9934",
+   "cavp_ref": "TDES:846"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1328.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1328.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/12/2010",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "6/1/2011",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "2/9/2012",
+   "type": "Update",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "1/24/2013",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "8/12/2010",
+ "last_updated": "1/24/2013",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1328.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (Cert. #1168, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD2; MD4; MD5; HMAC MD5; RC2; RC4"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1328,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Windows 7 Kernel Mode Cryptographic Primitives Library (cng.sys)",
+  "type": "Software",
+  "validation_dates": [
+   "08/12/2010",
+   "06/01/2011",
+   "02/09/2012",
+   "01/24/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

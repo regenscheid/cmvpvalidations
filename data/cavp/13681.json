@@ -1,0 +1,94 @@
+{
+ "cavp_id": "13681",
+ "cavp_cert": "AES 883",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13681",
+ "implementation": "DEP-PCI",
+ "product_id": "2395",
+ "description": "DEP-PCI (a PCI adapter board) is a hardware cryptographic module primarily used in banking area. Its boot firmware together with an FPGA implements AES, SHA and CMAC, which are used for secure key entry, secure application loading and secure boot firmware update.",
+ "version": "PCI card 033-120010-1.0 boot: 4.01; FPGA: 661442 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "10/7/2008",
+ "vendor": "Atos Worldline SA/NV",
+ "vendor_website": "http://www.atosworldline.com",
+ "oes": [
+  {
+   "name": "boot firmware running on Intel386 EXTC",
+   "details": []
+  },
+  {
+   "name": "FPGA firmware running on Xilinx XC3S5000",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 0-524288",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 128",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 0-524288",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 128",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

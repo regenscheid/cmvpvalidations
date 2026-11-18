@@ -1,0 +1,31 @@
+{
+ "cavp_id": "7737",
+ "cavp_cert": "ECDSA 991",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7737",
+ "implementation": "OpenSSL ECDSA/SHA",
+ "product_id": "6370",
+ "description": "The MicroCloud X4's firmware update manager enforces a strong elliptic curve signature verification process before accepting firmware update packets. The verification process includes ECDSA signature verification over both P-256 and P-384 curves.",
+ "version": "1.0.1r (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/16/2016",
+ "vendor": "Bluechip Systems LLC",
+ "vendor_website": "http://www.bluechipsys.com",
+ "oes": [
+  {
+   "name": "Bluechip Systems X4 SoC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

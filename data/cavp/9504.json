@@ -1,0 +1,45 @@
+{
+ "cavp_id": "9504",
+ "cavp_cert": "TDES 1635",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=9504",
+ "implementation": "VMware Kernel Cryptographic Module",
+ "product_id": "3435",
+ "description": "The VMware Kernel Cryptographic Module is a flexible software library providing FIPS-140-2 approved cryptographic operations for VMware products and platforms.\"",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/13/2013",
+ "vendor": "VMware, Inc.",
+ "vendor_website": "http://www.vmware.com",
+ "oes": [
+  {
+   "name": "VMware vCloud Networking and Security 5.5.0a Edge OS running on VMware vSphere Hypervisor (ESXi) 5.5 on Intel Xeon E5-2430",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

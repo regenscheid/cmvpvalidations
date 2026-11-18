@@ -1,0 +1,81 @@
+{
+ "cavp_id": "17147",
+ "cavp_cert": "AES 5326",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17147",
+ "implementation": "Cryptosec Dekaton",
+ "product_id": "9321",
+ "description": "The Cryptosec Dekaton is a high-end cryptographic accelerator card that provides cryptographic services and secure storage of cryptographic keys. The module is built to perform general cryptographic processing and features a tamper-responsive case to physically protect sensitive information contained within the card.",
+ "version": "1.1",
+ "type": "HARDWARE",
+ "first_validated": "3/23/2018",
+ "vendor": "Realia Technologies, S.L",
+ "vendor_website": "http://www.realsec.com",
+ "oes": [
+  {
+   "name": "Cryptosec Dekaton",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 256, 264, 512, 520",
+    "AAD Length: 0, 256, 264, 512, 520"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 256, 264, 512, 520"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,124 @@
+{
+ "cert": 755,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/755",
+ "module": "SHARP JCOP31ID FIPS",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: Level 3",
+  "EMI/EMC: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single-chip",
+ "description": "The single-chip module is a 16-bit Sharp processor and a specifically modified version of the IBM JCOP 31-ID Java Card software satisfying the FIPS 140-2 requirements. The single-chip module provides an operational environment with up to 640 kBytes of Cryptographic Officer/Issuer available non-volatile memory. The defined user space allows for multiple validated applets to be concurrently loaded and used, as well as supporting re-issuance capability. The primary purpose for this device is to provide data security for Personnel Identification.",
+ "hardware_versions": "P/N SM4128(V3)A7",
+ "firmware_versions": "HAL v1.1.06, IBM JCOP31IDv2.2OS Release Level 0400",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 402",
+   "cavp_id": "29063",
+   "cavp_ref": "AES:402"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 33",
+   "cavp_id": "5204",
+   "cavp_ref": "ECDSA:33"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 197",
+   "cavp_id": "24891",
+   "cavp_ref": "RNG:197"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 147",
+   "cavp_id": "6278",
+   "cavp_ref": "RSA:147"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 472",
+   "cavp_id": "28015",
+   "cavp_ref": "SHS:472"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 439",
+   "cavp_id": "21213",
+   "cavp_ref": "TDES:439"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #439, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Sharp Corporation",
+ "vendor_info": {
+  "name": "Sharp Corporation",
+  "website": "http://www.sharp-world.com/index.html",
+  "address": [
+   "1-9-2, Nakase",
+   "Mihama-ku, Chiba-shi, Chiba 251-8520",
+   "Japan"
+  ],
+  "contacts": [
+   {
+    "name": "Kazuhiro Yaegawa"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp755.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt755.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/11/2007",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "4/11/2007",
+ "last_updated": "4/11/2007",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp755.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; AES MAC (non-compliant); RSA (key wrapping; key establishment methodology provides 80 bits of encryption strength; non-compliant); ECSVDP"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 755,
+  "vendor": "Sharp Corporation",
+  "module": "SHARP JCOP31ID FIPS",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/11/2007"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

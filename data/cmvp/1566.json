@@ -1,0 +1,143 @@
+{
+ "cert": 1566,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1566",
+ "module": "RSA BSAFE® CNG Cryptographic Primitives Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "RSA BSAFE® CNG Cryptographic Primitives Library is a drop-in replacement for the Microsoft user-mode CNG (Cryptograpy, Next Generation) provider. It supports a wide range of industry standard encryption algorithms. Software applications written against the Microsoft CNG framework, that do not explicitly request a specific provider, will automatically use the BSAFE CNG cryptographic implementations without modification once the BSAFE CNG Primitive Provider is installed.",
+ "tested_configurations": [
+  "Microsoft Windows 7 (x86 32-bit)",
+  "Microsoft Windows 7 (x86_64 64-bit) (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1598",
+   "cavp_id": "6536",
+   "cavp_ref": "AES:1598"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 77",
+   "cavp_id": "7668",
+   "cavp_ref": "DRBG:77"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 493",
+   "cavp_id": "3945",
+   "cavp_ref": "DSA:493"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 196",
+   "cavp_id": "24692",
+   "cavp_ref": "ECDSA:196"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 935",
+   "cavp_id": "5739",
+   "cavp_ref": "HMAC:935"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 855",
+   "cavp_id": "12190",
+   "cavp_ref": "RNG:855"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 780",
+   "cavp_id": "23369",
+   "cavp_ref": "RSA:780",
+   "note": "FIPS 186-3  vendor affirmed"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1410",
+   "cavp_id": "4742",
+   "cavp_ref": "SHS:1410"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1044",
+   "cavp_id": "28884",
+   "cavp_ref": "TDES:1044"
+  }
+ ],
+ "vendor": "RSA, The Security Division of EMC",
+ "vendor_info": {
+  "name": "RSA, The Security Division of EMC",
+  "website": "http://www.rsa.com",
+  "address": [
+   "174 Middlesex Turnpike",
+   "Bedford, MA 01730",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Sandy Carielli"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1566.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0006.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/27/2011",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "1/24/2013",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "6/27/2011",
+ "last_updated": "1/24/2013",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1566.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; DESX; Diffie-Hellman; EC Diffie-Hellman; HMAC-MD2; HMAC-MD4; HMAC-MD5; MD2; MD4; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 and 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1566,
+  "vendor": "RSA, The Security Division of EMC",
+  "module": "RSA BSAFE® CNG Cryptographic Primitives Library",
+  "type": "Software",
+  "validation_dates": [
+   "06/27/2011",
+   "01/24/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

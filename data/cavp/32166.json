@@ -1,0 +1,94 @@
+{
+ "cavp_id": "32166",
+ "cavp_cert": "A194",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32166",
+ "implementation": "OpenSSL (32 bit) (DRBG_10X_BAES_CTASM)",
+ "product_id": "12115",
+ "description": "OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 32 bit word size.",
+ "version": "4.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/13/2020",
+ "vendor": "SUSE LLC.",
+ "vendor_website": "http://www.suse.de",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 15 SP0 on Intel Cascade Lake Xeon Gold 6234",
+   "details": [
+    "software: SUSE Linux Enterprise Server 15 SP0",
+    "  SUSE Linux Enterprise distribution",
+    "  cpe: cpe:/o:suse:linux_enterprise_server:15",
+    "processor: Xeon Gold 6234",
+    "  Processor Xeon Gold 6234 (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 192",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 320",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 1024",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

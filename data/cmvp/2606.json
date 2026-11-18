@@ -1,0 +1,518 @@
+{
+ "cert": 2606,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2606",
+ "module": "Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows 10 for Surface Hub",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with the module Kernel Mode Cryptographic Primitives Library (cng.sys) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows 10 for Surface Hub under Cert. #2605 operating in FIPS mode and Code Integrity (ci.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows 10 for Surface Hub under Cert. #2604 operating in FIPS mode or Code Integrity (ci.dll) in Windows Enterprise LTSB under Cert. #3437 operating in FIPS mode or Code Integrity (ci.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Mobile, Windows 10 for Surface Hub under Cert. #3469 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) provides cryptographic services to Windows components and applications. It includes cryptographic algorithms in an easy-to-use cryptographic module via the Cryptography Next Generation (CNG) API. It can be dynamically linked into applications for the use of general-purpose FIPS 140-2 validated cryptography.",
+ "tested_configurations": [
+  "Windows 10 (x64) running on a Dell XPS 8700 with PAA [1][3][4]",
+  "Windows 10 (x64) running on a HP Compaq Pro 6305 with PAA [1][3][4]",
+  "Windows 10 (x86) running on a Dell Inspiron 660s without PAA [1][3][4]",
+  "Windows 10 Enterprise (x64) running on a HP Compaq Pro 6305 with PAA [1][3][4]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface 3 with PAA [1][3][4]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Book with PAA [3][4]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro 2 with PAA [1][3][4]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro 3 with PAA [1][3][4]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro 4 with PAA [3][4]",
+  "Windows 10 Enterprise (x64) running on a Microsoft Surface Pro with PAA [1][3][4]",
+  "Windows 10 Enterprise (x86) running on a Dell Inspiron 660s without PAA [1][3][4]",
+  "Windows 10 Enterprise LTSB (x64) running on a Dell XPS 8700 with PAA [1][2]",
+  "Windows 10 Enterprise LTSB (x64) running on a HP Compaq Pro 6305 with PAA [1][2]",
+  "Windows 10 Enterprise LTSB (x64) running on a Microsoft Surface 3 with PAA [2]",
+  "Windows 10 Enterprise LTSB (x64) running on a Microsoft Surface Pro 2 with PAA [2]",
+  "Windows 10 Enterprise LTSB (x64) running on a Microsoft Surface Pro 3 with PAA [2]",
+  "Windows 10 Enterprise LTSB (x64) running on a Microsoft Surface Pro with PAA [2] (single-user mode)",
+  "Windows 10 Enterprise LTSB (x86) running on a Dell Inspiron 660s without PAA [1][2]",
+  "Windows 10 for Surface Hub (x64) running on a Microsoft Surface Hub 55\" with PAA [3][4]",
+  "Windows 10 for Surface Hub (x64) running on a Microsoft Surface Hub 84\" with PAA [3][4]",
+  "Windows 10 Mobile (ARMv7) running on a Microsoft Lumia 635 [3][4]",
+  "Windows 10 Mobile (ARMv7) running on a Microsoft Lumia 950 [3][4]",
+  "Windows 10 Pro (x64) running on a HP Compaq Pro 6305 with PAA [1][3][4]",
+  "Windows 10 Pro (x64) running on a Microsoft Surface Book with PAA [3][4]",
+  "Windows 10 Pro (x64) running on a Microsoft Surface Pro 2 with PAA [1][3][4]",
+  "Windows 10 Pro (x64) running on a Microsoft Surface Pro 3 with PAA [1][3][4]",
+  "Windows 10 Pro (x64) running on a Microsoft Surface Pro 4 with PAA [3][4]",
+  "Windows 10 Pro (x64) running on a Microsoft Surface Pro with PAA [1][3][4]",
+  "Windows 10 Pro (x86) running on a Dell Inspiron 660s without PAA [1][3][4]"
+ ],
+ "software_versions": "10.0.10240 [1], 10.0.10240.17643 [2], 10.0.10586 [3], 10.0.10586.1176 [4]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3497",
+   "cavp_id": "8412",
+   "cavp_ref": "AES:3497"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3629",
+   "cavp_id": "24104",
+   "cavp_ref": "AES:3629"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5287",
+   "cavp_id": "26775",
+   "cavp_ref": "AES:5287"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5291",
+   "cavp_id": "13990",
+   "cavp_ref": "AES:5291"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 575",
+   "cavp_id": "22675",
+   "cavp_ref": "Component:575"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 576",
+   "cavp_id": "144",
+   "cavp_ref": "Component:576"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 663",
+   "cavp_id": "15053",
+   "cavp_ref": "Component:663"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 664",
+   "cavp_id": "18991",
+   "cavp_ref": "Component:664"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1754",
+   "cavp_id": "25720",
+   "cavp_ref": "Component:1754"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1755",
+   "cavp_id": "21422",
+   "cavp_ref": "Component:1755"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1757",
+   "cavp_id": "10919",
+   "cavp_ref": "Component:1757"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1758",
+   "cavp_id": "13094",
+   "cavp_ref": "Component:1758"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 868",
+   "cavp_id": "27356",
+   "cavp_ref": "DRBG:868"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 955",
+   "cavp_id": "3727",
+   "cavp_ref": "DRBG:955"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2033",
+   "cavp_id": "26252",
+   "cavp_ref": "DRBG:2033"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2035",
+   "cavp_id": "5120",
+   "cavp_ref": "DRBG:2035"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 983",
+   "cavp_id": "21405",
+   "cavp_ref": "DSA:983"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1024",
+   "cavp_id": "20380",
+   "cavp_ref": "DSA:1024"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1369",
+   "cavp_id": "29518",
+   "cavp_ref": "DSA:1369"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1370",
+   "cavp_id": "7454",
+   "cavp_ref": "DSA:1370"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 706",
+   "cavp_id": "20334",
+   "cavp_ref": "ECDSA:706"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 760",
+   "cavp_id": "21672",
+   "cavp_ref": "ECDSA:760"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1381",
+   "cavp_id": "9298",
+   "cavp_ref": "ECDSA:1381"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1383",
+   "cavp_id": "24071",
+   "cavp_ref": "ECDSA:1383"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2233",
+   "cavp_id": "13173",
+   "cavp_ref": "HMAC:2233"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2381",
+   "cavp_id": "6075",
+   "cavp_ref": "HMAC:2381"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3494",
+   "cavp_id": "12657",
+   "cavp_ref": "HMAC:3494"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3496",
+   "cavp_id": "29286",
+   "cavp_ref": "HMAC:3496"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 64",
+   "cavp_id": "5161",
+   "cavp_ref": "KAS:64"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 72",
+   "cavp_id": "17016",
+   "cavp_ref": "KAS:72"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 169",
+   "cavp_id": "18236",
+   "cavp_ref": "KAS:169"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 170",
+   "cavp_id": "3395",
+   "cavp_ref": "KAS:170"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 66",
+   "cavp_id": "24422",
+   "cavp_ref": "KDF:66"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 72",
+   "cavp_id": "11622",
+   "cavp_ref": "KDF:72"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 183",
+   "cavp_id": "1255",
+   "cavp_ref": "KDF:183"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 184",
+   "cavp_id": "23477",
+   "cavp_ref": "KDF:184"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #3507, #3653, #5290 and #5294; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1783",
+   "cavp_id": "2825",
+   "cavp_ref": "RSA:1783"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1784",
+   "cavp_id": "8528",
+   "cavp_ref": "RSA:1784"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1798",
+   "cavp_id": "7563",
+   "cavp_ref": "RSA:1798"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1802",
+   "cavp_id": "20621",
+   "cavp_ref": "RSA:1802"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1871",
+   "cavp_id": "12006",
+   "cavp_ref": "RSA:1871"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1887",
+   "cavp_id": "18386",
+   "cavp_ref": "RSA:1887"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1888",
+   "cavp_id": "7765",
+   "cavp_ref": "RSA:1888"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1889",
+   "cavp_id": "13851",
+   "cavp_ref": "RSA:1889"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2821",
+   "cavp_id": "5040",
+   "cavp_ref": "RSA:2821"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2825",
+   "cavp_id": "22409",
+   "cavp_ref": "RSA:2825"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2827",
+   "cavp_id": "7683",
+   "cavp_ref": "RSA:2827"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2828",
+   "cavp_id": "19768",
+   "cavp_ref": "RSA:2828"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2829",
+   "cavp_id": "10268",
+   "cavp_ref": "RSA:2829"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2830",
+   "cavp_id": "1366",
+   "cavp_ref": "RSA:2830"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2831",
+   "cavp_id": "20737",
+   "cavp_ref": "RSA:2831"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2835",
+   "cavp_id": "1902",
+   "cavp_ref": "RSA:2835"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2871",
+   "cavp_id": "20881",
+   "cavp_ref": "SHS:2871"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2886",
+   "cavp_id": "11296",
+   "cavp_ref": "SHS:2886"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3047",
+   "cavp_id": "3011",
+   "cavp_ref": "SHS:3047"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3048",
+   "cavp_id": "11730",
+   "cavp_ref": "SHS:3048"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4240",
+   "cavp_id": "645",
+   "cavp_ref": "SHS:4240"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4246",
+   "cavp_id": "22335",
+   "cavp_ref": "SHS:4246"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4248",
+   "cavp_id": "22326",
+   "cavp_ref": "SHS:4248"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4249",
+   "cavp_id": "2056",
+   "cavp_ref": "SHS:4249"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1969",
+   "cavp_id": "16977",
+   "cavp_ref": "TDES:1969"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2024",
+   "cavp_id": "10429",
+   "cavp_ref": "TDES:2024"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2672",
+   "cavp_id": "10138",
+   "cavp_ref": "TDES:2672"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2674",
+   "cavp_id": "15646",
+   "cavp_ref": "TDES:2674"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2606.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/2/2016",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "8/26/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "6/10/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "6/2/2016",
+ "last_updated": "6/10/2019",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2606.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #2604",
+  "Other Algorithms": "HMAC-MD5; MD5; NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2606,
+  "vendor": "Microsoft Corporation",
+  "module": "Cryptographic Primitives Library (bcryptprimitives.dll and ncryptsslp.dll) in Microsoft Windows 10, Windows 10 Pro, Windows 10 Enterprise, Windows 10 Enterprise LTSB, Windows 10 Mobile, Windows 10 for Surface Hub",
+  "type": "Software",
+  "validation_dates": [
+   "06/02/2016",
+   "08/26/2016",
+   "06/10/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,54 @@
+{
+ "cavp_id": "20635",
+ "cavp_cert": "ECDSA 751",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20635",
+ "implementation": "Vormetric Data Security Manager Virtual Appliance Module",
+ "product_id": "1245",
+ "description": "Vormetric Data Security Manager (Virtual Appliance) that creates, stores and manages security objects such as keys, certificates and access control policies for distributed encryption agents",
+ "version": "5.3.0",
+ "type": "SOFTWARE",
+ "first_validated": "11/27/2015",
+ "vendor": "Vormetric, Inc.",
+ "vendor_website": "http://www.vormetric.com",
+ "oes": [
+  {
+   "name": "Centos 5.11 (64-bit) on VMware ESXi 5.5.0 on Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

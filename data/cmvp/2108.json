@@ -1,0 +1,153 @@
+{
+ "cert": 2108,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2108",
+ "module": "OpenPeak Cryptographic Security Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3.1.1 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The OpenPeak Cryptographic Security Module (OCSM) 1.0 provides underlying cryptography primitives for OpenPeak’s ADAM platform, an advanced device and application management suite that provides comprehensive Mobile Enterprise Management as a cloud-hosted service. The OCSM provides a secure encrypted container for enterprise-managed applications, content and data to enable a highly secure mobile workspace that separates corporate information from personal information on the same mobile device.",
+ "tested_configurations": [
+  "Android v4.1 running on a Samsung Galaxy SIII (single-user mode)",
+  "iOS v5 running on a iPad3",
+  "iOS v6 running on a iPhone5",
+  "Ubuntu 12.04 on ESXi 5.1 running on a Dell PowerEdge T110",
+  "Ubuntu 12.04 on ESXi 5.1 running on a SuperMicro AS-1011S-mR2",
+  "Ubuntu 12.04 running on a Dell PowerEdge T110",
+  "Ubuntu 12.04 running on a SuperMicro AS-1011S-mR2"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2489",
+   "cavp_id": "2160",
+   "cavp_ref": "AES:2489"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 88",
+   "cavp_id": "30256",
+   "cavp_ref": "Component:88"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 347",
+   "cavp_id": "21973",
+   "cavp_ref": "DRBG:347"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 768",
+   "cavp_id": "4307",
+   "cavp_ref": "DSA:768"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 417",
+   "cavp_id": "20965",
+   "cavp_ref": "ECDSA:417"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1531",
+   "cavp_id": "30004",
+   "cavp_ref": "HMAC:1531"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1206",
+   "cavp_id": "4558",
+   "cavp_ref": "RNG:1206"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1283",
+   "cavp_id": "21345",
+   "cavp_ref": "RSA:1283"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2107",
+   "cavp_id": "30215",
+   "cavp_ref": "SHS:2107"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1526",
+   "cavp_id": "9352",
+   "cavp_ref": "TDES:1526"
+  }
+ ],
+ "vendor": "OpenPeak, Inc.",
+ "vendor_info": {
+  "name": "OpenPeak, Inc.",
+  "website": "http://www.openpeak.com",
+  "address": [
+   "1750 Clint Moore Road",
+   "Boca Raton, FL 33487",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Eric Jen"
+   },
+   {
+    "name": "Howard A. Kwon"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2108.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0039.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/19/2014",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "3/19/2014",
+ "last_updated": "3/19/2014",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2108.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less then 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less then 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2108,
+  "vendor": "OpenPeak, Inc.",
+  "module": "OpenPeak Cryptographic Security Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/19/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

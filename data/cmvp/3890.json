@@ -1,0 +1,234 @@
+{
+ "cert": 3890,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3890",
+ "module": "TippingPoint Crypto Core OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Trend Micro, TippingPoint Crypto Core OpenSSL is a software library which provides FIPS 140-2 approved cryptographic algorithms and services for Trend Micro TippingPoint security products.",
+ "tested_configurations": [
+  "Linux 4.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) on KVM 1.5.3 on Red Hat Enterprise Linux (RHEL) 7 running on a HP Proliant DL360 Gen7 with an Intel Xeon X5650 with PAA",
+  "Linux 4.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) on VMWare ESXi 5.5 running on an HP ProLiant DL360 Gen8 with an Intel Xeon E5-2697 v2 with PAA",
+  "Linux 4.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) on VMWare ESXi 6.0 running on an HP ProLiant DL360 Gen9 with an Intel Xeon E5-2698 v3 with PAA",
+  "Linux 4.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) on VMWare ESXi 6.5 running on a Dell PowerEdge Server R640 with an Intel Xeon E5-2690 with PAA",
+  "Linux 4.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) on VMWare ESXi 6.5 running on a Dell PowerEdge Server R640 with an Intel Xeon E5-2690 without PAA",
+  "Linux 4.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) on VMWare ESXi 6.7 running on a Dell PowerEdge Server R640 with an Intel Xeon E5-2683 with PAA",
+  "Linux 4.4 running on a Trend Micro TippingPoint Threat Protection System 1100TX with an Intel Pentium D1517 with PAA",
+  "Linux 4.4 running on a Trend Micro TippingPoint Threat Protection System 2200T with an Intel Xeon E5-2620 with PAA",
+  "Linux 4.4 running on a Trend Micro TippingPoint Threat Protection System 440T with an Intel Core i3-3220 without PAA",
+  "Linux 4.4 running on a Trend Micro TippingPoint Threat Protection System 5500TX with an Intel Xeon D-1559 with PAA",
+  "Linux 4.4 running on a Trend Micro TippingPoint Threat Protection System 8200TX with an Intel Xeon E5-2648L v3 with PAA",
+  "Linux 4.4 running on a Trend Micro TippingPoint Threat Protection System 8400TX with an Intel Xeon E5-2648L v3 with PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); Diffie-Hellman (with CVL Certs. #1566 and #C1262, key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1937 and #C1262, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1937 and #C1262 with CVL Cert. #1566 and #C1262, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0.2l-fips",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5484",
+   "cavp_id": "11353",
+   "cavp_ref": "AES:5484"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1937",
+   "cavp_id": "21732",
+   "cavp_ref": "Component:1937"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1566",
+   "cavp_id": "32144",
+   "cavp_ref": "C:1566"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2159",
+   "cavp_id": "21355",
+   "cavp_ref": "DRBG:2159"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1411",
+   "cavp_id": "27293",
+   "cavp_ref": "DSA:1411"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1470",
+   "cavp_id": "2077",
+   "cavp_ref": "ECDSA:1470"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3640",
+   "cavp_id": "9632",
+   "cavp_ref": "HMAC:3640"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #5484, #C1262 and HMAC Certs. #3640, #C1262; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #5484 and #C1262; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Certs. #2761, #C1262 and HMAC Certs. #3640, #C1262; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2945",
+   "cavp_id": "389",
+   "cavp_ref": "RSA:2945"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4401",
+   "cavp_id": "5552",
+   "cavp_ref": "SHS:4401"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2761",
+   "cavp_id": "11286",
+   "cavp_ref": "TDES:2761"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1262",
+   "cavp_id": "31668",
+   "cavp_ref": "C:1262"
+  }
+ ],
+ "vendor": "Trend Micro Inc.",
+ "vendor_info": {
+  "name": "Trend Micro Inc.",
+  "website": "http://www.trendmicro.com",
+  "address": [
+   "11305 Alterra Parkway",
+   "Austin, TX 78758",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Greg Cooper"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3890.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/April%202021_030521_0757_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/12/2021",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "8/23/2021",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/12/2021",
+ "last_updated": "8/23/2021",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3890.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4590"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); Diffie-Hellman (with CVL Certs. #1566 and #C1262, key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1937 and #C1262, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1937 and #C1262 with CVL Cert. #1566 and #C1262, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3890,
+  "vendor": "Trend Micro Inc.",
+  "module": "TippingPoint Crypto Core OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "04/12/2021",
+   "08/23/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

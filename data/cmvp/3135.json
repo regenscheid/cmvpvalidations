@@ -1,0 +1,190 @@
+{
+ "cert": 3135,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3135",
+ "module": "Brocade® 7840 Extension Switch",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When configured and initialized as per Section 3.1 of the Security Policy and when operated in FIPS mode with tamper evident labels installed as indicated in Appendix A. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Brocade 7840 Extension Switch provides fast, reliable WN/MAN connectivity for remote data replication, backup, and migration with Fibre Channel and advanced Fibre Channel over IP (FCIP) technology.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #987 with CVL Cert. #988, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #987 with CVL Cert. #988, key agreement; key establishment methodology provides 128 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #989 with CVL Cert. #988, key agreement; key establishment methodology provides 128 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #923 with CVL Cert. #924, key agreement; key establishment methodology provides 192 bits of encryption strength); HMAC-MD5; MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "{7840 Extension Switch (P/N 80-1008000-01) with FRUs (80-1004580-02 and 80-1007263-01)} with FIPS Kit P/N Brocade XBR-000195",
+ "firmware_versions": "Fabric OS v8.1.0 (P/N 63-1001736-01)",
+ "product_url": "http://www.brocade.com/products/all/index.page",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4116",
+   "cavp_id": "15091",
+   "cavp_ref": "AES:4116"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4145",
+   "cavp_id": "3618",
+   "cavp_ref": "AES:4145"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4242",
+   "cavp_id": "26014",
+   "cavp_ref": "AES:4242"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 923",
+   "cavp_id": "29194",
+   "cavp_ref": "Component:923"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 924",
+   "cavp_id": "6601",
+   "cavp_ref": "Component:924"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 987",
+   "cavp_id": "14547",
+   "cavp_ref": "Component:987"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 988",
+   "cavp_id": "6507",
+   "cavp_ref": "Component:988"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 989",
+   "cavp_id": "21946",
+   "cavp_ref": "Component:989"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1239",
+   "cavp_id": "3475",
+   "cavp_ref": "DRBG:1239"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1321",
+   "cavp_id": "11264",
+   "cavp_ref": "DRBG:1321"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1132",
+   "cavp_id": "13788",
+   "cavp_ref": "DSA:1132"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 934",
+   "cavp_id": "28795",
+   "cavp_ref": "ECDSA:934"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 982",
+   "cavp_id": "13517",
+   "cavp_ref": "ECDSA:982"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2688",
+   "cavp_id": "10358",
+   "cavp_ref": "HMAC:2688"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2780",
+   "cavp_id": "7386",
+   "cavp_ref": "HMAC:2780"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2288",
+   "cavp_id": "28995",
+   "cavp_ref": "RSA:2288"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3386",
+   "cavp_id": "25833",
+   "cavp_ref": "SHS:3386"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3479",
+   "cavp_id": "8916",
+   "cavp_ref": "SHS:3479"
+  }
+ ],
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_info": {
+  "name": "Brocade Communications Systems, Inc.",
+  "website": "http://www.brocade.com",
+  "address": [
+   "130 Holger Way",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Hamid Sobouti"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3135.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedCertFeb2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/22/2018",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "2/22/2018",
+ "last_updated": "2/22/2018",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3135.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #987 with CVL Cert. #988, key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #987 with CVL Cert. #988, key agreement; key establishment methodology provides 128 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #989 with CVL Cert. #988, key agreement; key establishment methodology provides 128 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #923 with CVL Cert. #924, key agreement; key establishment methodology provides 192 bits of encryption strength); HMAC-MD5; MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3135,
+  "vendor": "Brocade Communications Systems, Inc.",
+  "module": "Brocade® 7840 Extension Switch",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/22/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

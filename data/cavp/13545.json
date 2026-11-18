@@ -1,0 +1,98 @@
+{
+ "cavp_id": "13545",
+ "cavp_cert": "AES 5389",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13545",
+ "implementation": "Junos 18.1R1 - OpenSSL",
+ "product_id": "9475",
+ "description": "The EX4300 switches are single rack unit (1U) devices that deliver a compact solution for crowded wiring closets and access switch locations where space and power are at a premium. It offers a full suite of Layer 2 and Layer3 switching capabilities.",
+ "version": "18.1R1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/3/2018",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Freescale e500 dual core (PB0BJSSE1PNB)",
+   "details": []
+  },
+  {
+   "name": "Intel Xeon E31xx (Sandy Bridge)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 0, 64"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 0, 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

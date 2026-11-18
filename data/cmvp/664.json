@@ -1,0 +1,130 @@
+{
+ "cert": 664,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/664",
+ "module": "ZixCorp Crypto Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The ZixCorp Crypto Module provides email encryption using a FIPS 140-2 level 1 validated cryptographic module. As part of the Zix Email Encryption Service, the ZixCorp Crypto Module provides highly secure email communication between Zix customers and their business partners. The approved cryptographic algorithms included in the module are: AES, Triple- DES, RSA, SHA-1, HMAC SHA-1 and FIPS 186-2 Appendix 3.1 RNG.",
+ "tested_configurations": [
+  "Microsoft Linux Red Hat Enterprise 3 Operating System (in single user mode)"
+ ],
+ "software_versions": "1.0",
+ "product_url": "http://www.zixcorp.com/esecure/",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 321",
+   "cavp_id": "2913",
+   "cavp_ref": "AES:321"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 127",
+   "cavp_id": "2765",
+   "cavp_ref": "HMAC:127"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 145",
+   "cavp_id": "12918",
+   "cavp_ref": "RNG:145"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 108",
+   "cavp_id": "11822",
+   "cavp_ref": "RSA:108"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 394",
+   "cavp_id": "26153",
+   "cavp_ref": "SHS:394"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 385",
+   "cavp_id": "8016",
+   "cavp_ref": "TDES:385"
+  }
+ ],
+ "vendor": "Zix Corporation",
+ "vendor_info": {
+  "name": "Zix Corporation",
+  "website": "http://www.zixcorp.com",
+  "address": [
+   "2711 N. Haskell Avenue",
+   "Suite 2300",
+   "Dallas, TX 75204-2960",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dena Bauckman"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp664.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt664.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/26/2006",
+   "type": "Initial",
+   "lab": "DOMUS"
+  },
+  {
+   "date": "6/4/2009",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "7/8/2009",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "4/26/2006",
+ "last_updated": "7/8/2009",
+ "labs": "DOMUS",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp664.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DSA (non compliant); Diffie-Hellman (key agreement); Elliptic Curve (non compliant); MD2; MD5; HMAC MD5; RSA (key wrapping; key establishment methodology provides 112-bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 664,
+  "vendor": "Zix Corporation",
+  "module": "ZixCorp Crypto Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/26/2006",
+   "06/04/2009",
+   "07/08/2009"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

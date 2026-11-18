@@ -1,0 +1,69 @@
+{
+ "cavp_id": "34088",
+ "cavp_cert": "A1479",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34088",
+ "implementation": "HSSD Enterprise SSD",
+ "product_id": "13946",
+ "description": "Huawei's SSD product with FIPS approved encryption function and provides users with secure encrypted data storage service and authority management service.",
+ "version": "1063",
+ "type": "FIRMWARE",
+ "first_validated": "6/2/2021",
+ "vendor": "HUAWEI TECHNOLOGIES Co. Ltd.",
+ "vendor_website": "https://www.huawei.com/",
+ "oes": [
+  {
+   "name": "Hi1812e V110",
+   "details": [
+    "CPU: ARM Cortex-A53",
+    "  Core of the Hi1812e V110 ASIC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Payload Length: 128-4096 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-1500 Increment 500",
+    "    HMAC Algorithm: SHA2-256",
+    "    Password Length: 32",
+    "    Salt Length: 256",
+    "    Key Data Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

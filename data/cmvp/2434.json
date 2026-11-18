@@ -1,0 +1,182 @@
+{
+ "cert": 2434,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2434",
+ "module": "ProtectServer Internal Express 2 (PSI-E2)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the Security Policy Section 3",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The SafeNet PSI-E 2 is a high-end intelligent PCI adapter card, used either standalone or in the SafeNet PSE 2 appliance, that provides a wide range of cryptographic functions using firmware and dedicated hardware processors. The module provides key management (e.g., generation, storage, deletion, and backup), an extensive suite of cryptographic mechanisms, and process management including separation between operators. The PSI-E 2 also features non-volatile tamper protected memory for key storage, a hardware random number generator, and an RTC.",
+ "hardware_versions": "VBD-05, Version Code 0200",
+ "firmware_versions": "5.00.02",
+ "product_url": "http://safenet.gemalto.com/data-encryption/hardware-security-modules-hsms/",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1756",
+   "cavp_id": "26420",
+   "cavp_ref": "AES:1756"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2664",
+   "cavp_id": "10113",
+   "cavp_ref": "AES:2664"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3118",
+   "cavp_id": "1968",
+   "cavp_ref": "AES:3118"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 428",
+   "cavp_id": "16502",
+   "cavp_ref": "DRBG:428"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 902",
+   "cavp_id": "15207",
+   "cavp_ref": "DSA:902"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 563",
+   "cavp_id": "3130",
+   "cavp_ref": "ECDSA:563"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1957",
+   "cavp_id": "10950",
+   "cavp_ref": "HMAC:1957"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 51",
+   "cavp_id": "27305",
+   "cavp_ref": "KAS:51"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1589",
+   "cavp_id": "4933",
+   "cavp_ref": "RSA:1589"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2576",
+   "cavp_id": "29208",
+   "cavp_ref": "SHS:2576"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1137",
+   "cavp_id": "18166",
+   "cavp_ref": "TDES:1137"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1789",
+   "cavp_id": "6384",
+   "cavp_ref": "TDES:1789"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1789, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "SafeNet, Inc.",
+ "vendor_info": {
+  "name": "SafeNet, Inc.",
+  "website": "http://www.safenet-inc.com",
+  "address": [
+   "20 Colonnade Road, Suite 200",
+   "Ottawa, ON K2E 7M6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security and Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2434.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0056.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/20/2015",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  },
+  {
+   "date": "11/24/2015",
+   "type": "Update",
+   "lab": "EWA - Canada"
+  },
+  {
+   "date": "1/10/2017",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "6/23/2017",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "6/23/2017",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "8/20/2015",
+ "last_updated": "6/23/2017",
+ "labs": "CGI Information Systems & Management Consultants Inc; EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2434.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "AES (Cert. #3118, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Triple-DES (Cert. #1789, key wrapping; key establishment methodology provides 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 112 or 128 bits of encryption strength); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2434,
+  "vendor": "SafeNet, Inc.",
+  "module": "ProtectServer Internal Express 2 (PSI-E2)",
+  "type": "Hardware",
+  "validation_dates": [
+   "08/20/2015",
+   "11/24/2015",
+   "01/10/2017",
+   "06/23/2017",
+   "06/23/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

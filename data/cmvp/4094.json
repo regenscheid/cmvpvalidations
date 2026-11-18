@@ -1,0 +1,192 @@
+{
+ "cert": 4094,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4094",
+ "module": "Riverbed Cryptographic Module v1.1",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Riverbed Cryptographic Module is a general purpose cryptographic library incorporated into SteelHead family products for the protection of sensitive information.",
+ "tested_configurations": [
+  "CentOS 7 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 with PAA",
+  "CentOS 7 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 without PAA",
+  "Scientific Linux 6 running on SteelHead CXA580 with Intel Xeon D-1513N (x86-64) with PAA",
+  "Scientific Linux 6 running on SteelHead CXA580 with Intel Xeon D-1513N (x86-64) without PAA (single-user mode)."
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.1",
+ "product_url": "http://riverbed.com/products/steelhead/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2089",
+   "cavp_id": "34698",
+   "cavp_ref": "A:2089"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318",
+   "note": "A2089"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2089",
+   "cavp_id": "34698",
+   "cavp_ref": "A:2089"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2089",
+   "cavp_id": "34698",
+   "cavp_ref": "A:2089"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2089",
+   "cavp_id": "34698",
+   "cavp_ref": "A:2089"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2089",
+   "cavp_id": "34698",
+   "cavp_ref": "A:2089"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2089",
+   "cavp_id": "34698",
+   "cavp_ref": "A:2089"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A2089",
+   "cavp_id": "34698",
+   "cavp_ref": "A:2089"
+  }
+ ],
+ "vendor": "Riverbed",
+ "vendor_info": {
+  "name": "Riverbed",
+  "website": "https://www.riverbed.com/",
+  "address": [
+   "680 Folsom Street",
+   "San Francisco, CA 94107",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "George Rich"
+   },
+   {
+    "name": "Rich Farris"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4094.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202021_020122_0905_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/6/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/6/2021",
+ "last_updated": "12/6/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4094.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4094,
+  "vendor": "Riverbed",
+  "module": "Riverbed Cryptographic Module v1.1",
+  "type": "Software",
+  "validation_dates": [
+   "12/06/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

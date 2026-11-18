@@ -1,0 +1,45 @@
+{
+ "cavp_id": "29571",
+ "cavp_cert": "TDES 2405",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=29571",
+ "implementation": "KC API using C implementation",
+ "product_id": "779",
+ "description": "This test covers implementations of gcm_base(ctr(aes-generic),ghash-generic), ccm_base(ctr(aes-generic),aes-generic), cbc(aes-generic), ecb(aes-generic), xts(aes-generic), kw(aes-generic), cmac(aes-generic), sha1-generic, sha224-generic, sha256-generic, sha384-generic, sha512-generic, cbc(des3_ede), ecb(des3_ede), ctr(des3_ede), cmac(des3_ede)",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

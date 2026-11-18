@@ -1,0 +1,151 @@
+{
+ "cavp_id": "34993",
+ "cavp_cert": "A2384",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34993",
+ "implementation": "VaultIC 405",
+ "product_id": "14849",
+ "description": "TPR0438FX AT90SO72 Technical Datasheet",
+ "version": "1.02.6E",
+ "type": "FIRMWARE",
+ "first_validated": "3/1/2022",
+ "vendor": "WISeKey",
+ "vendor_website": "http://wisekey.com",
+ "oes": [
+  {
+   "name": "AVR Secure Processor",
+   "details": [
+    "cpu: AVR Secure Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 128-524288 Increment 8",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 192",
+    "    MAC Length: 128",
+    "    Message Length: 128-524288 Increment 8",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 128-524288 Increment 8",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 192",
+    "    MAC Length: 128",
+    "    Message Length: 128-524288 Increment 8",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 128-524288 Increment 8",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 128-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 96, 128",
+    "IV Length: 96",
+    "Payload Length: 128-4096 Increment 8",
+    "AAD Length: 0-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-4096 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-384 Increment 8",
+    "    Entropy Input: 256-1280 Increment 8",
+    "    Nonce: 128-1024 Increment 8",
+    "    Personalization String Length: 0-384 Increment 8",
+    "    Returned Bits: 4096"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256",
+    "    Supported Lengths: 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8, 224"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8, 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8, 384"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65528 Increment 8, 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

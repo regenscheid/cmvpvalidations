@@ -1,0 +1,64 @@
+{
+ "cavp_id": "4106",
+ "cavp_cert": "AES 5947",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4106",
+ "implementation": "AOS Driver Crypto",
+ "product_id": "10341",
+ "description": "AES Component implements AES-128 key size when the FIPS mode is enabled on the device. This improves the efficiency by encrypting/decrypting the packets in the driver as compared to user space.",
+ "version": "XD-Crypto-1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/9/2018",
+ "vendor": "Riverbed Technology",
+ "vendor_website": "http://www.riverbed.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon 7030",
+   "details": []
+  },
+  {
+   "name": "Cavium Octeon 7130",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 80-256",
+    "AAD Length: 8-240"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 80-256",
+    "AAD Length: 8-240"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

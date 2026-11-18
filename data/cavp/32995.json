@@ -1,0 +1,39 @@
+{
+ "cavp_id": "32995",
+ "cavp_cert": "A591",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32995",
+ "implementation": "Linux Kernel crypto API (CTS_AESNI_C)",
+ "product_id": "12897",
+ "description": "The Linux kernel crpyto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: CBC-CS generic C non-optimized block mode using Intel AES-NI AES implementation.",
+ "version": "rhel8.20200327",
+ "type": "SOFTWARE",
+ "first_validated": "7/15/2020",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "RHEL 8 on Intel Sandy Bridge Xeon E5",
+   "details": [
+    "software: RHEL 8",
+    "  Linux distribution developed by Red Hat, Inc. and targeted toward the commercial market.",
+    "processor: Xeon E5",
+    "  Processor Xeon E5 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Sandy Bridge"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC-CS3",
+   "oe": 0,
+   "capabilities": [
+    "Direction: decrypt, encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

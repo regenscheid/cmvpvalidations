@@ -1,0 +1,124 @@
+{
+ "cert": 3072,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3072",
+ "module": "NetApp CryptoMod",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "NetApp CryptoMod will be integrated into select NetApp ONTAP releases for the purpose of supporting FIPS 140-2 compliant data-at-rest encryption and key management.",
+ "tested_configurations": [
+  "ONTAP 9.2 on a AFF A700 system with PAA (single-user mode)",
+  "ONTAP 9.2 on a AFF A700 system without PAA"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "2.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4563",
+   "cavp_id": "27035",
+   "cavp_ref": "AES:4563"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1510",
+   "cavp_id": "11355",
+   "cavp_ref": "DRBG:1510"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3014",
+   "cavp_id": "11977",
+   "cavp_ref": "HMAC:3014"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4563 key establishment methodology provides 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3740",
+   "cavp_id": "25719",
+   "cavp_ref": "SHS:3740"
+  }
+ ],
+ "vendor": "NetApp, Inc.",
+ "vendor_info": {
+  "name": "NetApp, Inc.",
+  "website": "http://www.netapp.com",
+  "address": [
+   "495 East Java Drive",
+   "Fourth Floor",
+   "Sunnyvale, CA 94089",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Scanlin"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3072.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/4/2017",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/4/2017",
+ "last_updated": "12/4/2017",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3072.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3072,
+  "vendor": "NetApp, Inc.",
+  "module": "NetApp CryptoMod",
+  "type": "Software",
+  "validation_dates": [
+   "12/04/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

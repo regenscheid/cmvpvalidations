@@ -1,0 +1,52 @@
+{
+ "cavp_id": "31085",
+ "cavp_cert": "C689",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31085",
+ "implementation": "Ubuntu 18.04 OpenSSL using AES from CPACF, multiplication and GHASH from CPACF",
+ "product_id": "11047",
+ "description": "The test covers the AES from CPACF, multiplication and GHASH from CPACF for Ubuntu 18.04 OpenSSL.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/8/2019",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 18.04 on IBM® z14",
+   "details": [
+    "processor: IBM® z14",
+    "software: Ubuntu 18.04"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 1024",
+    "Payload Length: 160, 384, 800, 1024",
+    "AAD Length: 0, 160, 384, 800, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 1024",
+    "AAD Length: 0, 160, 384, 800, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

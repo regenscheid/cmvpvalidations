@@ -1,0 +1,208 @@
+{
+ "cert": 3004,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3004",
+ "module": "Trusted Platform Module ST33TPHF20SPI",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Section 1.7 of the Security Policy",
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "ST Microelectronics Trusted Platform Module is a hardware cryptographic module which implements advanced cryptographic algorithms, including symmetric and asymmetric cryptography, as well as key generation and random number generation as defined by the Trusted Computing Group (TCG) version 2.0 specification.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (CVL Certs. #1041 and #1045, key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "ST33HTPH2E28AAF0 [1], ST33HTPH2E32AAF0 [1], ST33HTPH2E28AAF1 [1], ST33HTPH2E32AAF1 [1], ST33HTPH2028AAF3 [2] and ST33HTPH2032AAF3 [2]",
+ "firmware_versions": "49.00 [1], 4A.00 [2]",
+ "sunset": "",
+ "level_exceptions": [],
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4336",
+   "cavp_id": "19628",
+   "cavp_ref": "AES:4336"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4338",
+   "cavp_id": "24818",
+   "cavp_ref": "AES:4338"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1041",
+   "cavp_id": "12382",
+   "cavp_ref": "Component:1041"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1045",
+   "cavp_id": "12585",
+   "cavp_ref": "Component:1045"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1361",
+   "cavp_id": "30064",
+   "cavp_ref": "DRBG:1361"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1025",
+   "cavp_id": "16961",
+   "cavp_ref": "ECDSA:1025"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2870",
+   "cavp_id": "2048",
+   "cavp_ref": "HMAC:2870"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2875",
+   "cavp_id": "8473",
+   "cavp_ref": "HMAC:2875"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2876",
+   "cavp_id": "26594",
+   "cavp_ref": "HMAC:2876"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2878",
+   "cavp_id": "12024",
+   "cavp_ref": "HMAC:2878"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 108",
+   "cavp_id": "22878",
+   "cavp_ref": "KAS:108"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 110",
+   "cavp_id": "12133",
+   "cavp_ref": "KAS:110"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 121",
+   "cavp_id": "10173",
+   "cavp_ref": "KDF:121"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 123",
+   "cavp_id": "15056",
+   "cavp_ref": "KDF:123"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #4336 and #4338 and HMAC Certs. #2870 and #2875; key establishment methodology provides 128 bits or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2340",
+   "cavp_id": "23623",
+   "cavp_ref": "RSA:2340"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2342",
+   "cavp_id": "20878",
+   "cavp_ref": "RSA:2342"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3539",
+   "cavp_id": "2939",
+   "cavp_ref": "SHS:3539"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2343",
+   "cavp_id": "8038",
+   "cavp_ref": "TDES:2343"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2345",
+   "cavp_id": "3077",
+   "cavp_ref": "TDES:2345"
+  }
+ ],
+ "vendor": "[email protected]",
+ "vendor_info": {
+  "name": "[email protected]",
+  "website": "/cdn-cgi/l/email-protection",
+  "address": [
+   "Green Square Building B",
+   "Lambroekstraat 5",
+   "Diegem/Machelen B-1831",
+   "Belgium"
+  ],
+  "contacts": [
+   {
+    "name": "Olivier COLLART"
+   },
+   {
+    "name": "Fabien ARRIVE"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3004.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/25/2017",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "8/25/2017",
+ "last_updated": "8/25/2017",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3004.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "NDRNG; RSA (CVL Certs. #1041 and #1045, key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3004,
+  "vendor": "STMicroelectronics",
+  "module": "Trusted Platform Module ST33TPHF20SPI",
+  "type": "Hardware",
+  "validation_dates": [
+   "08/25/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

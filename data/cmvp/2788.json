@@ -1,0 +1,171 @@
+{
+ "cert": 2788,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2788",
+ "module": "Harmony Endpoint FDE and MEPP CryptoCore",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "EMI/EMC: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Check Point CryptoCore is a 140-2 Level 1 cryptographic module for Windows 10 and macOS Sierra. The module provides cryptographic services accessible in kernel mode and user mode on the respective platforms through implementation of platform specific binaries.",
+ "tested_configurations": [
+  "macOS Sierra 10.12 (64-bit) running on an Apple MacBook Pro with an Intel Core i7-3540M with PAA (Kernel Space)",
+  "macOS Sierra 10.12 (64-bit) running on an Apple MacBook Pro with an Intel Core i7-3540M with PAA (User Space)",
+  "macOS Sierra 10.12 (64-bit) running on an Apple MacBook Pro with an Intel Core i7-3540M without PAA (Kernel Space) (single-user mode)",
+  "macOS Sierra 10.12 (64-bit) running on an Apple MacBook Pro with an Intel Core i7-3540M without PAA (User Space)",
+  "Microsoft Windows 10 Anniversary Update (64-bit) running on a Lenovo Thinkpad with an Intel Core i5-3210M with PAA (Kernel Space, VS2008)",
+  "Microsoft Windows 10 Anniversary Update (64-bit) running on a Lenovo Thinkpad with an Intel Core i5-3210M with PAA (User Space, VS2008)",
+  "Microsoft Windows 10 Anniversary Update (64-bit) running on a Lenovo Thinkpad with an Intel Core i5-3210M without PAA (Kernel Space, VS2008)",
+  "Microsoft Windows 10 Anniversary Update (64-bit) running on a Lenovo Thinkpad with an Intel Core i5-3210M without PAA (User Space, VS2008)",
+  "Microsoft Windows 10 Anniversary Update (64-bit) running on a Lenovo X1 Carbon with an Intel Core-i7-7500U with PAA (User Space, VS2017)",
+  "Microsoft Windows 10 Anniversary Update (64-bit) running on a Lenovo X1 Carbon with an Intel Core-i7-7500U without PAA (User Space, VS2017)"
+ ],
+ "software_versions": "4.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4112",
+   "cavp_id": "17130",
+   "cavp_ref": "AES:4112"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1238",
+   "cavp_id": "3773",
+   "cavp_ref": "DRBG:1238"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2687",
+   "cavp_id": "21115",
+   "cavp_ref": "HMAC:2687"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4112; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2225",
+   "cavp_id": "12890",
+   "cavp_ref": "RSA:2225"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 7",
+   "cavp_id": "8441",
+   "cavp_ref": "SHA-3:7"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3385",
+   "cavp_id": "9371",
+   "cavp_ref": "SHS:3385"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2247",
+   "cavp_id": "2915",
+   "cavp_ref": "TDES:2247"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #2247, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Check Point Software Technologies Ltd.",
+ "vendor_info": {
+  "name": "Check Point Software Technologies Ltd.",
+  "website": "http://www.checkpoint.com",
+  "address": [
+   "2101 Gaither Road",
+   "Suite 350",
+   "Rockville, MD 20850",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Malcom Levy"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2788.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/7/2016",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/16/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "5/17/2022",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/22/2022",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "10/14/2022",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "11/7/2016",
+ "last_updated": "10/14/2022",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2788.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2788,
+  "vendor": "Check Point Software Technologies Ltd.",
+  "module": "Harmony Endpoint FDE and MEPP CryptoCore",
+  "type": "Software",
+  "validation_dates": [
+   "11/07/2016",
+   "07/16/2019",
+   "05/17/2022",
+   "07/22/2022",
+   "10/14/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

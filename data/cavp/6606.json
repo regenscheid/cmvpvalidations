@@ -1,0 +1,52 @@
+{
+ "cavp_id": "6606",
+ "cavp_cert": "RSA 621",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6606",
+ "implementation": "IBM 4765 Coprocessor",
+ "product_id": "7505",
+ "description": "The IBM PCI-e Cryptographic Coprocessor Security Module is a failure-resilient, tamper-protected, programmable PCI Express module with processors, hardware random number generation, and cryptographic engines within a tamper-responding enclosure",
+ "version": "45D6049 2.0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "3/17/2010",
+ "vendor": "IBM",
+ "vendor_website": "http://www.ibm.com/security/cryptocards",
+ "oes": [
+  {
+   "name": "PPC405GPr",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 4096",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "    Modulo: 4096",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,135 @@
+{
+ "cert": 2103,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2103",
+ "module": "ProtectServer Gold (PSG)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The SafeNet PSG Adapter is a high-end intelligent PCI adapter card that provides a wide range of cryptographic functions using firmware and dedicated hardware processors. Access to the PSG is provided via a comprehensive PKCS#11 API, allowing extremely flexible use of the module in a multitude of applications.",
+ "hardware_versions": "B2, B3, B4 and PSG-01-0101",
+ "firmware_versions": "3.20.01",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2605",
+   "cavp_id": "11987",
+   "cavp_ref": "AES:2605"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 790",
+   "cavp_id": "20563",
+   "cavp_ref": "DSA:790"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 449",
+   "cavp_id": "201",
+   "cavp_ref": "ECDSA:449"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1613",
+   "cavp_id": "8933",
+   "cavp_ref": "HMAC:1613"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1233",
+   "cavp_id": "6142",
+   "cavp_ref": "RNG:1233"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1332",
+   "cavp_id": "27000",
+   "cavp_ref": "RSA:1332"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2189",
+   "cavp_id": "2133",
+   "cavp_ref": "SHS:2189"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1570",
+   "cavp_id": "20833",
+   "cavp_ref": "TDES:1570"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #1570, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "SafeNet, Inc.",
+ "vendor_info": {
+  "name": "SafeNet, Inc.",
+  "website": "http://www.safenet-inc.com",
+  "address": [
+   "20 Colonnade Road",
+   "Suite 200",
+   "Ottawa, Ontario K2L1A1",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Chris Brych"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2103.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0039.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/14/2014",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "3/14/2014",
+ "last_updated": "3/14/2014",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2103.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (Cert. #2605, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); AES MAC (AES Cert. #2605, non-compliant); ARIA; CAST 128; CAST MAC; DES; DES MAC; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 152 bits of encryption strength; non-compliant less than 112-bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112-bits of encryption strength); ECIES; IDEA 128; IDEA MAC; MD2; MD5; MD5 HMAC; RC2; RC2 MAC; RC4; RIPEMD-128; RIPEMD-160; RMD128 HMAC; RMD160 HMAC; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112-bits of encryption strength); SEED 128; SEED MAC; Triple-DES (Cert. #1570, key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112-bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2103,
+  "vendor": "SafeNet, Inc.",
+  "module": "ProtectServer Gold (PSG)",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/14/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

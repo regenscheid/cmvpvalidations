@@ -1,0 +1,152 @@
+{
+ "cert": 3466,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3466",
+ "module": "Gemalto FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Gemalto FIPS Object Module is a hardened version of the general purpose OpenSSL FIPS Object module designed to provide FIPS 140-2 validated cryptographic functionality.",
+ "tested_configurations": [
+  "Android 4.4 running on LG Nexus 4 with ARMv7 with PAA",
+  "Android 4.4 running on LG Nexus 4 with ARMv7 without PAA",
+  "Android 5.1 running on Samsung Galaxy S6 with ARMv8 without PAA",
+  "Android 6.0 running on Huawei Nexus 6P with ARMv8 without PAA",
+  "Android 7.1 running on Google Pixel XL with ARMv8 without PAA",
+  "Android 8.1 running on Google Pixel 2 with ARMv8 without PAA",
+  "iOS 10.3 running on iPhone 5 with ARMv7 without PAA",
+  "iOS 11.4 running on iPhone 8 with ARMv8 without PAA (single-user mode)",
+  "iOS 9.3 running on iPhone 6 with ARMv8 without PAA"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #2098, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5829",
+   "cavp_id": "20638",
+   "cavp_ref": "AES:5829"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2098",
+   "cavp_id": "3242",
+   "cavp_ref": "Component:2098"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2407",
+   "cavp_id": "20109",
+   "cavp_ref": "DRBG:2407"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1473",
+   "cavp_id": "23115",
+   "cavp_ref": "DSA:1473"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1558",
+   "cavp_id": "21932",
+   "cavp_ref": "ECDSA:1558"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3840",
+   "cavp_id": "9200",
+   "cavp_ref": "HMAC:3840"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3078",
+   "cavp_id": "12484",
+   "cavp_ref": "RSA:3078"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4615",
+   "cavp_id": "6150",
+   "cavp_ref": "SHS:4615"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2861",
+   "cavp_id": "13163",
+   "cavp_ref": "TDES:2861"
+  }
+ ],
+ "vendor": "Gemalto, a Thales Company",
+ "vendor_info": {
+  "name": "Gemalto, a Thales Company",
+  "website": "http://www.gemalto.com/",
+  "address": [
+   "20 Colonnade Road",
+   "Suite 200",
+   "Ottawa, ON K2E 7M6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security & Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3466.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JuneConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/3/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "6/3/2019",
+ "last_updated": "6/3/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3466.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #2098, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3466,
+  "vendor": "Gemalto, a Thales Company",
+  "module": "Gemalto FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "06/03/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

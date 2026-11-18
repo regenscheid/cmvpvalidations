@@ -1,0 +1,48 @@
+{
+ "cavp_id": "24490",
+ "cavp_cert": "AES 4281",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24490",
+ "implementation": "TcgCryptoLib",
+ "product_id": "5986",
+ "description": "Cryptographic library support for encryption and decryption features on HGST's Self-Encrypting Drives (SEDs).",
+ "version": "SOCFWLIB-0019 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/23/2016",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.hgst.com",
+ "oes": [
+  {
+   "name": "ARM Cortex R5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128, 256, 576, 576, 576"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

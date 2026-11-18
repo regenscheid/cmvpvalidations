@@ -1,0 +1,57 @@
+{
+ "cavp_id": "3083",
+ "cavp_cert": "AES 3130",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3083",
+ "implementation": "Brocade FIPS Crypto Library",
+ "product_id": "6701",
+ "description": "Brocade cryptographic library is used in Brocade FOS based switches to implement the cryptographic related modules.",
+ "version": "FOS 7.4.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/5/2014",
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_website": "http://www.brocade.com",
+ "oes": [
+  {
+   "name": "CN6880",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 104, 128, 256, 408",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 160, 384, 720"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

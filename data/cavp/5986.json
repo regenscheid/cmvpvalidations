@@ -1,0 +1,42 @@
+{
+ "cavp_id": "5986",
+ "cavp_cert": "AES 2369",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5986",
+ "implementation": "AES-XTS+GMAC Library",
+ "product_id": "2935",
+ "description": "FPGA core. AES-XTS 256 bit Key, 128 bit multiple length text. Associated GMAC, 256 bit key, 128 bit multiple text length.",
+ "version": "XTS_GMAC_1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "4/5/2013",
+ "vendor": "Altera Canada",
+ "vendor_website": "http://www.altera.com",
+ "oes": [
+  {
+   "name": "Modelsim Altera 10.1b (simulator)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 256, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,391 @@
+{
+ "cert": 4616,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4616",
+ "module": "BC-FJA (Bouncy Castle FIPS Java API)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 8 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Bouncy Castle FIPS Java API is a comprehensive suite of FIPS Approved algorithms implemented in pure Java. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms are available in non-approved operation as well.",
+ "tested_configurations": [
+  "VMware Photon OS 2.0 with JDK 11 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5 [1, 2, 3]",
+  "VMware Photon OS 2.0 with JDK 7 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5 [1, 2, 3]",
+  "VMware Photon OS 2.0 with JDK 8 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5 [1, 2, 3]",
+  "VMware Photon OS 4.0 with JDK 11 on VMware ESXi 8.0 running on Dell PowerEdge R650 with Intel Xeon Gold 6330 [4]",
+  "VMware Photon OS 4.0 with JDK 17 on VMware ESXi 8.0 running on Dell PowerEdge R650 with Intel Xeon Gold 6330 [4]",
+  "VMware Photon OS 4.0 with JDK 7 on VMware ESXi 8.0 running on Dell PowerEdge R650 with Intel Xeon Gold 6330 [4]",
+  "VMware Photon OS 4.0 with JDK 8 on VMware ESXi 8.0 running on Dell PowerEdge R650 with Intel Xeon Gold 6330 [4] (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "1.0.2.1 [1], 1.0.2.2 [2], 1.0.2.3 [3] and 1.0.2.4 [4]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1641, #A2113, #A3594 and #C2204; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Certs. #A1641, #A2113, #A3594 and #C2204; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "SHA-3-Customized",
+   "cavp_cert": "SHA-3 Certs. #A1641, #A2113, #A3594 and #C2204, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1641",
+   "cavp_id": "34250",
+   "cavp_ref": "A:1641"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A2113",
+   "cavp_id": "34722",
+   "cavp_ref": "A:2113"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A3594",
+   "cavp_id": "36204",
+   "cavp_ref": "A:3594"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  }
+ ],
+ "vendor": "Legion of the Bouncy Castle Inc.",
+ "vendor_info": {
+  "name": "Legion of the Bouncy Castle Inc.",
+  "website": "http://www.bouncycastle.org",
+  "address": [
+   "85 The Crescent",
+   "Ascot Vale, Victoria 3032",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "David Hook"
+   },
+   {
+    "name": "Jon Eaves"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4616.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202023_101023_1100%20signed%20%282%29.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/27/2023",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "10/10/2023",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "9/27/2023",
+ "last_updated": "10/10/2023",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4616.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4616,
+  "vendor": "Legion of the Bouncy Castle Inc.",
+  "module": "BC-FJA (Bouncy Castle FIPS Java API)",
+  "type": "Software",
+  "validation_dates": [
+   "09/27/2023",
+   "10/10/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

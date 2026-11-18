@@ -1,0 +1,127 @@
+{
+ "cert": 1886,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1886",
+ "module": "DMD2050E TRANSEC Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The Comtech EF Data FIPS Security Module features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via the DMD2050E Satellite Modem, as well as firmware to provide the cryptographic functions needed to act as an endpoint for TLS and SSH management, and control traffic.",
+ "hardware_versions": "PL-0000192-1, Revision A",
+ "firmware_versions": "1.2.1",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2025",
+   "cavp_id": "30244",
+   "cavp_ref": "AES:2025"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2026",
+   "cavp_id": "19235",
+   "cavp_ref": "AES:2026"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 296",
+   "cavp_id": "24032",
+   "cavp_ref": "ECDSA:296"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1228",
+   "cavp_id": "16051",
+   "cavp_ref": "HMAC:1228"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1061",
+   "cavp_id": "19690",
+   "cavp_ref": "RNG:1061"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1053",
+   "cavp_id": "14994",
+   "cavp_ref": "RSA:1053"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1775",
+   "cavp_id": "13276",
+   "cavp_ref": "SHS:1775"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1309",
+   "cavp_id": "26484",
+   "cavp_ref": "TDES:1309"
+  }
+ ],
+ "vendor": "Comtech EF Data Corporation",
+ "vendor_info": {
+  "name": "Comtech EF Data Corporation",
+  "website": "http://www.comtechefdata.com",
+  "address": [
+   "2114 West 7th Street",
+   "Tempe, AZ 85281",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Wallace Davis"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1886.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0026.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/8/2013",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "2/8/2013",
+ "last_updated": "2/8/2013",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1886.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength);RSA (key transport; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256-bits of encryption strength); MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1886,
+  "vendor": "Comtech EF Data Corporation",
+  "module": "DMD2050E TRANSEC Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/08/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,62 @@
+{
+ "cavp_id": "24166",
+ "cavp_cert": "TDES 1286",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24166",
+ "implementation": "PrivateServer",
+ "product_id": "145",
+ "description": "PrivateServer performs sensitive cryptographic operations internally in a tamper-proof, high performance device. PrivateServer is configured as a network server or as a cryptographic backend to a host",
+ "version": "4.7 4.8.1 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "4/19/2012",
+ "vendor": "ARX (Algorithmic Research)",
+ "vendor_website": "http://www.arx.com",
+ "oes": [
+  {
+   "name": "Intel® Pentium Dual-Core",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Keying Option: 2",
+    "    MAC Length: 16-64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Keying Option: 1",
+    "    MAC Length: 16-64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Keying Option: 1, 2",
+    "    MAC Length: 16-64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

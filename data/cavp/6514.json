@@ -1,0 +1,52 @@
+{
+ "cavp_id": "6514",
+ "cavp_cert": "HMAC 2281",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6514",
+ "implementation": "Harris Broadband Ethernet Radio GPP Cryptographic Library",
+ "product_id": "1117",
+ "description": "This is a firmware library which executes on a general purpose processor to provide cryptographic functions for Harris' industry leading reliable, secure, and high performance Broadband Ethernet Radio (BER) products: RF-7800-OU50x/-OU47x/-OU49x.",
+ "version": "4.10a (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/6/2015",
+ "vendor": "Harris Corporation",
+ "vendor_website": "http://www.harris.com",
+ "oes": [
+  {
+   "name": "Broadcom XLS108",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Key size = block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

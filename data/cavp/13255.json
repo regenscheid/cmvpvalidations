@@ -1,0 +1,56 @@
+{
+ "cavp_id": "13255",
+ "cavp_cert": "RSA 1048",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13255",
+ "implementation": "Brocade FIPS Crypto Library (AMCC)",
+ "product_id": "197",
+ "description": "The Brocade cryptographic library used in Brocade Storage Area Network(SAN) products implements crypto operations in firmware. Brocade DCX 8510 Backbones are the industry's most powerful Fibre Channel switching infrastructure,providing the most reliable, scalable, high-performance foundation for private cloud storage/highly virtualized environments",
+ "version": "OpenSSL v1.0.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/9/2012",
+ "vendor": "Brocade Communications Systems LLC",
+ "vendor_website": "http://www.brocade.com",
+ "oes": [
+  {
+   "name": "AMCC PPC440EPX",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,122 @@
+{
+ "cert": 1788,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1788",
+ "module": "Cryptographic Security Kernel",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Q1 Labs Cryptographic Security Kernel is multi-algorithm library providing general-purpose cryptographic services. The purpose of the module is to provide a single API for cryptographic functionality that can provide centralized control over FIPS-Approved mode status, provide availability of only FIPS-Approved algorithms or vendor-affirmed implementations of non FIPS-Approved algorithms, and provide for centralized logging and reporting of the cryptographic engine.",
+ "tested_configurations": [
+  "CentOS 5.7 (single-user mode)",
+  "Red Hat Enterprise Linux (RHEL) 5.7"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1907",
+   "cavp_id": "9701",
+   "cavp_ref": "AES:1907"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1144",
+   "cavp_id": "7673",
+   "cavp_ref": "HMAC:1144"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1001",
+   "cavp_id": "29934",
+   "cavp_ref": "RNG:1001"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 978",
+   "cavp_id": "19203",
+   "cavp_ref": "RSA:978"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1674",
+   "cavp_id": "1148",
+   "cavp_ref": "SHS:1674"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1239",
+   "cavp_id": "4997",
+   "cavp_ref": "TDES:1239"
+  }
+ ],
+ "vendor": "Q1 Labs",
+ "vendor_info": {
+  "name": "Q1 Labs",
+  "website": "http://www.q1labs.com",
+  "address": [
+   "890 Winter Street",
+   "Suite 230",
+   "Waltham, MA 02451",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ellen Knickle"
+   },
+   {
+    "name": "Peter Clark"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1788.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0020.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/22/2012",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "8/22/2012",
+ "last_updated": "8/22/2012",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1788.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 80 bits of encryption strength; non-compliant); MD5, RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1788,
+  "vendor": "Q1 Labs",
+  "module": "Cryptographic Security Kernel",
+  "type": "Software",
+  "validation_dates": [
+   "08/22/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

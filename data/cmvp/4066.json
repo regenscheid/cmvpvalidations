@@ -1,0 +1,185 @@
+{
+ "cert": 4066,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4066",
+ "module": "Gigamon’s BC-FJA (Bouncy Castle FIPS Java API)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 8 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Gigamon’s Bouncy Castle FIPS Java API is a comprehensive suite of FIPS Approved algorithms implemented in pure Java. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms are available in non-approved operation as well.",
+ "tested_configurations": [
+  "VMware Photon OS 2.0 with JDK 11 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5 (single-user mode)",
+  "VMware Photon OS 2.0 with JDK 7 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5",
+  "VMware Photon OS 2.0 with JDK 8 on VMware ESXi 6.7 running on Dell PowerEdge R830 with Intel Xeon E5"
+ ],
+ "allowed_algorithms": "NDRNG; MD5; RSA (CVL Cert. #C2204, key wrapping; key establishment methodology provides between 150 and 256 bits of encryption strength)",
+ "software_versions": "1.0.2.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C2204; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #C2204; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "SHA-3-Customized",
+   "cavp_cert": "SHA-3 Cert. #C2204, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C2204",
+   "cavp_id": "33447",
+   "cavp_ref": "C:2204"
+  }
+ ],
+ "vendor": "Gigamon Inc.",
+ "vendor_info": {
+  "name": "Gigamon Inc.",
+  "website": "http://www.gigamon.com",
+  "address": [
+   "3300 Olcott Street",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Brian O'Neel"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4066.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November%202021_011221_0923_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/2/2021",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "11/2/2021",
+ "last_updated": "11/2/2021",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4066.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; MD5; RSA (CVL Cert. #C2204, key wrapping; key establishment methodology provides between 150 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4066,
+  "vendor": "Gigamon Inc.",
+  "module": "Gigamon’s BC-FJA (Bouncy Castle FIPS Java API)",
+  "type": "Software",
+  "validation_dates": [
+   "11/02/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

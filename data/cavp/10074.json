@@ -1,0 +1,78 @@
+{
+ "cavp_id": "10074",
+ "cavp_cert": "RSA 304",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10074",
+ "implementation": "RSA for ID-One Cosmo 128 v5",
+ "product_id": "5291",
+ "description": "The ID-One Cosmo Smart Card Platform is a single chip multi-application cryptographic module that offers a highly secure architecture together with cryptographic services such as 3DES (128,192), AES (128,192,256), RSA (1024,1536,2048) with onboard key generation, SHA (1,224,256,384,521), ECDSA (GFP,192,224,256,384) Elliptic Curve Diffie-Hellman.",
+ "version": "B0 ID-One Cosmo Version F310 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "11/6/2007",
+ "vendor": "Oberthur Card Systems",
+ "vendor_website": "http://www.oberthurusa.com",
+ "oes": [
+  {
+   "name": "ID-One Cosmo 128 v5.5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 1536, 2048",
+    "Public Key Value: 3, 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "    Modulo: 1024, 1536, 2048",
+    "    Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

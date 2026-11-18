@@ -1,0 +1,56 @@
+{
+ "cavp_id": "34574",
+ "cavp_cert": "A1965",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34574",
+ "implementation": "MC LRNG Library",
+ "product_id": "14469",
+ "description": "The MC LRNG Library provides SP800-90B approved conditioning functions for use in the Management Center (MC) virtual appliance.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "10/5/2021",
+ "vendor": "Symantec, a Division of Broadcom",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "CentOS 7 KVM on Intel Xeon Silver 42XX",
+   "details": [
+    "OS: CentOS 7 KVM",
+    "processor: Intel Xeon Silver 4210"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

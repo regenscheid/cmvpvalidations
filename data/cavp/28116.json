@@ -1,0 +1,46 @@
+{
+ "cavp_id": "28116",
+ "cavp_cert": "AES 1232",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28116",
+ "implementation": "SEE 2084 Module",
+ "product_id": "7391",
+ "description": "The SEE 2084 Module is a cryptographic accelerator that implements the AES algorithm operating at either 100Mbps or 1Gbps. This module provides encryption functionality for SafeNet's Model 600 Ethernet Encryption systems.",
+ "version": "F2084.V2.0.41 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/24/2009",
+ "vendor": "SafeNet Canada, Inc.",
+ "vendor_website": "http://www.safenet-inc.com",
+ "oes": [
+  {
+   "name": "Xilinx XC2V4000",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

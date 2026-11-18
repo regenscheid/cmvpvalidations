@@ -1,0 +1,172 @@
+{
+ "cert": 3596,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3596",
+ "module": "Cryptographic Module for BIG-IP ®",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS Mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Cryptographic library offering various cryptographic mechanisms to BIG-IP Virtual Edition.",
+ "tested_configurations": [
+  "BIG-IP 14.1.0.3 on Hyper-V 10.0 on Windows Server 2019 running on Dell PowerEdge R630 with an Intel Xeon E5 with PAA [1]",
+  "BIG-IP 14.1.0.3 on Hyper-V 10.0 on Windows Server 2019 running on Dell PowerEdge R630 with an Intel Xeon E5 without PAA [2]",
+  "BIG-IP 14.1.0.3 on VMware ESXi 6.5 hypervisor running on Dell PowerEdge R630 with an Intel Xeon E5 with PAA [1]",
+  "BIG-IP 14.1.0.3 on VMware ESXi 6.5 hypervisor running on Dell PowerEdge R630 with an Intel Xeon E5 without PAA [1]",
+  "BIG-IP 14.1.2 on Hyper-V 10.0 on Windows Server 2019 running on Dell PowerEdge R630 with an Intel Xeon E5 with PAA [2]",
+  "BIG-IP 14.1.2 on Hyper-V 10.0 on Windows Server 2019 running on Dell PowerEdge R630 with an Intel Xeon E5 without PAA [2]",
+  "BIG-IP 14.1.2 on KVM Centos 7.0 running on Dell PowerEdge R630 with an Intel Xeon E5 with PAA [2]",
+  "BIG-IP 14.1.2 on KVM Centos 7.0 running on Dell PowerEdge R630 with an Intel Xeon E5 without PAA [2] (single-user mode)",
+  "BIG-IP 14.1.2 on VMware ESXi 6.5 hypervisor running on Dell PowerEdge R630 with an Intel Xeon E5 with PAA [2]",
+  "BIG-IP 14.1.2 on VMware ESXi 6.5 hypervisor running on Dell PowerEdge R630 with an Intel Xeon E5 without PAA [2]"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #C694; shared secret computation provides 128 or 192 bits of encryption strength); NDRNG",
+ "software_versions": "14.1.0.3 [1] and 14.1.2 [2]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C694",
+   "cavp_id": "31090",
+   "cavp_ref": "C:694"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C695",
+   "cavp_id": "31091",
+   "cavp_ref": "C:695"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C694",
+   "cavp_id": "31090",
+   "cavp_ref": "C:694"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C694",
+   "cavp_id": "31090",
+   "cavp_ref": "C:694"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C695",
+   "cavp_id": "31091",
+   "cavp_ref": "C:695"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C694",
+   "cavp_id": "31090",
+   "cavp_ref": "C:694"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C694",
+   "cavp_id": "31090",
+   "cavp_ref": "C:694"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C695",
+   "cavp_id": "31091",
+   "cavp_ref": "C:695"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #694 and #C695; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C694",
+   "cavp_id": "31090",
+   "cavp_ref": "C:694"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C694",
+   "cavp_id": "31090",
+   "cavp_ref": "C:694"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C695",
+   "cavp_id": "31091",
+   "cavp_ref": "C:695"
+  }
+ ],
+ "vendor": "F5 Networks",
+ "vendor_info": {
+  "name": "F5 Networks",
+  "website": "http://www.f5.com",
+  "address": [
+   "401 Elliott Avenue West",
+   "Seattle, WA 98119",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Maryrita Steinhour"
+   },
+   {
+    "name": "Eric Raisters"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3596.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Jan2020ConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/9/2020",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "6/29/2020",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "1/9/2020",
+ "last_updated": "6/29/2020",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3596.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4505"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #C694; shared secret computation provides 128 or 192 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3596,
+  "vendor": "F5 Networks",
+  "module": "Cryptographic Module for BIG-IP ®",
+  "type": "Software",
+  "validation_dates": [
+   "01/09/2020",
+   "06/29/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

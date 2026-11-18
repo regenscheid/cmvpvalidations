@@ -1,0 +1,111 @@
+{
+ "cavp_id": "32805",
+ "cavp_cert": "C1901",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32805",
+ "implementation": "BIoPass FIDO Key Crypto Library",
+ "product_id": "12708",
+ "description": "Feitian Cryptographic library",
+ "version": "Z32HUB, V1.0 V1.0",
+ "type": "HARDWARE",
+ "first_validated": "6/25/2020",
+ "vendor": "FEITIAN Technologies US Inc",
+ "vendor_website": "http://www.ftsafe.com",
+ "oes": [
+  {
+   "name": "NationZ Z32HUB",
+   "details": [
+    "processor: NationZ Z32HUB"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 8, 64, 128",
+    "    Message Length: 0, 120, 224, 256, 512, 16384",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 8, 64, 128",
+    "    Message Length: 0, 120, 224, 256, 512, 16384",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 8, 64, 128",
+    "    Message Length: 0, 120, 224, 256, 512, 16384",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 8, 64, 128",
+    "    Message Length: 0, 120, 224, 256, 512, 16384"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 128",
+    "    Nonce: 64",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 2048",
+    "C1901 (AES)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Testing Candidates",
+    "C1901 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "C1901 (DRBG)",
+    "C1901 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C1901 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

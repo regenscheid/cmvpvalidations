@@ -1,0 +1,115 @@
+{
+ "cert": 1522,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1522",
+ "module": "IBM LTO Generation 5 Encrypting Tape Drive",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The IBM LTO Generation 5 Encrypting Tape Drive provides AES-GCM encryption of customer data recorded to tape. Both encryption and compression are implemented in the hardware for optimum performance. Two different host interface types of the LTO Generation 5 \"brick\" unit are FIPS certified as a multi-chip, standalone cryptographic module. In customer operation the \"brick\" unit may be embedded in bridge box or in a canister package for operation in a library.",
+ "hardware_versions": "45E8192 EC Level M11221 (Fibre Channel) and 45E8193 EC Level M11221 (SAS)",
+ "firmware_versions": "pf100923e.A9Q5.FC.fips.ro (Fibre Channel) and pf100923e.A9Q5.SAS.fips.ro (SAS)",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1530",
+   "cavp_id": "22793",
+   "cavp_ref": "AES:1530"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1531",
+   "cavp_id": "24386",
+   "cavp_ref": "AES:1531"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1532",
+   "cavp_id": "28931",
+   "cavp_ref": "AES:1532"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 825",
+   "cavp_id": "10235",
+   "cavp_ref": "RNG:825"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 744",
+   "cavp_id": "383",
+   "cavp_ref": "RSA:744"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1361",
+   "cavp_id": "24372",
+   "cavp_ref": "SHS:1361"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "9032 S Rita Road",
+   "Tucson, AZ 85744",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "David L. Swanson"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1522.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0004.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/23/2011",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "3/23/2011",
+ "last_updated": "3/23/2011",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1522.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (Cert. #1530, key wrapping; key establishment methodology provides 256-bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1522,
+  "vendor": "IBM® Corporation",
+  "module": "IBM LTO Generation 5 Encrypting Tape Drive",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/23/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

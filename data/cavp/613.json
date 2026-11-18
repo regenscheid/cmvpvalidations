@@ -1,0 +1,38 @@
+{
+ "cavp_id": "613",
+ "cavp_cert": "AES 942",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=613",
+ "implementation": "AES-CTR used in SP 800-90 CTR RBG",
+ "product_id": "2499",
+ "description": "The Sun T10000A and T10000B tape drives use 256-bit counter-mode AES encryption as part of the SP 800-90 CTR DRBG, which in turn is used for creating cryptographically secure random numbers.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/26/2008",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "ARM926EJ",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

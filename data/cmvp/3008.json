@@ -1,0 +1,131 @@
+{
+ "cert": 3008,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3008",
+ "module": "Fatpipe Crypto Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Fatpipe Crypto Module, a patented router clustering device, is an essential part of Disaster Recovery and Business Continuity Planning for Virtual Private Network (VPN) connectivity. It is integrated with several Kernel Space cryptographic algorithms and other security mechanisms",
+ "tested_configurations": [
+  "LFS (Linux from scratch) 1.1.0 x86 64 Pure64 without PAA running on Intel(R) Xeon(R) CPU E3-1220 v5 @ 3.00GHz (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1027, key agreement; key establishment methodology provides 112 bits of encryption strength); NDRNG",
+ "software_versions": "9.1.2-fips",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4314",
+   "cavp_id": "15118",
+   "cavp_ref": "AES:4314"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4315",
+   "cavp_id": "28180",
+   "cavp_ref": "AES:4315"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1027",
+   "cavp_id": "4768",
+   "cavp_ref": "Component:1027"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1028",
+   "cavp_id": "13227",
+   "cavp_ref": "Component:1028"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1372",
+   "cavp_id": "24185",
+   "cavp_ref": "DRBG:1372"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1149",
+   "cavp_id": "1855",
+   "cavp_ref": "DSA:1149"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2846",
+   "cavp_id": "14220",
+   "cavp_ref": "HMAC:2846"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3549",
+   "cavp_id": "24534",
+   "cavp_ref": "SHS:3549"
+  }
+ ],
+ "vendor": "Fatpipe, Inc.",
+ "vendor_info": {
+  "name": "Fatpipe, Inc.",
+  "website": "http://www.fatpipeinc.com",
+  "address": [
+   "4455 South 700 E STE 100",
+   "Salt Lake City, UT 84107",
+   "United States"
+  ],
+  "contacts": [
+   {
+    "name": "Matt Gwyther"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3008.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/31/2017",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "8/31/2017",
+ "last_updated": "8/31/2017",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3008.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1027, key agreement; key establishment methodology provides 112 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3008,
+  "vendor": "Fatpipe, Inc.",
+  "module": "Fatpipe Crypto Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/31/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

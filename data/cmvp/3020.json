@@ -1,0 +1,152 @@
+{
+ "cert": 3020,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3020",
+ "module": "INTEGRITY Security Services High Assurance Embedded Cryptographic Toolkit",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Green Hills Software/INTEGRITY Security Services (ISS) ECT is a standards-based crypto toolkit providing a flexible framework to integrate encryption, digital signatures and other security mechanisms into a wide range of applications. ISS ECT is designed to support multiple cryptographic providers with a single common API, easily targeted to a variety of Operating Systems.",
+ "tested_configurations": [
+  "FreeRTOS 7.6 running on PU4 using an ARM Cortex-M4 (STM32F469 MCU)"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "software_versions": "3.0.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3773",
+   "cavp_id": "25621",
+   "cavp_ref": "AES:3773"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3774",
+   "cavp_id": "26273",
+   "cavp_ref": "AES:3774"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3775",
+   "cavp_id": "25424",
+   "cavp_ref": "AES:3775"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3776",
+   "cavp_id": "8376",
+   "cavp_ref": "AES:3776"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 720",
+   "cavp_id": "4774",
+   "cavp_ref": "Component:720"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1043",
+   "cavp_id": "25864",
+   "cavp_ref": "DRBG:1043"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 812",
+   "cavp_id": "3983",
+   "cavp_ref": "ECDSA:812"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2473",
+   "cavp_id": "8037",
+   "cavp_ref": "HMAC:2473"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1943",
+   "cavp_id": "1540",
+   "cavp_ref": "RSA:1943"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3143",
+   "cavp_id": "23978",
+   "cavp_ref": "SHS:3143"
+  }
+ ],
+ "vendor": "INTEGRITY Security Services",
+ "vendor_info": {
+  "name": "INTEGRITY Security Services",
+  "website": "http://www.ghs.com",
+  "address": [
+   "7585 Irvine Center Drive",
+   "Suite 250",
+   "Irvine, CA 92618",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "David Sequino"
+   },
+   {
+    "name": "Douglas Kovach"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3020.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertSept2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/21/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "9/21/2017",
+ "last_updated": "9/21/2017",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3020.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3020,
+  "vendor": "INTEGRITY Security Services",
+  "module": "INTEGRITY Security Services High Assurance Embedded Cryptographic Toolkit",
+  "type": "Software",
+  "validation_dates": [
+   "09/21/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

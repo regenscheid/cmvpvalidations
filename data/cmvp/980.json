@@ -1,0 +1,100 @@
+{
+ "cert": 980,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/980",
+ "module": "Windows Vista Code Integrity (ci.dll)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Winload OS Loader (winload.exe) validated to FIPS 140-2 under Cert. #979 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "This is a dynamically linked library that runs as ntoskrnl.exe. It verifies the integrity of executable files, including kernel mode drivers, critical system components and user mode crypto modules, before these files are loaded from disk into memory by the memory manager.",
+ "tested_configurations": [
+  "Microsoft Windows Vista Ultimate Edition SP1 (x64 version) (single-user mode)",
+  "Microsoft Windows Vista Ultimate Edition SP1 (x86 Version)"
+ ],
+ "software_versions": "6.0.6001.18000, 6.0.6001.18023, 6.0.6001.22120 and 6.0.6002.18005",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 354",
+   "cavp_id": "21358",
+   "cavp_ref": "RSA:354"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 753",
+   "cavp_id": "19283",
+   "cavp_ref": "SHS:753"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dave Friant"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp980.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt980.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/21/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "7/29/2009",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "7/21/2008",
+ "last_updated": "7/29/2009",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp980.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 980,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows Vista Code Integrity (ci.dll)",
+  "type": "Software",
+  "validation_dates": [
+   "07/21/2008",
+   "07/29/2009"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

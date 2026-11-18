@@ -1,0 +1,135 @@
+{
+ "cert": 2924,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2924",
+ "module": "Huawei AC6005 Wireless Access Controller",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode and with the tamper evident seals and external baffles installed as indicated in the Security Policy. The protocols IKE, SNMP and TLS shall not be used when operated in FIPS mode.",
+ "level_exceptions": [
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Huawei Access Controller (AC) are multi-chip standalone cryptographic modules enclosed in hard, commercial grade metal cases. The cryptographic boundary for these modules is the enclosure. The primary purpose of these modules is to handle the configuration of wireless access-points. The modules provide network interfaces for data input and output.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "P/Ns AC6005-8, 99089JEB [Baffles] and 4057-113016 [Tamper-Evident Seals]",
+ "firmware_versions": "V200R007C10SPC100",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4408",
+   "cavp_id": "20760",
+   "cavp_ref": "AES:4408"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1114",
+   "cavp_id": "17122",
+   "cavp_ref": "Component:1114"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1421",
+   "cavp_id": "247",
+   "cavp_ref": "DRBG:1421"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1060",
+   "cavp_id": "1407",
+   "cavp_ref": "ECDSA:1060"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2930",
+   "cavp_id": "3795",
+   "cavp_ref": "HMAC:2930"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3634",
+   "cavp_id": "22752",
+   "cavp_ref": "SHS:3634"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2375",
+   "cavp_id": "30273",
+   "cavp_ref": "TDES:2375"
+  }
+ ],
+ "vendor": "Huawei Technologies Co., Ltd.",
+ "vendor_info": {
+  "name": "Huawei Technologies Co., Ltd.",
+  "website": "http://www.huawei.com",
+  "address": [
+   "No.328, Xinghu Street",
+   "Yuhuatai District",
+   "SuZhou, JIANGSU 215000",
+   "CHINA"
+  ],
+  "contacts": [
+   {
+    "name": "Yan Ze (Allen)"
+   },
+   {
+    "name": "Ji Xiang"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2924.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/19/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "6/19/2017",
+ "last_updated": "6/19/2017",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2924.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); HMAC-SHA-1-96 (HMAC Cert. #2930); NDRNG; AES (non-compliant); Blowfish; DES; KDF (non-compliant); HMAC-MD5; IKEv1 KDF (non-compliant); MD5; PBKDF2 (non-compliant); RC4; RSA (non-compliant); SM1; SM3; SM4; SNMP KDF (non-compliant); TLS KDF (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2924,
+  "vendor": "Huawei Technologies Co., Ltd.",
+  "module": "Huawei AC6005 Wireless Access Controller",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/19/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

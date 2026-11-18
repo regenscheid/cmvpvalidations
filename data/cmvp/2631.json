@@ -1,0 +1,197 @@
+{
+ "cert": 2631,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2631",
+ "module": "Intel OpenSSL FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Intel OpenSSL FIPS Object Module provides cryptographic services for Intel Security products.",
+ "tested_configurations": [
+  "Linux 3.10 on VMware ESXi 6.00 running on Intel Xeon with PAA (gcc Compiler Version 4.8.3)",
+  "Linux 3.10 on Vmware ESXi 6.00 running on Intel Xeon without PAA (gcc Compiler Version 4.8.3)",
+  "Linux 3.10 running on Intel Xeon with PAA (gcc Compiler Version 4.8.3)",
+  "Linux 3.10 running on Intel Xeon without PAA (gcc Compiler Version 4.8.3)"
+ ],
+ "software_versions": "2.0.5 and 2.0.8",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3848",
+   "cavp_id": "16943",
+   "cavp_ref": "AES:3848"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3849",
+   "cavp_id": "8027",
+   "cavp_ref": "AES:3849"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 735",
+   "cavp_id": "24616",
+   "cavp_ref": "Component:735"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 736",
+   "cavp_id": "8051",
+   "cavp_ref": "Component:736"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1092",
+   "cavp_id": "22935",
+   "cavp_ref": "DRBG:1092"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1093",
+   "cavp_id": "24158",
+   "cavp_ref": "DRBG:1093"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1051",
+   "cavp_id": "812",
+   "cavp_ref": "DSA:1051"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1052",
+   "cavp_id": "23994",
+   "cavp_ref": "DSA:1052"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 831",
+   "cavp_id": "26507",
+   "cavp_ref": "ECDSA:831"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 832",
+   "cavp_id": "19444",
+   "cavp_ref": "ECDSA:832"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2496",
+   "cavp_id": "9530",
+   "cavp_ref": "HMAC:2496"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2497",
+   "cavp_id": "7705",
+   "cavp_ref": "HMAC:2497"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1965",
+   "cavp_id": "27359",
+   "cavp_ref": "RSA:1965"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1966",
+   "cavp_id": "1805",
+   "cavp_ref": "RSA:1966"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3170",
+   "cavp_id": "12818",
+   "cavp_ref": "SHS:3170"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3171",
+   "cavp_id": "11500",
+   "cavp_ref": "SHS:3171"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2119",
+   "cavp_id": "16098",
+   "cavp_ref": "TDES:2119"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2120",
+   "cavp_id": "21780",
+   "cavp_ref": "TDES:2120"
+  }
+ ],
+ "vendor": "Intel Corporation",
+ "vendor_info": {
+  "name": "Intel Corporation",
+  "website": "http://www.intelsecurity.com/",
+  "address": [
+   "2200 Mission College Blvd.",
+   "Santa Clara, CA 95054-1549",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mark Hanson"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2631.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMay2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/3/2016",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "5/3/2016",
+ "last_updated": "5/3/2016",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2631.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "EC Diffie-Hellman; RSA (encrypt/decrypt); RNG (non-compliant); Dual EC DRBG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2631,
+  "vendor": "Intel Corporation",
+  "module": "Intel OpenSSL FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/03/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

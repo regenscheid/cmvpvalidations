@@ -1,0 +1,143 @@
+{
+ "cert": 2808,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2808",
+ "module": "LG OpenSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The LG OpenSSL Cryptographic Module is a software library that provides cryptographic functionality.",
+ "tested_configurations": [
+  "Android 5.0.1 running on an LG G Flex 2 (Model LGLS996) (single-user mode)",
+  "Android 5.0.1 running on an LG G3 (Model VS985)"
+ ],
+ "software_versions": "2.0.8",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3291",
+   "cavp_id": "20951",
+   "cavp_ref": "AES:3291"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 468",
+   "cavp_id": "1768",
+   "cavp_ref": "Component:468"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 749",
+   "cavp_id": "27260",
+   "cavp_ref": "DRBG:749"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 944",
+   "cavp_id": "13278",
+   "cavp_ref": "DSA:944"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 638",
+   "cavp_id": "17421",
+   "cavp_ref": "ECDSA:638"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2089",
+   "cavp_id": "16811",
+   "cavp_ref": "HMAC:2089"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1684",
+   "cavp_id": "29514",
+   "cavp_ref": "RSA:1684"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2730",
+   "cavp_id": "19382",
+   "cavp_ref": "SHS:2730"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1876",
+   "cavp_id": "754",
+   "cavp_ref": "TDES:1876"
+  }
+ ],
+ "vendor": "LG Electronics, Inc.",
+ "vendor_info": {
+  "name": "LG Electronics, Inc.",
+  "website": "http://www.lg.com",
+  "address": [
+   "20 Yoido-dong",
+   "Youngdungpo-gu",
+   "Seoul 152-721",
+   "Republic of Korea"
+  ],
+  "contacts": [
+   {
+    "name": "Jongseong Kim"
+   },
+   {
+    "name": "Adam Wick"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2808.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/20/2016",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "12/20/2016",
+ "last_updated": "12/20/2016",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2808.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of strength); PRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2808,
+  "vendor": "LG Electronics, Inc.",
+  "module": "LG OpenSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/20/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

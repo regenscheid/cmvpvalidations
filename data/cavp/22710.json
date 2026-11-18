@@ -1,0 +1,44 @@
+{
+ "cavp_id": "22710",
+ "cavp_cert": "AES 3599",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22710",
+ "implementation": "Ciena 6500 Packet-Optical Platform 4x10G Cryptography Engine",
+ "product_id": "1153",
+ "description": "The Ciena 6500 Packet-Optical Platform 4x10G Encryption OTR offers an integrated transport encryption solution providing a protocol-agnostic wirespeed encryption service for use in small to large enterprises or datacenters and also offered through service providers as a differentiated managed service.",
+ "version": "2.00 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/27/2015",
+ "vendor": "Ciena Corporation",
+ "vendor_website": "http://www.ciena.com",
+ "oes": [
+  {
+   "name": "Xilinx XC7Z045",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 256",
+    "AAD Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

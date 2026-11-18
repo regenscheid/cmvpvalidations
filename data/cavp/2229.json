@@ -1,0 +1,41 @@
+{
+ "cavp_id": "2229",
+ "cavp_cert": "AES 2365",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2229",
+ "implementation": "TcgCryptoLib",
+ "product_id": "2928",
+ "description": "HGST SEDs implement TCG Storage specifications. They satisfy the performance & security requirements of demanding enterprise applications. Embedded FIPS 140‐2 modules have hardware encryption, cryptographic erase, independently authorized data bands and authenticated, protected FW download.",
+ "version": "SOCFWLIB-0015 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/29/2013",
+ "vendor": "HGST, Inc.",
+ "vendor_website": "http://www.hgst.com",
+ "oes": [
+  {
+   "name": "ARM Cortex R4",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256, 256, 256",
+    "AES 2365 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

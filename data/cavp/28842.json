@@ -1,0 +1,58 @@
+{
+ "cavp_id": "28842",
+ "cavp_cert": "AES 2320",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28842",
+ "implementation": "HALM Software Crypto Library",
+ "product_id": "2869",
+ "description": "\"The HALM Software Crypto Library provides Harris terminals with AES encryption of digital voice and data for mission-critical assured communications by First Responders.\"",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/25/2013",
+ "vendor": "Harris Corporation",
+ "vendor_website": "http://www.harris.com",
+ "oes": [
+  {
+   "name": "Texas Instruments DSP/BIOS Software Kernel 5.33.03 on Texas Instruments TMS320C55x DSP Core",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 0-1024",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

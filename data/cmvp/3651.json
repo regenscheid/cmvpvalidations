@@ -1,0 +1,141 @@
+{
+ "cert": 3651,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3651",
+ "module": "Secure Kernel Code Integrity",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Windows OS Loader validated to FIPS 140-2 under Cert. #3615 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Secure Kernel Code Integrity (SKCI) running in the Virtual Secure Mode (VSM) of the Hyper-V hypervisor will only grant execute access to physical pages in the kernel that have been successfully verified. Executable pages will not have write permission outside of Hyper-V. Therefore, only verified code can be executed.",
+ "tested_configurations": [
+  "Azure Data Box Edge (x64) running on a Microsoft Azure Data Box with an Intel Xeon Silver without PAA[1]",
+  "Windows 10 Education October 2018 Update (x64) running on a Microsoft Surface Laptop with an Intel Core i5 without PAA[1]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Microsoft Surface Book 2 with an Intel Core i7 without PAA[1]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Microsoft Surface Laptop with an Intel Core i5 without PAA[1]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Microsoft Surface Pro LTE with an Intel Core i5 without PAA[1]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Microsoft Surface Studio with an Intel Core i7 without PAA[1]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Samsung Galaxy Book 12\" with an Intel Core i5 without PAA[1]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on an HP EliteBook x360 1030 G2 with an Intel Core i7 without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Dell Latitude 12 Rugged Tablet with an Intel Core i5 without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Dell Latitude 5290 with an Intel Core i7 without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Microsoft Surface Book 2 with an Intel Core i7 without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Microsoft Surface Go with an Intel Pentium without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Microsoft Surface Laptop with an Intel Core i5 without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Microsoft Surface Pro LTE with an Intel Core i5 without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Samsung Galaxy Book 10.6\" with an Intel Core m3 without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on an HP Elite x2 1013 G3 Tablet with an Intel Core i7 without PAA[1]",
+  "Windows 10 Pro October 2018 Update (x64) running on an HP Slimline Desktop with an Intel Pentium with PAA[1]",
+  "Windows Server 2019 Core (x64) on Hyper-V on Windows Server 2016 running on a Dell PowerEdge R740 Server with an Intel Xeon Gold without PAA[1]",
+  "Windows Server 2019 Core (x64) on Hyper-V on Windows Server 2019 running on a Dell Precision Tower 5810MT with an Intel Xeon E5 without PAA[1]",
+  "Windows Server 2019 Core (x64) running on a Dell PowerEdge R740 Server with an Intel Xeon Gold without PAA[1]",
+  "Windows Server 2019 Datacenter Core (x64) on Hyper-V on Windows Server 2019 running on a Dell Precision Tower 5810MT with an Intel Xeon E5 without PAA[1]",
+  "Windows Server 2019 Datacenter Core (x64) running on a Dell PowerEdge R740 Server with an Intel Xeon Gold without PAA[1]",
+  "Windows Server Core Datacenter 2019 RTM (x64) running on an HPE Edgeline EL8000 / ProLiant e910 Server Blade with PAA[2] (single-user mode)"
+ ],
+ "software_versions": "10.0.17763[1] and 10.0.17763.107[2]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C349",
+   "cavp_id": "30745",
+   "cavp_ref": "C:349"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2047",
+   "cavp_id": "33092",
+   "cavp_ref": "C:2047"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2047",
+   "cavp_id": "33092",
+   "cavp_ref": "C:2047"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3651.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202020_010620_1115.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/7/2020",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "10/5/2022",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "5/7/2020",
+ "last_updated": "10/5/2022",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3651.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #3615"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 3651,
+  "vendor": "Microsoft Corporation",
+  "module": "Secure Kernel Code Integrity",
+  "type": "Software",
+  "validation_dates": [
+   "05/07/2020",
+   "10/05/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

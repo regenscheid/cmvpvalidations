@@ -1,0 +1,67 @@
+{
+ "cavp_id": "33899",
+ "cavp_cert": "A1290",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33899",
+ "implementation": "Hitachi Storage Encryption Engine for NVMe Backend",
+ "product_id": "13744",
+ "description": "The Hitachi Storage Encryption Engine provides high speed data at rest encryption for Hitachi Virtual Storage.",
+ "version": "30A9-01",
+ "type": "HARDWARE",
+ "first_validated": "4/16/2021",
+ "vendor": "Hitachi, Ltd.",
+ "vendor_website": "http://www.hitachi.com",
+ "oes": [
+  {
+   "name": "Hitachi Storage Encryption Engine for NVMe Backend",
+   "details": [
+    "hardware: Hitachi Storage Encryption Engine for NVMe Backend"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256, 512"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Hex"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

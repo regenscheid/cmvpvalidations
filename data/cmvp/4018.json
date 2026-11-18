@@ -1,0 +1,436 @@
+{
+ "cert": 4018,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4018",
+ "module": "Ubuntu 18.04 Kernel Crypto API Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates random strings whose strength is modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Ubuntu 18.04 Kernel Crypto API module is a software module running as part of the operating system kernel that provides general purpose cryptographic services.",
+ "tested_configurations": [
+  "Ubuntu 18.04 LTS 64-bit running on Supermicro SYS-5018R-WR with Intel Xeon CPU E5 with PAA",
+  "Ubuntu 18.04 LTS 64-bit running on Supermicro SYS-5018R-WR with Intel Xeon CPU E5 without PAA (single user-mode)"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A731",
+   "cavp_id": "33248",
+   "cavp_ref": "A:731"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A732",
+   "cavp_id": "33249",
+   "cavp_ref": "A:732"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A734",
+   "cavp_id": "33251",
+   "cavp_ref": "A:734"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A741",
+   "cavp_id": "33258",
+   "cavp_ref": "A:741"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A742",
+   "cavp_id": "33259",
+   "cavp_ref": "A:742"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A743",
+   "cavp_id": "33260",
+   "cavp_ref": "A:743"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A745",
+   "cavp_id": "33262",
+   "cavp_ref": "A:745"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A746",
+   "cavp_id": "33263",
+   "cavp_ref": "A:746"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A747",
+   "cavp_id": "33264",
+   "cavp_ref": "A:747"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A748",
+   "cavp_id": "33265",
+   "cavp_ref": "A:748"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A749",
+   "cavp_id": "33266",
+   "cavp_ref": "A:749"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A750",
+   "cavp_id": "33267",
+   "cavp_ref": "A:750"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A751",
+   "cavp_id": "33268",
+   "cavp_ref": "A:751"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A752",
+   "cavp_id": "33269",
+   "cavp_ref": "A:752"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A753",
+   "cavp_id": "33270",
+   "cavp_ref": "A:753"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A754",
+   "cavp_id": "33271",
+   "cavp_ref": "A:754"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A755",
+   "cavp_id": "33272",
+   "cavp_ref": "A:755"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A756",
+   "cavp_id": "33273",
+   "cavp_ref": "A:756"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A731",
+   "cavp_id": "33248",
+   "cavp_ref": "A:731"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A734",
+   "cavp_id": "33251",
+   "cavp_ref": "A:734"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A737",
+   "cavp_id": "33254",
+   "cavp_ref": "A:737"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A738",
+   "cavp_id": "33255",
+   "cavp_ref": "A:738"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A739",
+   "cavp_id": "33256",
+   "cavp_ref": "A:739"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A740",
+   "cavp_id": "33257",
+   "cavp_ref": "A:740"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A742",
+   "cavp_id": "33259",
+   "cavp_ref": "A:742"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A743",
+   "cavp_id": "33260",
+   "cavp_ref": "A:743"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A744",
+   "cavp_id": "33261",
+   "cavp_ref": "A:744"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A746",
+   "cavp_id": "33263",
+   "cavp_ref": "A:746"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A747",
+   "cavp_id": "33264",
+   "cavp_ref": "A:747"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A748",
+   "cavp_id": "33265",
+   "cavp_ref": "A:748"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A749",
+   "cavp_id": "33266",
+   "cavp_ref": "A:749"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A750",
+   "cavp_id": "33267",
+   "cavp_ref": "A:750"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A751",
+   "cavp_id": "33268",
+   "cavp_ref": "A:751"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A753",
+   "cavp_id": "33270",
+   "cavp_ref": "A:753"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A754",
+   "cavp_id": "33271",
+   "cavp_ref": "A:754"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A755",
+   "cavp_id": "33272",
+   "cavp_ref": "A:755"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A756",
+   "cavp_id": "33273",
+   "cavp_ref": "A:756"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A733",
+   "cavp_id": "33250",
+   "cavp_ref": "A:733"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A734",
+   "cavp_id": "33251",
+   "cavp_ref": "A:734"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A737",
+   "cavp_id": "33254",
+   "cavp_ref": "A:737"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A738",
+   "cavp_id": "33255",
+   "cavp_ref": "A:738"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A739",
+   "cavp_id": "33256",
+   "cavp_ref": "A:739"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A731, #A734, #A742, #A743, #A746, #A747, #A748, #A749, #A750, #A751, #A753, #A754, #A755 and #A756; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A734, #A748, #A751 and #A755 and HMAC Certs. #A734, #A737, #A738 and #A739; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Certs. #A734, #A740 and #A744 and HMAC Certs. #A734, #A737, #A738 and #A739; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A734",
+   "cavp_id": "33251",
+   "cavp_ref": "A:734"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A737",
+   "cavp_id": "33254",
+   "cavp_ref": "A:737"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A738",
+   "cavp_id": "33255",
+   "cavp_ref": "A:738"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A739",
+   "cavp_id": "33256",
+   "cavp_ref": "A:739"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A733",
+   "cavp_id": "33250",
+   "cavp_ref": "A:733"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A734",
+   "cavp_id": "33251",
+   "cavp_ref": "A:734"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A737",
+   "cavp_id": "33254",
+   "cavp_ref": "A:737"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A738",
+   "cavp_id": "33255",
+   "cavp_ref": "A:738"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A739",
+   "cavp_id": "33256",
+   "cavp_ref": "A:739"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A734",
+   "cavp_id": "33251",
+   "cavp_ref": "A:734"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A740",
+   "cavp_id": "33257",
+   "cavp_ref": "A:740"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A744",
+   "cavp_id": "33261",
+   "cavp_ref": "A:744"
+  }
+ ],
+ "vendor": "Canonical Ltd.",
+ "vendor_info": {
+  "name": "Canonical Ltd.",
+  "website": "http://www.canonical.com",
+  "address": [
+   "5th floor, Blue Fin Building",
+   "110 Southwark Street",
+   "London SE1 0SU",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "Canonical Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4018.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202021_010921_0733.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/30/2021",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "9/21/2021",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "10/18/2021",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "8/30/2021",
+ "last_updated": "10/18/2021",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4018.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4018,
+  "vendor": "Canonical Ltd.",
+  "module": "Ubuntu 18.04 Kernel Crypto API Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/30/2021",
+   "09/21/2021",
+   "10/18/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

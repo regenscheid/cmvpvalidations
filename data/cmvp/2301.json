@@ -1,0 +1,175 @@
+{
+ "cert": 2301,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2301",
+ "module": "IOS Common Cryptographic Module (IC2M)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A",
+  "Tested: Cisco ASR1K 1NG, Cisco ISR 4451-X, Cisco ISR 4441, Cisco ASR1K RP2 and Cisco ASR1K 2KP (kingpin) with processor Intel Xeon on IOS XE3.10",
+  "Cisco ISR 3925E and Cisco ISR 3945E with processor Intel Xeon on IOS 15.3",
+  "Cisco ASR1K RP1 with processor Freescale SC8548H on IOS XE3.10",
+  "Cisco ISR c2951, Cisco ISR c3925 and Cisco ISR c3945 with processor Freescale 8752E on IOS 15.3",
+  "Cisco ISR 1921 with processor Cavium CN5020 on IOS 15.3",
+  "Cisco ISR 1941 and Cisco ISR 2900 with processor Cavium CN5220 on IOS 15.3",
+  "Cisco Catalyst 4K with processor MPC8572C on IOS XE 3.6",
+  "Cisco Catalyst 3750x and Cisco Catalyst 3560x with processor Power-PC 405 on IOS 15.2",
+  "Cisco Catalyst 3650 with processor AMCC PowerPC 405EX on IOS XE3.6",
+  "Cisco Catalyst 2960 with processor Cavium CN5230 on IOS 15.2"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The IC2M module provides the FIPS validated cryptographic algorithms for services requiring those algorithms. The module does not implement any protocols directly. Instead, it provides the cryptographic primitives and functions to allow IOS to implement those various protocols.",
+ "firmware_versions": "Rel 3(1.5.2)",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2783",
+   "cavp_id": "5929",
+   "cavp_ref": "AES:2783"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2817",
+   "cavp_id": "28693",
+   "cavp_ref": "AES:2817"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 252",
+   "cavp_id": "18590",
+   "cavp_ref": "Component:252"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 253",
+   "cavp_id": "14879",
+   "cavp_ref": "Component:253"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 481",
+   "cavp_id": "4794",
+   "cavp_ref": "DRBG:481"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 493",
+   "cavp_id": "24353",
+   "cavp_ref": "ECDSA:493"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1764",
+   "cavp_id": "13432",
+   "cavp_ref": "HMAC:1764"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1471",
+   "cavp_id": "24249",
+   "cavp_ref": "RSA:1471"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2338",
+   "cavp_id": "16137",
+   "cavp_ref": "SHS:2338"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2361",
+   "cavp_id": "14122",
+   "cavp_ref": "SHS:2361"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1670",
+   "cavp_id": "19482",
+   "cavp_ref": "TDES:1670"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1671",
+   "cavp_id": "15909",
+   "cavp_ref": "TDES:1671"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1688",
+   "cavp_id": "29004",
+   "cavp_ref": "TDES:1688"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2301.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0048.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/18/2014",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "6/12/2015",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "12/18/2014",
+ "last_updated": "6/12/2015",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2301.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "DES; Diffie-Hellman (CVL Cert. #252, key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #252, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); HMAC-MD5; MD2; MD5; NDRNG; RC2; RC4; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength); SEAL"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2301,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "IOS Common Cryptographic Module (IC2M)",
+  "type": "Firmware",
+  "validation_dates": [
+   "12/18/2014",
+   "06/12/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,135 @@
+{
+ "cavp_id": "32832",
+ "cavp_cert": "C1928",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32832",
+ "implementation": "MXIC Cryptographic Library",
+ "product_id": "12736",
+ "description": "The MXIC Cryptographic library is a security flash integrated into MXIC Series Products.",
+ "version": "MX78",
+ "type": "HARDWARE",
+ "first_validated": "6/30/2020",
+ "vendor": "Macronix International Co., Ltd.",
+ "vendor_website": "http://www.mxic.com",
+ "oes": [
+  {
+   "name": "MXIC Cryptographic Library",
+   "details": [
+    "device: MXIC Cryptographic Library"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-256",
+    "AAD Length: 8-240",
+    "C1928 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 16, 128, 256",
+    "AAD Length: 128, 160, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 16, 128, 256",
+    "AAD Length: 128, 160, 192, 256",
+    "C1928 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "C1928 (AES)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C1928 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "C1928 (KAS)",
+    "C1928 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

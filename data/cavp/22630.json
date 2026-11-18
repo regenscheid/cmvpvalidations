@@ -1,0 +1,42 @@
+{
+ "cavp_id": "22630",
+ "cavp_cert": "AES 5483",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22630",
+ "implementation": "Junos OS 18.1R1 Data Plane",
+ "product_id": "9607",
+ "description": "The SRX4600 is a high-performance, next-generation firewall supporting cloud-enabled enterprise data center, campus or service provider networks. It offers high-scale security services while providing scalability, ease of management, secure connectivity, and advanced threat mitigation capabilities.",
+ "version": "Junos OS 18.1R1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/15/2018",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Intel(R) Xeon(R) CPU E5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

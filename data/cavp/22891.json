@@ -1,0 +1,58 @@
+{
+ "cavp_id": "22891",
+ "cavp_cert": "HMAC 1774",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22891",
+ "implementation": "AOS Crypto Module",
+ "product_id": "3605",
+ "description": "Xirrus AOS crypto library implementation.",
+ "version": "6.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/2/2014",
+ "vendor": "Xirrus, Inc.",
+ "vendor_website": "http://www.xirrus.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon CN5000 series",
+   "details": []
+  },
+  {
+   "name": "Cavium Octeon CN6000 series",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

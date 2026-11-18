@@ -1,0 +1,152 @@
+{
+ "cert": 3753,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3753",
+ "module": "BoringCrypto Android",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Section 12.1 of the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications.",
+ "tested_configurations": [
+  "Android 10 running on Pixel 3 XL with Snapdragon 845 32-bit with PAA",
+  "Android 10 running on Pixel 3 XL with Snapdragon 845 32-bit without PAA",
+  "Android 10 running on Pixel 3 XL with Snapdragon 845 64-bit with PAA",
+  "Android 10 running on Pixel 3 XL with Snapdragon 845 64-bit without PAA",
+  "Android 10 running on Pixel 3a with Snapdragon 670 32-bit with PAA",
+  "Android 10 running on Pixel 3a with Snapdragon 670 32-bit without PAA",
+  "Android 10 running on Pixel 3a with Snapdragon 670 64-bit with PAA",
+  "Android 10 running on Pixel 3a with Snapdragon 670 64-bit without PAA",
+  "Android 10 running on Pixel 4 XL with Snapdragon 855 32-bit with PAA",
+  "Android 10 running on Pixel 4 XL with Snapdragon 855 32-bit without PAA (single-user mode)",
+  "Android 10 running on Pixel 4 XL with Snapdragon 855 64-bit with PAA",
+  "Android 10 running on Pixel 4 XL with Snapdragon 855 64-bit without PAA"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "7f02881e96e51f1873afcf384d02f782b48967ca",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1314; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  }
+ ],
+ "vendor": "Google, LLC.",
+ "vendor_info": {
+  "name": "Google, LLC.",
+  "website": "http://www.google.com/",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Adam Langley"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3753.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202020_040121_1006_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/2/2020",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/2/2020",
+ "last_updated": "12/2/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3753.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3753,
+  "vendor": "Google, LLC.",
+  "module": "BoringCrypto Android",
+  "type": "Software",
+  "validation_dates": [
+   "12/02/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

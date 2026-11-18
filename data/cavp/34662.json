@@ -1,0 +1,41 @@
+{
+ "cavp_id": "34662",
+ "cavp_cert": "A2053",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34662",
+ "implementation": "iDirectGov TRANSEC ECDH Implementation",
+ "product_id": "14577",
+ "description": "iDirectGov's KAS implementation provides the Elliptic Curve Diffie-Hellman key agreement scheme in support of the TRANSEC Module.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/3/2021",
+ "vendor": "iDirect Government",
+ "vendor_website": "http://www.idirectgov.com",
+ "oes": [
+  {
+   "name": "Altera Cyclone V",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Function: Full Validation, Key Pair Generation, Partial Validation",
+    "Scheme:",
+    "  onePassDh:",
+    "    KAS Role: Responder",
+    "    KDF Methods:",
+    "      oneStepNoCounterKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "            DKM Length: 256",
+    "        Fixed Info Pattern: entropyBits[32]",
+    "        Fixed Info Encoding: concatenation",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,197 @@
+{
+ "cert": 2952,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2952",
+ "module": "InformaCast Java Crypto Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #2804",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "InformaCast transforms devices on your network into a powerful system for IP paging and emergency alerting. InformaCast contains Java libraries that feature robust FIPS 140-2 validated algorithm support.",
+ "tested_configurations": [
+  "Java SE Runtime Environment v8 (1.8.0) on Centos 6.4 on vSphere 6 running on a Cisco UCSB-B200-M4 Blade (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #704, key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "3.0",
+ "product_url": "http://www.singlewire.com/informacast",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3756",
+   "cavp_id": "29486",
+   "cavp_ref": "AES:3756"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 704",
+   "cavp_id": "6592",
+   "cavp_ref": "Component:704"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 705",
+   "cavp_id": "1445",
+   "cavp_ref": "Component:705"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 706",
+   "cavp_id": "7674",
+   "cavp_ref": "Component:706"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1031",
+   "cavp_id": "18313",
+   "cavp_ref": "DRBG:1031"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1043",
+   "cavp_id": "4042",
+   "cavp_ref": "DSA:1043"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 804",
+   "cavp_id": "24690",
+   "cavp_ref": "ECDSA:804"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2458",
+   "cavp_id": "9733",
+   "cavp_ref": "HMAC:2458"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 73",
+   "cavp_id": "19481",
+   "cavp_ref": "KAS:73"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "SP 800-56Arev2, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 78",
+   "cavp_id": "13422",
+   "cavp_ref": "KDF:78"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3756; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #2090; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1932",
+   "cavp_id": "13450",
+   "cavp_ref": "RSA:1932"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 3",
+   "cavp_id": "11763",
+   "cavp_ref": "SHA-3:3"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3126",
+   "cavp_id": "21713",
+   "cavp_ref": "SHS:3126"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2090",
+   "cavp_id": "16172",
+   "cavp_ref": "TDES:2090"
+  }
+ ],
+ "vendor": "Singlewire Software",
+ "vendor_info": {
+  "name": "Singlewire Software",
+  "website": "http://www.singlewire.com",
+  "address": [
+   "1002 Deming Way",
+   "Madison, WI 53717",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Sales"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2952.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJuly2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/7/2017",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "5/15/2020",
+   "type": "Update",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "7/7/2017",
+ "last_updated": "5/15/2020",
+ "labs": "Acumen Security; CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2952.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #704, key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 2952,
+  "vendor": "Singlewire Software",
+  "module": "InformaCast Java Crypto Library",
+  "type": "Software",
+  "validation_dates": [
+   "07/07/2017",
+   "05/15/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

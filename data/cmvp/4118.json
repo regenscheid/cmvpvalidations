@@ -1,0 +1,157 @@
+{
+ "cert": 4118,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4118",
+ "module": "Nutanix Cryptographic Module for BoringSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Section 12.1 of the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Nutanix Cryptographic Module for BoringSSL is a suite of FIPS Approved algorithms used for TLS and other cryptographic functions.",
+ "tested_configurations": [
+  "CentOS 7 running on Nutanix NX-3040-G7 with Intel® Xeon® Silver 4208 with PAA",
+  "CentOS 7 running on Nutanix NX-3040-G7 with Intel® Xeon® Silver 4208 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "ae223d6138807a13006342edfeef32e813246b39",
+ "product_url": "N/A",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2612",
+   "cavp_id": "35223",
+   "cavp_ref": "A:2612"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2612",
+   "cavp_id": "35223",
+   "cavp_ref": "A:2612"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2612",
+   "cavp_id": "35223",
+   "cavp_ref": "A:2612"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2612",
+   "cavp_id": "35223",
+   "cavp_ref": "A:2612"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2612",
+   "cavp_id": "35223",
+   "cavp_ref": "A:2612"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A2612; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2612",
+   "cavp_id": "35223",
+   "cavp_ref": "A:2612"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2612",
+   "cavp_id": "35223",
+   "cavp_ref": "A:2612"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A2612",
+   "cavp_id": "35223",
+   "cavp_ref": "A:2612"
+  }
+ ],
+ "vendor": "Nutanix, Inc.",
+ "vendor_info": {
+  "name": "Nutanix, Inc.",
+  "website": "https://www.nutanix.com/",
+  "address": [
+   "1740 Technology Drive",
+   "Suite 150",
+   "San Jose, CA 95110",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Matt Keller"
+   },
+   {
+    "name": "Ashutosh Pangasa"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4118.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202021_020122_0905_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/28/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "9/22/2022",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/28/2021",
+ "last_updated": "9/22/2022",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4118.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4118,
+  "vendor": "Nutanix, Inc.",
+  "module": "Nutanix Cryptographic Module for BoringSSL",
+  "type": "Software",
+  "validation_dates": [
+   "12/28/2021",
+   "09/22/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

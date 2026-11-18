@@ -1,0 +1,267 @@
+{
+ "cert": 3875,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3875",
+ "module": "VMware OpenSSL FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security-relevant modification to Cert. #2839",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The VMware OpenSSL FIPS Object Module provides cryptographic functions to various VMware applications.",
+ "tested_configurations": [
+  "Amazon Linux 2 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 with PAA (gcc Compiler Version 5.3.0)",
+  "Amazon Linux 2 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 without PAA (gcc Compiler Version 5.3.0)",
+  "BLUX 4.4 on ESXi 6.5 on Intel Xeon with PAA (gcc Compiler version 5.3.0)",
+  "BLUX 4.4 on ESXi 6.5 on Intel Xeon without PAA (gcc Compiler version 5.3.0)",
+  "BLUX 4.9 on ESXi 6.5 on Intel Xeon with PAA (gcc Compiler version 5.3.0)",
+  "BLUX 4.9 on ESXi 6.5 on Intel Xeon without PAA (gcc Compiler version 5.3.0)",
+  "PhotonOS 1.0 on ESXi 6.0 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 1.0 on ESXi 6.0 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 1.0 on ESXi 6.5 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 1.0 on ESXi 6.5 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 1.0 on ESXi 6.7 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 1.0 on ESXi 6.7 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 2.0 on ESXi 6.0 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 2.0 on ESXi 6.0 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 2.0 on ESXi 6.5 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 2.0 on ESXi 6.5 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 2.0 on ESXi 6.7 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 2.0 on ESXi 6.7 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 3.0 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 with PAA (gcc Compiler Version 5.3.0)",
+  "PhotonOS 3.0 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 without PAA (gcc Compiler Version 5.3.0)",
+  "SLES 11 on ESXi 6.7 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "SLES 11 on ESXi 6.7 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "SLES 11 SP3 on ESXi 6.0 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "SLES 11 SP3 on ESXi 6.0 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "SLES 12 on ESXi 6.5 on Intel Xeon with PAA (gcc Compiler Version 5.3.0)",
+  "SLES 12 on ESXi 6.5 on Intel Xeon without PAA (gcc Compiler Version 5.3.0)",
+  "Ubuntu 14.04 on ESXi 6.0 on Intel Xeon with PAA (gcc Compiler version 4.6.3)",
+  "Ubuntu 14.04 on ESXi 6.0 on Intel Xeon without PAA (gcc Compiler version 4.6.3)",
+  "Ubuntu 14.04 on ESXi 6.5 on Intel Xeon with PAA (gcc Compiler version 4.6.3)",
+  "Ubuntu 14.04 on ESXi 6.5 on Intel Xeon without PAA (gcc Compiler version 4.6.3)",
+  "Ubuntu 16.04 on ESXi 6.0 on Intel Xeon with PAA (gcc Compiler version 4.6.3)",
+  "Ubuntu 16.04 on ESXi 6.0 on Intel Xeon without PAA (gcc Compiler version 4.6.3)",
+  "Ubuntu 16.04 on ESXi 6.5 on Intel Xeon with PAA (gcc Compiler version 4.6.3)",
+  "Ubuntu 16.04 on ESXi 6.5 on Intel Xeon without PAA (gcc Compiler version 4.6.3)",
+  "Ubuntu 16.04 on ESXi 6.7 on Intel Xeon with PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 16.04 on ESXi 6.7 on Intel Xeon without PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 16.04 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 with PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 16.04 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 without PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 18.04 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 with PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 18.04 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 without PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 20.04 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 with PAA (gcc Compiler Version 4.6.3)",
+  "Ubuntu 20.04 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 without PAA (gcc Compiler Version 4.6.3)",
+  "VMware NSX Controller OS 12.04 on ESXi 6.0 on Intel Xeon with PAA (gcc Compiler Version 4.6.3)",
+  "VMware NSX Controller OS 12.04 on ESXi 6.0 on Intel Xeon without PAA (gcc Compiler Version 4.6.3)",
+  "VMware NSX Edge OS 3.14 on ESXi 6.0 on Intel Xeon without PAA (gcc Compiler Version 4.6.3)",
+  "VMware NSX Edge OS 3.14 on ESXi6.0 on Intel Xeon with PAA (gcc Compiler Version 4.6.3)",
+  "VMware NSX Manager OS 3.17 on ESXi 6.0 on Intel Xeon with PAA (gcc Compiler Version 4.6.3)",
+  "VMware NSX Manager OS 3.17 on ESXi 6.0 on Intel Xeon without PAA (gcc Compiler Version 4.6.3)",
+  "Windows 10 on ESXi 6.0 on Intel Core I with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 10 on ESXi 6.0 on Intel Core I without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 10 on ESXi 6.5 on Intel Xeon with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 10 on ESXi 6.5 on Intel Xeon without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 10 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 10 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1) (single-user mode)",
+  "Windows 10 on Intel Core I with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 10 on Intel Core I without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 2012 64 bit on ESXi 6.0 on Intel Xeon with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 2012 64 bit on ESXi 6.0 on Intel Xeon without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 2012 R2 on ESXi 6.0 on Intel Xeon with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 2012 R2 on ESXi 6.0 on Intel Xeon without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 2016 on ESXi 6.0 on Intel Xeon with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 2016 on ESXi 6.0 on Intel Xeon without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 7 SP1 on ESXi 6.0 on Intel Core I with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 7 SP1 on ESXi 6.0 on Intel Core I without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 8.1 on ESXi 6.0 on Intel Core I with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows 8.1 on ESXi 6.0 on Intel Core I without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2008 on ESXi 6.5 on Intel Xeon with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2008 on ESXi 6.5 on Intel Xeon without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2012 on ESXi 6.5 on Intel Xeon with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2012 on ESXi 6.5 on Intel Xeon without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2016 on ESXi 6.5 on Intel Xeon with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2016 on ESXi 6.5 on Intel Xeon without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2016 on ESXi 6.7 on Intel Xeon with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2016 on ESXi 6.7 on Intel Xeon without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2016 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2016 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2019 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 with PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Windows Server 2019 on ESXi 7.0 running on a Dell PowerEdge R740 with Intel Xeon Gold 6126 without PAA (Microsoft C/C++ Optimizing Compiler Version 18.00.21005.1)",
+  "Within ESXi 6.7 on Intel Xeon 6126 with PAA",
+  "Within ESXi 6.7 on Intel Xeon 6126 without PAA",
+  "Within ESXi 6.7 on Intel Xeon E5-2440 with PAA",
+  "Within ESXi 6.7 on Intel Xeon E5-2440 without PAA"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.9",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4137",
+   "cavp_id": "23550",
+   "cavp_ref": "AES:4137"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1970",
+   "cavp_id": "32876",
+   "cavp_ref": "C:1970"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1254",
+   "cavp_id": "3330",
+   "cavp_ref": "DRBG:1254"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1970",
+   "cavp_id": "32876",
+   "cavp_ref": "C:1970"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1123",
+   "cavp_id": "5288",
+   "cavp_ref": "DSA:1123"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1970",
+   "cavp_id": "32876",
+   "cavp_ref": "C:1970"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 949",
+   "cavp_id": "28988",
+   "cavp_ref": "ECDSA:949"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1970",
+   "cavp_id": "32876",
+   "cavp_ref": "C:1970"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2710",
+   "cavp_id": "8179",
+   "cavp_ref": "HMAC:2710"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1970",
+   "cavp_id": "32876",
+   "cavp_ref": "C:1970"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2251",
+   "cavp_id": "22298",
+   "cavp_ref": "RSA:2251"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1970",
+   "cavp_id": "32876",
+   "cavp_ref": "C:1970"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3407",
+   "cavp_id": "5855",
+   "cavp_ref": "SHS:3407"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1970",
+   "cavp_id": "32876",
+   "cavp_ref": "C:1970"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2261",
+   "cavp_id": "1538",
+   "cavp_ref": "TDES:2261"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1970",
+   "cavp_id": "32876",
+   "cavp_ref": "C:1970"
+  }
+ ],
+ "vendor": "VMware, Inc.",
+ "vendor_info": {
+  "name": "VMware, Inc.",
+  "website": "https://www.vmware.com/",
+  "address": [
+   "3401 Hillview Ave",
+   "Palo Alto, CA 94304",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Manoj Maskara"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3875.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202021_010421_0724_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/29/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/29/2021",
+ "last_updated": "3/29/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3875.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3875,
+  "vendor": "VMware, Inc.",
+  "module": "VMware OpenSSL FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/29/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

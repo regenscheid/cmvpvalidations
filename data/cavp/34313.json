@@ -1,0 +1,130 @@
+{
+ "cavp_id": "34313",
+ "cavp_cert": "A1704",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34313",
+ "implementation": "GnuTLS (AESNI)",
+ "product_id": "14208",
+ "description": "GnuTLS implementation providing cryptographic services to Linux user space software components and to its TLS implementation. The module was tested with 64 bit word size. The following cipher implementation is covered: Intel AES-NI AES implementation.",
+ "version": "R8-8.4.0",
+ "type": "SOFTWARE",
+ "first_validated": "7/14/2021",
+ "vendor": "Oracle Corporation",
+ "vendor_website": "http://www.oracle.com",
+ "oes": [
+  {
+   "name": "Oracle Linux 8.4 on AMD AMD EPYC(TM) 7001 Series EPYC 7551",
+   "details": [
+    "processor: EPYC 7551",
+    "  Processor EPYC 7551 (processor family X86) from AMD",
+    "  family: X86",
+    "  manufacturer: AMD",
+    "  series: AMD EPYC(TM) 7001 Series",
+    "software: Oracle Linux 8.4",
+    "  Linux distribution developed by Oracle"
+   ]
+  },
+  {
+   "name": "Oracle Linux 8.4 on Intel Skylake Xeon Platinum 8167M",
+   "details": [
+    "software: Oracle Linux 8.4",
+    "  Linux distribution developed by Oracle",
+    "processor: Xeon Platinum 8167M",
+    "  Processor Xeon Platinum 8167M (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Skylake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

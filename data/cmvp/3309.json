@@ -1,0 +1,140 @@
+{
+ "cert": 3309,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3309",
+ "module": "CryptoComply",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "SafeLogic's CryptoComply is designed to provide FIPS 140-2 validated cryptographic functionality and is available for licensing.",
+ "tested_configurations": [
+  "Ubuntu Linux 14.04 LTS running on Intel Xeon E5 without PAA (clang Compiler Version 4.0.0)",
+  "Ubuntu Linux 15.04 running on POWER8 without PAA (clang Compiler Version 4.0.0)",
+  "Ubuntu Linux 16.04 running on Intel Xeon E5 with PAA (clang Compiler Version 4.0.0)",
+  "Ubuntu Linux 17.04 running on POWER8 with PAA (clang Compiler Version 4.0.0)",
+  "Ubuntu Linux 17.04 running on POWER9 with PAA (clang Compiler Version 4.0.0) (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "3.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4558",
+   "cavp_id": "2175",
+   "cavp_ref": "AES:4558"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1240",
+   "cavp_id": "6817",
+   "cavp_ref": "Component:1240"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1507",
+   "cavp_id": "21997",
+   "cavp_ref": "DRBG:1507"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1112",
+   "cavp_id": "17547",
+   "cavp_ref": "ECDSA:1112"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3011",
+   "cavp_id": "8132",
+   "cavp_ref": "HMAC:3011"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4558; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2485",
+   "cavp_id": "17640",
+   "cavp_ref": "RSA:2485"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3736",
+   "cavp_id": "6353",
+   "cavp_ref": "SHS:3736"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2428",
+   "cavp_id": "26571",
+   "cavp_ref": "TDES:2428"
+  }
+ ],
+ "vendor": "SafeLogic, Inc.",
+ "vendor_info": {
+  "name": "SafeLogic, Inc.",
+  "website": "http://www.safelogic.com/",
+  "address": [
+   "530 Lytton Ave, Suite 200",
+   "Palo Alto, CA 94301",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "SafeLogic Inside Sales"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3309.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/19/2018",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "10/19/2018",
+ "last_updated": "10/19/2018",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3309.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3309,
+  "vendor": "SafeLogic, Inc.",
+  "module": "CryptoComply",
+  "type": "Software",
+  "validation_dates": [
+   "10/19/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

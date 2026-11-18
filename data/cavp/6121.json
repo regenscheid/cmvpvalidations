@@ -1,0 +1,46 @@
+{
+ "cavp_id": "6121",
+ "cavp_cert": "AES 1219",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6121",
+ "implementation": "FipsCrypto",
+ "product_id": "7373",
+ "description": "FIPSCrypto is a software-based algorithm implementation that supports Triple-DES, AES, SHA1, and HMAC-SHA1. FIPSCrypto is FIPS 140-2 validated cryptographic module for use on Pocket PC and Windows Mobile.",
+ "version": "4.7.0.50906",
+ "type": "SOFTWARE",
+ "first_validated": "11/5/2009",
+ "vendor": "Good Technology",
+ "vendor_website": "http://www.good.com",
+ "oes": [
+  {
+   "name": "Windows CE 5.2 on Qualcomm MSM7201A",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

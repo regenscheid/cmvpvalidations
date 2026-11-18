@@ -1,0 +1,91 @@
+{
+ "cavp_id": "31939",
+ "cavp_cert": "C1471",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31939",
+ "implementation": "JUNOS 19.3R1 MX-MACsec",
+ "product_id": "11891",
+ "description": "Juniper MX and EX9200 Series are comprehensive, Scalable and secure switching and routing solutions specifically designed to meet the needs of campus, enterprises and service providers. They deliver high performance, reliability and scale to enable a cost-effective solution.",
+ "version": "Junos OS 19.3R1",
+ "type": "FIRMWARE",
+ "first_validated": "1/14/2020",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net/",
+ "oes": [
+  {
+   "name": "Intel(R) Xeon(R) CPU E5-2608L",
+   "details": [
+    "processor: Intel Xeon(R) CPU E5-2608L",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 8, 64, 120",
+    "    Message Length: 0, 32768, 524288",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 8, 64, 120",
+    "    Message Length: 0, 32768, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 8, 64, 120",
+    "    Message Length: 0, 32768, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 8, 64, 120",
+    "    Message Length: 0, 32768, 524288"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128",
+    "Payload Length: 128, 192, 256, 320, 4096",
+    "C1471 (AES)"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES256",
+    "    Supported Lengths: 128, 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "C1471 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,50 @@
+{
+ "cavp_id": "28516",
+ "cavp_cert": "AES 623",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28516",
+ "implementation": "M/A-COM AES Software Library",
+ "product_id": "5216",
+ "description": "Software AES encryption/decryption incorporated through microprocessor based, trunked and conventional portable and mobile radios.",
+ "version": "SLR1A01 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/29/2007",
+ "vendor": "M/A-COM, Inc.",
+ "vendor_website": "http://www.macom-wireless.com",
+ "oes": [
+  {
+   "name": "Texas Instruments TMS320C5416 DSP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 256-4096",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

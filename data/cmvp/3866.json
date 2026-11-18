@@ -1,0 +1,231 @@
+{
+ "cert": 3866,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3866",
+ "module": "Zebra BoringSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Section 12.1 of the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "A software library that contains cryptographic functionality to serve BoringSSL and other user-space applications.",
+ "tested_configurations": [
+  "Android 10 running on TC57 with Qualcomm SDM660 with PAA",
+  "Android 10 running on TC57 with Qualcomm SDM660 without PAA",
+  "Android 11 running on ET40 with Qualcomm SM6375 with PAA",
+  "Android 11 running on ET40 with Qualcomm SM6375 without PAA",
+  "Android 11 running on TC57 with Qualcomm SDM660 with PAA",
+  "Android 11 running on TC57 with Qualcomm SDM660 without PAA",
+  "Android 13 running on ET40 with Qualcomm SM6375 with PAA",
+  "Android 13 running on ET40 with Qualcomm SM6375 without PAA (single-user mode)",
+  "Android 13 running on TC57 with Qualcomm SDM660 with PAA",
+  "Android 13 running on TC57 with Qualcomm SDM660 without PAA",
+  "Android 13 running on TC58 with Qualcomm QCM6490 with PAA",
+  "Android 13 running on TC58 with Qualcomm QCM6490 without PAA"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_cert": "",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1748",
+   "cavp_id": "32630",
+   "cavp_ref": "C:1748"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1395",
+   "cavp_id": "34004",
+   "cavp_ref": "A:1395"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1748",
+   "cavp_id": "32630",
+   "cavp_ref": "C:1748"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1395",
+   "cavp_id": "34004",
+   "cavp_ref": "A:1395"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1748",
+   "cavp_id": "32630",
+   "cavp_ref": "C:1748"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1395",
+   "cavp_id": "34004",
+   "cavp_ref": "A:1395"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1748",
+   "cavp_id": "32630",
+   "cavp_ref": "C:1748"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1395",
+   "cavp_id": "34004",
+   "cavp_ref": "A:1395"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1748",
+   "cavp_id": "32630",
+   "cavp_ref": "C:1748"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1395",
+   "cavp_id": "34004",
+   "cavp_ref": "A:1395"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C1748 and #A1395",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1748",
+   "cavp_id": "32630",
+   "cavp_ref": "C:1748"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1395",
+   "cavp_id": "34004",
+   "cavp_ref": "A:1395"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1748",
+   "cavp_id": "32630",
+   "cavp_ref": "C:1748"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1395",
+   "cavp_id": "34004",
+   "cavp_ref": "A:1395"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1748",
+   "cavp_id": "32630",
+   "cavp_ref": "C:1748"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1395",
+   "cavp_id": "34004",
+   "cavp_ref": "A:1395"
+  }
+ ],
+ "vendor": "Zebra Technologies Corporation",
+ "vendor_info": {
+  "name": "Zebra Technologies Corporation",
+  "website": "http://www.zebra.com",
+  "address": [
+   "3 Overlook Point",
+   "Lincolnshire, IL 60069",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Erv Comer"
+   },
+   {
+    "name": "Sayiram Kothuri"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3866.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202021_010421_0724_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/25/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "9/14/2021",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "3/18/2024",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "9/17/2024",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/25/2021",
+ "last_updated": "9/17/2024",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3866.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3866,
+  "vendor": "Zebra Technologies Corporation",
+  "module": "Zebra BoringSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/25/2021",
+   "09/14/2021",
+   "03/18/2024",
+   "09/17/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,50 @@
+{
+ "cavp_id": "30426",
+ "cavp_cert": "C31",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30426",
+ "implementation": "IPPCP-FW",
+ "product_id": "10392",
+ "description": "Core cryptography FW library",
+ "version": "9.0.4",
+ "type": "FIRMWARE",
+ "first_validated": "12/17/2018",
+ "vendor": "Intel Corporation",
+ "vendor_website": "http://www.intel.com",
+ "oes": [
+  {
+   "name": "Arm Cortex R5",
+   "details": [
+    "processor: Cortex R5",
+    "  ARM Cortex R5",
+    "  manufacturer: ARM"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C31 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

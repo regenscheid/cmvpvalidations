@@ -1,0 +1,32 @@
+{
+ "cavp_id": "3081",
+ "cavp_cert": "DRBG 1889",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3081",
+ "implementation": "Apple macOS CoreCrypto v8 Kernel Module (AESNI_gen)",
+ "product_id": "8930",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to kernel space and the AES-NI Intel instruction set using the generic block chaining mode of CBC.",
+ "version": "8.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/5/2018",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "macOS 10.13 on Intel i5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

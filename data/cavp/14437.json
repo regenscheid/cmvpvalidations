@@ -1,0 +1,52 @@
+{
+ "cavp_id": "14437",
+ "cavp_cert": "AES 1441",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14437",
+ "implementation": "AES Key Wrapping, AES GCM of User Data, RNG for data encrypting keys",
+ "product_id": "7727",
+ "description": "Hardware-based group of algorithms AES, AES-GCM, and RNG. AES & AES-GCM implementations used for both encrypting/decrypting user data (in AES GCM mode) and Key Wrapping of the Data Encrypting Key (DEK) in pure AES encryption mode; random number generator used to generate DEKs.",
+ "version": "L6A0398, Rev. C 1.0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "8/12/2010",
+ "vendor": "Hewlett-Packard",
+ "vendor_website": "http://www.hp.com",
+ "oes": [
+  {
+   "name": "ARM966E",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 128, 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

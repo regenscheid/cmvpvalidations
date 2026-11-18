@@ -1,0 +1,60 @@
+{
+ "cavp_id": "14912",
+ "cavp_cert": "Component 354",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14912",
+ "implementation": "McAfee NGFW Cryptographic Library Module (320)",
+ "product_id": "6458",
+ "description": "McAfee NGFW Cryptographic Library is a software module that provides cryptographic services required by the McAfee NGFW product.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "8/28/2014",
+ "vendor": "McAfee, Inc.",
+ "vendor_website": "http://www.mcafee.com",
+ "oes": [
+  {
+   "name": "GNU / Linux (Debian) 6.0 -based distribution on Intel Atom Processor D525",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EB:",
+    "          Hash Algorithm: SHA2-224",
+    "          Curve: P-224",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,50 @@
+{
+ "cavp_id": "14827",
+ "cavp_cert": "AES 4427",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14827",
+ "implementation": "Samsung Kernel Cryptographic Module with MSM 8998 Crypto-Extensions",
+ "product_id": "642",
+ "description": "Provides general purpose cryptographic services to services in the Linux kernel and user-space applications, intended to protect data in transit and at rest.",
+ "version": "1.8",
+ "type": "SOFTWARE",
+ "first_validated": "3/24/2017",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Android 7.0 on MSM 8998",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

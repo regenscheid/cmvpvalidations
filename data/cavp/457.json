@@ -1,0 +1,57 @@
+{
+ "cavp_id": "457",
+ "cavp_cert": "AES 5536",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=457",
+ "implementation": "Vormetric Data Security Manager Virtual Appliance Module",
+ "product_id": "9713",
+ "description": "The Vormetric Data Security Manager Virtual Appliance is a multi-chip standalone software cryptographicmodule operating in virtualization environment. The Vormetric Data Security Manager is the central pointof management for the Vormetric Data Security product. It manages keys and policies, and controls VTE.",
+ "version": "6.0.2",
+ "type": "SOFTWARE",
+ "first_validated": "7/13/2018",
+ "vendor": "Thales e-security",
+ "vendor_website": "http://www.thales-esecurity.com",
+ "oes": [
+  {
+   "name": "Centos 7.2 on VMware ESXi 6.5 on Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128",
+    "AAD Length: 0, 120, 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 120, 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

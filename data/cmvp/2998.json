@@ -1,0 +1,166 @@
+{
+ "cert": 2998,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2998",
+ "module": "Oracle ILOM OpenSSL FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Oracle ILOM OpenSSL FIPS Object Module is a software library providing a C language application program interface (API) for use by other processes that require cryptographic functionality and is classified by FIPS 1402 as a software module, multichip standalone module embodiment.",
+ "tested_configurations": [
+  "Oracle ILOM OS v3.0 running on Oracle ILOM SP v3 (ARM 7) with PAA (gcc Compiler Version 4.9)",
+  "Oracle ILOM OS v3.0 running on Oracle ILOM SP v3 (ARM 7) without PAA (gcc Compiler Version 4.9)",
+  "Oracle ILOM OS v3.0 running on Oracle ILOM SP v4 (ARM 5) without PAA (gcc Compiler Version 4.9)",
+  "Oracle ILOM OS v4.0 on Oracle ILOM SP v5 (ARM 11) without PAA (gcc Compiler Version 4.9) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman; RSA (encrypt/decrypt)",
+ "software_versions": "2.0.10",
+ "product_url": "http://www.oracle.com/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4629",
+   "cavp_id": "543",
+   "cavp_ref": "AES:4629"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1289",
+   "cavp_id": "21500",
+   "cavp_ref": "Component:1289"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1557",
+   "cavp_id": "22212",
+   "cavp_ref": "DRBG:1557"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1224",
+   "cavp_id": "25284",
+   "cavp_ref": "DSA:1224"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1138",
+   "cavp_id": "14681",
+   "cavp_ref": "ECDSA:1138"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3064",
+   "cavp_id": "15696",
+   "cavp_ref": "HMAC:3064"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2527",
+   "cavp_id": "11446",
+   "cavp_ref": "RSA:2527"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3793",
+   "cavp_id": "25736",
+   "cavp_ref": "SHS:3793"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2462",
+   "cavp_id": "13040",
+   "cavp_ref": "TDES:2462"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Kevin Rohan"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2998.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/18/2017",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "8/22/2017",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "8/22/2017",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "8/17/2018",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "8/20/2019",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "8/18/2017",
+ "last_updated": "8/20/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2998.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition"
+ },
+ "other_text": "EC Diffie-Hellman; RSA (encrypt/decrypt)",
+ "sparse": false,
+ "list": {
+  "cert": 2998,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle ILOM OpenSSL FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/18/2017",
+   "08/22/2017",
+   "08/22/2017",
+   "08/17/2018",
+   "08/20/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

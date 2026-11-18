@@ -1,0 +1,43 @@
+{
+ "cavp_id": "35333",
+ "cavp_cert": "A2722",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35333",
+ "implementation": "FAST C-LIB",
+ "product_id": "12647",
+ "description": "FAST C-LIB is software cryptographic library embedded in vehicle ECUs. FAST C-LIB is used to meet OEM's automotive security requirements. For example, FAST C-LIB is used to implement secure In-Vehicle communication and secure V2X communication.",
+ "version": "1.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "7/20/2022",
+ "vendor": "FESCARO Co.Ltd.",
+ "vendor_website": "https://www.fescaro.com",
+ "oes": [
+  {
+   "name": "OSEK/VDX 2.2.3 on Infineon AURIX TC275TP, ARM Cortex-M3(HSM Core), 100MHz",
+   "details": [
+    "processor: Infineon AURIX TC275TP, ARM Cortex-M3(HSM Core), 100MHz",
+    "software: OSEK/VDX 2.2.3"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC",
+    "Function: Full Validation, Key Pair Generation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "        Fixed Info Pattern: algorithmId||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,129 @@
+{
+ "cert": 4652,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4652",
+ "module": "Cr50 U2F Cryptographic Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware-Hybrid",
+ "embodiment": "Single Chip",
+ "description": "The Cr50 U2F Cryptographic Library is a firmware-hybrid module residing in the Google, LLC Google Security Chips (GSC) chip. The module is responsible for low-level cryptographic primitives on Google Security Chips (GSC) used in recent versions of Google Chromebooks, and includes functionality for key generation, signature generation, random bit generation, keyed-hashing and signature verification operations in support of U2F-related requests in the Cr50 Chrome OS.",
+ "tested_configurations": [
+  "Google H1B2 with ARM V7-M with PAA"
+ ],
+ "hardware_versions": "H1B2P",
+ "firmware_versions": "1.0.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2353",
+   "cavp_id": "34962",
+   "cavp_ref": "A:2353"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2353",
+   "cavp_id": "34962",
+   "cavp_ref": "A:2353"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "P",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2352",
+   "cavp_id": "34961",
+   "cavp_ref": "A:2352"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2353",
+   "cavp_id": "34962",
+   "cavp_ref": "A:2353"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2352",
+   "cavp_id": "34961",
+   "cavp_ref": "A:2352"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2353",
+   "cavp_id": "34962",
+   "cavp_ref": "A:2353"
+  }
+ ],
+ "vendor": "Google, LLC",
+ "vendor_info": {
+  "name": "Google, LLC",
+  "website": "http://www.google.com",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Crypto Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4652.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November%202023_111223_0648_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/6/2023",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "11/6/2023",
+ "last_updated": "11/6/2023",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4652.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4652,
+  "vendor": "Google, LLC",
+  "module": "Cr50 U2F Cryptographic Library",
+  "type": "Firmware-Hybrid",
+  "validation_dates": [
+   "11/06/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

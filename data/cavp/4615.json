@@ -1,0 +1,84 @@
+{
+ "cavp_id": "4615",
+ "cavp_cert": "AES 5888",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4615",
+ "implementation": "Linux Kernel Crypto API",
+ "product_id": "10243",
+ "description": "Cryptographic algorithm and algorithm self-test API provided with Linux Kernel version 4.1.15. Some modifications have been made to the self-test which do NOT affect the crypto algorithms.",
+ "version": "4.1.15 (Modified) (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/19/2018",
+ "vendor": "GE MDS, LLC",
+ "vendor_website": "http://www.gemds.com",
+ "oes": [
+  {
+   "name": "Freescale IMX 6 (ARM)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128",
+    "    MAC Length: 64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External, Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 256, 480, 512, 960",
+    "AAD Length: 0, 160, 256, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 160, 256, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

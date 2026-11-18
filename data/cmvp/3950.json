@@ -1,0 +1,154 @@
+{
+ "cert": 3950,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3950",
+ "module": "Spectralink Cryptographic Module for BoringSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Section 12.1 of the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "A software library that provides FIPS 140-2 approved algorithms to BoringSSL and other user-space applications on Spectralink Android devices.",
+ "tested_configurations": [
+  "Android 10 running on Spectralink Versity 9553 Smartphone with Qualcomm(R) Snapdragon(TM) 660 with PAA",
+  "Android 10 running on Spectralink Versity 9553 Smartphone with Qualcomm(R) Snapdragon(TM) 660 without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "7f02881e96e51f1873afcf384d02f782b48967ca",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1314; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1314",
+   "cavp_id": "31720",
+   "cavp_ref": "C:1314"
+  }
+ ],
+ "vendor": "Spectralink",
+ "vendor_info": {
+  "name": "Spectralink",
+  "website": "http://www.spectralink.com",
+  "address": [
+   "2560 55th St.",
+   "Boulder, CO 80301",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Spectralink compliance engineer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3950.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June%202021_010721_0718.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/8/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "10/21/2021",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "11/29/2021",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "6/8/2021",
+ "last_updated": "11/29/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3950.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3950,
+  "vendor": "Spectralink",
+  "module": "Spectralink Cryptographic Module for BoringSSL",
+  "type": "Software",
+  "validation_dates": [
+   "06/08/2021",
+   "10/21/2021",
+   "11/29/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

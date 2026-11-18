@@ -1,0 +1,66 @@
+{
+ "cavp_id": "20110",
+ "cavp_cert": "RSA 2969",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20110",
+ "implementation": "Vormetric Data Security Manager Module",
+ "product_id": "9712",
+ "description": "Vormetric Data Security Manager Module is a multi-chip standalone software cryptographicmodule operating in virtualization environment. The Vormetric Data Security Manager is the central pointof management for the Vormetric Data Security product. It manages keys and policies, and controls VTE.",
+ "version": "6.0.2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/13/2018",
+ "vendor": "Thales e-security",
+ "vendor_website": "http://www.thales-esecurity.com",
+ "oes": [
+  {
+   "name": "Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

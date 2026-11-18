@@ -1,0 +1,46 @@
+{
+ "cavp_id": "8232",
+ "cavp_cert": "AES 2264",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=8232",
+ "implementation": "CN6040 Ethernet Cryptographic Library",
+ "product_id": "505",
+ "description": "Senetas Corporation's CN6040 Ethernet Module is a cryptographic accelerator that contains FIPS 140-2 approved cryptographic algorithms. This module provides encryption functionality for the CN6000 Series Encryptor.",
+ "version": "1.2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/15/2012",
+ "vendor": "Senetas Corporation Ltd.",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "Xilinx XC6VLX130T",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

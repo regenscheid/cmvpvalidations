@@ -1,0 +1,157 @@
+{
+ "cert": 4567,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4567",
+ "module": "Ruckus Networks Virtual SmartZone - Data Plane (vSZ-D)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When initialized and configured as specified in Section 8 of the Security Policy.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 2",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Ruckus Virtual SmartZone-Dataplane (vSZ-D) offers organizations more flexibility in deploying the dataplane as needed in a Network Function Virtualization (NFV) architecture aligned fashion. It offers secure tunneling of user data traffic that encrypts payload traffic, maintains flat network topology, enables mobility across L2 subnets, and offers differentiated per site policy control and QoS amongst others.",
+ "tested_configurations": [
+  "CentOS 7.5 on VMware ESXi 6.5.0 running on Dell PowerEdge R620 with Intel Xeon E5-2650 v2 without AES-NI (single-user mode)",
+  "CentOS 7.5 on VMware ESXi 6.5.0 running on Dell PowerEdge R620 with Intel XeonE5-2650 v2 with AES-NI"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "5.2.1.3",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2085",
+   "cavp_id": "33145",
+   "cavp_ref": "C:2085"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2085",
+   "cavp_id": "33145",
+   "cavp_ref": "C:2085"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2085",
+   "cavp_id": "33145",
+   "cavp_ref": "C:2085"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2085",
+   "cavp_id": "33145",
+   "cavp_ref": "C:2085"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2085",
+   "cavp_id": "33145",
+   "cavp_ref": "C:2085"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Cert. #A2458, CVL Cert. #C2085",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2458",
+   "cavp_id": "35068",
+   "cavp_ref": "A:2458"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C2085 and HMAC Cert. #C2085; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C2085; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2085",
+   "cavp_id": "33145",
+   "cavp_ref": "C:2085"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2085",
+   "cavp_id": "33145",
+   "cavp_ref": "C:2085"
+  }
+ ],
+ "vendor": "CommScope Technologies LLC",
+ "vendor_info": {
+  "name": "CommScope Technologies LLC",
+  "website": "http://www.commscope.com/ruckus",
+  "address": [
+   "350 W Java Drive",
+   "Sunnyvale, CA 94089",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ken Rheaume"
+   },
+   {
+    "name": "Saurabh Mathur"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4567.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202023_010923_0844.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/30/2023",
+   "type": "Initial",
+   "lab": "Gossamer Security Solutions"
+  }
+ ],
+ "first_validated": "8/30/2023",
+ "last_updated": "8/30/2023",
+ "labs": "Gossamer Security Solutions",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4567.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4567,
+  "vendor": "CommScope Technologies LLC",
+  "module": "Ruckus Networks Virtual SmartZone - Data Plane (vSZ-D)",
+  "type": "Software",
+  "validation_dates": [
+   "08/30/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

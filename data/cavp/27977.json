@@ -1,0 +1,40 @@
+{
+ "cavp_id": "27977",
+ "cavp_cert": "HMAC 3355",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27977",
+ "implementation": "Apple iOS CoreCrypto v8 Kernel Module (Generic Software Implementation)",
+ "product_id": "8862",
+ "description": "Cryptographic library offering various cryptographic mechanisms to Apple frameworks. The testing applies to kernel space and generic, non-optimized software.",
+ "version": "8.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/15/2017",
+ "vendor": "Apple Inc.",
+ "vendor_website": "http://www.apple.com",
+ "oes": [
+  {
+   "name": "iOS 11 on Apple A10X Fusion",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

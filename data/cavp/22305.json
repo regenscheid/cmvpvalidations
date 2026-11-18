@@ -1,0 +1,57 @@
+{
+ "cavp_id": "22305",
+ "cavp_cert": "AES 1990",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22305",
+ "implementation": "OSC",
+ "product_id": "156",
+ "description": "The Odyssey Security Component (OSC) (SW Version 2.1) is a software module that implements a set of cryptographic algorithms for use by a software application.",
+ "version": "2.1",
+ "type": "SOFTWARE",
+ "first_validated": "4/19/2012",
+ "vendor": "Pulse Secure LLC",
+ "vendor_website": "http://www.pulsesecure.net",
+ "oes": [
+  {
+   "name": "Microsoft Windows 7 SP1 (64-bit) on Intel Core 2 Duo E8400 3.0GHz",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

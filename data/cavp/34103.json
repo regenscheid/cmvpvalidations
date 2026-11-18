@@ -1,0 +1,48 @@
+{
+ "cavp_id": "34103",
+ "cavp_cert": "A1494",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34103",
+ "implementation": "AN/GRC-262 – Freescale® QorIQ P2020",
+ "product_id": "13970",
+ "description": "The Freescale QorIQ P2020 hardware accelerator provides encryption and authentication services for data traffic within the AN/GRC-262 radio.",
+ "version": "3.3",
+ "type": "HARDWARE",
+ "first_validated": "6/7/2021",
+ "vendor": "Ultra Electronics TCS Inc.",
+ "vendor_website": "https://www.ultra.group/ultra-tcs/",
+ "oes": [
+  {
+   "name": "Freescale® QorIQ P2020",
+   "details": [
+    "processor: Freescale® QorIQ P2020- P2020NXE2MHC",
+    "  manufacturer: NXP Semiconductors®"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 160"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 128-1024 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

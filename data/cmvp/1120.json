@@ -1,0 +1,133 @@
+{
+ "cert": 1120,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1120",
+ "module": "TecSec PIV Eagle Card - Contact",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "None",
+ "piv_cert": "11",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: Level 4",
+  "Cryptographic Key Management: Level 3",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single-chip",
+ "description": "The TecSec PIV Eagle Card - Contact cryptographic module provides data security for government and enterprise personnel identification. The primary purpose of this device is to enable the creation of a dual-chip PIV smart card as described in [FIPS201] that is fully compliant with the end-point service specified in SP800-73-1. The CM contains two Java Card applets implementing the PIV functionality (the Software) running on a GlobalPlatform Java Card operating system (the Firmware). The CM is physically connected to a smart card contact plate as defined in [7816-1] and [7816-2].",
+ "hardware_versions": "P/N Atmel AT90SC144144CT Revision G",
+ "software_versions": "P/N TecSec Contact PIV Applet Version 1.01 JCT",
+ "firmware_versions": "P/N Athena IDProtect XL Version 010A.7204.0004",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 639",
+   "cavp_id": "28648",
+   "cavp_ref": "AES:639"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 209",
+   "cavp_id": "20057",
+   "cavp_ref": "Component:209"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 364",
+   "cavp_id": "9959",
+   "cavp_ref": "RNG:364"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 292",
+   "cavp_id": "30098",
+   "cavp_ref": "RSA:292"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 674",
+   "cavp_id": "8694",
+   "cavp_ref": "SHS:674"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 592",
+   "cavp_id": "25896",
+   "cavp_ref": "TDES:592"
+  },
+  {
+   "algorithm": "Triple-DES MAC",
+   "cavp_cert": "Triple-DES Cert. #592, vendor affirmed",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "TecSec, Atmel, CPI Card Group, and Athena Smartcard",
+ "vendor_info": {
+  "name": "TecSec, Atmel, CPI Card Group, and Athena Smartcard",
+  "website": "http://www.tecsec.com",
+  "address": [
+   "1048 Dead Run Drive",
+   "McLean, VA 22101-2121",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ron Parsons"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1120.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1120.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/3/2009",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/6/2014",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "4/3/2009",
+ "last_updated": "2/6/2014",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1120.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1120,
+  "vendor": "TecSec, Atmel, CPI Card Group, and Athena Smartcard",
+  "module": "TecSec PIV Eagle Card - Contact",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/03/2009",
+   "02/06/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

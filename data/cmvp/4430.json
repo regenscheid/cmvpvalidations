@@ -1,0 +1,240 @@
+{
+ "cert": 4430,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4430",
+ "module": "Thales CipherTrust Manager Core Security Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Section 10 of the Security Policy. When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The module provides secure key generation and protection for symmetric keys and asymmetric key pairs along with support for a broad range of other cryptographic services. Access to services offered by Thales CipherTrust Manager Core Security Module is exclusively through a number of Application Programming Interfaces (API) offered by the Thales CipherTrust Manager Core Security Module. These API can be accessed by other applications running internal to the physical boundary of the module or, in some instances, can be accessed by remote client over dedicated TLS tunnels.",
+ "tested_configurations": [
+  "Ubuntu 18.04 on VMware ESXi 6.5 running on a HPE P11782-001 platform with Intel Xeon Gold 6252 with PAA",
+  "Ubuntu 18.04 on VMware ESXi 6.5 running on a HPE P11782-001 platform with Intel Xeon Gold 6252 without PAA",
+  "Ubuntu 18.04 running on a AIC Antlia BMB-UPS0000B (K470) platform with Intel Xeon E3 1275 v6 with PAA",
+  "Ubuntu 18.04 running on a AIC Antlia BMB-UPS0000B (K470) platform with Intel Xeon E3 1275 v6 without PAA",
+  "Ubuntu 18.04 running on a AIC Antlia BMB-UPS0000B (K570) platform with Intel Xeon E3 1275 v6 with PAA",
+  "Ubuntu 18.04 running on a AIC Antlia BMB-UPS0000B (K570) platform with Intel Xeon E3 1275 v6 without PAA"
+ ],
+ "allowed_algorithms": "RSA (Key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "software_versions": "1.0.3",
+ "product_url": "https://www.thalesdocs.com/ctp/cm/2.4/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1778",
+   "cavp_id": "34387",
+   "cavp_ref": "A:1778"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2634",
+   "cavp_id": "35245",
+   "cavp_ref": "A:2634"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2635",
+   "cavp_id": "35246",
+   "cavp_ref": "A:2635"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2634",
+   "cavp_id": "35245",
+   "cavp_ref": "A:2634"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "P",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2634",
+   "cavp_id": "35245",
+   "cavp_ref": "A:2634"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2634",
+   "cavp_id": "35245",
+   "cavp_ref": "A:2634"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1778 and #A1779; key establishment methodology provides between 128 and 256 bit of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A1778 and #A1779 and HMAC Cert. #A1779; key establishment methodology provides 128 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A2634 and #A2635 and HMAC Cert. #A2634; key establishment methodology provides between 128 and 256 bit of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS-RSA",
+   "cavp_cert": "Cert. #A1779; key establishment methodology provides between 112 and 150 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2634",
+   "cavp_id": "35245",
+   "cavp_ref": "A:2634"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A1779",
+   "cavp_id": "34388",
+   "cavp_ref": "A:1779"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A2634",
+   "cavp_id": "35245",
+   "cavp_ref": "A:2634"
+  }
+ ],
+ "vendor": "[email protected]",
+ "vendor_info": {
+  "name": "[email protected]",
+  "website": "/cdn-cgi/l/email-protection",
+  "address": [
+   "20 Colonade Road",
+   "Suite 200m",
+   "Ottawa, ON K2E 7M6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Security & Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4430.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January%202023_010223_0657_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/27/2023",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "1/27/2023",
+ "last_updated": "1/27/2023",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4430.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (Key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4430,
+  "vendor": "Thales",
+  "module": "Thales CipherTrust Manager Core Security Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/27/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

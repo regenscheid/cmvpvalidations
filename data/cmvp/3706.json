@@ -1,0 +1,149 @@
+{
+ "cert": 3706,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3706",
+ "module": "Enovate Medical FIPS Cryptographic Module for EcoFlex, Rhythm, Envoy, and Encore",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Enovate Medical FIPS Cryptographic Module, based off of OpenSSL, is a general-purpose cryptographic module integrated in Enovate Medical's products such as EcoFlex, Rhythm, Envoy, and Encore to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+ "tested_configurations": [
+  "Fedora Linux 24 running on Samsung ARTIK 710 SOM with ARM Cortex-A53 with PAA",
+  "Fedora Linux 24 running on Samsung ARTIK 710 SOM with ARM Cortex-A53 without PAA",
+  "Windows Server 2019 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 with PAA",
+  "Windows Server 2019 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1795, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "HMAC (Cert. #C1795",
+   "cavp_cert": "",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1795",
+   "cavp_id": "32694",
+   "cavp_ref": "C:1795"
+  }
+ ],
+ "vendor": "Enovate Medical LLC",
+ "vendor_info": {
+  "name": "Enovate Medical LLC",
+  "website": "http://www.enovatemedical.com",
+  "address": [
+   "1152 Park Avenue",
+   "Murfreesboro, TN 37129",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Arlow Farrell"
+   },
+   {
+    "name": "Mark Dalen"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3706.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202020_011020_0703.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/8/2020",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "9/8/2020",
+ "last_updated": "9/8/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3706.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C1795, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3706,
+  "vendor": "Enovate Medical LLC",
+  "module": "Enovate Medical FIPS Cryptographic Module for EcoFlex, Rhythm, Envoy, and Encore",
+  "type": "Software",
+  "validation_dates": [
+   "09/08/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

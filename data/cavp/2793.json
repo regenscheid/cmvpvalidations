@@ -1,0 +1,124 @@
+{
+ "cavp_id": "2793",
+ "cavp_cert": "AES 5073",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2793",
+ "implementation": "Private Machines Enforcer LIBUCL",
+ "product_id": "8938",
+ "description": "The Private Machines Enforcer is general-purpose, tamper-proof cryptographic module. In addition to FIPS level 4 physical tamper protection, the Enforcer module also provides firmware-based cryptographic services via FIPS 140-2 approved algorithms.",
+ "version": "L4-1 2.5.13 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "1/5/2018",
+ "vendor": "Private Machines, Inc",
+ "vendor_website": "http://privatemachines.com",
+ "oes": [
+  {
+   "name": "MAX32550 Cortex M3",
+   "details": []
+  },
+  {
+   "name": "MAX32550 Cortex M3",
+   "details": [
+    "processor: MAX32550 Cortex M3"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 1016, 1024, 4088, 4096",
+    "AAD Length: 0, 1016, 1024, 4088, 4096"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 256, 512",
+    "Payload Length: 1016, 1024, 4088, 4096",
+    "AAD Length: 0, 1016, 1024, 4088, 4096"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 1016, 1024, 4088, 4096"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 256, 512",
+    "AAD Length: 0, 1016, 1024, 4088, 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

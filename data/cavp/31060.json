@@ -1,0 +1,126 @@
+{
+ "cavp_id": "31060",
+ "cavp_cert": "C664",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31060",
+ "implementation": "10TCE-PCN-16GU+AES100G-F Firmware (microcontroller part)",
+ "product_id": "11022",
+ "description": "Microcontroller part of the firmware of the ADVA 10TCE-PCN-16GU+AES100G-F encryption module.",
+ "version": "172.21.1",
+ "type": "FIRMWARE",
+ "first_validated": "5/7/2019",
+ "vendor": "ADVA Optical Networking SE",
+ "vendor_website": "http://www.advaoptical.com",
+ "oes": [
+  {
+   "name": "Coldfire MCF5282",
+   "details": [
+    "processor: Coldfire MCF5282"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C664 (AES)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C664 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation",
+    "Scheme:",
+    "  dhHybridOne:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF with Key Confirmation:",
+    "      Key Confirmation Option:",
+    "        Key Confirmation Role: Provider, Recipient",
+    "        Key Confirmation Type: Bilateral, Unilateral",
+    "        Nonce Type: Random nonce",
+    "      KDF Option:",
+    "        Concatenation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-512",
+    "          MAC Option:",
+    "            HMAC-SHA2-256:",
+    "              Key Length: 160",
+    "              MAC Length: 256",
+    "        FC:",
+    "          Hash Algorithm: SHA2-512",
+    "          MAC Option:",
+    "            HMAC-SHA2-256:",
+    "              Key Length: 160",
+    "              MAC Length: 256",
+    "C664 (SHS)",
+    "C664 (DRBG)",
+    "C664 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 0",
+    "Public Exponent Mode: Random",
+    "C664 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

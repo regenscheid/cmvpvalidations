@@ -1,0 +1,68 @@
+{
+ "cavp_id": "31656",
+ "cavp_cert": "C1250",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31656",
+ "implementation": "Miniboot with Capri ASIC (02WP147)",
+ "product_id": "11612",
+ "description": "Miniboot implemented algorithms with hardware acceleration",
+ "version": "02WP147 Miniboot M5625",
+ "type": "HARDWARE",
+ "first_validated": "10/11/2019",
+ "vendor": "IBM",
+ "vendor_website": "http://www-03.ibm.com/security/crytpocards/pciecc2/overview.shtml",
+ "oes": [
+  {
+   "name": "IBM PowerPC 405",
+   "details": [
+    "processor: IBM PowerPC 405"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-521",
+    "Secret Generation Mode: Testing Candidates",
+    "C1250 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512",
+    "C1250 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 512",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 2560"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

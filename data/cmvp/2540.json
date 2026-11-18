@@ -1,0 +1,128 @@
+{
+ "cert": 2540,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2540",
+ "module": "FortiMail-1000D and FortiMail-3000D",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode with the tamper evident seals installed as indicated in the Security Policy and configured according to the Entropy Token Section of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy. There is no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Ports and Interfaces: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The FortiMail family of email security appliances provide an effective barrier against the ever-rising volume of sophisticated spam and malware and includes features designed to facilitate regulatory compliance. FortiMail 5.2 offers both inbound and outbound scanning, advanced antispam and antivirus filtering capabilities, malware emulation both locally and via integration with FortiSandbox, data leak prevention, identity based encryption and extensive quarantine and archiving capabilities.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "Fortimail-1000D: C1AA85 with Disk Trays P/N: SP-D2000 and Power Supplies P/N: SP-FXX1000D-PS, FortiMail-3000D: C1AA63 with Disk Trays P/N: SP-D2TC and Power Supplies P/N: D750E-S1, Tamper Evident Seal Kit: FIPS-SEAL-RED",
+ "firmware_versions": "FortiMailOS 5.2, build0460,150922",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3500",
+   "cavp_id": "19015",
+   "cavp_ref": "AES:3500"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 574",
+   "cavp_id": "23587",
+   "cavp_ref": "Component:574"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 873",
+   "cavp_id": "14098",
+   "cavp_ref": "DRBG:873"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2239",
+   "cavp_id": "25619",
+   "cavp_ref": "HMAC:2239"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1801",
+   "cavp_id": "20457",
+   "cavp_ref": "RSA:1801"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2892",
+   "cavp_id": "18978",
+   "cavp_ref": "SHS:2892"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1971",
+   "cavp_id": "28056",
+   "cavp_ref": "TDES:1971"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "326 Moodie Drive",
+   "Ottawa, ON K2H 8G3",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2540.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/25/2016",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  }
+ ],
+ "first_validated": "1/25/2016",
+ "last_updated": "1/25/2016",
+ "labs": "DXC Technology",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2540.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; MD5; HMAC-MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2540,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiMail-1000D and FortiMail-3000D",
+  "type": "Hardware",
+  "validation_dates": [
+   "01/25/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

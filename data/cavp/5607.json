@@ -1,0 +1,55 @@
+{
+ "cavp_id": "5607",
+ "cavp_cert": "KAS 60",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5607",
+ "implementation": "EbemCrypto",
+ "product_id": "917",
+ "description": "Implements key establishment, random number generation, certificate and private key management, and wrap/unwrap of key material, and controls the FPGA implementation of traffic encryption in ViaSat's Enhanced Bandwidth Efficient Modem (EBEM-500).",
+ "version": "11 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/2/2015",
+ "vendor": "ViaSat, Inc.",
+ "vendor_website": "http://www.viasat.com",
+ "oes": [
+  {
+   "name": "IBM PowerPC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC",
+   "oe": 0,
+   "capabilities": [
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KDF without Key Confirmation:",
+    "      KDF Option:",
+    "        Concatenation:",
+    "      Parameter Set:",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521",
+    "          MAC Option:",
+    "            HMAC:"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Responder",
+    "    KDF without Key Confirmation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-256",
+    "          MAC Option:",
+    "            HMAC:"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

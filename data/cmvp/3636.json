@@ -1,0 +1,144 @@
+{
+ "cert": 3636,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3636",
+ "module": "Oracle Cloud Infrastructure Cryptographic Library for Kubernetes",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Section 11.1 of the Security Policy and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "A Software cryptographic library that contains FIPS Approved cryptography to serve Kubernetes and the Google Go programing language and application ecosystem.",
+ "tested_configurations": [
+  "Oracle Linux 7.7 running on Oracle Server X7-2 with AMD® EPYC® 7551 with PAA",
+  "Oracle Linux 7.7 running on Oracle Server X7-2 with AMD® EPYC® 7551 without PAA (single-user mode)",
+  "Oracle Linux 7.7 running on Oracle Server X7-2 with Intel® Xeon® Platinum 8167M with PAA",
+  "Oracle Linux 7.7 running on Oracle Server X7-2 with Intel® Xeon® Platinum 8167M without PAA"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #C1456; key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1456",
+   "cavp_id": "31901",
+   "cavp_ref": "C:1456"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1456",
+   "cavp_id": "31901",
+   "cavp_ref": "C:1456"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1456",
+   "cavp_id": "31901",
+   "cavp_ref": "C:1456"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1456",
+   "cavp_id": "31901",
+   "cavp_ref": "C:1456"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1456",
+   "cavp_id": "31901",
+   "cavp_ref": "C:1456"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1456; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1456",
+   "cavp_id": "31901",
+   "cavp_ref": "C:1456"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1456",
+   "cavp_id": "31901",
+   "cavp_ref": "C:1456"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1456",
+   "cavp_id": "31901",
+   "cavp_ref": "C:1456"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Chris Brych"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3636.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202020_160420.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/23/2020",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/23/2020",
+ "last_updated": "3/23/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3636.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #C1456; key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3636,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Cloud Infrastructure Cryptographic Library for Kubernetes",
+  "type": "Software",
+  "validation_dates": [
+   "03/23/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

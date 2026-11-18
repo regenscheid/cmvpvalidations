@@ -1,0 +1,51 @@
+{
+ "cavp_id": "16867",
+ "cavp_cert": "AES 2785",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=16867",
+ "implementation": "IOS",
+ "product_id": "3533",
+ "description": "IOS software cryptographic implementations used within Cisco devices to provide cryptographic functions.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/21/2014",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "CentOS Linux 6.4 on Intel Atom D2500",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,72 @@
+{
+ "cavp_id": "35070",
+ "cavp_cert": "A2460",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35070",
+ "implementation": "wolfCrypt",
+ "product_id": "12531",
+ "description": "wolfCrypt module is a comprehensive suite of FIPS Approved algorithms. All key sizes and modes have been implemented to allow flexibility and efficiency.",
+ "version": "4.4.1",
+ "type": "SOFTWARE",
+ "first_validated": "3/22/2022",
+ "vendor": "wolfSSL Inc",
+ "vendor_website": "http://www.wolfssl.com",
+ "oes": [
+  {
+   "name": "Linux 4.12 Yocto Standard on Freescale i.MX6 DualLite ARMv7 Cortex-A9 x2 with PAA",
+   "details": [
+    "processor: Freescale i.MX6 DualLite ARMv7 Cortex-A9 x2 with PAA",
+    "software: Linux 4.12 Yocto Standard"
+   ]
+  },
+  {
+   "name": "Linux 4.12 Yocto Standard on Freescale i.MX6 DualLite ARMv7 Cortex-A9 x2 without PAA",
+   "details": [
+    "processor: Freescale i.MX6 DualLite ARMv7 Cortex-A9 x2 without PAA",
+    "software: Linux 4.12 Yocto Standard"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384, P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 1,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384, P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 1,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

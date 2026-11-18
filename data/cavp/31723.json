@@ -1,0 +1,65 @@
+{
+ "cavp_id": "31723",
+ "cavp_cert": "C1317",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31723",
+ "implementation": "Fujitsu Control Plane Cryptography",
+ "product_id": "11679",
+ "description": "Software for TLS based authentication and key exchange used to derive the keys used for data encryption between 1FINITY devices.",
+ "version": "SSL-1.1.1",
+ "type": "SOFTWARE",
+ "first_validated": "10/29/2019",
+ "vendor": "Fujitsu Network Communications Inc.",
+ "vendor_website": "https://www.fujitsu.com/us/products/network/",
+ "oes": [
+  {
+   "name": "Linux Yocto 2.3 on PowerPC e6500",
+   "details": [
+    "software: Linux Yocto 2.3",
+    "processor: PowerPC e6500"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512",
+    "C1317 (AES)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

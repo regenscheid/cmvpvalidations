@@ -1,0 +1,54 @@
+{
+ "cavp_id": "33531",
+ "cavp_cert": "A932",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33531",
+ "implementation": "Infraguard Processor Module (IPM) - strongswan",
+ "product_id": "13402",
+ "description": "The Infraguard Processor Module (IPM) is a mult-chip, embedded, plug-in encryption module coated with an opaque, tamper evident material.",
+ "version": "5.6.0-advantor",
+ "type": "FIRMWARE",
+ "first_validated": "12/18/2020",
+ "vendor": "Advantor Systems, A Vectrus Company",
+ "vendor_website": "http://www.advantor.com",
+ "oes": [
+  {
+   "name": "NXP LPC3250",
+   "details": [
+    "processor: NXP LPC3250",
+    "  manufacturer: NXP"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: MODP-2048",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128-2048 Increment 8",
+    "    Responder Nonce Length: 128-2048 Increment 8",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Derived Keying Material Length: 1280-2304 Increment 8",
+    "    Hash Algorithm: SHA2-256, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: MODP-2048"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

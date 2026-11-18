@@ -1,0 +1,121 @@
+{
+ "cert": 2137,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2137",
+ "module": "McAfee Vulnerability Manager Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The McAfee Vulnerability Manager Cryptographic Module scans specified targets for vulnerabilities and misconfiguration. It provides a management interface to configure the system and generate reports regarding the results of the scans.",
+ "tested_configurations": [
+  "Windows Server 2008 R2 64-bit running an Intel Xeon on a McAfee® Firewall Enterprise Control Center (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2176",
+   "cavp_id": "1722",
+   "cavp_ref": "AES:2176"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1332",
+   "cavp_id": "6303",
+   "cavp_ref": "HMAC:1332"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1102",
+   "cavp_id": "18884",
+   "cavp_ref": "RNG:1102"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1122",
+   "cavp_id": "16427",
+   "cavp_ref": "RSA:1122"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1888",
+   "cavp_id": "27689",
+   "cavp_ref": "SHS:1888"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1378",
+   "cavp_id": "11047",
+   "cavp_ref": "TDES:1378"
+  }
+ ],
+ "vendor": "McAfee, Inc.",
+ "vendor_info": {
+  "name": "McAfee, Inc.",
+  "website": "http://www.mcafee.com",
+  "address": [
+   "2821 Mission College Blvd.",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Chela Diaz de Villegas"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2137.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0040.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/29/2014",
+   "type": "Initial",
+   "lab": "COACT INC CAFE LAB"
+  }
+ ],
+ "first_validated": "4/29/2014",
+ "last_updated": "4/29/2014",
+ "labs": "COACT INC CAFE LAB",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2137.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 128 bits of encryption strength); Diffie-Hellman (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2137,
+  "vendor": "McAfee, Inc.",
+  "module": "McAfee Vulnerability Manager Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/29/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

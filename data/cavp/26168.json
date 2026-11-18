@@ -1,0 +1,52 @@
+{
+ "cavp_id": "26168",
+ "cavp_cert": "RSA 174",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=26168",
+ "implementation": "SCCOS Crypto library",
+ "product_id": "4896",
+ "description": "SCCOS is a state-of-the-art operating system that offers wide range of authentication services together with the highest levels of security. It offers powerful implementaions for public and secret key encryption supporting RSA, DSA, Diffie-Hellman, SHA-1, Triple-DES, and AES.",
+ "version": "3.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/25/2006",
+ "vendor": "SafeNet, Inc.",
+ "vendor_website": "http://www.safeNet-inc.com",
+ "oes": [
+  {
+   "name": "Philips P5CT072 Secure Triple Interface Smart Card Controller",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 1536, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 1536",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,88 @@
+{
+ "cavp_id": "25460",
+ "cavp_cert": "AES 1599",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25460",
+ "implementation": "Klas Cryptographic Library",
+ "product_id": "7971",
+ "description": "KlasRouter is a low-power secure router providing Virtual Private Networking (including IPSec Suite-B algorithms), WAN Acceleration, VLAN and a host of other networking features in a compact package. KlasRouter is standards-based and hence interoperable with any infastructure.",
+ "version": "5.1f (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/14/2011",
+ "vendor": "Klas Ltd",
+ "vendor_website": "http://www.klasonline.com",
+ "oes": [
+  {
+   "name": "Intel XScale IXP425",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192",
+    "    MAC Length: 16-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 256",
+    "    MAC Length: 16-128",
+    "    Message Length: 6136-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "Payload Length: 1024",
+    "AAD Length: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

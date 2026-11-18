@@ -1,0 +1,50 @@
+{
+ "cavp_id": "6771",
+ "cavp_cert": "AES 4745",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6771",
+ "implementation": "Samsung Kernel Cryptographic Module with Exynos 7870 Crypto-Extensions",
+ "product_id": "8350",
+ "description": "Provides general purpose cryptographic services to services in the Linux kernel and user-space applications, intended to protect data in transit and at rest.",
+ "version": "1.7.1",
+ "type": "SOFTWARE",
+ "first_validated": "8/25/2017",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Android 7.1 (Kernel 3.18) on Samsung Exynos 7870",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

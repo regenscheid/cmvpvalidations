@@ -1,0 +1,147 @@
+{
+ "cert": 2159,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2159",
+ "module": "Unified Crypto Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The Comtech Unified Crypto Module features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via Comtech Satellite Modems, as well as firmware to provide the cryptographic functions needed to act as a endpoint for secure TLS- and SSH-based management and control traffic.",
+ "hardware_versions": "PL-0000235-2",
+ "firmware_versions": "2.1.1",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1538",
+   "cavp_id": "1076",
+   "cavp_ref": "AES:1538"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2026",
+   "cavp_id": "19235",
+   "cavp_ref": "AES:2026"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2417",
+   "cavp_id": "14967",
+   "cavp_ref": "AES:2417"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 755",
+   "cavp_id": "14744",
+   "cavp_ref": "DSA:755"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 397",
+   "cavp_id": "16995",
+   "cavp_ref": "ECDSA:397"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1502",
+   "cavp_id": "10258",
+   "cavp_ref": "HMAC:1502"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1173",
+   "cavp_id": "25402",
+   "cavp_ref": "RNG:1173"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1193",
+   "cavp_id": "25110",
+   "cavp_ref": "RNG:1193"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1249",
+   "cavp_id": "12647",
+   "cavp_ref": "RSA:1249"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2074",
+   "cavp_id": "15620",
+   "cavp_ref": "SHS:2074"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1505",
+   "cavp_id": "2237",
+   "cavp_ref": "TDES:1505"
+  }
+ ],
+ "vendor": "Comtech EF Data Corporation",
+ "vendor_info": {
+  "name": "Comtech EF Data Corporation",
+  "website": "http://www.comtechefdata.com",
+  "address": [
+   "2114 West 7th Street",
+   "Tempe, AZ 85281",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Wallace Davis"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2159.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0041.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/27/2014",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "5/27/2014",
+ "last_updated": "5/27/2014",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2159.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); MD5; NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2159,
+  "vendor": "Comtech EF Data Corporation",
+  "module": "Unified Crypto Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "05/27/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,46 @@
+{
+ "cavp_id": "9972",
+ "cavp_cert": "AES 5375",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=9972",
+ "implementation": "Red Hat NSS Softoken (64 bit)",
+ "product_id": "9397",
+ "description": "User space library providing general cryptographic services used by the NSS cryptographic library. The module was tested with 64bit word size.",
+ "version": "6.0",
+ "type": "SOFTWARE",
+ "first_validated": "4/13/2018",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 7.5 on Intel(R) Xeon(R) E5-2640 v3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

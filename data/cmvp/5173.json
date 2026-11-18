@@ -1,0 +1,549 @@
+{
+ "cert": 5173,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5173",
+ "module": "Trend Micro Crypto Core OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Trend Micro Crypto Core OpenSSL is a software library which provides FIPS 140-2 approved cryptographic algorithms and services for Trend Micro Deep Discovery security products. It offers a C-language application program interface (API) for use by applications that require cryptographic functionality.",
+ "tested_configurations": [
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Analyzer 1100 v1 (DDAN 1100 v1) (Dell OEMR R730XL) with Intel Xeon E5-2650 v3 with PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Analyzer 1100 v1 (DDAN 1100 v1) (Dell OEMR R730XL) with Intel Xeon E5-2650 v3 without PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Analyzer 1200 v1 (DDAN 1200 v1) (Dell OEMR R740XL) with Intel Xeon Gold 5118 with PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Analyzer 1200 v1 (DDAN 1200 v1) (Dell OEMR R740XL) with Intel Xeon Gold 5118 without PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Director - Internal Network Analytics 9200 (DDDNA 9200) (Dell PowerEdge R450) with Intel Xeon Silver 4310 with PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Director - Internal Network Analytics 9200 (DDDNA 9200) (Dell PowerEdge R450) with Intel Xeon Silver 4310 without PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Email Inspector 7300 V1 (DDEI 7300 v1) (Dell OEMR R450) with Intel Xeon Silver 4309Y with PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Email Inspector 7300 V1 (DDEI 7300 v1) (Dell OEMR R450) with Intel Xeon Silver 4309Y without PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Email Inspector 9200 V1 (DDEI 9200 v1) (Dell OEMR R740XL) with Intel Xeon Gold 5118 with PAA",
+  "CentOS Linux 7.1.1503 on Trend Micro Deep Discovery Email Inspector 9200 V1 (DDEI 9200 v1) (Dell OEMR R740XL) with Intel Xeon Gold 5118 without PAA",
+  "CentOS Linux 7.1.1503 on VMWare ESXi 7.0 running on Trend Micro Deep Discovery Director (DDD) (Dell PowerEdge R740) with Intel Xeon Gold 6248R without PAA",
+  "CentOS Linux 7.1.1503 on VMware ESXi 7.0 running on Trend Micro Virtual Deep Discovery Email Inspector (vDDEI) (Dell PowerEdge R740) with Intel Xeon Silver 4216 with PAA",
+  "CentOS Linux 7.1.1503 on VMware ESXi 7.0 running on Trend Micro Virtual Deep Discovery Email Inspector (vDDEI) (Dell PowerEdge R740) with Intel Xeon Silver 4216 without PAA",
+  "Debian 11.5 running on Dell Inspiron 7591 with Intel i7(x64) with PAA",
+  "Debian 11.5 running on Dell Inspiron 7591 with Intel i7(x64) without PAA",
+  "FreeBSD 13.1 running on Dell Inspiron 7591 with Intel i7(x64) with PAA",
+  "FreeBSD 13.1 running on Dell Inspiron 7591 with Intel i7(x64) without PAA",
+  "Linux 3.10 on Trend Micro Deep Discovery Inspector 4200 (DDI 4200) (Dell 14-Gen MLK) with Intel Xeon Silver 4216 with PAA",
+  "Linux 3.10 on Trend Micro Deep Discovery Inspector 4200 (DDI 4200) (Dell 14-Gen MLK) with Intel Xeon Silver 4216 without PAA",
+  "Linux 3.10 on Trend Micro Deep Discovery Inspector 530/1300 (DDI 530/1300) (Dell 15-Gen) with Intel Xeon Silver 4314 with PAA",
+  "Linux 3.10 on Trend Micro Deep Discovery Inspector 530/1300 (DDI 530/1300) (Dell 15-Gen) with Intel Xeon Silver 4314 without PAA",
+  "Linux 3.10 on Trend Micro Deep Discovery Inspector 9200 (DDI 9200) (Dell 14-Gen MLK) with Intel Xeon Gold 6254 with PAA",
+  "Linux 3.10 on Trend Micro Deep Discovery Inspector 9200 (DDI 9200) (Dell 14-Gen MLK) with Intel Xeon Gold 6254 without PAA",
+  "Linux 3.10 on VMWare ESXi 7.0 running on Trend Micro Deep Discovery Inspector Virtual Appliance (vDDI) (Dell PowerEdge R740) with Intel Xeon Gold 6248R with PAA",
+  "Linux 3.10 on VMWare ESXi 7.0 running on Trend Micro Deep Discovery Inspector Virtual Appliance (vDDI) (Dell PowerEdge R740) with Intel Xeon Gold 6248R without PAA",
+  "Linux 5.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) with KVM on Red Hat Enterprise Linux (RHEL) 8 running on an HPE ProLiant DL360 Gen10 with Intel Xeon Silver 4110 without PAA",
+  "Linux 5.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) with KVM on Red Hat Enterprise Linux (RHEL) 9 running on an HPE ProLiant DL360 Gen10 with Intel Xeon Silver 4110 without PAA",
+  "Linux 5.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) with VMware ESXi 7 running on an HPE ProLiant DL360 Gen10 with Intel Xeon Silver 4110 without PAA",
+  "Linux 5.4 on a Trend Micro TippingPoint Virtual Threat Protection System (vTPS) with VMware ESXi 8 running on an HPE ProLiant DL360 Gen10 with Intel Xeon Silver 4110 without PAA",
+  "Linux 5.4 running on a Trend Micro TippingPoint Threat Protection System (TPS) 1100TX with Intel Pentium D1517 without PAA",
+  "Linux 5.4 running on a Trend Micro TippingPoint Threat Protection System (TPS) 5500TX with Intel Xeon D1559 without PAA",
+  "Linux 5.4 running on a Trend Micro TippingPoint Threat Protection System (TPS) 8600TXE with Intel Xeon Gold 5318N without PAA",
+  "Linux 5.4 running on a Trend Micro TippingPoint Threat Protection System (TPS) 8x00TX with Intel Xeon E5- 2648L v3 without PAA",
+  "Linux 5.4 running on a Trend Micro TippingPoint Threat Protection System (TPS) 9200TXE with Intel Xeon Gold 5318N without PAA",
+  "macOS 11.5.2 running on Apple i7 Mac Mini with Intel i7(x64) with PAA",
+  "macOS 11.5.2 running on Apple i7 Mac Mini with Intel i7(x64) without PAA",
+  "Rocky Linux 9.0 on a Trend Micro TippingPoint Virtual Security Management System (vSMS) with VMware ESXi 8 running on an HPE ProLiant DL360 Gen10 with Intel Xeon Silver 4110 without PAA",
+  "Rocky Linux 9.0 running on a Trend Micro TippingPoint Security Management System (SMS) H4 running on a Dell PowerEdge R640 XL with Intel Xeon Silver 4110 without PAA",
+  "Rocky Linux 9.0 running on a Trend Micro TippingPoint Security Management System (SMS) H5 running on a Dell PowerEdge R660xs with Intel Xeon Silver 4410Y without PAA",
+  "Ubuntu Linux 22.04.1 LTS running on Dell Inspiron 7591 with Intel i7(x64) with PAA",
+  "Ubuntu Linux 22.04.1 LTS running on Dell Inspiron 7591 with Intel i7(x64) without PAA",
+  "Windows 10 running on Dell Inspiron 7591 with Intel i7(x64) with PAA",
+  "Windows 10 running on Dell Inspiron 7591 with Intel i7(x64) without PAA",
+  "Windows Server 2019 on Trend Micro ScanMail for Microsoft Exchange (SMEX) (Dell PowerEdge R740) with Intel Xeon Silver 4114 with PAA",
+  "Windows Server 2019 on Trend Micro ScanMail for Microsoft Exchange (SMEX) (Dell PowerEdge R740) with Intel Xeon Silver 4114 without PAA",
+  "Windows Server 2019 on Trend Micro Update Tool (TMUT) (Dell PowerEdge R740) with Intel Xeon Silver 4114 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "N/A",
+ "software_versions": "3.0.8, 3.0.9",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "KAS-RSA-SSC",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "KAS-RSA-SSC",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "KAS-RSA-SSC",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "KAS-RSA-SSC",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "KMAC",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "KMAC",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "KMAC",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "KMAC",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A3500, #A3491, #A5111 and #A5860; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A3500, #A3491, #A5111 and #A5860 and AES Certs. #A3500, #A3491, #A5111 and #A5860; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A3500, #A3491, #A5111 and #A5860 and HMAC Certs. #A3500, #A3491, #A5111 and #A5860; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Certs. #A3500, #A3491, #A5111 and #A5860 and HMAC Certs. #A3500, #A3491, #A5111 and #A5860; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS-RSA",
+   "cavp_cert": "Certs. #A3500, #A3491, #A5111 and #A5860; key establishment methodology provides between 112 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A3500",
+   "cavp_id": "36110",
+   "cavp_ref": "A:3500"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A3491",
+   "cavp_id": "36101",
+   "cavp_ref": "A:3491"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A5111",
+   "cavp_id": "37721",
+   "cavp_ref": "A:5111"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A5860",
+   "cavp_id": "38470",
+   "cavp_ref": "A:5860"
+  }
+ ],
+ "vendor": "Trend Micro Incorporated",
+ "vendor_info": {
+  "name": "Trend Micro Incorporated",
+  "website": "http://www.trendmicro.com",
+  "address": [
+   "225 E. John Carpenter Freeway",
+   "Suite 1500",
+   "Irving, Texas 75062",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Nathan Tran"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5173.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202026_020426_1121-signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/6/2026",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "6/4/2026",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "3/6/2026",
+ "last_updated": "6/4/2026",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5173.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "N/A",
+ "sparse": false,
+ "list": {
+  "cert": 5173,
+  "vendor": "Trend Micro Incorporated",
+  "module": "Trend Micro Crypto Core OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "03/06/2026",
+   "06/04/2026"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

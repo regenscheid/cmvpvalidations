@@ -1,0 +1,73 @@
+{
+ "cavp_id": "31682",
+ "cavp_cert": "C1276",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31682",
+ "implementation": "Crypto Hardware Module aes_core_gcm_simult_enc_mic.vhd(bca)",
+ "product_id": "11638",
+ "description": "AES CTR, CBC, CCM, and GCM modes.",
+ "version": "rev 1.2.1",
+ "type": "HARDWARE",
+ "first_validated": "10/16/2019",
+ "vendor": "Broadcom",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "Crypto Hardware Module aes_core_gcm_simult_enc_mic.vhd(bca)",
+   "details": [
+    "device: Crypto Hardware Module aes_core_gcm_simult_enc_mic.vhd(bca)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 176-240",
+    "C1276 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 16, 128, 256",
+    "AAD Length: 176, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

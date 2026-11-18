@@ -1,0 +1,136 @@
+{
+ "cert": 3672,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3672",
+ "module": "Treasure Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in Sections 5.2 and 11 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Treasure Cryptographic Module is the cryptographic component of Treasure's Treasure Vault product, which provides HSM-grade security for managing cryptographic keys and protecting sensitive data. This solution leverages on Intel ® SGX technology and allows enterprises to protect data at all states: at rest, in motion and in use",
+ "tested_configurations": [
+  "Ubuntu 18.04 LTS running on a Lenovo Thinkpad T460s with an Intel Core i7-6600U (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "hardware_versions": "Intel Core i7-6600U",
+ "software_versions": "1.5",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C608",
+   "cavp_id": "31004",
+   "cavp_ref": "C:608"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C608",
+   "cavp_id": "31004",
+   "cavp_ref": "C:608"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C608",
+   "cavp_id": "31004",
+   "cavp_ref": "C:608"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C608",
+   "cavp_id": "31004",
+   "cavp_ref": "C:608"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C608",
+   "cavp_id": "31004",
+   "cavp_ref": "C:608"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C608",
+   "cavp_id": "31004",
+   "cavp_ref": "C:608"
+  }
+ ],
+ "vendor": "Treasure Cloud Pte.Ltd",
+ "vendor_info": {
+  "name": "Treasure Cloud Pte.Ltd",
+  "website": "https://www.anqlave.co",
+  "address": [
+   "The Work Project, 12 Marina View",
+   "Asia Square Tower 2, #11-01",
+   "Singapore 018961",
+   "Singapore"
+  ],
+  "contacts": [
+   {
+    "name": "Rodel Miguel"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3672.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June%202020_010720_0752.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/18/2020",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  },
+  {
+   "date": "6/26/2020",
+   "type": "Update",
+   "lab": "EWA - Canada"
+  },
+  {
+   "date": "5/21/2021",
+   "type": "Update",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "6/18/2020",
+ "last_updated": "5/21/2021",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3672.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3672,
+  "vendor": "Treasure Cloud Pte.Ltd",
+  "module": "Treasure Cryptographic Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "06/18/2020",
+   "06/26/2020",
+   "05/21/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

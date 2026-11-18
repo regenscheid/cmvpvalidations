@@ -1,0 +1,124 @@
+{
+ "cert": 1409,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1409",
+ "module": "Open Text Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Open Text Cryptographic Module is a library which provides encryption and decryption services to Hummingbird Connectivity software during SSL or SSH connections. The Open Text Cryptographic Module is used in Exceed, a windows-based X11 server, NFS Maestro, a suite of NFS clients and servers, HostExplorer, a desktop and web-based terminal emulation suite and Connectivity Secure Shell, an implementation of the Secure Shell 2 protocol.",
+ "tested_configurations": [
+  "Microsoft Windows Vista with SP1 (32-bit edition)",
+  "Microsoft Windows Vista with SP1 (64-bit edition) (single-user mode)"
+ ],
+ "software_versions": "14.0.0.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1143",
+   "cavp_id": "23991",
+   "cavp_ref": "AES:1143"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 371",
+   "cavp_id": "29655",
+   "cavp_ref": "DSA:371"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 650",
+   "cavp_id": "14029",
+   "cavp_ref": "HMAC:650"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 633",
+   "cavp_id": "27667",
+   "cavp_ref": "RNG:633"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 541",
+   "cavp_id": "42",
+   "cavp_ref": "RSA:541"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1061",
+   "cavp_id": "27578",
+   "cavp_ref": "SHS:1061"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 829",
+   "cavp_id": "20609",
+   "cavp_ref": "TDES:829"
+  }
+ ],
+ "vendor": "Open Text Corporation",
+ "vendor_info": {
+  "name": "Open Text Corporation",
+  "website": "http://www.opentext.com",
+  "address": [
+   "38 Leek Crescent",
+   "Richmond Hill, Ontario L4B 4N8",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Jonathan Carroll"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1409.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1409.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/21/2010",
+   "type": "Initial",
+   "lab": "DOMUS"
+  }
+ ],
+ "first_validated": "9/21/2010",
+ "last_updated": "9/21/2010",
+ "labs": "DOMUS",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1409.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DES; Blowfish; CAST; RC2; RC4; RC5; ECC; MD2; MD4; MD5; MDC2; RIPEMD; Message-digest based PRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1409,
+  "vendor": "Open Text Corporation",
+  "module": "Open Text Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/21/2010"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

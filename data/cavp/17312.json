@@ -1,0 +1,50 @@
+{
+ "cavp_id": "17312",
+ "cavp_cert": "AES 5919",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17312",
+ "implementation": "Firebox Cryptographic Module",
+ "product_id": "10288",
+ "description": "WatchGuard Firebox appliances provide security services, from intrusion prevention, gateway antivirus, application control, spam prevention, and URL filtering, to more advanced services for protecting against evolving malware, ransomware, and data breaches, while also providing secure Virtual Private Network (VPN) connections for remote users.",
+ "version": "12.3 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/2/2018",
+ "vendor": "WatchGuard Technologies, Inc.",
+ "vendor_website": "http://www.watchguard.com",
+ "oes": [
+  {
+   "name": "Intel i3-6100",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 192, 384",
+    "AAD Length: 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

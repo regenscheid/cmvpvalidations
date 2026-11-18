@@ -1,0 +1,44 @@
+{
+ "cavp_id": "19342",
+ "cavp_cert": "RSA 291",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19342",
+ "implementation": "IBM TS1120 Encrypting Tape Drive Firmware Implementation",
+ "product_id": "5243",
+ "description": "The TS1120 / 3592 E05 Tape Drive provides full line speed, fully validated, hardware implemented, AES 256 bit encryption and compression of customer data recorded to tape. It ensures data confidentiality in the event of a lost tape while also supporting additional cryptographic functions for authentication and secure transfer of key material.",
+ "version": "95P5203 EC level H82669 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/12/2007",
+ "vendor": "IBM",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "PowerPC 405CR",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

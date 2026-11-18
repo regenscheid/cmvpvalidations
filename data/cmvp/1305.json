@@ -1,0 +1,207 @@
+{
+ "cert": 1305,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1305",
+ "module": "Red Hat Enterprise Linux 5 Libgcrypt Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and when obtained, installed and initialized as assumed by the Crypto Officer role and specified in Section 8.1 of the provided Security Policy. The Security Policy specifies the precise RPM file containing this module. The integrity of the RPM is automatically verified during the installation and the Crypto officer shall not install the module if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The libgcrypt FIPS Runtime Module is a general purpose cryptographic library designed to provide FIPS 140-2 validated cryptographic functionality for use with the high level API of the libgcrypt library version 1.4.4 delivered with RHEL 5.4.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 5.4 (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1180",
+   "cavp_id": "29305",
+   "cavp_ref": "AES:1180"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1192",
+   "cavp_id": "25943",
+   "cavp_ref": "AES:1192"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1193",
+   "cavp_id": "7337",
+   "cavp_ref": "AES:1193"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 389",
+   "cavp_id": "8271",
+   "cavp_ref": "DSA:389"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 393",
+   "cavp_id": "16447",
+   "cavp_ref": "DSA:393"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 394",
+   "cavp_id": "22354",
+   "cavp_ref": "DSA:394"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 680",
+   "cavp_id": "13802",
+   "cavp_ref": "HMAC:680"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 691",
+   "cavp_id": "26880",
+   "cavp_ref": "HMAC:691"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 692",
+   "cavp_id": "989",
+   "cavp_ref": "HMAC:692"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 651",
+   "cavp_id": "28259",
+   "cavp_ref": "RNG:651"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 658",
+   "cavp_id": "17240",
+   "cavp_ref": "RNG:658"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 659",
+   "cavp_id": "26352",
+   "cavp_ref": "RNG:659"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 561",
+   "cavp_id": "26270",
+   "cavp_ref": "RSA:561"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 570",
+   "cavp_id": "30217",
+   "cavp_ref": "RSA:570"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 571",
+   "cavp_id": "4882",
+   "cavp_ref": "RSA:571"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1089",
+   "cavp_id": "8956",
+   "cavp_ref": "SHS:1089"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1098",
+   "cavp_id": "27007",
+   "cavp_ref": "SHS:1098"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1099",
+   "cavp_id": "8659",
+   "cavp_ref": "SHS:1099"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 851",
+   "cavp_id": "25899",
+   "cavp_ref": "TDES:851"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 859",
+   "cavp_id": "29406",
+   "cavp_ref": "TDES:859"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 860",
+   "cavp_id": "26103",
+   "cavp_ref": "TDES:860"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "314 Littleton Road",
+   "Westford, MA 01886",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Irina Boverman"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1305.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1305.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/26/2010",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "4/26/2010",
+ "last_updated": "4/26/2010",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1305.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1305,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 5 Libgcrypt Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/26/2010"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,46 @@
+{
+ "cavp_id": "15258",
+ "cavp_cert": "AES 447",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=15258",
+ "implementation": "SEL-3021",
+ "product_id": "4877",
+ "description": "The SEL-3021 Serial Encrypting Transceiver is an EIA-232 bump-in-the-wire encryption module. Use the SEL-3021 to protect meters, protective relays, Programmable Logic Controllers (PLC), Remote Terminal Units (RTU), and computers from unauthorized access.",
+ "version": "0.146 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/11/2006",
+ "vendor": "Schweitzer Engineering Laboratories, Inc.",
+ "vendor_website": "http://www.selinc.com",
+ "oes": [
+  {
+   "name": "FPGA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

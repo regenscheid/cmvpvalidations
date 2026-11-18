@@ -1,0 +1,195 @@
+{
+ "cert": 2031,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2031",
+ "module": "Stonesoft Cryptographic Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "None",
+ "level_exceptions": [
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Stonesoft Cryptographic Library is a software module that provides cryptographic services for Stonesoft network security products.",
+ "tested_configurations": [
+  "Debian GNU/Linux 6.0 based distribution running on Stonesoft FW-1301 (single-user mode)",
+  "Debian GNU/Linux 6.0 based distribution running on Stonesoft FW-315"
+ ],
+ "software_versions": "1.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2240",
+   "cavp_id": "8359",
+   "cavp_ref": "AES:2240"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2241",
+   "cavp_id": "30360",
+   "cavp_ref": "AES:2241"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 37",
+   "cavp_id": "29558",
+   "cavp_ref": "Component:37"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 38",
+   "cavp_id": "16540",
+   "cavp_ref": "Component:38"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 266",
+   "cavp_id": "22784",
+   "cavp_ref": "DRBG:266"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 267",
+   "cavp_id": "7836",
+   "cavp_ref": "DRBG:267"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 694",
+   "cavp_id": "28460",
+   "cavp_ref": "DSA:694"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 695",
+   "cavp_id": "16471",
+   "cavp_ref": "DSA:695"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 349",
+   "cavp_id": "4037",
+   "cavp_ref": "ECDSA:349"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 350",
+   "cavp_id": "24498",
+   "cavp_ref": "ECDSA:350"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1370",
+   "cavp_id": "2639",
+   "cavp_ref": "HMAC:1370"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1371",
+   "cavp_id": "20192",
+   "cavp_ref": "HMAC:1371"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1147",
+   "cavp_id": "669",
+   "cavp_ref": "RSA:1147"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1148",
+   "cavp_id": "17103",
+   "cavp_ref": "RSA:1148"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1929",
+   "cavp_id": "25738",
+   "cavp_ref": "SHS:1929"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1930",
+   "cavp_id": "16297",
+   "cavp_ref": "SHS:1930"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1401",
+   "cavp_id": "19854",
+   "cavp_ref": "TDES:1401"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1402",
+   "cavp_id": "99",
+   "cavp_ref": "TDES:1402"
+  }
+ ],
+ "vendor": "Stonesoft Corporation",
+ "vendor_info": {
+  "name": "Stonesoft Corporation",
+  "website": "http://www.stonesoft.com",
+  "address": [
+   "Itälahdenkatu 22A",
+   "Helsinki FI-00210",
+   "Finland"
+  ],
+  "contacts": [
+   {
+    "name": "Klaus Majewski"
+   },
+   {
+    "name": "Jorma Levomäki"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2031.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0035.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/13/2013",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "11/13/2013",
+ "last_updated": "11/13/2013",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2031.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "Diffie-Hellman (CVL Certs. #37 and #38, key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #37 and #38, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength)); AES (Certs. #2240 and #2241, key wrapping; key establishment methodology provides 128 or 256 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2031,
+  "vendor": "Stonesoft Corporation",
+  "module": "Stonesoft Cryptographic Library",
+  "type": "Software",
+  "validation_dates": [
+   "11/13/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

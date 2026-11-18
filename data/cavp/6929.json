@@ -1,0 +1,74 @@
+{
+ "cavp_id": "6929",
+ "cavp_cert": "AES 5028",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=6929",
+ "implementation": "CryptoFlow Net Creator Java Crypto Module",
+ "product_id": "8846",
+ "description": "The CryptoFlow Net Creator Java Crypto library performs all cryptographic functionality for the CryptoFlow Net Creator management software, including asymmetric key generation, symmetric encryption, hashing, and digital signatures. The module supports the TLSv1.2 protocol.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "12/8/2017",
+ "vendor": "Certes Networks, Inc.",
+ "vendor_website": "http://www.certesnetworks.com",
+ "oes": [
+  {
+   "name": "CentOS 6.7 on Intel Xeon E3-1270v5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 136, 256, 272",
+    "AAD Length: 0, 128, 136, 272, 384"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 136, 272, 384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

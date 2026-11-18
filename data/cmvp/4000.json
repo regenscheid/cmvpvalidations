@@ -1,0 +1,150 @@
+{
+ "cert": 4000,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4000",
+ "module": "Cohesity FIPS Object Module for OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The KeyPair FIPS Object Module is incorporated into Cohesity OS that is supported on various hardware models.",
+ "tested_configurations": [
+  "CentOS 7 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 with PAA",
+  "CentOS 7 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "product_url": "N/A",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  }
+ ],
+ "vendor": "Cohesity Inc.",
+ "vendor_info": {
+  "name": "Cohesity Inc.",
+  "website": "https://www.cohesity.com/",
+  "address": [
+   "300 Park Ave., Suite 1700",
+   "San Jose, CA 95110",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Lintu Thomas"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4000.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202021_010921_0733.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/3/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "8/3/2021",
+ "last_updated": "8/3/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4000.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4000,
+  "vendor": "Cohesity Inc.",
+  "module": "Cohesity FIPS Object Module for OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "08/03/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

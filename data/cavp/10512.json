@@ -1,0 +1,46 @@
+{
+ "cavp_id": "10512",
+ "cavp_cert": "ECDSA 585",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10512",
+ "implementation": "WatchKey ProX USB Token",
+ "product_id": "6822",
+ "description": "The WatchKey ProX USB token provides digital signature generation and verification for online authentication of online transactions and data encryption/decryption to online service users",
+ "version": "AS518 and PCB K023314A",
+ "type": "HARDWARE",
+ "first_validated": "2/13/2015",
+ "vendor": "Watchdata Technologies Pte Ltd",
+ "vendor_website": "http://www.watchdata.com",
+ "oes": [
+  {
+   "name": "WatchKey ProX USB Token",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-192, P-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192, P-256",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

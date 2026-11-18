@@ -1,0 +1,157 @@
+{
+ "cert": 4146,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4146",
+ "module": "Cloudera Cryptographic Module for NSS",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #3616",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cloudera Cryptographic Module for NSS is a general purpose FIPS 140-2 Validated Cryptographic library for use with Cloudera Data Platform (CDP) products.",
+ "tested_configurations": [
+  "Oracle Linux 7.6 64 bit running on an Oracle Server X7-2 with an Intel(R) Xeon(R) Silver 4114 with PAA",
+  "Oracle Linux 7.6 64 bit running on an Oracle Server X7-2 with an Intel(R) Xeon(R) Silver 4114 without PAA",
+  "Oracle Linux 7.6 64 bit running on an Oracle X7-2 Server with an AMD(R) EPYC(R) 7551 with PAA",
+  "Oracle Linux 7.6 64 bit running on an Oracle X7-2 Server with an AMD(R) EPYC(R) 7551 without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #C786, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C786, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "5.0",
+ "product_url": "http://www.cloudera.com/products/cloudera-data-platform",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C794",
+   "cavp_id": "31190",
+   "cavp_ref": "C:794"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C786 and #C794; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C786",
+   "cavp_id": "31182",
+   "cavp_ref": "C:786"
+  }
+ ],
+ "vendor": "Cloudera, Inc.",
+ "vendor_info": {
+  "name": "Cloudera, Inc.",
+  "website": "http://www.cloudera.com/",
+  "address": [
+   "5470 Great America Pkwy.",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Cloudera Compliance Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4146.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202022_010322_0121_Signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/7/2022",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "2/7/2022",
+ "last_updated": "2/7/2022",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4146.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #C786, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #C786, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4146,
+  "vendor": "Cloudera, Inc.",
+  "module": "Cloudera Cryptographic Module for NSS",
+  "type": "Software",
+  "validation_dates": [
+   "02/07/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,438 @@
+{
+ "cert": 3563,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3563",
+ "module": "Red Hat Enterprise Linux 7 Libreswan Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "With module Red Hat Enterprise Linux NSS Cryptographic Module validated to FIPS 140-2 under Cert. #3270[1] and Red Hat Enterprise Linux 7 NSS Cryptographic Module validated to FIPS 140-2 under Cert. #3860[2] and Red Hat Enterprise Linux OpenSSL Module validated to FIPS140-2 under Cert. #3538[1] and Red Hat Enterprise Linux 7 OpenSSL Module validated to FIPS 140-2 under Cert. #3867[2] operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Red Hat Enterprise Linux Libreswan Cryptographic Module is a software only cryptographic module that provides the IKE protocol version 1 and version 2 key agreement services required for IPSec.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 7 running on Dell PowerEdge R630 with an Intel(R) Xeon(R) E5 with PAA",
+  "Red Hat Enterprise Linux 7 running on Dell PowerEdge R630 with an Intel(R) Xeon(R) E5 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (Certs. #2024, #2026, #C1387 and #C1420 with CVL Certs. #C287 and #C1425, key agreement; key establishment methodology provides between 112 bits and 256 bits of encryption strength); EC Diffie-Hellman (Certs. #2024, #2026, #C1387 and #C1420 with CVL Certs. #C287 and #C1425, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength)",
+ "software_versions": "7.0[1] and rhel7.20190509[2]",
+ "product_url": "http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5600",
+   "cavp_id": "21606",
+   "cavp_ref": "AES:5600"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5601",
+   "cavp_id": "1999",
+   "cavp_ref": "AES:5601"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5602",
+   "cavp_id": "24044",
+   "cavp_ref": "AES:5602"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5603",
+   "cavp_id": "28631",
+   "cavp_ref": "AES:5603"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1388",
+   "cavp_id": "31819",
+   "cavp_ref": "C:1388"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1421",
+   "cavp_id": "31862",
+   "cavp_ref": "C:1421"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2024",
+   "cavp_id": "29935",
+   "cavp_ref": "Component:2024"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2026",
+   "cavp_id": "6420",
+   "cavp_ref": "Component:2026"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C287",
+   "cavp_id": "30683",
+   "cavp_ref": "C:287"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1425",
+   "cavp_id": "31866",
+   "cavp_ref": "C:1425"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2245",
+   "cavp_id": "28747",
+   "cavp_ref": "DRBG:2245"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2246",
+   "cavp_id": "11623",
+   "cavp_ref": "DRBG:2246"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1514",
+   "cavp_id": "9499",
+   "cavp_ref": "ECDSA:1514"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1515",
+   "cavp_id": "6478",
+   "cavp_ref": "ECDSA:1515"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3734",
+   "cavp_id": "13809",
+   "cavp_ref": "HMAC:3734"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3735",
+   "cavp_id": "23131",
+   "cavp_ref": "HMAC:3735"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C297",
+   "cavp_id": "30693",
+   "cavp_ref": "C:297"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C302",
+   "cavp_id": "30698",
+   "cavp_ref": "C:302"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C303",
+   "cavp_id": "30699",
+   "cavp_ref": "C:303"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C304",
+   "cavp_id": "30700",
+   "cavp_ref": "C:304"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C316",
+   "cavp_id": "30712",
+   "cavp_ref": "C:316"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C321",
+   "cavp_id": "30717",
+   "cavp_ref": "C:321"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C327",
+   "cavp_id": "30723",
+   "cavp_ref": "C:327"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C328",
+   "cavp_id": "30724",
+   "cavp_ref": "C:328"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C329",
+   "cavp_id": "30725",
+   "cavp_ref": "C:329"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C336",
+   "cavp_id": "30732",
+   "cavp_ref": "C:336"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1378",
+   "cavp_id": "31809",
+   "cavp_ref": "C:1378"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1379",
+   "cavp_id": "31810",
+   "cavp_ref": "C:1379"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1380",
+   "cavp_id": "31811",
+   "cavp_ref": "C:1380"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1381",
+   "cavp_id": "31812",
+   "cavp_ref": "C:1381"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1382",
+   "cavp_id": "31813",
+   "cavp_ref": "C:1382"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1383",
+   "cavp_id": "31814",
+   "cavp_ref": "C:1383"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1384",
+   "cavp_id": "31815",
+   "cavp_ref": "C:1384"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1385",
+   "cavp_id": "31816",
+   "cavp_ref": "C:1385"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1386",
+   "cavp_id": "31817",
+   "cavp_ref": "C:1386"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1419",
+   "cavp_id": "31860",
+   "cavp_ref": "C:1419"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3012",
+   "cavp_id": "19895",
+   "cavp_ref": "RSA:3012"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3013",
+   "cavp_id": "4322",
+   "cavp_ref": "RSA:3013"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4498",
+   "cavp_id": "21434",
+   "cavp_ref": "SHS:4498"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4499",
+   "cavp_id": "28936",
+   "cavp_ref": "SHS:4499"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2816",
+   "cavp_id": "1508",
+   "cavp_ref": "TDES:2816"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2817",
+   "cavp_id": "12343",
+   "cavp_ref": "TDES:2817"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1387",
+   "cavp_id": "31818",
+   "cavp_ref": "C:1387"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1420",
+   "cavp_id": "31861",
+   "cavp_ref": "C:1420"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "100 East Davie Street",
+   "Raleigh, NC 27601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jaroslav Reznik"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3563.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/15/2019",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "6/4/2021",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "11/15/2019",
+ "last_updated": "6/4/2021",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3563.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (Certs. #2024, #2026, #C1387 and #C1420 with CVL Certs. #C287 and #C1425, key agreement; key establishment methodology provides between 112 bits and 256 bits of encryption strength); EC Diffie-Hellman (Certs. #2024, #2026, #C1387 and #C1420 with CVL Certs. #C287 and #C1425, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 128 bits and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3563,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 7 Libreswan Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "11/15/2019",
+   "06/04/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

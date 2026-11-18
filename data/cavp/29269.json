@@ -1,0 +1,66 @@
+{
+ "cavp_id": "29269",
+ "cavp_cert": "AES 4748",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=29269",
+ "implementation": "Qualcomm AES engine-256w",
+ "product_id": "8370",
+ "description": "WCN39xx are families of chips that support 802.11 WIFI technologies for Qualcomm Chipsets, including(but not limited to) SDM8xx (835 or later chipsets), SDM6xx/4xx chipsets. IPQ80XX and QCA6XXX are families of chips that support 802.11 WIFI technologies.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/25/2017",
+ "vendor": "Qualcomm Technologies Inc",
+ "vendor_website": "http://www.qualcomm.com/products/snapdragon",
+ "oes": [
+  {
+   "name": "Chronologic VCS simulator, vcs-mx_vK-2015.09-SP2-1-T0428",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 64-80",
+    "AAD Length: 176-240"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 64, 80",
+    "AAD Length: 176, 240"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 176, 240"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

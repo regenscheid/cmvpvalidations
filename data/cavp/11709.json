@@ -1,0 +1,66 @@
+{
+ "cavp_id": "11709",
+ "cavp_cert": "RSA 925",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11709",
+ "implementation": "Provider-1",
+ "product_id": "8228",
+ "description": "Smart-1 50/150 Provider-1 Enterprise Edition brings a highly scalable multi-domain management solution to high-end enterprise customers. It includes a multi-domain management blade for management of up to 50 separate security domains, with separate management access rights while sharing global objects and policies.",
+ "version": "R71 with R7x hotfix (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "10/18/2011",
+ "vendor": "Check Point Software Technologies",
+ "vendor_website": "http://www.checkpoint.com",
+ "oes": [
+  {
+   "name": "Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048, 4096",
+    "Public Key Value: 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048, 4096",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

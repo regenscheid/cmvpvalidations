@@ -1,0 +1,41 @@
+{
+ "cavp_id": "11655",
+ "cavp_cert": "AES 930",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11655",
+ "implementation": "Harris Broadband Ethernet Radio Cryptographic Library",
+ "product_id": "2481",
+ "description": "The Harris Broadband Ethernet Radio Cryptographic Library provides encryption/decryption, hashing, and signing services to Harris' Broadband Ethernet solutions, including the multi-channel, point-to-point and point-to-multipoint RF-7800W Broadband Ethernet Radio.",
+ "version": "v1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/26/2008",
+ "vendor": "Harris Corporation (RF Communications Division)",
+ "vendor_website": "http://www.harris.com",
+ "oes": [
+  {
+   "name": "Xilinx Spartan-3 FPGA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

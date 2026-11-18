@@ -1,0 +1,131 @@
+{
+ "cert": 1748,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1748",
+ "module": "BASICS IP PC104",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When configured in FIPS mode as specified in Section 8 of the Security Policy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "The BASICS IP PC104 unit is a high-performance 10/100base-T Router which incorporates a cryptographic module. It provides 3 independently routable subnets; one for the uplink port, one for the downlink port and one for the four Ethernet switch ports which are also IEEE802.1q VLAN and Power-over-Ethernet (PoE) capable. It can also bridge network traffic to the uplink port from any IP device connected to its Downlink port. It may be used as a simple switch or a sophisticated secure multiprotocol IP router and can also power a group of SIP VoIP phones.",
+ "hardware_versions": "68551-01-1/68551C6",
+ "firmware_versions": "08_42.05",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1734",
+   "cavp_id": "29483",
+   "cavp_ref": "AES:1734"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 540",
+   "cavp_id": "17798",
+   "cavp_ref": "DSA:540"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 226",
+   "cavp_id": "25043",
+   "cavp_ref": "ECDSA:226"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1010",
+   "cavp_id": "27335",
+   "cavp_ref": "HMAC:1010"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 923",
+   "cavp_id": "17061",
+   "cavp_ref": "RNG:923"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 857",
+   "cavp_id": "20132",
+   "cavp_ref": "RSA:857"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1518",
+   "cavp_id": "28433",
+   "cavp_ref": "SHS:1518"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1123",
+   "cavp_id": "9728",
+   "cavp_ref": "TDES:1123"
+  }
+ ],
+ "vendor": "Vocality International Ltd",
+ "vendor_info": {
+  "name": "Vocality International Ltd",
+  "website": "http://www.vocality.com",
+  "address": [
+   "Lydling Barn, Puttenham Lane",
+   "Shackleford, Surrey GU8 6AP",
+   "United Kingdom"
+  ],
+  "contacts": [
+   {
+    "name": "Martin Saunders"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1748.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/27/2012",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "6/27/2012",
+ "last_updated": "6/27/2012",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1748.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1748,
+  "vendor": "Vocality International Ltd",
+  "module": "BASICS IP PC104",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/27/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,155 @@
+{
+ "cert": 3300,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3300",
+ "module": "Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Microsoft Windows Cryptographic Primitives Library is a general purpose, software-based, cryptographic module. The primitive provider functionality is offered through one cryptographic module, BCRYPT.DLL (version 7.00.2883), subject to FIPS 140-2 validation. BCRYPT.DLL provides cryptographic services, through its documented interfaces, to Windows Embedded Compact 7 components and applications running on Windows Embedded Compact 7.",
+ "tested_configurations": [
+  "Windows Embedded Compact 7 (ARMv5) running on a Freescale i.MX27 Development Kit (single-user mode)",
+  "Windows Embedded Compact 7 (ARMv6) running on a Samsung SMDK6410 Development Kit",
+  "Windows Embedded Compact 7 (ARMv7) running on a TI OMAP TMDSEVM3530",
+  "Windows Embedded Compact 7 (MIPS II FP) running on a Sigma Designs Vantage 8654 Development Kit",
+  "Windows Embedded Compact 7 (MIPS II) running on a Sigma Designs Vantage 8654 Development Kit"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "software_versions": "7.00.2883",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4431",
+   "cavp_id": "24342",
+   "cavp_ref": "AES:4431"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1867",
+   "cavp_id": "6432",
+   "cavp_ref": "Component:1867"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1430",
+   "cavp_id": "28935",
+   "cavp_ref": "DRBG:1430"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1188",
+   "cavp_id": "23192",
+   "cavp_ref": "DSA:1188"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1073",
+   "cavp_id": "16923",
+   "cavp_ref": "ECDSA:1073"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2943",
+   "cavp_id": "19926",
+   "cavp_ref": "HMAC:2943"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 115",
+   "cavp_id": "1246",
+   "cavp_ref": "KAS:115"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2412",
+   "cavp_id": "9195",
+   "cavp_ref": "RSA:2412"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3649",
+   "cavp_id": "27541",
+   "cavp_ref": "SHS:3649"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2382",
+   "cavp_id": "6899",
+   "cavp_ref": "TDES:2382"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Gokul Karthik Balaswamy"
+   },
+   {
+    "name": "Christine Ahonen"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3300.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/15/2018",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "10/15/2018",
+ "last_updated": "10/15/2018",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3300.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3300,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows Embedded Compact Cryptographic Primitives Library (bcrypt.dll)",
+  "type": "Software",
+  "validation_dates": [
+   "10/15/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

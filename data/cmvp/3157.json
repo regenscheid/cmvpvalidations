@@ -1,0 +1,194 @@
+{
+ "cert": 3157,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3157",
+ "module": "Lenovo OpenSSL Library for ThinkSystem",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Lenovo OpenSSL Library for ThinkSystem module is a software library that provides FIPS 140-2 validated Transport Layer Security (TLS) functionality, and general purpose cryptographic algorithms within ThinkSystem hardware management systems.",
+ "tested_configurations": [
+  "Linux version 2.6.32 on VMware ESXi 6.0.0, running on Flex System x240 M5 Compute Node Type 9532 and Intel Xeon CPU E5-2683 v3 with PAA",
+  "Linux version 2.6.32 on VMware ESXi 6.0.0, running on Flex System x240 M5 Compute Node Type 9532 and Intel Xeon CPU E5-2683 v3 without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1408, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1408, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4762",
+   "cavp_id": "3080",
+   "cavp_ref": "AES:4762"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4763",
+   "cavp_id": "22157",
+   "cavp_ref": "AES:4763"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4764",
+   "cavp_id": "9826",
+   "cavp_ref": "AES:4764"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1408",
+   "cavp_id": "20961",
+   "cavp_ref": "Component:1408"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1409",
+   "cavp_id": "13165",
+   "cavp_ref": "Component:1409"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1639",
+   "cavp_id": "20494",
+   "cavp_ref": "DRBG:1639"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1640",
+   "cavp_id": "27616",
+   "cavp_ref": "DRBG:1640"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1641",
+   "cavp_id": "23851",
+   "cavp_ref": "DRBG:1641"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1282",
+   "cavp_id": "2341",
+   "cavp_ref": "DSA:1282"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1194",
+   "cavp_id": "4227",
+   "cavp_ref": "ECDSA:1194"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3173",
+   "cavp_id": "12885",
+   "cavp_ref": "HMAC:3173"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3174",
+   "cavp_id": "21905",
+   "cavp_ref": "HMAC:3174"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3175",
+   "cavp_id": "28081",
+   "cavp_ref": "HMAC:3175"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2606",
+   "cavp_id": "15081",
+   "cavp_ref": "RSA:2606"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3905",
+   "cavp_id": "22670",
+   "cavp_ref": "SHS:3905"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3906",
+   "cavp_id": "29528",
+   "cavp_ref": "SHS:3906"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3907",
+   "cavp_id": "16987",
+   "cavp_ref": "SHS:3907"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2532",
+   "cavp_id": "10434",
+   "cavp_ref": "TDES:2532"
+  }
+ ],
+ "vendor": "Lenovo Group Limited",
+ "vendor_info": {
+  "name": "Lenovo Group Limited",
+  "website": "http://www.lenovo.com",
+  "address": [
+   "7001 Development Drive",
+   "Morrisville, NC 27560",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "James Takahashi"
+   },
+   {
+    "name": "Taylor Greenwood"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3157.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140-2-ConsolidatedMarch2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/22/2018",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "3/22/2018",
+ "last_updated": "3/22/2018",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3157.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1408, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1408, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3157,
+  "vendor": "Lenovo Group Limited",
+  "module": "Lenovo OpenSSL Library for ThinkSystem",
+  "type": "Software",
+  "validation_dates": [
+   "03/22/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,46 @@
+{
+ "cavp_id": "5327",
+ "cavp_cert": "DRBG 1488",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5327",
+ "implementation": "VMware VMkernel Cryptographic Module",
+ "product_id": "1682",
+ "description": "The VMware VMkernel Cryptographic Module is a software cryptographic library that provides FIPS 140-2 approved cryptographic services for VMware products and platforms",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/9/2017",
+ "vendor": "VMware, Inc.",
+ "vendor_website": "http://www.vmware.com",
+ "oes": [
+  {
+   "name": "VMWare ESXi 6.7 on Intel Xeon with PAA",
+   "details": []
+  },
+  {
+   "name": "VMWare ESXi 6.7 on Intel Xeon without PAA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

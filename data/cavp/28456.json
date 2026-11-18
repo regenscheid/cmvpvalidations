@@ -1,0 +1,55 @@
+{
+ "cavp_id": "28456",
+ "cavp_cert": "ECDSA 502",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28456",
+ "implementation": "VaultIP",
+ "product_id": "3634",
+ "description": "VaultIP is a Silicon IP Security Module which includes a complete set of high- and low-level cryptographic functions. It offers key management and crypto functions needed for platform and application security such as Content Protection and Mobile Payment, and can be used stand-alone or as a 'Root of Trust' to support a TEE-based platform.",
+ "version": "1.1",
+ "type": "HARDWARE",
+ "first_validated": "5/23/2014",
+ "vendor": "Rambus Inc.",
+ "vendor_website": "https://www.rambus.com",
+ "oes": [
+  {
+   "name": "VaultIP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-192, P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

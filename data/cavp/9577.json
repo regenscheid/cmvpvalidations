@@ -1,0 +1,46 @@
+{
+ "cavp_id": "9577",
+ "cavp_cert": "RSA 601",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=9577",
+ "implementation": "Power PC RSA 2048 (SigGen_SigVer)",
+ "product_id": "7431",
+ "description": "An implementation of RSA Digital Signature generation/verification used inside Doremi's Media Blocks.",
+ "version": "1.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/10/2009",
+ "vendor": "Doremi Labs",
+ "vendor_website": "http://www.doremilabs.com",
+ "oes": [
+  {
+   "name": "Power PC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

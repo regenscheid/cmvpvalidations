@@ -1,0 +1,134 @@
+{
+ "cert": 4400,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4400",
+ "module": "Integrated Management Complex (IMC) and B227 True Random Number Generator (TRNG) Firmware-Hybrid Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with modules [Google Titan-D] validated to FIPS 140-2 under Cert. #4367 operating in FIPS mode.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware-Hybrid",
+ "embodiment": "Single Chip",
+ "description": "The Integrated Management Complex firmware manages functions such as power-on, reset, clock and power control, configuration, and security functions including encryption and decryption, key derivation, key generation, and hashing. The IMC performs these functions as ARM Trusted Execution Environment (TEE) firmware executing on two ARM-A53 processors within the IN762 SoC. The hardware comprises the B227 TRNG, which is a NIST SP800-90 A/B compliant TRNG employed by the IMC module for generating cryptographic keys.",
+ "tested_configurations": [
+  "IN762 SoC B1 with ARM Cortex-A53"
+ ],
+ "hardware_versions": "3.00b",
+ "firmware_versions": "20220318",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2469",
+   "cavp_id": "35079",
+   "cavp_ref": "A:2469"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2721",
+   "cavp_id": "35332",
+   "cavp_ref": "A:2721"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor-affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2469",
+   "cavp_id": "35079",
+   "cavp_ref": "A:2469"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2721",
+   "cavp_id": "35332",
+   "cavp_ref": "A:2721"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "P",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A2469",
+   "cavp_id": "35079",
+   "cavp_ref": "A:2469"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2469",
+   "cavp_id": "35079",
+   "cavp_ref": "A:2469"
+  }
+ ],
+ "vendor": "Google, LLC",
+ "vendor_info": {
+  "name": "Google, LLC",
+  "website": "http://www.google.com",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Crypto Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4400.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202022_030123_0646_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/27/2022",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "2/27/2023",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "12/27/2022",
+ "last_updated": "2/27/2023",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4400.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4400,
+  "vendor": "Google, LLC",
+  "module": "Integrated Management Complex (IMC) and B227 True Random Number Generator (TRNG) Firmware-Hybrid Cryptographic Module",
+  "type": "Firmware-Hybrid",
+  "validation_dates": [
+   "12/27/2022",
+   "02/27/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

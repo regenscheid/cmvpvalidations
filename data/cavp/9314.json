@@ -1,0 +1,48 @@
+{
+ "cavp_id": "9314",
+ "cavp_cert": "RSA 2743",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=9314",
+ "implementation": "DocuSign-SA-TLS",
+ "product_id": "8907",
+ "description": "DocuSign is a digital signature appliance that is connected to the organizational network and manages all signature keys and certificates of organization's end-users. End-users will connect securely to DocuSign from their PC for the purpose of signing documents and data.",
+ "version": "8.5 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/22/2017",
+ "vendor": "DocuSign, Inc.",
+ "vendor_website": "http://www.docusign.com",
+ "oes": [
+  {
+   "name": "Intel® Xeon Quad-Core",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

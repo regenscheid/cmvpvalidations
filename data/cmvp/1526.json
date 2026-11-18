@@ -1,0 +1,143 @@
+{
+ "cert": 1526,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1526",
+ "module": "Lexmark PrintCryption™",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "Requires Option P/N 57X9000 to enable the PrintCryption firmware",
+ "level_exceptions": [
+  "Tested: Lexmark X548 Printer with IBM 750CL processor on Lexmark Linux 2.6.28",
+  "Lexmark X792 Printer with Freescale 7448 processor on Lexmark Linux 2.6.28"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Lexmark PrintCryption™ is an option for the Lexmark printers that enables the transfer and printing of encrypted print jobs. With the Lexmark PrintCryption™ module installed, the printer is capable of decrypting print jobs encrypted with the AES (FIPS 197) algorithm. The Lexmark PrintCryption™ analyzes the encrypted data stream, determines if the correct key was used to encrypt the data, decrypts the data and allows the document to be printed.",
+ "firmware_versions": "1.3.2f",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1209",
+   "cavp_id": "23383",
+   "cavp_ref": "AES:1209"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1487",
+   "cavp_id": "2275",
+   "cavp_ref": "AES:1487"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 704",
+   "cavp_id": "27358",
+   "cavp_ref": "HMAC:704"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 876",
+   "cavp_id": "6756",
+   "cavp_ref": "HMAC:876"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 670",
+   "cavp_id": "10524",
+   "cavp_ref": "RNG:670"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 811",
+   "cavp_id": "10176",
+   "cavp_ref": "RNG:811"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 579",
+   "cavp_id": "19871",
+   "cavp_ref": "RSA:579"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 730",
+   "cavp_id": "6306",
+   "cavp_ref": "RSA:730",
+   "note": "FIPS 186-3  vendor affirmed"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1112",
+   "cavp_id": "7974",
+   "cavp_ref": "SHS:1112"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1343",
+   "cavp_id": "11137",
+   "cavp_ref": "SHS:1343"
+  }
+ ],
+ "vendor": "Lexmark International, Inc.",
+ "vendor_info": {
+  "name": "Lexmark International, Inc.",
+  "website": "http://www.lexmark.com",
+  "address": [
+   "740 W. New Circle Road",
+   "Lexington, KY 40550",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Graydon Dodson"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1526.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0004.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/24/2011",
+   "type": "Initial",
+   "lab": "COACT INC CAFE LAB"
+  }
+ ],
+ "first_validated": "3/24/2011",
+ "last_updated": "3/24/2011",
+ "labs": "COACT INC CAFE LAB",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1526.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 80 bits of encryption strength; non-compliant); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1526,
+  "vendor": "Lexmark International, Inc.",
+  "module": "Lexmark PrintCryption™",
+  "type": "Firmware",
+  "validation_dates": [
+   "03/24/2011"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

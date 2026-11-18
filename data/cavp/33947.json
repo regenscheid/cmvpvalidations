@@ -1,0 +1,317 @@
+{
+ "cavp_id": "33947",
+ "cavp_cert": "A1338",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33947",
+ "implementation": "avcrypto",
+ "product_id": "13812",
+ "description": "Kernel-based implementation of DRBG, AES, SHA, HMAC, GCM derived from OpenSSL and Linux implementations. CPU optimizations used where appropriate: AESNI, RDRAND, SSE, AVX, etc.",
+ "version": "12.4.1",
+ "type": "FIRMWARE",
+ "first_validated": "4/28/2021",
+ "vendor": "SonicWall",
+ "vendor_website": "http://www.sonicwall.com/",
+ "oes": [
+  {
+   "name": "SMA1000 12.4 on Intel Core i5-7500 (Kaby Lake) with AES-NI",
+   "details": [
+    "processor: Intel Core i5-7500 (Kaby Lake) with AES-NI",
+    "  manufacturer: Intel",
+    "os: SMA1000 12.4",
+    "  manufacturer: SonicWall"
+   ]
+  },
+  {
+   "name": "SMA1000 12.4 on Intel Xeon E3-1275 v6 (Kaby Lake) with AES-NI",
+   "details": [
+    "processor: Intel Xeon E3-1275 v6 (Kaby Lake) with AES-NI",
+    "  manufacturer: Intel",
+    "os: SMA1000 12.4",
+    "  manufacturer: SonicWall"
+   ]
+  },
+  {
+   "name": "SMA1000 12.4 on VMWare ESXI 6.7 on Intel Xeon Silver 4208 with AES-NI",
+   "details": [
+    "processor: Intel Xeon Silver 4208 with AES-NI",
+    "  manufacturer: Intel",
+    "os: SMA1000 12.4",
+    "  manufacturer: SonicWall",
+    "software: VMWare ESXI 6.7",
+    "  manufacturer: VMWare"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length:",
+    "AAD Length: 96, 120"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length:",
+    "AAD Length: 96, 120"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 2,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length:",
+    "AAD Length: 96, 120"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 384",
+    "    Personalization String Length: 256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 384",
+    "    Personalization String Length: 256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 2,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 384",
+    "    Nonce: 384",
+    "    Personalization String Length: 256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 160"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 160"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 160"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 8-65528 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 8-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

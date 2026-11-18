@@ -1,0 +1,177 @@
+{
+ "cert": 3050,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3050",
+ "module": "CN6000 Series Encryptors",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Cryptographic Module Ports and Interfaces: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Finite State Model: Level 3",
+  "Physical Security: Level 3",
+  "Operational Environment: Level 3",
+  "EMI/EMC: Level 3",
+  "Self-Tests: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The CN6000 Series are high-speed hardware encryption platforms that secure data over optical and twisted-pair Ethernet and Fibre Channel networks. Models included are the CN6100 10G Ethernet; operating at a line rate of 10Gb/s and the CN6040 Ethernet and FC selectable model, operating at data rates up to 4Gb/s. Data privacy is provided by FIPS approved AES CFB and CTR algorithms. GCM is also available for applications that demand authentication. TRANSEC (aka Traffic Flow Security or TFS) can be used to remove patterns in network traffic and prevent traffic analysis.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 150 bits of encryption strength)",
+ "hardware_versions": "Senetas Corp. Ltd. CN6040 Series: A6040B (AC), A6041B (DC) and A6042B (AC/DC); Senetas Corp. Ltd. CN6100 Series: A6100B (AC), A6101B (DC) and A6102B (AC/DC); Senetas Corp. Ltd. & SafeNet Inc. CN6040 Series: A6040B (AC), A6041B (DC) and A6042B (AC/DC); Senetas Corp. Ltd. & SafeNet Inc. CN6100 Series: A6100B (AC), A6101B (DC) and A6102B (AC/DC)",
+ "firmware_versions": "3.0.1 and 3.0.2",
+ "product_url": "http://www.senetas.com/encryptors/layer-2-encryptors/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3347",
+   "cavp_id": "30029",
+   "cavp_ref": "AES:3347"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4398",
+   "cavp_id": "26699",
+   "cavp_ref": "AES:4398"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4399",
+   "cavp_id": "24366",
+   "cavp_ref": "AES:4399"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4555",
+   "cavp_id": "21695",
+   "cavp_ref": "AES:4555"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1236",
+   "cavp_id": "5358",
+   "cavp_ref": "Component:1236"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1505",
+   "cavp_id": "25527",
+   "cavp_ref": "DRBG:1505"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1110",
+   "cavp_id": "26697",
+   "cavp_ref": "ECDSA:1110"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3009",
+   "cavp_id": "11752",
+   "cavp_ref": "HMAC:3009"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 125",
+   "cavp_id": "14412",
+   "cavp_ref": "KAS:125"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2482",
+   "cavp_id": "5457",
+   "cavp_ref": "RSA:2482"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3733",
+   "cavp_id": "2676",
+   "cavp_ref": "SHS:3733"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2426",
+   "cavp_id": "24254",
+   "cavp_ref": "TDES:2426"
+  }
+ ],
+ "vendor": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet)",
+ "vendor_info": {
+  "name": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet)",
+  "website": "http://www.senetas.com",
+  "address": [
+   "312 Kings Way",
+   "South Melbourne, Victoria 3205",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "John Weston"
+   },
+   {
+    "name": "Laurie Mack"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3050.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/17/2017",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "12/8/2017",
+   "type": "Update",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "2/7/2018",
+   "type": "Update",
+   "lab": "DXC Technology"
+  }
+ ],
+ "first_validated": "10/17/2017",
+ "last_updated": "2/7/2018",
+ "labs": "DXC Technology",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3050.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 150 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3050,
+  "vendor": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet)",
+  "module": "CN6000 Series Encryptors",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/17/2017",
+   "12/08/2017",
+   "02/07/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

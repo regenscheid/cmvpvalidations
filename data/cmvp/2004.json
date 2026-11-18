@@ -1,0 +1,121 @@
+{
+ "cert": 2004,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2004",
+ "module": "Covia Connector Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Covia Connector Cryptographic Module provides cryptographic services for the Covia Connector. These services include but are not limited to pseudo-random number generation, symmetric and asymmetic key generation, data encryption and decryption, key wrapping, and key unwrapping.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 5.8 running on an Acer AX1430-UR12P (single-user mode)"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1896",
+   "cavp_id": "8719",
+   "cavp_ref": "AES:1896"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 158",
+   "cavp_id": "20755",
+   "cavp_ref": "DRBG:158"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 265",
+   "cavp_id": "25462",
+   "cavp_ref": "ECDSA:265"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1136",
+   "cavp_id": "19861",
+   "cavp_ref": "HMAC:1136"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 30",
+   "cavp_id": "9691",
+   "cavp_ref": "KAS:30"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1665",
+   "cavp_id": "11510",
+   "cavp_ref": "SHS:1665"
+  }
+ ],
+ "vendor": "Covia Labs, Inc.",
+ "vendor_info": {
+  "name": "Covia Labs, Inc.",
+  "website": "http://www.covialabs.com",
+  "address": [
+   "465 Fairchild Dr",
+   "Ste 130",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "David Kahn"
+   },
+   {
+    "name": "Dan Illowsky"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2004.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0033.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/30/2013",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "9/30/2013",
+ "last_updated": "9/30/2013",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2004.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "AES (Cert. #1896, key wrapping; key establishment methodology provides 128 or 256 bits of encryption strength); KBKDF (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2004,
+  "vendor": "Covia Labs, Inc.",
+  "module": "Covia Connector Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/30/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

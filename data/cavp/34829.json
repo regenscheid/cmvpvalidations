@@ -1,0 +1,72 @@
+{
+ "cavp_id": "34829",
+ "cavp_cert": "A2220",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34829",
+ "implementation": "Digipass GO7",
+ "product_id": "14730",
+ "description": "DIGIPASS GO7 is a 'one-button' strong authentication hardware device, based on OneSpan's proven Digipass technology as well as OATH’s strong authentication standards. With a single press of a button, DIGIPASS GO7 generates and displays a dynamic one-time password every time the user wants to log onto an application, website or network.",
+ "version": "340106",
+ "type": "HARDWARE",
+ "first_validated": "1/6/2022",
+ "vendor": "OneSpan, Inc.",
+ "vendor_website": "http://www.onespan.com",
+ "oes": [
+  {
+   "name": "Digipass GO7",
+   "details": [
+    "hardware: Digipass GO7",
+    "  DIGIPASS GO7 is a 'one-button' strong authentication hardware device."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128",
+    "    Supported Lengths: 128-256 Increment 128",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-768 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

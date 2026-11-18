@@ -1,0 +1,62 @@
+{
+ "cavp_id": "34407",
+ "cavp_cert": "A1798",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34407",
+ "implementation": "OpenSSL (64 bit) (SSH_AVX)",
+ "product_id": "14313",
+ "description": "The OpenSSL toolkit provides support for secure communications between machines. OpenSSL includes a certificate management tool and shared libraries which provide various cryptographic algorithms and protocols. The following cipher implementation is covered: SSH KDF using AVX SHA implementation.",
+ "version": "rhel8.20220323",
+ "type": "SOFTWARE",
+ "first_validated": "8/4/2021",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "Red Hat Enterprise Linux 8 on Intel Cascade Lake Xeon Silver 4216",
+   "details": [
+    "software: Red Hat Enterprise Linux 8",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "processor: Xeon Silver 4216",
+    "  Processor Xeon Silver 4216 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: TDES",
+    "Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

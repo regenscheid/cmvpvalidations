@@ -1,0 +1,193 @@
+{
+ "cert": 4591,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4591",
+ "module": "IBM® z/OS® Version 2 Release 4 ICSF PKCS #11 Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module IBM(R) z/OS(R) Version 2 Release 4 Security Server RACF(R) Signature Verification Module validated to FIPS 140-2 under Cert. #2691 operating in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "ICSF is a software element of z/OS that works with hardware cryptographic features and the Security Server (RACF) to provide secure, high-speed cryptographic services in the z/OS environment. ICSF, which runs as a started task, provides the application programming interfaces by which applications request the cryptographic services.",
+ "tested_configurations": [
+  "IBM z/OS Version 2 Release 4 running on an IBM z15 with CP Assist for Cryptographic Functions [1]",
+  "IBM z/OS Version 2 Release 4 running on an IBM z15 with CP Assist for Cryptographic Functions with CEX7A [2] (single-user mode)"
+ ],
+ "allowed_algorithms": "AES (Cert. #A389, key unwrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 149 bits of encryption strength); Triple-DES (Cert. #A389, key unwrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "COP chips integrated within processor unit [1] and COP chips integrated within processor unit and P/N 02WN654-N37880 (Low Power) [2]",
+ "software_versions": "ICSF level HCR77D0 with APAR OA63132",
+ "firmware_versions": "Feature 3863 (aka FC3863) with System Driver Level 41C [1], and Feature 3863 (aka FC3863) with System Driver Level 41C and CCA 7.0.68z [2]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A389",
+   "cavp_id": "32482",
+   "cavp_ref": "A:389"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1772",
+   "cavp_id": "32671",
+   "cavp_ref": "C:1772"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1763",
+   "cavp_id": "32648",
+   "cavp_ref": "C:1763"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1772",
+   "cavp_id": "32671",
+   "cavp_ref": "C:1772"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1772",
+   "cavp_id": "32671",
+   "cavp_ref": "C:1772"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1772",
+   "cavp_id": "32671",
+   "cavp_ref": "C:1772"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1772",
+   "cavp_id": "32671",
+   "cavp_ref": "C:1772"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2666",
+   "cavp_id": "35277",
+   "cavp_ref": "A:2666"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2667",
+   "cavp_id": "35278",
+   "cavp_ref": "A:2667"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C1772; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A389 and AES Certs. #A389 and #C1772; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A389 and HMAC Cert. #C1772; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1766",
+   "cavp_id": "32665",
+   "cavp_ref": "C:1766"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1772",
+   "cavp_id": "32671",
+   "cavp_ref": "C:1772"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1799",
+   "cavp_id": "32698",
+   "cavp_ref": "C:1799"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A389",
+   "cavp_id": "32482",
+   "cavp_ref": "A:389"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1772",
+   "cavp_id": "32671",
+   "cavp_ref": "C:1772"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A389",
+   "cavp_id": "32482",
+   "cavp_ref": "A:389"
+  }
+ ],
+ "vendor": "IBM Corporation",
+ "vendor_info": {
+  "name": "IBM Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "2455 South Road",
+   "Poughkeepsie, NY 12601-5400",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "John Monti"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4591.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202023_101023_1100%20signed%20%282%29.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/11/2023",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "9/11/2023",
+ "last_updated": "9/11/2023",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4591.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "AES (Cert. #A389, key unwrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 149 bits of encryption strength); Triple-DES (Cert. #A389, key unwrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4591,
+  "vendor": "IBM Corporation",
+  "module": "IBM® z/OS® Version 2 Release 4 ICSF PKCS #11 Cryptographic Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "09/11/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

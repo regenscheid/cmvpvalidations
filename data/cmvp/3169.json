@@ -1,0 +1,276 @@
+{
+ "cert": 3169,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3169",
+ "module": "Oracle Linux 7 GnuTLS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Oracle Linux 7 GnuTLS Cryptographic Module is a set of libraries implementing general purpose cryptographic algorithms and network protocols.",
+ "tested_configurations": [
+  "Oracle Linux 7.3 64 bit running on Oracle Server X6-2 with PAA",
+  "Oracle Linux 7.3 64 bit running on Oracle Server X6-2 without PAA",
+  "Oracle Linux 7.3 64 bit running on Oracle Server X7-2 with PAA",
+  "Oracle Linux 7.3 64 bit running on Oracle Server X7-2 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #1592 and #2113 with CVL Certs. #1593 and #2114, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1592 and #2113 with CVL Certs. #1593 and #2114, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "R7-2.0.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5038",
+   "cavp_id": "8754",
+   "cavp_ref": "AES:5038"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5042",
+   "cavp_id": "21798",
+   "cavp_ref": "AES:5042"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5043",
+   "cavp_id": "10087",
+   "cavp_ref": "AES:5043"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5080",
+   "cavp_id": "6208",
+   "cavp_ref": "AES:5080"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5858",
+   "cavp_id": "29195",
+   "cavp_ref": "AES:5858"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5862",
+   "cavp_id": "13119",
+   "cavp_ref": "AES:5862"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5863",
+   "cavp_id": "11438",
+   "cavp_ref": "AES:5863"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5864",
+   "cavp_id": "7510",
+   "cavp_ref": "AES:5864"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1592",
+   "cavp_id": "8836",
+   "cavp_ref": "Component:1592"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1593",
+   "cavp_id": "1380",
+   "cavp_ref": "Component:1593"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2113",
+   "cavp_id": "22458",
+   "cavp_ref": "Component:2113"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2114",
+   "cavp_id": "17105",
+   "cavp_ref": "Component:2114"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1859",
+   "cavp_id": "11581",
+   "cavp_ref": "DRBG:1859"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2437",
+   "cavp_id": "29820",
+   "cavp_ref": "DRBG:2437"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1324",
+   "cavp_id": "13058",
+   "cavp_ref": "DSA:1324"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1480",
+   "cavp_id": "28548",
+   "cavp_ref": "DSA:1480"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1297",
+   "cavp_id": "806",
+   "cavp_ref": "ECDSA:1297"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1566",
+   "cavp_id": "26933",
+   "cavp_ref": "ECDSA:1566"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3360",
+   "cavp_id": "26262",
+   "cavp_ref": "HMAC:3360"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3860",
+   "cavp_id": "10340",
+   "cavp_ref": "HMAC:3860"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #5038, #5043, #5080, #5862, #5863 and #5864; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #5038, #5043, #5080, #5862, #5863 and #5864 and HMAC Certs. #3360 and #3860; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Certs. #2601 and #2863 and HMAC Certs. #3360 and #3860; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2727",
+   "cavp_id": "24701",
+   "cavp_ref": "RSA:2727"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3083",
+   "cavp_id": "20909",
+   "cavp_ref": "RSA:3083"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4105",
+   "cavp_id": "24039",
+   "cavp_ref": "SHS:4105"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4134",
+   "cavp_id": "10951",
+   "cavp_ref": "SHS:4134"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4634",
+   "cavp_id": "20577",
+   "cavp_ref": "SHS:4634"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4635",
+   "cavp_id": "11027",
+   "cavp_ref": "SHS:4635"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2601",
+   "cavp_id": "24550",
+   "cavp_ref": "TDES:2601"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2863",
+   "cavp_id": "26967",
+   "cavp_ref": "TDES:2863"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Honglin Su"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3169.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/11/2018",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "10/31/2018",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "4/11/2018",
+ "last_updated": "10/31/2018",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3169.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition",
+  "Transitional Note": "Pending SP 800-56Arev3 transition revalidation"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #1592 and #2113 with CVL Certs. #1593 and #2114, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1592 and #2113 with CVL Certs. #1593 and #2114, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3169,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Linux 7 GnuTLS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/11/2018",
+   "10/31/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

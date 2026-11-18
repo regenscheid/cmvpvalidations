@@ -1,0 +1,119 @@
+{
+ "cert": 3631,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3631",
+ "module": "Canon MFP Security Chip",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys per Note *1 to Table 7 of the Security Policy.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The Canon MFP Security Chip handles cryptography for the storage device of the Canon MFP/printer. The Canon MFP Security Chip realizes high-speed data encryption/decryption through a serial ATA interface, using AES XTS mode. This allows the Canon MFP/printer's storage device to be protected against the risk of information leakage, without compromising objectives such as extensibility, flexibility, usability, and high performance.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "hardware_versions": "3.0",
+ "firmware_versions": "3.00, 3.00(V05L00), 3.00(V05L01)",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C217",
+   "cavp_id": "30613",
+   "cavp_ref": "C:217"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2300",
+   "cavp_id": "27740",
+   "cavp_ref": "DRBG:2300"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3059",
+   "cavp_id": "26992",
+   "cavp_ref": "RSA:3059"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4547",
+   "cavp_id": "27289",
+   "cavp_ref": "SHS:4547"
+  }
+ ],
+ "vendor": "Canon Inc.",
+ "vendor_info": {
+  "name": "Canon Inc.",
+  "website": "http://www.canon.com",
+  "address": [
+   "30-2",
+   "Shimomaruko 3-chome",
+   "Ohta-ku, Tokyo 146-8501",
+   "Japan"
+  ],
+  "contacts": [
+   {
+    "name": "Hiroyuki Takahashi"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3631.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202020_160420.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/12/2020",
+   "type": "Initial",
+   "lab": "IT SECURITY CENTER"
+  },
+  {
+   "date": "3/15/2021",
+   "type": "Update",
+   "lab": "IT SECURITY CENTER"
+  },
+  {
+   "date": "12/14/2021",
+   "type": "Update",
+   "lab": "IT SECURITY CENTER"
+  }
+ ],
+ "first_validated": "3/12/2020",
+ "last_updated": "12/14/2021",
+ "labs": "IT SECURITY CENTER",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3631.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3631,
+  "vendor": "Canon Inc.",
+  "module": "Canon MFP Security Chip",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/12/2020",
+   "03/15/2021",
+   "12/14/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

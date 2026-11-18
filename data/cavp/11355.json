@@ -1,0 +1,46 @@
+{
+ "cavp_id": "11355",
+ "cavp_cert": "DRBG 1510",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11355",
+ "implementation": "NetApp Cryptomod",
+ "product_id": "1737",
+ "description": "NetApp CryptoMod will be integrated into select NetApp ONTAP releases for the purpose of supporting FIPS 140-2 compliant data-at-rest encryption and key management.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/23/2017",
+ "vendor": "NetApp, Inc.",
+ "vendor_website": "http://www.netapp.com",
+ "oes": [
+  {
+   "name": "Data ONTAP 9.2 on Intel Xeon E5",
+   "details": []
+  },
+  {
+   "name": "Data ONTAP 9.2 without PAA on Intel Xeon E5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,51 @@
+{
+ "cavp_id": "19008",
+ "cavp_cert": "ECDSA 529",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19008",
+ "implementation": "libecdsa",
+ "product_id": "6426",
+ "description": "Pitney Bowes X4 HSM Cryptographic Module",
+ "version": "MAX32590 Rev B4 01.01.000A (Firmware)",
+ "type": "HARDWARE",
+ "first_validated": "8/11/2014",
+ "vendor": "Pitney Bowes, Inc.",
+ "vendor_website": "http://www.pb.com",
+ "oes": [
+  {
+   "name": "libecdsa",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192",
+    "    Hash Algorithm: SHA-1",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

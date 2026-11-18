@@ -1,0 +1,65 @@
+{
+ "cavp_id": "34182",
+ "cavp_cert": "A1573",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34182",
+ "implementation": "CN6010 Ethernet Crypto Module",
+ "product_id": "14056",
+ "description": "The CN6010 Ethernet Crypto Module is a cryptographic accelerator that contains FIPS 140-2 approved cryptographic algorithms. This module provides encryption and TRANSEC (Traffic Flow Security) services for the CN6010 Series Encryptor.",
+ "version": "1.9",
+ "type": "FIRMWARE",
+ "first_validated": "6/22/2021",
+ "vendor": "Senetas Corporation Ltd, distributed by Thales SA (SafeNet)",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "Xilinx® Zynq-7000",
+   "details": [
+    "processor: Xilinx® Zynq-7000",
+    "  manufacturer: Xilinx®"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 128",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 368, 384, 1016, 1024",
+    "AAD Length: 112, 128, 640, 688"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

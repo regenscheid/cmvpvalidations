@@ -1,0 +1,55 @@
+{
+ "cavp_id": "18883",
+ "cavp_cert": "AES 4769",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=18883",
+ "implementation": "UADP MSC",
+ "product_id": "8408",
+ "description": "MSC MACsec is embedded within proprietary ASICs that are utilized within Cisco hardware platforms.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/26/2017",
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_website": "http://www.cisco.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS v2011.12mx-SP1-3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 128, 136, 256, 264",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,459 @@
+{
+ "cert": 4593,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4593",
+ "module": "Amazon Linux 2 Kernel Crypto API Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Amazon Linux 2 NSS Cryptographic Module validated to FIPS 140-2 under Cert. #4565 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Linux kernel Crypto API implemented in the Amazon Linux 2 provides services operating inside the Linux kernel with various ciphers, message digests and an approved random number generator.",
+ "tested_configurations": [
+  "Amazon Linux 2 running on Amazon EC2 c6g.metal with Graviton 2 with PAA",
+  "Amazon Linux 2 running on Amazon EC2 c6g.metal with Graviton 2 without PAA (single-user mode)",
+  "Amazon Linux 2 running on Amazon EC2 i3.metal with Intel Xeon E5-2686 with PAA",
+  "Amazon Linux 2 running on Amazon EC2 i3.metal with Intel Xeon E5-2686 without PAA"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3671",
+   "cavp_id": "36281",
+   "cavp_ref": "A:3671"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3672",
+   "cavp_id": "36282",
+   "cavp_ref": "A:3672"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3673",
+   "cavp_id": "36283",
+   "cavp_ref": "A:3673"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3675",
+   "cavp_id": "36285",
+   "cavp_ref": "A:3675"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3676",
+   "cavp_id": "36286",
+   "cavp_ref": "A:3676"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3677",
+   "cavp_id": "36287",
+   "cavp_ref": "A:3677"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3678",
+   "cavp_id": "36288",
+   "cavp_ref": "A:3678"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3679",
+   "cavp_id": "36289",
+   "cavp_ref": "A:3679"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A3680",
+   "cavp_id": "36290",
+   "cavp_ref": "A:3680"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C911",
+   "cavp_id": "31308",
+   "cavp_ref": "C:911"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C912",
+   "cavp_id": "31309",
+   "cavp_ref": "C:912"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C913",
+   "cavp_id": "31310",
+   "cavp_ref": "C:913"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C914",
+   "cavp_id": "31311",
+   "cavp_ref": "C:914"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C915",
+   "cavp_id": "31312",
+   "cavp_ref": "C:915"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C917",
+   "cavp_id": "31314",
+   "cavp_ref": "C:917"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3671",
+   "cavp_id": "36281",
+   "cavp_ref": "A:3671"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3672",
+   "cavp_id": "36282",
+   "cavp_ref": "A:3672"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3673",
+   "cavp_id": "36283",
+   "cavp_ref": "A:3673"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3676",
+   "cavp_id": "36286",
+   "cavp_ref": "A:3676"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A3679",
+   "cavp_id": "36289",
+   "cavp_ref": "A:3679"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C911",
+   "cavp_id": "31308",
+   "cavp_ref": "C:911"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C913",
+   "cavp_id": "31310",
+   "cavp_ref": "C:913"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C915",
+   "cavp_id": "31312",
+   "cavp_ref": "C:915"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C918",
+   "cavp_id": "31315",
+   "cavp_ref": "C:918"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C919",
+   "cavp_id": "31316",
+   "cavp_ref": "C:919"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C920",
+   "cavp_id": "31317",
+   "cavp_ref": "C:920"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C921",
+   "cavp_id": "31318",
+   "cavp_ref": "C:921"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3671",
+   "cavp_id": "36281",
+   "cavp_ref": "A:3671"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3672",
+   "cavp_id": "36282",
+   "cavp_ref": "A:3672"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3673",
+   "cavp_id": "36283",
+   "cavp_ref": "A:3673"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3674",
+   "cavp_id": "36284",
+   "cavp_ref": "A:3674"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3678",
+   "cavp_id": "36288",
+   "cavp_ref": "A:3678"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3681",
+   "cavp_id": "36291",
+   "cavp_ref": "A:3681"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A3741",
+   "cavp_id": "36351",
+   "cavp_ref": "A:3741"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C803",
+   "cavp_id": "31199",
+   "cavp_ref": "C:803"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C918",
+   "cavp_id": "31315",
+   "cavp_ref": "C:918"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C919",
+   "cavp_id": "31316",
+   "cavp_ref": "C:919"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C920",
+   "cavp_id": "31317",
+   "cavp_ref": "C:920"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C921",
+   "cavp_id": "31318",
+   "cavp_ref": "C:921"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C923",
+   "cavp_id": "31320",
+   "cavp_ref": "C:923"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A3673, #A3675, #A3676, #A3677, #A3678, #A3679, #A3680, #C911, #C912, #C913, #C914, #C915 and #C917; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A3671, #A3672, #A3673, #A3675, #A3676, #A3677, #A3678, #A3679, #A3680, #C911, #C912, #C913, #C914, #C915 and #C917 and HMAC Certs. #A3671, #A3672, #A3673, #A3678, #A3681, #C918, #C919, #C920 and #C921; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A3673",
+   "cavp_id": "36283",
+   "cavp_ref": "A:3673"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C918",
+   "cavp_id": "31315",
+   "cavp_ref": "C:918"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C919",
+   "cavp_id": "31316",
+   "cavp_ref": "C:919"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C920",
+   "cavp_id": "31317",
+   "cavp_ref": "C:920"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C921",
+   "cavp_id": "31318",
+   "cavp_ref": "C:921"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C923",
+   "cavp_id": "31320",
+   "cavp_ref": "C:923"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A3674",
+   "cavp_id": "36284",
+   "cavp_ref": "A:3674"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C923",
+   "cavp_id": "31320",
+   "cavp_ref": "C:923"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3671",
+   "cavp_id": "36281",
+   "cavp_ref": "A:3671"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3672",
+   "cavp_id": "36282",
+   "cavp_ref": "A:3672"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3673",
+   "cavp_id": "36283",
+   "cavp_ref": "A:3673"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3678",
+   "cavp_id": "36288",
+   "cavp_ref": "A:3678"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A3681",
+   "cavp_id": "36291",
+   "cavp_ref": "A:3681"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C918",
+   "cavp_id": "31315",
+   "cavp_ref": "C:918"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C919",
+   "cavp_id": "31316",
+   "cavp_ref": "C:919"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C920",
+   "cavp_id": "31317",
+   "cavp_ref": "C:920"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C921",
+   "cavp_id": "31318",
+   "cavp_ref": "C:921"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A3673",
+   "cavp_id": "36283",
+   "cavp_ref": "A:3673"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C923",
+   "cavp_id": "31320",
+   "cavp_ref": "C:923"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "http://www.aws.amazon.com",
+  "address": [
+   "1918 8th Ave.",
+   "Seattle, WA 98121",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Amazon Linux Security"
+   },
+   {
+    "name": "Raghuram Kota"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4593.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202023_101023_1100%20signed%20%282%29.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/12/2023",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "11/13/2023",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "9/12/2023",
+ "last_updated": "11/13/2023",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4593.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4593,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "Amazon Linux 2 Kernel Crypto API Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/12/2023",
+   "11/13/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

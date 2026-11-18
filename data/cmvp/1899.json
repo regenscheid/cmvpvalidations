@@ -1,0 +1,111 @@
+{
+ "cert": 1899,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1899",
+ "module": "Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, Microsoft Windows Phone 8, and Microsoft Windows Storage Server 2012 BitLocker® Dump Filter (DUMPFVE.SYS)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 2 with modules Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Boot Manager validated to FIPS 140-2 under Cert. #1895 operating in FIPS mode, Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 BitLocker® Windows OS Loader (WINLOAD) validated to FIPS 140-2 under Cert. #1896 operating in FIPS mode, and Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, and Microsoft Windows Phone 8 Code Integrity (CI.DLL) validated to FIPS 140-2 under Cert. #1897 operating in FIPS mode.",
+ "level_exceptions": [
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The BitLocker® Dump Filter (DUMPFVE.SYS) is the full volume encryption filter that resides in the system dump stack. Whenever the dump stack is called (in the event of a system crash or for hibernation), this filter ensures that all data is encrypted before it gets written to the disk as a dump file or hibernation file. This cryptographic module also maintains FIPS 140-2 validation compliance (according to FIPS 140-2 PUB Implementation Guidance G.5) on Microsoft Windows 8, Microsoft Windows 8 Pro, and Microsoft Windows Server 2012 Datacenter.",
+ "tested_configurations": [
+  "Microsoft Windows 8 Enterprise (x64) running on a Dell PowerEdge SC430 without PAA",
+  "Microsoft Windows 8 Enterprise (x64) running on Intel Core i7 with PAA running on an Intel Client Desktop",
+  "Microsoft Windows 8 Enterprise (x86) running on a Dell Dimension C521",
+  "Microsoft Windows 8 Pro (x64) running on an Intel x64 Processor with PAA running on a Microsoft Surface Windows 8 Pro",
+  "Microsoft Windows Phone 8 (ARMv7 Thumb-2) running on a Windows Phone 8",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on a Microsoft Surface Windows RT",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on a Qualcomm Tablet",
+  "Microsoft Windows RT (ARMv7 Thumb-2) running on an NVIDIA Tegra 3 Tablet",
+  "Microsoft Windows Server 2012 (x64) running on a Dell PowerEdge SC430 without PAA",
+  "Microsoft Windows Server 2012 (x64) running on Intel Core i7 with PAA running on an Intel Client Desktop",
+  "Microsoft Windows Storage Server 2012 (x64) running on an Intel Maho Bay with PAA",
+  "Microsoft Windows Storage Server 2012 (x64) running on an Intel Maho Bay without PAA (single-user mode)"
+ ],
+ "software_versions": "6.2.9200",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2196",
+   "cavp_id": "6709",
+   "cavp_ref": "AES:2196"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2198",
+   "cavp_id": "27310",
+   "cavp_ref": "AES:2198"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tim Myers"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1899.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0033.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/13/2013",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/9/2015",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "9/13/2013",
+ "last_updated": "1/9/2015",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1899.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1899,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Windows 8, Microsoft Windows Server 2012, Microsoft Windows RT, Microsoft Surface Windows RT, Microsoft Surface Windows 8 Pro, Microsoft Windows Phone 8, and Microsoft Windows Storage Server 2012 BitLocker® Dump Filter (DUMPFVE.SYS)",
+  "type": "Software",
+  "validation_dates": [
+   "09/13/2013",
+   "01/09/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,53 @@
+{
+ "cavp_id": "22564",
+ "cavp_cert": "AES 3504",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22564",
+ "implementation": "Microsemi Intellisec 1G PHY",
+ "product_id": "1008",
+ "description": "Microsemi VSC85xx GbE PHY Family are Dual Media QSGMII/SGMII 4 port and 2 port GbE Intellisec PHY’s. Intellisec is a patent-pending technology enabling IEEE 802.1AE-2006, 802.1AEbn-2011 and 802.1AEbw-2013(XPN) MACsec encryption end-to-end over any IPV4 or IPV6 based network, independent of the network's awareness of security protocols.",
+ "version": "VSC85xx GbE PHY Family",
+ "type": "HARDWARE",
+ "first_validated": "8/18/2015",
+ "vendor": "Microsemi Corporation",
+ "vendor_website": "http://www.microsemi.com/products/ethernet-solutions",
+ "oes": [
+  {
+   "name": "Microsemi Intellisec 1G PHY",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 120, 256, 520, 1024",
+    "AAD Length: 256, 512, 520, 624"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 256, 512, 520, 624"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

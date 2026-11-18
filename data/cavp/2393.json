@@ -1,0 +1,52 @@
+{
+ "cavp_id": "2393",
+ "cavp_cert": "RSA 11",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2393",
+ "implementation": "SmartGate",
+ "product_id": "4214",
+ "description": "AEP Networks SmartGate is leading client/server Virtual Private Network (VPN) software that provides enterprise-level security to network-based users for private information and private TCP/IP application services. SmartGate provides encryption, strong user authentication, authorization, management, accounting, key distribution, and proxy capabilities. It consists of server (SmartGate) and client (SmartPass) software.",
+ "version": "4.5",
+ "type": "SOFTWARE",
+ "first_validated": "7/6/2004",
+ "vendor": "AEP Networks",
+ "vendor_website": "http://www.aepnetworks.com",
+ "oes": [
+  {
+   "name": "Sun Solaris 2.6",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048, 4096",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

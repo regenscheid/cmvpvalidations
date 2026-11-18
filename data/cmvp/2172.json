@@ -1,0 +1,122 @@
+{
+ "cert": 2172,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2172",
+ "module": "NSM Application Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "McAfee Network Security Manager (NSM) is a simple, centralized management software for distributed McAfee Network Security Platform intrusion prevention system (IPS) sensors. The NSM console with its intuitive graphical interface gives administrators complete control and real-time data, so that they can manage, configure, administer, and monitor all IPS appliances across widely distributed, mission-critical deployments. The NSM Application Crypto Module provides cryptographic services for the Network Security Manager application.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2008 R2 running on a GIGABYTE GA-EP45-UD3P"
+ ],
+ "software_versions": "7.1.15.1.11",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2469",
+   "cavp_id": "5546",
+   "cavp_ref": "AES:2469"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 78",
+   "cavp_id": "25937",
+   "cavp_ref": "Component:78"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1513",
+   "cavp_id": "11532",
+   "cavp_ref": "HMAC:1513"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1198",
+   "cavp_id": "22532",
+   "cavp_ref": "RNG:1198"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1259",
+   "cavp_id": "1256",
+   "cavp_ref": "RSA:1259"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2083",
+   "cavp_id": "9091",
+   "cavp_ref": "SHS:2083"
+  }
+ ],
+ "vendor": "McAfee, Inc.",
+ "vendor_info": {
+  "name": "McAfee, Inc.",
+  "website": "http://www.mcafee.com",
+  "address": [
+   "2821 Mission College Blvd.",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "James Reardon"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2172.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/17/2014",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "6/17/2014",
+ "last_updated": "6/17/2014",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2172.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; non-compliant); MD5; HMAC-MD5; NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2172,
+  "vendor": "McAfee, Inc.",
+  "module": "NSM Application Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "06/17/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,199 @@
+{
+ "cert": 4496,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4496",
+ "module": "Microsoft Azure Linux OpenSSL Cryptographic Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in Sections 1 and 8 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Microsoft Azure Linux OpenSSL Cryptographic Library is a general-purpose, software cryptographic module that implements FIPS 140-2 approved cryptographic algorithms.",
+ "tested_configurations": [
+  "Azure Linux 2.0 on Azure Host Hypervisor running on an Azure Compute C2030 Server with an Intel® Xeon® Platinum 8272CL with PAA",
+  "Azure Linux 2.0 on Azure Host Hypervisor running on an Azure Compute C2030 Server with an Intel® Xeon® Platinum 8272CL without PAA (single-user mode)",
+  "Azure Linux 2.0 running on an Azure Compute C2030 Server with an Intel® Xeon® Platinum 8272CL with PAA",
+  "Azure Linux 2.0 running on an Azure Compute C2030 Server with an Intel® Xeon® Platinum 8272CL without PAA"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "NP",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Cert. #A2665, CVL Cert. #A2665",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Cert. #A2665, KDA Cert. #A2665",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A2665; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A2665 and HMAC Cert. #A2665; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #A2665 and HMAC Cert. #A2665; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A2665",
+   "cavp_id": "35276",
+   "cavp_ref": "A:2665"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4496.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202023_010623_0642.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/1/2023",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  },
+  {
+   "date": "6/24/2024",
+   "type": "Update",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "5/1/2023",
+ "last_updated": "6/24/2024",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4496.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4496,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Azure Linux OpenSSL Cryptographic Library",
+  "type": "Software",
+  "validation_dates": [
+   "05/01/2023",
+   "06/24/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

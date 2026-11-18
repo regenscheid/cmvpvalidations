@@ -1,0 +1,180 @@
+{
+ "cert": 3263,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3263",
+ "module": "ARM® TrustZone® CryptoCell-712",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware-Hybrid",
+ "embodiment": "Single Chip",
+ "description": "Arm TrustZone CryptoCell is a security engine with root of trust and cryptographic accelerator capabilities. It is provided to customers as Silicon IP and accompanying firmware. Arm partners integrate the silicon into the host CPU hardware, and use the firmware to drive the silicon and provide high-level functions",
+ "tested_configurations": [
+  "Arm Juno rev.2 with Linux 3.18"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1385; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1385; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "hardware_versions": "712",
+ "firmware_versions": "(TEE) 1.1.0.48, (REE) 1.1.0.49 and (TEE ROM) 1.0.0.1145",
+ "product_url": "http://developer.arm.com/products/system-ip/trustzone-cryptocell/cryptocell-700-family",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4743",
+   "cavp_id": "14245",
+   "cavp_ref": "AES:4743"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4749",
+   "cavp_id": "24740",
+   "cavp_ref": "AES:4749"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1385",
+   "cavp_id": "27107",
+   "cavp_ref": "Component:1385"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1386",
+   "cavp_id": "26681",
+   "cavp_ref": "Component:1386"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1630",
+   "cavp_id": "17129",
+   "cavp_ref": "DRBG:1630"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1184",
+   "cavp_id": "9232",
+   "cavp_ref": "ECDSA:1184"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3158",
+   "cavp_id": "28080",
+   "cavp_ref": "HMAC:3158"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3163",
+   "cavp_id": "23427",
+   "cavp_ref": "HMAC:3163"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 151",
+   "cavp_id": "4443",
+   "cavp_ref": "KDF:151"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2593",
+   "cavp_id": "6859",
+   "cavp_ref": "RSA:2593"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2596",
+   "cavp_id": "28611",
+   "cavp_ref": "RSA:2596"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3887",
+   "cavp_id": "22896",
+   "cavp_ref": "SHS:3887"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3892",
+   "cavp_id": "19452",
+   "cavp_ref": "SHS:3892"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2522",
+   "cavp_id": "5541",
+   "cavp_ref": "TDES:2522"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2523",
+   "cavp_id": "2116",
+   "cavp_ref": "TDES:2523"
+  }
+ ],
+ "vendor": "ARM LIMITED",
+ "vendor_info": {
+  "name": "ARM LIMITED",
+  "website": "http://www.arm.com",
+  "address": [
+   "110 Fulbourn Road",
+   "Cambridge GB-CB1 9NJ",
+   "UK"
+  ],
+  "contacts": [
+   {
+    "name": "Evgeny Bogokovsky"
+   },
+   {
+    "name": "Udi Maor"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3263.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/16/2018",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "8/16/2018",
+ "last_updated": "8/16/2018",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3263.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1385; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1385; key establishment methodology provides between 112 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3263,
+  "vendor": "ARM LIMITED",
+  "module": "ARM® TrustZone® CryptoCell-712",
+  "type": "Firmware-Hybrid",
+  "validation_dates": [
+   "08/16/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

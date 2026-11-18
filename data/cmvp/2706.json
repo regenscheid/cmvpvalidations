@@ -1,0 +1,121 @@
+{
+ "cert": 2706,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2706",
+ "module": "V-Key Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "A software cryptographic module residing within a virtual machine, V-OS that provides a sandboxed operating environment. The Module provides symmetric ciphers, including AES and Triple DES, asymmetric cipher RSA, secure hash functions SHA-1 and SHA-256, message authentication, key derivation and key storage.",
+ "tested_configurations": [
+  "VOS 3.6.0 running on a Samsung Galaxy S4 with Android 4.4.2 operating in single user mode"
+ ],
+ "software_versions": "3.6.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3679",
+   "cavp_id": "8293",
+   "cavp_ref": "AES:3679"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2425",
+   "cavp_id": "338",
+   "cavp_ref": "HMAC:2425"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 74",
+   "cavp_id": "22260",
+   "cavp_ref": "KDF:74"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1900",
+   "cavp_id": "5291",
+   "cavp_ref": "RSA:1900"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3093",
+   "cavp_id": "19931",
+   "cavp_ref": "SHS:3093"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2057",
+   "cavp_id": "2552",
+   "cavp_ref": "TDES:2057"
+  }
+ ],
+ "vendor": "V-Key",
+ "vendor_info": {
+  "name": "V-Key",
+  "website": "http://www.v-key.com/",
+  "address": [
+   "72 Bendemeer Road",
+   "#02-20 Luzerne",
+   "Singapore, Singapore 339941",
+   "Singapore"
+  ],
+  "contacts": [
+   {
+    "name": "Joseph Gan"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2706.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/9/2016",
+   "type": "Initial",
+   "lab": "UL TRANSACTION SECURITY"
+  }
+ ],
+ "first_validated": "8/9/2016",
+ "last_updated": "8/9/2016",
+ "labs": "UL TRANSACTION SECURITY",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2706.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength); RNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2706,
+  "vendor": "V-Key",
+  "module": "V-Key Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/09/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

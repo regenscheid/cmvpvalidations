@@ -1,0 +1,132 @@
+{
+ "cert": 3619,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3619",
+ "module": "Cyphre Crypto Core",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "This OpenSSL library implementation provides services for the Cyphre Crypto Core appliance that enables the BlackTIE hardware cryptographic engine for all secure communication solutions, including but not limited to SSL/TLS, Data Protection, Encryption Gateways, PKI and Certificate/Key lifecycle management.",
+ "tested_configurations": [
+  "Ubuntu 16.04 LTS (Linux kernel 4.16.18) running on a Cyphre BlackTIE 1 Security Appliance with NXP QorIQ P4080 rev 3 processor (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #C609 with CVL Cert. #C609, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG",
+ "hardware_versions": "NXP QorIQ P4080 Rev3",
+ "software_versions": "OpenSSL-FIPS-Cyphre-v1.0",
+ "product_url": "http://www.cyphre.com/cyphrelink/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C609",
+   "cavp_id": "31005",
+   "cavp_ref": "C:609"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C609",
+   "cavp_id": "31005",
+   "cavp_ref": "C:609"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C609",
+   "cavp_id": "31005",
+   "cavp_ref": "C:609"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C609",
+   "cavp_id": "31005",
+   "cavp_ref": "C:609"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C609",
+   "cavp_id": "31005",
+   "cavp_ref": "C:609"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert.#C609; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C609 and HMAC Cert. #C609; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2109",
+   "cavp_id": "16616",
+   "cavp_ref": "SHS:2109"
+  }
+ ],
+ "vendor": "Cyphre Security Solutions, LLC",
+ "vendor_info": {
+  "name": "Cyphre Security Solutions, LLC",
+  "website": "http://www.cyphre.com",
+  "address": [
+   "15115 Park Row Blvd",
+   "Suite 300",
+   "Houston, TX 77084",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Vihar Rai"
+   },
+   {
+    "name": "Lance Smith"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3619.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202020_020320.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/20/2020",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "2/20/2020",
+ "last_updated": "2/20/2020",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3619.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #C609 with CVL Cert. #C609, key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3619,
+  "vendor": "Cyphre Security Solutions, LLC",
+  "module": "Cyphre Crypto Core",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "02/20/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

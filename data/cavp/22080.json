@@ -1,0 +1,52 @@
+{
+ "cavp_id": "22080",
+ "cavp_cert": "AES 3276",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22080",
+ "implementation": "OpenSSL Fips Object Module",
+ "product_id": "6915",
+ "description": "OpenSSL Fips Object Module implements all necessary algorithms required for SSL communications.",
+ "version": "* 2.0.7 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "3/20/2015",
+ "vendor": "Zoll Medical",
+ "vendor_website": "http://www.zoll.com",
+ "oes": [
+  {
+   "name": "Texas Instruments AM3703 Cortex A8 (ARM 7)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

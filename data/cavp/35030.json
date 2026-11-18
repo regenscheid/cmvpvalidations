@@ -1,0 +1,45 @@
+{
+ "cavp_id": "35030",
+ "cavp_cert": "A2420",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35030",
+ "implementation": "wolfCrypt",
+ "product_id": "11021",
+ "description": "wolfCrypt module is a comprehensive suite of FIPS Approved algorithms. All key sizes and modes have been implemented to allow flexibility and efficiency.",
+ "version": "4.0.1",
+ "type": "SOFTWARE",
+ "first_validated": "3/9/2022",
+ "vendor": "wolfSSL Inc",
+ "vendor_website": "http://www.wolfssl.com",
+ "oes": [
+  {
+   "name": "OpenRTOS v10.1.1 on STMicroelectronics STM32L4Rx",
+   "details": [
+    "software: OpenRTOS v10.1.1",
+    "processor: STMicroelectronics STM32L4Rx"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384, P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FC",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,62 @@
+{
+ "cavp_id": "17722",
+ "cavp_cert": "AES 52",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17722",
+ "implementation": "SSH CryptoLib",
+ "product_id": "4033",
+ "description": "The SSH Cryptographic Library is a standards-based shared library providing FIPS 140-2 certified cryptographic services for SSH Communications Security's security products. The library provides a rich API and a comprehensive set of state-of-the-art algorithms including AES, 3DES, SHA-1, HMAC, RSA and DSA.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/30/2003",
+ "vendor": "SSH Communications Security Corp",
+ "vendor_website": "http://www.ssh.com",
+ "oes": [
+  {
+   "name": "Redhat Linux 7.3 on Pentium III",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

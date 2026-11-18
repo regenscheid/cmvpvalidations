@@ -1,0 +1,58 @@
+{
+ "cavp_id": "31278",
+ "cavp_cert": "C882",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31278",
+ "implementation": "ALU-Emanate CFB-128 and AES-256",
+ "product_id": "11236",
+ "description": "SNMP password SP800-135,CFB128 AES256 (GFSbox, KeySbox, VarTxt, VarKey, MMT, MCT, SHA1 byte oriented short/long/MCT).",
+ "version": "16.1-libengine-264",
+ "type": "SOFTWARE",
+ "first_validated": "7/5/2019",
+ "vendor": "Nokia",
+ "vendor_website": "http://nokia.com",
+ "oes": [
+  {
+   "name": "Linux 4.1.21 on Marvell Armada XP mv78460 (for 32EC2E and 8EC2E)",
+   "details": [
+    "software: Linux 4.1.21",
+    "processor: Marvell Armada XP mv78460 (for 32EC2E and 8EC2E)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 96",
+    "Key sizes < block size",
+    "C882 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF SNMP",
+   "oe": 0,
+   "capabilities": [
+    "Password Length: 64-256",
+    "Engine ID: 000002b87766554433221100, 800002b805123456789abcdef0123456789abcdef0123456789abcdef0123456",
+    "C882 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

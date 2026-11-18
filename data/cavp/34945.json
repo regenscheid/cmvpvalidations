@@ -1,0 +1,40 @@
+{
+ "cavp_id": "34945",
+ "cavp_cert": "A2336",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34945",
+ "implementation": "NistCtrDrbg",
+ "product_id": "14808",
+ "description": "Firmware implementation of SP 800-90A DRBG.",
+ "version": "NistCtrDrbg-1.5.0",
+ "type": "FIRMWARE",
+ "first_validated": "2/14/2022",
+ "vendor": "ViaSat, Inc.",
+ "vendor_website": "http://www.viasat.com",
+ "oes": [
+  {
+   "name": "Freescale PowerPC MPC8313",
+   "details": [
+    "cpu: Freescale PowerPC MPC8313"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256 Increment 8",
+    "    Entropy Input: 256-3328 Increment 8",
+    "    Nonce: 128-1664 Increment 8",
+    "    Personalization String Length: 0-256 Increment 8",
+    "    Returned Bits: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

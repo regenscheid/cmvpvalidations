@@ -1,0 +1,172 @@
+{
+ "cert": 2652,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2652",
+ "module": "Vormetric Data Security Manager Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When Operated in FIPS mode. The protocol SSH shall not be used when operated in FIPS mode.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Cryptographic Key Management: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Vormetric Data Security Server is a multi-chip standalone cryptographic module. The Vormetric Data Security Server is the central point of management for the Vormetric Data Security product. It manages keys and policies, and controls Vormetric Transparent Encryption Agents. These agents contain the Vormetric Encryption Expert Cryptographic Module, which has been validated separately from this module.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "3.0",
+ "firmware_versions": "5.3.0",
+ "product_url": "http://www.vormetric.com/products/encryption",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3499",
+   "cavp_id": "10024",
+   "cavp_ref": "AES:3499"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3536",
+   "cavp_id": "18684",
+   "cavp_ref": "AES:3536"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 589",
+   "cavp_id": "9458",
+   "cavp_ref": "Component:589"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 590",
+   "cavp_id": "23494",
+   "cavp_ref": "Component:590"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 869",
+   "cavp_id": "22697",
+   "cavp_ref": "DRBG:869"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 712",
+   "cavp_id": "8717",
+   "cavp_ref": "ECDSA:712"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2234",
+   "cavp_id": "16772",
+   "cavp_ref": "HMAC:2234"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2259",
+   "cavp_id": "21525",
+   "cavp_ref": "HMAC:2259"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2260",
+   "cavp_id": "996",
+   "cavp_ref": "HMAC:2260"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3499 and HMAC Cert. #2234",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1796",
+   "cavp_id": "8629",
+   "cavp_ref": "RSA:1796"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2887",
+   "cavp_id": "23425",
+   "cavp_ref": "SHS:2887"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2914",
+   "cavp_id": "4711",
+   "cavp_ref": "SHS:2914"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2915",
+   "cavp_id": "18329",
+   "cavp_ref": "SHS:2915"
+  }
+ ],
+ "vendor": "Vormetric, Inc.",
+ "vendor_info": {
+  "name": "Vormetric, Inc.",
+  "website": "http://www.vormetric.com",
+  "address": [
+   "2860 Junction Ave",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Peter Tsai"
+   },
+   {
+    "name": "Steve He"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2652.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJune2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/6/2016",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "6/6/2016",
+ "last_updated": "6/6/2016",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2652.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); Triple-DES (non-compliant); MD5; Aria; SSH KDF (non-compliant); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2652,
+  "vendor": "Vormetric, Inc.",
+  "module": "Vormetric Data Security Manager Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/06/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

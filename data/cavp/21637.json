@@ -1,0 +1,38 @@
+{
+ "cavp_id": "21637",
+ "cavp_cert": "AES 1456",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21637",
+ "implementation": "Modem Data Encryption",
+ "product_id": "7755",
+ "description": "FIPS approved AES-256 using ECB and CTR modes for decoding encrypted data sent from a Code Reader 2500 FIPS or Code Reader 3500 FIPS module.",
+ "version": "1006 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/30/2010",
+ "vendor": "Code Corporation",
+ "vendor_website": "http://www.codecorp.com",
+ "oes": [
+  {
+   "name": "Texas Instruments MSP430F149IPM/RG4",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

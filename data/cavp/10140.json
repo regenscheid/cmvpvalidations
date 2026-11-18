@@ -1,0 +1,53 @@
+{
+ "cavp_id": "10140",
+ "cavp_cert": "AES 5656",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10140",
+ "implementation": "Crypto Engine",
+ "product_id": "9907",
+ "description": "Hardware implementation of AES-ECB 128 used as KDF, Hardware implementation of AES-GCM encrypt, decrypt, tag, validate functions in Ethernet packet processing module",
+ "version": "AES ECB/GCM Module 1.0",
+ "type": "HARDWARE",
+ "first_validated": "8/27/2018",
+ "vendor": "Google, Inc.",
+ "vendor_website": "http://www.google.com",
+ "oes": [
+  {
+   "name": "Crypto Engine",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 256, 264, 384, 392",
+    "AAD Length: 32, 64, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 32, 64, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

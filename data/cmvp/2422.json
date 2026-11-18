@@ -1,0 +1,235 @@
+{
+ "cert": 2422,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2422",
+ "module": "Nimble Storage FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #1747",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Nimble Storage FIPS Object Module 2.0.9 is a general purpose cryptographic module built from the OpenSSL FIPS Object Module 2.0.9 source code, which is validated under certificate #1747. It is designed for ease of use with the popular OpenSSL cryptographic library and toolkit.",
+ "tested_configurations": [
+  "Linux 2.6 running on a Nimble Storage AF3000 with PAA",
+  "Linux 2.6 running on a Nimble Storage AF5000 with PAA",
+  "Linux 2.6 running on a Nimble Storage AF7000 with PAA",
+  "Linux 2.6 running on a Nimble Storage AF9000 with PAA (single-user mode)",
+  "Linux 2.6 running on a Nimble Storage CS300 with PAA",
+  "Linux 2.6 running on a Nimble Storage CS500 with PAA",
+  "Linux 2.6 running on a Nimble Storage CS700 with PAA",
+  "Linux 3.4 64-bit under Citrix XenServer running on Intel Xeon E5-2430L (x86) without PAA",
+  "Linux 4.4 running on a Nimble Storage AF40 with PAA",
+  "Linux 4.4 running on a Nimble Storage AF7000 with PAA",
+  "Linux 4.4 running on a Nimble Storage CS240 without PAA",
+  "Linux 4.4 running on a Nimble Storage CS300 with PAA"
+ ],
+ "software_versions": "2.0.9",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2484",
+   "cavp_id": "27363",
+   "cavp_ref": "AES:2484"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3351",
+   "cavp_id": "24681",
+   "cavp_ref": "AES:3351"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 85",
+   "cavp_id": "13447",
+   "cavp_ref": "Component:85"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 496",
+   "cavp_id": "10367",
+   "cavp_ref": "Component:496"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 342",
+   "cavp_id": "6742",
+   "cavp_ref": "DRBG:342"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 784",
+   "cavp_id": "26844",
+   "cavp_ref": "DRBG:784"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 764",
+   "cavp_id": "8150",
+   "cavp_ref": "DSA:764"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 950",
+   "cavp_id": "27520",
+   "cavp_ref": "DSA:950"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 413",
+   "cavp_id": "23972",
+   "cavp_ref": "ECDSA:413"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 664",
+   "cavp_id": "13398",
+   "cavp_ref": "ECDSA:664"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1526",
+   "cavp_id": "9280",
+   "cavp_ref": "HMAC:1526"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2134",
+   "cavp_id": "4373",
+   "cavp_ref": "HMAC:2134"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1273",
+   "cavp_id": "15008",
+   "cavp_ref": "RSA:1273"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1718",
+   "cavp_id": "22856",
+   "cavp_ref": "RSA:1718"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2102",
+   "cavp_id": "7659",
+   "cavp_ref": "SHS:2102"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2778",
+   "cavp_id": "18713",
+   "cavp_ref": "SHS:2778"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1522",
+   "cavp_id": "9708",
+   "cavp_ref": "TDES:1522"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1912",
+   "cavp_id": "25213",
+   "cavp_ref": "TDES:1912"
+  }
+ ],
+ "vendor": "Nimble Storage, a Hewlett Packard Enterprise company",
+ "vendor_info": {
+  "name": "Nimble Storage, a Hewlett Packard Enterprise company",
+  "website": "http://www.nimblestorage.com",
+  "address": [
+   "211 River Oaks Parkway",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Kent Peacock"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2422.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0056.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/11/2015",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "3/1/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "6/7/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/25/2016",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "3/26/2018",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "1/26/2021",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "8/11/2015",
+ "last_updated": "1/26/2021",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2422.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #1747",
+  "Other Algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2422,
+  "vendor": "Nimble Storage, a Hewlett Packard Enterprise company",
+  "module": "Nimble Storage FIPS Object Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/11/2015",
+   "03/01/2016",
+   "06/07/2016",
+   "07/25/2016",
+   "03/26/2018",
+   "01/26/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

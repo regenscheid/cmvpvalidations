@@ -1,0 +1,45 @@
+{
+ "cavp_id": "29747",
+ "cavp_cert": "AES 2804",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=29747",
+ "implementation": "ARMv7 GCM in Firmware",
+ "product_id": "3560",
+ "description": "FW implementation of GCM in Seagate's self encryption disk drives (SEDs).",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/21/2014",
+ "vendor": "Seagate Technology, LLC.",
+ "vendor_website": "http://www.seagate.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-R Family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 24, 128, 256",
+    "AAD Length: 0, 8, 24, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 0, 8, 24, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

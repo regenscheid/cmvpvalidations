@@ -1,0 +1,278 @@
+{
+ "cert": 3269,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3269",
+ "module": "AIX FIPS Crypto Module for OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy and operated in FIPS mode. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #3220.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The AIX FIPS Crypto Module for OpenSSL is based on the OpenSSL FIPS Object Module. The AIX FIPS Crypto Module for OpenSSL is supported on AIX for the Power 7, Power 8 and Power 9 platforms.",
+ "tested_configurations": [
+  "AIX 6.1 32-bit running on IBM POWER 7 (PPC) with PAA (IBM XL C/C++ for AIX Compiler Version V10.1)",
+  "AIX 6.1 32-bit running on IBM POWER 7 (PPC) without PAA (IBM XL C/C++ for AIX Compiler Version V13.1)",
+  "AIX 6.1 64-bit running on IBM POWER 7 (PPC) with PAA (IBM XL C/C++ for AIX Compiler Version V10.1)",
+  "AIX 6.1 64-bit running on IBM POWER 7 (PPC) without PAA (IBM XL C/C++ for AIX Compiler Version V13.1)",
+  "AIX 7.1 32-bit running on IBM POWER 7 (PPC) without PAA (IBM XL C/C++ for AIX Compiler Version V13.1)",
+  "AIX 7.1 32-bit running on IBM Power8 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.1 32-bit running on IBM Power8 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.1 64-bit running on IBM POWER 7 (PPC) without PAA (IBM XL C/C++ for AIX Compiler Version V13.1)",
+  "AIX 7.1 64-bit running on IBM Power8 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.1 64-bit running on IBM Power8 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 32-bit running on IBM Power7 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 32-bit running on IBM Power8 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 32-bit running on IBM Power8 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 32-bit running on IBM Power9 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 32-bit running on IBM Power9 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 64-bit running on IBM Power7 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 64-bit running on IBM Power8 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 64-bit running on IBM Power8 (PPC) without PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 64-bit running on IBM Power9 (PPC) with PAA (IBM XL Compiler V13.1)",
+  "AIX 7.2 64-bit running on IBM Power9 (PPC) without PAA (IBM XL Compiler V13.1) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Certs. #534, #814 and #2045, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.9, 2.0.10, 2.0.11, 2.0.12, 2.0.13, 2.0.14, 2.0.15 or 2.0.16",
+ "product_url": "https://www-01.ibm.com/marketing/iwm/iwm/web/reg/download.do?source=aixbp&amp;lang=en_US&amp;S_PKG=openssl&amp;cp=UTF-8&amp;dlmethod=http",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3451",
+   "cavp_id": "15424",
+   "cavp_ref": "AES:3451"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3990",
+   "cavp_id": "20692",
+   "cavp_ref": "AES:3990"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5649",
+   "cavp_id": "7091",
+   "cavp_ref": "AES:5649"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 534",
+   "cavp_id": "19744",
+   "cavp_ref": "Component:534"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 814",
+   "cavp_id": "13625",
+   "cavp_ref": "Component:814"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2045",
+   "cavp_id": "21568",
+   "cavp_ref": "Component:2045"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 845",
+   "cavp_id": "1896",
+   "cavp_ref": "DRBG:845"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1182",
+   "cavp_id": "10121",
+   "cavp_ref": "DRBG:1182"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2280",
+   "cavp_id": "5034",
+   "cavp_ref": "DRBG:2280"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 970",
+   "cavp_id": "17340",
+   "cavp_ref": "DSA:970"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1085",
+   "cavp_id": "9071",
+   "cavp_ref": "DSA:1085"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1449",
+   "cavp_id": "16247",
+   "cavp_ref": "DSA:1449"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 698",
+   "cavp_id": "20099",
+   "cavp_ref": "ECDSA:698"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 886",
+   "cavp_id": "20059",
+   "cavp_ref": "ECDSA:886"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1523",
+   "cavp_id": "1504",
+   "cavp_ref": "ECDSA:1523"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2197",
+   "cavp_id": "27677",
+   "cavp_ref": "HMAC:2197"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2605",
+   "cavp_id": "17538",
+   "cavp_ref": "HMAC:2605"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3763",
+   "cavp_id": "13650",
+   "cavp_ref": "HMAC:3763"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1766",
+   "cavp_id": "29622",
+   "cavp_ref": "RSA:1766"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2048",
+   "cavp_id": "7981",
+   "cavp_ref": "RSA:2048"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3039",
+   "cavp_id": "6898",
+   "cavp_ref": "RSA:3039"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2847",
+   "cavp_id": "16489",
+   "cavp_ref": "SHS:2847"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3294",
+   "cavp_id": "5295",
+   "cavp_ref": "SHS:3294"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4530",
+   "cavp_id": "29374",
+   "cavp_ref": "SHS:4530"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1942",
+   "cavp_id": "12626",
+   "cavp_ref": "TDES:1942"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2190",
+   "cavp_id": "28306",
+   "cavp_ref": "TDES:2190"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2834",
+   "cavp_id": "25685",
+   "cavp_ref": "TDES:2834"
+  }
+ ],
+ "vendor": "IBM Corporation",
+ "vendor_info": {
+  "name": "IBM Corporation",
+  "website": "http://www.ibm.com/",
+  "address": [
+   "1701 North Street",
+   "Endicott, NY 13760",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "AIX FIPS Security"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3269.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/28/2018",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "9/18/2018",
+   "type": "Update",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "9/23/2020",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "8/28/2018",
+ "last_updated": "9/23/2020",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3269.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Certs. #534, #814 and #2045, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3269,
+  "vendor": "IBM Corporation",
+  "module": "AIX FIPS Crypto Module for OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "08/28/2018",
+   "09/18/2018",
+   "09/23/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

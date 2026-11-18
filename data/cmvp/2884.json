@@ -1,0 +1,147 @@
+{
+ "cert": 2884,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2884",
+ "module": "Mercury Systems ASURRE-Stor™ SSD",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The Mercury Systems ASURRE-Stor™ SSD implements an industry standard 2.5\" secure solid state hard drive. Unlike many secure SSDs, the ASURRE-Stor™ SSD does not depend on a TPM device, TCG, or OPAL to implement security. Instead the ASURRE-Stor™ SSD implements security using AES-256 XTS encryption and several key management techniques that are compatible with the ATA specification. These techniques provide superior and flexible solutions for mission critical defense applications and have no requirements for unencrypted shadow MBR sectors or 3rd party OPAL software.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "P/Ns ASD256AM2R-0yzIF, 3.0; ASD512AM2R-0yzIF, 3.0; ADR256AM2R-0yzIF, 3.0; ADR512AM2R-0yzIF, 3.0 (as described in Security Policy, Table 4)",
+ "firmware_versions": "1.5.0 and 1.5.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2802",
+   "cavp_id": "20702",
+   "cavp_ref": "AES:2802"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3986",
+   "cavp_id": "4752",
+   "cavp_ref": "AES:3986"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3987",
+   "cavp_id": "20309",
+   "cavp_ref": "AES:3987"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1179",
+   "cavp_id": "26837",
+   "cavp_ref": "DRBG:1179"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 883",
+   "cavp_id": "7232",
+   "cavp_ref": "ECDSA:883"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2602",
+   "cavp_id": "1859",
+   "cavp_ref": "HMAC:2602"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3987",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3291",
+   "cavp_id": "23752",
+   "cavp_ref": "SHS:3291"
+  }
+ ],
+ "vendor": "Mercury Systems, Inc.",
+ "vendor_info": {
+  "name": "Mercury Systems, Inc.",
+  "website": "http://www.mrcy.com",
+  "address": [
+   "3601 East University Drive",
+   "Phoenix, AZ 85034",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Bob Lazaravich"
+   },
+   {
+    "name": "Iain Mackie"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2884.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertApr2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/19/2017",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "12/18/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "4/19/2017",
+ "last_updated": "12/18/2019",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2884.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2884,
+  "vendor": "Mercury Systems, Inc.",
+  "module": "Mercury Systems ASURRE-Stor™ SSD",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/19/2017",
+   "12/18/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,86 @@
+{
+ "cavp_id": "31200",
+ "cavp_cert": "C804",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31200",
+ "implementation": "Amazon Linux 2 NSS Cryptographic Module with AES-NI",
+ "product_id": "11158",
+ "description": "Amazon Linux 2 NSS Cryptographic Module is a set of libraries designed to support cross-platform development of security-enabled applications.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/10/2019",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "http://www.amazon.com",
+ "oes": [
+  {
+   "name": "Amazon Linux 2 on Intel (R) Xeon(R) E5",
+   "details": [
+    "software: Amazon Linux 2",
+    "processor: Intel (R) Xeon(R) E5",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 8, 96, 1024",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 8, 96, 1024",
+    "AAD Length: 0, 120, 128, 248, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 1024",
+    "C804 (AES)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

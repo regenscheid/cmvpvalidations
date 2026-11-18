@@ -1,0 +1,129 @@
+{
+ "cert": 1701,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1701",
+ "module": "Apple FIPS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Apple's OS X Lion (v10.7) security services are now built on a newer 'Next Generation Cryptography' platform and does not use the CDSA/CSP module previously validated. Apple is re-validating the same CDSA/CSP module under OS X Lion to provide validation solely for third-party applications.",
+ "tested_configurations": [
+  "Mac OS X 10.7.0 (single-user mode)"
+ ],
+ "software_versions": "1.1",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1872",
+   "cavp_id": "17607",
+   "cavp_ref": "AES:1872"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 585",
+   "cavp_id": "23021",
+   "cavp_ref": "DSA:585"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 262",
+   "cavp_id": "3264",
+   "cavp_ref": "ECDSA:262"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1116",
+   "cavp_id": "29804",
+   "cavp_ref": "HMAC:1116"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 981",
+   "cavp_id": "16916",
+   "cavp_ref": "RNG:981"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 952",
+   "cavp_id": "20405",
+   "cavp_ref": "RSA:952"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1645",
+   "cavp_id": "2851",
+   "cavp_ref": "SHS:1645"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1216",
+   "cavp_id": "9744",
+   "cavp_ref": "TDES:1216"
+  }
+ ],
+ "vendor": "Apple Inc.",
+ "vendor_info": {
+  "name": "Apple Inc.",
+  "website": "http://www.apple.com/business",
+  "address": [
+   "11921 Freedom Drive",
+   "Reston, VA 20190",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Shawn Geddis"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1701.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0015.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/30/2012",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "3/30/2012",
+ "last_updated": "3/30/2012",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1701.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "ASC; Blowfish; CAST; DES; RC2; RC4; RC5; FEE; MD2; MD5; HMAC-MD5; Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (non-compliant key generation)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1701,
+  "vendor": "Apple Inc.",
+  "module": "Apple FIPS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/30/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

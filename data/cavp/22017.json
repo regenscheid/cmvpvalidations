@@ -1,0 +1,68 @@
+{
+ "cavp_id": "22017",
+ "cavp_cert": "DRBG 1166",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22017",
+ "implementation": "LG Kernel Loadable Crypto Module (A32 + CE)",
+ "product_id": "5448",
+ "description": "General-purpose cryptographic services within the Linux kernel used by LG devices to provide secured services.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/27/2016",
+ "vendor": "LG Electronics, Inc.",
+ "vendor_website": "http://www.lg.com",
+ "oes": [
+  {
+   "name": "Linux Kernel 3.10 on Qualcomm Snapdragon 617 (MSM8952) ARMv8",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

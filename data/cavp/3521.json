@@ -1,0 +1,48 @@
+{
+ "cavp_id": "3521",
+ "cavp_cert": "RSA 729",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3521",
+ "implementation": "Alliance OpenSSL FIPS Library",
+ "product_id": "7810",
+ "description": "Alliance OpenSSL FIPS Library is a software library based on an unmodified version of FIPS compliant OpenSSL.",
+ "version": "3.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "10/18/2010",
+ "vendor": "Patrick Townsend Security Solutions",
+ "vendor_website": "http://townsendsecurity.com",
+ "oes": [
+  {
+   "name": "rPath Linux 2.6.29 64-bit on Intel CORE 2 DUO",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

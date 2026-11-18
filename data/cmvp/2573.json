@@ -1,0 +1,190 @@
+{
+ "cert": 2573,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2573",
+ "module": "Aruba Common Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Aruba Common Cryptographic Module Version 1.0 is a software shared library that provides cryptographic services required by Aruba software applications.",
+ "tested_configurations": [
+  "Android 4.0 running on a Droid 3 Smartphone",
+  "iOS9 running on an iPad 2 (single-user mode)",
+  "Red Hat Enterprise Linux 6 with Linux 2.6 Kernel (32-bit) running on a Dell Dimension 9200",
+  "Windows 7 Enterprise 32-bit User Mode running on an IBM ThinkPad Lenovo",
+  "Windows 7 Enterprise 64-bit User Mode running on an IBM ThinkPad Lenovo"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2744",
+   "cavp_id": "29745",
+   "cavp_ref": "AES:2744"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2746",
+   "cavp_id": "5723",
+   "cavp_ref": "AES:2746"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 265",
+   "cavp_id": "3027",
+   "cavp_ref": "Component:265"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 266",
+   "cavp_id": "28590",
+   "cavp_ref": "Component:266"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 496",
+   "cavp_id": "5432",
+   "cavp_ref": "DRBG:496"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 498",
+   "cavp_id": "25484",
+   "cavp_ref": "DRBG:498"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 499",
+   "cavp_id": "29010",
+   "cavp_ref": "ECDSA:499"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 500",
+   "cavp_id": "23595",
+   "cavp_ref": "ECDSA:500"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1721",
+   "cavp_id": "23561",
+   "cavp_ref": "HMAC:1721"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1722",
+   "cavp_id": "22791",
+   "cavp_ref": "HMAC:1722"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1483",
+   "cavp_id": "29254",
+   "cavp_ref": "RSA:1483"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1484",
+   "cavp_id": "482",
+   "cavp_ref": "RSA:1484"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2316",
+   "cavp_id": "21764",
+   "cavp_ref": "SHS:2316"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2317",
+   "cavp_id": "751",
+   "cavp_ref": "SHS:2317"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1652",
+   "cavp_id": "24792",
+   "cavp_ref": "TDES:1652"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1653",
+   "cavp_id": "8934",
+   "cavp_ref": "TDES:1653"
+  }
+ ],
+ "vendor": "Aruba a Hewlett Packard Enterprise Company",
+ "vendor_info": {
+  "name": "Aruba a Hewlett Packard Enterprise Company",
+  "website": "http://www.arubanetworks.com",
+  "address": [
+   "3333 Scott Blvd.",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Steve Weingart"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2573.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMarch2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/1/2016",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "2/28/2017",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "3/1/2016",
+ "last_updated": "2/28/2017",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2573.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 128 or 192 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); DES; Blowfish; ARC2; ARC4; MD2; MD4; MD5; HMAC-MD5; AES EAX; AES XCBC; AES MAC (non-compliant); RSAES-OAEP"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2573,
+  "vendor": "Aruba a Hewlett Packard Enterprise Company",
+  "module": "Aruba Common Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/01/2016",
+   "02/28/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

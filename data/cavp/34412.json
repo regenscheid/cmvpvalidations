@@ -1,0 +1,442 @@
+{
+ "cavp_id": "34412",
+ "cavp_cert": "A1803",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34412",
+ "implementation": "OpenSSL (64 bit) (SHA3_ASM)",
+ "product_id": "14318",
+ "description": "The OpenSSL toolkit provides support for secure communications between machines. OpenSSL includes a certificate management tool and shared libraries which provide various cryptographic algorithms and protocols. The following cipher implementation is covered: Assembler SHA-3 implementation.",
+ "version": "rhel8.20220323",
+ "type": "SOFTWARE",
+ "first_validated": "8/4/2021",
+ "vendor": "Red Hat, LLC",
+ "vendor_website": "http://www.redhat.com",
+ "oes": [
+  {
+   "name": "RHEL 8 on IBM Z System z15(TM)",
+   "details": [
+    "software: Red Hat Enterprise Linux 8",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "processor: z15(TM)",
+    "  Processor z15(TM) (processor family S390) from IBM",
+    "  family: S390",
+    "  manufacturer: IBM",
+    "  series: Z System"
+   ]
+  },
+  {
+   "name": "Red Hat Enterprise Linux 8 on Intel Cascade Lake Xeon Silver 4216",
+   "details": [
+    "software: Red Hat Enterprise Linux 8",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "processor: Xeon Silver 4216",
+    "  Processor Xeon Silver 4216 (processor family x86_64) from Intel",
+    "  family: x86_64",
+    "  manufacturer: Intel",
+    "  series: Cascade Lake"
+   ]
+  },
+  {
+   "name": "RHEL 8 on PowerVM FW1010.22 with VIOS 3.1.3.00 on IBM POWER Series POWER10",
+   "details": [
+    "processor: POWER10",
+    "  Processor POWER10 (processor family POWER) from IBM",
+    "  family: POWER",
+    "  manufacturer: IBM",
+    "  series: POWER Series",
+    "software: PowerVM FW1040.00 with VIOS 3.1.3.00",
+    "  PowerVM provides a secure and scalable server virtualization environment for AIX, IBM i and Linux applications built upon the advanced RAS features and the Power Systems platform.",
+    "software: Red Hat Enterprise Linux 8",
+    "  Linux distribution developed by Red Hat, LLC and targeted toward the commercial market.",
+    "  swid: com.redhat.RHEL-8-ppc64le"
+   ]
+  },
+  {
+   "name": "RHEL 8 on PowerVM FW950.00 with VIOS 3.1.2.00 on IBM POWER Series POWER9",
+   "details": [
+    "processor: POWER9",
+    "  Processor POWER9 (processor family POWER) from IBM",
+    "  family: POWER",
+    "  manufacturer: IBM",
+    "  series: POWER Series",
+    "software: PowerVM FW950.00 with VIOS 3.1.2.00",
+    "  PowerVM provides a secure and scalable server virtualization environment for AIX(R), IBM i and Linux applications built upon the advanced RAS features and leading performance of the Power Systems(TM) platform.",
+    "software: RHEL 8",
+    "  Linux distribution developed by Red Hat, Inc. and targeted toward the commercial market.",
+    "  swid: com.redhat.RHEL-8-ppc64le"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 2,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 3,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 10-1000 Increment 1",
+    "    HMAC Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 10-1000 Increment 1",
+    "    HMAC Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 2,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 10-1000 Increment 1",
+    "    HMAC Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 3,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 10-1000 Increment 1",
+    "    HMAC Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "    Password Length: 8-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 1,
+   "capabilities": [
+    "Supports Empty Message"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 1,
+   "capabilities": [
+    "Supports Empty Message"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 1,
+   "capabilities": [
+    "Supports Empty Message"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 1,
+   "capabilities": [
+    "Supports Empty Message"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 2,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 3,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 1,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 2,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 3,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 1,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 2,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 3,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-65536 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

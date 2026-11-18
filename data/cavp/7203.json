@@ -1,0 +1,38 @@
+{
+ "cavp_id": "7203",
+ "cavp_cert": "AES 2033",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7203",
+ "implementation": "Nitrox III AES-CTR",
+ "product_id": "212",
+ "description": "NITROX III chips implement SHA1/SHA2, 3DES/AES256 CBC, ModMul/ModEx/RSA, GCM and CTR modes, and SP800-90A DRBG. Perf: 5 to 30 Gbps encrypt/hash; 35K to 200K RSA 1024b ops/sec; 6K to 35K RSA 2048b ops/sec. NITROX III microcode also implements protocol-specific acceleration for IPSec and SSL.",
+ "version": "Nitrox III series die, v1.1 Nitrox III CTR, r72406 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "5/25/2012",
+ "vendor": "Cavium, Inc.",
+ "vendor_website": "http://www.cavium.com",
+ "oes": [
+  {
+   "name": "Cavium Nitrox III",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

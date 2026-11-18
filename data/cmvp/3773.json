@@ -1,0 +1,153 @@
+{
+ "cert": 3773,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3773",
+ "module": "Acronis SCS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Acronis SCS Cryptographic Module is a component of the Acronis Backup software solution (version 12.5 and later). It provides the underlying cryptographic functionality necessary to support the use of secure communications protocols, encrypted backups, and secure file sharing.",
+ "tested_configurations": [
+  "RHEL 7.6 running on a Dell Latitude 7390 with an Intel Core i5-8350U with PAA",
+  "RHEL 7.6 running on a Dell Latitude 7390 with an Intel Core i5-8350U without PAA (single-user mode)",
+  "Windows 10 running on a Dell Latitude 7490 with an Intel Core i7-8650U with PAA",
+  "Windows Server 2016 running on a Dell PowerEdge R340 with an Intel Xeon E-2136 with PAA"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1351",
+   "cavp_id": "31780",
+   "cavp_ref": "C:1351"
+  }
+ ],
+ "vendor": "Acronis SCS",
+ "vendor_info": {
+  "name": "Acronis SCS",
+  "website": "http://www.acronisscs.com/",
+  "address": [
+   "6370 E. Thomas Road",
+   "Suite 250",
+   "Scottsdale, AZ 85251",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Acronis SCS Information Security Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3773.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/December%202020_040121_1006_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/16/2020",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "11/22/2021",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "12/16/2020",
+ "last_updated": "11/22/2021",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3773.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3773,
+  "vendor": "Acronis SCS",
+  "module": "Acronis SCS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/16/2020",
+   "11/22/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

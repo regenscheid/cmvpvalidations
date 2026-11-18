@@ -1,0 +1,134 @@
+{
+ "cert": 3167,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3167",
+ "module": "IBM® Corporation LTO Generation 7 and Generation 8 Encrypting Tape Drive",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The IBM® Corporation LTO Generation 7 and Generation 8 Encrypting Tape Drive provides AES-GCM encryption of customer data recorded to tape. Both encryption and compression are implemented in the hardware for optimum performance. Six different host interface types of the LTO Generation 7 \"brick\" unit are FIPS certified as a multi-chip, standalone cryptographic module. In customer operation the \"brick\" unit may be embedded in bridge box or in a canister package for operation in a library.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "38L7450 EC Level M13681 [1][4], 38L7464 EC Level M13681 [2][5], 38L7462 EC Level M13681 [3][6], 01PL347 EC Level N99440 [7][10][13], 01PL351 EC Level N99440 [8][11][14], 01PL349 EC Level N99440 [9][12][15]",
+ "firmware_versions": "LTO7_G986.fcp_fh_f.fmrz [1], LTO7_G986.fcp_hh_f.fmrz [2], LTO7_G986.sas_hh_f.fmrz [3], LTO7_G986.fcp_fh_f_OEMD.fmrz [4], LTO7_G986.fcp_hh_f_OEMD.fmrz [5], LTO7_G986.sas_hh_f_OEMD.fmrz [6], LTO8_J4D0.fcp_fh_f.fmrz [7], LTO8_J4D1.fcp_hh_f.fmrz [8], LTO8_J4D1.sas_hh_f.fmrz [9], LTO8_J4D0.fcp_fh_f_OEMD.fmrz [10], LTO8_J4D1.fcp_hh_f_OEMD.fmrz [11], LTO8_J4D1.sas_hh_f_OEMD.fmrz [12], LTO8_J4D0.fcp_fh_f_OEMS.fmrz [13], LTO8_J4D1.fcp_hh_f_OEMS.fmrz [14], LTO8_J4D1.sas_hh_f_OEMS.fmrz [15]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3357",
+   "cavp_id": "29668",
+   "cavp_ref": "AES:3357"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3358",
+   "cavp_id": "18269",
+   "cavp_ref": "AES:3358"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4810",
+   "cavp_id": "11546",
+   "cavp_ref": "AES:4810"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1672",
+   "cavp_id": "19088",
+   "cavp_ref": "DRBG:1672"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4810",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2634",
+   "cavp_id": "4084",
+   "cavp_ref": "RSA:2634"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3954",
+   "cavp_id": "11204",
+   "cavp_ref": "SHS:3954"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "9032 S Rita Road",
+   "Tucson, AZ 85744",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Kevin D. Butt"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3167.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/10/2018",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "10/12/2018",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/10/2018",
+ "last_updated": "10/12/2018",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3167.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3167,
+  "vendor": "IBM® Corporation",
+  "module": "IBM® Corporation LTO Generation 7 and Generation 8 Encrypting Tape Drive",
+  "type": "Hardware",
+  "validation_dates": [
+   "04/10/2018",
+   "10/12/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

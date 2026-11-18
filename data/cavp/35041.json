@@ -1,0 +1,79 @@
+{
+ "cavp_id": "35041",
+ "cavp_cert": "A2431",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35041",
+ "implementation": "IBM 4770-001 Hardware Security Module",
+ "product_id": "14919",
+ "description": "The IBM 4770 PCIe Cryptographic Coprocessor Hardware Security Module is in the form of a programmable PCIe card that offloads computationally intensive cryptographic processes from the hosting server, and performs sensitive tasks within a secured tamper responding hardware boundary. The evolutionary design builds on previous generations of IBM cryptographic technology, improving performance over its predecessors.",
+ "version": "8.0.37z P3592 M3592 P4630 F0D0B (D5B33BE0) and 8.0.53z P6936 M6936 P4630 F0D0B",
+ "type": "HARDWARE",
+ "first_validated": "3/11/2022",
+ "vendor": "IBM Corporation",
+ "vendor_website": "http://www.ibm.com",
+ "oes": [
+  {
+   "name": "IBM 405 PC",
+   "details": [
+    "processor: PC",
+    "  Processor PC (processor family Power) from IBM",
+    "  family: Power",
+    "  manufacturer: IBM",
+    "  series: 405"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-521",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: SHA2-512",
+    "    Entropy Input: 512",
+    "    Nonce: 128",
+    "    Personalization String Length: 0, 32",
+    "    Additional Input: 0, 0",
+    "    Returned Bits: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

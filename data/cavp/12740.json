@@ -1,0 +1,84 @@
+{
+ "cavp_id": "12740",
+ "cavp_cert": "AES 5946",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12740",
+ "implementation": "AOS Crypto Module",
+ "product_id": "10340",
+ "description": "Comprehensive module implementing various FIPS approved cryptographic algorithms using modified OpenSSL. This provides necessary crypto functionalities for the user space applications on the access points.",
+ "version": "XD-Crypto-1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/9/2018",
+ "vendor": "Riverbed Technology",
+ "vendor_website": "http://www.riverbed.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon 7030",
+   "details": []
+  },
+  {
+   "name": "Cavium Octeon 7130",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 80-256",
+    "AAD Length: 8-240"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 80-256",
+    "AAD Length: 8-240"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128",
+    "Payload Length: 128, 128, 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128",
+    "Payload Length: 128, 128, 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,46 @@
+{
+ "cavp_id": "3069",
+ "cavp_cert": "AES 2752",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3069",
+ "implementation": "Openssl-fips",
+ "product_id": "3485",
+ "description": "OpenSSL is a third party open source code, which provides cryptographic services to user space daemons. The device uses openssl-fips-1.1.1 version. RFS7000 userspace daemons (RADIUS, ntp, openssh, net-snmp, mapsh, etc) using openssl crypto services call fips_mode_set() from their respective initialization functions.",
+ "version": "1.1.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/31/2013",
+ "vendor": "Motorola Solutions, Inc.",
+ "vendor_website": "http://www.motorolasolutions.com",
+ "oes": [
+  {
+   "name": "Broadcom XLR v4.0",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

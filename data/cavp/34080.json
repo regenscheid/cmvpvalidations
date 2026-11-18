@@ -1,0 +1,61 @@
+{
+ "cavp_id": "34080",
+ "cavp_cert": "A1471",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34080",
+ "implementation": "QFlex HSM RSA Key Generation and Transport Cryptographic Library",
+ "product_id": "13944",
+ "description": "The QFlex HSM RSA Key Generation and Transport Cryptographic Library provides the ability for the QFlex HSM to generate RSA keys and perform IFC key transport using Exar's RSA primitives.",
+ "version": "1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "6/1/2021",
+ "vendor": "Envieta Systems LLC",
+ "vendor_website": "http://www.envieta.com",
+ "oes": [
+  {
+   "name": "Linux 4.1.33 on Arria 10 (Cortex-A9) with Exar XR9240",
+   "details": [
+    "processor: Arria 10 (Cortex-A9) with Exar XR9240",
+    "software: Linux 4.1.33"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen",
+    "Modulo: 2048, 3072, 4096, 6144",
+    "Key Generation Methods: rsakpg2-crt",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator, responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 1024"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.2",
+    "      Properties:",
+    "        Modulo: 3072",
+    "        Primality Tests: Table C.2",
+    "      Properties:",
+    "        Modulo: 4096",
+    "        Primality Tests: Table C.2",
+    "Public Exponent Mode: Random",
+    "Private Key Format: Chinese Remainder Theorem"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

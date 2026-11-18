@@ -1,0 +1,64 @@
+{
+ "cavp_id": "24926",
+ "cavp_cert": "AES 5664",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24926",
+ "implementation": "Qualcomm Lithium AES engine-256w",
+ "product_id": "9905",
+ "description": "Lithium-based family of Qualcomm 802.11ax Wi-Fi chipsets, including (but not limited to) Hawkeye IPQ807x.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/27/2018",
+ "vendor": "Qualcomm Technologies Inc.",
+ "vendor_website": "http://www.qualcomm.com",
+ "oes": [
+  {
+   "name": "Chronologic VCS simulator, vcs-mx_vM-2017.03-SP2-2",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 64-80",
+    "AAD Length: 176-240"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 64, 80",
+    "AAD Length: 176, 240"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 176, 240"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

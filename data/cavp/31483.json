@@ -1,0 +1,42 @@
+{
+ "cavp_id": "31483",
+ "cavp_cert": "C1086",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31483",
+ "implementation": "Phoenix AES Core",
+ "product_id": "11439",
+ "description": "PM983 Series is high-performance Self-Encrypting SSD supporting NVMe Interface that provides on-the-fly encryption/decryption of user data without performance loss. It implements AES256-XTS for user data encryption, ECDSA P-256 for FW Authentication, and Hash_DRBG for key generation.",
+ "version": "CRYPTO_AES_SSD_X2_V1.1",
+ "type": "HARDWARE",
+ "first_validated": "9/11/2019",
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Phoenix AES Core",
+   "details": [
+    "device: Phoenix AES Core"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 3840, 8320",
+    "Tweak Mode: Hex"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

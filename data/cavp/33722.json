@@ -1,0 +1,46 @@
+{
+ "cavp_id": "33722",
+ "cavp_cert": "A1113",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33722",
+ "implementation": "HP Tera2 HW AES-GCM",
+ "product_id": "13592",
+ "description": "The HP HW AES-GCM Implementation provides an AES-GCM implementation in support of HP's Tera2 Zero Client processor functionality.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "3/15/2021",
+ "vendor": "HP Inc.",
+ "vendor_website": "http://www.hp.com",
+ "oes": [
+  {
+   "name": "Verilator + GCC",
+   "details": [
+    "Firmware: Verilator + GCC",
+    "  Simulator for Hardware cryptographic capabilities"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 32-1024 Increment 32",
+    "AAD Length: 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

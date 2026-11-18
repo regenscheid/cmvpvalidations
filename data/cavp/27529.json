@@ -1,0 +1,42 @@
+{
+ "cavp_id": "27529",
+ "cavp_cert": "AES 2770",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27529",
+ "implementation": "XTS_GMAC_CG Core",
+ "product_id": "3514",
+ "description": "100Gbps FPGA core. AES-XTS 256 bit key, 128 bit multiple length text. Assocated GMAC, 256 bit key, 128 bit multiple length AAD, zero length PT.",
+ "version": "XTS_GMAC_CG_1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/14/2014",
+ "vendor": "Altera Denmark Technology Center",
+ "vendor_website": "http://www.altera.com",
+ "oes": [
+  {
+   "name": "Mentor Questa Slm 10.2c",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "AAD Length: 896, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

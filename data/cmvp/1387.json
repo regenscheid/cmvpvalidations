@@ -1,0 +1,129 @@
+{
+ "cert": 1387,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1387",
+ "module": "Red Hat Enterprise Linux 5 Kernel Crypto API Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When obtained, installed, and initialized as assumed by the Crypto Officer role and specified in Section 9.1 of the provided Security Policy. This module contains the embedded module Network Security Services (NSS) Cryptographic Module validated to FIPS 140-2 under Cert. #815 (Approved algorithms retested on listed operating environment) operating in FIPS mode. Section 1 of the provided Security Policy specifies the precise RPM files containing this module. The integrity of the RPMs is automatically verified during the installation and the Crypto officer shall not install the RPM files if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module.",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Linux kernel Crypto API implemented in Red Hat Enterprise Linux 5 provides services operating inside the Linux kernel with various ciphers, message digests and an approved random number generator.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 5.4 (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1224",
+   "cavp_id": "14452",
+   "cavp_ref": "AES:1224"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 406",
+   "cavp_id": "8296",
+   "cavp_ref": "DSA:406"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 449",
+   "cavp_id": "5714",
+   "cavp_ref": "DSA:449"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 715",
+   "cavp_id": "1947",
+   "cavp_ref": "HMAC:715"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 812",
+   "cavp_id": "1367",
+   "cavp_ref": "HMAC:812"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 679",
+   "cavp_id": "18623",
+   "cavp_ref": "RNG:679"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1125",
+   "cavp_id": "13667",
+   "cavp_ref": "SHS:1125"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 882",
+   "cavp_id": "17164",
+   "cavp_ref": "TDES:882"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "314 Littleton Road",
+   "Westford, MA 01886",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Irina Boverman"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1387.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1387.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/12/2010",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "8/12/2010",
+ "last_updated": "8/12/2010",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1387.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES, Triple-DES (CTR mode; non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1387,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 5 Kernel Crypto API Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/12/2010"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

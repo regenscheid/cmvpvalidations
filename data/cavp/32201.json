@@ -1,0 +1,77 @@
+{
+ "cavp_id": "32201",
+ "cavp_cert": "C1594",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32201",
+ "implementation": "HPE Storage NVMe Backend Encryption Engine",
+ "product_id": "12147",
+ "description": "n/a",
+ "version": "30A9-00",
+ "type": "HARDWARE",
+ "first_validated": "2/20/2020",
+ "vendor": "Hewlett Packard Enterprise Company",
+ "vendor_website": "https://www.hpe.com/us/en/home.html",
+ "oes": [
+  {
+   "name": "HPE Storage NVMe Backend Encryption Engine",
+   "details": [
+    "device: HPE Storage NVMe Backend Encryption Engine"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256, 512",
+    "C1594 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 32768, 65408, 65536",
+    "Tweak Mode: Hex"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "C1594 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

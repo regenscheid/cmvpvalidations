@@ -1,0 +1,98 @@
+{
+ "cavp_id": "33934",
+ "cavp_cert": "A1325",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33934",
+ "implementation": "NesLib",
+ "product_id": "13808",
+ "description": "ST Microelectronics Trusted Platform Module is a hardware cryptographic module which implements advanced cryptographic algorithms, including symmetric and asymmetric cryptography, as well as key generation and random number generation as defined by the Trusted Computing Group (TCG) version 2.0 specifications.",
+ "version": "ST33HTPH revision A 6.5 for ST33",
+ "type": "HARDWARE",
+ "first_validated": "4/26/2021",
+ "vendor": "Ultra Electronics TCS Inc.",
+ "vendor_website": "http://www.st.com/",
+ "oes": [
+  {
+   "name": "SecureCore® SC300",
+   "details": [
+    "processor: SecureCore® SC300",
+    "  manufacturer: ARM"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA3-256, SHA3-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA3-256, SHA3-384"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256, P-384",
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  fullUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "        Fixed Info Pattern: algorithmId||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 512",
+    "  onePassDh:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-256",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "        Fixed Info Pattern: algorithmId||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 512"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Modulo: 2048, 3072",
+    "Key Generation Methods: rsakpg1-basic",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator, responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-256, SHA2-384, SHA3-256, SHA3-384",
+    "      Supports Null Associated Data",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

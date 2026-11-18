@@ -1,0 +1,142 @@
+{
+ "cert": 2995,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2995",
+ "module": "Check Point Cryptographic Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and installed, initialized and configured as specified in the Security Policy Section 3 Secure Operation",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Check Point Cryptographic Library is a firmware module that provides cryptographic services to Check Point products. The module provides a number of NIST validated cryptographic algorithms for services such as IPSec and TLS. The module provides applications with a library interface that enables them to access the various cryptographic algorithm functions supplied by the module. For the purposes of FIPS 140-2 testing, the module was evaluated running on the Check Point 12400 appliance.",
+ "tested_configurations": [
+  "Check Point 12400 appliance with Check Point OS Version R77.30"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #920, key agreement; key establishment methodology provides between 112 and 128 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "firmware_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3418",
+   "cavp_id": "22113",
+   "cavp_ref": "AES:3418"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 514",
+   "cavp_id": "11008",
+   "cavp_ref": "Component:514"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 920",
+   "cavp_id": "4236",
+   "cavp_ref": "Component:920"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 823",
+   "cavp_id": "17398",
+   "cavp_ref": "DRBG:823"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 685",
+   "cavp_id": "240",
+   "cavp_ref": "ECDSA:685"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2176",
+   "cavp_id": "9065",
+   "cavp_ref": "HMAC:2176"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1750",
+   "cavp_id": "2616",
+   "cavp_ref": "RSA:1750"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2824",
+   "cavp_id": "26398",
+   "cavp_ref": "SHS:2824"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1929",
+   "cavp_id": "10790",
+   "cavp_ref": "TDES:1929"
+  }
+ ],
+ "vendor": "Check Point Software Technologies Ltd.",
+ "vendor_info": {
+  "name": "Check Point Software Technologies Ltd.",
+  "website": "http://www.checkpoint.com",
+  "address": [
+   "5 Ha'Solelim Street",
+   "Tel Aviv 67897",
+   "Israel"
+  ],
+  "contacts": [
+   {
+    "name": "Malcom Levy"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2995.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AugConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/16/2017",
+   "type": "Initial",
+   "lab": "DXC Technology"
+  },
+  {
+   "date": "8/18/2017",
+   "type": "Update",
+   "lab": "DXC Technology"
+  }
+ ],
+ "first_validated": "8/16/2017",
+ "last_updated": "8/18/2017",
+ "labs": "DXC Technology",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2995.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4264"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #920, key agreement; key establishment methodology provides between 112 and 128 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 2995,
+  "vendor": "Check Point Software Technologies Ltd.",
+  "module": "Check Point Cryptographic Library",
+  "type": "Firmware",
+  "validation_dates": [
+   "08/16/2017",
+   "08/18/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

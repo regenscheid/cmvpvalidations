@@ -1,0 +1,121 @@
+{
+ "cert": 2524,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2524",
+ "module": "HyTrust KeyControl (TM) Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "HyTrust KeyControl is a key management system that is available in three different formats (ISO, OVA and AMI) and can be run on physical x86 based hardware as a virtual machine and on one of a number of different hypervisor platforms or as a combination of both when running in clustered mode.",
+ "tested_configurations": [
+  "FreeBSD 9.2 on VMware vSphere Hypervisor (ESXi) 5.5.0u2 on Dell Inc. PowerEdge R220, Intel Xeon CPU E3-1241v3 @ 3.50GHz (single user mode)"
+ ],
+ "software_versions": "1.0",
+ "product_url": "http://www.hytrust.com/products/datacontrol/how-it-works",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3397",
+   "cavp_id": "16733",
+   "cavp_ref": "AES:3397"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3431",
+   "cavp_id": "19641",
+   "cavp_ref": "AES:3431"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3432",
+   "cavp_id": "5602",
+   "cavp_ref": "AES:3432"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 813",
+   "cavp_id": "27816",
+   "cavp_ref": "DRBG:813"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2168",
+   "cavp_id": "3061",
+   "cavp_ref": "HMAC:2168"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2813",
+   "cavp_id": "2784",
+   "cavp_ref": "SHS:2813"
+  }
+ ],
+ "vendor": "HyTrust, Inc.",
+ "vendor_info": {
+  "name": "HyTrust, Inc.",
+  "website": "http://www.hytrust.com",
+  "address": [
+   "1975 W El Camino Real, Suite 203",
+   "Mountain View, CA 94040",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Bill Hackenberger"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2524.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/5/2016",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "1/5/2016",
+ "last_updated": "1/5/2016",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2524.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2524,
+  "vendor": "HyTrust, Inc.",
+  "module": "HyTrust KeyControl (TM) Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/05/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

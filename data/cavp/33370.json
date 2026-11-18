@@ -1,0 +1,316 @@
+{
+ "cavp_id": "33370",
+ "cavp_cert": "C2200",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33370",
+ "implementation": "Fortinet FortiOS FIPS-VM Cryptographic Library",
+ "product_id": "13266",
+ "description": "This document focuses on the software implementation of the Fortinet FortiOS-VM FIPS Cryptographic Library running on Intel x86 compatible processors.",
+ "version": "6.2",
+ "type": "SOFTWARE",
+ "first_validated": "10/7/2020",
+ "vendor": "Fortinet Inc.",
+ "vendor_website": "http://www.fortinet.com",
+ "oes": [
+  {
+   "name": "Intel Xeon D-1559",
+   "details": [
+    "processor: Intel Xeon D-1559",
+    "  manufacturer: Intel"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 64",
+    "Payload Length: 128, 1000, 6400, 8000",
+    "AAD Length: 0, 96, 128, 776, 2048"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 64",
+    "AAD Length: 0, 96, 128, 776, 2048"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits, Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "C2200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "C2200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C2200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C2200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size",
+    "C2200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size",
+    "C2200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Partial Public Key Validation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521",
+    "C2200 (ECDSA)",
+    "C2200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-256",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256",
+    "C2200 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv1",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA-1, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 3072",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Authentication Method: Digital Signature",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 8192",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Authentication Method: Public Key Encryption",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA-1, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Authentication Method: Public Key Encryption",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 3072",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Authentication Method: Public Key Encryption",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Diffie-Hellman Shared Secret Length: 8192",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 128-1016",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Hash Algorithm: SHA-1, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 128-1016",
+    "    Diffie-Hellman Shared Secret Length: 3072",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Authentication Method: Pre-shared Key",
+    "    Initiator Nonce Length: 64-2048",
+    "    Responder Nonce Length: 64-2048",
+    "    Preshared Key Length: 128-1016",
+    "    Diffie-Hellman Shared Secret Length: 8192",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "C2200 (SHS)",
+    "C2200 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "KDF IKEv2",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128-2048",
+    "    Responder Nonce Length: 128-2048",
+    "    Diffie-Hellman Shared Secret Length: 224",
+    "    Derived Keying Material Length: 1056-3072",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128-2048",
+    "    Responder Nonce Length: 128-2048",
+    "    Diffie-Hellman Shared Secret Length: 8192",
+    "    Derived Keying Material Length: 1056-3072",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512",
+    "  Capabilities:",
+    "    Initiator Nonce Length: 128-2048",
+    "    Responder Nonce Length: 128-2048",
+    "    Diffie-Hellman Shared Secret Length: 2048",
+    "    Derived Keying Material Length: 1056-3072",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384",
+    "C2200 (SHS)",
+    "C2200 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-102400 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

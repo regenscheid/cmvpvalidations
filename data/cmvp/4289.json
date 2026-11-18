@@ -1,0 +1,126 @@
+{
+ "cert": 4289,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4289",
+ "module": "LogRhythm 7.8.0 Platform Manager",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Cryptographic Primitives Library validated to FIPS 140-2 under Cert. #3197 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The LogRhythm 7.8.0 Platform Manager cryptographic module provides cryptographic services to a Platform Manager. In particular, these services support secure communication with supporting SQL Server databases.",
+ "tested_configurations": [
+  "Windows Server 2019 Core (x64) running on a Dell PowerEdge R740 Server with an Intel Xeon Silver 4114 with PAA",
+  "Windows Server 2019 Core (x64) running on a Dell PowerEdge R740 Server with an Intel Xeon Silver 4114 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 128 bits of encryption strength)",
+ "software_versions": "7.8.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  }
+ ],
+ "vendor": "LogRhythm",
+ "vendor_info": {
+  "name": "LogRhythm",
+  "website": "http://www.logrhythm.com/",
+  "address": [
+   "4780 Pearl East Circle",
+   "Boulder, CO 80301",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Angie Lawn"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4289.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/August%202022_010922_0715_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/31/2022",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "8/31/2022",
+ "last_updated": "8/31/2022",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4289.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4289,
+  "vendor": "LogRhythm",
+  "module": "LogRhythm 7.8.0 Platform Manager",
+  "type": "Software",
+  "validation_dates": [
+   "08/31/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

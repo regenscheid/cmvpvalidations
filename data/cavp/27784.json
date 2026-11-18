@@ -1,0 +1,64 @@
+{
+ "cavp_id": "27784",
+ "cavp_cert": "DRBG 744",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27784",
+ "implementation": "Linux kernel crypto API (AES-NI and AVX for SHA-2)",
+ "product_id": "6929",
+ "description": "Linux kernel crypto API is an open-source software written mainly in C. The module provides various cryptographic services to software components within the Linux kernel. This test covers the AES-NI implementation of AES and AVX assembler implementation of SHA-2 on Intel x86 64bit HP hardware.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "3/20/2015",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 on Intel x86-64",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

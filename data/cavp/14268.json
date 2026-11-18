@@ -1,0 +1,90 @@
+{
+ "cavp_id": "14268",
+ "cavp_cert": "AES 2059",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14268",
+ "implementation": "Totemo Cryptographic Module (TCM)",
+ "product_id": "250",
+ "description": "The Totemo Cryptographic Module supplies the cryptographic services required by the Totemo Security Platform (TSP) and the Totemo products which provides secure email, file transfer, and mobile messaging solutions. These solutions secure all types of communication without any infrastructure prerequisites.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/15/2012",
+ "vendor": "Totemo AG",
+ "vendor_website": "http://www.totemo.ch",
+ "oes": [
+  {
+   "name": "Totemo Appliance OS 2.0 v0711 with JRE 7.0 on Intel Xeon E5504 processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 0-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 8, 1024",
+    "AAD Length: 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,306 @@
+{
+ "cert": 4213,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4213",
+ "module": "DHSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When Operated in FIPS Mode.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The module is a set of software libraries, whose purpose is to provide cryptographic algorithm services (such as encryption and decryption services), as well as Transport Layer Security protocol (TLS) v1.0, v1.1, v1.2, certificate management, asymmetric key generation, random number generation and so on. The module provides API interface for application calling. The module can act as a TLS server or TLS client, and interacts with other peers via the TLS protocol.",
+ "tested_configurations": [
+  "Linux-3.10.0 32 bit running on DHI-NVR5416-16P-4KS2E with ARMv7 CPU",
+  "Linux-3.10.0 32bit running on DHI-NVR5432-16P-4KS2E with ARMv7 CPU",
+  "Linux-3.10.0 32bit running on DHI-NVR5832-4KS2 with ARMv7 CPU",
+  "Linux-4.9.37 32bit running on DH-IPC-HFW5442EP-ZE with ARMv7 CPU",
+  "Linux-4.9.37 32bit running on DH-IPC-HFW7442HP-Z with ARMv8 CPU (Single-user mode)",
+  "Linux-4.9.37 32bit running on DH-SD49225XA-HNR with ARMv7 CPU",
+  "Linux-4.9.37 32bit running on DH-SD5A445XA-HNR with ARMv7 CPU",
+  "Linux-4.9.37 64bit running on DHI-NVR5832-I with ARMv8 CPU"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs #1636, #1639, #1640 & #1641, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie Hellman (CVL Certs #1636, #1639, #1640 & #1641, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "1.0.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1636",
+   "cavp_id": "32274",
+   "cavp_ref": "C:1636"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1639",
+   "cavp_id": "32277",
+   "cavp_ref": "C:1639"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1640",
+   "cavp_id": "32278",
+   "cavp_ref": "C:1640"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1641",
+   "cavp_id": "32279",
+   "cavp_ref": "C:1641"
+  }
+ ],
+ "vendor": "Zhejiang Dahua Technology Co., Ltd.",
+ "vendor_info": {
+  "name": "Zhejiang Dahua Technology Co., Ltd.",
+  "website": "http://www.dahuasecurity.com",
+  "address": [
+   "No.1199, Bin’an Road",
+   "Hangzhou, Binjiang",
+   "China"
+  ],
+  "contacts": [
+   {
+    "name": "Dahua Sales"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4213.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202022_010622_0641_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/6/2022",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "5/6/2022",
+ "last_updated": "5/6/2022",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4213.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs #1636, #1639, #1640 & #1641, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie Hellman (CVL Certs #1636, #1639, #1640 & #1641, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4213,
+  "vendor": "Zhejiang Dahua Technology Co., Ltd.",
+  "module": "DHSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/06/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

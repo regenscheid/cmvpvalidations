@@ -1,0 +1,184 @@
+{
+ "cert": 4588,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4588",
+ "module": "SafeZone FIPS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "SafeZone FIPS Cryptographic Module is a FIPS 140-2 Security Level 1 validated software cryptographic module from Rambus. The module is a toolkit which provides the most commonly needed cryptographic primitives for a large variety of applications, including but not limited to, primitives needed for DAR, DRM, TLS, and VPN on mobile devices.",
+ "tested_configurations": [
+  "Debian 9 Linux (64 bit) running on an ARM Cortex-A53 (ARMv8-A) with PAA",
+  "Debian 9 Linux (64 bit) running on an ARM Cortex-A53 (ARMv8-A) without PAA",
+  "Xubuntu 20.04 LTS (32-bit) running on an ARM Cortex-A7 (ARMv7-A)",
+  "Xubuntu 20.04 LTS (32-bit) running on an Intel Atom x5 (Airmont) with PAA",
+  "Xubuntu 20.04 LTS (32-bit) running on an Intel Atom x5 (Airmont) without PAA",
+  "Xubuntu 20.04 LTS (64-bit) running on an Intel Atom x5 (Airmont) with PAA",
+  "Xubuntu 20.04 LTS (64-bit) running on an Intel Atom x5 (Airmont) without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "MD5; NDRNG",
+ "software_versions": "1.2.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A2468; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS-RSA",
+   "cavp_cert": "Cert. #A2468; key establishment methodology provides between 112 and 150 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2468",
+   "cavp_id": "35078",
+   "cavp_ref": "A:2468"
+  }
+ ],
+ "vendor": "Rambus Inc.",
+ "vendor_info": {
+  "name": "Rambus Inc.",
+  "website": "http://www.rambus.com",
+  "address": [
+   "4453 North First Street",
+   "Suite 100",
+   "San Jose, CA 95134",
+   "United States"
+  ],
+  "contacts": [
+   {
+    "name": "Ville Paavilainen"
+   },
+   {
+    "name": "Stuart Kincaid"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4588.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202023_101023_1100%20signed%20%282%29.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/7/2023",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "9/7/2023",
+ "last_updated": "9/7/2023",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4588.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "MD5; NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4588,
+  "vendor": "Rambus Inc.",
+  "module": "SafeZone FIPS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/07/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

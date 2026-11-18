@@ -1,0 +1,186 @@
+{
+ "cert": 3264,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3264",
+ "module": "MediaTek CryptoCore",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware-Hybrid",
+ "embodiment": "Single Chip",
+ "description": "MediaTek CryptoCore is a firmware hybrid cryptographic module providing foundational security services for the platform, including secure boot, secure life cycle state, platform identity and key management. It offers high-throughput cryptography operations, suitable for a diverse set of use cases.",
+ "tested_configurations": [
+  "MediaTek Helio X30 SoC with Android Nougat and Trustonic t-base 311b"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert # 1429; key establishment methodology provides between 112 and 256 bits of encryption strength); Diffie-Hellman (key establishment methodology provides 112 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "hardware_versions": "1.0",
+ "firmware_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4788",
+   "cavp_id": "26995",
+   "cavp_ref": "AES:4788"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4789",
+   "cavp_id": "20489",
+   "cavp_ref": "AES:4789"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1428",
+   "cavp_id": "29377",
+   "cavp_ref": "Component:1428"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1429",
+   "cavp_id": "11440",
+   "cavp_ref": "Component:1429"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1661",
+   "cavp_id": "22788",
+   "cavp_ref": "DRBG:1661"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1203",
+   "cavp_id": "15941",
+   "cavp_ref": "ECDSA:1203"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3190",
+   "cavp_id": "1135",
+   "cavp_ref": "HMAC:3190"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3191",
+   "cavp_id": "29681",
+   "cavp_ref": "HMAC:3191"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 155",
+   "cavp_id": "18762",
+   "cavp_ref": "KDF:155"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4788 and AES Cert. #4789; key establishment methodology provides 128 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2621",
+   "cavp_id": "1955",
+   "cavp_ref": "RSA:2621"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3926",
+   "cavp_id": "25694",
+   "cavp_ref": "SHS:3926"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3927",
+   "cavp_id": "28322",
+   "cavp_ref": "SHS:3927"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2541",
+   "cavp_id": "3661",
+   "cavp_ref": "TDES:2541"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2542",
+   "cavp_id": "2104",
+   "cavp_ref": "TDES:2542"
+  }
+ ],
+ "vendor": "[email protected]",
+ "vendor_info": {
+  "name": "[email protected]",
+  "website": "/cdn-cgi/l/email-protection",
+  "address": [
+   "No. 1, Dusing 1st Rd.",
+   "Hsinchu Science Park",
+   "Hsinchu City 30078",
+   "Taiwan"
+  ],
+  "contacts": [
+   {
+    "name": "William Cheng"
+   },
+   {
+    "name": "MingHsien Hsieh"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3264.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/20/2018",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  },
+  {
+   "date": "8/31/2018",
+   "type": "Update",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "8/20/2018",
+ "last_updated": "8/31/2018",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3264.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert # 1429; key establishment methodology provides between 112 and 256 bits of encryption strength); Diffie-Hellman (key establishment methodology provides 112 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3264,
+  "vendor": "MediaTek Inc.",
+  "module": "MediaTek CryptoCore",
+  "type": "Firmware-Hybrid",
+  "validation_dates": [
+   "08/20/2018",
+   "08/31/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

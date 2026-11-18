@@ -1,0 +1,55 @@
+{
+ "cavp_id": "5788",
+ "cavp_cert": "AES 1520",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5788",
+ "implementation": "Fortress Cryptographic Implementation - FPGA",
+ "product_id": "7845",
+ "description": "The Fortress Cryptographic Implementation suite (AES, SHA, HMAC and RNG) all work in unison to provide security to your wireless and wired network.",
+ "version": "2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/6/2010",
+ "vendor": "Fortress Technologies, Inc.",
+ "vendor_website": "http://www.fortresstech.com",
+ "oes": [
+  {
+   "name": "Xilinx Spartan FPGA",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 176-240"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 96, 128, 12672, 12736",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

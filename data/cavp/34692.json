@@ -1,0 +1,40 @@
+{
+ "cavp_id": "34692",
+ "cavp_cert": "A2083",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34692",
+ "implementation": "DRBG – OpenSSL FIPS Object Module 2.0.8",
+ "product_id": "14545",
+ "description": "DRBG from OpenSSL implements 800-90A CTR_DRBG mode. Avaya modifications to add fault injection for testing.",
+ "version": "V1.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/9/2021",
+ "vendor": "Avaya, Inc.",
+ "vendor_website": "http://www.avaya.com",
+ "oes": [
+  {
+   "name": "NXP T1024",
+   "details": [
+    "cpu: NXP T1024"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256 Increment 8",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256 Increment 8",
+    "    Returned Bits: 128"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,40 @@
+{
+ "cavp_id": "22289",
+ "cavp_cert": "HMAC 3176",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=22289",
+ "implementation": "SUSE libgcrypt using AVX2 implementation for SHA",
+ "product_id": "8398",
+ "description": "This test covers AVX2 implementation of SHA.",
+ "version": "3.0",
+ "type": "SOFTWARE",
+ "first_validated": "9/8/2017",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 SP2 on Intel Xeon E5 family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

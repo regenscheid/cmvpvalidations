@@ -1,0 +1,33 @@
+{
+ "cavp_id": "10108",
+ "cavp_cert": "KDF 89",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10108",
+ "implementation": "FT Firmware Algorithm",
+ "product_id": "5343",
+ "description": "The implementation of hash algorithm consists of 3 parts: 1) Initialization, 2) Grouping operation. Recovering the data is needed when the datea is not grouped in integer times, and 3) Holding the results of all the data. The implementation of CMAC refers to SP800-38B. SP800-108 KDF uses pseudorandom function in counter mode.",
+ "version": "1.0.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/31/2016",
+ "vendor": "Feitian Technologies Co., Ltd.",
+ "vendor_website": "http://www.ftsafe.com",
+ "oes": [
+  {
+   "name": "M7893 (Infineon Technologies AG& SLx78)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES128, CMAC-AES192, CMAC-AES256",
+    "    Fixed Data Order: After Fixed Data, Before Fixed Data",
+    "    Counter Length: 8, 16, 24, 32"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

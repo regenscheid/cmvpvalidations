@@ -1,0 +1,143 @@
+{
+ "cert": 3107,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3107",
+ "module": "Carbon Black Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. This validation entry is a non-security relevant modification to Cert. #2038.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Carbon Black Cryptographic Module delivers core cryptographic functions (including Suite B algorithms) to Cb Response and Cb Protection. These products rely on the Carbon Black Cryptographic Module for secure key management, data integrity, data at rest encryption, and secure communications.",
+ "tested_configurations": [
+  "Windows Server 2008 R2 on a Dell OptiPlex 755 (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2273",
+   "cavp_id": "4636",
+   "cavp_ref": "AES:2273"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 44",
+   "cavp_id": "19567",
+   "cavp_ref": "Component:44"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 281",
+   "cavp_id": "29111",
+   "cavp_ref": "DRBG:281"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 709",
+   "cavp_id": "6658",
+   "cavp_ref": "DSA:709"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 368",
+   "cavp_id": "3803",
+   "cavp_ref": "ECDSA:368"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1391",
+   "cavp_id": "23455",
+   "cavp_ref": "HMAC:1391"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1166",
+   "cavp_id": "2122",
+   "cavp_ref": "RSA:1166"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1954",
+   "cavp_id": "1950",
+   "cavp_ref": "SHS:1954"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1420",
+   "cavp_id": "11139",
+   "cavp_ref": "TDES:1420"
+  }
+ ],
+ "vendor": "Carbon Black, Inc.",
+ "vendor_info": {
+  "name": "Carbon Black, Inc.",
+  "website": "http://www.carbonblack.com",
+  "address": [
+   "1100 Winter St.",
+   "Waltham, MA 02451",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Damon Cabanillas"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3107.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/9/2018",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "2/13/2018",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "1/9/2018",
+ "last_updated": "2/13/2018",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3107.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3107,
+  "vendor": "Carbon Black, Inc.",
+  "module": "Carbon Black Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/09/2018",
+   "02/13/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

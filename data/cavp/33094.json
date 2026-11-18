@@ -1,0 +1,66 @@
+{
+ "cavp_id": "33094",
+ "cavp_cert": "A653",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33094",
+ "implementation": "JuniperOpenSSL (aes-gcm)",
+ "product_id": "12989",
+ "description": "Juniper OpenSSL library implementation providing cryptographic services to Linux user space software components. The module was tested with 64-bit word size.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "8/10/2020",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Junos OS Evolved version 19.4R2 on Intel E5-2628Lv4 Xeon",
+   "details": [
+    "software: Junos OS Evolved version 19.4R2",
+    "  Junos OS Evolved version 19.4R2, a Linux distribution developed by Juniper Networks",
+    "processor: Xeon",
+    "  Processor Xeon (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: E5-2628Lv4"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96, 128",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 0, 120, 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

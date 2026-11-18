@@ -1,0 +1,117 @@
+{
+ "cert": 2169,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2169",
+ "module": "IBM LTO Generation 6 Encrypting Tape Drive",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The IBM LTO Generation 6 Encrypting Tape Drive provides AES-GCM encryption of customer data recorded to tape. Both encryption and compression are implemented in the hardware for optimum performance. Four different host interface types of the LTO Generation 6 \"brick\" unit are FIPS certified as a multi-chip, standalone cryptographic module. In customer operation the \"brick\" unit may be embedded in bridge box or in a canister package for operation in a library.",
+ "hardware_versions": "00V7133 EC Level M12977 [1], 00V7137 EC Level M12977 [2], 00V7135 EC Level M12977 [3] and 00V7139 EC Level M12977 [4]",
+ "firmware_versions": "LTO6_DA86.fcp_fh_f.fmrz [1], LTO6_DA86.fcp_hh_f.fmrz [2], LTO6_DA86.sas_fh_f.fmrz [3] and LTO6_DA86.sas_hh_f.fmrz [4]",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2692",
+   "cavp_id": "17642",
+   "cavp_ref": "AES:2692"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2693",
+   "cavp_id": "28023",
+   "cavp_ref": "AES:2693"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2694",
+   "cavp_id": "23263",
+   "cavp_ref": "AES:2694"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 440",
+   "cavp_id": "25935",
+   "cavp_ref": "DRBG:440"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1392",
+   "cavp_id": "11310",
+   "cavp_ref": "RSA:1392"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2261",
+   "cavp_id": "15801",
+   "cavp_ref": "SHS:2261"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "9032 S Rita Road",
+   "Tucson, AZ 85744",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Christine Knibloe"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2169.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/11/2014",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "6/11/2014",
+ "last_updated": "6/11/2014",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2169.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "AES (Cert. #2694, key wrapping); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2169,
+  "vendor": "IBM® Corporation",
+  "module": "IBM LTO Generation 6 Encrypting Tape Drive",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/11/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

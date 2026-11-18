@@ -1,0 +1,47 @@
+{
+ "cavp_id": "34478",
+ "cavp_cert": "A1869",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34478",
+ "implementation": "libkas",
+ "product_id": "14371",
+ "description": "Provides a compliant SP 800-56A Rev3 KAS library",
+ "version": "01.01.000B",
+ "type": "FIRMWARE",
+ "first_validated": "8/11/2021",
+ "vendor": "Pitney Bowes, Inc.",
+ "vendor_website": "http://www.pb.com",
+ "oes": [
+  {
+   "name": "Maxim Integrated MAX32590 DeepCover Secure Microcontroller",
+   "details": [
+    "Processor: Maxim Integrated MAX32590 DeepCover Secure Microcontroller with ARM926EJ-S Processor Core",
+    "  A 32-bit RISC CPU with instruction and data caches and memory management unit (MMU)."
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: responder"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 512",
+    "Shared Secret Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

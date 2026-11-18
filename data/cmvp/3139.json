@@ -1,0 +1,166 @@
+{
+ "cert": 3139,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3139",
+ "module": "AWS Key Management Service HSM",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When installed, initialized and configured as specified in Section 3 of the Security Policy",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Amazon AWS Key Management Service HSM is a multi-chip standalone hardware cryptographic appliance designed to provide dedicated cryptographic functions to meet the security and scalability requirements of the AWS Key Management Service (KMS). The cryptographic boundary is defined as the secure chassis of the appliance. All key materials are maintained exclusively in volatile memory in the appliance and are erased immediately upon detection of physical tampering.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #1209, key agreement; key establishment methodology provides 192 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "hardware_versions": "2.0",
+ "firmware_versions": "1.4.4",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4527",
+   "cavp_id": "27963",
+   "cavp_ref": "AES:4527"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1208",
+   "cavp_id": "27730",
+   "cavp_ref": "Component:1208"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1209",
+   "cavp_id": "13068",
+   "cavp_ref": "Component:1209"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1487",
+   "cavp_id": "1574",
+   "cavp_ref": "DRBG:1487"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1102",
+   "cavp_id": "1085",
+   "cavp_ref": "ECDSA:1102"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2987",
+   "cavp_id": "9456",
+   "cavp_ref": "HMAC:2987"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 122",
+   "cavp_id": "29383",
+   "cavp_ref": "KAS:122"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 133",
+   "cavp_id": "12298",
+   "cavp_ref": "KDF:133"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4527, key establishment methodology provides 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "SP 800-56B, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2464",
+   "cavp_id": "1746",
+   "cavp_ref": "RSA:2464"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3708",
+   "cavp_id": "8644",
+   "cavp_ref": "SHS:3708"
+  }
+ ],
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_info": {
+  "name": "Amazon Web Services, Inc.",
+  "website": "https://aws.amazon.com/kms/",
+  "address": [
+   "410 Terry Ave N",
+   "Ste 1200",
+   "Seattle, WA 98109-5210",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Kelvin Yiu"
+   },
+   {
+    "name": "Ken Beer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3139.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPSConsolidatedCertFeb2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/26/2018",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "10/22/2018",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "2/26/2018",
+ "last_updated": "10/22/2018",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3139.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #1209, key agreement; key establishment methodology provides 192 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3139,
+  "vendor": "Amazon Web Services, Inc.",
+  "module": "AWS Key Management Service HSM",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/26/2018",
+   "10/22/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

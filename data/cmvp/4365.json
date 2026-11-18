@@ -1,0 +1,147 @@
+{
+ "cert": 4365,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4365",
+ "module": "Nutanix Cryptographic Module for OpenSSH Server",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and configured as specified in Section 3 of the Security Policy with the Nutanix Cryptographic Module for OpenSSL validated to FIPS 140-2 under Cert. #4249 operating in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Nutanix Cryptographic Module for OpenSSH Server is a cryptographic software module, designated as a multi-chip standalone embodiment, and used in Nutanix solutions to provide FIPS 140-2 Approved SSH server-side secure communication.",
+ "tested_configurations": [
+  "CentOS 7.9 on Nutanix Acropolis Hypervisor (AHV) 7.1.1 running on a Nutanix NX-3360-G7 with an Intel® Xeon® Gold 6234 with PAA",
+  "CentOS 7.9 on Nutanix Acropolis Hypervisor (AHV) 7.1.1 running on a Nutanix NX-3360-G7 with an Intel® Xeon® Gold 6234 without PAA",
+  "CentOS 7.9 running on a Nutanix NX-3360-G7 with an Intel® Xeon® Gold 6234 with PAA",
+  "CentOS 7.9 running on a Nutanix NX-3360-G7 with an Intel® Xeon® Gold 6234 without PAA (single-user mode)"
+ ],
+ "software_versions": "6.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A1405",
+   "cavp_id": "34014",
+   "cavp_ref": "A:1405"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Cert. #A1403, CVL Cert. #A1405",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A1403; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A1403 and HMAC Cert. #A1403; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1403",
+   "cavp_id": "34012",
+   "cavp_ref": "A:1403"
+  }
+ ],
+ "vendor": "Nutanix, Inc.",
+ "vendor_info": {
+  "name": "Nutanix, Inc.",
+  "website": "http://www.nutanix.com",
+  "address": [
+   "1740 Technology Drive",
+   "Suite 150",
+   "San Jose, CA 95110",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Matt Keller"
+   },
+   {
+    "name": "Ashutosh Pangasa"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4365.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/November%202022_051222_0640_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/14/2022",
+   "type": "Initial",
+   "lab": "Lightship Security, Inc."
+  }
+ ],
+ "first_validated": "11/14/2022",
+ "last_updated": "11/14/2022",
+ "labs": "Lightship Security, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4365.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4365,
+  "vendor": "Nutanix, Inc.",
+  "module": "Nutanix Cryptographic Module for OpenSSH Server",
+  "type": "Software",
+  "validation_dates": [
+   "11/14/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

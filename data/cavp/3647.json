@@ -1,0 +1,41 @@
+{
+ "cavp_id": "3647",
+ "cavp_cert": "AES 640",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=3647",
+ "implementation": "3e Cryptographic Kernel Library (3e-CKL)",
+ "product_id": "5251",
+ "description": "The Cryptographic Kernel Library (CKL) is a software module that implements a set of cryptographic algorithms for use by a software application. The 3eTI CKL is a binary dynamic link library that is compiled from source code written in C, C++ with possible assembly language optimization. This binary library resides in Windows kernel space.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "9/27/2007",
+ "vendor": "3e Technologies International, Inc.",
+ "vendor_website": "http://www.3eti.com",
+ "oes": [
+  {
+   "name": "Windows XP SP2 on Intel Celeron",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-192",
+    "AAD Length: 176-224"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

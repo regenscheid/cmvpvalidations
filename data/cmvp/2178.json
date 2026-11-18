@@ -1,0 +1,130 @@
+{
+ "cert": 2178,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2178",
+ "module": "Model 650 SafeNet Encryptor",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The SafeNet Encryptor provides data privacy and access control for connections between vulnerable public and private SONET/SDH networks or 10G Ethernet networks. It employs federally endorsed AES and Triple-DES algorithms and, with the flexibility to choose the desired interface module, can be deployed in a SONET OC-192 network or 10G Ethernet network.",
+ "hardware_versions": "904-000028-001, 904-000029-001, 904-000036-001, 904-53260-007, 904-53260-207, 943-53270-007, 943-53270-207, 904-53261-007, 904-53361-201, 943-53271-007 and 943-53371-201",
+ "firmware_versions": "4.3",
+ "product_url": "http://www.safenet-inc.com/products/",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2616",
+   "cavp_id": "25455",
+   "cavp_ref": "AES:2616",
+   "note": "2617  2619"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 101",
+   "cavp_id": "12926",
+   "cavp_ref": "Component:101"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 400",
+   "cavp_id": "30278",
+   "cavp_ref": "DRBG:400"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1620",
+   "cavp_id": "13936",
+   "cavp_ref": "HMAC:1620"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1337",
+   "cavp_id": "21648",
+   "cavp_ref": "RSA:1337"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2196",
+   "cavp_id": "5352",
+   "cavp_ref": "SHS:2196"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1574",
+   "cavp_id": "19099",
+   "cavp_ref": "TDES:1574"
+  }
+ ],
+ "vendor": "SafeNet, Inc.",
+ "vendor_info": {
+  "name": "SafeNet, Inc.",
+  "website": "http://www.safenet-inc.com",
+  "address": [
+   "4690 Millennium Drive",
+   "Belcamp, MD 21017",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Security and Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2178.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/18/2014",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "1/10/2017",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "6/18/2014",
+ "last_updated": "1/10/2017",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2178.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less then 112 bits of encryption); Diffie-Hellman (non-compliant); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2178,
+  "vendor": "SafeNet, Inc.",
+  "module": "Model 650 SafeNet Encryptor",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/18/2014",
+   "01/10/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

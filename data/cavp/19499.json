@@ -1,0 +1,88 @@
+{
+ "cavp_id": "19499",
+ "cavp_cert": "AES 4593",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19499",
+ "implementation": "Forcepoint NGFW Cryptographic Library Module (3305)",
+ "product_id": "1773",
+ "description": "Forcepoint NGFW Cryptographic Library is a software module that provides cryptographic services required by the Forcepoint NGFW product.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "7/14/2017",
+ "vendor": "Forcepoint LLC",
+ "vendor_website": "http://www.forcepoint.com",
+ "oes": [
+  {
+   "name": "GNU / Linux (Debian) 9.0 -based distribution on Intel Xeon E5",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 64, 128, 1016, 1024",
+    "AAD Length: 0, 64, 96, 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher, Inverse",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128, 192, 256, 320, 4096"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher, Inverse",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8, 32, 72, 96, 4096"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,52 @@
+{
+ "cavp_id": "17886",
+ "cavp_cert": "AES 4857",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17886",
+ "implementation": "Tintri Cryptographic Module",
+ "product_id": "8628",
+ "description": "The Tintri Cryptographic Module is a repackaged copy of OpenSSL which includes AES-GCM, AES-CBC, HMAC-SHA1, and DRBG. No modifications to the software content have been made, and no modifications to the algorithms implemented by the module have been made.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "11/9/2017",
+ "vendor": "Tintri, Inc.",
+ "vendor_website": "http://www.tintri.com",
+ "oes": [
+  {
+   "name": "Tintri OS 4.5 on Intel Xeon E5-2620 @ 2100MHz with AES-NI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 4000, 8000",
+    "AAD Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

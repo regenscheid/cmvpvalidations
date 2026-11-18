@@ -1,0 +1,41 @@
+{
+ "cavp_id": "4719",
+ "cavp_cert": "AES 3003",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4719",
+ "implementation": "8787 AES Module",
+ "product_id": "6522",
+ "description": "The 8787 AES Module implements AES ECB and CCM using 128, 192, and 256-bit key sizes to provide cryptographic support for Zebra wireless devices.",
+ "version": "88W8787 14.66.35.p51 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "9/26/2014",
+ "vendor": "Zebra Technologies Corporation",
+ "vendor_website": "http://www.zebra.com",
+ "oes": [
+  {
+   "name": "Marvell Feroceon® CPU driven by Freescale i.MX25 (ARMv4)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 8-256",
+    "AAD Length: 120-240"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

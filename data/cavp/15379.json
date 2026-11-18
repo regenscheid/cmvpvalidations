@@ -1,0 +1,52 @@
+{
+ "cavp_id": "15379",
+ "cavp_cert": "RSA 440",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=15379",
+ "implementation": "Meru Networks Security Gateway, Cryptographic Engine",
+ "product_id": "2441",
+ "description": "Meru Networks Security Gateway is a high performance security solution for wireless data/voice traffic. The Security Gateway supports 802.1x(EAP-TLS) and IEEE 802.11i standards providing authentication, data confidentiality and integrity. The Cryptographic Engine implements RSA, AES-CCMP, TDES, HMAC-SHA1 and RNG algorithms.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "11/4/2008",
+ "vendor": "Meru Networks",
+ "vendor_website": "http://www.merunetworks.com",
+ "oes": [
+  {
+   "name": "Linux 2.6.21 on Cavium Networks Octeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048, 4096",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

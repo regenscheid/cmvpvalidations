@@ -1,0 +1,175 @@
+{
+ "cert": 4131,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4131",
+ "module": "Juniper OpenSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Juniper OpenSSL Cryptographic Module is a set of software libraries implementing the Transport Layer Security (TLS) protocol v1.0, v1.1 and v1.2 and Datagram Transport Layer Security (DTLS) protocol v1.0 and v1.2, as well as general purpose cryptographic algorithms.",
+ "tested_configurations": [
+  "Junos OS Evolved version 19.4R2 running on Juniper Networks Packet Transport Router Model PTX10003-80C with Intel Xeon E5-2628Lv4 with PAA",
+  "Junos OS Evolved version 19.4R2 running on Juniper Networks Packet Transport Router Model PTX10003-80C with Intel Xeon E5-2628Lv4 without PAA(single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #A650 with CVL Cert. #A650, key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #A650 with CVL Cert. #A650, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A653",
+   "cavp_id": "33094",
+   "cavp_ref": "A:653"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2017",
+   "cavp_id": "34626",
+   "cavp_ref": "A:2017"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A650 and #A2017; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A650, #A653 and #A2017; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A650 and #A2017 and HMAC Cert. #A650; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #A650 and HMAC Cert. #A650; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2017",
+   "cavp_id": "34626",
+   "cavp_ref": "A:2017"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A650",
+   "cavp_id": "33079",
+   "cavp_ref": "A:650"
+  }
+ ],
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_info": {
+  "name": "Juniper Networks, Inc.",
+  "website": "http://www.juniper.net/us/en",
+  "address": [
+   "1133 Innovation Way",
+   "Sunnyvale, CA 94089",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Seth Ross"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4131.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January%202022_010222_0702_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/13/2022",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "1/13/2022",
+ "last_updated": "1/13/2022",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4131.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4509"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #A650 with CVL Cert. #A650, key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #A650 with CVL Cert. #A650, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4131,
+  "vendor": "Juniper Networks, Inc.",
+  "module": "Juniper OpenSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/13/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,50 @@
+{
+ "cavp_id": "25856",
+ "cavp_cert": "AES 1711",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25856",
+ "implementation": "CryptoServer Se AES",
+ "product_id": "7165",
+ "description": "Safeguard® CryptoServer Se is an encapsulated, tamper-protected hardware security module which provides secure cryptographic services like encryption or decryption, hashing, signing and verification of data, random number generation, on-board secure key generation, key storage, and further key management functions.",
+ "version": "aes1.0.5.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/29/2011",
+ "vendor": "Utimaco Safeware AG",
+ "vendor_website": "http://hsm.utimaco.de",
+ "oes": [
+  {
+   "name": "Texas Instruments TMS320C6416T",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

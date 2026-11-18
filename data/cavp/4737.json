@@ -1,0 +1,52 @@
+{
+ "cavp_id": "4737",
+ "cavp_cert": "RSA 613",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4737",
+ "implementation": "ANSI X9.31 RSA",
+ "product_id": "7494",
+ "description": "ANSI X9.31 - 1998 Digital Signatures using Reversible Public Key Cryptography for the Financial Services Industry (rDSA).",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/16/2010",
+ "vendor": "GDC Technology (USA), LLC",
+ "vendor_website": "http://www.gdc-tech.com",
+ "oes": [
+  {
+   "name": "Dallas DS5250",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "    Modulo: 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

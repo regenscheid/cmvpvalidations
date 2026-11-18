@@ -1,0 +1,74 @@
+{
+ "cavp_id": "33461",
+ "cavp_cert": "A863",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33461",
+ "implementation": "CliniComp Data Acquisition OpenSSL (32 bit) (ECDSA_P224)",
+ "product_id": "13354",
+ "description": "Medical device integration and data acquisition for all categories of devices including waveforms. The following cipher implementation is covered: ECDSA keygen/keyver with P-224.",
+ "version": "cci-das-fips-crypto-1.0",
+ "type": "SOFTWARE",
+ "first_validated": "11/3/2020",
+ "vendor": "CliniComp, Intl.",
+ "vendor_website": "http://www.clinicomp.com",
+ "oes": [
+  {
+   "name": "nDAS on Broadcom arm1176jzf-s BCM2835",
+   "details": [
+    "processor: BCM2835",
+    "  Processor BCM2835 (processor family arm11) from Broadcom",
+    "  family: arm11",
+    "  manufacturer: Broadcom",
+    "  series: arm1176jzf-s",
+    "software: nDAS",
+    "  Raspberry Pi Zero W Rev 1.1, BCM2835 SOC",
+    "  swid: none"
+   ]
+  },
+  {
+   "name": "nDAS on NXP cortexa7t2hf i.MX6UL",
+   "details": [
+    "processor: i.MX6UL",
+    "  Processor i.MX6UL (processor family armv7l) from NXP",
+    "  family: armv7l",
+    "  manufacturer: NXP",
+    "  series: cortexa7t2hf",
+    "software: nDAS",
+    "  Digi International ConnectCore 6UL SBC",
+    "  swid: none"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-224",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-224"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,196 @@
+{
+ "cert": 1944,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1944",
+ "module": "Apple iOS CoreCrypto Kernel Module, v3.0",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Apple iOS CoreCrypto Kernel Module is a software cryptographic module running on a multi-chip standalone mobile device and provides services intended to protect data in transit and at rest.",
+ "tested_configurations": [
+  "iOS 6.0 running on an iPad (single-user mode)",
+  "iOS 6.0 running on an iPhone4",
+  "iOS 6.0 running on an iPhone4S"
+ ],
+ "software_versions": "3.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2070",
+   "cavp_id": "30171",
+   "cavp_ref": "AES:2070"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2071",
+   "cavp_id": "16226",
+   "cavp_ref": "AES:2071"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2099",
+   "cavp_id": "22714",
+   "cavp_ref": "AES:2099"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2101",
+   "cavp_id": "8937",
+   "cavp_ref": "AES:2101"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 222",
+   "cavp_id": "25114",
+   "cavp_ref": "DRBG:222"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 224",
+   "cavp_id": "6380",
+   "cavp_ref": "DRBG:224"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 308",
+   "cavp_id": "9106",
+   "cavp_ref": "ECDSA:308"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 310",
+   "cavp_id": "18939",
+   "cavp_ref": "ECDSA:310"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1255",
+   "cavp_id": "10878",
+   "cavp_ref": "HMAC:1255"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1256",
+   "cavp_id": "19385",
+   "cavp_ref": "HMAC:1256"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1274",
+   "cavp_id": "25155",
+   "cavp_ref": "HMAC:1274"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1276",
+   "cavp_id": "16026",
+   "cavp_ref": "HMAC:1276"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1803",
+   "cavp_id": "26468",
+   "cavp_ref": "SHS:1803"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1804",
+   "cavp_id": "10243",
+   "cavp_ref": "SHS:1804"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1823",
+   "cavp_id": "8476",
+   "cavp_ref": "SHS:1823"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1825",
+   "cavp_id": "26687",
+   "cavp_ref": "SHS:1825"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1335",
+   "cavp_id": "19721",
+   "cavp_ref": "TDES:1335"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1337",
+   "cavp_id": "7492",
+   "cavp_ref": "TDES:1337"
+  }
+ ],
+ "vendor": "Apple Inc.",
+ "vendor_info": {
+  "name": "Apple Inc.",
+  "website": "http://www.apple.com",
+  "address": [
+   "1 Infinite Loop",
+   "Cupertino, CA 95041",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Shawn Geddis"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1944.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0029.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/3/2013",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "5/3/2013",
+ "last_updated": "5/3/2013",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1944.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "ECDSA (Curves P-192, P-224 and P-521; non-compliant); DES; MD5; CAST5; Blowfish; BitGen1; BitGen2; BitGen3; RC4; OMAC (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1944,
+  "vendor": "Apple Inc.",
+  "module": "Apple iOS CoreCrypto Kernel Module, v3.0",
+  "type": "Software",
+  "validation_dates": [
+   "05/03/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

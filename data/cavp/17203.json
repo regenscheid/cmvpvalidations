@@ -1,0 +1,41 @@
+{
+ "cavp_id": "17203",
+ "cavp_cert": "AES 4712",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=17203",
+ "implementation": "Yubico HW/FW CMAC",
+ "product_id": "3704",
+ "description": "This module contains two parts: 1) AES-CMAC core HW/FW implementation; 2) Common symmetric- and hash routines, used for initialization and SCA protection",
+ "version": "SLE78CLUFX3000PH e58230b8 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "8/11/2017",
+ "vendor": "Yubico",
+ "vendor_website": "http://www.yubico.com",
+ "oes": [
+  {
+   "name": "Infineon SLE78V2",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 0-8192"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

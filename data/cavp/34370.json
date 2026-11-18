@@ -1,0 +1,42 @@
+{
+ "cavp_id": "34370",
+ "cavp_cert": "A1761",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34370",
+ "implementation": "KMF/Wave/Traffic CryptR",
+ "product_id": "14231",
+ "description": "KAS ECC implementation for the PIKE2 cryptographic processor which is used in security modules embedded in Motorola Solutions security products.",
+ "version": "R03.07.02_KAS_ECC",
+ "type": "FIRMWARE",
+ "first_validated": "7/28/2021",
+ "vendor": "Motorola Solutions Inc",
+ "vendor_website": "https://www.motorolasolutions.com/",
+ "oes": [
+  {
+   "name": "Motorola Solutions PIKE2 AT58U97",
+   "details": [
+    "processor: Motorola Solutions PIKE2 AT58U97"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-384",
+    "Function: Key Pair Generation, Partial Validation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-384",
+    "        Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Length: 384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

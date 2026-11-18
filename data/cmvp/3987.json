@@ -1,0 +1,127 @@
+{
+ "cert": 3987,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3987",
+ "module": "CipherTrust Transparent Encryption Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Vormetric Transparent Encryption Cryptographic Module is a loadable kernel module. This module comprises a layer that enforces an access and encryption policy upon selected data on end-user systems. The policy specifies a key to be used when writing data to disk and while reading data from disk. This module contains the Vormetric Transparent Encryption Cryptographic Library, which provides all cryptographic services.",
+ "tested_configurations": [
+  "AIX 7.1 TL 7100-05-04-1914 running on an IBM 8286-42A with IBM EPXH Power8 with PAA",
+  "Red Hat Enterprise Linux 7.7 on VMware ESXi 6.5.0 running on a Dell Proliant DL380 with an Intel® Xeon® Gold 5118 Skylake with PAA",
+  "Windows 2016 Server on VMware ESXi 6.5.0 running on a Dell Proliant DL380 with an Intel® Xeon® Gold 5118 Skylake with PAA"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "hardware_versions": "5118 and EPXH",
+ "software_versions": "2.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1287",
+   "cavp_id": "33896",
+   "cavp_ref": "A:1287"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1464",
+   "cavp_id": "31932",
+   "cavp_ref": "C:1464"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1287",
+   "cavp_id": "33896",
+   "cavp_ref": "A:1287"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1464",
+   "cavp_id": "31932",
+   "cavp_ref": "C:1464"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "A1287",
+   "cavp_id": "33896",
+   "cavp_ref": "A:1287",
+   "note": "vendor affirmed"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1287",
+   "cavp_id": "33896",
+   "cavp_ref": "A:1287"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1464",
+   "cavp_id": "31932",
+   "cavp_ref": "C:1464"
+  }
+ ],
+ "vendor": "Thales",
+ "vendor_info": {
+  "name": "Thales",
+  "website": "http://www.thalesgroup.com",
+  "address": [
+   "2125 Zanker Road",
+   "San Jose, CA 95131",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Security & Certifications Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3987.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202021_020821_0740_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/19/2021",
+   "type": "Initial",
+   "lab": "CYGNACOM SOLUTIONS INC"
+  }
+ ],
+ "first_validated": "7/19/2021",
+ "last_updated": "7/19/2021",
+ "labs": "CYGNACOM SOLUTIONS INC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3987.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3987,
+  "vendor": "Thales",
+  "module": "CipherTrust Transparent Encryption Cryptographic Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "07/19/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

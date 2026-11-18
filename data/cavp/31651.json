@@ -1,0 +1,51 @@
+{
+ "cavp_id": "31651",
+ "cavp_cert": "C1245",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31651",
+ "implementation": "CryptoServer Se2 AES_GCM",
+ "product_id": "11607",
+ "description": "AES_GCM component supports GMAC and GCM with different key sizes and data lengths to allow flexibility and efficiency.",
+ "version": "AES_GCM_1.4.2.0",
+ "type": "FIRMWARE",
+ "first_validated": "10/11/2019",
+ "vendor": "Utimaco IS GmbH",
+ "vendor_website": "https://hsm.utimaco.com/",
+ "oes": [
+  {
+   "name": "Texas Instruments Digital Signal Processor TMS320C6416T",
+   "details": [
+    "processor: Texas Instruments Digital Signal Processor TMS320C6416T"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 8, 1016, 1024",
+    "AAD Length: 0, 8, 1016, 1024"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 8, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

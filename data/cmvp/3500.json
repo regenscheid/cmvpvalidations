@@ -1,0 +1,162 @@
+{
+ "cert": 3500,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3500",
+ "module": "totemo Cryptographic Module (TCM)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The totemo Cryptographic Module (TCM) supplies the cryptographic services required by the totemo Security Platform (TSP) and the totemo products which provides secure email, file transfer, and mobile messaging solutions. These solutions secure all types of communication without any infrastructure prerequisites.",
+ "tested_configurations": [
+  "totemo Appliance OS 2.3 with JRE 8.0 running on a Pyramid M8110 with an Intel Xeon E3-1225v3 (single-user mode)"
+ ],
+ "allowed_algorithms": "AES (Cert. #5901, key unwrapping; key establishment methodology provides between 112 and 256 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); ECMQV (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (CVL Cert. #2125, key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength); Triple-DES (Cert. #2870, key unwrapping)",
+ "software_versions": "3.0",
+ "product_url": "https://www.totemo.com/en/solutions",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5901",
+   "cavp_id": "8017",
+   "cavp_ref": "AES:5901"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2125",
+   "cavp_id": "16798",
+   "cavp_ref": "Component:2125"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2463",
+   "cavp_id": "1265",
+   "cavp_ref": "DRBG:2463"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1496",
+   "cavp_id": "19467",
+   "cavp_ref": "DSA:1496"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1572",
+   "cavp_id": "7213",
+   "cavp_ref": "ECDSA:1572"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3881",
+   "cavp_id": "8817",
+   "cavp_ref": "HMAC:3881"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 202",
+   "cavp_id": "4901",
+   "cavp_ref": "KAS:202"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #5901; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3089",
+   "cavp_id": "28292",
+   "cavp_ref": "RSA:3089"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 61",
+   "cavp_id": "1579",
+   "cavp_ref": "SHA-3:61"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4657",
+   "cavp_id": "24610",
+   "cavp_ref": "SHS:4657"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2870",
+   "cavp_id": "12804",
+   "cavp_ref": "TDES:2870"
+  }
+ ],
+ "vendor": "Totemo AG",
+ "vendor_info": {
+  "name": "Totemo AG",
+  "website": "http://www.totemo.com",
+  "address": [
+   "Freihofstrasse 22",
+   "Küsnacht CH-8700",
+   "Switzerland"
+  ],
+  "contacts": [
+   {
+    "name": "Marcel Mock"
+   },
+   {
+    "name": "Michael Schaefer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3500.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JulyConsolidated.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/31/2019",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "7/31/2019",
+ "last_updated": "7/31/2019",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3500.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "AES (Cert. #5901, key unwrapping; key establishment methodology provides between 112 and 256 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); ECMQV (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (CVL Cert. #2125, key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength); Triple-DES (Cert. #2870, key unwrapping)",
+ "sparse": false,
+ "list": {
+  "cert": 3500,
+  "vendor": "Totemo AG",
+  "module": "totemo Cryptographic Module (TCM)",
+  "type": "Software",
+  "validation_dates": [
+   "07/31/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

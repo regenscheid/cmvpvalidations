@@ -1,0 +1,145 @@
+{
+ "cert": 3608,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3608",
+ "module": "Wickr FIPS Object Module for OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2398. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Wickr FIPS Object Module for OpenSSL is a general purpose cryptographic module compiled from the source code for the OpenSSL FIPS Object Module 2.0.16.",
+ "tested_configurations": [
+  "Android 9 running on a Samsung Galaxy S10 with a Qualcomm Snapdragon 855 (Kryo) with PAA",
+  "Android 9 running on a Samsung Galaxy S10 with a Qualcomm Snapdragon 855 (Kryo) without PAA",
+  "Apple iOS 13.1 running on an Apple iPhone X with an Apple A11 Bionic (Monsoon, Mistral) with PAA",
+  "Apple iOS 13.1 running on an Apple iPhone X with an Apple A11 Bionic (Monsoon, Mistral) without PAA",
+  "Apple macOS Mojave running on an Apple Macbook Pro A1502 with an Intel Core i5 with PAA",
+  "Apple macOS Mojave running on an Apple Macbook Pro A1502 with an Intel Core i5 without PAA",
+  "Microsoft Windows 10 April 2018 Update running on an IBM ThinkPad with an Intel Core i7 with PAA",
+  "Microsoft Windows 10 April 2018 Update running on an IBM ThinkPad with an Intel Core i7 without PAA (single-user mode)",
+  "Ubuntu 18.04 running on an IBM ThinkPad with an Intel Core i7 with PAA",
+  "Ubuntu 18.04 running on an IBM ThinkPad with an Intel Core i7 without PAA"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #C1359, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.16",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1359",
+   "cavp_id": "31789",
+   "cavp_ref": "C:1359"
+  }
+ ],
+ "vendor": "Wickr Inc.",
+ "vendor_info": {
+  "name": "Wickr Inc.",
+  "website": "http://wickr.com",
+  "address": [
+   "1459 18th St.",
+   "#313",
+   "San Francisco, CA 94107",
+   "USA"
+  ],
+  "contacts": []
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3608.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/Jan2020ConsolidatedCert.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/24/2020",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "1/24/2020",
+ "last_updated": "1/24/2020",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3608.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #C1359, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3608,
+  "vendor": "Wickr Inc.",
+  "module": "Wickr FIPS Object Module for OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "01/24/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

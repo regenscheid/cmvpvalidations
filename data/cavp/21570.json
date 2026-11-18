@@ -1,0 +1,85 @@
+{
+ "cavp_id": "21570",
+ "cavp_cert": "Component 1873",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21570",
+ "implementation": "SDKMS Crypto Library",
+ "product_id": "9498",
+ "description": "Fortanix Self-Defending Key Management Service (SDKMS) is the world's first cloud service secured with Intel® SGX. With SDKMS, you can securely generate, store and use cryptographic keys & certificates, as well as secrets, such as passwords, API keys or tokens. It provides access control to users & applications to enforce authorized access to keys.",
+ "version": "1.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/10/2018",
+ "vendor": "Fortanix, Inc.",
+ "vendor_website": "http://www.fortanix.com",
+ "oes": [
+  {
+   "name": "Intel® Xeon E3-1230v5 4-Core, 3.40GHz with AES-NI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Partial Public Key Validation, Public Key Regeneration",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EB:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-224",
+    "        EC:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521",
+    "  One Pass DH:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EB:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-224",
+    "        EC:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521",
+    "  Static Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EB:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-224",
+    "        EC:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

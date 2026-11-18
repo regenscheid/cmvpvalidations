@@ -1,0 +1,52 @@
+{
+ "cavp_id": "13684",
+ "cavp_cert": "AES 3430",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=13684",
+ "implementation": "IAS Router FIPS",
+ "product_id": "879",
+ "description": "IAS Router FIPS is a comprehensive suite of FIPS Approved algorithms. All key sizes and modes have been implemented to allow flexibility and efficiency.",
+ "version": "7a55571 – 2015‐05‐07 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/11/2015",
+ "vendor": "Information Assurance Specialists, Inc.",
+ "vendor_website": "http://www.iaspecialists.com",
+ "oes": [
+  {
+   "name": "Intel Bay Trail with AES-NI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 96",
+    "IV Length: 96",
+    "Payload Length: 16, 128, 256, 1496",
+    "AAD Length: 0, 64, 96, 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

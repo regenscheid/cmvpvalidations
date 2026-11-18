@@ -1,0 +1,83 @@
+{
+ "cavp_id": "30473",
+ "cavp_cert": "C78",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30473",
+ "implementation": "ClevX DataLock Cryptographic Library",
+ "product_id": "10439",
+ "description": "ClevX DataLock Cryptographic Library",
+ "version": "ClevX-Datalock-v2.0",
+ "type": "FIRMWARE",
+ "first_validated": "12/17/2018",
+ "vendor": "ClevX, LLC",
+ "vendor_website": "http://clevx.com",
+ "oes": [
+  {
+   "name": "STM32L051K",
+   "details": [
+    "processor: STM32L051K"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 64, 128, 480, 512"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 512",
+    "    Nonce: 256",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 512",
+    "C78 (AES)"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key size = block size",
+    "C78 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

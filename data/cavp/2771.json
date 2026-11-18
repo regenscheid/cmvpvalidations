@@ -1,0 +1,46 @@
+{
+ "cavp_id": "2771",
+ "cavp_cert": "AES 2981",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2771",
+ "implementation": "Brocade FastIron IP product Crypto Library",
+ "product_id": "6494",
+ "description": "This Brocade cryptographic library is used in Brocade FastIron based switches to implement the cryptographic related modules.",
+ "version": "BRCD-IP-CRYPTO-VER-3.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/12/2014",
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_website": "http://www.brocade.com",
+ "oes": [
+  {
+   "name": "Dual-core ARM Cortex A9 1Ghz",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

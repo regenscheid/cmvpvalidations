@@ -1,0 +1,61 @@
+{
+ "cavp_id": "24",
+ "cavp_cert": "AES 1983",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24",
+ "implementation": "PrivateServer",
+ "product_id": "145",
+ "description": "PrivateServer performs sensitive cryptographic operations internally in a tamper-proof, high performance device. PrivateServer is configured as a network server or as a cryptographic backend to a host",
+ "version": "4.7 4.8.1 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "4/19/2012",
+ "vendor": "ARX (Algorithmic Research)",
+ "vendor_website": "http://www.arx.com",
+ "oes": [
+  {
+   "name": "Intel® Pentium Dual-Core",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 16-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

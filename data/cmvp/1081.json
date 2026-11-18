@@ -1,0 +1,129 @@
+{
+ "cert": 1081,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1081",
+ "module": "IBM Java JCE FIPS 140-2 Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The IBM Java JCE (Java Cryptographic Extension) FIPS provider (IBMJCEFIPS) for Multi-platforms is a scalable, multipurpose cryptographic module that supports many FIPS approved cryptographic operations. This gives Java applications access to the FIPS algorithms via the standard JCE framework that is part of all JVM's at the 1.6 level and higher.",
+ "tested_configurations": [
+  "Windows XP Professional SP2 using IBM JVM 1.6 (single-user mode)"
+ ],
+ "software_versions": "1.3.1",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 805",
+   "cavp_id": "9756",
+   "cavp_ref": "AES:805"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 297",
+   "cavp_id": "28966",
+   "cavp_ref": "DSA:297"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 445",
+   "cavp_id": "14033",
+   "cavp_ref": "HMAC:445"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 463",
+   "cavp_id": "23099",
+   "cavp_ref": "RNG:463"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 387",
+   "cavp_id": "19983",
+   "cavp_ref": "RSA:387"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 803",
+   "cavp_id": "23386",
+   "cavp_ref": "SHS:803"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 687",
+   "cavp_id": "22053",
+   "cavp_ref": "TDES:687"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "11400 Burnet Road",
+   "Austin, TX 78758",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Tom Benjamin"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1081.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1081.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/22/2009",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "3/13/2009",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "1/22/2009",
+ "last_updated": "3/13/2009",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1081.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits and greater than 256 bits of encryption strength); MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1081,
+  "vendor": "IBM® Corporation",
+  "module": "IBM Java JCE FIPS 140-2 Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "01/22/2009",
+   "03/13/2009"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

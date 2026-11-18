@@ -1,0 +1,54 @@
+{
+ "cavp_id": "10421",
+ "cavp_cert": "Component 1566",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10421",
+ "implementation": "BRCD-IP-CRYPTO-VER-4.0",
+ "product_id": "8841",
+ "description": "Firmware algorithm for the Brocade FastIron Series",
+ "version": "BRCD-IP-CRYPTO-VER-4.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/8/2017",
+ "vendor": "Ruckus Wireless, Inc.",
+ "vendor_website": "http://www.ruckuswireless.com",
+ "oes": [
+  {
+   "name": "ARM Cortex A9",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256, SHA2-384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

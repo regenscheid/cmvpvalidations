@@ -1,0 +1,112 @@
+{
+ "cert": 4799,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4799",
+ "module": "Look-aside Cryptography and Compression Engine (LCE)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module [Google Integrated Management Complex (IMC) and B227 True Random Number Generator (TRNG) Firmware-Hybrid Cryptographic Module] validated to FIPS 140-2 under Cert. #4400 operating in FIPS mode.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "The Look-aside Cryptography and Compression Engine (LCE) module is comprised of a sub-chip cryptographic subsystem in the Google IN762 SoC. The module provides lookaside cryptography services including bulk encryption, cryptographic hashing, Integrity Checksum Value (ICV) verification, and compression services. The module also supports operation chaining including cryptographic and pipeline compressing/decompressing and verification as well as standalone or combined DMA data (payload) transfers between nodes.",
+ "tested_configurations": [
+  "IN762 SoC C1"
+ ],
+ "hardware_versions": "3.0",
+ "firmware_versions": "FW 6172",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A683",
+   "cavp_id": "33176",
+   "cavp_ref": "A:683"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2469",
+   "cavp_id": "35079",
+   "cavp_ref": "A:2469"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A683",
+   "cavp_id": "33176",
+   "cavp_ref": "A:683"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A683",
+   "cavp_id": "33176",
+   "cavp_ref": "A:683"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A683",
+   "cavp_id": "33176",
+   "cavp_ref": "A:683"
+  }
+ ],
+ "vendor": "Google, LLC",
+ "vendor_info": {
+  "name": "Google, LLC",
+  "website": "http://www.google.com",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Crypto Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4799.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202024_011024_0217.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/13/2024",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "9/13/2024",
+ "last_updated": "9/13/2024",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4799.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4799,
+  "vendor": "Google, LLC",
+  "module": "Look-aside Cryptography and Compression Engine (LCE)",
+  "type": "Hardware",
+  "validation_dates": [
+   "09/13/2024"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

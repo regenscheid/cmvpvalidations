@@ -1,0 +1,46 @@
+{
+ "cavp_id": "12853",
+ "cavp_cert": "AES 2937",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12853",
+ "implementation": "Brocade FIPS Crypto Library",
+ "product_id": "6431",
+ "description": "Brocade cryptographic library is used in Brocade NOS based switches to implement the cryptographic related modules.",
+ "version": "NOS 5.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/28/2014",
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_website": "http://www.brocade.com",
+ "oes": [
+  {
+   "name": "E 500 mc",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

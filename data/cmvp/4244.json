@@ -1,0 +1,147 @@
+{
+ "cert": 4244,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4244",
+ "module": "Nexthink Cryptographic library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Nexthink Cryptographic library is a general purpose cryptographic module incorporated into Nexthink applications to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+ "tested_configurations": [
+  "CentOS 7 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 with PAA",
+  "CentOS 7 running on HPE ProLiant DL60 Gen9 with Intel Xeon E5-2609 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1318",
+   "cavp_id": "31724",
+   "cavp_ref": "C:1318"
+  }
+ ],
+ "vendor": "Nexthink, Inc.",
+ "vendor_info": {
+  "name": "Nexthink, Inc.",
+  "website": "http://www.nexthink.com",
+  "address": [
+   "501 Boylston Street, Suite 4102",
+   "Boston, MA 02116",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Sergi Cuny"
+   },
+   {
+    "name": "Divya Mishra"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4244.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/June%202022_010722_0704_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/7/2022",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "6/7/2022",
+ "last_updated": "6/7/2022",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4244.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4244,
+  "vendor": "Nexthink, Inc.",
+  "module": "Nexthink Cryptographic library",
+  "type": "Software",
+  "validation_dates": [
+   "06/07/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

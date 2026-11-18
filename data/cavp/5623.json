@@ -1,0 +1,48 @@
+{
+ "cavp_id": "5623",
+ "cavp_cert": "ECDSA 1471",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5623",
+ "implementation": "Primus HSM Cryptographic Library",
+ "product_id": "9632",
+ "description": "Cryptographic library in an embedded environment. Uses hardware accelerator where it fits. Seeds DRBG from TRNG.",
+ "version": "XC7K160T 2.5.3 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "6/15/2018",
+ "vendor": "Securosys SA",
+ "vendor_website": "http://www.securosys.ch",
+ "oes": [
+  {
+   "name": "Marvell Armada XP PJ4Bv7",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

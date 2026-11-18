@@ -1,0 +1,68 @@
+{
+ "cavp_id": "27966",
+ "cavp_cert": "DRBG 1469",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27966",
+ "implementation": "KC API using CPACF for AES and TDES core, and SHA",
+ "product_id": "783",
+ "description": "This test covers the implementations of gcm_base(ctr(aes-s390),ghash-generic), ccm_base(ctr(aes-s390),aes-s390), cbc(aes-s390), ecb(aes-s390), xts(aes-s390), kw(aes-s390), cmac(aes-s390),cbc(des3_ede-s390), ctr(des3_ede-s390), ecb(des3_ede-s390), cmac(des3_ede-s390), sha1-s390, sha224-s390, sha256-s390, sha384-s390, and sha512-s390.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,141 @@
+{
+ "cert": 3568,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3568",
+ "module": "Hillrom Cryptographic Security Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When built, installed, protected and initialized as assumed by the Crypto Officer role and as specified in the provided Security Policy and operated in FIPS mode. Appendix A of the provided Security Policy specifies the actual distribution tar file containing the source code of this module. There shall be no additions, deletions or alterations to the tar file contents as used during module build. The distribution tar file shall be verified as specified in Appendix A of the provided Security Policy. Installation and protection shall be completed as specified in Appendix A of the provided Security Policy. Initialization shall be invoked as per Section 4 of the provided Security Policy. Any deviation from specified verification, protection, installation and initialization procedures will result in a non FIPS 140-2 compliant module. This validation entry is a non-security relevant modification to Cert. #2473",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Hillrom Cryptographic Security Module is an implementation of the OpenSSL FIPS Object Module 2.0. It is designed for ease of use with the popular OpenSSL cryptographic library and toolkit and is available for use without charge for a wide variety of platforms. The basic validation can also be extended quickly and affordably to accommodate new platforms and many types of modifications.",
+ "tested_configurations": [
+  "Yocto Linux 3.10 running on Freescale i.MX6 (ARMv7) with PAA (gcc Compiler Version 4.8.1)",
+  "Yocto Linux 3.10 running on Freescale i.MX6 (ARMv7) without PAA (gcc Compiler Version 4.8.1) (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #472, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "2.0.10",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3264",
+   "cavp_id": "22452",
+   "cavp_ref": "AES:3264"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 472",
+   "cavp_id": "1617",
+   "cavp_ref": "Component:472"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 723",
+   "cavp_id": "20042",
+   "cavp_ref": "DRBG:723"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 933",
+   "cavp_id": "7706",
+   "cavp_ref": "DSA:933"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 620",
+   "cavp_id": "5662",
+   "cavp_ref": "ECDSA:620"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2063",
+   "cavp_id": "28962",
+   "cavp_ref": "HMAC:2063"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1664",
+   "cavp_id": "21593",
+   "cavp_ref": "RSA:1664"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2702",
+   "cavp_id": "8189",
+   "cavp_ref": "SHS:2702"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1853",
+   "cavp_id": "419",
+   "cavp_ref": "TDES:1853"
+  }
+ ],
+ "vendor": "Hill-Rom Holdings, Inc.",
+ "vendor_info": {
+  "name": "Hill-Rom Holdings, Inc.",
+  "website": "http://www.hillrom.com",
+  "address": [
+   "130 E. Randolph St.",
+   "Suite 1000",
+   "Chicago, IL 60601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Chief Technology Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3568.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2019.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/21/2019",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "11/21/2019",
+ "last_updated": "11/21/2019",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3568.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #472, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3568,
+  "vendor": "Hill-Rom Holdings, Inc.",
+  "module": "Hillrom Cryptographic Security Module",
+  "type": "Software",
+  "validation_dates": [
+   "11/21/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

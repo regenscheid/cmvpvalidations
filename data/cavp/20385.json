@@ -1,0 +1,64 @@
+{
+ "cavp_id": "20385",
+ "cavp_cert": "AES 715",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20385",
+ "implementation": "BitLocker(TM) Drive Encryption",
+ "product_id": "7141",
+ "description": "BitLocker(TM) is a security feature in Windows Vista® that provides full volume encryption to address lost or stolen computer scenarios.",
+ "version": "6.0.6000.16386",
+ "type": "SOFTWARE",
+ "first_validated": "2/21/2008",
+ "vendor": "Microsoft Corporation",
+ "vendor_website": "http://www.microsoft.com",
+ "oes": [
+  {
+   "name": "Windows Vista Ultimate (x64) on Intel Pentium D",
+   "details": []
+  },
+  {
+   "name": "Windows Vista Ultimate (x86) on Intel Pentium D",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 32, 48, 64, 112, 128",
+    "IV Length: 56, 64, 96, 104",
+    "Payload Length: 32-256",
+    "AAD Length: 0-64"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Tag Length: 32, 48, 64, 112, 128",
+    "IV Length: 56, 64, 96, 104",
+    "Payload Length: 32-256",
+    "AAD Length: 0-64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

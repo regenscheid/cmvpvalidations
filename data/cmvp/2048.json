@@ -1,0 +1,146 @@
+{
+ "cert": 2048,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2048",
+ "module": "Allegro Cryptographic Engine",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Allegro’s suite of Embedded Device Security toolkits makes embedding standards-based security protocols into resource sensitive embedded systems and consumer electronics fast, easy and reliable. The Allegro Cryptographic Engine (ACE) is a cryptographic library module specifically engineered for embedded devices. The module provides embedded systems developers with an easily understood software interface to enable bulk encryption and decryption, message digests, digital signature creation and validation and key generation and exchange. For full details see www.allegrosoft.com/ace.",
+ "tested_configurations": [
+  "Microsoft Windows 7 Ultimate running on a Dell Optiplex 755"
+ ],
+ "software_versions": "1.1.8",
+ "product_url": "http://www.allegrosoft.com/ace",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2671",
+   "cavp_id": "20014",
+   "cavp_ref": "AES:2671"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 148",
+   "cavp_id": "6050",
+   "cavp_ref": "Component:148"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 430",
+   "cavp_id": "23796",
+   "cavp_ref": "DRBG:430"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 810",
+   "cavp_id": "20666",
+   "cavp_ref": "DSA:810"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 465",
+   "cavp_id": "15478",
+   "cavp_ref": "ECDSA:465"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1661",
+   "cavp_id": "16243",
+   "cavp_ref": "HMAC:1661"
+  },
+  {
+   "algorithm": "PBKDF2",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1374",
+   "cavp_id": "13176",
+   "cavp_ref": "RSA:1374"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2243",
+   "cavp_id": "122",
+   "cavp_ref": "SHS:2243"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1602",
+   "cavp_id": "337",
+   "cavp_ref": "TDES:1602"
+  }
+ ],
+ "vendor": "Allegro Software Development Corporation",
+ "vendor_info": {
+  "name": "Allegro Software Development Corporation",
+  "website": "http://www.allegrosoft.com",
+  "address": [
+   "1740 Massachusetts Avenue",
+   "Boxborough, MA 01719",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Larry LaCasse"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2048.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0035.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/27/2013",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "2/20/2014",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "11/27/2013",
+ "last_updated": "2/20/2014",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2048.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list in accordance with SP800-131A Revision 1 Transition (AES/TDES key wrapping)",
+  "Other Algorithms": "MD5; AES (Cert. #2671, key wrapping; key establishment methodology provides between 128 and 256 bits of encryption strength); Diffie-Hellman (CVL Cert. #148, key agreement; key establishment methodology provides between 112 and 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #148, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength); NDRNG"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2048,
+  "vendor": "Allegro Software Development Corporation",
+  "module": "Allegro Cryptographic Engine",
+  "type": "Software",
+  "validation_dates": [
+   "11/27/2013",
+   "02/20/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,66 @@
+{
+ "cavp_id": "27573",
+ "cavp_cert": "DRBG 1345",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27573",
+ "implementation": "Common Criteria Evaluation (CCE) Certification for ALE AoS OmniSwitch products (OS6860)",
+ "product_id": "5990",
+ "description": "This questionnaire lists the cryptographic algorithms used by the ALE AOS switch when operating in the Common Criteria mode.",
+ "version": "AOS 8.3.1.R01",
+ "type": "SOFTWARE",
+ "first_validated": "12/23/2016",
+ "vendor": "ALE (Alcatel Lucent Enterprise)",
+ "vendor_website": "http://www.al-enterprise.com",
+ "oes": [
+  {
+   "name": "AOS 8.3.1.R01 on Cortex ARM 9",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-224",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-224",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "  Capabilities:",
+    "    Mode: SHA2-384",
+    "  Capabilities:",
+    "    Mode: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

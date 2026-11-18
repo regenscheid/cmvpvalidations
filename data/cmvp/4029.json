@@ -1,0 +1,147 @@
+{
+ "cert": 4029,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4029",
+ "module": "Onclave FIPS Object Module for OpenSSL",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Onclave FIPS Object Module for OpenSSL is a general-purpose cryptographic module integrated in Onclave's and third-party products to provide FIPS 140-2 validated cryptography for the protection of sensitive information.",
+ "tested_configurations": [
+  "Debian 9 running on Dell PowerEdge R440 with Intel® Xeon® Silver 4214R with PAA",
+  "Debian 9 running on Dell PowerEdge R440 with Intel® Xeon® Silver 4214R without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "1.0",
+ "product_url": "N/A",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A843",
+   "cavp_id": "33439",
+   "cavp_ref": "A:843"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A843",
+   "cavp_id": "33439",
+   "cavp_ref": "A:843"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A843",
+   "cavp_id": "33439",
+   "cavp_ref": "A:843"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A843",
+   "cavp_id": "33439",
+   "cavp_ref": "A:843"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A843",
+   "cavp_id": "33439",
+   "cavp_ref": "A:843"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A843",
+   "cavp_id": "33439",
+   "cavp_ref": "A:843"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A843",
+   "cavp_id": "33439",
+   "cavp_ref": "A:843"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A843",
+   "cavp_id": "33439",
+   "cavp_ref": "A:843"
+  }
+ ],
+ "vendor": "Onclave Networks, Inc.",
+ "vendor_info": {
+  "name": "Onclave Networks, Inc.",
+  "website": "https://onclave.net",
+  "address": [
+   "7950 Jones Branch Dr., Suite 805N",
+   "McLean, VA 22102",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Marianne M. Meins"
+   },
+   {
+    "name": "James Taylor"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4029.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202021_011021_0714_Signed2.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/13/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "9/13/2021",
+ "last_updated": "9/13/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4029.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4029,
+  "vendor": "Onclave Networks, Inc.",
+  "module": "Onclave FIPS Object Module for OpenSSL",
+  "type": "Software",
+  "validation_dates": [
+   "09/13/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

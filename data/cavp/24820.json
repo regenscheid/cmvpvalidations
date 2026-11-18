@@ -1,0 +1,39 @@
+{
+ "cavp_id": "24820",
+ "cavp_cert": "TDES 2242",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24820",
+ "implementation": "KeyWrap",
+ "product_id": "5689",
+ "description": "This module is used for encrypting and decrypting exported/imported CSP objects. Implemented using openssl and Octeon.",
+ "version": "CN61XX 1.0.1 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "9/16/2016",
+ "vendor": "Cavium, Inc.",
+ "vendor_website": "http://www.cavium.com",
+ "oes": [
+  {
+   "name": "CN61XX",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Payload Length: 64, 96, 160, 256, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

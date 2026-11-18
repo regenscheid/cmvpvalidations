@@ -1,0 +1,152 @@
+{
+ "cert": 2584,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2584",
+ "module": "Advantech B+B SmartWorx Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "None",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Advantech B+B SmartWorx Cryptographic Module is a software module that provides cryptographic services to Advantech B+B SmartWorx products. The module provides a number of FIPS 140 validated cryptographic algorithms for services such as IPsec. The module provides applications with a library interface that enables them to access the various cryptographic algorithm functions supplied by the module.",
+ "tested_configurations": [
+  "Conel Linux 5 running on a Spectre V3 LTE (single-user mode)"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3515",
+   "cavp_id": "20181",
+   "cavp_ref": "AES:3515"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3516",
+   "cavp_id": "2190",
+   "cavp_ref": "AES:3516"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 587",
+   "cavp_id": "5813",
+   "cavp_ref": "Component:587"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 877",
+   "cavp_id": "20339",
+   "cavp_ref": "DRBG:877"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2244",
+   "cavp_id": "5624",
+   "cavp_ref": "HMAC:2244"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1805",
+   "cavp_id": "13737",
+   "cavp_ref": "RSA:1805"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2896",
+   "cavp_id": "85",
+   "cavp_ref": "SHS:2896"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2897",
+   "cavp_id": "20850",
+   "cavp_ref": "SHS:2897"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2898",
+   "cavp_id": "20172",
+   "cavp_ref": "SHS:2898"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1974",
+   "cavp_id": "15466",
+   "cavp_ref": "TDES:1974"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1975",
+   "cavp_id": "8627",
+   "cavp_ref": "TDES:1975"
+  }
+ ],
+ "vendor": "Advantech B+B Smartworx",
+ "vendor_info": {
+  "name": "Advantech B+B Smartworx",
+  "website": "http://advantech-bb.com",
+  "address": [
+   "Westlink Commercial Park",
+   "Oranmore",
+   "Co. Galway",
+   "Ireland"
+  ],
+  "contacts": [
+   {
+    "name": "Paul Conway"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2584.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMarch2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/21/2016",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "3/21/2016",
+ "last_updated": "3/21/2016",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2584.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-131A transition which disallows key wrapping not compliant to SP 800-38F.",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); Triple-DES (Cert. #1974, key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2584,
+  "vendor": "Advantech B+B Smartworx",
+  "module": "Advantech B+B SmartWorx Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/21/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

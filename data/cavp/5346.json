@@ -1,0 +1,52 @@
+{
+ "cavp_id": "5346",
+ "cavp_cert": "AES 4009",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5346",
+ "implementation": "CN8000 10G Ethernet Crypto Module",
+ "product_id": "5515",
+ "description": "The CN8000 10GE Ethernet Crypto Module is a cryptographic accelerator that contains FIPS 140-2 approved cryptographic algorithms. This module provides encryption and TRANSEC (Traffic Flow Security) services for the CN8000 Series Encryptor.",
+ "version": "1.6 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/7/2016",
+ "vendor": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet)",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "Altera Stratix V 5SGXEA4K2F40C2N",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 368, 384, 1016, 1024",
+    "AAD Length: 112, 128, 640, 688"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,57 @@
+{
+ "cavp_id": "23519",
+ "cavp_cert": "AES 2606",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=23519",
+ "implementation": "RF-7800W OU47x, OU49x, OU50x",
+ "product_id": "2053",
+ "description": "This is a firmware library that provides the cryptographic functions used on Harris' industry leading reliable, secure and high performance Broadband Ethernet Radio (BER) products: RF-7800W-OU50x, -OU47x, -OU49x.",
+ "version": "2.00 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/29/2013",
+ "vendor": "Harris Corporation",
+ "vendor_website": "http://www.harris.com",
+ "oes": [
+  {
+   "name": "Broadcom XLS108",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64",
+    "IV Length: 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-CFB128",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

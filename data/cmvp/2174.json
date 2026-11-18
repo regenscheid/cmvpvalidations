@@ -1,0 +1,129 @@
+{
+ "cert": 2174,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2174",
+ "module": "HP BladeSystem Onboard Administrator Firmware",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as indicated in the Security Policy in Section 3 and operated in FIPS mode.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A",
+  "Tested: BladeSystem c7000 DDR2 Onboard Administrator with KVM option enclosure",
+  "BladeSystem c3000 Tray with Embedded DDR2 Onboard Administrator enclosure",
+  "BladeSystem c3000 Dual DDR2 Onboard Administrator enclosure"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The module provides administrative control of HP BladeSystem c-Class enclosures. The cryptographic functions of the module provide security for administrative access via HTTPS and SSH, and to administrative commands for the BladeSystem enclosure.",
+ "firmware_versions": "3.71",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2289",
+   "cavp_id": "1822",
+   "cavp_ref": "AES:2289"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1406",
+   "cavp_id": "8784",
+   "cavp_ref": "HMAC:1406"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1140",
+   "cavp_id": "19575",
+   "cavp_ref": "RNG:1140"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1178",
+   "cavp_id": "17323",
+   "cavp_ref": "RSA:1178"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1972",
+   "cavp_id": "25334",
+   "cavp_ref": "SHS:1972"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1973",
+   "cavp_id": "27184",
+   "cavp_ref": "SHS:1973"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1439",
+   "cavp_id": "19770",
+   "cavp_ref": "TDES:1439"
+  }
+ ],
+ "vendor": "Hewlett-Packard Development Company, L.P.",
+ "vendor_info": {
+  "name": "Hewlett-Packard Development Company, L.P.",
+  "website": "http://www.hp.com",
+  "address": [
+   "11445 Compaq Center Dr. W",
+   "Houston, TX 77070",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Julie Ritter"
+   },
+   {
+    "name": "Tim McDonough"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2174.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/17/2014",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "6/17/2014",
+ "last_updated": "6/17/2014",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2174.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "NDRNG; DSA; RC4; HMAC-SHA1-96; Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2174,
+  "vendor": "Hewlett-Packard Development Company, L.P.",
+  "module": "HP BladeSystem Onboard Administrator Firmware",
+  "type": "Firmware",
+  "validation_dates": [
+   "06/17/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

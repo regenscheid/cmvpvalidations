@@ -1,0 +1,51 @@
+{
+ "cavp_id": "14632",
+ "cavp_cert": "AES 1923",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14632",
+ "implementation": "Entrust Authority™ Security Kernel",
+ "product_id": "54",
+ "description": "The Security Kernel is a C++ implementation of cryptographic functions accessible by an object-oriented API. Depending on configuration, the algorithms may be implemented in software, hardware or both. The industry standard Cryptoki API from PKCS #11, is used as the interface to hardware-based cryptographic modules.",
+ "version": "8.1sp1",
+ "type": "SOFTWARE",
+ "first_validated": "1/19/2012",
+ "vendor": "Entrust Corporation",
+ "vendor_website": "http://www.entrust.com",
+ "oes": [
+  {
+   "name": "Windows Server 2008 R2 Enterprise Edition on Intel Core 2 Duo E8400",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 96, 104, 112, 120, 128",
+    "Payload Length: 8, 1024",
+    "AAD Length: 8, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

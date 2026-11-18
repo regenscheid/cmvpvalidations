@@ -1,0 +1,59 @@
+{
+ "cavp_id": "27275",
+ "cavp_cert": "RSA 2213",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27275",
+ "implementation": "NTO Crypto Library",
+ "product_id": "5675",
+ "description": "The NTO Crypto library performs all cryptographic functionality for the NTO 7303 and Vision ONE appliances, including asymmetric key generation, symmetric encryption, hashing, and digital signatures, and provides the SNMPv3 and TLSv1.2 protocols.",
+ "version": "1.0.1-0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/16/2016",
+ "vendor": "Ixia",
+ "vendor_website": "http://www.ixiacom.com",
+ "oes": [
+  {
+   "name": "Intel i7 3555LE",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 2048",
+    "        Primality Tests: Table C.3",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

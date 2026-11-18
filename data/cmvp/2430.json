@@ -1,0 +1,153 @@
+{
+ "cert": 2430,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2430",
+ "module": "Samsung Kernel Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates random strings whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Provides general purpose cryptographic services to services in the Linux kernel and user-space applications, intended to protect data in transit and at rest.",
+ "tested_configurations": [
+  "Android Lollipop 5.0.2 running on Samsung Galaxy S6",
+  "Android Lollipop 5.1 running on Samsung Galaxy Tab S2 (single-user mode)"
+ ],
+ "software_versions": "SKC1.6",
+ "product_url": "http://www.samsung.com/us/mobile/cell-phones/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3292",
+   "cavp_id": "22860",
+   "cavp_ref": "AES:3292"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3461",
+   "cavp_id": "25186",
+   "cavp_ref": "AES:3461"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 750",
+   "cavp_id": "20066",
+   "cavp_ref": "DRBG:750"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 849",
+   "cavp_id": "23984",
+   "cavp_ref": "DRBG:849"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2090",
+   "cavp_id": "12014",
+   "cavp_ref": "HMAC:2090"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2207",
+   "cavp_id": "21126",
+   "cavp_ref": "HMAC:2207"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2731",
+   "cavp_id": "18621",
+   "cavp_ref": "SHS:2731"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2857",
+   "cavp_id": "30138",
+   "cavp_ref": "SHS:2857"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1877",
+   "cavp_id": "8679",
+   "cavp_ref": "TDES:1877"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1952",
+   "cavp_id": "17573",
+   "cavp_ref": "TDES:1952"
+  }
+ ],
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_info": {
+  "name": "Samsung Electronics Co., Ltd.",
+  "website": "http://www.samsung.com",
+  "address": [
+   "R5 416, Maetan 3-dong Yeongton-gu",
+   "Suwon-si, Gyeonggi 443-742",
+   "Korea"
+  ],
+  "contacts": [
+   {
+    "name": "Bumhan Kim"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2430.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0056.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/14/2015",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "9/4/2015",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "8/14/2015",
+ "last_updated": "9/4/2015",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2430.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "DES; Twofish; MD5; ansi_cprng; krng; ANSI X9.31 RNG; ARC4; Pcompress; CRC32c; Deflate; LZO; AES-GCM (non-compliant); RFC4106-AES-GCM (non-compliant); RFC4543-AES-GCM (non-compliant); AES-CTR (non-compliant); Triple-DES-CTR (non-compliant); GHASH; GF128MUL; 2-key Triple-DES"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2430,
+  "vendor": "Samsung Electronics Co., Ltd.",
+  "module": "Samsung Kernel Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/14/2015",
+   "09/04/2015"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,147 @@
+{
+ "cert": 2698,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2698",
+ "module": "Oracle Solaris Kernel Cryptographic Framework",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy and operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Oracle Solaris Kernel Cryptographic Framework module provides cryptographic functionality for the kernel module. The module provides encryption, decryption, hashing, signature generation and verification, secure random number generation, and message authentication functions. The module can leverage the algorithm acceleration from SPARC and x86 processors when available.",
+ "tested_configurations": [
+  "Oracle Solaris 11.3 running on an Oracle Server X5-2 with PAA",
+  "Oracle Solaris 11.3 running on an Oracle Server X5-2 without PAA (single-user mode)",
+  "Oracle Solaris 11.3 running on an Oracle SPARC T5-1B Server with PAA",
+  "Oracle Solaris 11.3 running on an Oracle SPARC T5-1B Server without PAA",
+  "Oracle Solaris 11.3 running on an Oracle SPARC T7-2 Server with PAA",
+  "Oracle Solaris 11.3 running on an Oracle SPARC T7-2 Server without PAA"
+ ],
+ "software_versions": "1.3",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3935",
+   "cavp_id": "23309",
+   "cavp_ref": "AES:3935"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1142",
+   "cavp_id": "11128",
+   "cavp_ref": "DRBG:1142"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 861",
+   "cavp_id": "16646",
+   "cavp_ref": "ECDSA:861"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2556",
+   "cavp_id": "19767",
+   "cavp_ref": "HMAC:2556"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2010",
+   "cavp_id": "21724",
+   "cavp_ref": "RSA:2010"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3243",
+   "cavp_id": "2674",
+   "cavp_ref": "SHS:3243"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2158",
+   "cavp_id": "3701",
+   "cavp_ref": "TDES:2158"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Joshua Brickman"
+   },
+   {
+    "name": "Linda Gallops"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2698.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/8/2016",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "11/3/2016",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "2/13/2018",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "8/8/2016",
+ "last_updated": "2/13/2018",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2698.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "AES (non-compliant); ECDSA (non-compliant); MD4; MD5; HMAC-MD5; RC4; DES; Blowfish; Camelia; Triple-DES (non-compliant); RSA (key wrapping; key establishment methodology provides between 112 and 192 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2698,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Solaris Kernel Cryptographic Framework",
+  "type": "Software",
+  "validation_dates": [
+   "08/08/2016",
+   "11/03/2016",
+   "02/13/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

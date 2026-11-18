@@ -1,0 +1,135 @@
+{
+ "cert": 4034,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4034",
+ "module": "Oracle Solaris Kernel Cryptographic Framework",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Oracle Solaris Kernel Cryptographic Framework module provides cryptographic functionality for the kernel module. The module provides encryption, decryption, hashing, signature generation and verification, secure random number generation, and message authentication functions. The module can leverage the algorithm acceleration from SPARC and x86 processors when available.",
+ "tested_configurations": [
+  "Oracle Solaris 11.4 running on Oracle SPARC T8 Server with a SPARC M8 with PAA",
+  "Oracle Solaris 11.4 running on Oracle SPARC T8 Server with a SPARC M8 without PAA",
+  "Oracle Solaris 11.4 running on Oracle ZFS Storage Appliance ZS7 with an Intel® Xeon® Gold 6100 with PAA",
+  "Oracle Solaris 11.4 running on Oracle ZFS Storage Appliance ZS7 with an Intel® Xeon® Gold 6100 without PAA (single user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "1.4",
+ "product_url": "http://www.oracle.com/",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C1895",
+   "cavp_id": "32799",
+   "cavp_ref": "C:1895"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C1895",
+   "cavp_id": "32799",
+   "cavp_ref": "C:1895"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1895",
+   "cavp_id": "32799",
+   "cavp_ref": "C:1895"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1895",
+   "cavp_id": "32799",
+   "cavp_ref": "C:1895"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C1895",
+   "cavp_id": "32799",
+   "cavp_ref": "C:1895"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1895",
+   "cavp_id": "32799",
+   "cavp_ref": "C:1895"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C1895",
+   "cavp_id": "32799",
+   "cavp_ref": "C:1895"
+  }
+ ],
+ "vendor": "Oracle Corporation",
+ "vendor_info": {
+  "name": "Oracle Corporation",
+  "website": "http://www.oracle.com",
+  "address": [
+   "500 Oracle Parkway",
+   "Redwood Shores, CA 94065",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Security Evaluation Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4034.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/September%202021_011021_0714_Signed2.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/20/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  },
+  {
+   "date": "1/30/2022",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "9/20/2021",
+ "last_updated": "1/30/2022",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4034.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4034,
+  "vendor": "Oracle Corporation",
+  "module": "Oracle Solaris Kernel Cryptographic Framework",
+  "type": "Software",
+  "validation_dates": [
+   "09/20/2021",
+   "01/30/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

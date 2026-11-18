@@ -1,0 +1,66 @@
+{
+ "cavp_id": "19805",
+ "cavp_cert": "Component 1733",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19805",
+ "implementation": "HikSSL Library",
+ "product_id": "9212",
+ "description": "The HikSSL Library module is a software library embedded into Hikvision Network Camera and Network Video Recorder (NVR) products, that provides Transport Layer Security (TLS) functionality, and general purpose cryptographic algorithms.",
+ "version": "1.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/23/2018",
+ "vendor": "Hangzhou Hikvision Digital Technology Co., Ltd.",
+ "vendor_website": "http://www.hikvision.com",
+ "oes": [
+  {
+   "name": "Linux version 3.10.73, 32-bit on ARM Cortex-A9 single core (ARMv7 32-bit)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC CDH-Component",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Key Pair Generation, Partial Public Key Validation, Public Key Regeneration",
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Domain Parameter Generation, Domain Parameter Validation, Full Public Key Validation, Key Pair Generation, Public Key Regeneration",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-224",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

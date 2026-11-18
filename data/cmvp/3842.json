@@ -1,0 +1,443 @@
+{
+ "cert": 3842,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3842",
+ "module": "Red Hat Enterprise Linux 8 OpenSSL Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The OpenSSL FIPS Runtime Module is a general purpose cryptographic library designed to provide FIPS 140-2 validated cryptographic functionality for use with the high level API of the OpenSSL library.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 8 running on Dell PowerEdge R430 with an Intel(R) Xeon(R) E5 with PAA",
+  "Red Hat Enterprise Linux 8 running on Dell PowerEdge R430 with an Intel(R) Xeon(R) E5 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #A580 with CVL Certs. #A558, #A559, #A560 and #A561, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #A558, #A559, #A560 and #A561 with CVL Certs. #A558, #A559, #A560 and #A561, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "software_versions": "rhel8.20200305.1",
+ "product_url": "http://redhat.com/en/technologies/linux-platforms/enterprise-linux",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A549",
+   "cavp_id": "32953",
+   "cavp_ref": "A:549"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A550",
+   "cavp_id": "32954",
+   "cavp_ref": "A:550"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A551",
+   "cavp_id": "32955",
+   "cavp_ref": "A:551"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A552",
+   "cavp_id": "32956",
+   "cavp_ref": "A:552"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A554",
+   "cavp_id": "32958",
+   "cavp_ref": "A:554"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A555",
+   "cavp_id": "32959",
+   "cavp_ref": "A:555"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A556",
+   "cavp_id": "32960",
+   "cavp_ref": "A:556"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A562",
+   "cavp_id": "32966",
+   "cavp_ref": "A:562"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A563",
+   "cavp_id": "32967",
+   "cavp_ref": "A:563"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A564",
+   "cavp_id": "32968",
+   "cavp_ref": "A:564"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A565",
+   "cavp_id": "32969",
+   "cavp_ref": "A:565"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A566",
+   "cavp_id": "32970",
+   "cavp_ref": "A:566"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A567",
+   "cavp_id": "32971",
+   "cavp_ref": "A:567"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A568",
+   "cavp_id": "32972",
+   "cavp_ref": "A:568"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A569",
+   "cavp_id": "32973",
+   "cavp_ref": "A:569"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A570",
+   "cavp_id": "32974",
+   "cavp_ref": "A:570"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A549",
+   "cavp_id": "32953",
+   "cavp_ref": "A:549"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A550",
+   "cavp_id": "32954",
+   "cavp_ref": "A:550"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A551",
+   "cavp_id": "32955",
+   "cavp_ref": "A:551"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A552",
+   "cavp_id": "32956",
+   "cavp_ref": "A:552"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A558",
+   "cavp_id": "32962",
+   "cavp_ref": "A:558"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A559",
+   "cavp_id": "32963",
+   "cavp_ref": "A:559"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A560",
+   "cavp_id": "32964",
+   "cavp_ref": "A:560"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A561",
+   "cavp_id": "32965",
+   "cavp_ref": "A:561"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A580",
+   "cavp_id": "32984",
+   "cavp_ref": "A:580"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A554",
+   "cavp_id": "32958",
+   "cavp_ref": "A:554"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A555",
+   "cavp_id": "32959",
+   "cavp_ref": "A:555"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A556",
+   "cavp_id": "32960",
+   "cavp_ref": "A:556"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A581",
+   "cavp_id": "32985",
+   "cavp_ref": "A:581"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A558",
+   "cavp_id": "32962",
+   "cavp_ref": "A:558"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A559",
+   "cavp_id": "32963",
+   "cavp_ref": "A:559"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A560",
+   "cavp_id": "32964",
+   "cavp_ref": "A:560"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A561",
+   "cavp_id": "32965",
+   "cavp_ref": "A:561"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A558",
+   "cavp_id": "32962",
+   "cavp_ref": "A:558"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A559",
+   "cavp_id": "32963",
+   "cavp_ref": "A:559"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A560",
+   "cavp_id": "32964",
+   "cavp_ref": "A:560"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A561",
+   "cavp_id": "32965",
+   "cavp_ref": "A:561"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A546",
+   "cavp_id": "32950",
+   "cavp_ref": "A:546"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A547",
+   "cavp_id": "32951",
+   "cavp_ref": "A:547"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A548",
+   "cavp_id": "32952",
+   "cavp_ref": "A:548"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A558",
+   "cavp_id": "32962",
+   "cavp_ref": "A:558"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A559",
+   "cavp_id": "32963",
+   "cavp_ref": "A:559"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A560",
+   "cavp_id": "32964",
+   "cavp_ref": "A:560"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A561",
+   "cavp_id": "32965",
+   "cavp_ref": "A:561"
+  },
+  {
+   "algorithm": "KDA",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A554, #A555, #A556, #A562, #A563, #A564, #A565, #A566, #A567, #A568, #A569 and #A570; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A554, #A555 and #A556 and HMAC Certs. #A558, #A559, #A560 and #A561; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #A557 and HMAC Certs. #A558, #A559, #A560 and #A561; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A558",
+   "cavp_id": "32962",
+   "cavp_ref": "A:558"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A559",
+   "cavp_id": "32963",
+   "cavp_ref": "A:559"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A560",
+   "cavp_id": "32964",
+   "cavp_ref": "A:560"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A561",
+   "cavp_id": "32965",
+   "cavp_ref": "A:561"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A546",
+   "cavp_id": "32950",
+   "cavp_ref": "A:546"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A547",
+   "cavp_id": "32951",
+   "cavp_ref": "A:547"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A548",
+   "cavp_id": "32952",
+   "cavp_ref": "A:548"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A558",
+   "cavp_id": "32962",
+   "cavp_ref": "A:558"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A559",
+   "cavp_id": "32963",
+   "cavp_ref": "A:559"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A560",
+   "cavp_id": "32964",
+   "cavp_ref": "A:560"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A561",
+   "cavp_id": "32965",
+   "cavp_ref": "A:561"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "#A549, #A550, #A551, #A552 and #A557",
+   "cavp_id": ""
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "100 East Davie Street",
+   "Raleigh, NC 27601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jaroslav Reznik"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3842.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202021_010421_0724_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/8/2021",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "3/8/2021",
+ "last_updated": "3/8/2021",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3842.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition - replaced by certificate #4271"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #A580 with CVL Certs. #A558, #A559, #A560 and #A561, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #A558, #A559, #A560 and #A561 with CVL Certs. #A558, #A559, #A560 and #A561, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3842,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 8 OpenSSL Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "03/08/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

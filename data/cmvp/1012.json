@@ -1,0 +1,117 @@
+{
+ "cert": 1012,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1012",
+ "module": "Windows Server 2003 Enhanced Cryptographic Provider (RSAENH)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Microsoft Enhanced Cryptographic Provider is a FIPS 140-2 compliant, software-based, cryptographic module.RSAENH encapsulates several different cryptographic algorithms (including SHA-1, 3DES, AES, RSA, HMAC) in a cryptographic module accessible via the Microsoft CryptoAPI.",
+ "tested_configurations": [
+  "Windows Server 2003 Service Pack 2 (x86, x64 and IA64) (single-user mode)"
+ ],
+ "software_versions": "5.2.3790.4313",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 818",
+   "cavp_id": "29787",
+   "cavp_ref": "AES:818"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 452",
+   "cavp_id": "6241",
+   "cavp_ref": "HMAC:452"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 470",
+   "cavp_id": "3935",
+   "cavp_ref": "RNG:470"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 395",
+   "cavp_id": "13366",
+   "cavp_ref": "RSA:395"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 816",
+   "cavp_id": "7519",
+   "cavp_ref": "SHS:816"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 691",
+   "cavp_id": "2350",
+   "cavp_ref": "TDES:691"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dave Friant"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1012.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1012.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/22/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "8/22/2008",
+ "last_updated": "8/22/2008",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1012.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; RC2; RC4; MD2; MD4; MD5; RSA X9.31 signature verification (non-compliant); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1012,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows Server 2003 Enhanced Cryptographic Provider (RSAENH)",
+  "type": "Software",
+  "validation_dates": [
+   "08/22/2008"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

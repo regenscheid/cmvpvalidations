@@ -1,0 +1,166 @@
+{
+ "cavp_id": "33707",
+ "cavp_cert": "A1098",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33707",
+ "implementation": "ADVA F7 WCC Firmware Crypto Tool Library",
+ "product_id": "13558",
+ "description": "Firmware in the ADVA WCC-PCNAES100GB-F encryption module",
+ "version": "172.19.7",
+ "type": "FIRMWARE",
+ "first_validated": "3/8/2021",
+ "vendor": "ADVA Optical Networking SE",
+ "vendor_website": "http://www.advaoptical.com",
+ "oes": [
+  {
+   "name": "NXP MPC8544E PowerQUICC III processor",
+   "details": [
+    "processor: NXP MPC8544E PowerQUICC III processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256 Increment 256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256 Increment 256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "DSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    L: 2048",
+    "    N: 256"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 160"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: Full Public Key Validation, Key Pair Generation",
+    "Scheme:",
+    "  dhHybridOne:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF with Key Confirmation:",
+    "      Key Confirmation Option:",
+    "        Key Confirmation Role: Provider, Recipient",
+    "        Key Confirmation Type: Bilateral",
+    "        Nonce Type: Random nonce",
+    "      KDF Option:",
+    "        Concatenation: uPartyInfo||vPartyInfo",
+    "      Parameter Set:",
+    "        FC:",
+    "          Hash Algorithm: SHA2-512",
+    "          MAC Option:",
+    "            HMAC-SHA2-256:",
+    "              Key Length: 160",
+    "              MAC Length: 256"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: MODP-4096",
+    "Function: Full Validation, Key Pair Generation",
+    "Scheme:",
+    "  dhHybrid1:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF Methods:",
+    "      oneStepKdf:",
+    "          Auxiliary Function Methods:",
+    "            Auxiliary Function Name: SHA2-512",
+    "        Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "        Fixed Info Encoding: Concatenation",
+    "    Key Confirmation Methods:",
+    "      Key Confirmation Directions:",
+    "      Key Confirmation Roles:",
+    "      Key Confirmation MAC Methods:",
+    "        HMAC-SHA2-256:",
+    "          Key Length: 160",
+    "          MAC Length: 256",
+    "    Key Length: 512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Generation",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: MODP-2048, MODP-3072, MODP-4096"
+   ]
+  },
+  {
+   "algorithm": "Safe Primes Key Verification",
+   "oe": 0,
+   "capabilities": [
+    "Safe Prime Groups: MODP-2048, MODP-3072, MODP-4096"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8, 256"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 512, 512-10240 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

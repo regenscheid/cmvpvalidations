@@ -1,0 +1,73 @@
+{
+ "cavp_id": "21678",
+ "cavp_cert": "AES 4471",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21678",
+ "implementation": "EIP-165 crypto core",
+ "product_id": "739",
+ "description": "100Gbps MACsec hardware module capable of 128 & 256bit GCM-AES with optional XPN mode for encryption/decryption. The EIP-165 is a high-performance, split ingress/egress in-line MACsec frame engine that provides hardware acceleration for the complete MACsec frame transform along with packet classification. Compliant to 802.1AE 2006 & 802.1AEbw 2013.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "4/21/2017",
+ "vendor": "Arista Networks Inc.",
+ "vendor_website": "http://www.arista.com",
+ "oes": [
+  {
+   "name": "Synopsys VCS/VCSi, version J-2014.12",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 136, 256, 264",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Tag Length: 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  },
+  {
+   "algorithm": "AES-XPN",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256",
+    "Payload Length: 0, 128, 136, 256, 264",
+    "AAD Length: 0, 128, 136, 256, 264",
+    "Tag Length: 64, 96, 104, 112, 120, 128",
+    "Salt Generation: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

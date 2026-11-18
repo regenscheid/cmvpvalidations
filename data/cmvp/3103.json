@@ -1,0 +1,131 @@
+{
+ "cert": 3103,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3103",
+ "module": "FortiWeb 5.6",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and configured according to the Entropy Token Section of the Security Policy. There is no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Ports and Interfaces: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The FortiWeb OS is a firmware operating system that runs exclusively on Fortinet's FortiWeb product family. FortiWeb units are PC-based, purpose built appliances.",
+ "tested_configurations": [
+  "FortiWeb-4000E with the Fortinet entropy token (part number FTR-ENT-1 )"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1169, key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (CVL Cert. #1169, key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "firmware_versions": "v5.6.0, build 6180,170928",
+ "product_url": "http://www.fortinet.com/products/index.html",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4461",
+   "cavp_id": "19071",
+   "cavp_ref": "AES:4461"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1169",
+   "cavp_id": "29885",
+   "cavp_ref": "Component:1169"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1434",
+   "cavp_id": "8166",
+   "cavp_ref": "DRBG:1434"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2960",
+   "cavp_id": "18822",
+   "cavp_ref": "HMAC:2960"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4461 and HMAC Cert. #2960; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2437",
+   "cavp_id": "26504",
+   "cavp_ref": "RSA:2437"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3673",
+   "cavp_id": "20294",
+   "cavp_ref": "SHS:3673"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "1826 Robertson Road",
+   "Ottawa, ON K2H 5Z6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3103.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertJan2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/5/2018",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "1/5/2018",
+ "last_updated": "1/5/2018",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3103.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1169, key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (CVL Cert. #1169, key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3103,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiWeb 5.6",
+  "type": "Firmware",
+  "validation_dates": [
+   "01/05/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

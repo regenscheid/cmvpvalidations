@@ -1,0 +1,171 @@
+{
+ "cert": 2092,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2092",
+ "module": "Samsung FIPS BC for Mobile Phone and Tablet",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Provides general purpose cryptographic services to user-space applications on the mobile platform for the protection of data in transit.",
+ "tested_configurations": [
+  "Android Jelly Bean 4.1 running on Samsung Galaxy Note II",
+  "Android Jelly Bean 4.2 running on Samsung Galaxy S4 (single-user mode)"
+ ],
+ "software_versions": "SBC1.45_2.0 and SBC1.45_2.1",
+ "product_url": "http://www.samsung.com/us/mobile/cell-phones/",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2353",
+   "cavp_id": "13196",
+   "cavp_ref": "AES:2353"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2409",
+   "cavp_id": "17851",
+   "cavp_ref": "AES:2409"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 736",
+   "cavp_id": "149",
+   "cavp_ref": "DSA:736"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 751",
+   "cavp_id": "25268",
+   "cavp_ref": "DSA:751"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1459",
+   "cavp_id": "29091",
+   "cavp_ref": "HMAC:1459"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1494",
+   "cavp_id": "22744",
+   "cavp_ref": "HMAC:1494"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1172",
+   "cavp_id": "11184",
+   "cavp_ref": "RNG:1172"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1189",
+   "cavp_id": "17993",
+   "cavp_ref": "RNG:1189"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1213",
+   "cavp_id": "7593",
+   "cavp_ref": "RSA:1213"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1243",
+   "cavp_id": "27769",
+   "cavp_ref": "RSA:1243"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2027",
+   "cavp_id": "22288",
+   "cavp_ref": "SHS:2027"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2067",
+   "cavp_id": "13605",
+   "cavp_ref": "SHS:2067"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1472",
+   "cavp_id": "8613",
+   "cavp_ref": "TDES:1472"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1499",
+   "cavp_id": "9552",
+   "cavp_ref": "TDES:1499"
+  }
+ ],
+ "vendor": "Samsung Electronics Co., Ltd.",
+ "vendor_info": {
+  "name": "Samsung Electronics Co., Ltd.",
+  "website": "http://www.samsung.com",
+  "address": [
+   "416, Maetan 3-Dong Youngton Gu",
+   "Suwon, Gyeonggi 152-848",
+   "South Korea"
+  ],
+  "contacts": [
+   {
+    "name": "Kyunghee Lee"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2092.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/26/2014",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "2/26/2014",
+ "last_updated": "2/26/2014",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2092.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Blowfish; Camellia; Camellia Light; CAST5; CAST6; DES; GOST28147-89; IDEA; IES; Rijndal; RC2; RC4; RC5; RC6; SEED; Serpent; TEA; Twofish; XTEA; Grain218; GrainV1; HC128; HC256; ISAAC; Salsa20; VMPC; Elgamal; Naccache-Stern; MD2; MD4; MD5; RIPEMD-128; RIPEMD-160; RIPEMD-256; RIPEMD-320; Tiger; Whirlpool; GOST3411; ISO9797; HMAC based on RFC 2104; VMPC-MAC; SRP6; ECMQV; Digest random generator; VMPC random number generator; Thread-based seed generator; Reverse window generator; AES light (non-compliant); ECDSA (non-compliant); AES-CMAC (non-compliant); Triple-DES-CMAC (non-compliant); Skipjack (non-compliant); Diffie-Hellman (non-compliant); EC Diffie-Hellman (non-compliant); RSA (non-compliant); DSA (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2092,
+  "vendor": "Samsung Electronics Co., Ltd.",
+  "module": "Samsung FIPS BC for Mobile Phone and Tablet",
+  "type": "Software",
+  "validation_dates": [
+   "02/26/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

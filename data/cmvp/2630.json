@@ -1,0 +1,113 @@
+{
+ "cert": 2630,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2630",
+ "module": "Red Hat Enterprise Linux OpenSSH Server Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Red Hat Enterprise Linux 7.1 OpenSSL Module validated to FIPS 140-2 under Cert. #2441 operating in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The OpenSSH Server cryptographic module provides the server-side component for an SSH protocol version 2 protected communication channel. OpenSSH is the standard SSH implementation and shipped with RHEL 7.1. Its cryptographic mechanisms use the OpenSSL library in FIPS 140-2 mode.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 7.1 running on IBM Power8 Little Endian 8286-41A",
+  "Red Hat Enterprise Linux 7.1 running on IBM z13 with CP Assist for Cryptographic Functions (single-user mode)",
+  "Red Hat Enterprise Linux 7.1 running on ProLiant DL380p Gen8 with PAA",
+  "Red Hat Enterprise Linux 7.1 running on ProLiant DL380p Gen8 without PAA"
+ ],
+ "software_versions": "4.0",
+ "product_url": "http://redhat.com/en/technologies/linux-platforms/enterprise-linux",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 700",
+   "cavp_id": "19161",
+   "cavp_ref": "Component:700"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 701",
+   "cavp_id": "16388",
+   "cavp_ref": "Component:701"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 702",
+   "cavp_id": "12709",
+   "cavp_ref": "Component:702"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "100 East Davie Street",
+   "Raleigh, NC 27601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Steve Grubb"
+   },
+   {
+    "name": "Jaroslav Rezník"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2630.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMay2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/2/2016",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "6/17/2016",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "5/2/2016",
+ "last_updated": "6/17/2016",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2630.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2630,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux OpenSSH Server Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "05/02/2016",
+   "06/17/2016"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

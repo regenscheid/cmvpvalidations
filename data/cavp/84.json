@@ -1,0 +1,82 @@
+{
+ "cavp_id": "84",
+ "cavp_cert": "AES 1717",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=84",
+ "implementation": "Mocana Cryptographic Library",
+ "product_id": "7179",
+ "description": "The Mocana Cryptographic Module is the engine of Mocana's Device Security Framework - a software framework that secures all aspects of a system. The Device Security Framework helps applications and device designers reduce development costs and dramatically enhance cryptographic performance. For details see www.mocana.com.",
+ "version": "5.3.1v",
+ "type": "SOFTWARE",
+ "first_validated": "7/11/2011",
+ "vendor": "Mocana Corporation",
+ "vendor_website": "http://www.mocana.com",
+ "oes": [
+  {
+   "name": "ThreadX v5.3 on Freescale PowerQuicc III",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0",
+    "AAD Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 16-128",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "Payload Length: 1024",
+    "AAD Length: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

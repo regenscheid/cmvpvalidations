@@ -1,0 +1,46 @@
+{
+ "cavp_id": "14994",
+ "cavp_cert": "RSA 1053",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14994",
+ "implementation": "DMD2050E TRANSEC Module Cryptographic Engine",
+ "product_id": "203",
+ "description": "The Comtech EF Data FIPS Security Module features an FPGA to perform bulk encryption/decryption for Ethernet data traffic via the DMD2050E Satellite Modem, as well as firmware to provide the cryptographic functions needed to act as an endpoint for TLS and SSH management, and control traffic.",
+ "version": "1.2.1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/9/2012",
+ "vendor": "Comtech EF Data Corporation",
+ "vendor_website": "http://www.comtechefdata.com",
+ "oes": [
+  {
+   "name": "AMCC PowerPC 440EP",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 2048",
+    "    Hash Algorithm: SHA-1, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

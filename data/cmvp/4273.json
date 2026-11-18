@@ -1,0 +1,128 @@
+{
+ "cert": 4273,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4273",
+ "module": "Microsoft Azure Networking Adapter Kernel",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates random strings whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cryptographic Library is a general-purpose, software-hybrid cryptographic module. The module provides general purpose cryptographic services that leverage FIPS 140-2-approved cryptographic algorithms. The module runs as part of the operating system kernel, provides cryptographic services to kernel applications through a C language Application Program Interface (API), and provides cryptographic services to user applications through an AF_ALG socket-type interface. The module is implemented as a set of shared libraries and binary files.",
+ "tested_configurations": [
+  "Immutable OS version 1.0 (build 5.10.54.4-microsoft-standard-2008.3.21082301) running on an Azure Compute C2030 Server with a Broadcom SoC 8 Core ARM v8 Cortex A72 with PAA (single-user mode)"
+ ],
+ "hardware_versions": "BCM58732",
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A1977",
+   "cavp_id": "34586",
+   "cavp_ref": "A:1977"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A1977",
+   "cavp_id": "34586",
+   "cavp_ref": "A:1977"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "NP",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A1977",
+   "cavp_id": "34586",
+   "cavp_ref": "A:1977"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A1977 and HMAC Cert. #A1977; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A1977",
+   "cavp_id": "34586",
+   "cavp_ref": "A:1977"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A1977",
+   "cavp_id": "34586",
+   "cavp_ref": "A:1977"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4273.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202022_010822_0659_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/25/2022",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "8/22/2022",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "7/25/2022",
+ "last_updated": "8/22/2022",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4273.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4273,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Azure Networking Adapter Kernel",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "07/25/2022",
+   "08/22/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

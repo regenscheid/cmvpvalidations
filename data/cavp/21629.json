@@ -1,0 +1,55 @@
+{
+ "cavp_id": "21629",
+ "cavp_cert": "ECDSA 1096",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21629",
+ "implementation": "iDirect Cloak Algorithm Module 1.0",
+ "product_id": "794",
+ "description": "VT iDirect, Inc's firmware cryptographic library provides all cryptographic operations for the support of iDirect's Transmission Security (TRANSEC) feature. The firmware cryptographic library implements the key management algorithms necessary for each member of the network to receive and decrypt data.",
+ "version": "1.0.2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2017",
+ "vendor": "VT iDirect",
+ "vendor_website": "http://www.idirect.net",
+ "oes": [
+  {
+   "name": "Altera Cyclone V",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

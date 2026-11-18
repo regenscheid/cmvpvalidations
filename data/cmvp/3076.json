@@ -1,0 +1,186 @@
+{
+ "cert": 3076,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3076",
+ "module": "Symantec SymSSLf Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. No assurance of the minimum strength of generated keys. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Symantec SymSSLf Cryptographic Module is a Windows software library that provides FIPS 140-2 validated cryptographic algorithm support to Symantec products.",
+ "tested_configurations": [
+  "Windows 7 SP1 running on a Dell Precision WorkStation T5500 with Intel Xeon E5620 with PAA",
+  "Windows 7 SP1 running on a Dell Precision WorkStation T5500 with Intel Xeon E5620 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Certs. #1198 and #1199, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "software_versions": "1.0.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4515",
+   "cavp_id": "25591",
+   "cavp_ref": "AES:4515"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4516",
+   "cavp_id": "24667",
+   "cavp_ref": "AES:4516"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1198",
+   "cavp_id": "23466",
+   "cavp_ref": "Component:1198"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1199",
+   "cavp_id": "22906",
+   "cavp_ref": "Component:1199"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1476",
+   "cavp_id": "15126",
+   "cavp_ref": "DRBG:1476"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1477",
+   "cavp_id": "5698",
+   "cavp_ref": "DRBG:1477"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1202",
+   "cavp_id": "28714",
+   "cavp_ref": "DSA:1202"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1203",
+   "cavp_id": "13636",
+   "cavp_ref": "DSA:1203"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1098",
+   "cavp_id": "9829",
+   "cavp_ref": "ECDSA:1098"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1099",
+   "cavp_id": "9237",
+   "cavp_ref": "ECDSA:1099"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2982",
+   "cavp_id": "7375",
+   "cavp_ref": "HMAC:2982"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2983",
+   "cavp_id": "18820",
+   "cavp_ref": "HMAC:2983"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3703",
+   "cavp_id": "16788",
+   "cavp_ref": "SHS:3703"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3704",
+   "cavp_id": "23089",
+   "cavp_ref": "SHS:3704"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2410",
+   "cavp_id": "10611",
+   "cavp_ref": "TDES:2410"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2411",
+   "cavp_id": "5184",
+   "cavp_ref": "TDES:2411"
+  }
+ ],
+ "vendor": "Symantec Corporation",
+ "vendor_info": {
+  "name": "Symantec Corporation",
+  "website": "http://www.symantec.com",
+  "address": [
+   "350 Ellis St.",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jordan Saxonberg"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3076.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertDec2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/7/2017",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  },
+  {
+   "date": "12/20/2017",
+   "type": "Update",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "12/7/2017",
+ "last_updated": "12/20/2017",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3076.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Certs. #1198 and #1199, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3076,
+  "vendor": "Symantec Corporation",
+  "module": "Symantec SymSSLf Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/07/2017",
+   "12/20/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

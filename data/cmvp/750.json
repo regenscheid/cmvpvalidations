@@ -1,0 +1,128 @@
+{
+ "cert": 750,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/750",
+ "module": "IBM CryptoLite for C",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Cryptographic Module Specification: Level 3"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "IBM CryptoLite is a C software package providing advanced cryptographic services in a very small footprint. CryptoLite supports public key encryption, digital signatures, symmetric ciphers, hash functions, message authentication codes, and other cryptographic algorithms through a simple programming interface. There are no runtime dependencies and the code has been optimized for high performance.",
+ "tested_configurations": [
+  "AIX 5200-07 (32-bit kernel), AIX 5200-07 (64-bit kernel), AIX 5300-03 (32-bit kernel), AIX 5300-03 (64-bit kernel) (single-user mode)"
+ ],
+ "software_versions": "3.23",
+ "product_url": "http://www.ibm.com/security/products/cryptotools.shtml",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 498",
+   "cavp_id": "18811",
+   "cavp_ref": "AES:498"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 205",
+   "cavp_id": "348",
+   "cavp_ref": "DSA:205"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 252",
+   "cavp_id": "13685",
+   "cavp_ref": "HMAC:252"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 278",
+   "cavp_id": "18107",
+   "cavp_ref": "RNG:278"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 214",
+   "cavp_id": "23322",
+   "cavp_ref": "RSA:214"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 568",
+   "cavp_id": "20424",
+   "cavp_ref": "SHS:568"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 511",
+   "cavp_id": "29109",
+   "cavp_ref": "TDES:511"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "11505 Burnet Rd.",
+   "Austin, TX 78758",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jacqueline Wilson"
+   },
+   {
+    "name": "Martin Clausen"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp750.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt750.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/23/2007",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "3/23/2007",
+ "last_updated": "3/23/2007",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp750.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RC2; CAST-5; CAST-6; Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength; non-compliant less than 112-bits of encryption strength); MD5; MD2; HMAC-MD2; HMAC-MD5; Whirlpool; Arc-Four; DES"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 750,
+  "vendor": "IBM® Corporation",
+  "module": "IBM CryptoLite for C",
+  "type": "Software",
+  "validation_dates": [
+   "03/23/2007"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

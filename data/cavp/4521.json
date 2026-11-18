@@ -1,0 +1,60 @@
+{
+ "cavp_id": "4521",
+ "cavp_cert": "RSA 1324",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=4521",
+ "implementation": "CN6000 Series Common Crypto Library",
+ "product_id": "3249",
+ "description": "The CN6000 Series Common Crypto Library Module provides FIPS 140-2 approved cryptographic algorithms for CN6000 Series Encryptors. Based upon OpenSSL the Common Crypto Library provides an Application Programming Interface (API) to support security relevant services.",
+ "version": "0.98 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/22/2013",
+ "vendor": "Senetas Corporation Ltd. and SafeNet Inc.",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "Intel ATOM",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

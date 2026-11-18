@@ -1,0 +1,69 @@
+{
+ "cavp_id": "9471",
+ "cavp_cert": "AES 5459",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=9471",
+ "implementation": "Junos OS 18.1R1 QFX10K-OpenSSL",
+ "product_id": "9630",
+ "description": "The QFX10000 series of fixed and modular data center spine/core Ethernet switches deliver industry-leading scale, flexibility and openness providing seamless transition from 10GbE and 40GbE interface speeds to 100GbE. Based on our custom Q5 ASICs, these high-performance switches scale from 3 to 96 Tbps of throughput.",
+ "version": "Junos OS 18.1R1 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/1/2018",
+ "vendor": "Juniper Networks, Inc",
+ "vendor_website": "http://www.juniper.net/us/en",
+ "oes": [
+  {
+   "name": "Intel Xeon E3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 128, 1024",
+    "AAD Length: 64"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "AAD Length: 64"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

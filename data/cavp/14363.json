@@ -1,0 +1,49 @@
+{
+ "cavp_id": "14363",
+ "cavp_cert": "DRBG 1082",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14363",
+ "implementation": "Samsung Kernel Cryptographic Module with ARMv8 Crypto-Extensions",
+ "product_id": "1562",
+ "description": "General purpose Cryptographic services available for Linux kernel used by Samsung devices to provide secured services. The AES, SHA-1 and SHA-256 are supported by the ARMv8 Crypto-Extensions.",
+ "version": "SKC1.7",
+ "type": "SOFTWARE",
+ "first_validated": "1/22/2016",
+ "vendor": "Samsung Electronics Co., Ltd",
+ "vendor_website": "http://www.samsung.com",
+ "oes": [
+  {
+   "name": "Android 6.0.1 on Samsung Electronics Exynos 8890",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  },
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: SHA-1",
+    "  Capabilities:",
+    "    Mode: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

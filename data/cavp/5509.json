@@ -1,0 +1,52 @@
+{
+ "cavp_id": "5509",
+ "cavp_cert": "AES 5766",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5509",
+ "implementation": "ICU Medical Lifecare PCA Crypto Library",
+ "product_id": "10072",
+ "description": "ICU Medical Lifecare PCA Crypto Library provides secure communication for the Lifecare PCA Infusion Pumps.",
+ "version": "lifecare-pca-fips-2.0.16-trunk CL# 649181 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "9/21/2018",
+ "vendor": "ICU Medical",
+ "vendor_website": "http://www.Icumed.com",
+ "oes": [
+  {
+   "name": "Net Silicon NS7520 ARM7",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 1024",
+    "AAD Length: 0, 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

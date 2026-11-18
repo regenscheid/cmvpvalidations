@@ -1,0 +1,60 @@
+{
+ "cavp_id": "25732",
+ "cavp_cert": "RSA 853",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25732",
+ "implementation": "VPN-1",
+ "product_id": "7197",
+ "description": "Check Point's VPN-1 version R70.1 is a tightly integrated software solution combining the FireWall-1 (FW-1) security suite with sophisticated Virtual Private Network (VPN) technologies and a hardened SecurePlatform operating system (OS).",
+ "version": "R70.1",
+ "type": "SOFTWARE",
+ "first_validated": "7/11/2011",
+ "vendor": "Check Point Software Technologies",
+ "vendor_website": "http://www.checkpoint.com",
+ "oes": [
+  {
+   "name": "Check Point SecurePlatform on Intel Pentium 4 Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 1024, 2048, 4096",
+    "Public Key Value: 3, 17, 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048, 4096",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

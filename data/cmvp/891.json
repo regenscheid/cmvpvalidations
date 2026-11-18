@@ -1,0 +1,136 @@
+{
+ "cert": 891,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/891",
+ "module": "Microsoft Kernel Mode Security Support Provider Interface (ksecdd.sys)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Code Integrity (ci.dll) validated to FIPS 140-2 under Cert. #890 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "KSECDD.SYS runs as a kernel mode export driver, and provides cryptographic services, through their documented interfaces, to Windows Vista kernel components. It supports several cryptographic algorithms accessible via a FIPS function table request irp (I/O request packet).",
+ "tested_configurations": [
+  "Microsoft Windows Vista Ultimate Edition (x64 version) (single-user mode)",
+  "Microsoft Windows Vista Ultimate Edition (x86 Version)"
+ ],
+ "software_versions": "6.0.6000.16386, 6.0.6000.16870 and 6.0.6000.21067",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 553",
+   "cavp_id": "17414",
+   "cavp_ref": "AES:553"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 60",
+   "cavp_id": "19651",
+   "cavp_ref": "ECDSA:60"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 298",
+   "cavp_id": "12128",
+   "cavp_ref": "HMAC:298"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 321",
+   "cavp_id": "15257",
+   "cavp_ref": "RNG:321"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 257",
+   "cavp_id": "15037",
+   "cavp_ref": "RSA:257"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 258",
+   "cavp_id": "28972",
+   "cavp_ref": "RSA:258"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 618",
+   "cavp_id": "14149",
+   "cavp_ref": "SHS:618"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 549",
+   "cavp_id": "28904",
+   "cavp_ref": "TDES:549"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dave Friant"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp891.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt891.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/10/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "10/16/2009",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "1/10/2008",
+ "last_updated": "10/16/2009",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp891.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides 128 to 256 bits of encryption strength); MD2; MD4; MD5; RC2; RC4; HMAC MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 891,
+  "vendor": "Microsoft Corporation",
+  "module": "Microsoft Kernel Mode Security Support Provider Interface (ksecdd.sys)",
+  "type": "Software",
+  "validation_dates": [
+   "01/10/2008",
+   "10/16/2009"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,979 @@
+{
+ "cert": 3729,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3729",
+ "module": "Symantec PGP Cryptographic Engine",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Symantec PGP Cryptographic Engine is a FIPS 140-2 validated software only cryptographic module. The module implements the cryptographic functions for Symantec Encryption products. It includes a wide range of field-tested and standards-based encryption, digital signature, and encoding algorithms as well as a variety of secure network protocol implementations.",
+ "tested_configurations": [
+  "macOS High Sierra 10.13.6 (64-bit) running on Mac mini Server (Mid 2011) with 2 GHz Intel Core i7 with PAA",
+  "macOS High Sierra 10.13.6 (64-bit) running on Mac mini Server (Mid 2011) with 2 GHz Intel Core i7 without PAA",
+  "RHEL 7.5 (64-bit) on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz with PAA",
+  "RHEL 7.5 (64-bit) on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz without PAA",
+  "Windows 10 Pro (32-bit) kernel on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz with PAA",
+  "Windows 10 Pro (32-bit) kernel on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz without PAA",
+  "Windows 10 Pro (32-bit) on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz with PAA",
+  "Windows 10 Pro (32-bit) on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz without PAA",
+  "Windows 10 Pro (64-bit) kernel on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz with PAA",
+  "Windows 10 Pro (64-bit) kernel on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz without PAA (single-user mode)",
+  "Windows 10 Pro (64-bit) on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz with PAA",
+  "Windows 10 Pro (64-bit) on VMWare ESXi 6.5.0 running on Dell Precision Tower 7910 with Intel® Xenon® CPU E5-2620 v3 @ 2.4GHz without PAA"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "4.4",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C383",
+   "cavp_id": "30779",
+   "cavp_ref": "C:383"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C384",
+   "cavp_id": "30780",
+   "cavp_ref": "C:384"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C385",
+   "cavp_id": "30781",
+   "cavp_ref": "C:385"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C386",
+   "cavp_id": "30782",
+   "cavp_ref": "C:386"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C387",
+   "cavp_id": "30783",
+   "cavp_ref": "C:387"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C388",
+   "cavp_id": "30784",
+   "cavp_ref": "C:388"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C389",
+   "cavp_id": "30785",
+   "cavp_ref": "C:389"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C390",
+   "cavp_id": "30786",
+   "cavp_ref": "C:390"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C391",
+   "cavp_id": "30787",
+   "cavp_ref": "C:391"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C392",
+   "cavp_id": "30788",
+   "cavp_ref": "C:392"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C393",
+   "cavp_id": "30789",
+   "cavp_ref": "C:393"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C478",
+   "cavp_id": "30874",
+   "cavp_ref": "C:478"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #C511, #C512, #C513, #C514, #C515, #C516, #C517, #C518, #C519, #C520, #C521 and #C522",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C632",
+   "cavp_id": "31028",
+   "cavp_ref": "C:632"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C633",
+   "cavp_id": "31029",
+   "cavp_ref": "C:633"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C634",
+   "cavp_id": "31030",
+   "cavp_ref": "C:634"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C635",
+   "cavp_id": "31031",
+   "cavp_ref": "C:635"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C636",
+   "cavp_id": "31032",
+   "cavp_ref": "C:636"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C637",
+   "cavp_id": "31033",
+   "cavp_ref": "C:637"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C638",
+   "cavp_id": "31034",
+   "cavp_ref": "C:638"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C639",
+   "cavp_id": "31035",
+   "cavp_ref": "C:639"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C640",
+   "cavp_id": "31036",
+   "cavp_ref": "C:640"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C641",
+   "cavp_id": "31037",
+   "cavp_ref": "C:641"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C642",
+   "cavp_id": "31038",
+   "cavp_ref": "C:642"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C643",
+   "cavp_id": "31039",
+   "cavp_ref": "C:643"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C511",
+   "cavp_id": "30907",
+   "cavp_ref": "C:511"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C512",
+   "cavp_id": "30908",
+   "cavp_ref": "C:512"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C513",
+   "cavp_id": "30909",
+   "cavp_ref": "C:513"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C514",
+   "cavp_id": "30910",
+   "cavp_ref": "C:514"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C515",
+   "cavp_id": "30911",
+   "cavp_ref": "C:515"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C516",
+   "cavp_id": "30912",
+   "cavp_ref": "C:516"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C517",
+   "cavp_id": "30913",
+   "cavp_ref": "C:517"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C518",
+   "cavp_id": "30914",
+   "cavp_ref": "C:518"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C519",
+   "cavp_id": "30915",
+   "cavp_ref": "C:519"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C520",
+   "cavp_id": "30916",
+   "cavp_ref": "C:520"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C521",
+   "cavp_id": "30917",
+   "cavp_ref": "C:521"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C522",
+   "cavp_id": "30918",
+   "cavp_ref": "C:522"
+  }
+ ],
+ "vendor": "Symantec Corporation",
+ "vendor_info": {
+  "name": "Symantec Corporation",
+  "website": "http://www.symantec.com",
+  "address": [
+   "350 Ellis Street",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Kathryn Kriese"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3729.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202020_021120_0702_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/21/2020",
+   "type": "Initial",
+   "lab": "AEGISOLVE, Inc."
+  }
+ ],
+ "first_validated": "10/21/2020",
+ "last_updated": "10/21/2020",
+ "labs": "AEGISOLVE, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3729.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3729,
+  "vendor": "Symantec Corporation",
+  "module": "Symantec PGP Cryptographic Engine",
+  "type": "Software",
+  "validation_dates": [
+   "10/21/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

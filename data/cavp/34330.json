@@ -1,0 +1,46 @@
+{
+ "cavp_id": "34330",
+ "cavp_cert": "A1721",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34330",
+ "implementation": "Helion IP core HW AES-CCM",
+ "product_id": "14224",
+ "description": "The Helion IP core HW AES-CCM provides an AES-CCM algorithm implementation in support of Thales Alenia Space FPGA.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "7/19/2021",
+ "vendor": "Thales Alenia Space",
+ "vendor_website": "https://www.thalesgroup.com/es/espana/espacio",
+ "oes": [
+  {
+   "name": "ModelSim with Actel AX",
+   "details": [
+    "Software: Actel AX libraries (Libero 9.2sp2)",
+    "  Resources and IDE for testing purposes",
+    "Firmware: ModelSim PEv6.5",
+    "  Simulator for Hardware cryptographic capabilities"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 104",
+    "Payload Length: 8-256 Increment 8",
+    "AAD Length: 0-256 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

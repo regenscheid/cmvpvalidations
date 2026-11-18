@@ -1,0 +1,48 @@
+{
+ "cavp_id": "20743",
+ "cavp_cert": "ECDSA 1270",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20743",
+ "implementation": "SafeXcel 1746 Chip",
+ "product_id": "8834",
+ "description": "The SafeXcel 1746 allows host processors to offload packet processing and crypto computations, providing acceleration of IPsec, TLS/SSL/DTLS, SRTP, and MACsec security protocol functions, as well as acceleration of the latest cipher and hash cryptographic algorithms, including Suite B.",
+ "version": "SF914-17060-100B",
+ "type": "HARDWARE",
+ "first_validated": "11/30/2017",
+ "vendor": "Gemalto",
+ "vendor_website": "http://www.gemalto.com",
+ "oes": [
+  {
+   "name": "SafeXcel 1746 Chip",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

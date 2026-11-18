@@ -1,0 +1,184 @@
+{
+ "cert": 2763,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2763",
+ "module": "IBM® z/OS® Version 2 Release 1 ICSF PKCS #11 Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module IBM(R) z/OS(R) Version 2 Release 1 Security Server RACF(R) Signature Verification Module version 1.0 validated to FIPS 140-2 under Cert. #2691 operating in FIPS mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software-Hybrid",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "ICSF is a software element of z/OS that works with hardware cryptographic features and the Security Server (RACF) to provide secure, high-speed cryptographic services in the z/OS environment. ICSF, which runs as a started task, provides the application programming interfaces by which applications request the cryptographic services.",
+ "tested_configurations": [
+  "IBM z/OS Version 2 Release 1 running on an IBM z13 (single-user mode)"
+ ],
+ "hardware_versions": "COP chips integrated within processor unit [1] and P/N 00LV487 [2]",
+ "software_versions": "OA50113",
+ "firmware_versions": "Feature 3863 (aka FC3863) with System Driver Level 22H [1] and CCA 5.2.27z RC30 [2]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3958",
+   "cavp_id": "9578",
+   "cavp_ref": "AES:3958"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4036",
+   "cavp_id": "23061",
+   "cavp_ref": "AES:4036"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 882",
+   "cavp_id": "16494",
+   "cavp_ref": "Component:882"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 883",
+   "cavp_id": "1331",
+   "cavp_ref": "Component:883"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1206",
+   "cavp_id": "28053",
+   "cavp_ref": "DRBG:1206"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1212",
+   "cavp_id": "2682",
+   "cavp_ref": "DRBG:1212"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1092",
+   "cavp_id": "14328",
+   "cavp_ref": "DSA:1092"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1097",
+   "cavp_id": "2917",
+   "cavp_ref": "DSA:1097"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 901",
+   "cavp_id": "4976",
+   "cavp_ref": "ECDSA:901"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2633",
+   "cavp_id": "15418",
+   "cavp_ref": "HMAC:2633"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4036",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2070",
+   "cavp_id": "12781",
+   "cavp_ref": "RSA:2070"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2088",
+   "cavp_id": "8113",
+   "cavp_ref": "RSA:2088"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3196",
+   "cavp_id": "15932",
+   "cavp_ref": "SHS:3196"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3327",
+   "cavp_id": "942",
+   "cavp_ref": "SHS:3327"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2214",
+   "cavp_id": "18731",
+   "cavp_ref": "TDES:2214"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "2455 South Road",
+   "Poughkeepsie, NY 12601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "John Monti"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2763.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertOct2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/6/2016",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  },
+  {
+   "date": "2/20/2018",
+   "type": "Update",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "10/6/2016",
+ "last_updated": "2/20/2018",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2763.pdf",
+ "other_fields": {
+  "Historical Reason": "186-2 transition",
+  "Other Algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2763,
+  "vendor": "IBM® Corporation",
+  "module": "IBM® z/OS® Version 2 Release 1 ICSF PKCS #11 Cryptographic Module",
+  "type": "Software-Hybrid",
+  "validation_dates": [
+   "10/06/2016",
+   "02/20/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,232 @@
+{
+ "cert": 4518,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4518",
+ "module": "Secure Boot Processor (SBP) Crypto Engine",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "The Secure Boot Processor operates a secure enclave within the Fungible DPU, and implements a hardware rooted chain of trust for authenticating all software, firmware and configuration files used in the DPU. The SBP also manages a number of asymmetric key cryptography accelerators within the enclave, and implements APIs for invoking these accelerators. The APIs are used by the DPU operating system (FunOS) modules to offload public key cryptography operations.",
+ "tested_configurations": [
+  "Fungible F1 rev A0",
+  "Fungible S1 rev A0"
+ ],
+ "hardware_versions": "F1 1.0.0 and S1 1.0.1",
+ "firmware_versions": "95b53165a1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2318",
+   "cavp_id": "34927",
+   "cavp_ref": "A:2318"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2321",
+   "cavp_id": "34930",
+   "cavp_ref": "A:2321"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2322",
+   "cavp_id": "34931",
+   "cavp_ref": "A:2322"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2323",
+   "cavp_id": "34932",
+   "cavp_ref": "A:2323"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2342",
+   "cavp_id": "34951",
+   "cavp_ref": "A:2342"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2349",
+   "cavp_id": "34958",
+   "cavp_ref": "A:2349"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A2350",
+   "cavp_id": "34959",
+   "cavp_ref": "A:2350"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2342",
+   "cavp_id": "34951",
+   "cavp_ref": "A:2342"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2349",
+   "cavp_id": "34958",
+   "cavp_ref": "A:2349"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A2350",
+   "cavp_id": "34959",
+   "cavp_ref": "A:2350"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2349",
+   "cavp_id": "34958",
+   "cavp_ref": "A:2349"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A2350",
+   "cavp_id": "34959",
+   "cavp_ref": "A:2350"
+  },
+  {
+   "algorithm": "ENT",
+   "cavp_cert": "P",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2319",
+   "cavp_id": "34928",
+   "cavp_ref": "A:2319"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2320",
+   "cavp_id": "34929",
+   "cavp_ref": "A:2320"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2349",
+   "cavp_id": "34958",
+   "cavp_ref": "A:2349"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2350",
+   "cavp_id": "34959",
+   "cavp_ref": "A:2350"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A2342",
+   "cavp_id": "34951",
+   "cavp_ref": "A:2342"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #A2318 and #A2323; key establishment methodology provides 128 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS-RSA",
+   "cavp_cert": "Certs. #A2349 and #A2350; key establishment methodology provides between 112 and 150 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2349",
+   "cavp_id": "34958",
+   "cavp_ref": "A:2349"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2350",
+   "cavp_id": "34959",
+   "cavp_ref": "A:2350"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2319",
+   "cavp_id": "34928",
+   "cavp_ref": "A:2319"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2320",
+   "cavp_id": "34929",
+   "cavp_ref": "A:2320"
+  }
+ ],
+ "vendor": "Fungible, Inc.",
+ "vendor_info": {
+  "name": "Fungible, Inc.",
+  "website": "http://www.fungible.com",
+  "address": [
+   "3201 Scott Blvd.",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Wael Noureddine"
+   },
+   {
+    "name": "Bertrand Serlet"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4518.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/May%202023_010623_0642.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/10/2023",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "5/10/2023",
+ "last_updated": "5/10/2023",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4518.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 4518,
+  "vendor": "Fungible, Inc.",
+  "module": "Secure Boot Processor (SBP) Crypto Engine",
+  "type": "Hardware",
+  "validation_dates": [
+   "05/10/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

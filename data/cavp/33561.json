@@ -1,0 +1,50 @@
+{
+ "cavp_id": "33561",
+ "cavp_cert": "A960",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33561",
+ "implementation": "Sansec HSM - CSM Library (CMAC)",
+ "product_id": "13448",
+ "description": "The CSM library implements cryptographic algorithms for data encryption, data decryption, signature generation, signature verification, message digest, message authentication code (MAC), and random number generation. The CMS library is part of the Sansec Hardware Security Module (HSM).",
+ "version": "v3.02.0025",
+ "type": "FIRMWARE",
+ "first_validated": "1/11/2021",
+ "vendor": "Sansec Technology Co., Ltd.",
+ "vendor_website": "http://www.sansec.com.cn/",
+ "oes": [
+  {
+   "name": "Intel Coffee Lake Celeron G4930",
+   "details": [
+    "processor: Celeron G4930",
+    "  Processor Celeron G4930 (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Coffee Lake"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "TDES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Keying Option: 1",
+    "    MAC Length: 64",
+    "    Message Length: 64, 184, 1608, 2048, 524288"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

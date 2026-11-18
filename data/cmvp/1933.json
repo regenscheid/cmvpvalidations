@@ -1,0 +1,310 @@
+{
+ "cert": 1933,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1933",
+ "module": "Red Hat Enterprise Linux 6.2 dm-crypt Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Red Hat Enterprise Linux 6.2 OpenSSL Cryptographic Module validated to FIPS 140-2 under Cert. #1758, Red Hat Enterprise Linux 6.2 Kernel Crypto API Cryptographic Module validated to FIPS 140-2 under Cert. #1901, Red Hat Enterprise Linux 6.2 Libgcrypt Cryptographic Module validated to FIPS 140-2 under Cert. #1757 and NSS Cryptographic Module validated to FIPS 140-2 under Cert. #1837, each module shall be obtained, installed, and initialized as specified in Section 9.1 of the provided Security Policy. Section 1 of the provided Security Policies specifies the precise RPM file containing each module. The integrity of the RPM is automatically verified during the installation and the Crypto officer shall not install the RPM file if the RPM tool indicates an integrity error. Any deviation from the specified verification, installation and initialization procedures will result in a non FIPS 140-2 compliant module",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Device-mapper is an infrastructure in the Linux kernel that provides a generic way to create virtual layers of block devices on top of real block devices. dm-crypt is a device-mapper target that provides transparent encryption of block devices using the Kernel Crypto API shipped with RHEL 6.2. The user can specify one of the symmetric ciphers, a key (of any allowed size), an IV generation mode which allows the user to create a new block device in /dev. Writes to this device will be encrypted and reads decrypted transparent to the user.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 6.2 with PAA running on IBM HS22",
+  "Red Hat Enterprise Linux 6.2 without PAA running on HP ProLiant DL585",
+  "Red Hat Enterprise Linux 6.2 without PAA running on IBM HS22 (single-user mode)"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1968",
+   "cavp_id": "14273",
+   "cavp_ref": "AES:1968"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1969",
+   "cavp_id": "4999",
+   "cavp_ref": "AES:1969"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1970",
+   "cavp_id": "12861",
+   "cavp_ref": "AES:1970"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1971",
+   "cavp_id": "5535",
+   "cavp_ref": "AES:1971"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1972",
+   "cavp_id": "22057",
+   "cavp_ref": "AES:1972"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 628",
+   "cavp_id": "3397",
+   "cavp_ref": "DSA:628"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 629",
+   "cavp_id": "5090",
+   "cavp_ref": "DSA:629"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 634",
+   "cavp_id": "4153",
+   "cavp_ref": "DSA:634"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 635",
+   "cavp_id": "5218",
+   "cavp_ref": "DSA:635"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1128",
+   "cavp_id": "9597",
+   "cavp_ref": "HMAC:1128"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1129",
+   "cavp_id": "27897",
+   "cavp_ref": "HMAC:1129"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1130",
+   "cavp_id": "23812",
+   "cavp_ref": "HMAC:1130"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1131",
+   "cavp_id": "21896",
+   "cavp_ref": "HMAC:1131"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1132",
+   "cavp_id": "4522",
+   "cavp_ref": "HMAC:1132"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1133",
+   "cavp_id": "11861",
+   "cavp_ref": "HMAC:1133"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1134",
+   "cavp_id": "3429",
+   "cavp_ref": "HMAC:1134"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1135",
+   "cavp_id": "11479",
+   "cavp_ref": "HMAC:1135"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1199",
+   "cavp_id": "8845",
+   "cavp_ref": "HMAC:1199"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1200",
+   "cavp_id": "8970",
+   "cavp_ref": "HMAC:1200"
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 988",
+   "cavp_id": "20114",
+   "cavp_ref": "RNG:988"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 991",
+   "cavp_id": "1964",
+   "cavp_ref": "RNG:991"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 992",
+   "cavp_id": "25245",
+   "cavp_ref": "RNG:992"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 993",
+   "cavp_id": "160",
+   "cavp_ref": "RNG:993"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1657",
+   "cavp_id": "10870",
+   "cavp_ref": "SHS:1657"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1658",
+   "cavp_id": "19389",
+   "cavp_ref": "SHS:1658"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1659",
+   "cavp_id": "13",
+   "cavp_ref": "SHS:1659"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1660",
+   "cavp_id": "14474",
+   "cavp_ref": "SHS:1660"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1661",
+   "cavp_id": "18117",
+   "cavp_ref": "SHS:1661"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1662",
+   "cavp_id": "16523",
+   "cavp_ref": "SHS:1662"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1663",
+   "cavp_id": "26305",
+   "cavp_ref": "SHS:1663"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1664",
+   "cavp_id": "30116",
+   "cavp_ref": "SHS:1664"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1725",
+   "cavp_id": "1720",
+   "cavp_ref": "SHS:1725"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1726",
+   "cavp_id": "9757",
+   "cavp_ref": "SHS:1726"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1741",
+   "cavp_id": "10888",
+   "cavp_ref": "SHS:1741"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1742",
+   "cavp_id": "6750",
+   "cavp_ref": "SHS:1742"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1278",
+   "cavp_id": "14803",
+   "cavp_ref": "TDES:1278"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1279",
+   "cavp_id": "26777",
+   "cavp_ref": "TDES:1279"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "314 Littleton Road",
+   "Westford, MA 01886",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Ann-Marie Rubin"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1933.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0028.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/15/2013",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "4/15/2013",
+ "last_updated": "4/15/2013",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1933.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; AES-CTR (non-compliant); AES-XTS (non-compliant); AES-CBC (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1933,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux 6.2 dm-crypt Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/15/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

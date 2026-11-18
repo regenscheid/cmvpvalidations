@@ -1,0 +1,146 @@
+{
+ "cert": 3614,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3614",
+ "module": "ASI-HSM AHX5 KNET Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "The module exists to provide cryptographic services to applications running on behalf of its users which communicate with it via a standard Ethernet interface using IP protocols. In order to provide these services, the module also requires a power supply. The module is usually sold embedded within a stand-alone network appliance. That appliance is typically used in large-scale cloud infrastructures, where ease of remote configuration and operation is required.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "EC Diffie-Hellman (CVL Cert. #C212, Key agreement; key establishment methodology provides 128 bits of security strength); NDRNG; RSA (Key wrapping; key establishment methodology provides 112 bits of security strength)",
+ "hardware_versions": "1.0.1",
+ "firmware_versions": "1.0.1",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C212",
+   "cavp_id": "30608",
+   "cavp_ref": "C:212"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "Vendor Affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C212",
+   "cavp_id": "30608",
+   "cavp_ref": "C:212"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 349",
+   "cavp_id": "12747",
+   "cavp_ref": "DRBG:349"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C212",
+   "cavp_id": "30608",
+   "cavp_ref": "C:212"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C212",
+   "cavp_id": "30608",
+   "cavp_ref": "C:212"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C212",
+   "cavp_id": "30608",
+   "cavp_ref": "C:212"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C212; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C212",
+   "cavp_id": "30608",
+   "cavp_ref": "C:212"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C212",
+   "cavp_id": "30608",
+   "cavp_ref": "C:212"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C212",
+   "cavp_id": "30608",
+   "cavp_ref": "C:212"
+  }
+ ],
+ "vendor": "KRYPTUS S.A.",
+ "vendor_info": {
+  "name": "KRYPTUS S.A.",
+  "website": "http://www.kryptus.com",
+  "address": [
+   "Rua Maria Tereza Dias da Silva, 270",
+   "Campinas, Sau Paulo",
+   "Brazil"
+  ],
+  "contacts": [
+   {
+    "name": "Sales Department"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3614.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/February%202020_020320.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/4/2020",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "2/4/2020",
+ "last_updated": "2/4/2020",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3614.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Diffie-Hellman (CVL Cert. #C212, Key agreement; key establishment methodology provides 128 bits of security strength); NDRNG; RSA (Key wrapping; key establishment methodology provides 112 bits of security strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3614,
+  "vendor": "KRYPTUS S.A.",
+  "module": "ASI-HSM AHX5 KNET Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/04/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,133 @@
+{
+ "cert": 2595,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2595",
+ "module": "HiCOS PKI Native Smart Card Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Ports and Interfaces: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: Level 3",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "The HiCOS PKI native smart card module is a single chip implementation of a cryptographic module. The HiCOS PKI native smart card module is mounted in an ID-1 class smart card body that adheres to ISO/IEC specifications for Integrated Circuit Chip (ICC) based identification cards. The module consists of the chip (ICC), the contact faceplate, and the electronic connectors between the chip and contact pad, all contained within an epoxy substrate.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "hardware_versions": "RS45C",
+ "firmware_versions": "HardMask: 2.2 and SoftMask: 1.2 and 1.3",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 614",
+   "cavp_id": "1884",
+   "cavp_ref": "Component:614"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 927",
+   "cavp_id": "13581",
+   "cavp_ref": "DRBG:927"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 731",
+   "cavp_id": "20235",
+   "cavp_ref": "ECDSA:731"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1846",
+   "cavp_id": "14852",
+   "cavp_ref": "RSA:1846"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2953",
+   "cavp_id": "7100",
+   "cavp_ref": "SHS:2953"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1999",
+   "cavp_id": "21068",
+   "cavp_ref": "TDES:1999"
+  }
+ ],
+ "vendor": "Chunghwa Telecom Co., Ltd.",
+ "vendor_info": {
+  "name": "Chunghwa Telecom Co., Ltd.",
+  "website": "http://www.cht.com.tw",
+  "address": [
+   "No.99, Dianyan Road",
+   "Yang-Mei",
+   "Taoyuan, Taiwan 326",
+   "Republic of China"
+  ],
+  "contacts": [
+   {
+    "name": "Yeou-Fuh Kuan"
+   },
+   {
+    "name": "Char-Shin Miou"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2595.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertMarch2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/29/2016",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "11/29/2017",
+   "type": "Update",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "3/29/2016",
+ "last_updated": "11/29/2017",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2595.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-131A transition which disallows key wrapping not compliant to SP 800-38F.",
+  "Other Algorithms": "NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); Triple-DES (Certs. #1999, key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2595,
+  "vendor": "Chunghwa Telecom Co., Ltd.",
+  "module": "HiCOS PKI Native Smart Card Cryptographic Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/29/2016",
+   "11/29/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

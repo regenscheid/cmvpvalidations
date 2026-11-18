@@ -1,0 +1,124 @@
+{
+ "cert": 893,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/893",
+ "module": "Windows Vista Enhanced Cryptographic Provider (RSAENH)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with Code Integrity (ci.dll) validated to FIPS 140-2 under Cert. #890 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "RSAENH encapsulates several different cryptographic algorithms in an easy-to-use cryptographic module accessible via the Microsoft CryptoAPI. Developers dynamically link the Microsoft RSAENH module into their applications to provide FIPS 140-2 compliant cryptographic support.",
+ "tested_configurations": [
+  "Microsoft Windows Vista Ultimate Edition (x64 version) (single-user mode)",
+  "Microsoft Windows Vista Ultimate Edition (x86 Version)"
+ ],
+ "software_versions": "6.0.6000.16386",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 553",
+   "cavp_id": "17414",
+   "cavp_ref": "AES:553"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 297",
+   "cavp_id": "3927",
+   "cavp_ref": "HMAC:297"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 321",
+   "cavp_id": "15257",
+   "cavp_ref": "RNG:321"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 255",
+   "cavp_id": "5734",
+   "cavp_ref": "RSA:255"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 258",
+   "cavp_id": "28972",
+   "cavp_ref": "RSA:258"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 618",
+   "cavp_id": "14149",
+   "cavp_ref": "SHS:618"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 549",
+   "cavp_id": "28904",
+   "cavp_ref": "TDES:549"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Dave Friant"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp893.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt893.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/10/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "1/10/2008",
+ "last_updated": "1/10/2008",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp893.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "DES; MD2; MD4; MD5; RC2; RC4; RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 893,
+  "vendor": "Microsoft Corporation",
+  "module": "Windows Vista Enhanced Cryptographic Provider (RSAENH)",
+  "type": "Software",
+  "validation_dates": [
+   "01/10/2008"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

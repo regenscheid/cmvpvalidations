@@ -1,0 +1,125 @@
+{
+ "cert": 1152,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1152",
+ "module": "IBM System Storage LTO Ultrium 4 Tape Drive",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The IBM LTO Ultrium 4 Tape Drive provides AES-GCM encryption of customer data recorded to tape. Both encryption and compression are implemented in the hardware for optimum performance. Three different host interface types of the LTO Ultrium 4 \"brick\" unit are FIPS certified as a multi-chip, standalone cryptographic module. In customer operation the \"brick\" unit may be embedded in bridge box or in a canister package for operation in a library.",
+ "hardware_versions": "23R9539 (Fibre Channel), 23R9904 (SAS), and 95P4613 (SCSI)",
+ "firmware_versions": "df080911bf_89Bb.FC.fips.ro (Fibre Channel), df080911bf_89Bb.SAS.fips.ro (SAS), and df080911bf_89Bb.SCSI.fips.ro (SCSI)",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 918",
+   "cavp_id": "927",
+   "cavp_ref": "AES:918"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 919",
+   "cavp_id": "22698",
+   "cavp_ref": "AES:919"
+  },
+  {
+   "algorithm": "AES GCM",
+   "cavp_cert": "AES 918",
+   "cavp_id": "927",
+   "cavp_ref": "AES:918"
+  },
+  {
+   "algorithm": "AES GCM",
+   "cavp_cert": "AES 919",
+   "cavp_id": "22698",
+   "cavp_ref": "AES:919",
+   "note": "vendor affirmed"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 527",
+   "cavp_id": "1897",
+   "cavp_ref": "RNG:527"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 446",
+   "cavp_id": "1428",
+   "cavp_ref": "RSA:446"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 906",
+   "cavp_id": "14522",
+   "cavp_ref": "SHS:906"
+  }
+ ],
+ "vendor": "IBM® Corporation",
+ "vendor_info": {
+  "name": "IBM® Corporation",
+  "website": "http://www.ibm.com",
+  "address": [
+   "9032 S Rita Road",
+   "Tucson, AZ 85744",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "David L. Swanson"
+   },
+   {
+    "name": "Christine Knibloe"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1152.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt1152.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/1/2009",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  }
+ ],
+ "first_validated": "7/1/2009",
+ "last_updated": "7/1/2009",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1152.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1152,
+  "vendor": "IBM® Corporation",
+  "module": "IBM System Storage LTO Ultrium 4 Tape Drive",
+  "type": "Hardware",
+  "validation_dates": [
+   "07/01/2009"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

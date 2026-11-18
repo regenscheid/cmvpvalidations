@@ -1,0 +1,38 @@
+{
+ "cavp_id": "12987",
+ "cavp_cert": "DRBG 1470",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12987",
+ "implementation": "KC API using CPACF for AES, TDES and GHASH",
+ "product_id": "786",
+ "description": "Ubuntu Kernel Crypto API cryptographic module provides cryptographic services to the software components executing as part of the Linux kernel. This test covers the implementations of gcm_base(ctr-aes-s390,ghash-s390), ccm_base(ctr-aes-s390,aes-s390), cbc-aes-s390, ecb-aes-s390, xts-aes-s390, cbc-des3_ede-s390, ecb-des3_ede-s390, ctr-des3_ede-s390.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "5/12/2017",
+ "vendor": "Canonical Ltd.",
+ "vendor_website": "http://www.canonical.com",
+ "oes": [
+  {
+   "name": "Ubuntu 16.04 on z13",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "  Capabilities:",
+    "    Mode: AES-128",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-192",
+    "    Derivation Function Enabled: Yes",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

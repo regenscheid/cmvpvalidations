@@ -1,0 +1,82 @@
+{
+ "cavp_id": "32468",
+ "cavp_cert": "C1686",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32468",
+ "implementation": "Integral Crypto USB 3.0",
+ "product_id": "12371",
+ "description": "The Integral Envoy Dual Crypto Dual & Crypto FIPS 140-2 Encrypted USB 3.0 Flash Drives provides a highly secure and simple to use security solution for portable data, featuring mandatory encryption of all files stored on the Flash Drive, Dual passwords (Administrator and User) and a SuperSpeed USB 3.0 interface.",
+ "version": "PS2251-15",
+ "type": "HARDWARE",
+ "first_validated": "4/17/2020",
+ "vendor": "Integral Memory Plc",
+ "vendor_website": "http://www.Integralmemory.com",
+ "oes": [
+  {
+   "name": "Integral Crypto USB 3.0",
+   "details": [
+    "device: Integral Crypto USB 3.0"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256",
+    "C1686 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128, 4096",
+    "Tweak Mode: Number"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Random",
+    "C1686 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

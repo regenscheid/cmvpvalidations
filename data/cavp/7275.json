@@ -1,0 +1,44 @@
+{
+ "cavp_id": "7275",
+ "cavp_cert": "AES 5397",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=7275",
+ "implementation": "ClevX Datalock Cryptographic Library",
+ "product_id": "9454",
+ "description": "ClevX Datalock Cryptographic Firmware Library",
+ "version": "ClevX-Datalock-v2.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/3/2018",
+ "vendor": "ClevX, LLC",
+ "vendor_website": "http://www.clevx.com",
+ "oes": [
+  {
+   "name": "STM32L071C",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128",
+    "Tag Length: 32",
+    "IV Length: 96",
+    "Payload Length: 128",
+    "AAD Length: 0"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

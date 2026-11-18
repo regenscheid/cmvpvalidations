@@ -1,0 +1,45 @@
+{
+ "cavp_id": "30009",
+ "cavp_cert": "TDES 270",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30009",
+ "implementation": "SafeEnterprise Crypto-622 Module",
+ "product_id": "4233",
+ "description": "The SafeEnterprise Crypto-622 Module is a FIPS-140-2 compliant cryptographic accelerator that provides AES and TDES encryption operating at 622 Mbps. The data encryption algorithms are implemented in the firmware and support Cipher Feedback (CFB) AES along with Counter Mode and CFB TDES.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "8/12/2004",
+ "vendor": "SafeNet, Inc.",
+ "vendor_website": "http://www.safeNet-inc.com",
+ "oes": [
+  {
+   "name": "Xilinx XC2V2000 Processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CFB64",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Keying Option: 1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

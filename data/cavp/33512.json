@@ -1,0 +1,67 @@
+{
+ "cavp_id": "33512",
+ "cavp_cert": "A913",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33512",
+ "implementation": "Aquarius ACNT036M Cryptographic Module",
+ "product_id": "13373",
+ "description": "All of these crypto algorithms (AES 256 bit – ECB, XTS, Key Wrap, HMAC and SHA-256) are implemented in hardware of SK Hynix Aquarius controller to achieve high performance.",
+ "version": "ACNT036M B1",
+ "type": "HARDWARE",
+ "first_validated": "12/17/2020",
+ "vendor": "SK hynix memory solutions America Inc.",
+ "vendor_website": "http://www.skhms.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-R8 without Neon",
+   "details": [
+    "cpu: ARM Cortex-R8 without Neon"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256-512 Increment 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 3968",
+    "Tweak Mode: Hex, Number"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-256 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

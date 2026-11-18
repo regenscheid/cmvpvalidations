@@ -1,0 +1,38 @@
+{
+ "cavp_id": "12134",
+ "cavp_cert": "AES 95",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12134",
+ "implementation": "FipsCrypto",
+ "product_id": "4101",
+ "description": "The FipsCrypto is a FIPS 140-2 compliant software-based cryptographic dll module that implements the 3DES, AES, SHA-1 and HMAC-SHA-1 algorithms.",
+ "version": "1.9.3.7",
+ "type": "SOFTWARE",
+ "first_validated": "9/30/2003",
+ "vendor": "Good Technology, Inc.",
+ "vendor_website": "http://www.good.com",
+ "oes": [
+  {
+   "name": "eCos 1.3.1 on ARM-based processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

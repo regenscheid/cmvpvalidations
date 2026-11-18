@@ -1,0 +1,30 @@
+{
+ "cavp_id": "28570",
+ "cavp_cert": "DRBG 177",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=28570",
+ "implementation": "Random Number Generator",
+ "product_id": "120",
+ "description": "Components are part of firmware of the iStorage datashur encrypted drive. A random number generator (RNG) is implemented consisting of a non-deterministic source of entropy that becomes the seed for the deterministic hash_DRBG algorithm. The RNG is used for creating encryption keys used in the AES hashing function implemented in a 2nd chip.",
+ "version": "v2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/21/2012",
+ "vendor": "ClevX, LLC",
+ "vendor_website": "http://www.clevx.com",
+ "oes": [
+  {
+   "name": "Microchip 16LF1825",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Hash DRBG",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Mode: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

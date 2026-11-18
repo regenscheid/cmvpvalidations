@@ -1,0 +1,53 @@
+{
+ "cavp_id": "20644",
+ "cavp_cert": "DRBG 1195",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20644",
+ "implementation": "Management Security Algorithms",
+ "product_id": "5527",
+ "description": "Algorithms for managing Cambium PTP 820 platforms",
+ "version": "1.1",
+ "type": "SOFTWARE",
+ "first_validated": "7/31/2016",
+ "vendor": "Cambium Networks",
+ "vendor_website": "http://www.cambiumnetworks.com",
+ "oes": [
+  {
+   "name": "Freescale P1012",
+   "details": [
+    "processor: Freescale P1012"
+   ]
+  },
+  {
+   "name": "MIPS34Kc",
+   "details": [
+    "processor: MIPS34Kc"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "  Capabilities:",
+    "    Mode: SHA2-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Additional Input: 0-256",
+    "    Returned Bits: 1024"
+   ]
+  },
+  {
+   "algorithm": "HMAC DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: Yes",
+    "  Capabilities:",
+    "    Mode: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

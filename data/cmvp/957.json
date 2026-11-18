@@ -1,0 +1,165 @@
+{
+ "cert": 957,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/957",
+ "module": "Cisco Catalyst 6506, 6506-E, 6509 and 6509-E Switches with Wireless Services Module (WiSM)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "When operated in FIPS mode",
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The Cisco Catalyst 6506, 6506-E, 6509 and 6509-E Switches with Wireless Services Module (WiSM) provide unparalleled security, mobility, redundancy, centralized control and scalability for large-scale Government and Enterprise wireless LAN networks and supports the IEEE 802.11i wireless security standard in conjunction with meeting the Wi-Fi Alliances interoperability specification WPA2 to enable a Secure Wireless Architecture. The module supports voice, video and data services, location & asset tracking, integrated intrusion detection & intrusion protection and intelligent radio.",
+ "hardware_versions": "Chassis: 6506, 6509, 6506-E, 6509-E; Backplane: Hardware Versions 1.0, 1.1, 1.2 (6506-E), 1.0, 1.1, 1.2, 1.3, 1.4 (6509-E), 3.0, 3.2, 3.3 (6506, 6509); Supervisor Blade: Hardware Versions 4.0, 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9 (SUP720-3B), 4.0, 4.5, 4.6, 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9 (SUP720-3BXL); WiSM: Hardware Versions 1.0, 1.1, 1.2, 1.3, 1.4, 2.0, 2.1, 2.2, 2.3",
+ "firmware_versions": "12.2(18)SXF7, Build adventerprisek9 (Supervisor); 4.1.171.0[1] and 4.1.185.10[2] (WiSM)",
+ "sunset": "",
+ "level_exceptions": [],
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 554",
+   "cavp_id": "11375",
+   "cavp_ref": "AES:554"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 555",
+   "cavp_id": "23439",
+   "cavp_ref": "AES:555"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 906",
+   "cavp_id": "24546",
+   "cavp_ref": "AES:906",
+   "note": "[1]      [2]"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 294",
+   "cavp_id": "29123",
+   "cavp_ref": "HMAC:294"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 322",
+   "cavp_id": "29537",
+   "cavp_ref": "RNG:322"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 519",
+   "cavp_id": "29871",
+   "cavp_ref": "RNG:519",
+   "note": "[1]   [2]"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 249",
+   "cavp_id": "13301",
+   "cavp_ref": "RSA:249"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 250",
+   "cavp_id": "4312",
+   "cavp_ref": "RSA:250"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 619",
+   "cavp_id": "19418",
+   "cavp_ref": "SHS:619"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 620",
+   "cavp_id": "16347",
+   "cavp_ref": "SHS:620"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp957.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt957.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/5/2008",
+   "type": "Initial",
+   "lab": "SAIC-VA"
+  },
+  {
+   "date": "11/17/2008",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "3/6/2009",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "8/22/2011",
+   "type": "Update",
+   "lab": ""
+  },
+  {
+   "date": "2/23/2012",
+   "type": "Update",
+   "lab": ""
+  }
+ ],
+ "first_validated": "6/5/2008",
+ "last_updated": "2/23/2012",
+ "labs": "SAIC-VA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp957.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (AES Cert. #555, key wrapping; key establishment methodology provides 128 bits of encryption strength); AES-CTR (non-compliant); HMAC MD5; MD5; RC4; RSA (key wrapping; key establishment methodology provides 96 bits of encryption strength; non-compliant); Triple-DES (non-compliant); Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 957,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "Cisco Catalyst 6506, 6506-E, 6509 and 6509-E Switches with Wireless Services Module (WiSM)",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/05/2008",
+   "11/17/2008",
+   "03/06/2009",
+   "08/22/2011",
+   "02/23/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

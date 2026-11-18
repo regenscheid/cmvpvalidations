@@ -1,0 +1,38 @@
+{
+ "cavp_id": "16218",
+ "cavp_cert": "AES 3345",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=16218",
+ "implementation": "CN3000 Ethernet Firmware Crypto Library",
+ "product_id": "7018",
+ "description": "The CN3000 Ethernet Crypto Library Module is a cryptographic accelerator that contains FIPS 140-2 approved cryptographic algorithms. This module provides encryption functionality for the CN3000 Series Encryptor.",
+ "version": "2.6 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/8/2015",
+ "vendor": "Senetas Corporation Ltd, distributed by Gemalto NV (SafeNet)",
+ "vendor_website": "http://www.senetas.com",
+ "oes": [
+  {
+   "name": "Xilinx XC4VLX100",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

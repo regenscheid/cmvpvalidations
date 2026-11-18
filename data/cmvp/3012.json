@@ -1,0 +1,242 @@
+{
+ "cert": 3012,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3012",
+ "module": "Red Hat Enterprise Linux GnuTLS Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "GnuTLS is a secure communications library implementing the TLS and DTLS protocols. It provides a simple C language application programming interface to access the secure communications protocols as well as APIs to parse and write X.509, PCKS#12, and other required structures which is shipped with Red Hat Enterprise Linux 7.4.",
+ "tested_configurations": [
+  "Red Hat Enterprise Linux 7.4 running on Dell PowerEdge R630 with PAA",
+  "Red Hat Enterprise Linux 7.4 running on Dell PowerEdge R630 without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #1307 and #1309; key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1307 and #1309, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG",
+ "software_versions": "5.0",
+ "product_url": "http://www.redhat.com/en/technologies/linux-platforms/enterprise-linux",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4658",
+   "cavp_id": "4173",
+   "cavp_ref": "AES:4658"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4659",
+   "cavp_id": "606",
+   "cavp_ref": "AES:4659"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4660",
+   "cavp_id": "17210",
+   "cavp_ref": "AES:4660"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4661",
+   "cavp_id": "3042",
+   "cavp_ref": "AES:4661"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4662",
+   "cavp_id": "10684",
+   "cavp_ref": "AES:4662"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4663",
+   "cavp_id": "5776",
+   "cavp_ref": "AES:4663"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1307",
+   "cavp_id": "25665",
+   "cavp_ref": "Component:1307"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1308",
+   "cavp_id": "16158",
+   "cavp_ref": "Component:1308"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1309",
+   "cavp_id": "16918",
+   "cavp_ref": "Component:1309"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1310",
+   "cavp_id": "5959",
+   "cavp_ref": "Component:1310"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1574",
+   "cavp_id": "21533",
+   "cavp_ref": "DRBG:1574"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1575",
+   "cavp_id": "575",
+   "cavp_ref": "DRBG:1575"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1233",
+   "cavp_id": "28125",
+   "cavp_ref": "DSA:1233"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1234",
+   "cavp_id": "10960",
+   "cavp_ref": "DSA:1234"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1146",
+   "cavp_id": "10767",
+   "cavp_ref": "ECDSA:1146"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1147",
+   "cavp_id": "26616",
+   "cavp_ref": "ECDSA:1147"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3086",
+   "cavp_id": "8288",
+   "cavp_ref": "HMAC:3086"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3087",
+   "cavp_id": "19252",
+   "cavp_ref": "HMAC:3087"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2542",
+   "cavp_id": "24486",
+   "cavp_ref": "RSA:2542"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2543",
+   "cavp_id": "24524",
+   "cavp_ref": "RSA:2543"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3817",
+   "cavp_id": "17178",
+   "cavp_ref": "SHS:3817"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3818",
+   "cavp_id": "5074",
+   "cavp_ref": "SHS:3818"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3819",
+   "cavp_id": "17125",
+   "cavp_ref": "SHS:3819"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3820",
+   "cavp_id": "12197",
+   "cavp_ref": "SHS:3820"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2479",
+   "cavp_id": "22502",
+   "cavp_ref": "TDES:2479"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2480",
+   "cavp_id": "14200",
+   "cavp_ref": "TDES:2480"
+  }
+ ],
+ "vendor": "Red Hat®, Inc.",
+ "vendor_info": {
+  "name": "Red Hat®, Inc.",
+  "website": "http://www.redhat.com",
+  "address": [
+   "100 East Davie Street",
+   "Raleigh, NC 27601",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jaroslav Reznik"
+   },
+   {
+    "name": "Steve Grubb"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3012.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertSept2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/8/2017",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "9/8/2017",
+ "last_updated": "9/8/2017",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3012.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #1307 and #1309; key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1307 and #1309, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 256 bits of encryption strength); MD5; NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3012,
+  "vendor": "Red Hat®, Inc.",
+  "module": "Red Hat Enterprise Linux GnuTLS Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "09/08/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

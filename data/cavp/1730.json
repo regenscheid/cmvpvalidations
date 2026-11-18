@@ -1,0 +1,58 @@
+{
+ "cavp_id": "1730",
+ "cavp_cert": "AES 5481",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=1730",
+ "implementation": "Flash Array Crypto Library",
+ "product_id": "9582",
+ "description": "Flash Array Crypto Library is a comprehensive suite of FIPS Approved algorithms. All key sizes and modes have been implemented to allow flexibility and efficiency.",
+ "version": "1.2.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/15/2018",
+ "vendor": "Pure Storage, Inc.",
+ "vendor_website": "http://www.purestorage.com",
+ "oes": [
+  {
+   "name": "Purity 5 on Intel Xeon CPU with AES-NI (Scalable Processor Family: Silver and Gold)",
+   "details": []
+  },
+  {
+   "name": "Purity 5 on Intel Xeon x64 CPU with AES-NI (E5 Family)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External, Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: External, Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

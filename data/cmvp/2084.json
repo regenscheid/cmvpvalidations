@@ -1,0 +1,123 @@
+{
+ "cert": 2084,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2084",
+ "module": "GO-Trust SDencrypter",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS Mode",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip embedded",
+ "description": "SDencrypter is a hardware security module embedded into one microSD. The entire encryption, decryption, key generation process is completed inside the module. Fast íºin-chipí¿ processing, using a high-performance smart card chip, supports streaming voice and media operations. High-assurance protection is provided to keys and sensitive data which are encrypted and stored inside the chip.",
+ "hardware_versions": "GT-3001 with GT-0330",
+ "firmware_versions": "4.1.0.8 with 80023802-33860406 and 80023802-33860506",
+ "product_url": "http://www.go-trust.com/products/sdencrypter/",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1664",
+   "cavp_id": "9230",
+   "cavp_ref": "AES:1664"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1426",
+   "cavp_id": "27114",
+   "cavp_ref": "HMAC:1426"
+  },
+  {
+   "algorithm": "KDF",
+   "cavp_cert": "KDF 7",
+   "cavp_id": "176",
+   "cavp_ref": "KDF:7"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 999",
+   "cavp_id": "8572",
+   "cavp_ref": "RNG:999"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 976",
+   "cavp_id": "29364",
+   "cavp_ref": "RSA:976"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1672",
+   "cavp_id": "5695",
+   "cavp_ref": "SHS:1672"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1237",
+   "cavp_id": "16988",
+   "cavp_ref": "TDES:1237"
+  }
+ ],
+ "vendor": "GOTrust Technology Inc.",
+ "vendor_info": {
+  "name": "GOTrust Technology Inc.",
+  "website": "http://www.go-trust.com",
+  "address": [
+   "10F-1, No.306, Sec. 1, Wenxin Rd., Nantun Dist.",
+   "Taichung, Taiwan 408",
+   "Republic of China"
+  ],
+  "contacts": [
+   {
+    "name": "Sean Huang"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2084.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0038.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "2/22/2014",
+   "type": "Initial",
+   "lab": "TTC"
+  }
+ ],
+ "first_validated": "2/22/2014",
+ "last_updated": "2/22/2014",
+ "labs": "TTC",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2084.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES (Cert. #1664, key wrapping; key establishment methodology provides 256 bits of encryption strength); AESKW (SP 800-38F, vendor affirmed);"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2084,
+  "vendor": "GOTrust Technology Inc.",
+  "module": "GO-Trust SDencrypter",
+  "type": "Hardware",
+  "validation_dates": [
+   "02/22/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

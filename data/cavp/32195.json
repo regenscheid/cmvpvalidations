@@ -1,0 +1,116 @@
+{
+ "cavp_id": "32195",
+ "cavp_cert": "C1588",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32195",
+ "implementation": "Summit Linux FIPS Core Crypto (KernelHardwareAES)",
+ "product_id": "12141",
+ "description": "The Summit Linux FIPS Core Crypto Module implements FIPS 140-2 Approved cryptographic algorithms. The following cipher implementation is covered: Hybrid kernel/hardware AES implementations.",
+ "version": "7.0",
+ "type": "SOFTWARE",
+ "first_validated": "2/19/2020",
+ "vendor": "Ezurio",
+ "vendor_website": "http://www.ezurio.com/",
+ "oes": [
+  {
+   "name": "Summit Linux 7.0 on Microchip/Atmel SAMA5D3 ATSAMA5D36",
+   "details": [
+    "processor: ATSAMA5D36",
+    "  Processor ATSAMA5D36 (processor family arm7) from Microchip/Atmel",
+    "  family: arm7",
+    "  manufacturer: Microchip/Atmel",
+    "  series: SAMA5D3",
+    "software: Summit Linux 7.0",
+    "  Summit Linux 7.0 on Microchip/Atmel ATSAMA5D36",
+    "  swid: none"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-256",
+    "C1588 (AES)"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128",
+    "    MAC Length: 128",
+    "    Message Length: 0, 256, 264, 384, 392, 524288",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 192",
+    "    MAC Length: 128",
+    "    Message Length: 0, 256, 264, 384, 392, 524288",
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 0, 256, 264, 384, 392, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 128",
+    "    MAC Length: 64, 128",
+    "    Message Length: 0, 256, 264, 512, 520, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 192",
+    "    MAC Length: 64, 128",
+    "    Message Length: 0, 256, 264, 512, 520, 524288",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 64, 128",
+    "    Message Length: 0, 256, 264, 512, 520, 524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

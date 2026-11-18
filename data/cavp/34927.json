@@ -1,0 +1,57 @@
+{
+ "cavp_id": "34927",
+ "cavp_cert": "A2318",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34927",
+ "implementation": "S1 SBP AES Engine",
+ "product_id": "14825",
+ "description": "Hardware engine implementing AES and its different modes",
+ "version": "1.0.1",
+ "type": "HARDWARE",
+ "first_validated": "2/9/2022",
+ "vendor": "Fungible Inc.",
+ "vendor_website": "http://www.fungible.com",
+ "oes": [
+  {
+   "name": "S1 SBP AES Engine",
+   "details": [
+    "Hardware: S1 SBP AES Engine"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 0, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8-16384 Increment 8",
+    "AAD Length: 0-8192 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

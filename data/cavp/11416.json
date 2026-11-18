@@ -1,0 +1,52 @@
+{
+ "cavp_id": "11416",
+ "cavp_cert": "AES 5945",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11416",
+ "implementation": "ArubaOS Crypto Module",
+ "product_id": "10322",
+ "description": "The Aruba MOVE Architecture forms the core network infrastructure for supporting mobile and wireless computing devices. The system enables enterprise-scale 802.11 wireless LANs (Wi-Fi), secure remote VPNs, and mobility-optimized wired networks.",
+ "version": "ArubaOS 8.2 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/9/2018",
+ "vendor": "Aruba, a Hewlett Packard Enterprise company",
+ "vendor_website": "http://www.arubanetworks.com",
+ "oes": [
+  {
+   "name": "Broadcom BCM47452",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 1024",
+    "AAD Length: 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

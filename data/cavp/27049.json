@@ -1,0 +1,50 @@
+{
+ "cavp_id": "27049",
+ "cavp_cert": "AES 4630",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27049",
+ "implementation": "Titan Key",
+ "product_id": "1846",
+ "description": "Implemented with Google’s \"Titan\" secure microcontroller and custom firmware, the Titan Key is a FIPS-compliant Universal 2nd Factor (U2F) authenticator and hardware root of trust.",
+ "version": "1.0",
+ "type": "HARDWARE",
+ "first_validated": "7/28/2017",
+ "vendor": "Google, Inc.",
+ "vendor_website": "http://www.google.com",
+ "oes": [
+  {
+   "name": "Titan Key",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128",
+    "    MAC Length: 8-128",
+    "    Message Length: 104-16384",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

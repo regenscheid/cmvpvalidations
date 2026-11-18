@@ -1,0 +1,57 @@
+{
+ "cavp_id": "33360",
+ "cavp_cert": "C2191",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33360",
+ "implementation": "SX-590-1402_openssl",
+ "product_id": "13257",
+ "description": "OpenSSL v2.0.16 built on the Silex SX-590 iMX6 based platform",
+ "version": "2.0.16",
+ "type": "FIRMWARE",
+ "first_validated": "10/6/2020",
+ "vendor": "Silex Technology America",
+ "vendor_website": "http://silexamerica.com",
+ "oes": [
+  {
+   "name": "Linux 4.1.15 on NXP iMX6",
+   "details": [
+    "software: Linux 4.1.15",
+    "processor: NXP iMX6"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: Yes, No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0-256",
+    "    Entropy Input: 256",
+    "    Nonce: 128",
+    "    Personalization String Length: 0-256",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Extra Bits, Testing Candidates",
+    "C2191 (DRBG)"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

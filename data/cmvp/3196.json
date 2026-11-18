@@ -1,0 +1,599 @@
+{
+ "cert": 3196,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3196",
+ "module": "Kernel Mode Cryptographic Primitives Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with modules Windows OS Loader validated to FIPS 140-2 under Cert. #3194, Cert. #3480 or Cert. #3615 operating in FIPS mode or Windows Resume validated to FIPS 140-2 under Cert. #3091 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Kernel Mode Cryptographic Primitives Library (cng.sys) runs as a kernel mode export driver, and provides cryptographic services, through their documented interfaces, to Windows kernel components. It supports several cryptographic algorithms accessible via a FIPS function table request IRP (I/O request packet).",
+ "tested_configurations": [
+  "Azure Data Box Edge (x64) running on a Microsoft Azure Data Box with PAA [5] (single-user mode)",
+  "Surface Hub (x64) running on a Microsoft Surface Hub with PAA [1]",
+  "Windows 10 Education April 2018 Update (x64) running on a Microsoft Surface Laptop with PAA [4]",
+  "Windows 10 Education Fall Creators Update (x64) running on a Microsoft Surface Pro with PAA [3]",
+  "Windows 10 Education October 2018 Update (x64) running on a Microsoft Surface Laptop with PAA [5]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Book 2 with PAA [4]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Laptop with PAA [4]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Pro LTE with PAA [4]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Studio 2 with PAA [4]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Studio with PAA [4]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on an HP Pro x2 612 G2 Detachable PC with LTE with PAA [4]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Book 2 with PAA [3]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Book with PAA [3]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Laptop with PAA [3]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Pro 4 with PAA [3]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Pro with PAA [3]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Studio with PAA [3]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on an HP Pro x2 612 G2 Detachable PC with LTE with PAA [3]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Microsoft Surface Book 2 with PAA [5]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Microsoft Surface Laptop with PAA [5]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Microsoft Surface Pro LTE with PAA [5]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Microsoft Surface Studio with PAA [5]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on a Samsung Galaxy Book 12\" with PAA [5]",
+  "Windows 10 Enterprise October 2018 Update (x64) running on an HP EliteBook x360 1030 G2 with PAA [5]",
+  "Windows 10 Home April 2018 Update (x86) running on a Dell Inspiron 660s without PAA [4]",
+  "Windows 10 Home Fall Creators Update (x86) running on a Dell Inspiron 660s without PAA [3]",
+  "Windows 10 Home October 2018 Update (x86) running on a Dell Inspiron 660s without PAA [5]",
+  "Windows 10 Mobile Fall Creators Update (ARMv7) running on a Microsoft Lumia 650 [2]",
+  "Windows 10 Mobile Fall Creators Update (ARMv7) running on a Microsoft Lumia 950 [2]",
+  "Windows 10 Mobile Fall Creators Update (ARMv7) running on a Microsoft Lumia 950 XL [2]",
+  "Windows 10 Mobile Fall Creators Update (ARMv7) running on an HP Elite x3 [2]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Dell Latitude 12 Rugged Tablet with PAA [4]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Dell Latitude 5290 with PAA [4]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Book 2 with PAA [4]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Go with PAA [4]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Laptop 2 with PAA [4]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Laptop with PAA [4]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Pro 6 with PAA [4]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Pro LTE with PAA [4]",
+  "Windows 10 Pro April 2018 Update (x64) running on an HP Slimline Desktop with PAA [4]",
+  "Windows 10 Pro Fall Creators Update (x64) on Hyper-V on Windows Server 2016 running on a Surface Pro 4 with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Dell Latitude 5285 with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Dell Latitude 5290 with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Dell PowerEdge R630 Server with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Dell Precision Tower 5810MT with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Microsoft Surface 3 with LTE with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Microsoft Surface Laptop with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Microsoft Surface Pro 3 with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Microsoft Surface Pro with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Panasonic Toughbook with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on an HP Compaq Pro 6305 with PAA [3]",
+  "Windows 10 Pro Fall Creators Update (x64) running on an HP Slimline Desktop with PAA [3]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Dell Latitude 12 Rugged Tablet with PAA [5]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Dell Latitude 5290 with PAA [5]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Microsoft Surface Book 2 with PAA [5]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Microsoft Surface Go with PAA [5]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Microsoft Surface Laptop with PAA [5]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Microsoft Surface Pro LTE with PAA [5]",
+  "Windows 10 Pro October 2018 Update (x64) running on a Samsung Galaxy Book 10.6\" with PAA [5]",
+  "Windows 10 Pro October 2018 Update (x64) running on an HP Elite x2 1013 G3 Tablet with PAA [5]",
+  "Windows 10 Pro October 2018 Update (x64) running on an HP Slimline Desktop with PAA [5]",
+  "Windows 10 S Fall Creators Update (x64) running on a Microsoft Surface Laptop with PAA [3]",
+  "Windows Server 2019 Core (x64) on Hyper-V on Windows Server 2016 running on a Dell PowerEdge R740 Server with PAA [5]",
+  "Windows Server 2019 Core (x64) on Hyper-V on Windows Server 2019 running on a Dell Precision Tower 5810MT with PAA [5]",
+  "Windows Server 2019 Core (x64) running on a Dell PowerEdge R740 Server with PAA [5]",
+  "Windows Server 2019 Datacenter Core (x64) on Hyper-V on Windows Server 2019 running on a Dell Precision Tower 5810MT with PAA [5]",
+  "Windows Server 2019 Datacenter Core (x64) running on a Dell PowerEdge R740 Server with PAA [5]",
+  "Windows Server Datacenter Core (x64) on Hyper-V on Windows Server running on a Dell Precision Tower 5810MT with PAA [3][4]",
+  "Windows Server Datacenter Core (x64) running on a Dell PowerEdge R630 Server with PAA [3]",
+  "Windows Server Datacenter Core (x64) running on a Dell PowerEdge R740 Server with PAA [3][4]",
+  "Windows Server Datacenter Core (x64) running on a Dell Precision Tower 5810MT with PAA [3]",
+  "Windows Server Standard Core (x64) on Hyper-V on Windows Server 2016 running on a Dell PowerEdge R740 Server with PAA [4]",
+  "Windows Server Standard Core (x64) on Hyper-V on Windows Server running on a Dell Precision Tower 5810MT with PAA [3][4]",
+  "Windows Server Standard Core (x64) running on a Dell PowerEdge R630 Server with PAA [3]",
+  "Windows Server Standard Core (x64) running on a Dell PowerEdge R740 Server with PAA [3][4]",
+  "Windows Server Standard Core (x64) running on a Dell Precision Tower 5810MT with PAA [3]"
+ ],
+ "allowed_algorithms": "HMAC-MD5; MD5; NDRNG",
+ "software_versions": "10.0.15063.674 [1], 10.0.15254 [2], 10.0.16299 [3], 10.0.17134 [4] and 10.0.17763 [5]",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4897",
+   "cavp_id": "20030",
+   "cavp_ref": "AES:4897"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4898",
+   "cavp_id": "26555",
+   "cavp_ref": "AES:4898"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4899",
+   "cavp_id": "13132",
+   "cavp_ref": "AES:4899"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4900",
+   "cavp_id": "9268",
+   "cavp_ref": "AES:4900"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4901",
+   "cavp_id": "26360",
+   "cavp_ref": "AES:4901"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4902",
+   "cavp_id": "28087",
+   "cavp_ref": "AES:4902"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5847",
+   "cavp_id": "24052",
+   "cavp_ref": "AES:5847"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5860",
+   "cavp_id": "27850",
+   "cavp_ref": "AES:5860"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C347",
+   "cavp_id": "30743",
+   "cavp_ref": "C:347"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1496",
+   "cavp_id": "18070",
+   "cavp_ref": "Component:1496"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1498",
+   "cavp_id": "24090",
+   "cavp_ref": "Component:1498"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1507",
+   "cavp_id": "3694",
+   "cavp_ref": "Component:1507"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1509",
+   "cavp_id": "24042",
+   "cavp_ref": "Component:1509"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1511",
+   "cavp_id": "3056",
+   "cavp_ref": "Component:1511"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1513",
+   "cavp_id": "17541",
+   "cavp_ref": "Component:1513"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2110",
+   "cavp_id": "7660",
+   "cavp_ref": "Component:2110"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2111",
+   "cavp_id": "3263",
+   "cavp_ref": "Component:2111"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1730",
+   "cavp_id": "17486",
+   "cavp_ref": "DRBG:1730"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1731",
+   "cavp_id": "12569",
+   "cavp_ref": "DRBG:1731"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1732",
+   "cavp_id": "6082",
+   "cavp_ref": "DRBG:1732"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 2435",
+   "cavp_id": "12563",
+   "cavp_ref": "DRBG:2435"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1301",
+   "cavp_id": "28327",
+   "cavp_ref": "DSA:1301"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1302",
+   "cavp_id": "1783",
+   "cavp_ref": "DSA:1302"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1303",
+   "cavp_id": "24589",
+   "cavp_ref": "DSA:1303"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1479",
+   "cavp_id": "2480",
+   "cavp_ref": "DSA:1479"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1246",
+   "cavp_id": "27453",
+   "cavp_ref": "ECDSA:1246"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1249",
+   "cavp_id": "945",
+   "cavp_ref": "ECDSA:1249"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1250",
+   "cavp_id": "13455",
+   "cavp_ref": "ECDSA:1250"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1563",
+   "cavp_id": "29051",
+   "cavp_ref": "ECDSA:1563"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3267",
+   "cavp_id": "19829",
+   "cavp_ref": "HMAC:3267"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3268",
+   "cavp_id": "26904",
+   "cavp_ref": "HMAC:3268"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3269",
+   "cavp_id": "14561",
+   "cavp_ref": "HMAC:3269"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3858",
+   "cavp_id": "23523",
+   "cavp_ref": "HMAC:3858"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 146",
+   "cavp_id": "28033",
+   "cavp_ref": "KAS:146"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 147",
+   "cavp_id": "22244",
+   "cavp_ref": "KAS:147"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 148",
+   "cavp_id": "20325",
+   "cavp_ref": "KAS:148"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 200",
+   "cavp_id": "30018",
+   "cavp_ref": "KAS:200"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 157",
+   "cavp_id": "25161",
+   "cavp_ref": "KDF:157"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 158",
+   "cavp_id": "12030",
+   "cavp_ref": "KDF:158"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 159",
+   "cavp_id": "17078",
+   "cavp_ref": "KDF:159"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 242",
+   "cavp_id": "26536",
+   "cavp_ref": "KDF:242"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C347",
+   "cavp_id": "30743",
+   "cavp_ref": "C:347"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Certs. #4898, #4899, #4900, #5860 and #C347; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2667",
+   "cavp_id": "17507",
+   "cavp_ref": "RSA:2667"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2670",
+   "cavp_id": "5231",
+   "cavp_ref": "RSA:2670"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2671",
+   "cavp_id": "954",
+   "cavp_ref": "RSA:2671"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2673",
+   "cavp_id": "9593",
+   "cavp_ref": "RSA:2673"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2674",
+   "cavp_id": "18844",
+   "cavp_ref": "RSA:2674"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2675",
+   "cavp_id": "1172",
+   "cavp_ref": "RSA:2675"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3079",
+   "cavp_id": "25534",
+   "cavp_ref": "RSA:3079"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3081",
+   "cavp_id": "25919",
+   "cavp_ref": "RSA:3081"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C349",
+   "cavp_id": "30745",
+   "cavp_ref": "C:349"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4009",
+   "cavp_id": "5258",
+   "cavp_ref": "SHS:4009"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4010",
+   "cavp_id": "26779",
+   "cavp_ref": "SHS:4010"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4011",
+   "cavp_id": "6509",
+   "cavp_ref": "SHS:4011"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4633",
+   "cavp_id": "2702",
+   "cavp_ref": "SHS:4633"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2556",
+   "cavp_id": "25323",
+   "cavp_ref": "TDES:2556"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2557",
+   "cavp_id": "1925",
+   "cavp_ref": "TDES:2557"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2558",
+   "cavp_id": "21616",
+   "cavp_ref": "TDES:2558"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2862",
+   "cavp_id": "503",
+   "cavp_ref": "TDES:2862"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C211",
+   "cavp_id": "30607",
+   "cavp_ref": "C:211"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3196.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/SeptConsolidated2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/26/2018",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/17/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "3/9/2020",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "9/26/2018",
+ "last_updated": "3/9/2020",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3196.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "HMAC-MD5; MD5; NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3196,
+  "vendor": "Microsoft Corporation",
+  "module": "Kernel Mode Cryptographic Primitives Library",
+  "type": "Software",
+  "validation_dates": [
+   "09/26/2018",
+   "07/17/2019",
+   "03/09/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

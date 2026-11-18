@@ -1,0 +1,38 @@
+{
+ "cavp_id": "10010",
+ "cavp_cert": "RNG 605",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10010",
+ "implementation": "RNG",
+ "product_id": "4544",
+ "description": "The FIPS186-2 RNG is implemented in firmware executed on ARM Cortex-M3 processor according to FIPS186-2 Appendix 3.1 and 3.2. SHA-1 algorithm is being used as the G function. The FIPS186-2 RNG takes seed from the hardware NDRNG.",
+ "version": "BCM5880, Version C0 BCM5880_FIPS140_REF_SBI_R0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "5/7/2009",
+ "vendor": "Broadcom Corporation",
+ "vendor_website": "http://www.broadcom.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-M3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RNG FIPS (186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Generator: k-Original, x-Original",
+    "G Functions: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RNG FIPS (186-2) General Purpose:",
+   "oe": 0,
+   "capabilities": [
+    "Generator: x-Original",
+    "G Functions: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

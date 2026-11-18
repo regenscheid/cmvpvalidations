@@ -1,0 +1,71 @@
+{
+ "cavp_id": "11010",
+ "cavp_cert": "AES 4037",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11010",
+ "implementation": "RUGGEDCOM ROS (Rugged Operating System) Cryptographic Core",
+ "product_id": "5574",
+ "description": "The RUGGEDCOM Switches and Server are designed specifically to withstand harsh environmental conditions including temperature and humidity extremes, shock, vibration, and electromagnetic interference. The ruggedized switches and server, similarly equipped with RUGGEDCOM ROS, provides Ethernet to serial conversion for customer networks.",
+ "version": "1.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "7/31/2016",
+ "vendor": "Siemens Canada Ltd.",
+ "vendor_website": "http://www.siemens.com",
+ "oes": [
+  {
+   "name": "Freescale ColdFire MCF5272",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "Payload Length: 128, 136, 256, 264",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "AAD Length: 0, 128, 136, 256, 264"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,159 @@
+{
+ "cert": 4649,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4649",
+ "module": "Maxar AEDS",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "2",
+ "caveat": "The tamper evident seals are installed as indicated in the Security Policy. This module contains the embedded module NPCT6XX TPM 2.0 validated to FIPS 140-2 under Cert. #2627 operating in FIPS mode.",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Maxar AEDS is a network based ground to spacecraft AES GCM & CTR mode encryption/decryption appliance hosted on a 1U network security server. It can support multiple channels simultaneously on up to 6 different subnets with speeds over 75 Mbit/s. There is a web based Crypto Operator interface for easy set-up and configuration. The User interfaces are TCP/IP socket based and follow a straightforward ICD. Both are protected with TLS 1.2.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); NDRNG",
+ "hardware_versions": "Revision 1",
+ "firmware_versions": "1.0.6.1558.2958",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A2061",
+   "cavp_id": "34670",
+   "cavp_ref": "A:2061"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 2178",
+   "cavp_id": "23620",
+   "cavp_ref": "Component:2178"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C585",
+   "cavp_id": "30981",
+   "cavp_ref": "C:585"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A2061",
+   "cavp_id": "34670",
+   "cavp_ref": "A:2061"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A2061",
+   "cavp_id": "34670",
+   "cavp_ref": "A:2061"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS-SSC Cert. #A2062, CVL Cert. #C585",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "A2062",
+   "cavp_id": "34671",
+   "cavp_ref": "A:2062"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A2061; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #A2061 and HMAC Cert. #A2061; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2061",
+   "cavp_id": "34670",
+   "cavp_ref": "A:2061"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A2090",
+   "cavp_id": "34699",
+   "cavp_ref": "A:2090"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A2061",
+   "cavp_id": "34670",
+   "cavp_ref": "A:2061"
+  }
+ ],
+ "vendor": "Maxar Technologies",
+ "vendor_info": {
+  "name": "Maxar Technologies",
+  "website": "http://www.maxar.com/space-infrastructure",
+  "address": [
+   "3825 Fabian Way",
+   "Palo Alto, CA 94303",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Pamela Hagin"
+   },
+   {
+    "name": "Ted Sakashita"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4649.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202023_011123_0711.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/27/2023",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "10/27/2023",
+ "last_updated": "10/27/2023",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4649.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #2627"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 4649,
+  "vendor": "Maxar Technologies",
+  "module": "Maxar AEDS",
+  "type": "Hardware",
+  "validation_dates": [
+   "10/27/2023"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

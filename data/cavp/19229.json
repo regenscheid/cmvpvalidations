@@ -1,0 +1,48 @@
+{
+ "cavp_id": "19229",
+ "cavp_cert": "AES 4309",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19229",
+ "implementation": "AES in ASIC",
+ "product_id": "5985",
+ "description": "ASIC support for AES encryption and decryption features on HGST's Self-Encrypting Drives (SEDs).",
+ "version": "SVN 58160 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/23/2016",
+ "vendor": "Western Digital Corporation",
+ "vendor_website": "http://www.hgst.com",
+ "oes": [
+  {
+   "name": "Mentor Graphics Questasim 10.1d",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128",
+    "Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full, Partial"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

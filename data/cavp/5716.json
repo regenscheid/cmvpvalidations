@@ -1,0 +1,52 @@
+{
+ "cavp_id": "5716",
+ "cavp_cert": "HMAC 3679",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5716",
+ "implementation": "Harris Broadband Ethernet Radio GPP Cryptographic Library",
+ "product_id": "9647",
+ "description": "This is a firmware library which executes on a general purpose processor to provide cryptographic functions for Harris' industry leading reliable, secure, and high performance Broadband Ethernet Radio (BER) products",
+ "version": "6.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/29/2018",
+ "vendor": "Harris Corporation",
+ "vendor_website": "http://www.harris.com",
+ "oes": [
+  {
+   "name": "Broadcom XLS108",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Key size = block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

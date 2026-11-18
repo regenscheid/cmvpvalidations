@@ -1,0 +1,57 @@
+{
+ "cavp_id": "29933",
+ "cavp_cert": "Component 1108",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=29933",
+ "implementation": "Security Analytics Crypto Library v7.2",
+ "product_id": "580",
+ "description": "The Security Analytics Crypto Library v7.2 provides the necessary cryptographic services for the Security Analytics software developed specifically for use in the Security Analytics Central Manager (CM) and Forensic Appliances (FA).",
+ "version": "7.2",
+ "type": "SOFTWARE",
+ "first_validated": "2/28/2017",
+ "vendor": "Symantec Corporation",
+ "vendor_website": "http://www.symantec.com",
+ "oes": [
+  {
+   "name": "Fedora Core 10 on Intel Xeon Processor IvyBridge (E5-2680 v2 and E5-2609v2)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Component",
+   "oe": 0,
+   "capabilities": [
+    "Scheme:",
+    "  Ephemeral Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        EC:",
+    "          Hash Algorithm: SHA2-256",
+    "          Curve: P-256",
+    "        ED:",
+    "          Hash Algorithm: SHA2-384",
+    "          Curve: P-384",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-256",
+    "        FC:",
+    "          Hash Algorithm: SHA2-384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

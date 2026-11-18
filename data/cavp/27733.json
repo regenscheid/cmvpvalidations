@@ -1,0 +1,40 @@
+{
+ "cavp_id": "27733",
+ "cavp_cert": "HMAC 2613",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=27733",
+ "implementation": "ARMv7 HMAC in Firmware",
+ "product_id": "5497",
+ "description": "FW implementation of Secure Hash MAC Algorithm in Seagate's Self-Encrypting Drives (SEDs).",
+ "version": "5.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "6/21/2016",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-R Family",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,69 @@
+{
+ "cavp_id": "33628",
+ "cavp_cert": "A1019",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33628",
+ "implementation": "CryptoServer Se2 KDF_CONC",
+ "product_id": "11488",
+ "description": "KDF_CONC component implements different kdf algorithms e.g. from NIST and ANSI with different key and data lengths to allow flexibility and efficiency.",
+ "version": "KDF_CONC_1.0.13.0",
+ "type": "FIRMWARE",
+ "first_validated": "2/3/2021",
+ "vendor": "Utimaco IS GmbH",
+ "vendor_website": "https://hsm.utimaco.com/",
+ "oes": [
+  {
+   "name": "Texas Instruments Digital Signal Processor TMS320C6416T",
+   "details": [
+    "processor: Texas Instruments Digital Signal Processor TMS320C6416T"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-224",
+    "    MAC Salting Methods: default",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "    MAC Salting Methods: default",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-384",
+    "    MAC Salting Methods: default",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512",
+    "    MAC Salting Methods: default",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-224",
+    "    MAC Salting Methods: default",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-256",
+    "    MAC Salting Methods: default",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-384",
+    "    MAC Salting Methods: default",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-512",
+    "    MAC Salting Methods: default",
+    "Fixed Info Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-3072 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.42",
+   "oe": 0,
+   "capabilities": [
+    "KDF Type: concatenation",
+    "Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "Other Info Length: 0, 4096",
+    "zz Length: 8, 4096",
+    "Key Data Length: 1, 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

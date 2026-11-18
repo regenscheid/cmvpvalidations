@@ -1,0 +1,178 @@
+{
+ "cert": 3192,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3192",
+ "module": "FortiOS 5.4",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode and configured according to the Entropy Token Section of the Security Policy. There is no assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Cryptographic Module Ports and Interfaces: Level 3",
+  "Roles, Services, and Authentication: Level 3",
+  "Design Assurance: Level 3"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The FortiOS is a firmware based operating system that runs exclusively on Fortinet's FortiGate/FortiWiFi product family. The FortiOS provides integrated firewall, VPN, antivirus, antispam, intrusion prevention, content filtering and traffic shaping and HA capabilities.",
+ "tested_configurations": [
+  "FortiGate-300D with the Fortinet entropy token (part number FTR-ENT-1)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #1272 and #1287, key agreement; key establishment methodology provides between 112 and 201 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1272 and #1287, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); RSA (CVL Certs. #1272 and #1287, key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "firmware_versions": "5.4, b9791, 170802",
+ "product_url": "http://www.fortinet.com/products/index.html",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4602",
+   "cavp_id": "20012",
+   "cavp_ref": "AES:4602"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4628",
+   "cavp_id": "21315",
+   "cavp_ref": "AES:4628"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1272",
+   "cavp_id": "11377",
+   "cavp_ref": "Component:1272"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1287",
+   "cavp_id": "15231",
+   "cavp_ref": "Component:1287"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1288",
+   "cavp_id": "705",
+   "cavp_ref": "Component:1288"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1329",
+   "cavp_id": "5437",
+   "cavp_ref": "Component:1329"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1543",
+   "cavp_id": "23424",
+   "cavp_ref": "DRBG:1543"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1129",
+   "cavp_id": "2058",
+   "cavp_ref": "ECDSA:1129"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1137",
+   "cavp_id": "22782",
+   "cavp_ref": "ECDSA:1137"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3050",
+   "cavp_id": "29443",
+   "cavp_ref": "HMAC:3050"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3063",
+   "cavp_id": "25233",
+   "cavp_ref": "HMAC:3063"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4628 and HMAC Cert. #3063; key establishment methodology provides 128 or 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2526",
+   "cavp_id": "10178",
+   "cavp_ref": "RSA:2526"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3777",
+   "cavp_id": "4994",
+   "cavp_ref": "SHS:3777"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3792",
+   "cavp_id": "20128",
+   "cavp_ref": "SHS:3792"
+  }
+ ],
+ "vendor": "Fortinet, Inc.",
+ "vendor_info": {
+  "name": "Fortinet, Inc.",
+  "website": "http://www.fortinet.com",
+  "address": [
+   "1826 Robertson Road",
+   "Ottawa, ON K2H 5Z6",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Alan Kaye"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3192.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/JuneCertFinal.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/8/2018",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  }
+ ],
+ "first_validated": "6/8/2018",
+ "last_updated": "6/8/2018",
+ "labs": "CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3192.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #1272 and #1287, key agreement; key establishment methodology provides between 112 and 201 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #1272 and #1287, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); RSA (CVL Certs. #1272 and #1287, key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3192,
+  "vendor": "Fortinet, Inc.",
+  "module": "FortiOS 5.4",
+  "type": "Firmware",
+  "validation_dates": [
+   "06/08/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

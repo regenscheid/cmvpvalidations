@@ -1,0 +1,52 @@
+{
+ "cavp_id": "15773",
+ "cavp_cert": "AES 4843",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=15773",
+ "implementation": "Balto AES in Hardware",
+ "product_id": "8556",
+ "description": "AES encryption and decryption core of the controller ASIC \"Balto\" in Seagate's Self-Encrypting Drives (SEDs).",
+ "version": "Balto",
+ "type": "HARDWARE",
+ "first_validated": "11/3/2017",
+ "vendor": "Seagate Technology, LLC",
+ "vendor_website": "http://www.seagate.com",
+ "oes": [
+  {
+   "name": "Balto AES in Hardware",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 24, 256",
+    "AAD Length: 8, 24, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Block Size: Full, Partial"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

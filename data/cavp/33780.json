@@ -1,0 +1,363 @@
+{
+ "cavp_id": "33780",
+ "cavp_cert": "A1171",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33780",
+ "implementation": "SafeNet Accelerated Cryptographic Library",
+ "product_id": "9897",
+ "description": "The SafeNet Accelerated Cryptographic Library is a high-performance cryptographic library tailored to use the advanced security capabilities of the Andretta 2.0 Security ASIC.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "3/26/2021",
+ "vendor": "Thales",
+ "vendor_website": "https://www.thalesesecurity.com/thales-gemalto",
+ "oes": [
+  {
+   "name": "Andretta 2.0",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 112-224 Increment 8",
+    "Key Length: 192-640 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128-256 Increment 8",
+    "Key Length: 192-640 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192-384 Increment 8",
+    "Key Length: 192-1216 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256-512 Increment 8",
+    "Key Length: 192-1152 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KAS-ECC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: B-233, B-283, B-409, B-571, K-233, K-283, K-409, K-571, P-224, P-256, P-384, P-521",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: initiator, responder",
+    "  onePassDh:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KAS-FFC-SSC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: FB, FC",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: initiator, responder",
+    "  dhHybrid1:",
+    "    KAS Role: initiator, responder",
+    "  dhHybridOneFlow:",
+    "    KAS Role: initiator, responder",
+    "  dhOneFlow:",
+    "    KAS Role: initiator, responder"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-224",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-384",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-224",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-256",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-384",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA3-512",
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo||context",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-8192 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStepNoCounterKdf SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "    Key Length: 256",
+    "Fixed Info Pattern: algorithmId||uPartyInfo||vPartyInfo||label",
+    "Fixed Info Encoding: concatenation",
+    "Key Length: 384"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.42",
+   "oe": 0,
+   "capabilities": [
+    "KDF Type: concatenation",
+    "Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "Other Info Length: 384",
+    "zz Length: 64-4096 Increment 8",
+    "Key Data Length: 384"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "oe": 0,
+   "capabilities": [
+    "Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "Field Size: 224, 256",
+    "Shared Info Length: 0-1024 Increment 8",
+    "Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF ANS 9.63",
+   "oe": 0,
+   "capabilities": [
+    "Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "Field Size: 384, 521",
+    "Shared Info Length: 0-1024 Increment 8",
+    "Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen, partialVal",
+    "Modulo: 2048, 3072, 4096, 6144, 8192",
+    "Key Generation Methods: rsakpg1-crt, rsakpg2-crt",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator, responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: uPartyInfo||vPartyInfo",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000",
+    "    HMAC Algorithm: SHA2-512",
+    "    Password Length: 16",
+    "    Salt Length: 256",
+    "    Key Data Length: 256"
+   ]
+  },
+  {
+   "algorithm": "RSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.3",
+    "      Properties:",
+    "        Modulo: 4096",
+    "        Primality Tests: Table C.3",
+    "  Capabilities:",
+    "    Key Generation Mode: B.3.6",
+    "      Properties:",
+    "        Modulo: 4096",
+    "        Primality Tests: Table C.3",
+    "Info Generated By Server",
+    "Public Exponent Mode: Random",
+    "Private Key Format: Standard"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: ANSI X9.31",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "Public Exponent Mode: Random"
+   ]
+  },
+  {
+   "algorithm": "SHA3-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA3-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-128",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-16384 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHAKE-256",
+   "oe": 0,
+   "capabilities": [
+    "Supports Empty Message",
+    "Output Length: 16-16384 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,177 @@
+{
+ "cert": 2792,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2792",
+ "module": "BC-FNA (Bouncy Castle FIPS .NET API)",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 8 and operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Bouncy Castle FIPS .NET API is a comprehensive suite of FIPS Approved algorithms implemented in pure C#. All key sizes and modes have been implemented to allow flexibility and efficiency, and additional algorithms, including some post-quantum ones, are available in non-approved operation as well.",
+ "tested_configurations": [
+  "Microsoft Windows 10 Professional (64-bit) on .NET 4.5.2 framework running on Dell XPS 15 7590 with Intel Core i7-9750H (single-user mode)"
+ ],
+ "software_versions": "1.0.1.1",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "KAS-SSC",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #C2202; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #C2202; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "C2202",
+   "cavp_id": "33403",
+   "cavp_ref": "C:2202"
+  }
+ ],
+ "vendor": "Legion of the Bouncy Castle Inc.",
+ "vendor_info": {
+  "name": "Legion of the Bouncy Castle Inc.",
+  "website": "https://www.bouncycastle.org",
+  "address": [
+   "85 The Crescent",
+   "Ascot Vale, Victoria 3032",
+   "Australia"
+  ],
+  "contacts": [
+   {
+    "name": "David Hook"
+   },
+   {
+    "name": "Jon Eaves"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2792.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertNov2016.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/14/2016",
+   "type": "Initial",
+   "lab": "CGI Information Systems & Management Consultants Inc"
+  },
+  {
+   "date": "4/19/2021",
+   "type": "Update",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "11/14/2016",
+ "last_updated": "4/19/2021",
+ "labs": "Acumen Security; CGI Information Systems & Management Consultants Inc",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2792.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength; non-compliant less than 112 bits of encryption strength); AES (non-compliant); ARC4; Camellia; ChaCha; ElGamal; NewHope; OpenSSL PBKDF; PKCS#12 PBKDF; Poly1305; SEED; Serpent; SPHINCS-256"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2792,
+  "vendor": "Legion of the Bouncy Castle Inc.",
+  "module": "BC-FNA (Bouncy Castle FIPS .NET API)",
+  "type": "Software",
+  "validation_dates": [
+   "11/14/2016",
+   "04/19/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

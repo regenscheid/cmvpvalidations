@@ -1,0 +1,49 @@
+{
+ "cavp_id": "31371",
+ "cavp_cert": "C974",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=31371",
+ "implementation": "AudioCodes Mediant Session Border Controller KDF",
+ "product_id": "11328",
+ "description": "The AudioCodes Mediant Session Border Controller KDF code provides KDF implementations for TLS, SNMP, and SRTP for the AudioCodes SBC appliances.",
+ "version": "Mediant 7.4",
+ "type": "FIRMWARE",
+ "first_validated": "7/31/2019",
+ "vendor": "AudioCodes Ltd",
+ "vendor_website": "http://www.audiocodes.com",
+ "oes": [
+  {
+   "name": "Cavium SDK 2.1 based on Debian Linux 5.0 on Cavium OCTEON II CN6645",
+   "details": [
+    "processor: Cavium OCTEON II CN6645",
+    "software: Cavium SDK 2.1 based on Debian Linux 5.0"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KDF SNMP",
+   "oe": 0,
+   "capabilities": [
+    "Password Length: 64-800",
+    "Engine ID: 000002b87766554433221100, 800002b805123456789abcdef0123456789abcdef0123456789abcdef0123456"
+   ]
+  },
+  {
+   "algorithm": "KDF SRTP",
+   "oe": 0,
+   "capabilities": [
+    "AES Key Length: 128, 256",
+    "Supports Empty KDR"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1, v1.2",
+    "Hash Algorithm: SHA2-256, SHA2-384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

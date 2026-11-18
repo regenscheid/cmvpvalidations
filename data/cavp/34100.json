@@ -1,0 +1,85 @@
+{
+ "cavp_id": "34100",
+ "cavp_cert": "A1491",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34100",
+ "implementation": "Titaniam Core Engine - Java",
+ "product_id": "13962",
+ "description": "The Titaniam Core Engine is a FIPS Approved software only cryptographic module for securing data. The module implements the cryptographic functions for Titaniam products. It includes a wide range of standards-based encryption, digital signature, and encoding algorithms as well as additional operations where FIPS approval is not applicable.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/3/2021",
+ "vendor": "Titaniam, Inc.",
+ "vendor_website": "https://www.titaniamlabs.com/",
+ "oes": [
+  {
+   "name": "Ubuntu 18.04 on Intel Xeon E-2224G",
+   "details": [
+    "cpu: Intel Xeon E-2224G",
+    "  Processor",
+    "os: Ubuntu 18.04",
+    "  Operating System"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-FF1",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Tweak Length: 8-128 Increment 8",
+    "  Capabilities:",
+    "    Alphabet: abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789",
+    "    Radix: 62",
+    "    Maximum Payload Length: 62",
+    "    Minimum Payload Length: 4"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-256 Increment 8",
+    "Key Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 32-512 Increment 8",
+    "Key Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA2-256",
+    "    Supported Lengths: 8-4096 Increment 8",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Function: SHA2"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,161 @@
+{
+ "cert": 2184,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2184",
+ "module": "SBC 5110 and 5210 Session Border Controllers",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 2",
+  "Design Assurance: Level 2",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The SBC 5110 and 5210 Session Border Controllers are high-performance air-cooled, 2U, IP encryption appliances that provide secure SIP-based communications with robust security, reduced latency, real-time encryption (VOIP signaling and media traffic), media transcoding, flexible SIP session routing & policy management.",
+ "hardware_versions": "SBC 5110 and SBC 5210",
+ "firmware_versions": "4.0",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2643",
+   "cavp_id": "17867",
+   "cavp_ref": "AES:2643"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2644",
+   "cavp_id": "14628",
+   "cavp_ref": "AES:2644"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 124",
+   "cavp_id": "20078",
+   "cavp_ref": "Component:124"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 125",
+   "cavp_id": "649",
+   "cavp_ref": "Component:125"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 412",
+   "cavp_id": "24840",
+   "cavp_ref": "DRBG:412"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1635",
+   "cavp_id": "6714",
+   "cavp_ref": "HMAC:1635"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1636",
+   "cavp_id": "15790",
+   "cavp_ref": "HMAC:1636"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1353",
+   "cavp_id": "21195",
+   "cavp_ref": "RSA:1353"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1354",
+   "cavp_id": "3570",
+   "cavp_ref": "RSA:1354"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2216",
+   "cavp_id": "18348",
+   "cavp_ref": "SHS:2216"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2217",
+   "cavp_id": "26984",
+   "cavp_ref": "SHS:2217"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2218",
+   "cavp_id": "3787",
+   "cavp_ref": "SHS:2218"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1586",
+   "cavp_id": "20234",
+   "cavp_ref": "TDES:1586"
+  }
+ ],
+ "vendor": "Sonus Networks, Inc.",
+ "vendor_info": {
+  "name": "Sonus Networks, Inc.",
+  "website": "http://www.sonus.net",
+  "address": [
+   "4 Technology Park Drive",
+   "Westford, MA 01886",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Sandeep Kaushik"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2184.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0042.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/25/2014",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "6/25/2014",
+ "last_updated": "6/25/2014",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2184.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); EC Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 of encryption strength; non-compliant less than 112 bits of encryption strength); NDRNG; MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2184,
+  "vendor": "Sonus Networks, Inc.",
+  "module": "SBC 5110 and 5210 Session Border Controllers",
+  "type": "Hardware",
+  "validation_dates": [
+   "06/25/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

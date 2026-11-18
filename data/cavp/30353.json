@@ -1,0 +1,55 @@
+{
+ "cavp_id": "30353",
+ "cavp_cert": "ECDSA 809",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=30353",
+ "implementation": "Brocade Cryptographic Library used in the interface module",
+ "product_id": "1474",
+ "description": "Brocade cryptographic library used in the IPSec module implements crypto operations in hardware and in software. The Brocade MLXe series provides industry leading wire-speed port capacity without compromising the performance of advanced capabilities such as IPSec, IKEv2, IPv6, MPLS, and MPLS Virtual Private Networks (VPNs).",
+ "version": "BRCD-LP-CRYPTO-VER-1.0a (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "1/15/2016",
+ "vendor": "Brocade Communications Systems, Inc.",
+ "vendor_website": "http://www.brocade.com",
+ "oes": [
+  {
+   "name": "Freescale",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Extra Bits, Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-256, P-384",
+    "    Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

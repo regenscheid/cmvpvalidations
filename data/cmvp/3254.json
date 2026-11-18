@@ -1,0 +1,332 @@
+{
+ "cert": 3254,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3254",
+ "module": "NITROXIII CNN35XX-NFBE HSM Family",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "When operated in FIPS mode and initialized and configured per Section 10 of the Security Policy. The module generates cryptographic keys whose strengths are modified by available entropy",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Multi-Chip Embedded",
+ "description": "CNN35XX-NFBE HSM Family is a high performance purpose built solution for key management and crypto acceleration compliance to FIPS 140-2. The module supports flexible key store that can be partitioned up to 32 individually managed and isolated partitions. This is a SRIOV capable PCIe adapter and can be used in a virtualization environment to extend services like virtual key management, crypto and TLS offloads to VMs in dedicated I/O channels. This product is suitable for PKI vendors, SSL servers/load balancers.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "EC Curve Secp256k1; EC Diffie-Hellman (CVL Certs. #167 and #563, key agreement; key establishment methodology provides 128 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "hardware_versions": "P/Ns CNL3560P-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNL3560P-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3560P-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3560B-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3560B-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3560-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNL3560-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3560-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3560A-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3560C-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3560D-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3560E-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3560F-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3530-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNL3530-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3530-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3530B-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3530B-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3530A-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3530C-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3530D-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3530E-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3530F-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3510-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNL3510-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3510-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3510B-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3510P-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNL3510P-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3510P-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3510PB-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3560PB-NFBE-2.0-G [1, 2, 3, 4, 7], CNL3510A-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3510C-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3510D-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3510E-NFBE-3.0-G [1, 2, 3, 4, 7], CNL3510F-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3560P-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNN3560P-NFBE-2.0-G [1, 2, 3, 4, 7], CNN3560P-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3560-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNN3560-NFBE-2.0-G [1, 2, 3, 4, 7], CNN3560-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3560A-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3560C-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3560D-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3560E-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3560F-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3530-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNN3530-NFBE-2.0-G [1, 2, 3, 4, 7], CNN3530-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3530A-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3530C-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3530D-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3530E-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3530F-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510-NFBE-G [1, 2, 3, 4, 5, 6, 7], CNN3510-NFBE-2.0-G [1, 2, 3, 4, 7], CNN3510-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510A-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510C-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510D-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510E-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510F-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510LP-NFBE-2.0-G [1, 2, 3, 4, 7], CNN3510LP-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510LPB-NFBE-2.0-G [1, 2, 3, 4, 7], CNN3510LPB-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510LPA-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510LPC-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510LPD-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510LPE-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3510LPF-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3505LP-NFBE-2.0-G [1, 2, 3, 4, 7], CNN3505LP-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3505LPA-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3505LPC-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3505LPD-NFBE-3.0-G [1, 2, 3, 4, 7], CNN3505LPE-NFBE-3.0-G [1, 2, 3, 4, 7] and CNN3505LPF-NFBE-3.0-G [1, 2, 3, 4, 7]",
+ "firmware_versions": "CNN35XX-NFBE-FW-2.04 build 48 [1], CNN35XX-NFBE-FW-2.04 build 49 [2], CNN35XX-NFBE-FW-2.04 build 50 [3], CNN35XX-NFBE-FW-2.04 build 52 [4], CNN35XX-NFBE-FW-2.05 build 15 [5], CNN35XX-NFBE-FW-2.05 build 18 [6] and CNN35XX-NFBE-FW-2.05 build 16 [7]",
+ "product_url": "https://www.marvell.com/products/security-solutions.html",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2033",
+   "cavp_id": "7203",
+   "cavp_ref": "AES:2033"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2034",
+   "cavp_id": "14964",
+   "cavp_ref": "AES:2034"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2035",
+   "cavp_id": "11350",
+   "cavp_ref": "AES:2035"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3205",
+   "cavp_id": "6945",
+   "cavp_ref": "AES:3205"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 3206",
+   "cavp_id": "22041",
+   "cavp_ref": "AES:3206"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4104",
+   "cavp_id": "20670",
+   "cavp_ref": "AES:4104"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 167",
+   "cavp_id": "29488",
+   "cavp_ref": "Component:167"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 563",
+   "cavp_id": "23990",
+   "cavp_ref": "Component:563"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 680",
+   "cavp_id": "28441",
+   "cavp_ref": "DRBG:680"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 916",
+   "cavp_id": "20586",
+   "cavp_ref": "DSA:916"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 589",
+   "cavp_id": "11643",
+   "cavp_ref": "ECDSA:589"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1233",
+   "cavp_id": "2967",
+   "cavp_ref": "HMAC:1233"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2019",
+   "cavp_id": "21991",
+   "cavp_ref": "HMAC:2019"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 53",
+   "cavp_id": "29583",
+   "cavp_ref": "KAS:53"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "SP 800-56B, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 65",
+   "cavp_id": "24845",
+   "cavp_ref": "KDF:65"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #2035; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #3206",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4104; key establishment methodology provides 128 or 192 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #2242; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1634",
+   "cavp_id": "26741",
+   "cavp_ref": "RSA:1634"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2218",
+   "cavp_id": "1953",
+   "cavp_ref": "RSA:2218"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1634",
+   "cavp_id": "26741",
+   "cavp_ref": "RSA:1634",
+   "note": "SP 800-56B  vendor affirmed"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1780",
+   "cavp_id": "10956",
+   "cavp_ref": "SHS:1780"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 2652",
+   "cavp_id": "11873",
+   "cavp_ref": "SHS:2652"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1311",
+   "cavp_id": "29862",
+   "cavp_ref": "TDES:1311"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2242",
+   "cavp_id": "24820",
+   "cavp_ref": "TDES:2242"
+  }
+ ],
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_info": {
+  "name": "Marvell Semiconductor, Inc.",
+  "website": "http://www.marvell.com",
+  "address": [
+   "5488 Marvell Ln",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Daniel Wong"
+   },
+   {
+    "name": "Phanikumar Kancharla"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3254.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/2/2018",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "8/17/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "10/9/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "1/30/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "4/2/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "6/13/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/15/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/18/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "8/12/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "11/18/2019",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/1/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/10/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "12/1/2020",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/6/2021",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "7/9/2021",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "8/2/2018",
+ "last_updated": "7/9/2021",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3254.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "EC Curve Secp256k1; EC Diffie-Hellman (CVL Certs. #167 and #563, key agreement; key establishment methodology provides 128 bits of encryption strength); MD5; NDRNG; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3254,
+  "vendor": "Marvell Semiconductor, Inc.",
+  "module": "NITROXIII CNN35XX-NFBE HSM Family",
+  "type": "Hardware",
+  "validation_dates": [
+   "08/02/2018",
+   "08/17/2018",
+   "10/09/2018",
+   "01/30/2019",
+   "04/02/2019",
+   "06/13/2019",
+   "07/15/2019",
+   "07/18/2019",
+   "08/12/2019",
+   "11/18/2019",
+   "07/01/2020",
+   "07/10/2020",
+   "12/01/2020",
+   "07/06/2021",
+   "07/09/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,690 @@
+{
+ "cert": 3790,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3790",
+ "module": "Cisco FIPS Object Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When installed, initialized and configured as specified in the Security Policy Section 3 and operated in FIPS mode. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Cisco FIPS Object Module (FOM) is a firmware library that provides cryptographic services to a vast array of Cisco's networking and collaboration products. The module provides FIPS 140 validated cryptographic algorithms for services such as IPSEC, SRTP, SSH, TLS, 802.1x, etc. The module does not directly implement any of these protocols, instead it provides the cryptographic primitives and functions to allow a developer to implement the various protocols.",
+ "tested_configurations": [
+  "Cisco ASA 5555 with Linux 4.1 with Intel Xeon X3460 without PAA",
+  "Cisco Catalyst 9200 with Linux 4.4 with ARM 8 Cortex-A53 AArch64 without PAA",
+  "Cisco Catalyst 9300 with Linux 4.4 with Intel Xeon D-1526 with PAA",
+  "Cisco Firepower 9300 with Linux 4.1 with Intel Xeon E5-2658 with PAA",
+  "Cisco ISR 4351 with Linux 4.4 with Intel Atom C2758 with PAA",
+  "Cisco ISR 4451 with Linux 4.4 with Intel Xeon E3-1105C with PAA",
+  "Cisco Nexus 3172 with Linux 4.1 with Intel Pentium B 925C with PAA",
+  "Cisco UCS M5 with Linux 4.18 with Intel Xeon Gold 6128 with PAA",
+  "Evaluation board with Linux 2.6 with Cavium Octeon CN5230 without PAA"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Certs. #A105, #A106, #A108, #A109, #A110, #A111, #A112, #A113 and #A114, key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #A105, #A106, #A108, #A109, #A110, #A111, #A112, #A113 and #A114, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 132 bits of encryption strength)",
+ "firmware_versions": "7.2",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A105",
+   "cavp_id": "32042",
+   "cavp_ref": "A:105"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A106",
+   "cavp_id": "32043",
+   "cavp_ref": "A:106"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A108",
+   "cavp_id": "32045",
+   "cavp_ref": "A:108"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A109",
+   "cavp_id": "32046",
+   "cavp_ref": "A:109"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A110",
+   "cavp_id": "32047",
+   "cavp_ref": "A:110"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A111",
+   "cavp_id": "32048",
+   "cavp_ref": "A:111"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A112",
+   "cavp_id": "32049",
+   "cavp_ref": "A:112"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A113",
+   "cavp_id": "32050",
+   "cavp_ref": "A:113"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "A114",
+   "cavp_id": "32051",
+   "cavp_ref": "A:114"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3790.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/January%202021_080221_0323_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "1/6/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "1/6/2021",
+ "last_updated": "1/6/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3790.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Certs. #A105, #A106, #A108, #A109, #A110, #A111, #A112, #A113 and #A114, key agreement; key establishment methodology provides between 112 and 219 bits of encryption strength); EC Diffie-Hellman (CVL Certs. #A105, #A106, #A108, #A109, #A110, #A111, #A112, #A113 and #A114, key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength); RSA (key wrapping; key establishment methodology provides between 112 and 132 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3790,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "Cisco FIPS Object Module",
+  "type": "Firmware",
+  "validation_dates": [
+   "01/06/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

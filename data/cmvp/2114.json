@@ -1,0 +1,113 @@
+{
+ "cert": 2114,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2114",
+ "module": "Proofpoint Security Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The module is a Java language cryptographic component to be used by the various Proofpoint security products. The module is designed to meet Level 1 requirements of FIPS 140-2 standard. The module is a cryptographic library that provides variety of cryptographic services (both approved as well as non-approved). The module can be executed on any general-purpose PC and operating system capable of running JRE 1.6 or later.",
+ "tested_configurations": [
+  "Dell Latitude E6400 w/ Cent OS 5 running JRE 1.6 (single-user mode)"
+ ],
+ "software_versions": "2.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1814",
+   "cavp_id": "2526",
+   "cavp_ref": "AES:1814"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 250",
+   "cavp_id": "22491",
+   "cavp_ref": "ECDSA:250"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 956",
+   "cavp_id": "20198",
+   "cavp_ref": "RNG:956"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 909",
+   "cavp_id": "12940",
+   "cavp_ref": "RSA:909"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1591",
+   "cavp_id": "10233",
+   "cavp_ref": "SHS:1591"
+  }
+ ],
+ "vendor": "Proofpoint Inc.",
+ "vendor_info": {
+  "name": "Proofpoint Inc.",
+  "website": "http://www.proofpoint.com",
+  "address": [
+   "892 Ross Drive",
+   "Sunnyvale, CA 94089",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Jun Wang"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2114.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0039.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/26/2014",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "3/26/2014",
+ "last_updated": "3/26/2014",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2114.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "AES RNG; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 256 bits of encryption strength; non-compliant less than 112 bits of encryption strength); DSA (non-compliant); Extended Secure Remote Password; Secure Remote Password; RC2; Triple-DES (non-compliant)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2114,
+  "vendor": "Proofpoint Inc.",
+  "module": "Proofpoint Security Library",
+  "type": "Software",
+  "validation_dates": [
+   "03/26/2014"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

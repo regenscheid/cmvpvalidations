@@ -1,0 +1,180 @@
+{
+ "cert": 1930,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1930",
+ "module": "OpenSSL Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy. When installed, initialized and configured as specified in the security policy section 9.1",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The OpenSSL Module is a software library supporting FIPS 140-2 -approved cryptographic algorithms for the purposes of protecting data in transit and at rest on the SUSE Linux platforms.",
+ "tested_configurations": [
+  "SUSE Linux Enterprise Server 11 SP2 32-bit running on HP ProLiant DL380 with PAA",
+  "SUSE Linux Enterprise Server 11 SP2 32-bit running on HP ProLiant DL380 without PAA",
+  "SUSE Linux Enterprise Server 11 SP2 64-bit running on HP ProLiant DL380 with PAA (single-user mode)",
+  "SUSE Linux Enterprise Server 11 SP2 64-bit running on HP ProLiant DL380 without PAA"
+ ],
+ "software_versions": "0.9.8j",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2052",
+   "cavp_id": "22126",
+   "cavp_ref": "AES:2052"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2053",
+   "cavp_id": "23634",
+   "cavp_ref": "AES:2053"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2054",
+   "cavp_id": "28103",
+   "cavp_ref": "AES:2054"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2055",
+   "cavp_id": "17619",
+   "cavp_ref": "AES:2055"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 650",
+   "cavp_id": "4259",
+   "cavp_ref": "DSA:650"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 651",
+   "cavp_id": "17702",
+   "cavp_ref": "DSA:651"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1249",
+   "cavp_id": "21963",
+   "cavp_ref": "HMAC:1249"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1250",
+   "cavp_id": "3133",
+   "cavp_ref": "HMAC:1250"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1073",
+   "cavp_id": "24516",
+   "cavp_ref": "RNG:1073"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1074",
+   "cavp_id": "3470",
+   "cavp_ref": "RNG:1074"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1069",
+   "cavp_id": "4366",
+   "cavp_ref": "RSA:1069"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1070",
+   "cavp_id": "17032",
+   "cavp_ref": "RSA:1070"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1797",
+   "cavp_id": "16414",
+   "cavp_ref": "SHS:1797"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1798",
+   "cavp_id": "8468",
+   "cavp_ref": "SHS:1798"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1323",
+   "cavp_id": "15733",
+   "cavp_ref": "TDES:1323"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1324",
+   "cavp_id": "46",
+   "cavp_ref": "TDES:1324"
+  }
+ ],
+ "vendor": "SUSE Linux Products GmbH",
+ "vendor_info": {
+  "name": "SUSE Linux Products GmbH",
+  "website": "http://www.suse.com",
+  "address": [
+   "Maxfeldstr. 5",
+   "Nuremberg 90409",
+   "Germany"
+  ],
+  "contacts": [
+   {
+    "name": "Roman Drahtmüller"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1930.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0028.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/8/2013",
+   "type": "Initial",
+   "lab": "atsec information security corporation"
+  }
+ ],
+ "first_validated": "4/8/2013",
+ "last_updated": "4/8/2013",
+ "labs": "atsec information security corporation",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1930.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 160 bits of encryption strength; non-compliant less than 112 bits of encryption strength); Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 160 bits of encryption strength; non-compliant less than 112 bits of encryption strength); MD5; HMAC-MD5"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1930,
+  "vendor": "SUSE Linux Products GmbH",
+  "module": "OpenSSL Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/08/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

@@ -1,0 +1,160 @@
+{
+ "cert": 1732,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/1732",
+ "module": "Symantec Enterprise Vault Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Windows Server 2003 Enhanced Cryptographic Provider (RSAENH) validated to FIPS 140-2 under Cert. #1012 operating in FIPS mode or Windows Server 2008 R2 Enhanced Cryptographic Provider (RSAENH) validated to FIPS 140-2 under Cert. #1337 operating in FIPS mode",
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "Symantec Enterprise Vault Cryptographic Module is a multi-chip standalone physical embodiment. The module consists of a DLL which interfaces with the Microsoft Cryptographic API to provide the required cryptographic functionality. The Enterprise Vault Cryptographic Module may be used for encryption/decryption of Enterprise Vault passwords, hashing of indexes, and random number generation.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2003",
+  "Microsoft Windows Server 2008 R2 (single-user mode)"
+ ],
+ "software_versions": "1.0.0.2",
+ "sunset": "",
+ "level_exceptions": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 818",
+   "cavp_id": "29787",
+   "cavp_ref": "AES:818"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 1168",
+   "cavp_id": "6263",
+   "cavp_ref": "AES:1168"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 23",
+   "cavp_id": "21664",
+   "cavp_ref": "DRBG:23"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 452",
+   "cavp_id": "6241",
+   "cavp_ref": "HMAC:452"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 687",
+   "cavp_id": "14334",
+   "cavp_ref": "HMAC:687"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 470",
+   "cavp_id": "3935",
+   "cavp_ref": "RNG:470"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 395",
+   "cavp_id": "13366",
+   "cavp_ref": "RSA:395"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 559",
+   "cavp_id": "18817",
+   "cavp_ref": "RSA:559"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 568",
+   "cavp_id": "25702",
+   "cavp_ref": "RSA:568"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 816",
+   "cavp_id": "7519",
+   "cavp_ref": "SHS:816"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1081",
+   "cavp_id": "20791",
+   "cavp_ref": "SHS:1081"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 691",
+   "cavp_id": "2350",
+   "cavp_ref": "TDES:691"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 846",
+   "cavp_id": "9934",
+   "cavp_ref": "TDES:846"
+  }
+ ],
+ "vendor": "Symantec Corporation",
+ "vendor_info": {
+  "name": "Symantec Corporation",
+  "website": "http://www.symantec.com",
+  "address": [
+   "350 Ellis Street",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "John Gorczyca"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1732.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "6/20/2012",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "6/20/2012",
+ "last_updated": "6/20/2012",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp1732.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength); ANSI X9.31 RSA key-pair generation (non-compliant); ANSI X9.31 RSA signature verification (non-compliant); RC2; RC4; MD5; MD2; MD4; DES"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 1732,
+  "vendor": "Symantec Corporation",
+  "module": "Symantec Enterprise Vault Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "06/20/2012"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

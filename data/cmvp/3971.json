@@ -1,0 +1,107 @@
+{
+ "cert": 3971,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3971",
+ "module": "Unisys Linux strongSwan Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with module Unisys Linux OpenSSL FIPS Object Module validated to FIPS 140-2 under Cert. #3959 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The module is a software-shared cryptographic library that provides key derivation functions for the Internet Key Exchange (IKE) protocol in the Ubuntu operating system user space. The module is defined as a multi-chip standalone module, as defined by FIPS PUB 140-2. This module implements a KDF for IKEv1 and IKEv2 that complies with the requirements of SP 800-135rev1.",
+ "tested_configurations": [
+  "Ubuntu Linux 18.04 LTS Server Edition running on a Dell PowerEdge R640 Server with an Intel Xeon Gold 5115 (single-user mode)"
+ ],
+ "software_versions": "5.6.3-6.4",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "C1012",
+   "cavp_id": "31409",
+   "cavp_ref": "C:1012"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C1011",
+   "cavp_id": "31408",
+   "cavp_ref": "C:1011"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C1011",
+   "cavp_id": "31408",
+   "cavp_ref": "C:1011"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C1011",
+   "cavp_id": "31408",
+   "cavp_ref": "C:1011"
+  }
+ ],
+ "vendor": "Unisys Corporation",
+ "vendor_info": {
+  "name": "Unisys Corporation",
+  "website": "http://www.unisys.com",
+  "address": [
+   "9701 Jeronimo Road",
+   "Irvine, CA 92618",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Kevin Lui"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3971.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202021_020821_0740_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/6/2021",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "7/6/2021",
+ "last_updated": "7/6/2021",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3971.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #3959"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 3971,
+  "vendor": "Unisys Corporation",
+  "module": "Unisys Linux strongSwan Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "07/06/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

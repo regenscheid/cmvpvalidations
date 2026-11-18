@@ -1,0 +1,52 @@
+{
+ "cavp_id": "33475",
+ "cavp_cert": "A876",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33475",
+ "implementation": "Hub Security Cryptographic Module",
+ "product_id": "12916",
+ "description": "The Hub Security cryptographic module is an HSM Vault to be used in a security and privacy solution. It is a keys management solution for safely storing and using all the company's sensitive data.",
+ "version": "V.4.4.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/12/2020",
+ "vendor": "Hub Security LTD",
+ "vendor_website": "https://hubsecurity.io/",
+ "oes": [
+  {
+   "name": "ATSAMD51J20A (w/ firmware V2.0002.0050.0503.0725.080)",
+   "details": [
+    "processor: ATSAMD51J20A (w/ firmware V2.0002.0050.0503.0725.080)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 128-3072 Increment 64"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA3-224, SHA3-256, SHA3-384, SHA3-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

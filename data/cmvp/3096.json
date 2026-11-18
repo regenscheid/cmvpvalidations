@@ -1,0 +1,229 @@
+{
+ "cert": 3096,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3096",
+ "module": "Secure Kernel Code Integrity",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode with modules Windows OS Loader validated to FIPS 140-2 under Cert. #3090, #3194 or #3480 operating in FIPS mode or Windows Resume validated to FIPS 140-2 under Cert. #3091 operating in FIPS mode",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Design Assurance: Level 2"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Secure Kernel Code Integrity (SKCI) running in the Virtual Secure Mode (VSM) of the Hyper-V hypervisor will only grant execute access to physical pages in the kernel that have been successfully verified. Executable pages will not have write permission outside of Hyper-V. Therefore, only verified code can be executed.",
+ "tested_configurations": [
+  "Windows 10 Education April 2018 Update (x64) running on a Microsoft Surface Laptop without PAA [3]",
+  "Windows 10 Education Creators Update (x64) running on a Microsoft Surface Pro without PAA [1]",
+  "Windows 10 Education Fall Creators Update (x64) running on a Microsoft Surface Pro without PAA [2]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Book 2 without PAA [3]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Laptop without PAA [3]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Pro LTE without PAA [3]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Studio 2 with PAA [3]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on a Microsoft Surface Studio without PAA [3]",
+  "Windows 10 Enterprise April 2018 Update (x64) running on an HP Pro x2 612 G2 Detachable PC with LTE without PAA [3]",
+  "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Book without PAA [1]",
+  "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Laptop without PAA [1]",
+  "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Pro 4 without PAA [1]",
+  "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Pro without PAA [1]",
+  "Windows 10 Enterprise Creators Update (x64) running on a Microsoft Surface Studio without PAA [1]",
+  "Windows 10 Enterprise Creators Update (x64) running on an HP Pro x2 612 G2 Detachable PC with LTE without PAA [1]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Book 2 without PAA [2]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Book without PAA [2]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Laptop without PAA [2]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Pro 4 without PAA [2]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Pro without PAA [2]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on a Microsoft Surface Studio without PAA [2]",
+  "Windows 10 Enterprise Fall Creators Update (x64) running on an HP Pro x2 612 G2 Detachable PC with LTE without PAA [2]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Dell Latitude 12 Rugged Tablet without PAA [3]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Dell Latitude 5290 without PAA [3]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Book 2 without PAA [3]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Go without PAA [3]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Laptop 2 with PAA [3]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Laptop without PAA [3]",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Pro 6 with PAA [3] (single-user mode)",
+  "Windows 10 Pro April 2018 Update (x64) running on a Microsoft Surface Pro LTE without PAA [3]",
+  "Windows 10 Pro April 2018 Update (x64) running on an HP Slimline Desktop with PAA [3]",
+  "Windows 10 Pro Creators Update (x64) on Hyper-V on Windows Server 2016 running on a Surface Pro 4 without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on a Dell Latitude 5285 without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on a Dell PowerEdge R630 Server without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on a Dell Precision Tower 5810MT without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on a Microsoft Surface Laptop without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on a Microsoft Surface Pro 3 without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on a Microsoft Surface Pro without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on a Panasonic Toughbook without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on an HP Compaq Pro 6305 without PAA [1]",
+  "Windows 10 Pro Creators Update (x64) running on an HP Slimline Desktop with PAA [1]",
+  "Windows 10 Pro Fall Creators Update (x64) on Hyper-V on Windows Server 2016 running on a Surface Pro 4 without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Dell Latitude 5285 without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Dell Latitude 5290 without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Dell PowerEdge R630 Server without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Dell Precision Tower 5810MT without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Microsoft Surface Laptop without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Microsoft Surface Pro 3 without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Microsoft Surface Pro without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on a Panasonic Toughbook without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on an HP Compaq Pro 6305 without PAA [2]",
+  "Windows 10 Pro Fall Creators Update (x64) running on an HP Slimline Desktop with PAA [2]",
+  "Windows 10 S Creators Update (x64) running on a Microsoft Surface Laptop without PAA [1]",
+  "Windows 10 S Fall Creators Update (x64) running on a Microsoft Surface Laptop without PAA [2]",
+  "Windows Server Datacenter Core (x64) on Hyper-V on Windows Server running on a Dell Precision Tower 5810MT without PAA [2][3]",
+  "Windows Server Datacenter Core (x64) running on a Dell PowerEdge R630 Server without PAA [2]",
+  "Windows Server Datacenter Core (x64) running on a Dell PowerEdge R740 Server without PAA [2][3]",
+  "Windows Server Datacenter Core (x64) running on a Dell Precision Tower 5810MT without PAA [2]",
+  "Windows Server Standard Core (x64) on Hyper-V on Windows Server 2016 running on a Dell PowerEdge R740 Server without PAA [3]",
+  "Windows Server Standard Core (x64) on Hyper-V on Windows Server running on a Dell Precision Tower 5810MT without PAA [2][3]",
+  "Windows Server Standard Core (x64) running on a Dell PowerEdge R630 Server without PAA [2]",
+  "Windows Server Standard Core (x64) running on a Dell PowerEdge R740 Server without PAA [2][3]",
+  "Windows Server Standard Core (x64) running on a Dell Precision Tower 5810MT without PAA [2]"
+ ],
+ "software_versions": "10.0.15063 [1], 10.0.16299 [2] and 10.0.17134 [3]",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4624",
+   "cavp_id": "8639",
+   "cavp_ref": "AES:4624"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4897",
+   "cavp_id": "20030",
+   "cavp_ref": "AES:4897"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2522",
+   "cavp_id": "13964",
+   "cavp_ref": "RSA:2522"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2523",
+   "cavp_id": "15401",
+   "cavp_ref": "RSA:2523"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2668",
+   "cavp_id": "8417",
+   "cavp_ref": "RSA:2668"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2674",
+   "cavp_id": "18844",
+   "cavp_ref": "RSA:2674"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3080",
+   "cavp_id": "15756",
+   "cavp_ref": "RSA:3080"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 3081",
+   "cavp_id": "25919",
+   "cavp_ref": "RSA:3081"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3790",
+   "cavp_id": "12120",
+   "cavp_ref": "SHS:3790"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4009",
+   "cavp_id": "5258",
+   "cavp_ref": "SHS:4009"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4633",
+   "cavp_id": "2702",
+   "cavp_ref": "SHS:4633"
+  }
+ ],
+ "vendor": "Microsoft Corporation",
+ "vendor_info": {
+  "name": "Microsoft Corporation",
+  "website": "http://www.microsoft.com",
+  "address": [
+   "One Microsoft Way",
+   "Redmond, WA 98052-6399",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Mike Grimm"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3096.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/AprilConsolidated2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/11/2018",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "10/16/2018",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "7/15/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  },
+  {
+   "date": "8/27/2019",
+   "type": "Update",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/11/2018",
+ "last_updated": "8/27/2019",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3096.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to dependency on certificate #3090"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 3096,
+  "vendor": "Microsoft Corporation",
+  "module": "Secure Kernel Code Integrity",
+  "type": "Software",
+  "validation_dates": [
+   "04/11/2018",
+   "10/16/2018",
+   "07/15/2019",
+   "08/27/2019"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

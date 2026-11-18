@@ -1,0 +1,46 @@
+{
+ "cavp_id": "11599",
+ "cavp_cert": "AES 1272",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=11599",
+ "implementation": "SEL Cryptographic Daughter Card",
+ "product_id": "7477",
+ "description": "The SEL Cryptographic Daughter Card provides strong cryptographic security to a variety of communications networks. It protects point-to-point, multi-drop, and many-to-many networks. The card secures all byte oriented serial protocols including popular SCADA or PCS protocols like DNP and MODBUS common to PLC, IED, and RTU products. It quickly integrates into serial communication networks including modem and data radio.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/2/2010",
+ "vendor": "Schweitzer Engineering Laboratories, Inc.",
+ "vendor_website": "http://www.selinc.com",
+ "oes": [
+  {
+   "name": "Freescale i.MX31 with Xilinx Spartan 3",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 256",
+    "Counter Source: Internal"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

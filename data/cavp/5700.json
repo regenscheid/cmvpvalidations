@@ -1,0 +1,48 @@
+{
+ "cavp_id": "5700",
+ "cavp_cert": "RSA 244",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=5700",
+ "implementation": "Tumbleweed Security Kernel",
+ "product_id": "5079",
+ "description": "The Tumbleweed Security Kernel is a software module implemented as two dynamic libraries that provide all security functionalities for several products of Tumbleweed Communications Corp., including Validation Authority, SecureTransport, and MailGate.",
+ "version": "2.0",
+ "type": "SOFTWARE",
+ "first_validated": "4/30/2007",
+ "vendor": "Tumbleweed Communications Corp.",
+ "vendor_website": "http://www.tumbleweed.com",
+ "oes": [
+  {
+   "name": "Windows Server 2003 on Intel Pentium III",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

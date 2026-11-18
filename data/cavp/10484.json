@@ -1,0 +1,71 @@
+{
+ "cavp_id": "10484",
+ "cavp_cert": "AES 5059",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=10484",
+ "implementation": "OmniStack Cryptographic Library",
+ "product_id": "8916",
+ "description": "The SimpliVity OmniStack Cryptographic Library provides the cryptographic functionality necessary to support TLS-secured communications between components of their hyperconverged infrastructure solutions, which are designed to meet the needs of IT environments from branch offices to enterprises.",
+ "version": "2.1",
+ "type": "SOFTWARE",
+ "first_validated": "12/22/2017",
+ "vendor": "Hewlett Packard Enterprise",
+ "vendor_website": "http://www.hpe.com",
+ "oes": [
+  {
+   "name": "Ubuntu 14.04.5 running on VMWare ESXi 6.0.0 on Intel Xeon",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 48, 64, 80, 96, 112, 128",
+    "IV Length: 56, 64, 72, 80, 88, 96, 104",
+    "Payload Length: 0-256",
+    "AAD Length: 0-524288"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: Internal",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 32, 64, 96, 104, 112, 120, 128",
+    "IV Length: 96",
+    "Payload Length: 504, 512, 1016, 1024",
+    "AAD Length: 504, 512, 1016, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

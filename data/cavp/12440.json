@@ -1,0 +1,48 @@
+{
+ "cavp_id": "12440",
+ "cavp_cert": "ECDSA 1441",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=12440",
+ "implementation": "SDKMS Crypto Library",
+ "product_id": "9498",
+ "description": "Fortanix Self-Defending Key Management Service (SDKMS) is the world's first cloud service secured with Intel® SGX. With SDKMS, you can securely generate, store and use cryptographic keys & certificates, as well as secrets, such as passwords, API keys or tokens. It provides access control to users & applications to enforce authorized access to keys.",
+ "version": "1.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "5/10/2018",
+ "vendor": "Fortanix, Inc.",
+ "vendor_website": "http://www.fortanix.com",
+ "oes": [
+  {
+   "name": "Intel® Xeon E3-1230v5 4-Core, 3.40GHz with AES-NI",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521",
+    "Secret Generation Mode: Testing Candidates"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-192, P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

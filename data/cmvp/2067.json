@@ -1,0 +1,192 @@
+{
+ "cert": 2067,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/2067",
+ "module": "McAfee Virtual SIEM Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-chip standalone",
+ "description": "The McAfee Virtual SIEM Cryptographic Module provides cryptographic services required by the McAfee SIEM virtual environments.",
+ "tested_configurations": [
+  "McAfee Nitro OS 9.1 on VMWare ESXi 5.0 running on a McAfee SIEM appliance"
+ ],
+ "software_versions": "1.0",
+ "sunset": "",
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2228",
+   "cavp_id": "24867",
+   "cavp_ref": "AES:2228"
+  },
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 2231",
+   "cavp_id": "13360",
+   "cavp_ref": "AES:2231"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 32",
+   "cavp_id": "22436",
+   "cavp_ref": "Component:32"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 35",
+   "cavp_id": "4113",
+   "cavp_ref": "Component:35"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 689",
+   "cavp_id": "19421",
+   "cavp_ref": "DSA:689"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 692",
+   "cavp_id": "2113",
+   "cavp_ref": "DSA:692"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 342",
+   "cavp_id": "23288",
+   "cavp_ref": "ECDSA:342"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 345",
+   "cavp_id": "29616",
+   "cavp_ref": "ECDSA:345"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1356",
+   "cavp_id": "14259",
+   "cavp_ref": "HMAC:1356"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 1359",
+   "cavp_id": "4961",
+   "cavp_ref": "HMAC:1359"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1114",
+   "cavp_id": "23219",
+   "cavp_ref": "RNG:1114"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 1117",
+   "cavp_id": "3461",
+   "cavp_ref": "RNG:1117"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1140",
+   "cavp_id": "3409",
+   "cavp_ref": "RSA:1140"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 1143",
+   "cavp_id": "28492",
+   "cavp_ref": "RSA:1143"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1916",
+   "cavp_id": "11014",
+   "cavp_ref": "SHS:1916"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 1919",
+   "cavp_id": "2017",
+   "cavp_ref": "SHS:1919"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1394",
+   "cavp_id": "15116",
+   "cavp_ref": "TDES:1394"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 1397",
+   "cavp_id": "5197",
+   "cavp_ref": "TDES:1397"
+  }
+ ],
+ "vendor": "McAfee, Inc.",
+ "vendor_info": {
+  "name": "McAfee, Inc.",
+  "website": "http://www.mcafee.com",
+  "address": [
+   "2821 Mission College Blvd.",
+   "Santa Clara, CA 95054",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Andy Nissen"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2067.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertList0036.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "12/24/2013",
+   "type": "Initial",
+   "lab": "EWA - Canada"
+  }
+ ],
+ "first_validated": "12/24/2013",
+ "last_updated": "12/24/2013",
+ "labs": "EWA - Canada",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp2067.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "MD5; Diffie-Hellman (key agreement; key establishment methodology provides between 112 and 160 bits of encryption strength; non-compliant less than 112 bits of encryption strength); RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 2067,
+  "vendor": "McAfee, Inc.",
+  "module": "McAfee Virtual SIEM Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "12/24/2013"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

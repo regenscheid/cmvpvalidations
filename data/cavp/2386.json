@@ -1,0 +1,56 @@
+{
+ "cavp_id": "2386",
+ "cavp_cert": "HMAC 561",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2386",
+ "implementation": "Harris Broadband Ethernet Radio Cryptographic Library",
+ "product_id": "2608",
+ "description": "This is a firmware library that provides the cryptographic functions used on Harris' industry leading reliable, secure and high performance broadband Ethernet radio products.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/19/2009",
+ "vendor": "Harris Corporation (RF Communications Division)",
+ "vendor_website": "http://www.harris.com",
+ "oes": [
+  {
+   "name": "WindRiver VxWorks 6.5 on Intel IXP420",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

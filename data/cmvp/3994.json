@@ -1,0 +1,134 @@
+{
+ "cert": 3994,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3994",
+ "module": "CommVault Crypto Library",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy.",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "EMI/EMC: Level 3",
+  "Design Assurance: Level 3",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "CommVault Crypto Library (CVCL) is a cryptographic software module used in various products by CommVault Systems, Inc. The module provides a collection of FIPS Approved and Non-FIPS Approved cryptographic services for key generation, symmetric and asymmetric encryption, hash, HMAC and signature generation/verification.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2012 R2 running on a Dell PowerEdge R210 with PAA",
+  "Microsoft Windows Server 2012 R2 running on a Dell PowerEdge R210 without PAA",
+  "Red Hat Enterprise Linux v7 running on a Dell PowerEdge R410 with PAA",
+  "Red Hat Enterprise Linux v7 running on a Dell PowerEdge R410 without PAA",
+  "Solaris 11 running on a HP EliteDesk 800 G1 USDT with PAA",
+  "Solaris 11 running on a HP EliteDesk 800 G1 USDT without PAA (single-user mode)"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "software_versions": "2.0",
+ "product_url": "http://www.commvault.com/complete-data-protection",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4368",
+   "cavp_id": "14971",
+   "cavp_ref": "AES:4368"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1405",
+   "cavp_id": "29675",
+   "cavp_ref": "DRBG:1405"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2907",
+   "cavp_id": "22016",
+   "cavp_ref": "HMAC:2907"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2365",
+   "cavp_id": "13797",
+   "cavp_ref": "RSA:2365"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3605",
+   "cavp_id": "9913",
+   "cavp_ref": "SHS:3605"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2362",
+   "cavp_id": "20408",
+   "cavp_ref": "TDES:2362"
+  }
+ ],
+ "vendor": "CommVault Systems, Inc.",
+ "vendor_info": {
+  "name": "CommVault Systems, Inc.",
+  "website": "http://www.commvault.com",
+  "address": [
+   "1 Commvault Way",
+   "Tinton Falls, NJ 07724",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Scott Britton"
+   },
+   {
+    "name": "Warren Mondschien"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3994.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/July%202021_020821_0740_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "7/27/2021",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "7/27/2021",
+ "last_updated": "7/27/2021",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3994.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3994,
+  "vendor": "CommVault Systems, Inc.",
+  "module": "CommVault Crypto Library",
+  "type": "Software",
+  "validation_dates": [
+   "07/27/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

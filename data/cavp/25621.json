@@ -1,0 +1,46 @@
+{
+ "cavp_id": "25621",
+ "cavp_cert": "AES 3773",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=25621",
+ "implementation": "INTEGRITY Security Services High Assurance Embedded Cryptographic Toolkit - AES",
+ "product_id": "1484",
+ "description": "ISS ECT is a standards-based cryptographic toolkit providing a flexible framework to integrate encryption, digital signatures and other security mechanisms into a wide range of applications. It is designed to support multiple cryptographic providers with a single common API, easily targeted to a variety of Operating Systems.",
+ "version": "3.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/15/2016",
+ "vendor": "INTEGRITY Security Services",
+ "vendor_website": "http://www.ghs.com",
+ "oes": [
+  {
+   "name": "FreeRTOS 7.6 running on Cubic PU-4 (ST-Micro STM32F4xxx/ARM Cortex-M4)",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128, 192, 256",
+    "Counter Source: External"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

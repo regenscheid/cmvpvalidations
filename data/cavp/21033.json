@@ -1,0 +1,40 @@
+{
+ "cavp_id": "21033",
+ "cavp_cert": "HMAC 2186",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=21033",
+ "implementation": "Libgcrypt (AVX2 for SHA)",
+ "product_id": "887",
+ "description": "SUSE Libgcrypt is a general purpose cryptographic library based on the code from GnuPG.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "6/11/2015",
+ "vendor": "SUSE, LLC",
+ "vendor_website": "http://www.suse.com",
+ "oes": [
+  {
+   "name": "SUSE Linux Enterprise Server 12 on Intel x86-64",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key sizes > block size",
+    "Key size = block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Key sizes < block size",
+    "Key size = block size",
+    "Key sizes > block size"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

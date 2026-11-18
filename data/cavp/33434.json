@@ -1,0 +1,63 @@
+{
+ "cavp_id": "33434",
+ "cavp_cert": "A838",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33434",
+ "implementation": "PKA",
+ "product_id": "13067",
+ "description": "Autotalks Hardware Security Module provide a FIPS 140-2 Level 3 certified, hardened, tamper-resistant environment for secure cryptographic processing needed for Automotive Vehicle-to-Everything communication systems including: • ECC Public Key cryptography • Symmetric key cryptography • Key protection • TRNG/DRBG",
+ "version": "3.0",
+ "type": "FIRMWARE",
+ "first_validated": "10/23/2020",
+ "vendor": "Autotalks",
+ "vendor_website": "http://www.auto-talks.com/",
+ "oes": [
+  {
+   "name": "Simulator: Cadence NC-Verilog",
+   "details": [
+    "firmware: Simulator: Cadence NC-Verilog"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-224",
+    "    Hash Algorithm: SHA2-224",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224",
+    "    Hash Algorithm: SHA2-224",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

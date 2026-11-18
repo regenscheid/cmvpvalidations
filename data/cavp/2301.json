@@ -1,0 +1,60 @@
+{
+ "cavp_id": "2301",
+ "cavp_cert": "RSA 758",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=2301",
+ "implementation": "TippingPoint Crypto Implementation for Celeron",
+ "product_id": "7913",
+ "description": "Implementation Description - The TippingPoint Crypto Implementation provides cryptographic services to TippingPoint devices such as Intrusion Prevention Systems (IPS), which operate in-line in the network, blocking malicious and unwanted traffic, while allowing good traffic to pass unimpeded.",
+ "version": "3.1.4.1427 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "1/26/2011",
+ "vendor": "Hewlett-Packard TippingPoint",
+ "vendor_website": "http://www.tippingpoint.com",
+ "oes": [
+  {
+   "name": "Intel Celeron",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA KeyGen (FIPS186-2):",
+   "oe": 0,
+   "capabilities": [
+    "Modulus Length: 2048",
+    "Public Key Value: 65537"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1, SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

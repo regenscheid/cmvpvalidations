@@ -1,0 +1,53 @@
+{
+ "cavp_id": "33839",
+ "cavp_cert": "A1230",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33839",
+ "implementation": "Monaco FIPS-140-2 Compliant AES-256 Encryption and CMAC",
+ "product_id": "13716",
+ "description": "Encrypted AES-256 Data/Voice for use in radio for DOD, Government and Commercial market segments",
+ "version": "Part Number: 9S1F5101; Firmware Version: 51.01",
+ "type": "FIRMWARE",
+ "first_validated": "4/8/2021",
+ "vendor": "Monaco Enterprises Inc.",
+ "vendor_website": "http://www.monaco-inc.com",
+ "oes": [
+  {
+   "name": "ARM uC, NXP MK10FX512VLQ12",
+   "details": [
+    "cpu: ARM uC, NXP MK10FX512VLQ12",
+    "  Processor"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Key Length: 256",
+    "    MAC Length: 128",
+    "    Message Length: 0-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128"
+   ]
+  },
+  {
+   "algorithm": "AES-OFB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

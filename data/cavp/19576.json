@@ -1,0 +1,65 @@
+{
+ "cavp_id": "19576",
+ "cavp_cert": "TDES 1994",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=19576",
+ "implementation": "mToken CryptoID",
+ "product_id": "1118",
+ "description": "mToken CryptoID is designed based on a secure smartcard chip that utilizes the in-built mCOS to communicate with computer device via USB interface in a \"plug and play\" manner. It can realize various Public Key Infrastructure (PKI) applications including digital signature, online authentications, online transactions, software security, etc.",
+ "version": "SCC-X",
+ "type": "HARDWARE",
+ "first_validated": "11/6/2015",
+ "vendor": "Century Longmai Technology Co. Ltd",
+ "vendor_website": "http://www.longmai.net",
+ "oes": [
+  {
+   "name": "mToken CryptoID",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "TDES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Keying Option: 1",
+    "    MAC Length: 0-64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial",
+    "  Capabilities:",
+    "    Direction: Verification",
+    "    Keying Option: 1",
+    "    MAC Length: 0-64",
+    "    Message Length: 0-524288",
+    "    Block Size: Full, Partial"
+   ]
+  },
+  {
+   "algorithm": "TDES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Keying Option: 1"
+   ]
+  },
+  {
+   "algorithm": "TDES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Payload Length: 64, 96, 128, 160, 4096"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

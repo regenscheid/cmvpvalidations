@@ -1,0 +1,48 @@
+{
+ "cavp_id": "14919",
+ "cavp_cert": "RSA 957",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=14919",
+ "implementation": "HiCOS PKI Native Smart Card v3.3",
+ "product_id": "8289",
+ "description": "HiCOS PKI Native Smart Card supports SHA-1, SHA-256, SHA-384, SHA-512, Hash-DRBG, 3DES-3Key-MAC, 3DES-3Key encrypt/decrypt, RSA 1024/2048 encrypt/decrypt, RSA digital signature generation/verification and APDU command/response encryption and/or MAC.",
+ "version": "1.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "11/22/2011",
+ "vendor": "Chunghwa Telecom Co., Ltd. Telecommunication Laboratories",
+ "vendor_website": "http://www.chttl.com.tw",
+ "oes": [
+  {
+   "name": "Renesas AE-5 Series Processor",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigGen (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "    Modulo: 1024, 2048",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-2)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

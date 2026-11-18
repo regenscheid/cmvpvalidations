@@ -1,0 +1,50 @@
+{
+ "cavp_id": "24974",
+ "cavp_cert": "AES 4251",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=24974",
+ "implementation": "SAIFE Library Key Wrap",
+ "product_id": "6372",
+ "description": "Authenticated encryption and decryption of MicroCloud X4 key material is realized through the AES Key Wrapping built on NIST SP 800-38F.",
+ "version": "158ff199ab1c013547289147b7bef44a8bd3f15a (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "12/16/2016",
+ "vendor": "Bluechip Systems LLC",
+ "vendor_website": "http://www.bluechipsys.com",
+ "oes": [
+  {
+   "name": "Bluechip Systems X4 SoC",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 256, 512, 1536"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 256",
+    "Payload Length: 808"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

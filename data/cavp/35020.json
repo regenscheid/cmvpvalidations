@@ -1,0 +1,51 @@
+{
+ "cavp_id": "35020",
+ "cavp_cert": "A2411",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35020",
+ "implementation": "Juniper Linux Kernel crypto API (RFC4106EIV_C_C)",
+ "product_id": "14905",
+ "description": "The Linux kernel crypto API implementation provides cryptographic services to Linux kernel space software components and user space via the AF_ALG interface. The following cipher implementation is covered: Generic C non-optimized RFC4106 AES GCM using external IV generation implementation.",
+ "version": "1.0",
+ "type": "SOFTWARE",
+ "first_validated": "3/7/2022",
+ "vendor": "Juniper Networks, Inc.",
+ "vendor_website": "http://www.juniper.net",
+ "oes": [
+  {
+   "name": "Junos OS Evolved version 19.4R2 on Intel E5-2628Lv4 Xeon",
+   "details": [
+    "software: Junos OS Evolved version 19.4R2",
+    "  Junos OS Evolved version 19.4R2, a Linux distribution developed by Juniper Networks",
+    "processor: Xeon",
+    "  Processor Xeon (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: E5-2628Lv4"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "Key Length: 128, 192, 256",
+    "Tag Length: 64, 96, 128",
+    "IV Length: 96",
+    "Payload Length: 120, 128, 248, 256",
+    "AAD Length: 64, 96"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

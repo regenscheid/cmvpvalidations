@@ -1,0 +1,134 @@
+{
+ "cert": 3728,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3728",
+ "module": "Cisco Firepower Management Center Virtual (FMCv) Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. When installed, initialized and configured as specified in Section 3 of the Security Policy",
+ "level_exceptions": [
+  "Roles, Services, and Authentication: Level 3",
+  "Physical Security: N/A",
+  "Design Assurance: Level 2",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The Firepower Management Center Virtual working like the Firepower Management Center appliance aggregates and correlates network traffic information and performance data, assessing the impact of events on particular hosts. You can monitor the information that your device reports, and assess and control the overall activity that occurs on your network. The FMCv also controls the network management features on your devices: switching, routing, NAT and VPN.",
+ "tested_configurations": [
+  "FXOS version 2 on VMware ESXi 6.0 running on Cisco C220 M5 with Intel Xeon Silver 4110 (Skylake)",
+  "FXOS version 2 on VMware ESXi 6.5 running on Cisco C220 M5 with Intel Xeon Silver 4110 (Skylake) (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (CVL Cert. #1561, key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1561, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "software_versions": "6.4",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 5008",
+   "cavp_id": "5768",
+   "cavp_ref": "AES:5008"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1561",
+   "cavp_id": "14568",
+   "cavp_ref": "Component:1561"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1828",
+   "cavp_id": "19474",
+   "cavp_ref": "DRBG:1828"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1277",
+   "cavp_id": "23943",
+   "cavp_ref": "ECDSA:1277"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3329",
+   "cavp_id": "29875",
+   "cavp_ref": "HMAC:3329"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2703",
+   "cavp_id": "20088",
+   "cavp_ref": "RSA:2703"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 4074",
+   "cavp_id": "6276",
+   "cavp_ref": "SHS:4074"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2584",
+   "cavp_id": "28010",
+   "cavp_ref": "TDES:2584"
+  }
+ ],
+ "vendor": "Cisco Systems, Inc.",
+ "vendor_info": {
+  "name": "Cisco Systems, Inc.",
+  "website": "http://www.cisco.com",
+  "address": [
+   "170 West Tasman Drive",
+   "San Jose, CA 95134",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Global Certification Team"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3728.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/October%202020_021120_0702_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "10/20/2020",
+   "type": "Initial",
+   "lab": "Gossamer Security Solutions"
+  }
+ ],
+ "first_validated": "10/20/2020",
+ "last_updated": "10/20/2020",
+ "labs": "Gossamer Security Solutions",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3728.pdf",
+ "other_fields": {
+  "Historical Reason": "SP 800-56Arev3 transition"
+ },
+ "other_text": "Diffie-Hellman (CVL Cert. #1561, key agreement; key establishment methodology provides between 112 and 150 bits of encryption strength); EC Diffie-Hellman (CVL Cert. #1561, key agreement; key establishment methodology provides between 128 and 256 bits of encryption strength); NDRNG; RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3728,
+  "vendor": "Cisco Systems, Inc.",
+  "module": "Cisco Firepower Management Center Virtual (FMCv) Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "10/20/2020"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

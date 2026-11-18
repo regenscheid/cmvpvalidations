@@ -1,0 +1,78 @@
+{
+ "cavp_id": "35079",
+ "cavp_cert": "A2469",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=35079",
+ "implementation": "IMC Secure Firmware",
+ "product_id": "14948",
+ "description": "Firmware implementations of multiple algorithms used in the IN762 Integrated Management Complex (IMC) & B227 True Random Number Generator (TRNG) Firmware-Hybrid Cryptographic Module.",
+ "version": "20220318",
+ "type": "FIRMWARE",
+ "first_validated": "3/23/2022",
+ "vendor": "Google, LLC",
+ "vendor_website": "https://www.google.com/",
+ "oes": [
+  {
+   "name": "ARM Cortex-A53 (ARMv8)",
+   "details": [
+    "Processor: ARM Cortex-A53 (ARMv8)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation",
+    "    Key Length: 128, 192, 256",
+    "    MAC Length: 128",
+    "    Message Length: 8-1024 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 0-256 Increment 8",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 0-256 Increment 8",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES256",
+    "    Supported Lengths: 128, 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-16384 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

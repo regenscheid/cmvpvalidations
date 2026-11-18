@@ -1,0 +1,116 @@
+{
+ "cert": 4202,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/4202",
+ "module": "IQVIA Java Crypto Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The output of the DRBG shall not be used to generate keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "The cryptographic module is a single Java Archive (JAR) binary, named DvSecurityAPI.jar, that provides cryptographic and secure communication services for other applications developed by IQVIA. In this document, those applications will be referred to as the calling application. The module is a standalone cryptographic library that can be called to provide encryption, decryption, hash generation and verification, certificate generation and verification, random bit generation, and message authentication functions.",
+ "tested_configurations": [
+  "Microsoft Windows Server 2016 with JDK v1.8 running on a ProLiant BL460c Gen8 with Intel Xeon E5-2640 (single-user mode)"
+ ],
+ "allowed_algorithms": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C2127",
+   "cavp_id": "33280",
+   "cavp_ref": "C:2127"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C2127",
+   "cavp_id": "33280",
+   "cavp_ref": "C:2127"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "C2127",
+   "cavp_id": "33280",
+   "cavp_ref": "C:2127"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C2127",
+   "cavp_id": "33280",
+   "cavp_ref": "C:2127"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C2127",
+   "cavp_id": "33280",
+   "cavp_ref": "C:2127"
+  }
+ ],
+ "vendor": "IQVIA",
+ "vendor_info": {
+  "name": "IQVIA",
+  "website": "http://www.iqvia.com",
+  "address": [
+   "2235 Sheppard Avenue East, Suite 1700",
+   "Toronto, Ontario M2J5B5",
+   "Canada"
+  ],
+  "contacts": [
+   {
+    "name": "Toan Tran"
+   },
+   {
+    "name": "App Nucleus Support"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4202.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/CMVP%20Certificates%20%28FCVC%29%20April%202022_020522_0649_mmsigned.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "4/22/2022",
+   "type": "Initial",
+   "lab": "Leidos Accredited Testing & Evaluation (AT&E) Lab"
+  }
+ ],
+ "first_validated": "4/22/2022",
+ "last_updated": "4/22/2022",
+ "labs": "Leidos Accredited Testing & Evaluation (AT&E) Lab",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp4202.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "RSA (key wrapping; key establishment methodology provides 112 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 4202,
+  "vendor": "IQVIA",
+  "module": "IQVIA Java Crypto Module",
+  "type": "Software",
+  "validation_dates": [
+   "04/22/2022"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

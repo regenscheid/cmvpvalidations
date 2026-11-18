@@ -1,0 +1,39 @@
+{
+ "cavp_id": "33513",
+ "cavp_cert": "A914",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33513",
+ "implementation": "Aquarius ACNT036M Cryptographic Module",
+ "product_id": "13374",
+ "description": "RSA algorithm is implemented in ROM to support Secure Boot. This algorithm supports Signature Verification per PSS PKCS#1 V2.1 with 2048 bit Modulus and fixed exponent",
+ "version": "ACNT036M B1",
+ "type": "HARDWARE",
+ "first_validated": "12/17/2020",
+ "vendor": "SK hynix memory solutions America Inc.",
+ "vendor_website": "http://www.skhms.com",
+ "oes": [
+  {
+   "name": "ARM Cortex-R8 without Neon",
+   "details": [
+    "cpu: ARM Cortex-R8 without Neon"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

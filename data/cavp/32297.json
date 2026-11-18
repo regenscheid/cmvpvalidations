@@ -1,0 +1,82 @@
+{
+ "cavp_id": "32297",
+ "cavp_cert": "C1656",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32297",
+ "implementation": "TPM2.0 Library",
+ "product_id": "12244",
+ "description": "ST Microelectronics Trusted Platform Module is a hardware cryptographic module which implements advanced cryptographic algorithms, including symmetric and asymmetric cryptography, as well as key generation and random number generation as defined by the Trusted Computing Group (TCG) version 2.0 specifications.",
+ "version": "00.02.01.10",
+ "type": "FIRMWARE",
+ "first_validated": "3/24/2020",
+ "vendor": "STMicroelectronics",
+ "vendor_website": "http://www.st.com",
+ "oes": [
+  {
+   "name": "SecureCore® SC300",
+   "details": [
+    "processor: SecureCore® SC300"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 80, 96, 128, 160",
+    "Key sizes < block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192, 256, 320, 384",
+    "Key sizes < block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 128, 192, 256",
+    "Key sizes < block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA3-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 192, 256, 320, 384",
+    "Key sizes < block size",
+    "Key sizes > block size"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-256, HMAC-SHA2-384",
+    "    Supported Lengths: 160, 256",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "C1656 (HMAC)"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

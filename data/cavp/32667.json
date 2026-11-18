@@ -1,0 +1,95 @@
+{
+ "cavp_id": "32667",
+ "cavp_cert": "C1768",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=32667",
+ "implementation": "GM01 Security Algorithm Library",
+ "product_id": "12569",
+ "description": "GM01 Security Algorithm Library which is mainly responsible for providing security algorithm functionality to the GM01 Cryptographic Module, it is the core part of GM01 Cryptographic Module, and it contains security algorithms such as AES, DRBG, HMAC, KDF, RSA, and SHA",
+ "version": "1.0.0",
+ "type": "FIRMWARE",
+ "first_validated": "6/1/2020",
+ "vendor": "Shanghai Muge Technology Co., Ltd",
+ "vendor_website": "http://www.screenr-s.com/",
+ "oes": [
+  {
+   "name": "Linux 3.0.35 on NXP MCIMX6Q",
+   "details": [
+    "software: Linux 3.0.35",
+    "processor: NXP MCIMX6Q"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key sizes < block size",
+    "C1768 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1",
+    "C1768 (SHS)",
+    "C1768 (HMAC)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "C1768 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 10001",
+    "C1768 (SHS)"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-51200 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

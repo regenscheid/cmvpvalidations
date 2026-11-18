@@ -1,0 +1,112 @@
+{
+ "cert": 3849,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3849",
+ "module": "RX65N-2MB Security Management Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "3",
+ "caveat": "None",
+ "level_exceptions": [
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "Single Chip",
+ "description": "\"RX65N-2MB Security Management Module\" is provided as a reference for developers creating FIPS 140-2-compliant products using the RX65N-2MB. The module has security hardware called \"TSIP\", which has encryption engine and random number generator. TSIP and firmware implement various cryptographic algorithms, key management, secure boot, and secure firmware update. In this module, the plaintext keys exists only inside TSIP which restricts external access.",
+ "tested_configurations": [
+  "N/A"
+ ],
+ "allowed_algorithms": "NDRNG",
+ "hardware_versions": "R5F565NEHDFC",
+ "firmware_versions": "Secure Boot: Ver.1.00, Crypto Firmware: Ver.1.00",
+ "product_url": "https://www.renesas.com/us/en/products/microcontrollers-microprocessors/rx-32-bit-performance-efficiency-mcus",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "C953",
+   "cavp_id": "31350",
+   "cavp_ref": "C:953"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "C953",
+   "cavp_id": "31350",
+   "cavp_ref": "C:953"
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "C953",
+   "cavp_id": "31350",
+   "cavp_ref": "C:953"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "C953",
+   "cavp_id": "31350",
+   "cavp_ref": "C:953"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "C953",
+   "cavp_id": "31350",
+   "cavp_ref": "C:953"
+  }
+ ],
+ "vendor": "Renesas Electronics Corporation",
+ "vendor_info": {
+  "name": "Renesas Electronics Corporation",
+  "website": "https://www.renesas.com/us/en/",
+  "address": [
+   "5-20-1 Jousuihon-cho",
+   "Kodaira-shi, Tokyo 187-8588",
+   "Japan"
+  ],
+  "contacts": [
+   {
+    "name": "Hideyuki Tanaka"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3849.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/March%202021_010421_0724_signed.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "3/15/2021",
+   "type": "Initial",
+   "lab": "ECSEC Laboratory Inc."
+  }
+ ],
+ "first_validated": "3/15/2021",
+ "last_updated": "3/15/2021",
+ "labs": "ECSEC Laboratory Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3849.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "NDRNG",
+ "sparse": false,
+ "list": {
+  "cert": 3849,
+  "vendor": "Renesas Electronics Corporation",
+  "module": "RX65N-2MB Security Management Module",
+  "type": "Hardware",
+  "validation_dates": [
+   "03/15/2021"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

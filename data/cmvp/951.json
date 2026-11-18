@@ -1,0 +1,124 @@
+{
+ "cert": 951,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/951",
+ "module": "TANDBERG MXP Codec",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode",
+ "level_exceptions": [
+  "Tested: TANDBERG 6000 MXP server running Nucleus RTOS version 1.13.5 (PowerPC Freescale MPC8270), pSOS version 254 (video processor Phillips PNX1500) and DSP/BIOS version 5.20.05 (audio processor TI6713)"
+ ],
+ "type": "Firmware",
+ "embodiment": "Multi-chip standalone",
+ "description": "The TANDBERG MXP Codec is the firmware installed on nineteen various TANDBERG codec servers supporting a full line of videoconferencing systems designed for medium-to-large groups, as well as individual desktops. The firmware provides secure video conferencing through encryption and authentication for point-to-point calls and multipoint calls with the speed of up to 768 kbps.",
+ "firmware_versions": "F6.0",
+ "product_url": "http://www.tandberg.com/products/video_systems/index.jsp",
+ "sunset": "",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "piv_cert": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 504",
+   "cavp_id": "24077",
+   "cavp_ref": "AES:504"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 208",
+   "cavp_id": "28558",
+   "cavp_ref": "DSA:208"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 257",
+   "cavp_id": "899",
+   "cavp_ref": "HMAC:257"
+  },
+  {
+   "algorithm": "RNG",
+   "cavp_cert": "RNG 282",
+   "cavp_id": "14419",
+   "cavp_ref": "RNG:282"
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 218",
+   "cavp_id": "21271",
+   "cavp_ref": "RSA:218"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 574",
+   "cavp_id": "15345",
+   "cavp_ref": "SHS:574"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 514",
+   "cavp_id": "26415",
+   "cavp_ref": "TDES:514"
+  }
+ ],
+ "vendor": "TANDBERG Telecom AS",
+ "vendor_info": {
+  "name": "TANDBERG Telecom AS",
+  "website": "http://www.tandberg.com",
+  "address": [
+   "Philip Pedersens Vei 20",
+   "1366 Lysaker",
+   "Oslo",
+   "Norway"
+  ],
+  "contacts": [
+   {
+    "name": "Stig Ame Olsen"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp951.pdf"
+  },
+  {
+   "label": "Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/140crt951.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "5/22/2008",
+   "type": "Initial",
+   "lab": "ICSA"
+  }
+ ],
+ "first_validated": "5/22/2008",
+ "last_updated": "5/22/2008",
+ "labs": "ICSA",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp951.pdf",
+ "other_fields": {
+  "Historical Reason": "RNG SP800-131A Revision 1 Transition",
+  "Other Algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 80 bits of encryption strength; non-compliant); RSA (key wrapping; key establishment methodology provides between 112 and 150 bits of encryption strength; non-compliant less than 112 bits of encryption strength)"
+ },
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 951,
+  "vendor": "TANDBERG Telecom AS",
+  "module": "TANDBERG MXP Codec",
+  "type": "Firmware",
+  "validation_dates": [
+   "05/22/2008"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

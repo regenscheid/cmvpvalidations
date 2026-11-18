@@ -1,0 +1,38 @@
+{
+ "cavp_id": "20216",
+ "cavp_cert": "Component 2099",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=20216",
+ "implementation": "RSICryptoLib",
+ "product_id": "10198",
+ "description": "DH routine in RSICryptoLib implements key agreement and key establishment methodology. This routine uses DRBG of RSICryptoLib implementation.",
+ "version": "Redpine ThreadArch RSICryptoLib_1_0 (Firmware)",
+ "type": "FIRMWARE",
+ "first_validated": "10/5/2018",
+ "vendor": "Redpine Signals, Inc.",
+ "vendor_website": "http://www.redpinesignals.com",
+ "oes": [
+  {
+   "name": "ThreadArch RS9113",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-FFC Component",
+   "oe": 0,
+   "capabilities": [
+    "Function: Key Pair Generation",
+    "Scheme:",
+    "  dhEphem:",
+    "    KAS Role: Initiator, Responder",
+    "    Shared Secret Computation:",
+    "      Parameter Set:",
+    "        FB:",
+    "          Hash Algorithm: SHA2-256",
+    "        FC:",
+    "          Hash Algorithm: SHA2-256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

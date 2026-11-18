@@ -1,0 +1,209 @@
+{
+ "cert": 3266,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3266",
+ "module": "HID Global Cryptographic Module",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "HID Global Cryptographic Module is a cryptographic engine for mobile devices. The module delivers core cryptographic functions to some of HID Global’s mobile app solutions for multifactor authentication - such as the HID Approve mobile app and HID Approve mobile SDK.",
+ "tested_configurations": [
+  "CentOS 6 and OpenJDK 1.7 running on HP ProLiant DL360 G7 Server using an Intel Xeon X5670 (single-user mode)"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4702",
+   "cavp_id": "2719",
+   "cavp_ref": "AES:4702"
+  },
+  {
+   "algorithm": "CKG",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1342",
+   "cavp_id": "27026",
+   "cavp_ref": "Component:1342"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1343",
+   "cavp_id": "28896",
+   "cavp_ref": "Component:1343"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1344",
+   "cavp_id": "18871",
+   "cavp_ref": "Component:1344"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1345",
+   "cavp_id": "818",
+   "cavp_ref": "Component:1345"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1600",
+   "cavp_id": "27285",
+   "cavp_ref": "DRBG:1600"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1244",
+   "cavp_id": "21379",
+   "cavp_ref": "DSA:1244"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 1160",
+   "cavp_id": "5733",
+   "cavp_ref": "ECDSA:1160"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 3114",
+   "cavp_id": "11768",
+   "cavp_ref": "HMAC:3114"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 130",
+   "cavp_id": "4904",
+   "cavp_ref": "KAS:130"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "SP 800-56Arev2, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 145",
+   "cavp_id": "25953",
+   "cavp_ref": "KDF:145"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4702; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "SP800-56B, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #2494; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2562",
+   "cavp_id": "29921",
+   "cavp_ref": "RSA:2562"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 24",
+   "cavp_id": "13521",
+   "cavp_ref": "SHA-3:24"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3849",
+   "cavp_id": "4609",
+   "cavp_ref": "SHS:3849"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2494",
+   "cavp_id": "3973",
+   "cavp_ref": "TDES:2494"
+  }
+ ],
+ "vendor": "HID Global Corporation",
+ "vendor_info": {
+  "name": "HID Global Corporation",
+  "website": "http://www.hidglobal.com",
+  "address": [
+   "611 Center Ridge Drive",
+   "Austin, TX 78753",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "HID Global Email"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3266.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertAug2018.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "8/23/2018",
+   "type": "Initial",
+   "lab": "UL Verification Services, Inc."
+  },
+  {
+   "date": "10/12/2018",
+   "type": "Update",
+   "lab": "UL Verification Services, Inc."
+  }
+ ],
+ "first_validated": "8/23/2018",
+ "last_updated": "10/12/2018",
+ "labs": "UL Verification Services, Inc.",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3266.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting",
+  "Transitional Note": "SP 800-56Arev3 transition update pending"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3266,
+  "vendor": "HID Global Corporation",
+  "module": "HID Global Cryptographic Module",
+  "type": "Software",
+  "validation_dates": [
+   "08/23/2018",
+   "10/12/2018"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

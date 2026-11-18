@@ -1,0 +1,46 @@
+{
+ "cavp_id": "33639",
+ "cavp_cert": "A1030",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=33639",
+ "implementation": "Pensando Elba Inline Hardware Crypto Library",
+ "product_id": "13510",
+ "description": "Pensando’s ElbaTM Services Processor offers various networking and security services to data center servers. It incorporates the PenTrustTM subsystem implementing a root of trust, secure boot and key management functions. It also includes the PenAccelTM subsystem providing asymmetric/symmetric cryptographic algorithms, hashing & RNG capabilities.",
+ "version": "1.0",
+ "type": "FIRMWARE",
+ "first_validated": "2/16/2021",
+ "vendor": "Pensando Systems, Inc",
+ "vendor_website": "https://pensando.io",
+ "oes": [
+  {
+   "name": "Synopsys VCS (O-2018.09-SP2-2_Full64)",
+   "details": [
+    "processor: Synopsys VCS (O-2018.09-SP2-2_Full64)"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.2",
+    "Key Length: 128, 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 8, 120, 128, 1024",
+    "AAD Length: 0, 8, 120, 128, 1024"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

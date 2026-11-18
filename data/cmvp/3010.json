@@ -1,0 +1,193 @@
+{
+ "cert": 3010,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/3010",
+ "module": "Attivo Cryptographic Provider",
+ "standard": "140-2",
+ "status": "Historical",
+ "level": "1",
+ "caveat": "When operated in FIPS mode. The module generates cryptographic keys whose strengths are modified by available entropy. No assurance of the minimum strength of generated keys",
+ "level_exceptions": [
+  "Physical Security: N/A",
+  "Mitigation of Other Attacks: N/A"
+ ],
+ "type": "Software",
+ "embodiment": "Multi-Chip Stand Alone",
+ "description": "Attivo Cryptographic Provider is a component of Attivo Networks’ products such as the Attivo Central Manager 200, BOTsink 3200, and BOTsink 5100. These products constitute the Attivo ThreatMatrix Deception and Response Platform which detects stolen credentials, ransomware, and targeted attacks within user networks, data centers, clouds, SCADA, and IoT environments by deceiving attackers into revealing themselves. The detections along with comprehensive attack analysis and actionable alerts empower accelerated incident response.",
+ "tested_configurations": [
+  "Open JDK 1.8 on CentOS 6.5 Intel 64-bit on ESXi 5.5.0 running on an Intel(R) Xeon(R) CPU E5-2620 v2 @ 2.10GHz system"
+ ],
+ "allowed_algorithms": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "software_versions": "1.0",
+ "sunset": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES",
+   "cavp_cert": "AES 4049",
+   "cavp_id": "9782",
+   "cavp_ref": "AES:4049"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 878",
+   "cavp_id": "20537",
+   "cavp_ref": "Component:878"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 879",
+   "cavp_id": "26566",
+   "cavp_ref": "Component:879"
+  },
+  {
+   "algorithm": "CVL",
+   "cavp_cert": "Component 1190",
+   "cavp_id": "30240",
+   "cavp_ref": "Component:1190"
+  },
+  {
+   "algorithm": "DRBG",
+   "cavp_cert": "DRBG 1213",
+   "cavp_id": "26574",
+   "cavp_ref": "DRBG:1213"
+  },
+  {
+   "algorithm": "DSA",
+   "cavp_cert": "DSA 1095",
+   "cavp_id": "3503",
+   "cavp_ref": "DSA:1095"
+  },
+  {
+   "algorithm": "ECDSA",
+   "cavp_cert": "ECDSA 908",
+   "cavp_id": "1597",
+   "cavp_ref": "ECDSA:908"
+  },
+  {
+   "algorithm": "HMAC",
+   "cavp_cert": "HMAC 2644",
+   "cavp_id": "10284",
+   "cavp_ref": "HMAC:2644"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "KAS 90",
+   "cavp_id": "28084",
+   "cavp_ref": "KAS:90"
+  },
+  {
+   "algorithm": "KAS",
+   "cavp_cert": "SP 800-56Arev2, vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KBKDF",
+   "cavp_cert": "KDF 99",
+   "cavp_id": "22873",
+   "cavp_ref": "KDF:99"
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "AES Cert. #4049; key establishment methodology provides between 128 and 256 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "KTS",
+   "cavp_cert": "Triple-DES Cert. #2215; key establishment methodology provides 112 bits of encryption strength",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "PBKDF",
+   "cavp_cert": "vendor affirmed",
+   "cavp_id": ""
+  },
+  {
+   "algorithm": "RSA",
+   "cavp_cert": "RSA 2084",
+   "cavp_id": "182",
+   "cavp_ref": "RSA:2084"
+  },
+  {
+   "algorithm": "SHA-3",
+   "cavp_cert": "SHA-3 9",
+   "cavp_id": "23839",
+   "cavp_ref": "SHA-3:9"
+  },
+  {
+   "algorithm": "SHS",
+   "cavp_cert": "SHS 3339",
+   "cavp_id": "18164",
+   "cavp_ref": "SHS:3339"
+  },
+  {
+   "algorithm": "Triple-DES",
+   "cavp_cert": "TDES 2215",
+   "cavp_id": "5305",
+   "cavp_ref": "TDES:2215"
+  }
+ ],
+ "vendor": "Attivo Networks Inc.",
+ "vendor_info": {
+  "name": "Attivo Networks Inc.",
+  "website": "http://www.attivonetworks.com",
+  "address": [
+   "47697 Westinghouse Drive",
+   "Suite 201",
+   "Fremont, CA 94539",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "Satya Das"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3010.pdf"
+  },
+  {
+   "label": "Consolidated Certificate",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/certificates/FIPS140ConsolidatedCertSept2017.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "9/6/2017",
+   "type": "Initial",
+   "lab": "ADVANCED DATA SECURITY"
+  }
+ ],
+ "first_validated": "9/6/2017",
+ "last_updated": "9/6/2017",
+ "labs": "ADVANCED DATA SECURITY",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp3010.pdf",
+ "other_fields": {
+  "Historical Reason": "Moved to historical list due to sunsetting"
+ },
+ "other_text": "Diffie-Hellman (key agreement; key establishment methodology provides 112 bits of encryption strength); MD5; RSA (key wrapping; key establishment methodology provides 112 or 128 bits of encryption strength)",
+ "sparse": false,
+ "list": {
+  "cert": 3010,
+  "vendor": "Attivo Networks Inc.",
+  "module": "Attivo Cryptographic Provider",
+  "type": "Software",
+  "validation_dates": [
+   "09/06/2017"
+  ],
+  "status": "Historical",
+  "standard": "140-2"
+ },
+ "fetched": "2026-11-17"
+}

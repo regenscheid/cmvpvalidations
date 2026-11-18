@@ -1,0 +1,150 @@
+{
+ "cavp_id": "40408",
+ "cavp_cert": "A7798",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40408",
+ "implementation": "SLS37CSAUS V2X",
+ "product_id": "20582",
+ "description": "SLS37CSAUS is a turnkey system solution for protecting V2X communication designed to be integrated into the corresponding ECU (typically the Telematics Control Unit or TCU) in a vehicle. Other use cases of this solution may be the V2X-infrastructure outside the vehicle such as roadside units (RSU).",
+ "version": "01.04.5488",
+ "type": "HARDWARE",
+ "first_validated": "12/16/2025",
+ "vendor": "Infineon Technologies AG",
+ "vendor_website": "http://www.infineon.com/",
+ "oes": [
+  {
+   "name": "Infineon SLS37CSAUS V2X security controller SLI37CMA2M0-G11",
+   "details": [
+    "Processor: Infineon SLS37CSAUS V2X security controller SLI37CMA2M0-G11",
+    "  manufacturer: Infineon"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 8-1840 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "Supports Reseed",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: Yes",
+    "    Additional Input: 0",
+    "    Entropy Input: 256-512 Increment 32",
+    "    Nonce: 128-1024 Increment 32",
+    "    Personalization String Length: 0",
+    "    Returned Bits: 4096"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384",
+    "Secret Generation Mode: Extra Bits"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-256, P-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-256",
+    "    Hash Algorithm: SHA2-256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-384",
+    "    Hash Algorithm: SHA2-384"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "Component",
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-521",
+    "    Hash Algorithm: SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: CMAC-AES256",
+    "    Supported Lengths: 64-256 Increment 192",
+    "    Fixed Data Order: In the Middle of Fixed Data",
+    "    Counter Length: 8",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 8-2048 Increment 8"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

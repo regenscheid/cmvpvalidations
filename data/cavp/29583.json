@@ -1,0 +1,38 @@
+{
+ "cavp_id": "29583",
+ "cavp_cert": "KAS 53",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=29583",
+ "implementation": "Cavium Cloning",
+ "product_id": "6833",
+ "description": "This module uses ECC based key agreement scheme to generate a shared key on two Cavium HSMs. Uses Nonces and mac based key confirmation.",
+ "version": "1.0.0 (Firmware)",
+ "type": "SOFTWARE",
+ "first_validated": "2/13/2015",
+ "vendor": "Cavium, Inc.",
+ "vendor_website": "http://www.cavium.com",
+ "oes": [
+  {
+   "name": "Cavium Octeon Family, CN61XX",
+   "details": []
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC",
+   "oe": 0,
+   "capabilities": [
+    "Scheme:",
+    "  Static Unified:",
+    "    KAS Role: Initiator, Responder",
+    "    KDF without Key Confirmation:",
+    "      Parameter Set:",
+    "        EE:",
+    "          Hash Algorithm: SHA2-512",
+    "          Curve: P-521",
+    "          MAC Option:",
+    "            HMAC:"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}
