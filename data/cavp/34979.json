@@ -1,0 +1,41 @@
+{
+ "cavp_id": "34979",
+ "cavp_cert": "A2370",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34979",
+ "implementation": "CryptoServer CSe KTS IFC (KTS-OAEP-basic)",
+ "product_id": "14865",
+ "description": "RSA based KTS implements all allowed RSA key sizes.",
+ "version": "RSADP_1.3.7.0",
+ "type": "FIRMWARE",
+ "first_validated": "2/23/2022",
+ "vendor": "Utimaco IS GmbH",
+ "vendor_website": "https://hsm.utimaco.com",
+ "oes": [
+  {
+   "name": "Texas Instruments Digital Signal Processor TMS320C6457+",
+   "details": [
+    "processor: Texas Instruments Digital Signal Processor TMS320C6457+"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen, partialVal",
+    "Modulo: 2048, 3072, 4096, 6144, 8192",
+    "Key Generation Methods: rsakpg2-crt",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA3-224, SHA3-256, SHA3-384, SHA3-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}

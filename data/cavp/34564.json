@@ -1,0 +1,42 @@
+{
+ "cavp_id": "34564",
+ "cavp_cert": "A1955",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=34564",
+ "implementation": "N3FIPS-KTS-RSA-N3",
+ "product_id": "14441",
+ "description": "This implements SP800-56B basic KTS-OAEP based on FW and N3",
+ "version": "2.06.1",
+ "type": "FIRMWARE",
+ "first_validated": "9/30/2021",
+ "vendor": "Marvell Semiconductor, Inc.",
+ "vendor_website": "http://www.marvell.com",
+ "oes": [
+  {
+   "name": "OCTEON CN61XX",
+   "details": [
+    "processor: OCTEON CN61XX"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Function: keyPairGen, partialVal",
+    "Modulo: 2048, 3072, 4096",
+    "Key Generation Methods: rsakpg2-crt",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator, responder",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-224, SHA2-256, SHA2-384, SHA2-512",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: algorithmId||l||uPartyInfo||vPartyInfo",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-17"
+}
