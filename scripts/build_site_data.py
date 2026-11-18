@@ -4,12 +4,12 @@
   public/data/meta.json        snapshot date and counts
   public/data/modules.json     one compact row per certificate (drives the table and facets)
   public/data/algorithms.json  each approved-algorithm name with its family and module counts
-  public/data/cmvp/<n>.json    full certificate record (copied; loaded on the detail page)
-  public/data/cavp/<id>.json   full CAVP validation record (copied; loaded on demand)
+  public/data/cmvp/<n>.json.gz    full certificate record, gzipped (loaded on the detail page)
+  public/data/cavp/<id>.json.gz   full CAVP validation record, gzipped (loaded on demand)
 
 Usage: python3 -I scripts/build_site_data.py [--data data] [--out public/data]
 """
-import argparse, json, re, shutil
+import argparse, gzip, json, re, shutil
 from collections import Counter, defaultdict
 from pathlib import Path
 
@@ -17,12 +17,13 @@ from pathlib import Path
 FAMILIES = [
     (r"^ML-DSA\b", "ML-DSA"), (r"^ML-KEM\b", "ML-KEM"), (r"^SLH-DSA\b", "SLH-DSA"),
     (r"^LMS\b", "LMS"), (r"^XMSS\b", "XMSS"),
-    (r"^AES-", "AES"), (r"^TDES-", "TDES"),
-    (r"DRBG", "DRBG"), (r"^HMAC-", "HMAC"),
-    (r"^(SHA-1|SHA2-)", "SHA-1/SHA-2"), (r"^(SHA3-|SHAKE-|cSHAKE-|KMAC-|TupleHash|ParallelHash)", "SHA-3 family"),
-    (r"ECDSA", "ECDSA"), (r"^EDDSA", "EdDSA"), (r"^DSA ", "DSA"), (r"^RSA ", "RSA"),
-    (r"^KAS-", "KAS"), (r"^KTS-", "KTS"), (r"^KDA ", "KDA"), (r"KDF", "KDF"),
-    (r"^Safe Primes", "Safe Primes"), (r"^Conditioning Component", "Conditioning"),
+    (r"^AES\b", "AES"), (r"(?i)^(TDES|Triple-DES|3DES|TDEA)\b", "TDES"),
+    (r"DRBG", "DRBG"), (r"^RNG\b|X9\.31|186-2.*RNG", "RNG (legacy)"), (r"^HMAC\b", "HMAC"),
+    (r"^(SHS\b|SHA-1|SHA2-|SHA-\s?(1|224|256|384|512)\b)", "SHA-1/SHA-2"),
+    (r"^(SHA-3|SHA3-|SHAKE|cSHAKE|KMAC|TupleHash|ParallelHash)", "SHA-3 family"),
+    (r"ECDSA", "ECDSA"), (r"(?i)^EDDSA", "EdDSA"), (r"^DSA\b", "DSA"), (r"^RSA\b", "RSA"),
+    (r"^KAS\b", "KAS"), (r"^KTS\b", "KTS"), (r"^KDA\b", "KDA"), (r"KDF", "KDF"),
+    (r"^CVL\b", "CVL"), (r"^Safe Primes", "Safe Primes"), (r"^Conditioning Component", "Conditioning"),
 ]
 PQC = {"ML-DSA", "ML-KEM", "SLH-DSA", "LMS", "XMSS"}
 
@@ -32,6 +33,14 @@ def family(name):
         if re.search(pat, name):
             return fam
     return "Other"
+
+
+def compact(obj, path):
+    """data/ is indented for readable diffs; the site gets each record minified and gzipped
+    (<name>.json.gz, about 15x smaller), which src/data/load.ts inflates. mtime=0 keeps the
+    bytes identical from build to build."""
+    body = json.dumps(obj, ensure_ascii=False, separators=(",", ":")).encode()
+    path.with_name(path.name + ".gz").write_bytes(gzip.compress(body, 9, mtime=0))
 
 
 def main():
@@ -65,9 +74,9 @@ def main():
             "cavp": sorted({e["cavp_id"] for e in r["approved"] if e["cavp_id"]}, key=int),
             "sparse": r.get("sparse", False),
         })
-        shutil.copyfile(data / "cmvp" / f"{r['cert']}.json", out / "cmvp" / f"{r['cert']}.json")
+        compact(r, out / "cmvp" / f"{r['cert']}.json")
     for i in cavp_have:
-        shutil.copyfile(data / "cavp" / f"{i}.json", out / "cavp" / f"{i}.json")
+        compact(json.loads((data / "cavp" / f"{i}.json").read_text()), out / "cavp" / f"{i}.json")
 
     algorithms = [{"name": n, "family": family(n), "modules": alg_all[n], "active": alg_active[n]}
                   for n in sorted(alg_all)]

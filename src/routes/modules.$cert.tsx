@@ -86,7 +86,7 @@ function CertView({ r }: { r: CertRecord }) {
           <Section
             title={`Approved algorithms · ${new Set(r.approved.map((e) => e.algorithm)).size} across ${cavpIds.length} CAVP validation${cavpIds.length === 1 ? "" : "s"}`}
           >
-            <ApprovedAlgorithms approved={r.approved} cavps={cavps} />
+            <ApprovedAlgorithms approved={r.approved} cavps={cavps} standard={r.standard} />
           </Section>
 
           {(r.allowed_algorithms || r.non_approved_algorithms) && (

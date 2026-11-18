@@ -1,19 +1,33 @@
 import { useEffect, useState } from "react";
 import type { AlgorithmRow, CavpRecord, CertRecord, Meta, ModuleRow } from "./types";
 
-// Every data file is static JSON under <base>/data/. Responses are memoised for the session so
-// moving between pages never refetches.
+// Every data file is static JSON under <base>/data/. Per-record files (cmvp/, cavp/) are stored
+// gzipped (<path>.gz) to keep the published site small; they are inflated here. Responses are
+// memoised for the session so moving between pages never refetches.
 const cache = new Map<string, Promise<unknown>>();
+
+const gzipped = (path: string) => /^(cmvp|cavp)\//.test(path);
+
+async function decode(r: Response): Promise<unknown> {
+  const buf = new Uint8Array(await r.arrayBuffer());
+  // Some servers send .gz with Content-Encoding: gzip, and then the browser has already inflated it.
+  if (buf[0] === 0x1f && buf[1] === 0x8b) {
+    const body = new Blob([buf]).stream().pipeThrough(new DecompressionStream("gzip"));
+    return JSON.parse(await new Response(body).text());
+  }
+  return JSON.parse(new TextDecoder().decode(buf));
+}
 
 export function loadJson<T>(path: string): Promise<T> {
   let p = cache.get(path);
   if (!p) {
-    p = fetch(`${import.meta.env.BASE_URL}data/${path}`).then((r) => {
+    const file = gzipped(path) ? `${path}.gz` : path;
+    p = fetch(`${import.meta.env.BASE_URL}data/${file}`).then((r) => {
       // A missing file is a 404 on Pages but the SPA's index.html from the dev server.
-      if (r.status === 404 || !(r.headers.get("content-type") ?? "").includes("json"))
+      if (r.status === 404 || (r.headers.get("content-type") ?? "").includes("html"))
         throw new Error("not in this snapshot yet (it is fetched on the next crawl)");
-      if (!r.ok) throw new Error(`${r.status} ${r.statusText} for data/${path}`);
-      return r.json();
+      if (!r.ok) throw new Error(`${r.status} ${r.statusText} for data/${file}`);
+      return decode(r);
     });
     p.catch(() => cache.delete(path));
     cache.set(path, p);

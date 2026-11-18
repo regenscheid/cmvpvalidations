@@ -32,7 +32,8 @@ export type Meta = {
 
 export type AlgorithmRow = { name: string; family: string; modules: number; active: number };
 
-export type ApprovedEntry = { algorithm: string; cavp_cert: string; cavp_id: string };
+/** FIPS 140-2 entries also carry `cavp_ref` ("AES:4030", the CAVP source and number they link to). */
+export type ApprovedEntry = { algorithm: string; cavp_cert: string; cavp_id: string; cavp_ref?: string; note?: string };
 
 /** public/data/cmvp/<cert>.json — written by scripts/cmvp_crawl.py. */
 export type CertRecord = {

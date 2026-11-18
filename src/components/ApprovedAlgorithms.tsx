@@ -7,7 +7,7 @@ import { Link } from "@tanstack/react-router";
 import { useMemo, useState } from "react";
 import type { Loaded } from "../data/load";
 import type { ApprovedEntry, CavpRecord } from "../data/types";
-import { matchAlgorithm } from "../lib/algName";
+import { matchAlgorithm, rowNames } from "../lib/algName";
 import { summarizeCaps } from "../lib/capSummary";
 import { FAMILY_ORDER, familyOf } from "../lib/family";
 import { Capabilities } from "./Capabilities";
@@ -19,7 +19,8 @@ type Cavps = Record<string, Loaded<CavpRecord>>;
 
 const cavpOf = (cavps: Cavps, id: string) => cavps[`cavp/${id}.json`];
 
-export function ApprovedAlgorithms({ approved, cavps }: { approved: ApprovedEntry[]; cavps: Cavps }) {
+export function ApprovedAlgorithms({ approved, cavps, standard }: { approved: ApprovedEntry[]; cavps: Cavps; standard: string }) {
+  const broadNames = standard !== "140-3";
   const [q, setQ] = useState("");
   const [open, setOpen] = useState<Set<string>>(new Set());
   const items = useMemo(() => {
@@ -76,7 +77,7 @@ export function ApprovedAlgorithms({ approved, cavps }: { approved: ApprovedEntr
           </div>
           <ul className="m-0 list-none p-0">
             {xs.map((it) => (
-              <AlgRow key={it.name} item={it} cavps={cavps} isOpen={open.has(it.name)} onToggle={() => toggle(it.name)} />
+              <AlgRow key={it.name} item={it} cavps={cavps} broadNames={broadNames} isOpen={open.has(it.name)} onToggle={() => toggle(it.name)} />
             ))}
           </ul>
         </Card>
@@ -85,16 +86,32 @@ export function ApprovedAlgorithms({ approved, cavps }: { approved: ApprovedEntr
   );
 }
 
-function AlgRow({ item, cavps, isOpen, onToggle }: { item: Item; cavps: Cavps; isOpen: boolean; onToggle: () => void }) {
+function AlgRow({
+  item,
+  cavps,
+  broadNames,
+  isOpen,
+  onToggle,
+}: {
+  item: Item;
+  cavps: Cavps;
+  broadNames: boolean;
+  isOpen: boolean;
+  onToggle: () => void;
+}) {
   const resolved = item.refs.map((r) => {
     const st = r.cavp_id ? cavpOf(cavps, r.cavp_id) : undefined;
     const v = st?.kind === "ready" ? st.data : null;
-    const m = v ? matchAlgorithm(v.algorithms, item.name) : { hits: [], approx: false };
+    const m = v ? matchAlgorithm(v.algorithms, item.name, r.cavp_cert, broadNames) : { hits: [], approx: false, how: "none" as const };
     return { ref: r, st, v, ...m };
   });
   const loading = resolved.some((x) => x.ref.cavp_id && (!x.st || x.st.kind === "loading"));
   const hits = resolved.flatMap((x) => x.hits);
-  const summary = summarizeCaps(hits.map((h) => h.capabilities));
+  // FIPS 140-2 names ("AES", "SHS") cover several CAVP algorithms: say which, then the parameters.
+  const broad = resolved.some((x) => x.how === "family" || x.how === "all");
+  const names = broad ? rowNames(hits.map((h) => h.algorithm)) : "";
+  const caps = summarizeCaps(hits.map((h) => h.capabilities), names ? 2 : 3);
+  const summary = [names, caps].filter(Boolean).join(" · ");
   const notFound = !loading && resolved.every((x) => x.v && x.hits.length === 0);
   const approxAs = resolved.find((x) => x.approx && x.hits[0])?.hits[0]?.algorithm;
 
@@ -118,7 +135,7 @@ function AlgRow({ item, cavps, isOpen, onToggle }: { item: Item; cavps: Cavps; i
           )}
         </span>
         <span className="col-start-2 flex flex-wrap gap-1 md:col-start-auto">
-          {item.refs.map((r) =>
+          {(item.refs.length > 6 && !isOpen ? item.refs.slice(0, 4) : item.refs).map((r) =>
             r.cavp_id ? (
               <Link
                 key={r.cavp_cert}
@@ -134,6 +151,11 @@ function AlgRow({ item, cavps, isOpen, onToggle }: { item: Item; cavps: Cavps; i
                 {r.cavp_cert || "—"}
               </span>
             ),
+          )}
+          {item.refs.length > 6 && !isOpen && (
+            <span className="text-[12px] text-ink-3" title="Expand the row to see every cited validation">
+              +{item.refs.length - 4} more
+            </span>
           )}
         </span>
         <span className="col-start-2 min-w-0 text-[12px] text-ink-2 md:col-start-auto md:truncate" title={summary}>
@@ -173,7 +195,13 @@ function AlgRow({ item, cavps, isOpen, onToggle }: { item: Item; cavps: Cavps; i
               ) : (
                 hs.map((h, i) => (
                   <div key={i} className="rounded border border-line-2 bg-surface px-3 py-2">
-                    {v.oes.length > 1 && <div className="mb-1 text-[11px] text-ink-3">OE: {v.oes[h.oe]?.name}</div>}
+                    {(h.algorithm !== item.name || v.oes.length > 1) && (
+                      <div className="mb-1 text-[11px] text-ink-3">
+                        {h.algorithm !== item.name && <span className="font-medium text-ink-2">{h.algorithm}</span>}
+                        {h.algorithm !== item.name && v.oes.length > 1 && " · "}
+                        {v.oes.length > 1 && `OE: ${v.oes[h.oe]?.name}`}
+                      </div>
+                    )}
                     <Capabilities lines={h.capabilities} />
                   </div>
                 ))

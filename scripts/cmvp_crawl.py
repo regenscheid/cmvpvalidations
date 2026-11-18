@@ -15,8 +15,8 @@ first referenced (and again after --cavp-max-age days). Pass --refresh to refetc
 Usage:  python3 -I scripts/cmvp_crawl.py [--standard 140-3] [--data data] [--cache cache]
 Only the standard library and curl are needed.
 """
-import argparse, csv, datetime, json, sys, time
-from concurrent.futures import ThreadPoolExecutor
+import argparse, csv, datetime, json, sys, time, urllib.parse
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))  # -I drops the script dir from sys.path
@@ -47,8 +47,25 @@ def matches_list(rec, row):
     return rec.get("status") == row["status"] and set(row["validation_dates"]) <= hist
 
 
+def standards_of(a):
+    return ["140-3", "140-2", "140-1"] if a.standard == "all" else a.standard.split(",")
+
+
+def load_refs(data):
+    """CAVP source/number references ("AES:4030", "A:884", cited by FIPS 140-2 pages) -> validation id."""
+    return load(data / "cavp_refs.json") or {}
+
+
+def apply_refs(rec, refs):
+    for e in rec["approved"]:
+        if e.get("cavp_ref") and not e["cavp_id"]:
+            e["cavp_id"] = refs.get(e["cavp_ref"], "")
+    return rec
+
+
 def crawl_certs(a, data, cache):
-    standards = ["140-3", "140-2", "140-1"] if a.standard == "all" else a.standard.split(",")
+    standards = standards_of(a)
+    refs = load_refs(data)
     rows = {}
     for std in standards:
         for st in L.STATUSES:
@@ -68,7 +85,6 @@ def crawl_certs(a, data, cache):
     print(f"CMVP: {len(nums)} certificates listed, {len(todo)} new or changed")
 
     def one(n):
-        time.sleep(a.delay)
         row, f = rows[n], cache / "cert" / f"{n}.html"
         page = L.fetch(L.CMVP_CERT.format(n), f, refresh=a.refresh, check=L.cert_page_ok)
         rec = L.parse_cert(n, page)
@@ -79,7 +95,7 @@ def crawl_certs(a, data, cache):
             rec["vendor"] = rec["vendor"] or row["vendor"]
             rec["module"] = rec["module"] or row["module"]
         rec["list"] = row
-        return n, rec
+        return n, apply_refs(rec, refs)
 
     changed, errors = 0, []
     with ThreadPoolExecutor(a.workers) as ex:
@@ -104,47 +120,106 @@ def crawl_certs(a, data, cache):
     return errors
 
 
+def fetch_cavp(a, cache, key, expanded_url, collapsed_url, refetch):
+    """One CAVP validation record. Very large validations time out (HTTP 524) in the expanded view;
+    then fall back to the default view plus one capability request per row."""
+    try:
+        page = L.fetch(expanded_url, cache / "cavp_x" / f"{key}.html", refresh=refetch, check=L.cavp_page_ok, retries=2)
+        return L.parse_cavp(L.cavp_id_of(page) or key, page)
+    except RuntimeError as e:
+        print(f"  cavp {key}: expanded view failed ({str(e)[-60:]}); using collapsed view", file=sys.stderr)
+        page = L.fetch(collapsed_url, cache / "cavp" / f"{key}.html", refresh=refetch, check=L.cavp_page_ok)
+        caps = lambda c: L.fetch(L.CAVP_CAPS.format(c), cache / "caps" / f"{c}.json", refresh=refetch)
+        return L.parse_cavp_collapsed(L.cavp_id_of(page) or key, page, caps)
+
+
 def crawl_cavp(a, data, cache):
-    ids = set()
-    for p in (data / "cmvp").glob("*.json"):
-        ids |= {e["cavp_id"] for e in (load(p) or {}).get("approved", []) if e["cavp_id"]}
+    """Fetch the CAVP validations cited by certificates of the standards being crawled."""
+    standards = set(standards_of(a))
+    certs = [r for r in (load(p) for p in (data / "cmvp").glob("*.json")) if r and r.get("standard") in standards]
+    refs = load_refs(data)
+    ids, unresolved = set(), set()
+    for r in certs:
+        for e in r.get("approved", []):
+            if e["cavp_id"]:
+                ids.add(e["cavp_id"])
+            elif e.get("cavp_ref"):
+                if e["cavp_ref"] in refs:
+                    ids.add(refs[e["cavp_ref"]])
+                else:
+                    unresolved.add(e["cavp_ref"])
+    errors, done = [], 0
+
+    def run(jobs, label, worker, on_result):
+        # Handle results as they finish, so one slow validation never holds back saving the rest.
+        with ThreadPoolExecutor(a.workers) as ex:
+            futs = [ex.submit(worker, j) for j in jobs]
+            for k, fu in enumerate(as_completed(futs), 1):
+                try:
+                    on_result(*fu.result())
+                except Exception as e:  # noqa: BLE001
+                    errors.append(str(e))
+                if k % 100 == 0:
+                    print(f"  {label} {k}/{len(jobs)}")
+
+    def store(rec):
+        nonlocal done
+        rec["fetched"] = TODAY
+        done += save(data / "cavp" / f"{rec['cavp_id']}.json", rec)
+
+    # 1. FIPS 140-2 references by source and number: one expanded-view request gives the id and the record.
+    todo_refs = sorted(unresolved)
+    if a.cavp_limit:
+        todo_refs = todo_refs[:a.cavp_limit]
+    if unresolved:
+        print(f"CAVP: {len(unresolved)} source/number references unresolved, {len(todo_refs)} to fetch")
+
+    def by_ref(ref):
+        src, num = ref.split(":", 1)
+        q = urllib.parse.quote
+        key = f"{src}_{num}".replace("/", "_")
+        rec = fetch_cavp(a, cache / "by_ref", key, L.CAVP_BY_REF.format(q(src), q(num)),
+                         L.CAVP_DETAIL.split("?")[0] + f"?source={q(src)}&number={q(num)}", a.refresh)
+        if not rec["cavp_id"].isdigit():
+            raise RuntimeError(f"no validation id on the CAVP page for {ref}")
+        return ref, rec
+
+    def got_ref(ref, rec):
+        refs[ref] = rec["cavp_id"]
+        ids.add(rec["cavp_id"])
+        store(rec)
+        if len(refs) % 500 == 0:  # checkpoint, so an interrupted run keeps what it resolved
+            save(data / "cavp_refs.json", dict(sorted(refs.items())))
+
+    run(todo_refs, "cavp refs", by_ref, got_ref)
+    if todo_refs:
+        save(data / "cavp_refs.json", dict(sorted(refs.items())))
+
+    # 2. Validations by id (FIPS 140-3 links, and refetches of old records).
     cutoff = (datetime.date.today() - datetime.timedelta(days=a.cavp_max_age)).isoformat() if a.cavp_max_age else ""
+    fetched_now = set(refs[r] for r in todo_refs if r in refs)
     todo = []
-    for i in sorted(ids, key=int):
+    for i in sorted(ids - fetched_now, key=int):
         old = load(data / "cavp" / f"{i}.json")
         if a.refresh or not old or (cutoff and old.get("fetched", "") < cutoff):
             todo.append(i)
     if a.cavp_limit:
-        todo = todo[:a.cavp_limit]
-    print(f"CAVP: {len(ids)} validations cited, {len(todo)} to fetch")
+        todo = todo[:max(a.cavp_limit - len(todo_refs), 0)]
+    print(f"CAVP: {len(ids)} validations cited, {len(todo)} to fetch by id")
 
-    def one(i):
-        time.sleep(a.delay)
+    def by_id(i):
         refetch = a.refresh or (data / "cavp" / f"{i}.json").exists()
-        try:
-            page = L.fetch(L.CAVP_EXPANDED.format(i), cache / "cavp_x" / f"{i}.html", refresh=refetch,
-                           check=L.cavp_page_ok, retries=2)
-            return i, L.parse_cavp(i, page)
-        except RuntimeError as e:
-            # Very large validations time out (HTTP 524) in the expanded view; fall back to the
-            # default view plus one capability request per row.
-            print(f"  cavp {i}: expanded view failed ({str(e)[-60:]}); using collapsed view", file=sys.stderr)
-            page = L.fetch(L.CAVP_DETAIL.format(i), cache / "cavp" / f"{i}.html", refresh=refetch, check=L.cavp_page_ok)
-            caps = lambda c: L.fetch(L.CAVP_CAPS.format(c), cache / "caps" / f"{c}.json", refresh=refetch)
-            return i, L.parse_cavp_collapsed(i, page, caps)
+        return (fetch_cavp(a, cache, i, L.CAVP_EXPANDED.format(i), L.CAVP_DETAIL.format(i), refetch),)
 
-    errors, done = [], 0
-    with ThreadPoolExecutor(a.workers) as ex:
-        futs = [ex.submit(one, i) for i in todo]
-        for k, fu in enumerate(futs, 1):
-            try:
-                i, rec = fu.result()
-            except Exception as e:  # noqa: BLE001
-                errors.append(str(e)); continue
-            rec["fetched"] = TODAY
-            done += save(data / "cavp" / f"{i}.json", rec)
-            if k % 100 == 0:
-                print(f"  cavp {k}/{len(todo)}")
+    run(todo, "cavp", by_id, store)
+
+    # 3. Write the resolved validation ids into the certificate records.
+    linked = 0
+    for r in certs:
+        if any(e.get("cavp_ref") and not e["cavp_id"] and e["cavp_ref"] in refs for e in r["approved"]):
+            linked += save(data / "cmvp" / f"{r['cert']}.json", apply_refs(r, refs))
+    if linked:
+        print(f"CMVP: linked CAVP validation ids into {linked} certificate files")
     print(f"CAVP: {done} validation files written, {len(errors)} errors")
     for e in errors[:10]:
         print("  error:", e, file=sys.stderr)
@@ -181,6 +256,7 @@ def main():
     ap.add_argument("--cavp-limit", type=int, default=0, help="fetch at most N CAVP validations this run")
     ap.add_argument("--limit", type=int, default=0, help="debug: only the newest N certificates")
     a = ap.parse_args()
+    L.DELAY = a.delay
     data, cache = Path(a.data), Path(a.cache)
     errs = crawl_certs(a, data, cache)
     if not a.no_cavp:

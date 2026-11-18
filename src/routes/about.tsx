@@ -20,13 +20,18 @@ function About() {
             <Ext href={`${CSRC}/cryptographic-algorithm-validation-program/validation-search`}>CAVP validation</Ext>; every cited validation is fetched in its expanded view
             for tested capabilities and operating environments.
           </p>
+          <p>
+            Coverage: FIPS 140-3 and FIPS 140-2. FIPS 140-2 certificates name algorithms broadly (&ldquo;AES&rdquo;, &ldquo;SHS&rdquo;, &ldquo;CVL&rdquo;) and often cite
+            several CAVP certificates per algorithm, including pre-ACVP ones numbered per algorithm (&ldquo;AES 4030&rdquo;). Their capabilities show every CAVP algorithm of that
+            family on the cited validation.
+          </p>
         </Card>
       </Section>
       <Section title="Updates">
         <Card className="space-y-2 p-4">
           <p>
             A scheduled GitHub Action refetches the CMVP search lists, re-crawls only certificates that are new or whose status or validation dates changed, and fetches CAVP
-            validations the first time a certificate cites them. Each record is a JSON file in the repository's <code>data/</code> folder, so the git history doubles as a change log.
+            validations the first time a certificate cites them. FIPS 140-2 has no active certificates left, so it was captured once and is not part of the daily run. Each record is a JSON file in the repository's <code>data/</code> folder, so the git history doubles as a change log.
           </p>
         </Card>
       </Section>

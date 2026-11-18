@@ -45,6 +45,7 @@ const COLUMNS = [
       </Link>
     ),
   }),
+  col.accessor("standard", { header: "FIPS", size: 55, meta: { hideBelow: "lg" } }),
   col.accessor("status", { header: "Status", size: 90, cell: (c) => <StatusTag status={c.getValue()} /> }),
   col.accessor("vendor", { header: "Vendor", size: 200, cell: (c) => ellipsis(c.getValue()) }),
   col.accessor("module", { header: "Module", size: 300, cell: (c) => ellipsis(c.getValue()) }),

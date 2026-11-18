@@ -12,9 +12,11 @@ CMVP_CERT = CMVP + "/certificate/{}"
 CMVP_MIP = CMVP + "/modules-in-process/modules-in-process-list"
 CAVP_SEARCH = BASE + "/projects/cryptographic-algorithm-validation-program/validation-search"
 CAVP_DETAIL = BASE + "/projects/cryptographic-algorithm-validation-program/details?validation={}"
+CAVP_BY_REF = CAVP_DETAIL.split("?")[0] + "?source={}&number={}&displayMode=ExpandedAlgorithm"
 CAVP_CAPS = BASE + "/csrcservices/public/cavp/RESTApi/ValidationOEAlgorithm/{}"
 UA = "cmvpvalidations (+https://github.com/regenscheid/cmvpvalidations)"
 STATUSES = ("Active", "Historical", "Revoked")
+DELAY = 0.0  # seconds to wait before each network request (cache hits don't wait); set by the crawler
 
 
 def fetch(url, cache_file, refresh=False, retries=4, check=None):
@@ -24,6 +26,7 @@ def fetch(url, cache_file, refresh=False, retries=4, check=None):
         return cache_file.read_text(encoding="utf-8", errors="replace")
     last = None
     for attempt in range(retries):
+        time.sleep(DELAY)
         try:
             # csrc.nist.gov resets connections from Python's urllib (TLS fingerprint), so shell out to curl.
             p = subprocess.run(["curl", "-sS", "--fail", "-m", "90", "-A", UA, url],
@@ -133,6 +136,14 @@ def _details_fields(page):
 
 
 def _approved(fragment):
+    """Approved-algorithm entries: {algorithm, cavp_cert, cavp_id[, cavp_ref]}.
+
+    FIPS 140-3 pages list one CAVP validation per row and link it by validation id. FIPS 140-2 pages
+    use a table whose rows can cite several CAVP certificates, linked by source and number
+    (`details?source=AES&number=4030`, `source=A&number=884`); those entries carry
+    `cavp_ref` ("AES:4030") and get their validation id later, from data/cavp_refs.json."""
+    if 'id="fips-algo-table"' in fragment:
+        return _approved_table(fragment)
     out = []
     for row in re.finditer(
         r'<div class="col-md-3">([^<]+)</div>\s*<div class="col-md-4">\s*'
@@ -140,6 +151,29 @@ def _approved(fragment):
         out.append({"algorithm": html.unescape(row.group(1)).strip(),
                     "cavp_cert": (row.group(3) or row.group(4) or "").strip(),
                     "cavp_id": row.group(2) or ""})
+    return out
+
+
+def _approved_table(fragment):
+    out = []
+    for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", fragment, re.S):
+        tds = re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)
+        if len(tds) < 2 or not text(tds[0]):
+            continue
+        alg = text(tds[0])
+        links = re.findall(r'<a href="[^"]*details\?source=([^&"]+)&(?:amp;)?number=([^"&]+)"[^>]*>([^<]*)</a>', tds[1])
+        if not links:  # "vendor affirmed", "Cert. #84, vendor affirmed", ...
+            out.append({"algorithm": alg, "cavp_cert": text(tds[1]), "cavp_id": ""})
+            continue
+        for src, num, label in links:
+            src, num, label = html.unescape(src), html.unescape(num), label.strip()
+            # Legacy certificates are numbered per algorithm ("AES 4030"); ACVP ones carry a prefix ("A884").
+            cert = f"{src} {label}" if label.isdigit() else label
+            out.append({"algorithm": alg, "cavp_cert": cert, "cavp_id": "", "cavp_ref": f"{src}:{num}"})
+        extra = text(re.sub(r"<a [^>]*>.*?</a>", "", tds[1], flags=re.S))
+        extra = re.sub(r"^Certs?\.\s*|#|,?\s*\band\b|,", " ", extra).strip()
+        if extra:
+            out[-1]["note"] = extra
     return out
 
 
@@ -321,6 +355,12 @@ def parse_cavp(cavp_id, page):
         "oes": oes,
         "algorithms": algos,
     }
+
+
+def cavp_id_of(page):
+    """The validation id of a CAVP details page (also when it was requested by source and number)."""
+    m = re.search(r'<h4 style="display: inline-block">\s*<a href="details\?validation=(\d+)">', page)
+    return m.group(1) if m else ""
 
 
 def parse_cavp_collapsed(cavp_id, page, get_caps):
