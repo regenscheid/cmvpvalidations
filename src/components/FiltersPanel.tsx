@@ -35,7 +35,7 @@ export function FiltersPanel({
 
   return (
     <aside
-      className="space-y-4 rounded-md border border-line bg-surface p-4 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:overscroll-contain"
+      className="space-y-4 self-start rounded-md border border-line bg-surface p-4 lg:sticky lg:top-4 lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:overscroll-contain"
       aria-label="Filters"
     >
       <div className="flex items-baseline justify-between">

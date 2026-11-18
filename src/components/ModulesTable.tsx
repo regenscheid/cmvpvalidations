@@ -19,6 +19,10 @@ import { FamilyTag, StatusTag } from "./ui";
 import { PQC_FAMILIES } from "../lib/pqc";
 
 const ROW_HEIGHT = 40;
+/** Below this the table stops shrinking and the page scrolls instead. */
+const MIN_HEIGHT = 360;
+/** <main>'s bottom padding (py-6). */
+const MAIN_BOTTOM_PADDING = 24;
 const col = createColumnHelper<ModuleRow>();
 
 declare module "@tanstack/react-table" {
@@ -105,13 +109,25 @@ export function ModulesTable({
   const navigate = useNavigate();
   const parentRef = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(() => (typeof window === "undefined" ? 1000 : Math.max(320, window.innerWidth - 340)));
+  // Fill the window from the table's top down to the footer, so the page neither scrolls nor leaves a gap.
+  const [height, setHeight] = useState(560);
   useLayoutEffect(() => {
     const el = parentRef.current;
     if (!el) return;
-    const ro = new ResizeObserver(() => setWidth(el.clientWidth));
+    const fit = () => {
+      setWidth(el.clientWidth);
+      const top = el.getBoundingClientRect().top + window.scrollY;
+      const below = (document.querySelector("footer")?.getBoundingClientRect().height ?? 0) + MAIN_BOTTOM_PADDING;
+      setHeight(Math.max(MIN_HEIGHT, Math.floor(window.innerHeight - top - below)));
+    };
+    const ro = new ResizeObserver(fit);
     ro.observe(el);
-    setWidth(el.clientWidth);
-    return () => ro.disconnect();
+    window.addEventListener("resize", fit);
+    fit();
+    return () => {
+      ro.disconnect();
+      window.removeEventListener("resize", fit);
+    };
   }, []);
   // Show the columns whose content fits, most important first, so nothing is cut off; then share out the rest.
   const { columns, widths } = useMemo(() => {
@@ -148,7 +164,7 @@ export function ModulesTable({
   const total = widths.reduce((a, b) => a + b, 0);
 
   return (
-    <div ref={parentRef} className="relative h-[72vh] overflow-auto rounded-md border border-line bg-surface">
+    <div ref={parentRef} className="relative overflow-auto rounded-md border border-line bg-surface" style={{ height: `${height}px` }}>
       <table className="border-separate border-spacing-0 text-[13px]" style={{ tableLayout: "fixed", width: `${total}px` }}>
         <colgroup>
           {widths.map((w, i) => (
