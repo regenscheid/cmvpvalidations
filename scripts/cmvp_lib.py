@@ -160,7 +160,8 @@ NOTE_SOURCES = [
     (r"AES", "AES"), (r"HMAC", "HMAC"), (r"SHA-3", "SHA-3"), (r"SHS|SHA-1|SHA-2", "SHS"), (r"RSA", "RSA"),
     (r"DRBG", "DRBG"), (r"RNG", "RNG"), (r"CVL", "Component"), (r"KAS(?:-SSC)?", "KAS"), (r"KDF", "KDF"),
 ]
-_NOTE_REF = re.compile(r"(?:\b(" + "|".join(p for p, _ in NOTE_SOURCES) + r")\s+)?Certs?\.?\s*"
+# "Cert." is sometimes typed "Cert," (#2813: "AES Cert, #3543"), so either punctuation is accepted.
+_NOTE_REF = re.compile(r"(?:\b(" + "|".join(p for p, _ in NOTE_SOURCES) + r")\s+)?Certs?[.,]?\s*"
                        r"((?:#\s*[AC]?\d+\b(?:\s*(?:,|&|\band\b)\s*)*)+)", re.I)
 
 
