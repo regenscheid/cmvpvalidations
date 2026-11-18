@@ -411,3 +411,105 @@ def parse_cavp_collapsed(cavp_id, page, get_caps):
             a["capabilities"] = _li_lines(json.loads(get_caps(cap_id)))
     rec["partial"] = "collapsed view; operating-environment details unavailable"
     return rec
+
+
+def vendor_key(v):
+    """A vendor name reduced for comparison: "Red Hat®, Inc." and "Red Hat, LLC" both give "redhat"."""
+    name = (v.get("name", "") if isinstance(v, dict) else v or "").lower()
+    name = re.sub(r"\b(inc|llc|ltd|limited|corp|corporation|co|company|ag|gmbh|plc|sa|bv|oy|ab)\b\.?", "", name)
+    return re.sub(r"[^a-z0-9]", "", name)
+
+
+
+# Words too common in company names to identify one ("Advanced Micro Devices" vs "Micro Focus").
+_VENDOR_NOISE = {
+    "inc", "llc", "ltd", "limited", "corp", "corporation", "company", "co", "plc", "gmbh", "ag", "sa", "bv", "the", "and", "of",
+    "technologies", "technology", "networks", "networking", "systems", "solutions", "security", "software", "international",
+    "group", "holdings", "semiconductor", "semiconductors", "electronics", "communications", "labs", "america", "usa",
+    "enterprise", "advanced", "micro", "devices", "digital", "global", "secure", "crypto", "data", "information", "national",
+    "general", "united", "american", "development", "products", "services",
+}
+
+
+def same_vendor(a, b):
+    """Whether two vendor names are one company, allowing renames that keep a distinctive word
+    ("HPE Juniper Networking" and "Juniper Networks, Inc.")."""
+    if vendor_key(a) == vendor_key(b):
+        return True
+    words = lambda v: {w for w in re.findall(r"[a-z0-9]+", (v or "").lower()) if len(w) >= 3 and w not in _VENDOR_NOISE}
+    return bool(words(a) & words(b))
+
+# --------------------------------------------------------- entropy (ESV) ----
+ESV = CMVP + "/entropy-validations"
+ESV_SEARCH = ESV + "/search?searchMode=validation&ipp=250&page={}"
+ESV_CERT = ESV + "/certificate/{}"
+
+
+def list_esv(cache, refresh=False):
+    """Rows of the ESV certificate search, every page: number, vendor, implementation, latest date."""
+    rows, page_no = {}, 1
+    while True:
+        page = fetch(ESV_SEARCH.format(page_no), cache / "esv" / f"list_{page_no}.html", refresh)
+        got = 0
+        for tr in re.findall(r"<tr[^>]*>(.*?)</tr>", page, re.S):
+            num = re.search(r'entropy-validations/certificate/(\d+)"', tr)
+            tds = [text(td) for td in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
+            if num and len(tds) >= 4:
+                rows[int(num.group(1))] = {"esv": int(num.group(1)), "vendor": tds[0], "implementation": tds[1],
+                                           "date": tds[3]}
+                got += 1
+        total = re.search(r"Showing \d+ through (\d+) of (\d+) matching", text(page))
+        if not got or not total or int(total.group(1)) >= int(total.group(2)):
+            return [rows[k] for k in sorted(rows)]
+        page_no += 1
+
+
+def esv_page_ok(page):
+    return 'panel-title">Details' in page and "Entropy Certificate #E" in page and "</html>" in page
+
+
+def parse_esv(num, page):
+    """One ESV certificate: the entropy source, its operating environments and the CAVP certificates of
+    its vetted conditioning components."""
+    f = _details_fields(page)
+    val = lambda k: text(f.get(k, "").split("<table")[0])  # the last field runs into the OE table
+    table = re.search(r'Operating Environments</th>.*?<tbody>(.*?)</tbody>', page, re.S)
+    entries = []
+    for tr in re.findall(r"<tr>(.*?)</tr>", table.group(1) if table else "", re.S):
+        tds = re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)
+        if len(tds) < 3:
+            continue
+        props = {}
+        for part in re.split(r"<br\s*/?>", tds[0]):
+            k, _, v = text(part).partition(":")
+            if v.strip():
+                props[k.strip()] = v.strip()
+        cond = []
+        for li in re.findall(r"<li>(.*?)</li>", tds[2], re.S):
+            a = re.search(r'validation=(\d+)"[^>]*>([^<]+)</a>', li)
+            rest = text(re.sub(r"<a [^>]*>.*?</a>", "", li, flags=re.S)).strip("() ")
+            if a:
+                cond.append({"cavp_cert": a.group(2).strip(), "cavp_id": a.group(1), "algorithm": rest})
+            elif text(li):
+                cond.append({"cavp_cert": "", "cavp_id": "", "algorithm": text(li)})
+        entries.append({"bits_per_output": props.get("Bits of Entropy per Output", ""),
+                        "output_bits": props.get("Output Size in Bits", ""),
+                        "oes": [text(li) for li in re.findall(r"<li>(.*?)</li>", tds[1], re.S)],
+                        "conditioning": cond})
+    hist = re.search(r'id="validation-history-table".*?</table>', page, re.S)
+    history = []
+    for tr in re.findall(r"<tr>(.*?)</tr>", hist.group(0) if hist else "", re.S):
+        tds = [text(td) for td in re.findall(r"<td[^>]*>(.*?)</td>", tr, re.S)]
+        if len(tds) >= 2:
+            history.append({"date": tds[0], "lab": tds[1]})
+    vendor = _vendor(page)
+    return {
+        "esv": num, "cert": f"E{num}", "url": ESV_CERT.format(num),
+        "implementation": val("Implementation Name"), "standard": val("Standard"),
+        "description": val("Description"), "version": val("Version"),
+        "noise_source": val("Noise Source Classification"), "reuse": val("Reuse Status"),
+        "entries": entries, "vendor": vendor["name"], "vendor_info": vendor,
+        "files": _files(page), "history": history,
+        "first": history[0]["date"] if history else "", "last": history[-1]["date"] if history else "",
+        "labs": sorted({h["lab"] for h in history if h["lab"]}),
+    }

@@ -25,12 +25,17 @@ function About() {
             several CAVP certificates per algorithm, including pre-ACVP ones numbered per algorithm (&ldquo;AES 4030&rdquo;). Their capabilities show every CAVP algorithm of that
             family on the cited validation.
           </p>
+          <p>
+            Entropy source (ESV) certificates are included too. Module certificates do not cite them, so a module and an entropy source are linked only
+            when they come from the same vendor and cite the same CAVP validation (the source&rsquo;s vetted conditioning component). The module&rsquo;s
+            security policy remains the authority.
+          </p>
         </Card>
       </Section>
       <Section title="Updates">
         <Card className="space-y-2 p-4">
           <p>
-            A scheduled GitHub Action refetches the CMVP search lists, re-crawls only certificates that are new or whose status or validation dates changed, and fetches CAVP
+            A scheduled GitHub Action refetches the CMVP search lists, re-crawls only certificates (module and entropy) that are new or whose status or validation dates changed, and fetches CAVP
             validations the first time a certificate cites them. FIPS 140-2 and 140-1 have no active certificates left, so they were captured once and are not part of the daily run. Each record is a JSON file in the repository's <code>data/</code> folder, so the git history doubles as a change log.
           </p>
         </Card>

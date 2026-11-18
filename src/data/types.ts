@@ -18,6 +18,8 @@ export type ModuleRow = {
   algorithms: string[];
   cavp: string[];
   sparse: boolean;
+  /** ESV certificates inferred to serve this module (they share a CAVP validation). */
+  esv: number[];
 };
 
 export type Meta = {
@@ -82,6 +84,8 @@ export type CertRecord = {
   };
   files: Array<{ label: string; url: string }>;
   history: Array<{ date: string; type: string; lab: string }>;
+  /** Added by build_site_data.py: entropy sources inferred from a shared CAVP validation. */
+  esv_links?: EsvLink[];
   first_validated: string;
   last_updated: string;
   labs: string;
@@ -109,4 +113,62 @@ export type CavpRecord = {
   /** Set when the expanded view timed out and the record was built from the collapsed view. */
   partial?: string;
   fetched: string;
+};
+
+/** A CAVP validation that ties a module to an ESV certificate of the same vendor (the ESV's vetted conditioning component). */
+export type EsvVia = { cavp_id: string; cavp_cert: string; algorithm: string };
+
+/** On a certificate record: an entropy source it is inferred to use. */
+export type EsvLink = {
+  esv: number;
+  cert: string;
+  implementation: string;
+  vendor: string;
+  noise_source: string;
+  via: EsvVia[];
+};
+
+/** public/data/esv.json — one row per entropy source (ESV) certificate. */
+export type EsvRow = {
+  esv: number;
+  cert: string;
+  vendor: string;
+  implementation: string;
+  description: string;
+  noise_source: string;
+  reuse: string;
+  standard: string;
+  first: string;
+  last: string;
+  labs: string[];
+  oes: number;
+  conditioning: string[];
+  modules: number[];
+};
+
+/** public/data/esv/<n>.json — written by scripts/cmvp_crawl.py, plus inferred modules from build_site_data.py. */
+export type EsvRecord = {
+  esv: number;
+  cert: string;
+  url: string;
+  implementation: string;
+  standard: string;
+  description: string;
+  version: string;
+  noise_source: string;
+  reuse: string;
+  entries: Array<{
+    bits_per_output: string;
+    output_bits: string;
+    oes: string[];
+    conditioning: Array<{ cavp_cert: string; cavp_id: string; algorithm: string }>;
+  }>;
+  vendor: string;
+  vendor_info: { name: string; website: string; address: string[] };
+  files: Array<{ label: string; url: string }>;
+  history: Array<{ date: string; lab: string }>;
+  first: string;
+  last: string;
+  labs: string[];
+  modules: Array<{ cert: number; module: string; vendor: string; status: string; via: EsvVia[] }>;
 };

@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-import type { AlgorithmRow, CavpRecord, CertRecord, Meta, ModuleRow } from "./types";
+import type { AlgorithmRow, CavpRecord, CertRecord, EsvRecord, EsvRow, Meta, ModuleRow } from "./types";
 
-// Every data file is static JSON under <base>/data/. Per-record files (cmvp/, cavp/) are stored
+// Every data file is static JSON under <base>/data/. Per-record files (cmvp/, cavp/, esv/) are stored
 // gzipped (<path>.gz) to keep the published site small; they are inflated here. Responses are
 // memoised for the session so moving between pages never refetches.
 const cache = new Map<string, Promise<unknown>>();
 
-const gzipped = (path: string) => /^(cmvp|cavp)\//.test(path);
+const gzipped = (path: string) => /^(cmvp|cavp|esv)\//.test(path);
 
 async function decode(r: Response): Promise<unknown> {
   const buf = new Uint8Array(await r.arrayBuffer());
@@ -61,6 +61,8 @@ export const useModules = () => useJson<ModuleRow[]>("modules.json");
 export const useAlgorithms = () => useJson<AlgorithmRow[]>("algorithms.json");
 export const useCert = (cert: number | string) => useJson<CertRecord>(`cmvp/${cert}.json`);
 export const useCavp = (id: string | null) => useJson<CavpRecord>(id ? `cavp/${id}.json` : null);
+export const useEsvs = () => useJson<EsvRow[]>("esv.json");
+export const useEsv = (n: number | string) => useJson<EsvRecord>(`esv/${n}.json`);
 
 /** Several JSON files at once (e.g. every CAVP validation a certificate cites). */
 export function useJsonMany<T>(paths: string[]): Record<string, Loaded<T>> {

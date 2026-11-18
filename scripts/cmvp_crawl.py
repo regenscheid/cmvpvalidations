@@ -5,6 +5,7 @@ Writes one file per record so updates diff cleanly in git:
   data/cmvp/<cert>.json        every field of the certificate page, plus its search-list row
   data/cavp/<validation>.json  the CAVP validation (expanded view): implementation, OEs, and
                                per-algorithm capabilities
+  data/esv/<number>.json       an entropy source (ESV) certificate: source, OEs, conditioning CAVP certs
   data/cmvp_certs.csv          one row per certificate
   data/cmvp_algorithms.csv     one row per (certificate, approved algorithm, CAVP validation)
 
@@ -133,11 +134,32 @@ def fetch_cavp(a, cache, key, expanded_url, collapsed_url, refetch):
         return L.parse_cavp_collapsed(L.cavp_id_of(page) or key, page, caps)
 
 
-def vendor_key(v):
-    """A vendor name reduced for comparison: "Red Hat®, Inc." and "Red Hat, LLC" both give "redhat"."""
-    name = (v.get("name", "") if isinstance(v, dict) else v or "").lower()
-    name = re.sub(r"\b(inc|llc|ltd|limited|corp|corporation|co|company|ag|gmbh|plc|sa|bv|oy|ab)\b\.?", "", name)
-    return re.sub(r"[^a-z0-9]", "", name)
+def crawl_esv(a, data, cache):
+    """Entropy source (ESV) certificates: the list is always refetched; a certificate page only when new or
+    when its list row (vendor, implementation, latest date) changed."""
+    rows = L.list_esv(cache, refresh=True)
+    print(f"ESV list: {len(rows)} certificates")
+    todo = [r for r in rows if a.refresh or a.reparse or (load(data / "esv" / f"{r['esv']}.json") or {}).get("list") != r]
+    print(f"ESV: {len(todo)} new or changed")
+
+    def one(row):
+        n = row["esv"]
+        page = L.fetch(L.ESV_CERT.format(n), cache / "esv" / f"{n}.html", refresh=a.refresh and not a.reparse,
+                       check=L.esv_page_ok)
+        return n, {**L.parse_esv(n, page), "list": row}
+
+    written, errors = 0, []
+    with ThreadPoolExecutor(a.workers) as ex:
+        for fu in as_completed([ex.submit(one, r) for r in todo]):
+            try:
+                n, rec = fu.result()
+                written += save(data / "esv" / f"{n}.json", rec)
+            except Exception as e:  # noqa: BLE001
+                errors.append(str(e))
+    print(f"ESV: {written} certificate files written, {len(errors)} errors")
+    for e in errors[:10]:
+        print("  error:", e, file=sys.stderr)
+    return errors
 
 
 def crawl_cavp(a, data, cache):
@@ -149,7 +171,7 @@ def crawl_cavp(a, data, cache):
     for r in certs:
         for e in r.get("approved", []):
             if e.get("cavp_ref"):
-                vendors.setdefault(e["cavp_ref"], set()).add(vendor_key(r.get("vendor")))
+                vendors.setdefault(e["cavp_ref"], set()).add(L.vendor_key(r.get("vendor")))
             if e["cavp_id"]:
                 ids.add(e["cavp_id"])
             elif e.get("cavp_ref"):
@@ -157,6 +179,11 @@ def crawl_cavp(a, data, cache):
                     ids.add(refs[e["cavp_ref"]])
                 else:
                     unresolved.add(e["cavp_ref"])
+    # Conditioning components named by entropy (ESV) certificates are CAVP validations too.
+    if not a.no_esv:
+        for r in (load(p) for p in (data / "esv").glob("*.json")):
+            for e in (r or {}).get("entries", []):
+                ids.update(c["cavp_id"] for c in e["conditioning"] if c["cavp_id"])
     errors, done = [], 0
 
     def run(jobs, label, worker, on_result):
@@ -226,7 +253,7 @@ def crawl_cavp(a, data, cache):
                 rec = fetch_ref(alt, num)
             except RuntimeError:
                 continue
-            if vendor_key(rec.get("vendor")) in vendors.get(ref, ()):
+            if L.vendor_key(rec.get("vendor")) in vendors.get(ref, ()):
                 print(f"  cavp {ref}: link fails; using {rec['cavp_cert']} (validation {rec['cavp_id']}, same vendor)", file=sys.stderr)
                 return ref, rec
         raise RuntimeError(f"failed to fetch CAVP {ref}, and no {num} under {', '.join(alts)} from the same vendor")
@@ -318,6 +345,7 @@ def main():
     ap.add_argument("--refresh", action="store_true", help="refetch every page")
     ap.add_argument("--reparse", action="store_true", help="re-parse every certificate from the cache (after a parser change)")
     ap.add_argument("--no-cavp", action="store_true")
+    ap.add_argument("--no-esv", action="store_true", help="skip entropy source (ESV) certificates")
     ap.add_argument("--cavp-max-age", type=int, default=0, help="refetch CAVP records older than N days (0: never)")
     ap.add_argument("--cavp-limit", type=int, default=0, help="fetch at most N CAVP validations this run")
     ap.add_argument("--limit", type=int, default=0, help="debug: only the newest N certificates")
@@ -325,6 +353,8 @@ def main():
     L.DELAY = a.delay
     data, cache = Path(a.data), Path(a.cache)
     errs = crawl_certs(a, data, cache)
+    if not a.no_esv:
+        errs += crawl_esv(a, data, cache)
     if not a.no_cavp:
         errs += crawl_cavp(a, data, cache)
     write_csvs(data)

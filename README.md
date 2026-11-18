@@ -19,6 +19,7 @@ locally with `--standard 140-2` and `--standard 140-1`. The crawler also takes `
 | `data/cavp/<id>.json` | One file per cited CAVP validation: implementation, OEs, per-algorithm capabilities |
 | `data/cavp_refs.json` | FIPS 140-2 and 140-1 citations by CAVP source and number (`AES:4030`, `A:884`) → validation id |
 | `data/cavp_ref_aliases.json` | Hand-checked stand-ins for citations that do not resolve, with the reason |
+| `data/esv/<n>.json` | Entropy source (ESV) certificate E<n>: noise source, OEs, conditioning-component CAVP certificates, vendor, history |
 | `data/cmvp_certs.csv`, `data/cmvp_algorithms.csv` | Flat exports (cert rows; cert × algorithm × CAVP) |
 | `src/` | Vite + React + TanStack Router/Table/Virtual + Tailwind app (same stack as kemist-dashboard) |
 | `scripts/cmvp_pqc.py`, `scripts/make_reports.py`, `out/`, `reports/` | The original ML-DSA / ML-KEM survey (Oct 29 2026), kept as is |
@@ -63,6 +64,12 @@ in `cited_as`, and says why in `inferred`; the site marks these links as inferre
 
 Re-parse stored certificates from the cache after a parser change with `--reparse`.
 
+Entropy source (ESV) certificates are crawled on every run (skip with `--no-esv`), with the CAVP validations
+of their vetted conditioning components. Module certificates do not cite ESV certificates, so the site infers
+the link: a module and an ESV certificate from the same vendor that cite the same CAVP validation. Across
+vendors a shared validation is nearly always a common hardware block (Intel DRNG, Synopsys TRNG) and says
+nothing about whose entropy source a module uses, so those pairs are not linked.
+
 ## Site
 
 - **Summary**: counts by status, level, type, lab and algorithm family, each linking to a filtered table.
@@ -73,6 +80,8 @@ Re-parse stored certificates from the cache after a parser change with `--repars
   the full capabilities per CAVP validation and operating environment.
 - **CAVP validation**: all algorithms and OEs, and which certificates cite it.
 - **Algorithms**: every approved-algorithm name by family with active/all certificate counts.
+- **Entropy**: ESV certificates with noise source, OEs and conditioning components, and the modules
+  inferred to use each; certificate pages list their inferred entropy sources.
 
 ## Deploy (one-time setup)
 

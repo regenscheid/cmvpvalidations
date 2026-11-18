@@ -1,7 +1,7 @@
 import { Link, createFileRoute } from "@tanstack/react-router";
 import { useMemo } from "react";
 import { ApprovedAlgorithms, CitedValidations } from "../components/ApprovedAlgorithms";
-import { Card, Ext, Eyebrow, FamilyTag, Gate, H1, KV, Section, StatusTag } from "../components/ui";
+import { Card, Ext, Eyebrow, FamilyTag, Gate, H1, KV, Section, StatusTag, Tag } from "../components/ui";
 import { useCavps, useCert } from "../data/load";
 import type { CertRecord } from "../data/types";
 
@@ -132,6 +132,32 @@ function CertView({ r }: { r: CertRecord }) {
             <Section title="Cited CAVP validations">
               <Card>
                 <CitedValidations approved={r.approved} cavps={cavps} />
+              </Card>
+            </Section>
+          )}
+          {(r.esv_links?.length ?? 0) > 0 && (
+            <Section title="Entropy sources · inferred">
+              <Card>
+                <p className="border-b border-line-2 px-3 py-2 text-[12px] text-ink-3">
+                  Entropy certificates from this vendor whose vetted conditioning component is a CAVP validation this module also cites. The security
+                  policy is the authority.
+                </p>
+                <ul className="m-0 list-none p-0 text-[13px]">
+                  {r.esv_links!.map((x) => (
+                    <li key={x.esv} className="border-b border-line-2 px-3 py-2 last:border-0">
+                      <div className="flex items-baseline justify-between gap-2">
+                        <Link to="/entropy/$id" params={{ id: String(x.esv) }} className="mono">
+                          {x.cert}
+                        </Link>
+                        {x.noise_source && <Tag>{x.noise_source}</Tag>}
+                      </div>
+                      <div className="text-[12px] text-ink-2">{x.implementation}</div>
+                      <div className="text-[12px] text-ink-3">
+                        via <span className="mono">{x.via.map((v) => `${v.cavp_cert}${v.algorithm ? ` (${v.algorithm})` : ""}`).join(", ")}</span>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </Card>
             </Section>
           )}

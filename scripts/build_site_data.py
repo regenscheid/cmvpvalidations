@@ -6,12 +6,17 @@
   public/data/algorithms.json  each approved-algorithm name with its family and module counts
   public/data/cmvp/<n>.json.gz    full certificate record, gzipped (loaded on the detail page)
   public/data/cavp/<id>.json.gz   full CAVP validation record, gzipped (loaded on demand)
+  public/data/esv.json         one row per entropy source (ESV) certificate
+  public/data/esv/<n>.json.gz  full ESV record with the modules it is inferred to serve
 
 Usage: python3 -I scripts/build_site_data.py [--data data] [--out public/data]
 """
-import argparse, gzip, json, re, shutil
+import argparse, gzip, json, re, shutil, sys
 from collections import Counter, defaultdict
 from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from cmvp_lib import same_vendor  # noqa: E402
 
 # Ordered: first match wins. Groups the ~140 CAVP algorithm names into families for filtering.
 FAMILIES = [
@@ -53,6 +58,7 @@ def main():
         shutil.rmtree(out)
     (out / "cmvp").mkdir(parents=True)
     (out / "cavp").mkdir(parents=True)
+    (out / "esv").mkdir(parents=True)
 
     certs = sorted((json.loads(p.read_text()) for p in (data / "cmvp").glob("*.json")), key=lambda r: -r["cert"])
     cavp_have = {p.stem for p in (data / "cavp").glob("*.json")}
@@ -74,7 +80,43 @@ def main():
             "cavp": sorted({e["cavp_id"] for e in r["approved"] if e["cavp_id"]}, key=int),
             "sparse": r.get("sparse", False),
         })
-        compact(r, out / "cmvp" / f"{r['cert']}.json")
+
+    # Entropy sources. Neither kind of certificate cites the other, so links are inferred: a module and an
+    # ESV certificate from the same vendor that cite the same CAVP validation (the ESV's vetted conditioning
+    # component). Across vendors the shared validation is nearly always a common hardware block (Intel DRNG,
+    # Synopsys TRNG), which says nothing about whose entropy source the module uses, so those are left out.
+    esvs = sorted((json.loads(p.read_text()) for p in (data / "esv").glob("*.json")), key=lambda e: -e["esv"])
+    row_of = {r["cert"]: r for r in rows}
+    modules_citing = defaultdict(set)
+    for r in rows:
+        for i in r["cavp"]:
+            modules_citing[i].add(r["cert"])
+    esv_of_module, esv_rows = defaultdict(list), []
+    for e in esvs:
+        cond = {c["cavp_id"]: c for en in e["entries"] for c in en["conditioning"] if c["cavp_id"]}
+        via = defaultdict(list)
+        for i, c in sorted(cond.items()):
+            for cert in modules_citing.get(i, ()):
+                if same_vendor(row_of[cert]["vendor"], e["vendor"]):
+                    via[cert].append({"cavp_id": i, "cavp_cert": c["cavp_cert"], "algorithm": c["algorithm"]})
+        mods = [{"cert": c, "module": row_of[c]["module"], "vendor": row_of[c]["vendor"], "status": row_of[c]["status"], "via": v}
+                for c, v in sorted(via.items(), reverse=True)]
+        for m in mods:
+            esv_of_module[m["cert"]].append({"esv": e["esv"], "cert": e["cert"], "implementation": e["implementation"],
+                                             "vendor": e["vendor"], "noise_source": e["noise_source"], "via": m["via"]})
+        compact({**e, "modules": mods}, out / "esv" / f"{e['esv']}.json")
+        esv_rows.append({
+            "esv": e["esv"], "cert": e["cert"], "vendor": e["vendor"], "implementation": e["implementation"],
+            "description": e["description"], "noise_source": e["noise_source"], "reuse": e["reuse"],
+            "standard": e["standard"], "first": e["first"], "last": e["last"], "labs": e["labs"],
+            "oes": sum(len(en["oes"]) for en in e["entries"]),
+            "conditioning": sorted({c["cavp_cert"] for c in cond.values()}),
+            "modules": [m["cert"] for m in mods],
+        })
+    for row in rows:
+        row["esv"] = [x["esv"] for x in esv_of_module.get(row["cert"], [])]
+    for r in certs:
+        compact({**r, "esv_links": esv_of_module.get(r["cert"], [])}, out / "cmvp" / f"{r['cert']}.json")
     for i in cavp_have:
         compact(json.loads((data / "cavp" / f"{i}.json").read_text()), out / "cavp" / f"{i}.json")
 
@@ -88,12 +130,16 @@ def main():
         "cavp_validations": len(cavp_have),
         "cavp_cited": len({i for r in rows for i in r["cavp"]}),
         "families": sorted({f for f, _ in ((family(n), 0) for n in alg_all)}),
+        "esv_certificates": len(esv_rows),
     }
     dump = lambda obj, p: p.write_text(json.dumps(obj, ensure_ascii=False, separators=(",", ":")))
     dump(rows, out / "modules.json")
     dump(algorithms, out / "algorithms.json")
     dump(meta, out / "meta.json")
-    print(f"wrote {out}: {len(rows)} certificates, {len(algorithms)} algorithm names, {len(cavp_have)} CAVP records")
+    dump(esv_rows, out / "esv.json")
+    linked = sum(1 for r in rows if r["esv"])
+    print(f"wrote {out}: {len(rows)} certificates, {len(algorithms)} algorithm names, {len(cavp_have)} CAVP records, "
+          f"{len(esv_rows)} ESV certificates ({linked} modules linked to one)")
 
 
 if __name__ == "__main__":

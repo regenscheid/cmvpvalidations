@@ -5,7 +5,7 @@ import type { ModuleRow } from "./types";
 const row = (over: Partial<ModuleRow>): ModuleRow => ({
   cert: 1, standard: "140-3", status: "Active", vendor: "Acme", module: "Acme Crypto", type: "Software",
   embodiment: "Multi-Chip Stand Alone", level: "1", sunset: "", first: "", last: "", labs: ["Lab A"], caveat: "",
-  families: ["AES"], pqc: [], algorithms: ["AES-CBC"], cavp: [], sparse: false, ...over,
+  families: ["AES"], pqc: [], algorithms: ["AES-CBC"], cavp: [], sparse: false, esv: [], ...over,
 });
 
 const rows = [
@@ -42,5 +42,15 @@ describe("search params", () => {
   it("round-trips", () => {
     const f = { ...EMPTY_FILTERS, q: "x", alg: ["AES-CBC", "SHA2-256"], level: ["3"] };
     expect(searchToFilters(filtersToSearch(f))).toEqual(f);
+  });
+});
+
+describe("year filter", () => {
+  it("matches the year of first validation, and round-trips through the URL", () => {
+    const a = row({ cert: 10, first: "3/14/2012" });
+    const b = row({ cert: 11, first: "1/2/2019" });
+    const f = { ...EMPTY_FILTERS, year: ["2012"] };
+    expect([a, b].filter((r) => matchesFilters(r, f)).map((r) => r.cert)).toEqual([10]);
+    expect(searchToFilters(filtersToSearch(f)).year).toEqual(["2012"]);
   });
 });
