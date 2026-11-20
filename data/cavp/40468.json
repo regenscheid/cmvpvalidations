@@ -1,0 +1,1264 @@
+{
+ "cavp_id": "40468",
+ "cavp_cert": "A7858",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40468",
+ "implementation": "AWS-LC Cryptographic Module (dynamic build) (SHA_SHANI)",
+ "product_id": "20660",
+ "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. The following cipher implementation is covered: Intel SHA-NI implementation.",
+ "version": "AWS-LC FIPS 4.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/16/2026",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "http://www.amazon.com",
+ "oes": [
+  {
+   "name": "Amazon Linux 2023 on EC2 c6i.metal bare metal on Intel Ice Lake Xeon Platinum 8375C",
+   "details": [
+    "software: Amazon Linux 2023 on EC2 c6i.metal bare metal",
+    "  EC2 c6i.metal bare metal running Amazon Linux 2023.",
+    "processor: Xeon Platinum 8375C",
+    "  Processor Xeon Platinum 8375C (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Ice Lake"
+   ]
+  },
+  {
+   "name": "Amazon Linux 2023 on EC2 c7a.metal bare metal on AMD Genoa AMD EPYC 4th Generation",
+   "details": [
+    "software: Amazon Linux 2023 on EC2 c7a.metal bare metal",
+    "  EC2 c7a.metal bare metal running Amazon Linux 2023.",
+    "processor: AMD EPYC 4th Generation",
+    "  Processor AMD EPYC 4th Generation (processor family X86) from AMD",
+    "  family: X86",
+    "  manufacturer: AMD",
+    "  series: Genoa"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA KeyVer (FIPS186-5)",
+   "oe": 1,
+   "capabilities": [
+    "Curve: P-224, P-256, P-384, P-521"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigGen (FIPS186-5)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA-1"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256"
+   ]
+  },
+  {
+   "algorithm": "ECDSA SigVer (FIPS186-5)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Curve: P-224, P-256, P-384, P-521",
+    "    Hash Algorithm: SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256"
+   ]
+  },
+  {
+   "algorithm": "EDDSA KeyGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519"
+   ]
+  },
+  {
+   "algorithm": "EDDSA KeyGen",
+   "oe": 1,
+   "capabilities": [
+    "Curve: ED-25519"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigGen",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519",
+    "Context Length: 0",
+    "PreHash",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigGen",
+   "oe": 1,
+   "capabilities": [
+    "Curve: ED-25519",
+    "Context Length: 0",
+    "PreHash",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigVer",
+   "oe": 0,
+   "capabilities": [
+    "Curve: ED-25519",
+    "PreHash",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "EDDSA SigVer",
+   "oe": 1,
+   "capabilities": [
+    "Curve: ED-25519",
+    "PreHash",
+    "Pure"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 160",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-224",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 384",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 512",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512/224",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512/224",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 224",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512/256",
+   "oe": 0,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "HMAC-SHA2-512/256",
+   "oe": 1,
+   "capabilities": [
+    "MAC: 256",
+    "Key Length: 112-524288 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF Sp800-56Cr1",
+   "oe": 0,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-2048 Increment 8",
+    "HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256"
+   ]
+  },
+  {
+   "algorithm": "KDA HKDF Sp800-56Cr1",
+   "oe": 1,
+   "capabilities": [
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo||l",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-2048 Increment 8",
+    "HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "oe": 0,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA-1",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-224",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-256",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-384",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-512",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-512/224",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-512/256",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA-1",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-224",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-384",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512/224",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512/256",
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDA OneStep SP800-56Cr2",
+   "oe": 1,
+   "capabilities": [
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA-1",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-224",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-256",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-384",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-512",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-512/224",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: HMAC-SHA2-512/256",
+    "    MAC Salting Methods: default, random",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA-1",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-224",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-256",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-384",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512/224",
+    "  Auxiliary Function Methods:",
+    "    Auxiliary Function Name: SHA2-512/256",
+    "Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "Fixed Info Encoding: concatenation",
+    "Derived Key Length: 2048",
+    "Shared Secret Length: 224-2048 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA2-512/224, HMAC-SHA2-512/256",
+    "    Supported Lengths: 2048",
+    "    Fixed Data Order: After Fixed Data",
+    "    Counter Length: 8",
+    "    Supports Empty IV",
+    "    Requires Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA2-512/224, HMAC-SHA2-512/256",
+    "    Supported Lengths: 2048",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV",
+    "    Requires Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Feedback",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA2-512/224, HMAC-SHA2-512/256",
+    "    Supported Lengths: 2048",
+    "    Fixed Data Order: After Fixed Data",
+    "    Counter Length: 8",
+    "    Supports Empty IV",
+    "    Requires Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    KDF Mode: Counter",
+    "    MAC Mode: HMAC-SHA-1, HMAC-SHA2-224, HMAC-SHA2-256, HMAC-SHA2-384, HMAC-SHA2-512, HMAC-SHA2-512/224, HMAC-SHA2-512/256",
+    "    Supported Lengths: 2048",
+    "    Fixed Data Order: Before Fixed Data",
+    "    Counter Length: 32",
+    "    Supports Empty IV",
+    "    Requires Empty IV",
+    "    Custom Key In Length: 0"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 0,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF SSH",
+   "oe": 1,
+   "capabilities": [
+    "Cipher: AES-128, AES-192, AES-256",
+    "Hash Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 0,
+   "capabilities": [
+    "TLS Version: v1.0/1.1, v1.2",
+    "Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "KDF TLS",
+   "oe": 1,
+   "capabilities": [
+    "TLS Version: v1.0/1.1, v1.2",
+    "Hash Algorithm: SHA2-256, SHA2-384, SHA2-512"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256",
+    "    Password Length: 14-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "PBKDF",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Iteration Count: 1000-10000 Increment 1",
+    "    HMAC Algorithm: SHA-1, SHA2-224, SHA2-256, SHA2-384, SHA2-512, SHA2-512/224, SHA2-512/256",
+    "    Password Length: 14-128 Increment 1",
+    "    Salt Length: 128-4096 Increment 8",
+    "    Key Data Length: 128-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 4096",
+    "    Signature Type: pss"
+   ]
+  },
+  {
+   "algorithm": "RSA SigGen (FIPS186-5)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 4096",
+    "    Signature Type: pss"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 62",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-4)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 62",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "  Capabilities:",
+    "    Signature Type: PKCS 1.5",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "  Capabilities:",
+    "    Signature Type: PKCSPSS",
+    "      Properties:",
+    "        Modulo: 1024",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 2048",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 3072",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "      Properties:",
+    "        Modulo: 4096",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA-1",
+    "            Salt Length: 20",
+    "Public Exponent Mode: Fixed",
+    "Fixed Public Exponent: 010001"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 4096",
+    "    Signature Type: pss",
+    "Fixed Public Exponent: 010001",
+    "Public Exponent Mode: fixed"
+   ]
+  },
+  {
+   "algorithm": "RSA SigVer (FIPS186-5)",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "        Modulo: 4096",
+    "    Signature Type: pkcs1v1.5",
+    "  Capabilities:",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 2048",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 3072",
+    "      Properties:",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-256",
+    "            Salt Length: 32",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-384",
+    "            Salt Length: 48",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512",
+    "            Salt Length: 64",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/224",
+    "            Salt Length: 28",
+    "          Hash Pair:",
+    "            Hash Algorithm: SHA2-512/256",
+    "            Salt Length: 32",
+    "        Mask Function: mgf1",
+    "        Modulo: 4096",
+    "    Signature Type: pss",
+    "Fixed Public Exponent: 010001",
+    "Public Exponent Mode: fixed"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA-1",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-224",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-384",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512/224",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512/224",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512/256",
+   "oe": 0,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  },
+  {
+   "algorithm": "SHA2-512/256",
+   "oe": 1,
+   "capabilities": [
+    "Message Length: 0-65536 Increment 8",
+    "Large Message Sizes: 1, 2, 4, 8gigabytes"
+   ]
+  }
+ ],
+ "fetched": "2026-11-20"
+}

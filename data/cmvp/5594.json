@@ -1,0 +1,111 @@
+{
+ "cert": 5594,
+ "url": "https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5594",
+ "module": "Inline Crypto Engine (ICE)",
+ "standard": "140-3",
+ "status": "Active",
+ "sunset": "11/18/2031",
+ "level": "1",
+ "caveat": "No assurance of minimum security of SSPs (e.g., keys, bit strings) that are externally loaded, or of SSPs established with externally loaded SSPs.",
+ "level_exceptions": [
+  "Software/Firmware security: N/A",
+  "Non-invasive security: N/A",
+  "Mitigation of other attacks: N/A"
+ ],
+ "type": "Hardware",
+ "embodiment": "SingleChip",
+ "description": "The Inline Crypto Engine (ICE) module is comprised of a sub-chip cryptographic subsystem in the Google IN763 SoC. The module provides a cryptographic engine supporting cryptographic offload for IPsec and PSP protocols. The ICE module processes network infrastructure packets in both the Ingress and Egress directions. In addition to providing the cryptographic primitives for the security protocols it also provides packet integrity authentication and anti-replay protection.",
+ "tested_configurations": [],
+ "allowed_algorithms": "",
+ "non_approved_algorithms": "",
+ "entropy": "",
+ "software_versions": "",
+ "hardware_versions": "",
+ "firmware_versions": "",
+ "piv_cert": "",
+ "product_url": "",
+ "approved": [
+  {
+   "algorithm": "AES-CMAC",
+   "cavp_cert": "A6038",
+   "cavp_id": "38648"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A6038",
+   "cavp_id": "38648"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A6039",
+   "cavp_id": "38649"
+  },
+  {
+   "algorithm": "AES-GCM",
+   "cavp_cert": "A6040",
+   "cavp_id": "38650"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A6038",
+   "cavp_id": "38648"
+  },
+  {
+   "algorithm": "AES-GMAC",
+   "cavp_cert": "A6039",
+   "cavp_id": "38649"
+  },
+  {
+   "algorithm": "KDF SP800-108",
+   "cavp_cert": "A6038",
+   "cavp_id": "38648"
+  }
+ ],
+ "vendor": "Google, LLC",
+ "vendor_info": {
+  "name": "Google, LLC",
+  "website": "http://www.google.com",
+  "address": [
+   "1600 Amphitheatre Parkway",
+   "Mountain View, CA 94043",
+   "USA"
+  ],
+  "contacts": [
+   {
+    "name": "FIPS Crypto Officer"
+   }
+  ]
+ },
+ "files": [
+  {
+   "label": "Security Policy",
+   "url": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5594.pdf"
+  }
+ ],
+ "history": [
+  {
+   "date": "11/19/2026",
+   "type": "Initial",
+   "lab": "Acumen Security"
+  }
+ ],
+ "first_validated": "11/19/2026",
+ "last_updated": "11/19/2026",
+ "labs": "Acumen Security",
+ "security_policy": "https://csrc.nist.gov/CSRC/media/projects/cryptographic-module-validation-program/documents/security-policies/140sp5594.pdf",
+ "other_fields": {},
+ "other_text": "",
+ "sparse": false,
+ "list": {
+  "cert": 5594,
+  "vendor": "Google, LLC",
+  "module": "Inline Crypto Engine (ICE)",
+  "type": "Hardware",
+  "validation_dates": [
+   "11/19/2026"
+  ],
+  "status": "Active",
+  "standard": "140-3"
+ },
+ "fetched": "2026-11-20"
+}

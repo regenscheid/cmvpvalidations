@@ -1,0 +1,50 @@
+{
+ "cavp_id": "40738",
+ "cavp_cert": "A8128",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40738",
+ "implementation": "ID-One Cosmo X FIPS (FIDO)",
+ "product_id": "20943",
+ "description": "ID-One Cosmo X is a dual interface (ISO 7816 & ISO 14443) smartcard chip compliant with Javacard 3.1 and GlobalPlatform 2.3.1 supporting the ECDH Key Agreement Scheme within FIDO.",
+ "version": "09A4D1",
+ "type": "HARDWARE",
+ "first_validated": "3/19/2026",
+ "vendor": "Idemia",
+ "vendor_website": "http://www.idemia.com",
+ "oes": [
+  {
+   "name": "Idemia Cosmo X FIPS",
+   "details": [
+    "processor: Cosmo X FIPS",
+    "  Processor Cosmo X FIPS (processor family ID-One Cosmo) from Idemia",
+    "  family: ID-One Cosmo",
+    "  manufacturer: Idemia"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KAS-ECC Sp800-56Ar3",
+   "oe": 0,
+   "capabilities": [
+    "Domain Parameter Generation Methods: P-256",
+    "Function: Full Validation",
+    "Scheme:",
+    "  ephemeralUnified:",
+    "    KAS Role: Responder",
+    "    KDF Methods:",
+    "      twoStepKdf:",
+    "          Capabilities:",
+    "            MAC Salting Methods: default",
+    "            Supported Lengths: 256",
+    "            Fixed Info Pattern: uPartyInfo||vPartyInfo",
+    "            Fixed Info Encoding: Concatenation",
+    "            KDF Mode: Counter",
+    "            MAC Modes: HMAC-SHA2-256",
+    "            Fixed Data Order: After Fixed Data",
+    "            Counter Lengths: 8",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-20"
+}

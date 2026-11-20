@@ -1,0 +1,47 @@
+{
+ "cavp_id": "38650",
+ "cavp_cert": "A6040",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=38650",
+ "implementation": "Inline Crypto Engine (ICE) SADB",
+ "product_id": "18630",
+ "description": "ICE SADB supports Secure SADB where CSP are encrypted for writing to DRAM and decrypted when reading from DRAM.",
+ "version": "Intel® QuickAssist Technology (Intel® QAT) ICE version 2.0",
+ "type": "FIRMWARE",
+ "first_validated": "10/29/2024",
+ "vendor": "Google, LLC",
+ "vendor_website": "https://www.google.com/",
+ "oes": [
+  {
+   "name": "Synopsys VCS® (Verilog Compiler Simulator)",
+   "details": [
+    "Firmware: Synopsys VCS® (Verilog Compiler Simulator)",
+    "  Verilog language simulation program for chip design"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Encrypt",
+    "Key Length: 128, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 288",
+    "AAD Length: 32"
+   ]
+  }
+ ],
+ "fetched": "2026-11-20"
+}

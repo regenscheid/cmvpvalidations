@@ -1,0 +1,234 @@
+{
+ "cavp_id": "40454",
+ "cavp_cert": "A7844",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40454",
+ "implementation": "AWS-LC Cryptographic Module (dynamic build) (AESASM)",
+ "product_id": "20646",
+ "description": "AWS-LC is a general-purpose cryptographic library maintained by the AWS Cryptography team for AWS and their customers. The following cipher implementation is covered: Assembler AES implementation.",
+ "version": "AWS-LC FIPS 4.0.0",
+ "type": "SOFTWARE",
+ "first_validated": "1/16/2026",
+ "vendor": "Amazon Web Services, Inc.",
+ "vendor_website": "http://www.amazon.com",
+ "oes": [
+  {
+   "name": "Amazon Linux 2023 on EC2 c6i.metal bare metal on Intel Ice Lake Xeon Platinum 8375C",
+   "details": [
+    "software: Amazon Linux 2023 on EC2 c6i.metal bare metal",
+    "  EC2 c6i.metal bare metal running Amazon Linux 2023.",
+    "processor: Xeon Platinum 8375C",
+    "  Processor Xeon Platinum 8375C (processor family X86) from Intel",
+    "  family: X86",
+    "  manufacturer: Intel",
+    "  series: Ice Lake"
+   ]
+  },
+  {
+   "name": "Amazon Linux 2023 on EC2 c7a.metal bare metal on AMD Genoa AMD EPYC 4th Generation",
+   "details": [
+    "software: Amazon Linux 2023 on EC2 c7a.metal bare metal",
+    "  EC2 c7a.metal bare metal running Amazon Linux 2023.",
+    "processor: AMD EPYC 4th Generation",
+    "  Processor AMD EPYC 4th Generation (processor family X86) from AMD",
+    "  family: X86",
+    "  manufacturer: AMD",
+    "  series: Genoa"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-CBC",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CBC",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 0,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 32",
+    "IV Length: 104",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CCM",
+   "oe": 1,
+   "capabilities": [
+    "Key Length: 128",
+    "Tag Length: 32",
+    "IV Length: 104",
+    "Payload Length: 0-256 Increment 8",
+    "AAD Length: 0, 256, 65536"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 0,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CMAC",
+   "oe": 1,
+   "capabilities": [
+    "  Capabilities:",
+    "    Direction: Generation, Verification",
+    "    Key Length: 128, 256",
+    "    MAC Length: 32-128 Increment 8",
+    "    Message Length: 0-65536 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Supports Counter larger than maximum value",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-CTR",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-128 Increment 8",
+    "Supports Counter larger than maximum value",
+    "Incremental Counter",
+    "Counter Tests Performed"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-ECB",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 128, 192, 256"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-4096 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KW",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 128-4096 Increment 128"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-KWP",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Cipher: Cipher",
+    "Key Length: 128, 192, 256",
+    "Payload Length: 8-4096 Increment 8"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Hex",
+    "Data Unit Length Matches Payload Length"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 1,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 128-65536 Increment 128",
+    "Tweak Mode: Hex",
+    "Data Unit Length Matches Payload Length"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 0,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 256",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 512"
+   ]
+  },
+  {
+   "algorithm": "Counter DRBG",
+   "oe": 1,
+   "capabilities": [
+    "Prediction Resistance: No",
+    "  Capabilities:",
+    "    Mode: AES-256",
+    "    Derivation Function Enabled: No",
+    "    Additional Input: 256",
+    "    Entropy Input: 384",
+    "    Nonce: 0",
+    "    Personalization String Length: 384",
+    "    Returned Bits: 512"
+   ]
+  }
+ ],
+ "fetched": "2026-11-20"
+}
