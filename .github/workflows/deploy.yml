@@ -57,5 +57,11 @@ jobs:
         with:
           path: dist
 
+      # deploy-pages looks the artifact up through the API right after the upload finalizes,
+      # and that lookup can briefly miss it ("No artifacts named github-pages were found").
+      # Give the API a moment to catch up.
+      - name: Wait for the Pages artifact to register
+        run: sleep 15
+
       - id: deploy
         uses: actions/deploy-pages@v4
