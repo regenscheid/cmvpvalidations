@@ -1,0 +1,42 @@
+{
+ "cavp_id": "40272",
+ "cavp_cert": "A7662",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40272",
+ "implementation": "Micron® MSA12-P5 Controller Sub Chip Security Subsystem (SCSS) FW RSA",
+ "product_id": "20258",
+ "description": "Provides RSA OAEP Support to Micron® SSD Controller Sub Chip Security Subsystem (SCSS)",
+ "version": "3.0",
+ "type": "FIRMWARE",
+ "first_validated": "11/3/2025",
+ "vendor": "Micron Technology, Inc.",
+ "vendor_website": "http://www.Micron.com",
+ "oes": [
+  {
+   "name": "Micron® MSA12-P5 ASIC",
+   "details": [
+    "cpu: Micron® MSA12-P5 ASIC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "KTS-IFC",
+   "oe": 0,
+   "capabilities": [
+    "Modulo: 3072, 4096",
+    "Key Generation Methods: rsakpg1-basic",
+    "Fixed Public Exponent: 010001",
+    "Scheme:",
+    "  KTS-OAEP-basic:",
+    "    KAS Role: initiator",
+    "    Key Transport Method:",
+    "      Hash Algorithms: SHA2-384",
+    "      Supports Null Associated Data",
+    "      Associated Data Pattern: uPartyInfo||vPartyInfo",
+    "      Associated Data Encoding: concatenation",
+    "    Key Length: 256"
+   ]
+  }
+ ],
+ "fetched": "2026-11-25"
+}

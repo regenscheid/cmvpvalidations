@@ -1,0 +1,57 @@
+{
+ "cavp_id": "40278",
+ "cavp_cert": "A7668",
+ "url": "https://csrc.nist.gov/projects/cryptographic-algorithm-validation-program/details?validation=40278",
+ "implementation": "Micron® MSA12-P5 Controller Sub Chip Security Subsystem (SCSS) - Aux Encryption Engine",
+ "product_id": "20254",
+ "description": "The Micron® SSD Controller Sub Chip Security Subsystem (SCSS) Aux Engine is a FIPS approved AES accelerator which provides AES-XTS, AES-GCM and AES-ECB functionality to the Micron® SSD Controller Sub Chip Security Subsystem (SCSS)",
+ "version": "0x0C87E5",
+ "type": "HARDWARE",
+ "first_validated": "11/3/2025",
+ "vendor": "Micron Technology, Inc.",
+ "vendor_website": "http://www.Micron.com",
+ "oes": [
+  {
+   "name": "Micron® MSA12-P5 ASIC",
+   "details": [
+    "cpu: Micron® MSA12-P5 ASIC"
+   ]
+  }
+ ],
+ "algorithms": [
+  {
+   "algorithm": "AES-ECB",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256"
+   ]
+  },
+  {
+   "algorithm": "AES-GCM",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "IV Generation: External",
+    "IV Generation Mode: 8.2.1",
+    "Key Length: 256",
+    "Tag Length: 128",
+    "IV Length: 96",
+    "Payload Length: 256-65536 Increment 128",
+    "AAD Length: 0"
+   ]
+  },
+  {
+   "algorithm": "AES-XTS Testing Revision 2.0",
+   "oe": 0,
+   "capabilities": [
+    "Direction: Decrypt, Encrypt",
+    "Key Length: 256",
+    "Payload Length: 4096-32896 Increment 128",
+    "Tweak Mode: Hex",
+    "Data Unit Length Matches Payload Length"
+   ]
+  }
+ ],
+ "fetched": "2026-11-25"
+}
